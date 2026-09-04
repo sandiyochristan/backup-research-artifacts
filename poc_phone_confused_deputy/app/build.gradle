@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.poc.confuseddeputy'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.poc.confuseddeputy"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Wearable Data Layer SDK — the ONLY dependency needed for the exploit
+    // This is a normal, legitimate SDK that any "watch companion" app uses
+    implementation 'com.google.android.gms:play-services-wearable:18.1.0'
+}

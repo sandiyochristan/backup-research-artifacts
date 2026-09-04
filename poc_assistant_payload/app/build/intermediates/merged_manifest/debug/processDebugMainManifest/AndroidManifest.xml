@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.assistantpayload"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="34" />
+
+    <!--
+    RESEARCH: rigorous re-test of the previously-confirmed (but weakly validated)
+    finding in pulled_apks/VRP_REPORT_ASSISTANT.md. That report only proved
+    ProactiveWearableListenerService can be *started* via `am startservice` (no
+    SecurityException); it did not prove a real Data Layer payload actually
+    reaches onDataChanged(). This app declares ZERO permissions (AM-1 threat
+    model: malicious watch app) and uses the real
+    com.google.android.gms.wearable.DataClient API to write a DataItem at
+    /assistant/proactive, exactly as a legitimate proactive-suggestion producer
+    would, to see if the unexported-by-permission ProactiveWearableListenerService
+    genuinely processes attacker-controlled data.
+    -->
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="Weather Widget"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name="com.poc.assistantpayload.MainActivity"
+            android:exported="true"
+            android:label="Weather Widget" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

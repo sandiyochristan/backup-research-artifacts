@@ -1,0 +1,62 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:3:5-33
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:18:5-69
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:18:22-66
+uses-feature#android.hardware.type.watch
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:20:5-64
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:20:19-61
+application
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:22:5-38:19
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:22:5-38:19
+	android:extractNativeLibs
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+	android:supportsRtl
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:24:9-40
+	android:allowBackup
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:23:9-36
+	android:theme
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:26:9-59
+activity#com.poc.lockbypass.MainActivity
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:28:9-36:20
+	android:label
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:32:13-35:29
+action#android.intent.action.MAIN
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:34:27-74
+uses-sdk
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml

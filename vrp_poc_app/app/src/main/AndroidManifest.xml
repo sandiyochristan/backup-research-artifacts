@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vrppoc">
+
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="34" />
+
+    <queries>
+        <package android:name="com.google.android.apps.messaging" />
+        <package android:name="com.google.android.gsf" />
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.google.android.apps.photos" />
+        <package android:name="com.google.android.apps.safetyhub" />
+        <package android:name="com.google.android.apps.maps" />
+        <package android:name="com.google.android.googlequicksearchbox" />
+        <package android:name="com.google.android.apps.docs" />
+        <package android:name="com.google.android.apps.scone" />
+        <package android:name="com.google.android.aicore" />
+        <package android:name="com.google.android.apps.docs.editors.docs" />
+        <package android:name="com.google.android.apps.docs.editors.sheets" />
+        <package android:name="com.google.android.apps.docs.editors.slides" />
+        <package android:name="com.google.android.apps.turbo" />
+        <package android:name="com.google.android.apps.wellbeing" />
+        <package android:name="com.google.android.apps.recorder" />
+        <package android:name="com.google.android.apps.nbu.files" />
+        <package android:name="com.google.android.apps.walletnfcrel" />
+        <package android:name="com.google.android.setupwizard" />
+        <package android:name="com.google.android.flipendo" />
+        <package android:name="com.google.android.apps.tycho" />
+        <package android:name="com.google.android.dialer" />
+        <package android:name="com.google.android.calendar" />
+        <package android:name="com.google.android.contacts" />
+        <package android:name="com.google.android.keep" />
+        <package android:name="com.google.android.apps.fitness" />
+        <package android:name="com.google.android.settings.intelligence" />
+        <package android:name="com.google.android.inputmethod.latin" />
+    </queries>
+
+    <!-- Google Messages - 5 normal permissions -->
+    <uses-permission android:name="com.google.android.messages.rcs.PROVISIONING_EVENT" />
+    <uses-permission android:name="com.google.android.apps.messaging.shared.satelliteapi.endpointservice.ACCESS_ENDPOINT_SERVICE" />
+    <uses-permission android:name="com.google.android.ims.services.ACCESS_MESSAGING_SERVICE" />
+    <uses-permission android:name="com.google.android.ims.messaging.ACCESS_MESSAGING_ENGINE_SERVICE" />
+    <uses-permission android:name="com.google.android.apps.messaging.services.ACCESS_MESSAGING_NOTIFICATION_SERVICE" />
+
+    <!-- Google Maps - normal permission for Assistant gRPC -->
+    <uses-permission android:name="com.google.android.apps.maps.permission.ASSISTANT_GRPC_SYNC" />
+
+    <!-- Google Lens - normal permission -->
+    <uses-permission android:name="com.google.android.googlequicksearchbox.permission.LENS_SERVICE" />
+
+    <!-- GServices - normal permission -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- GMS permissions - all normal -->
+    <uses-permission android:name="com.google.android.gms.dck.permission.DIGITAL_KEY_READ" />
+    <uses-permission android:name="com.google.android.gms.dck.permission.DIGITAL_KEY_WRITE" />
+
+    <!-- Drive SYNC_STATUS - normal permission -->
+    <uses-permission android:name="com.google.android.apps.docs.permission.SYNC_STATUS" />
+
+    <!-- SafetyHub - normal permission -->
+    <uses-permission android:name="com.google.android.apps.safetyhub.carcrash.settings.READ" />
+
+    <!-- Scone/Carrier - normal permission -->
+    <uses-permission android:name="com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA" />
+
+    <!-- AI Core - normal permission -->
+    <uses-permission android:name="com.google.android.apps.aicore.service.BIND_SERVICE" />
+
+    <!-- GMS permissions - all normal -->
+    <uses-permission android:name="com.google.android.gms.permission.INJECT_GESTURE_EVENT" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <!-- Docs editors sync status - normal -->
+    <uses-permission android:name="com.google.android.apps.docs.editors.kix.permission.SYNC_STATUS" />
+    <uses-permission android:name="com.google.android.apps.docs.editors.trix.permission.SYNC_STATUS" />
+    <uses-permission android:name="com.google.android.apps.docs.editors.punch.permission.SYNC_STATUS" />
+
+    <!-- Battery usage - normal -->
+    <uses-permission android:name="com.google.android.settings.fuelgauge.READ_BATTERY_USAGE_DATA" />
+
+    <!-- Raw sensor - normal -->
+    <uses-permission android:name="com.google.sensor.private.permission.USE_RAW_SENSOR" />
+
+    <!-- Play Store - normal -->
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <!-- SetupWizard - normal (device origin info) -->
+    <uses-permission android:name="com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY" />
+
+    <!-- GMS additional - normal -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID_NOTIFICATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="VRP PoC v5"
+        android:theme="@android:style/Theme.DeviceDefault.Light">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DittoTest"
+            android:exported="true"
+            android:label="Ditto URI Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

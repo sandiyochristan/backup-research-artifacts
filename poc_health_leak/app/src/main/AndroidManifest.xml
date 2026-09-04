@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.healthleak">
+
+    <!--
+    RESEARCH: Vector 2 from wear_os_bugbounty_skill.md, previously uncatalogued as
+    tested. com.google.android.wearable.healthservices exports
+    MeasureApiService / PassiveMonitoringApiService / ExerciseApiService with NO
+    manifest-level <service android:permission=...> guard (confirmed via live
+    manifest pull, 2026-08-17). That's architecturally normal for an AIDL client
+    API; the real question is whether BODY_SENSORS is enforced INSIDE the bound
+    service at call time. This app deliberately declares NEITHER BODY_SENSORS NOR
+    ACTIVITY_RECOGNITION to test that.
+    -->
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="false"
+        android:label="Weather Widget"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Weather Widget">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

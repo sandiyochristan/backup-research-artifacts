@@ -1,0 +1,60 @@
+07-12 12:56:17.407  2036 13552 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+07-12 12:57:17.775  2036 13884 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+07-12 12:58:18.131  2036 13954 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+07-12 12:59:18.495  2036 13980 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+07-12 13:00:05.038  3503  4052 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=58 ]
+07-12 13:00:05.038  3503  4280 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[ba9ff2da-5678]>Handler" thread_id=63 ]
+07-12 13:00:05.051  3503  4280 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:449] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+07-12 13:00:05.442 31946 12925 I BugleRcsProvisioning: RcsProvisioningTrigger: Reconfiguration response, restarting provisioning
+07-12 13:00:05.446 31946 12925 I BugleRcsEngine: Rcs Configuration was updated [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=554 ]
+07-12 13:00:05.447 31946 12925 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1 [CONTEXT thread_id=554 ]
+07-12 13:00:05.447 31946 12925 I RcsProvisioningWorkMana: Restart provisioning: 3
+07-12 13:00:05.447 31946 12925 I RcsAvailabilityLogWorke: RcsAvailabilityLogWorkerScheduler is cancelled
+07-12 13:00:05.447 31946 12925 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@1e2071e
+07-12 13:00:05.450 31946 14151 I RcsAvailabilityLogWorke: RcsAvailabilityLogWorkerScheduler is cancelled
+07-12 13:00:05.450 31946 14151 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@664b91b
+07-12 13:00:05.454 31946 12925 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:14,last3:345] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=554 ]
+07-12 13:00:05.455 31946 12925 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@b8bcbf7
+07-12 13:00:05.461 31946 12925 I RcsProvisioningWorkMana: Scheduled config refresh with 0 seconds delay, false appendIfExists
+07-12 13:00:05.462 31946 12925 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@2ac73ce
+07-12 13:00:05.462 31946 14010 I SharedPreferencesSimSta: SharedPreferencesSimStateStore: No sim subscription info found for RCS provisioning id
+07-12 13:00:05.462 31946 14151 I RcsProvisioningWorkMana: Cancel Provisioning work for simId: redacted-pii:sim_id[chars:20,last3:449], operation result is: SUCCESS, trigger is SIP_403_RESPONSE
+07-12 13:00:05.467 31946 14010 I RcsAvailabilityCache: Cached availability not found for simId: redacted-pii:sim_id[chars:10,last3:sim]
+07-12 13:00:05.477 31946 14151 I BugleRcsProvisioning: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:449], currentAvailability: 9, newAvailability: 9, hint: NO_HINT
+07-12 13:00:05.477 31946 14151 I RcsProvisioningWorkMana: Skipping provisioning scheduling since RCS is disabled
+07-12 13:00:05.478 31946 14160 I RcsProvisioningWorkMana: Cancel All Provisioning work operation result is: SUCCESS, trigger is CSLIB_PHENOTYPE_UPDATE
+07-12 13:00:05.478 31946 14161 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled due to SIM absent, lastAvailabilityLocal is RCS is disabled due to SIM absent, simId hash = 3743328124051010539, simId = redacted-pii:sim_id[chars:20,last3:449], isPev3Enabled = true
+07-12 13:00:05.478 31946 14010 I Bugle   : MobileConfigurationRetriever: Cannot retrieve rcs onboarding flags in configuration right now, return default flags instead.
+07-12 13:00:05.480 31946 14010 I SharedPreferencesSimSta: SharedPreferencesSimStateStore: No sim subscription info found for RCS provisioning id
+07-12 13:00:05.480 31946 14010 I BugleRcsProvisioning: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:10,last3:sim], currentAvailability: 1, newAvailability: 9, hint: NO_HINT
+07-12 13:00:05.483 31946 14154 D WM-SystemJobScheduler: Scheduling work ID de9e7f59-d864-42a6-a66b-022379ddab35 (com.google.android.apps.messaging.shared.rcs.availability.metrics.RcsAvailabilityLogWorker), Job ID 2677
+07-12 13:00:05.484 31946 14010 I RcsProvisioningManager: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:10,last3:sim], availability = RcsAvailability{mAvailability=DISABLED_SIM_ABSENT (RCS is disabled due to SIM absent)}
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: getAvailableProvisioningIds: accessing uninitialized provisioning identities. [CONTEXT ratelimit_period="1 MINUTES" ]
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: fkqb: FULL
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at ecpr.x(PG:60)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at ecwu.a(PG:5)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at ecwx.a(PG:17)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at ednf.run(PG:9)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at filr.run(PG:25)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at enyw.run(PG:7)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at enya.run(PG:13)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at java.lang.Thread.run(Thread.java:1569)
+07-12 13:00:05.490 31946 14151 I RcsProvisioningIdMap: 	at enzt.run(PG:62)
+07-12 13:00:05.490 31946 14163 I RcsProvisioningManager: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener dekv@9fe672a onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:10,last3:sim], availability = 9
+07-12 13:00:05.490 31946 14010 I SharedPreferencesSimSta: SharedPreferencesSimStateStore: No sim subscription info found for RCS provisioning id
+07-12 13:00:05.490 31946 14010 I RcsProvisioningWorkMana: Skipping provisioning scheduling since RCS is disabled
+07-12 13:00:05.491 31946 14162 I RcsProvisioningManager: Cannot notify RcsVerifiedPhoneNumberListener because current availability is DISABLED_SIM_ABSENT instead of AVAILABLE.
+07-12 13:00:05.491 31946 12925 I RcsProvisioningManager: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener dkhi@3c30aae onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:10,last3:sim], availability = 9
+07-12 13:00:05.492 31946 14151 I RcsProvisioningManager: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener dwnq@93ce91b onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:25,last3:im)], available rcs provisioning ids  = 
+07-12 13:00:05.492 31946 14010 I BugleTransport: Retrieved RCS available simIds: []
+07-12 13:00:05.493 31946 12925 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: SINGLE_REGISTRATION.
+07-12 13:00:05.493 31946 14162 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: TACHYGRAM.
+07-12 13:00:05.493 31946 14163 I BugleTransport: Deregister all SIMs except for SIMs with subIds: [] from chat transport: DUAL_REGISTRATION.
+07-12 13:00:05.494 31946 14162 I RcsClientLib: Service is deprecated skipping connection attempt: RcsEngineLifecycleServiceV2
+07-12 13:00:05.495 31946 31991 I BugleRcsJibe: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+07-12 13:00:18.833  2036 14181 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+07-12 13:01:10.160 14034 14037 I artd    : GetBestInfo: odex in dalvik-cache (/data/dalvik-cache/arm64/system@priv-app@ManagedProvisioning@ManagedProvisioning.apk@classes.dex) is kOatUpToDate with filter 'verify' executable 'false'
+07-12 13:01:11.425 14034 14034 I artd    : GetBestInfo: odex in dalvik-cache (/data/dalvik-cache/arm64/system_ext@priv-app@ShannonRcs@ShannonRcs.apk@classes.dex) is kOatUpToDate with filter 'verify' executable 'false'
+07-12 13:01:19.161  2036 14318 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false

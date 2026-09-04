@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.confuseddeputy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  ZERO DANGEROUS PERMISSIONS                                      ║
+    ║  No SEND_SMS, No CALL_PHONE, No READ_CONTACTS                   ║
+    ║  No INTERNET — pure offline exploitation via Data Layer          ║
+    ║                                                                    ║
+    ║  This app exploits the Confused Deputy vulnerability in           ║
+    ║  the Pixel Watch Companion App's ExecuteRemoteActionService      ║
+    ║  to send SMS from the PHONE without any SMS permission.          ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="Watch Helper"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.poc.confuseddeputy.MainActivity"
+            android:exported="true"
+            android:label="Watch Helper" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

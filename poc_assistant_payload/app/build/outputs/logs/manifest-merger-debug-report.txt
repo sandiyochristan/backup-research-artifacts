@@ -1,0 +1,169 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/74680dd4d5198f7fd11c5e7d79ed1622/transformed/play-services-wearable-18.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/bac2d1be75a57b04a8b8963e016b2773/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8d3c723f2414c2abecd60cd097727df2/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/4450cbc2adb0c82eb264b3448b97f425/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/e74086c902f113f72d4a5b4041dfff15/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7debd23f817d6ef5835726f01964148b/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/ebfbf686b608d662d0611aed4ff1ef51/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/6100cf6f23dc2239fb1ac97df9246f65/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/02b8cf16f46f566caff0e88503a68e38/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/04a7362496ff9b7823647e2478cc7216/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/542084e495069f48478ce6211cf5f584/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/5146ddb8d4096577d32e393e52d39cd5/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/58404f2d307122e43012e6f84325621a/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/2e270924878592c663381d4318c9016f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/df93343816f27c5865fd390859d1e0ed/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/d5f86b7d33ba399e302360d16d2546d5/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/a450f5f8ef282d360ca53a3530dbce00/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/d7b34845f04a6dd04477a9c5d020e1b8/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8d5c6bb78dd9d103876cbf9b712cbab4/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/75c12c5bce587ba4d5dae8c528e8c433/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/0f1061c6bb8e2e496f2893bf1274e5c8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/dc563d1cd12fc4733d600d49fae1bb9c/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/a4f8228da410b0c6a200fbe5b23100db/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/924517e67a337932f11f4a48d461b8c4/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:3:5-39
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.type.watch
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:18:5-64
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:18:19-61
+application
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:20:5-40:19
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:20:5-40:19
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/74680dd4d5198f7fd11c5e7d79ed1622/transformed/play-services-wearable-18.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/74680dd4d5198f7fd11c5e7d79ed1622/transformed/play-services-wearable-18.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/bac2d1be75a57b04a8b8963e016b2773/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/bac2d1be75a57b04a8b8963e016b2773/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/2e270924878592c663381d4318c9016f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/2e270924878592c663381d4318c9016f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:23:9-35
+	android:label
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:22:9-39
+	android:allowBackup
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:21:9-36
+	android:theme
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:24:9-59
+activity#com.poc.assistantpayload.MainActivity
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:26:9-34:20
+	android:label
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:29:13-43
+	android:exported
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:27:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:30:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:32:27-74
+meta-data#com.google.android.gms.version
+ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:36:9-38:69
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:38:13-66
+	android:name
+		ADDED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:37:13-58
+uses-sdk
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/74680dd4d5198f7fd11c5e7d79ed1622/transformed/play-services-wearable-18.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/74680dd4d5198f7fd11c5e7d79ed1622/transformed/play-services-wearable-18.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/bac2d1be75a57b04a8b8963e016b2773/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/bac2d1be75a57b04a8b8963e016b2773/transformed/play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8d3c723f2414c2abecd60cd097727df2/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8d3c723f2414c2abecd60cd097727df2/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/4450cbc2adb0c82eb264b3448b97f425/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/4450cbc2adb0c82eb264b3448b97f425/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/e74086c902f113f72d4a5b4041dfff15/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/e74086c902f113f72d4a5b4041dfff15/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7debd23f817d6ef5835726f01964148b/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7debd23f817d6ef5835726f01964148b/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/ebfbf686b608d662d0611aed4ff1ef51/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/ebfbf686b608d662d0611aed4ff1ef51/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/6100cf6f23dc2239fb1ac97df9246f65/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/6100cf6f23dc2239fb1ac97df9246f65/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/02b8cf16f46f566caff0e88503a68e38/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/02b8cf16f46f566caff0e88503a68e38/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/04a7362496ff9b7823647e2478cc7216/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/04a7362496ff9b7823647e2478cc7216/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/542084e495069f48478ce6211cf5f584/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/542084e495069f48478ce6211cf5f584/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/5146ddb8d4096577d32e393e52d39cd5/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/5146ddb8d4096577d32e393e52d39cd5/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/58404f2d307122e43012e6f84325621a/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/58404f2d307122e43012e6f84325621a/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/2e270924878592c663381d4318c9016f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/2e270924878592c663381d4318c9016f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/df93343816f27c5865fd390859d1e0ed/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/df93343816f27c5865fd390859d1e0ed/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/d5f86b7d33ba399e302360d16d2546d5/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/d5f86b7d33ba399e302360d16d2546d5/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/a450f5f8ef282d360ca53a3530dbce00/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/a450f5f8ef282d360ca53a3530dbce00/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/d7b34845f04a6dd04477a9c5d020e1b8/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/d7b34845f04a6dd04477a9c5d020e1b8/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8d5c6bb78dd9d103876cbf9b712cbab4/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8d5c6bb78dd9d103876cbf9b712cbab4/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/75c12c5bce587ba4d5dae8c528e8c433/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/75c12c5bce587ba4d5dae8c528e8c433/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/0f1061c6bb8e2e496f2893bf1274e5c8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/0f1061c6bb8e2e496f2893bf1274e5c8/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/dc563d1cd12fc4733d600d49fae1bb9c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/dc563d1cd12fc4733d600d49fae1bb9c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/a4f8228da410b0c6a200fbe5b23100db/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/a4f8228da410b0c6a200fbe5b23100db/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/924517e67a337932f11f4a48d461b8c4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/924517e67a337932f11f4a48d461b8c4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85

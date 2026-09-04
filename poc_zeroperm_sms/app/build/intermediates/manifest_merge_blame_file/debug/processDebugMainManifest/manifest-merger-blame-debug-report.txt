@@ -1,0 +1,59 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.zeropermsms"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12    RESEARCH: closes an item left open in prior sessions (pulled_apks/WHAT_TO_DO_NEXT.md
+13    "Option A", pulled_apks/RESEARCH_STATUS.md). VRP_REPORT_SILENT_SMS_FINAL.md confirmed
+14    that an app WITH SEND_SMS granted can abuse SendToProxyActivityWithPrivilege's
+15    auto-confirm-during-a-call behavior to send SMS silently. That report states the
+16    permission check happens at activity-start time ("SEND_SMS (runtime check on caller)")
+17    but the zero-permission variant (does the check even fire for an app that never
+18    declares SEND_SMS at all) was never actually run. This app deliberately declares
+19    NO permissions of any kind.
+20    -->
+21
+22    <uses-feature android:name="android.hardware.type.watch" />
+22-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:16:5-64
+22-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:16:19-61
+23
+24    <application
+24-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:18:5-34:19
+25        android:allowBackup="false"
+25-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:19:9-36
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:label="Weather Widget"
+28-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:20:9-39
+29        android:supportsRtl="true"
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:21:9-35
+30        android:theme="@android:style/Theme.DeviceDefault" >
+30-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:22:9-59
+31        <activity
+31-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:24:9-32:20
+32            android:name="com.poc.zeropermsms.MainActivity"
+32-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:25:13-41
+33            android:exported="true"
+33-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:26:13-36
+34            android:label="Weather Widget" >
+34-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:27:13-43
+35            <intent-filter>
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:28:13-31:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:29:17-69
+36-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:29:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:30:17-77
+38-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/AndroidManifest.xml:30:27-74
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>

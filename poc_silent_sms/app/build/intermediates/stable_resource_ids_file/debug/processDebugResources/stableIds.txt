@@ -1,0 +1,3 @@
+com.poc.silentsms:string/app_name = 0x7f030000
+com.poc.silentsms:layout/activity_main = 0x7f020000
+com.poc.silentsms:id/status_text = 0x7f010000

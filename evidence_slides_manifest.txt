@@ -1,0 +1,29 @@
+=== Google Slides - LegacyStorageBackendContentProvider Manifest Evidence ===
+Extracted: Sat Jul 11 14:52:48 IST 2026
+
+      E: service (line=926)
+        A: android:name(0x01010003)="com.google.android.apps.docs.editors.changeling.punch.ChangelingPunchExportService" (Raw: "com.google.android.apps.docs.editors.changeling.punch.ChangelingPunchExportService")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:foregroundServiceType(0x01010599)=(type 0x11)0x800
+      E: provider (line=939)
+        A: android:name(0x01010003)="com.google.android.apps.docs.common.storagebackend.LegacyStorageBackendContentProvider" (Raw: "com.google.android.apps.docs.common.storagebackend.LegacyStorageBackendContentProvider")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:authorities(0x01010018)="com.google.android.apps.docs.editors.punch.storage.legacy" (Raw: "com.google.android.apps.docs.editors.punch.storage.legacy")
+      E: activity (line=945)
+        A: android:theme(0x01010000)=@0x7f15020d
+        A: android:label(0x01010001)=@0x7f1427c2
+        A: android:icon(0x01010002)=@0x7f080864
+        A: android:name(0x01010003)="com.google.android.apps.docs.editors.menu.ocm.ShareOptionsActivity" (Raw: "com.google.android.apps.docs.editors.menu.ocm.ShareOptionsActivity")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:configChanges(0x0101001f)=(type 0x11)0x40000db4
+      E: activity (line=957)
+        A: android:theme(0x01010000)=@0x7f150210
+        A: android:name(0x01010003)="com.google.android.apps.docs.editors.ocm.conversion.DocumentConversionUploadActivity" (Raw: "com.google.android.apps.docs.editors.ocm.conversion.DocumentConversionUploadActivity")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:noHistory(0x0101022d)=(type 0x12)0x0
+      E: activity (line=963)
+
+=== KEY FINDINGS ===
+android:exported = 0xffffffff (TRUE)
+android:permission = NOT PRESENT (no permission required)
+android:authorities = com.google.android.apps.docs.editors.punch.storage.legacy

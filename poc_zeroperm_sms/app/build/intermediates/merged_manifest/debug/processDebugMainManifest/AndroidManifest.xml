@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.zeropermsms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="34" />
+
+    <!--
+    RESEARCH: closes an item left open in prior sessions (pulled_apks/WHAT_TO_DO_NEXT.md
+    "Option A", pulled_apks/RESEARCH_STATUS.md). VRP_REPORT_SILENT_SMS_FINAL.md confirmed
+    that an app WITH SEND_SMS granted can abuse SendToProxyActivityWithPrivilege's
+    auto-confirm-during-a-call behavior to send SMS silently. That report states the
+    permission check happens at activity-start time ("SEND_SMS (runtime check on caller)")
+    but the zero-permission variant (does the check even fire for an app that never
+    declares SEND_SMS at all) was never actually run. This app deliberately declares
+    NO permissions of any kind.
+    -->
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="Weather Widget"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name="com.poc.zeropermsms.MainActivity"
+            android:exported="true"
+            android:label="Weather Widget" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

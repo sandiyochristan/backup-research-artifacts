@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.poc.confuseddeputy.app-mergeDebugResources-6:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

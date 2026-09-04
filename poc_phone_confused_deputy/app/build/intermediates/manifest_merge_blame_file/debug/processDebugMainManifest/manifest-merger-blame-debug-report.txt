@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.confuseddeputy"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12    ╔══════════════════════════════════════════════════════════════════╗
+13    ║  ZERO DANGEROUS PERMISSIONS                                      ║
+14    ║  No SEND_SMS, No CALL_PHONE, No READ_CONTACTS                   ║
+15    ║  No INTERNET — pure offline exploitation via Data Layer          ║
+16    ║                                                                    ║
+17    ║  This app exploits the Confused Deputy vulnerability in           ║
+18    ║  the Pixel Watch Companion App's ExecuteRemoteActionService      ║
+19    ║  to send SMS from the PHONE without any SMS permission.          ║
+20    ╚══════════════════════════════════════════════════════════════════╝
+21    -->
+22    <application
+22-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:17:5-33:19
+23        android:allowBackup="false"
+23-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:18:9-36
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:label="Watch Helper"
+27-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:19:9-37
+28        android:supportsRtl="true"
+28-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:20:9-35
+29        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:21:9-67
+30        <activity
+30-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:23:9-31:20
+31            android:name="com.poc.confuseddeputy.MainActivity"
+31-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:24:13-41
+32            android:exported="true"
+32-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:25:13-36
+33            android:label="Watch Helper" >
+33-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:26:13-41
+34            <intent-filter>
+34-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:27:13-30:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:28:17-69
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:28:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:29:17-77
+37-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_phone_confused_deputy/app/src/main/AndroidManifest.xml:29:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+41            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+41-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+42            android:exported="false"
+42-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+43            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+43-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+44
+45        <meta-data
+45-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+46            android:name="com.google.android.gms.version"
+46-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+47            android:value="@integer/google_play_services_version" />
+47-->[com.google.android.gms:play-services-basement:18.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/8301b16a7e9a7269e066506d0a3cf41e/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+48    </application>
+49
+50</manifest>

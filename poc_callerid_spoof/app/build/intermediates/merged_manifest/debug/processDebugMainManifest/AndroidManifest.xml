@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.calleridspoof"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="34" />
+
+    <!--
+    RESEARCH HYPOTHESIS (phase 2): android.permission.MANAGE_OWN_CALLS is a NORMAL
+    (install-time, no runtime prompt) permission. Phase 1 (this session) confirmed
+    that it lets any app force genuine Telecom RINGING state + ringer audio-focus
+    hijack with a fully attacker-controlled caller ID via a self-managed
+    PhoneAccount, but produces no visible UI on its own (WearInCallService, the
+    only self-managed-aware InCallService on this build, doesn't supply UI).
+
+    Phase 2 tests the natural follow-on: if the app does what a well-behaved
+    self-managed calling app is supposed to do, and posts its own
+    Notification.CallStyle full-screen-intent notification, does the resulting
+    UI, backed by genuine Telecom RINGING/MODE_RINGTONE state, become
+    indistinguishable from a real incoming call for spoofing/vishing purposes?
+    POST_NOTIFICATIONS is a runtime-prompted permission on API 33+, but it's an
+    entirely unsurprising ask for a "calling" app and is not tied to any special
+    telephony trust.
+    -->
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="Fitness Tracker"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name="com.poc.calleridspoof.MainActivity"
+            android:exported="true"
+            android:label="Fitness Tracker" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.poc.calleridspoof.IncomingCallActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:showWhenLocked="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:turnScreenOn="true" />
+
+        <service
+            android:name="com.poc.calleridspoof.SpoofConnectionService"
+            android:exported="true"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE" >
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

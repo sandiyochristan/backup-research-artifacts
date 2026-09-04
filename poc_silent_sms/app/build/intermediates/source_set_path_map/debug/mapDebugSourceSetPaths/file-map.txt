@@ -1,0 +1,7 @@
+com.poc.silentsms.app-pngs-0 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/build/generated/res/pngs/debug
+com.poc.silentsms.app-resValues-1 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/build/generated/res/resValues/debug
+com.poc.silentsms.app-packageDebugResources-2 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.poc.silentsms.app-packageDebugResources-3 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.poc.silentsms.app-debug-4 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.poc.silentsms.app-debug-5 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/debug/res
+com.poc.silentsms.app-main-6 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/res

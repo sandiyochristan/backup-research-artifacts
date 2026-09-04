@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.assistantpayload"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12    RESEARCH: rigorous re-test of the previously-confirmed (but weakly validated)
+13    finding in pulled_apks/VRP_REPORT_ASSISTANT.md. That report only proved
+14    ProactiveWearableListenerService can be *started* via `am startservice` (no
+15    SecurityException); it did not prove a real Data Layer payload actually
+16    reaches onDataChanged(). This app declares ZERO permissions (AM-1 threat
+17    model: malicious watch app) and uses the real
+18    com.google.android.gms.wearable.DataClient API to write a DataItem at
+19    /assistant/proactive, exactly as a legitimate proactive-suggestion producer
+20    would, to see if the unexported-by-permission ProactiveWearableListenerService
+21    genuinely processes attacker-controlled data.
+22    -->
+23
+24    <uses-feature android:name="android.hardware.type.watch" />
+24-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:18:5-64
+24-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:18:19-61
+25
+26    <application
+26-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:20:5-40:19
+27        android:allowBackup="false"
+27-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:21:9-36
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.2.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/7d16e02af61c525bf5870cef2ce5d58c/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:label="Weather Widget"
+31-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:22:9-39
+32        android:supportsRtl="true"
+32-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:23:9-35
+33        android:theme="@android:style/Theme.DeviceDefault" >
+33-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:24:9-59
+34        <activity
+34-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:26:9-34:20
+35            android:name="com.poc.assistantpayload.MainActivity"
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:27:13-41
+36            android:exported="true"
+36-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:28:13-36
+37            android:label="Weather Widget" >
+37-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:29:13-43
+38            <intent-filter>
+38-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:30:13-33:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:31:17-69
+39-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:31:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:32:17-77
+41-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:32:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <meta-data
+45-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:36:9-38:69
+46            android:name="com.google.android.gms.version"
+46-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:37:13-58
+47            android:value="@integer/google_play_services_version" />
+47-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_assistant_payload/app/src/main/AndroidManifest.xml:38:13-66
+48
+49        <activity
+49-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+50            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+50-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+51            android:exported="false"
+51-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+52            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+52-->[com.google.android.gms:play-services-base:18.0.1] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/90c89e90ec31c9aff35c76cbf7d027dd/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+53    </application>
+54
+55</manifest>

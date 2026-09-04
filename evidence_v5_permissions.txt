@@ -1,0 +1,13 @@
+      com.google.android.gms.dck.permission.DIGITAL_KEY_WRITE: granted=true
+      com.google.android.apps.maps.permission.ASSISTANT_GRPC_SYNC: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.googlequicksearchbox.permission.LENS_SERVICE: granted=true
+      com.google.android.messages.rcs.PROVISIONING_EVENT: granted=true
+      com.google.android.apps.messaging.shared.satelliteapi.endpointservice.ACCESS_ENDPOINT_SERVICE: granted=true
+      com.google.android.ims.services.ACCESS_MESSAGING_SERVICE: granted=true
+      com.google.android.ims.messaging.ACCESS_MESSAGING_ENGINE_SERVICE: granted=true
+      com.google.android.apps.safetyhub.carcrash.settings.READ: granted=true
+      com.google.android.apps.docs.permission.SYNC_STATUS: granted=true
+      com.google.android.apps.messaging.services.ACCESS_MESSAGING_NOTIFICATION_SERVICE: granted=true
+      com.google.android.gms.dck.permission.DIGITAL_KEY_READ: granted=true
+      com.google.android.apps.scone.connectivitymonitor.permission.WRITE_NIMBUS_DATA: granted=true

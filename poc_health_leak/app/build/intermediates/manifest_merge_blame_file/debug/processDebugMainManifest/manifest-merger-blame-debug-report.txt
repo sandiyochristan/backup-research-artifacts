@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.healthleak"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12    RESEARCH: Vector 2 from wear_os_bugbounty_skill.md, previously uncatalogued as
+13    tested. com.google.android.wearable.healthservices exports
+14    MeasureApiService / PassiveMonitoringApiService / ExerciseApiService with NO
+15    manifest-level <service android:permission=...> guard (confirmed via live
+16    manifest pull, 2026-08-17). That's architecturally normal for an AIDL client
+17    API; the real question is whether BODY_SENSORS is enforced INSIDE the bound
+18    service at call time. This app deliberately declares NEITHER BODY_SENSORS NOR
+19    ACTIVITY_RECOGNITION to test that.
+20    -->
+21
+22    <uses-feature android:name="android.hardware.type.watch" />
+22-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:16:5-64
+22-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:16:19-61
+23
+24    <queries>
+24-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:19:5-21:15
+25        <package android:name="com.google.android.wearable.healthservices" />
+25-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:20:9-78
+25-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:20:18-75
+26    </queries>
+27
+28    <application
+28-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:18:5-34:19
+29        android:allowBackup="false"
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:19:9-36
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.7.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/32862b775441724e60a712a5e96f1d61/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:label="Weather Widget"
+33-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:20:9-39
+34        android:supportsRtl="true"
+34-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:21:9-35
+35        android:theme="@android:style/Theme.DeviceDefault" >
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:22:9-59
+36        <activity
+36-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:24:9-32:20
+37            android:name="com.poc.healthleak.MainActivity"
+37-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:25:13-41
+38            android:exported="true"
+38-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:26:13-36
+39            android:label="Weather Widget" >
+39-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:27:13-43
+40            <intent-filter>
+40-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:28:13-31:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:29:17-69
+41-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:29:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:30:17-77
+43-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_health_leak/app/src/main/AndroidManifest.xml:30:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <service
+47-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:24:9-31:19
+48            android:name="androidx.health.services.client.VersionApiService"
+48-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:25:13-77
+49            android:exported="true"
+49-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:26:13-36
+50            android:permission="com.google.android.wearable.healthservices.permission.PASSIVE_DATA_BINDING" >
+50-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:27:13-108
+51            <intent-filter>
+51-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:28:13-30:29
+52                <action android:name="hs.versionclient.BIND" />
+52-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:29:17-64
+52-->[androidx.health:health-services-client:1.0.0] /Users/sandiyochristan/.gradle/caches/9.3.0/transforms/22d56d4fce6b6c8b4324c2ad354195f3/transformed/health-services-client-1.0.0/AndroidManifest.xml:29:25-61
+53            </intent-filter>
+54        </service>
+55    </application>
+56
+57</manifest>

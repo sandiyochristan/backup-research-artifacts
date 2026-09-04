@@ -1,0 +1,328 @@
+--------- beginning of main
+07-14 23:08:40.625 31438 31438 D VRP_POC : ========================================
+07-14 23:08:40.625 31438 31438 D VRP_POC :   MULTI-APP GOOGLE VRP PoC v9
+07-14 23:08:40.625 31438 31438 D VRP_POC :   Cross-App Permission & Provider Audit
+07-14 23:08:40.625 31438 31438 D VRP_POC : ========================================
+07-14 23:08:40.625 31438 31438 D VRP_POC : Package: com.vrppoc
+07-14 23:08:40.625 31438 31438 D VRP_POC : UID: 10346
+07-14 23:08:40.625 31438 31438 D VRP_POC : 
+07-14 23:08:40.625 31438 31438 D VRP_POC : === PHASE 1: Permission Auto-Grant Verification ===
+07-14 23:08:40.625 31438 31438 D VRP_POC : Testing if normal permissions are auto-granted...
+07-14 23:08:40.625 31438 31438 D VRP_POC :   [GRANTED] Messages: RCS Provisioning
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] Messages: Satellite Endpoint
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] Messages: IMS Messaging
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] Messages: Engine Service
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] Messages: RCS Notification Server
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] Maps: Assistant gRPC
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] Lens: Service Binding
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] GSF: GServices Read
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] GMS: Digital Car Key Read
+07-14 23:08:40.626 31438 31438 D VRP_POC :   [GRANTED] GMS: Digital Car Key Write
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Drive: Sync Status
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] SafetyHub: Car Crash Read
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] AI Core: Bind Service
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] GMS: Inject Gesture
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] GMS: Activity Recognition
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] GMS: Ad ID
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Docs: Sync Status
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Sheets: Sync Status
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Slides: Sync Status
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Settings: Battery Usage
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Diagnostics: Raw Sensor
+07-14 23:08:40.627 31438 31438 D VRP_POC :   [GRANTED] Play Store: Referrer
+07-14 23:08:40.628 31438 31438 D VRP_POC :   [GRANTED] SetupWizard: Device Origin
+07-14 23:08:40.628 31438 31438 D VRP_POC :   [GRANTED] GMS: Ad ID Notification
+07-14 23:08:40.628 31438 31438 D VRP_POC :   [GRANTED] GMS: Cloud Messaging
+07-14 23:08:40.628 31438 31438 D VRP_POC :   [GRANTED] Scone: Write Nimbus Data
+07-14 23:08:40.628 31438 31438 D VRP_POC :   [GRANTED] SetupWizard: Compat Service
+07-14 23:08:40.628 31438 31438 D VRP_POC : Result: 27/27 auto-granted
+07-14 23:08:40.628 31438 31438 D VRP_POC : === PHASE 2: Google Messages Service Binding ===
+07-14 23:08:40.628 31438 31438 D VRP_POC : 5 normal permissions protect exported services
+07-14 23:08:40.632 31438 31438 D VRP_POC :   bindService(Satellite gRPC Endpoint) = true
+07-14 23:08:40.633 31438 31438 D VRP_POC :   bindService(RCS Notification Server) = true
+07-14 23:08:40.633 31438 31438 D VRP_POC :   [BLOCKED] IMS Messaging Engine: SecurityException
+07-14 23:08:40.633 31438 31438 D VRP_POC : 
+07-14 23:08:40.633 31438 31438 D VRP_POC : === PHASE 3: Google Maps Assistant gRPC ===
+07-14 23:08:40.633 31438 31438 D VRP_POC : ASSISTANT_GRPC_SYNC = protectionLevel normal
+07-14 23:08:40.635 31438 31438 D VRP_POC :   bindService(Maps Assistant gRPC) = true
+07-14 23:08:40.635 31438 31438 D VRP_POC : 
+07-14 23:08:40.635 31438 31438 D VRP_POC : === PHASE 4: Google Lens Service ===
+07-14 23:08:40.635 31438 31438 D VRP_POC : LENS_SERVICE = protectionLevel normal
+07-14 23:08:40.639 31438 31438 D VRP_POC :   bindService(Lens) = true
+07-14 23:08:40.639 31438 31438 D VRP_POC : 
+07-14 23:08:40.639 31438 31438 D VRP_POC : === PHASE 5: Google Drive DocumentsProvider Access ===
+07-14 23:08:40.639 31438 31438 D VRP_POC : Testing SAF DocumentsProvider for file listing + read
+07-14 23:08:40.639 31438 31438 D VRP_POC :   --- Step 1: Query Drive roots ---
+07-14 23:08:40.640 31438 31438 D VRP_POC :   [BLOCKED] Drive roots: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider from ProcessRecord{84c37ea 31438:com.vrppoc/u0a346} (pid=31438, uid=10346) requires that you obtain access using ACTION_OPEN_DOCUMENT or related APIs
+07-14 23:08:40.640 31438 31438 D VRP_POC :   --- Step 2: Enumerate My Drive files ---
+07-14 23:08:40.641 31438 31438 D VRP_POC :   [BLOCKED] My Drive listing: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider from ProcessRecord{84c37ea 31438:com.vrppoc/u0a346} (pid=31438, uid=10346) requires that you obtain access using ACTION_OPEN_DOCUMENT or related APIs
+07-14 23:08:40.641 31438 31438 D VRP_POC :   --- Step 3: Enumerate Shared with me ---
+07-14 23:08:40.641 31438 31438 D VRP_POC :   [BLOCKED] Shared listing: Permission Denial: opening provider com.google.android.apps.docs.common.storagebackend.StorageBackendContentProvider from ProcessRecord{84c37ea 31438:com.vrppoc/u0a346} (pid=31438, uid=10346) requires that you obtain access using ACTION_OPEN_DOCUMENT or related APIs
+07-14 23:08:40.641 31438 31438 D VRP_POC :   --- Step 4: Read file content (openFile) ---
+07-14 23:08:40.642 31438 31438 D VRP_POC :   File read test: SecurityException
+07-14 23:08:40.642 31438 31438 D VRP_POC :   --- SafetyHub Car Crash Settings ---
+07-14 23:08:40.647 31438 31438 D VRP_POC :   [ACCESS] CarCrash: UnsupportedOperationException: null
+07-14 23:08:40.647 31438 31438 D VRP_POC :   --- GServices from app (selectionArgs fix) ---
+07-14 23:08:40.651 31438 31438 D VRP_POC :   [LEAK] android_id = null
+07-14 23:08:40.652 31438 31438 D VRP_POC :   [LEAK] digest = 1-93429ad634b6b0ef49555e121a1f233829720f
+07-14 23:08:40.653 31438 31438 D VRP_POC :   [LEAK] checkin_last_checkin_time = null
+07-14 23:08:40.656 31438 31438 D VRP_POC :   [LEAK] prefix dump: 1404 entries
+07-14 23:08:40.657 31438 31438 D VRP_POC :     ChimeraCriticalPath__kids_feature_allowed_when_unprovisioned = true
+07-14 23:08:40.657 31438 31438 D VRP_POC :     Tasks:enable_network_metric = true
+07-14 23:08:40.657 31438 31438 D VRP_POC :     Tasks:enable_package_metric = true
+07-14 23:08:40.657 31438 31438 D VRP_POC :     Ulr__accuracy_multiplier = 1.7
+07-14 23:08:40.657 31438 31438 D VRP_POC :     Ulr__min_delta_meters = 200.0
+07-14 23:08:40.657 31438 31438 D VRP_POC :     account_recovery_enabled = false
+07-14 23:08:40.657 31438 31438 D VRP_POC :     account_recovery_silence_default_ms = 259200000
+07-14 23:08:40.657 31438 31438 D VRP_POC :     account_recovery_silence_randomize_ms = 518400000
+07-14 23:08:40.658 31438 31438 D VRP_POC :   API keys: 3, URLs: 86
+07-14 23:08:40.658 31438 31438 D VRP_POC :   [KEY] copresence:api_key = AIzaSyB11LJUdYyY6pjP2NlPPT1pHcxAflWksnc
+07-14 23:08:40.659 31438 31438 D VRP_POC :   [KEY] deskclock:timezone_api_key = AIzaSyBUcCPilPlw0sWDaXdmNScHS4N0jm31D-I
+07-14 23:08:40.659 31438 31438 D VRP_POC :   [KEY] googletts:v2_api_key = AIzaSyA33f9cSqKdR-V4XNkZNZ_rh_dbT1VQJFo
+07-14 23:08:40.659 31438 31438 D VRP_POC : 
+07-14 23:08:40.659 31438 31438 D VRP_POC : === PHASE 6: Carrier Services Broadcast Injection ===
+07-14 23:08:40.659 31438 31438 D VRP_POC : CMBroadCastReceiver: exported, NO permission
+07-14 23:08:40.659 31438 31438 D VRP_POC :   [SENT] Radio state toggle
+07-14 23:08:40.662 31438 31438 D VRP_POC :   [SENT] Delete connectivity logs
+07-14 23:08:40.663 31438 31438 D VRP_POC :   [SENT] Create test DB
+07-14 23:08:40.664 31438 31438 D VRP_POC :   [SENT] Trigger bugreport
+07-14 23:08:40.664 31438 31438 D VRP_POC :   4/4 broadcasts accepted by Carrier Services
+07-14 23:08:40.664 31438 31438 D VRP_POC : 
+07-14 23:08:40.664 31438 31438 D VRP_POC : === PHASE 7: GServices Full Extraction ===
+07-14 23:08:40.664 31438 31438 D VRP_POC : READ_GSERVICES = protectionLevel normal
+07-14 23:08:40.664 31438 31438 D VRP_POC : Key insight: provider uses selectionArgs, not selection
+07-14 23:08:40.667 31438 31438 D VRP_POC :   [LEAK] Total GServices entries: 1404
+07-14 23:08:40.670 31438 31438 D VRP_POC :     API Keys: 3
+07-14 23:08:40.670 31438 31438 D VRP_POC :     URLs/Endpoints: 86
+07-14 23:08:40.670 31438 31438 D VRP_POC :     Certificates: 10
+07-14 23:08:40.670 31438 31438 D VRP_POC :     Auth/Token configs: 68
+07-14 23:08:40.670 31438 31438 D VRP_POC :   Sample leaked API keys:
+07-14 23:08:40.670 31438 31438 D VRP_POC :     copresence:api_key = AIzaSyB11LJUdYyY6pjP2NlPPT1pHcxAflWksnc
+07-14 23:08:40.670 31438 31438 D VRP_POC :     deskclock:timezone_api_key = AIzaSyBUcCPilPlw0sWDaXdmNScHS4N0jm31D-I
+07-14 23:08:40.671 31438 31438 D VRP_POC :     googletts:v2_api_key = AIzaSyA33f9cSqKdR-V4XNkZNZ_rh_dbT1VQJFo
+07-14 23:08:40.671 31438 31438 D VRP_POC :   Sample entries:
+07-14 23:08:40.671 31438 31438 D VRP_POC :     ChimeraCriticalPath__kids_feature_allowed_when_unprovisioned = true
+07-14 23:08:40.671 31438 31438 D VRP_POC :     Tasks:enable_network_metric = true
+07-14 23:08:40.671 31438 31438 D VRP_POC :     Tasks:enable_package_metric = true
+07-14 23:08:40.671 31438 31438 D VRP_POC :     Ulr__accuracy_multiplier = 1.7
+07-14 23:08:40.671 31438 31438 D VRP_POC :     Ulr__min_delta_meters = 200.0
+07-14 23:08:40.671 31438 31438 D VRP_POC :     account_recovery_enabled = false
+07-14 23:08:40.672 31438 31438 D VRP_POC :     account_recovery_silence_default_ms = 259200000
+07-14 23:08:40.672 31438 31438 D VRP_POC :     account_recovery_silence_randomize_ms = 518400000
+07-14 23:08:40.672 31438 31438 D VRP_POC :     adaptive_wifi_heartbeat_bad_rst_hb = true
+07-14 23:08:40.672 31438 31438 D VRP_POC :     adaptive_wifi_heartbeat_initial_interval = 2
+07-14 23:08:40.673 31438 31438 D VRP_POC :   Targeted key queries:
+07-14 23:08:40.675 31438 31438 D VRP_POC :     android_id = null
+07-14 23:08:40.676 31438 31438 D VRP_POC :     digest = 1-93429ad634b6b0ef49555e121a1f233829720f6b
+07-14 23:08:40.676 31438 31438 D VRP_POC :     url:usage_reporting_upload_url = null
+07-14 23:08:40.677 31438 31438 D VRP_POC :     gms:ads:adid_app_whitelist = null
+07-14 23:08:40.678 31438 31438 D VRP_POC :     finsky:billing_url = null
+07-14 23:08:40.678 31438 31438 D VRP_POC : 
+07-14 23:08:40.678 31438 31438 D VRP_POC : === PHASE 8: Additional Service & Provider Probes ===
+07-14 23:08:40.678 31438 31438 D VRP_POC :   --- Battery Usage (normal perm) ---
+07-14 23:08:40.683 31438 31438 D VRP_POC :   [ACCESS] Battery Usage State: accessible (empty)
+07-14 23:08:40.684 31438 31438 D VRP_POC :   [BLOCKED] Battery Usage Provider
+07-14 23:08:40.684 31438 31438 D VRP_POC :   --- Docs Editors (uses SYNC_STATUS perm) ---
+07-14 23:08:40.690 31438 31438 D VRP_POC :   [ACCESS] Google Docs Legacy Storage: accessible (empty)
+07-14 23:08:40.703 31438 31438 D VRP_POC :   [ACCESS] Google Docs StateSync: accessible (empty)
+07-14 23:08:40.736 31438 31438 D VRP_POC :   [ACCESS] Google Slides StateSync: accessible (empty)
+07-14 23:08:40.737 31438 31438 D VRP_POC :   --- Camera & Sensor ---
+07-14 23:08:40.737 31438 31438 D VRP_POC :   Camera Metrics: IllegalArgumentException
+07-14 23:08:40.737 31438 31438 D VRP_POC :   --- Scone ConnectivityHelper ---
+07-14 23:08:40.738 31438 31438 D VRP_POC :   Connectivity call(): SecurityException
+07-14 23:08:40.738 31438 31438 D VRP_POC :   --- Flipendo (Battery Saver) ---
+07-14 23:08:40.742 31438 31438 D VRP_POC :   Flipendo: UnsupportedOperationException
+07-14 23:08:40.742 31438 31438 D VRP_POC :   [ACCESS] Turbo/Adaptive Battery: accessible (empty)
+07-14 23:08:40.742 31438 31438 D VRP_POC :   [ACCESS] Turbo Provider: accessible (empty)
+07-14 23:08:40.742 31438 31438 D VRP_POC :   [ACCESS] Files by Google: accessible (empty)
+07-14 23:08:40.742 31438 31438 D VRP_POC :   [ACCESS] Google Wallet: accessible (empty)
+07-14 23:08:40.743 31438 31438 D VRP_POC :   [ACCESS] Now Playing: accessible (empty)
+07-14 23:08:40.743 31438 31438 D VRP_POC : 
+07-14 23:08:40.743 31438 31438 D VRP_POC : === PHASE 10: Deep Provider Scan (26 normal perms) ===
+07-14 23:08:40.743 31438 31438 D VRP_POC : --- SetupWizard DeviceOrigin ---
+07-14 23:08:40.766 31438 31438 D VRP_POC :   [BLOCKED] DeviceOrigin
+07-14 23:08:40.767 31438 31438 D VRP_POC :   [BLOCKED] DeviceOrigin/origin
+07-14 23:08:40.767 31438 31438 D VRP_POC :   DeviceOrigin call(): null
+07-14 23:08:40.768 31438 31438 D VRP_POC :   DeviceOrigin get(): null
+07-14 23:08:40.768 31438 31438 D VRP_POC : --- SetupWizard Config ---
+07-14 23:08:40.777 31438 31438 D VRP_POC :   Partner get_value(): empty Bundle
+07-14 23:08:40.778 31438 31438 D VRP_POC :   Features getFeatures(): null
+07-14 23:08:40.779 31438 31438 D VRP_POC :   Features dump(): null
+07-14 23:08:40.779 31438 31438 D VRP_POC :   [ACCESS] SetupWizard Capability: accessible (empty)
+07-14 23:08:40.779 31438 31438 D VRP_POC : --- SafetyHub CarCrash Settings ---
+07-14 23:08:40.780 31438 31438 D VRP_POC :   [ACCESS] CarCrash base: UnsupportedOperationException (null)
+07-14 23:08:40.780 31438 31438 D VRP_POC :   [ACCESS] CarCrash settings: UnsupportedOperationException (null)
+07-14 23:08:40.784 31438 31438 D VRP_POC :   [BLOCKED] CarCrash getSettings()
+07-14 23:08:40.784 31438 31438 D VRP_POC : --- Scone Nimbus (WRITE permission = INTEGRITY) ---
+07-14 23:08:40.787 31438 31438 D VRP_POC :   [BLOCKED] Nimbus READ
+07-14 23:08:40.789 31438 31438 D VRP_POC :   Nimbus INSERT: SecurityException - Calling package 'com.vrppoc' not permitted for write
+07-14 23:08:40.789 31438 31438 D VRP_POC :   Nimbus UPDATE: UnsupportedOperationException
+07-14 23:08:40.789 31438 31438 D VRP_POC :   Nimbus /data INSERT: SecurityException
+07-14 23:08:40.790 31438 31438 D VRP_POC :   [BLOCKED] ConnHelper getState()
+07-14 23:08:40.791 31438 31438 D VRP_POC :   [ACCESS] Scone Geofence: 0 rows
+07-14 23:08:40.791 31438 31438 D VRP_POC : --- GMS Phenotype (Feature Flags) ---
+07-14 23:08:40.791 31438 31438 D VRP_POC :   [ACCESS] Phenotype base: accessible (empty)
+07-14 23:08:40.793 31438 31438 D VRP_POC :   [ACCESS] Phenotype/gms: accessible (empty)
+07-14 23:08:40.794 31438 31438 D VRP_POC :   [ACCESS] Phenotype/photos: accessible (empty)
+07-14 23:08:40.794 31438 31438 D VRP_POC : --- Wellbeing API (call() returns tts_config byte[]) ---
+07-14 23:08:40.800 31438 31438 D VRP_POC :   [LEAK] Wellbeing getSettings(): Bundle(2 keys)
+07-14 23:08:40.800 31438 31438 D VRP_POC :     success = false
+07-14 23:08:40.801 31438 31438 D VRP_POC :     tts_config = byte[33]
+07-14 23:08:40.801 31438 31438 D VRP_POC :       hex: 12 1f 77 65 6c 6c 62 65 69 6e 67 5f 74 74 73 5f 69 6e 76 61 6c 69 64 5f 61 72 67 75 6d 65 6e 74 73
+07-14 23:08:40.801 31438 31438 D VRP_POC :       str: ..wellbeing_tts_invalid_arguments
+07-14 23:08:40.805 31438 31438 D VRP_POC :   [LEAK] Wellbeing getBedtime(): Bundle(2 keys)
+07-14 23:08:40.805 31438 31438 D VRP_POC :     success = false
+07-14 23:08:40.805 31438 31438 D VRP_POC :     tts_config = byte[33]
+07-14 23:08:40.805 31438 31438 D VRP_POC :       hex: 12 1f 77 65 6c 6c 62 65 69 6e 67 5f 74 74 73 5f 69 6e 76 61 6c 69 64 5f 61 72 67 75 6d 65 6e 74 73
+07-14 23:08:40.805 31438 31438 D VRP_POC :       str: ..wellbeing_tts_invalid_arguments
+07-14 23:08:40.809 31438 31438 D VRP_POC :   [LEAK] Wellbeing getFocus(): Bundle(2 keys)
+07-14 23:08:40.809 31438 31438 D VRP_POC :     success = false
+07-14 23:08:40.809 31438 31438 D VRP_POC :     tts_config = byte[33]
+07-14 23:08:40.810 31438 31438 D VRP_POC :       hex: 12 1f 77 65 6c 6c 62 65 69 6e 67 5f 74 74 73 5f 69 6e 76 61 6c 69 64 5f 61 72 67 75 6d 65 6e 74 73
+07-14 23:08:40.810 31438 31438 D VRP_POC :       str: ..wellbeing_tts_invalid_arguments
+07-14 23:08:40.814 31438 31438 D VRP_POC :   [LEAK] Wellbeing getTimers(): Bundle(2 keys)
+07-14 23:08:40.815 31438 31438 D VRP_POC :     success = false
+07-14 23:08:40.815 31438 31438 D VRP_POC :     tts_config = byte[33]
+07-14 23:08:40.815 31438 31438 D VRP_POC :       hex: 12 1f 77 65 6c 6c 62 65 69 6e 67 5f 74 74 73 5f 69 6e 76 61 6c 69 64 5f 61 72 67 75 6d 65 6e 74 73
+07-14 23:08:40.815 31438 31438 D VRP_POC :       str: ..wellbeing_tts_invalid_arguments
+07-14 23:08:40.816 31438 31438 D VRP_POC :   [ACCESS] Wellbeing Slices: accessible (empty)
+07-14 23:08:40.818 31438 31438 D VRP_POC :   [ACCESS] Wellbeing AutoDND: UnsupportedOperationException (query not supported)
+07-14 23:08:40.818 31438 31438 D VRP_POC : --- GMS Providers via call() ---
+07-14 23:08:40.820 31438 31438 D VRP_POC :   [BLOCKED] Auth getAccounts()
+07-14 23:08:40.821 31438 31438 D VRP_POC :   Wallet getInfo(): null
+07-14 23:08:40.822 31438 31438 D VRP_POC :   NearbyShare getState(): null
+07-14 23:08:40.823 31438 31438 D VRP_POC :   FastPair getDevices(): null
+07-14 23:08:40.824 31438 31438 D VRP_POC :   SecurityProvider getInfo(): null
+07-14 23:08:40.824 31438 31438 D VRP_POC : --- GMS Thunderbird (Emergency) ---
+07-14 23:08:40.825 31438 31438 D VRP_POC :   Thunderbird getConfig(): null
+07-14 23:08:40.825 31438 31438 D VRP_POC :   [ACCESS] Thunderbird emergency: IllegalArgumentException (Unsupported URI: content://com.google.android.gms.thunderbird.config/emergency)
+07-14 23:08:40.828 31438 31438 D VRP_POC :   [BLOCKED] Thunderbird settings
+07-14 23:08:40.828 31438 31438 D VRP_POC : --- Flipendo (Battery Extreme) ---
+07-14 23:08:40.828 31438 31438 D VRP_POC :   [BLOCKED] Flipendo Summary
+07-14 23:08:40.828 31438 31438 D VRP_POC :   [BLOCKED] Flipendo getSummary()
+07-14 23:08:40.828 31438 31438 D VRP_POC : --- Gboard WebDebugBridge ---
+07-14 23:08:40.829 31438 31438 D VRP_POC :   [ACCESS] Gboard WebDebug: accessible (empty)
+07-14 23:08:40.829 31438 31438 D VRP_POC :   Gboard getConfig(): IllegalArgumentException
+07-14 23:08:40.829 31438 31438 D VRP_POC : --- GMS Additional ---
+07-14 23:08:40.831 31438 31438 D VRP_POC :   [ACCESS] GMS Settings: UnsupportedOperationException (null)
+07-14 23:08:40.831 31438 31438 D VRP_POC :   GMS Settings call(): null
+07-14 23:08:40.832 31438 31438 D VRP_POC :   [ACCESS] GMS Persistent Settings: UnsupportedOperationException (null)
+07-14 23:08:40.833 31438 31438 D VRP_POC :   GMS Persistent call(): null
+07-14 23:08:40.833 31438 31438 D VRP_POC :   [BLOCKED] GMS AppDoctor
+07-14 23:08:40.833 31438 31438 D VRP_POC : --- GMS Settings via call() ---
+07-14 23:08:40.834 31438 31438 D VRP_POC :   GMS get_value(): null
+07-14 23:08:40.834 31438 31438 D VRP_POC :   GMS list(): null
+07-14 23:08:40.834 31438 31438 D VRP_POC : --- DeviceOrigin deeper ---
+07-14 23:08:40.834 31438 31438 D VRP_POC :   DeviceOrigin read(): null
+07-14 23:08:40.840 31438 31438 D VRP_POC :   DeviceOrigin query: SecurityException (GoogleCertificatesRslt: not allowed: pkg=com.vrppoc, sha256=[4a63d914ec1a58c0355d63a058959445eee5853206362cfbd87b89cb385917f2], atk=false, ver=262434035.true (go/gsrlt))
+07-14 23:08:40.840 31438 31438 D VRP_POC : --- Cell Broadcast ---
+07-14 23:08:40.842 31438 31438 D VRP_POC :   [BLOCKED] Cell Broadcasts
+07-14 23:08:40.843 31438 31438 D VRP_POC :   [BLOCKED] Cell Broadcast History
+07-14 23:08:40.843 31438 31438 D VRP_POC : --- Settings Adaptive Charging ---
+07-14 23:08:40.843 31438 31438 D VRP_POC :   [ACCESS] Adaptive Charging: accessible (empty)
+07-14 23:08:40.843 31438 31438 D VRP_POC :   Adaptive Charging getState(): IllegalArgumentException
+07-14 23:08:40.843 31438 31438 D VRP_POC : --- Google Settings Provider (no readPermission!) ---
+07-14 23:08:40.845 31438 31438 D VRP_POC :   [ACCESS] Google Settings /partner: 18 rows
+07-14 23:08:40.845 31438 31438 D VRP_POC :     Columns: _id, name, value
+07-14 23:08:40.848 31438 31438 D VRP_POC :   [ACCESS] Google Settings partner: 18 rows
+07-14 23:08:40.848 31438 31438 D VRP_POC :     Columns: _id, name, value
+07-14 23:08:40.848 31438 31438 D VRP_POC :     data_store_version = 3
+07-14 23:08:40.848 31438 31438 D VRP_POC :     network_location_opt_in = 1
+07-14 23:08:40.848 31438 31438 D VRP_POC :     client_id = android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     search_client_id = ms-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     search_a2_client_id = ms-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     chrome_client_id = ms-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     maps_client_id = gmm-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     youtube_client_id = mvapp-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     market_client_id = am-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     voicesearch_client_id = ms-android-google
+07-14 23:08:40.848 31438 31438 D VRP_POC :     playtx_client_id = play-ms-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     playax_client_id = play-ad-ms-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     program_client_id = pg-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     program2_client_id = pg2-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     program3_client_id = pg3-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     rsvd_a2_client_id = ms-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     rsvd_a3_client_id = ms-android-google
+07-14 23:08:40.849 31438 31438 D VRP_POC :     use_location_for_services = 1
+07-14 23:08:40.851 31438 31438 D VRP_POC :   [BLOCKED] Google Settings (internal authority)
+07-14 23:08:40.851 31438 31438 D VRP_POC : --- Phenotype Feature Flags via call() ---
+07-14 23:08:40.851 31438 31438 D VRP_POC :   Phenotype call(): null
+07-14 23:08:40.851 31438 31438 D VRP_POC : --- Google Recorder ---
+07-14 23:08:40.852 31438 31438 D VRP_POC :   [BLOCKED] Recorder FileProvider
+07-14 23:08:40.852 31438 31438 D VRP_POC : --- PixelSystemService ---
+07-14 23:08:40.852 31438 31438 D VRP_POC :   PixelSystem getState(): IllegalArgumentException
+07-14 23:08:40.852 31438 31438 D VRP_POC : --- Google Photos ---
+07-14 23:08:40.853 31438 31438 D VRP_POC :   [BLOCKED] Photos ContentProvider
+07-14 23:08:40.854 31438 31438 D VRP_POC :   [ACCESS] Photos FreeUpSpace: accessible (empty)
+07-14 23:08:40.854 31438 31438 D VRP_POC :   [ACCESS] Photos Sharousel: accessible (empty)
+07-14 23:08:40.854 31438 31438 D VRP_POC : Phase 10 leaks found: 5
+07-14 23:08:40.854 31438 31438 D VRP_POC : ========================================
+07-14 23:08:40.854 31438 31438 D VRP_POC :   FINDINGS SUMMARY
+07-14 23:08:40.854 31438 31438 D VRP_POC : ========================================
+07-14 23:08:40.854 31438 31438 D VRP_POC : Permissions auto-granted: 27/27
+07-14 23:08:40.854 31438 31438 D VRP_POC : Services bound: 0/5
+07-14 23:08:40.854 31438 31438 D VRP_POC : Data leaks found: 5
+07-14 23:08:40.854 31438 31438 D VRP_POC : Confirmed findings:
+07-14 23:08:40.854 31438 31438 D VRP_POC :   1. GServices - 1404 config entries + 3 API keys (CONFIRMED)
+07-14 23:08:40.854 31438 31438 D VRP_POC :   2. All normal perms auto-granted, no user prompt
+07-14 23:08:40.854 31438 31438 D VRP_POC :   3. 4 services bound via normal perms
+07-14 23:08:40.854 31438 31438 D VRP_POC : Check logcat for full results of Phase 10 deep scan
+07-14 23:08:40.869 31438 31438 D VRP_POC :   [BOUND] Satellite gRPC Endpoint
+07-14 23:08:40.869 31438 31438 D VRP_POC :     com.google.android.apps.messaging/.shared.satelliteapi.endpointservice.GrpcEndpointService
+07-14 23:08:40.869 31438 31438 D VRP_POC :     IBinder: android.os.BinderProxy
+07-14 23:08:40.870 31438 31438 D VRP_POC :     transact(1): reply=0B
+07-14 23:08:40.870 31438 31438 D VRP_POC :     transact(2): reply=0B
+07-14 23:08:40.870 31438 31438 D VRP_POC :     transact(3): reply=0B
+07-14 23:08:40.870 31438 31438 D VRP_POC :     transact(4): reply=0B
+07-14 23:08:40.870 31438 31438 D VRP_POC :     transact(5): reply=0B
+07-14 23:08:40.871 31438 31438 D VRP_POC :     transact(6): reply=0B
+07-14 23:08:40.871 31438 31438 D VRP_POC :     transact(7): reply=0B
+07-14 23:08:40.871 31438 31438 D VRP_POC :     transact(8): reply=0B
+07-14 23:08:40.871 31438 31438 D VRP_POC :     transact(9): reply=0B
+07-14 23:08:40.872 31438 31438 D VRP_POC :     transact(10): reply=0B
+07-14 23:08:40.872 31438 31438 D VRP_POC :   [BOUND] RCS Notification Server
+07-14 23:08:40.872 31438 31438 D VRP_POC :     com.google.android.apps.messaging/.shared.rcs.messaging.MessagingEngineNotificationServer
+07-14 23:08:40.872 31438 31438 D VRP_POC :     IBinder: android.os.BinderProxy
+07-14 23:08:40.873 31438 31438 D VRP_POC :     transact(1): reply=0B
+07-14 23:08:40.873 31438 31438 D VRP_POC :     transact(2): reply=0B
+07-14 23:08:40.873 31438 31438 D VRP_POC :     transact(3): reply=0B
+07-14 23:08:40.873 31438 31438 D VRP_POC :     transact(4): reply=0B
+07-14 23:08:40.873 31438 31438 D VRP_POC :     transact(5): reply=0B
+07-14 23:08:40.873 31438 31438 D VRP_POC :     transact(6): reply=0B
+07-14 23:08:40.874 31438 31438 D VRP_POC :     transact(7): reply=0B
+07-14 23:08:40.874 31438 31438 D VRP_POC :     transact(8): reply=0B
+07-14 23:08:40.874 31438 31438 D VRP_POC :     transact(9): reply=0B
+07-14 23:08:40.874 31438 31438 D VRP_POC :     transact(10): reply=0B
+07-14 23:08:40.874 31438 31438 D VRP_POC :   [BOUND] Google Lens connected!
+07-14 23:08:40.874 31438 31438 D VRP_POC :     Component: com.google.android.googlequicksearchbox/com.google.android.apps.search.lens.service.LensService
+07-14 23:08:40.874 31438 31438 D VRP_POC :     IBinder: android.os.BinderProxy
+07-14 23:08:40.874 31438 31438 D VRP_POC :     Interface: com.google.android.libraries.lens.sdk.shared.ILensService
+07-14 23:08:40.876 31438 31438 D VRP_POC :     transact(1): reply=224B
+07-14 23:08:40.876 31438 31438 D VRP_POC :       raw: fc ff ff ff 69 00 00 00 41 00 74 00 74 00 65 00 6d 00 70 00 74 00 20 00 74 00 6f 00 20 00 69 00 6e 00 76 00 6f 00 6b 00 65 00 20 00 76 00 69 00 72 00 74 00 75 00 61 00 6c 00 20 00 6d 00 65 00 74 00 68 00 6f 00 64 00 20 00 27 00 6a 00 61 00
+07-14 23:08:40.876 31438 31438 D VRP_POC :       status=-4
+07-14 23:08:40.876 31438 31438 D VRP_POC :     transact(2): reply=224B
+07-14 23:08:40.877 31438 31438 D VRP_POC :       raw: fc ff ff ff 69 00 00 00 41 00 74 00 74 00 65 00 6d 00 70 00 74 00 20 00 74 00 6f 00 20 00 69 00 6e 00 76 00 6f 00 6b 00 65 00 20 00 76 00 69 00 72 00 74 00 75 00 61 00 6c 00 20 00 6d 00 65 00 74 00 68 00 6f 00 64 00 20 00 27 00 6a 00 61 00
+07-14 23:08:40.877 31438 31438 D VRP_POC :       status=-4
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(3): reply=4B
+07-14 23:08:40.877 31438 31438 D VRP_POC :       raw: 00 00 00 00
+07-14 23:08:40.877 31438 31438 D VRP_POC :       status=0
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(4): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(5): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(6): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(7): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(8): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(9): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :     transact(10): reply=0B
+07-14 23:08:40.877 31438 31438 D VRP_POC :   [BOUND] Maps Assistant gRPC
+07-14 23:08:40.877 31438 31438 D VRP_POC :     com.google.android.apps.maps/com.google.android.apps.gmm.car.assistant.service.AssistantEndpointService
+07-14 23:08:40.877 31438 31438 D VRP_POC :     IBinder: android.os.BinderProxy
+07-14 23:08:40.878 31438 31438 D VRP_POC :     transact(1): reply=0B
+07-14 23:08:40.878 31438 31438 D VRP_POC :     transact(2): reply=0B
+07-14 23:08:40.878 31438 31438 D VRP_POC :     transact(3): reply=0B
+07-14 23:08:40.878 31438 31438 D VRP_POC :     transact(4): reply=0B
+07-14 23:08:40.879 31438 31438 D VRP_POC :     transact(5): reply=0B
+07-14 23:08:40.879 31438 31438 D VRP_POC :     transact(6): reply=0B
+07-14 23:08:40.879 31438 31438 D VRP_POC :     transact(7): reply=0B
+07-14 23:08:40.879 31438 31438 D VRP_POC :     transact(8): reply=0B
+07-14 23:08:40.880 31438 31438 D VRP_POC :     transact(9): reply=0B
+07-14 23:08:40.880 31438 31438 D VRP_POC :     transact(10): reply=0B

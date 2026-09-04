@@ -1,0 +1,7 @@
+com.poc.zeropermsms.app-pngs-0 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/build/generated/res/pngs/debug
+com.poc.zeropermsms.app-resValues-1 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/build/generated/res/resValues/debug
+com.poc.zeropermsms.app-packageDebugResources-2 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.poc.zeropermsms.app-packageDebugResources-3 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.poc.zeropermsms.app-debug-4 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.poc.zeropermsms.app-debug-5 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/debug/res
+com.poc.zeropermsms.app-main-6 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_zeroperm_sms/app/src/main/res

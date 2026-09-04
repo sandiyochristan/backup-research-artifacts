@@ -1,0 +1,9 @@
+build/obj/com/research/binderleak/R.class
+build/obj/com/research/binderleak/MainActivity.class
+build/obj/com/research/binderleak/R$id.class
+build/obj/com/research/binderleak/LeakTargetService.class
+build/obj/com/research/binderleak/R$string.class
+build/obj/com/research/binderleak/LeakTargetService$1.class
+build/obj/com/research/binderleak/MainActivity$1.class
+build/obj/com/research/binderleak/R$layout.class
+build/obj/com/research/binderleak/R$attr.class

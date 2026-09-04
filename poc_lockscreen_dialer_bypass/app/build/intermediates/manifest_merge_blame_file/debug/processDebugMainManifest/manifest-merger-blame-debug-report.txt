@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.lockbypass"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12    ZERO PERMISSIONS DECLARED.
+13    This app proves the Dialer's exported HomeScreenActivity (ACTION_DIAL/tel:)
+14    can be used to occlude a genuinely PIN-locked Wear OS keyguard by routing
+15    to OutgoingDialpadActivity (showWhenLocked=true), with no permission checks
+16    on the caller at all.
+17    -->
+18
+19
+20    <!--
+21         CALL_PHONE: on Wear OS, ACTION_CALL places the call directly with
+22         NO confirmation UI once this permission is granted (confirmed in
+23         prior research session, 2026-06-30). This is the "communication
+24         helper" permission set a fitness/messaging app would plausibly
+25         request and a user would plausibly grant.
+26    -->
+27    <uses-permission android:name="android.permission.CALL_PHONE" />
+27-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:18:5-69
+27-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:18:22-66
+28
+29    <uses-feature android:name="android.hardware.type.watch" />
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:20:5-64
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:20:19-61
+30
+31    <application
+31-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:22:5-38:19
+32        android:allowBackup="false"
+32-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:23:9-36
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:label="Fitness Tracker"
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:24:9-40
+36        android:supportsRtl="true"
+36-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:25:9-35
+37        android:theme="@android:style/Theme.DeviceDefault" >
+37-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:26:9-59
+38        <activity
+38-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:28:9-36:20
+39            android:name="com.poc.lockbypass.MainActivity"
+39-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:29:13-41
+40            android:exported="true"
+40-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:30:13-36
+41            android:label="Fitness Tracker" >
+41-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:31:13-44
+42            <intent-filter>
+42-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:32:13-35:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:33:17-69
+43-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:33:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:34:17-77
+45-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_lockscreen_dialer_bypass/app/src/main/AndroidManifest.xml:34:27-74
+46            </intent-filter>
+47        </activity>
+48    </application>
+49
+50</manifest>

@@ -1,0 +1,247 @@
+--------- beginning of main
+07-11 22:25:46.657 29856 29911 D VRP_POC : ========================================
+07-11 22:25:46.657 29856 29911 D VRP_POC :   VRP PoC: Permission Misconfiguration
+07-11 22:25:46.657 29856 29911 D VRP_POC :   & Data Leak via Normal Permissions
+07-11 22:25:46.657 29856 29911 D VRP_POC : ========================================
+07-11 22:25:46.657 29856 29911 D VRP_POC : UID: 10345
+07-11 22:25:46.657 29856 29911 D VRP_POC : Package: com.vrppoc
+07-11 22:25:46.657 29856 29911 D VRP_POC : Dangerous permissions: ZERO
+07-11 22:25:46.657 29856 29911 D VRP_POC : 
+07-11 22:25:46.657 29856 29911 D VRP_POC : ==========================================
+07-11 22:25:46.657 29856 29911 D VRP_POC : FINDING 1: DCK Permission Misconfiguration
+07-11 22:25:46.657 29856 29911 D VRP_POC : ==========================================
+07-11 22:25:46.657 29856 29911 D VRP_POC : 
+07-11 22:25:46.658 29856 29911 D VRP_POC : [VULN] DIGITAL_KEY_READ: NORMAL (auto-granted!)
+07-11 22:25:46.658 29856 29911 D VRP_POC :        Granted to this app: true
+07-11 22:25:46.658 29856 29911 D VRP_POC :        Impact: Controls car key reading
+07-11 22:25:46.658 29856 29911 D VRP_POC : [VULN] DIGITAL_KEY_WRITE: NORMAL (auto-granted!)
+07-11 22:25:46.658 29856 29911 D VRP_POC :        Granted to this app: true
+07-11 22:25:46.658 29856 29911 D VRP_POC :        Impact: Controls car key writing
+07-11 22:25:46.659 29856 29911 D VRP_POC : [OK]   DIGITAL_KEY_PRIVILEGED: signature (correct)
+07-11 22:25:46.659 29856 29911 D VRP_POC :        Granted to this app: false
+07-11 22:25:46.659 29856 29911 D VRP_POC : [OK]   DIGITAL_KEY_IN_USE: signature (correct)
+07-11 22:25:46.659 29856 29911 D VRP_POC :        Granted to this app: false
+07-11 22:25:46.659 29856 29911 D VRP_POC : [OK]   SE_APPLET_NOTIFICATION: signature (correct)
+07-11 22:25:46.659 29856 29911 D VRP_POC :        Granted to this app: false
+07-11 22:25:46.659 29856 29911 D VRP_POC : 
+07-11 22:25:46.659 29856 29911 D VRP_POC : ANALYSIS: DIGITAL_KEY_READ and DIGITAL_KEY_WRITE are
+07-11 22:25:46.659 29856 29911 D VRP_POC : protectionLevel=normal, meaning ANY installed app receives
+07-11 22:25:46.659 29856 29911 D VRP_POC : them automatically without user consent. Their siblings
+07-11 22:25:46.659 29856 29911 D VRP_POC : (PRIVILEGED, IN_USE, SE_APPLET_NOTIFICATION) are correctly
+07-11 22:25:46.659 29856 29911 D VRP_POC : set to signature. This inconsistency indicates an oversight.
+07-11 22:25:46.659 29856 29911 D VRP_POC : 
+07-11 22:25:46.659 29856 29911 D VRP_POC : ==========================================
+07-11 22:25:46.659 29856 29911 D VRP_POC : FINDING 2: GServices Configuration Leak
+07-11 22:25:46.659 29856 29911 D VRP_POC : ==========================================
+07-11 22:25:46.659 29856 29911 D VRP_POC : 
+07-11 22:25:46.659 29856 29911 D VRP_POC : Permission: READ_GSERVICES (normal, auto-granted)
+07-11 22:25:46.659 29856 29911 D VRP_POC : 
+07-11 22:25:46.660 29856 29911 D VRP_POC : READ_GSERVICES granted: true
+07-11 22:25:46.660 29856 29911 D VRP_POC : 
+07-11 22:25:46.664 29856 29911 D VRP_POC : [DATA] Total GServices entries accessible: 1404
+07-11 22:25:46.664 29856 29911 D VRP_POC : 
+07-11 22:25:46.667 29856 29911 D VRP_POC : --- API Keys ---
+07-11 22:25:46.668 29856 29911 D VRP_POC : [CRED] copresence:api_key = AIzaSyB11LJUdYyY6pjP2NlPPT1pHcxAflWksnc
+07-11 22:25:46.668 29856 29911 D VRP_POC : [CRED] deskclock:timezone_api_key = AIzaSyBUcCPilPlw0sWDaXdmNScHS4N0jm31D-I
+07-11 22:25:46.668 29856 29911 D VRP_POC : [CRED] googletts:v2_api_key = AIzaSyA33f9cSqKdR-V4XNkZNZ_rh_dbT1VQJFo
+07-11 22:25:46.669 29856 29911 D VRP_POC : 
+07-11 22:25:46.669 29856 29911 D VRP_POC : --- Device Identification ---
+07-11 22:25:46.669 29856 29911 D VRP_POC : [DEVID] device_country = in
+07-11 22:25:46.669 29856 29911 D VRP_POC : [DEVID] device_registration_time = 1782061200000
+07-11 22:25:46.669 29856 29911 D VRP_POC : [DEVID] digest = 1-93429ad634b6b0ef49555e121a1f233829720f6b
+07-11 22:25:46.671 29856 29911 D VRP_POC : [DEVID] snet_minimum_finsky_version_for_new_consent_model = 80440000
+07-11 22:25:46.672 29856 29911 D VRP_POC : 
+07-11 22:25:46.672 29856 29911 D VRP_POC : --- Auth & Account Config ---
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] account_recovery_enabled = false
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] account_recovery_silence_default_ms = 259200000
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] account_recovery_silence_randomize_ms = 518400000
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] ads:jams:non_default_account_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_auth_server_sample_percentage = 0.97
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_channel_id_enabled_gms_core_version = 11021000
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_deprecate_nfc_trustlet_for_new_users = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_enable_bluetooth_trustlet_for_insecure_connections = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_fetch_home_work_address_interval_millis = 86400000
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_is_bluetooth_trustlet_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_is_nfc_trustlet_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_is_place_trustlet_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_is_voice_unlock_trustlet_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_place_lure_unlock_max = 25
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_coffee_voice_unlock_minimum_gsa_version = 300404000
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_enable_clearcut = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_games_whitelisted_scopes = https://www.googleapis.com/auth/appstate,https://www.googlea...
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_get_token_sample_percentage = 0.03
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_grant_credential_screen_sample_percentage = 0.1
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_is_proximity_features_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_magic_is_phone_position_trustlet_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_managed_dpmrh_config_version = v_sdk35
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_managed_dpmrh_fallback_to_aosp_on_role_holder_update_failed = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_managed_dpmrh_package_download_timeout_seconds = 60
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_managed_dpmrh_phonesky_download_timeout_seconds = 120
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_managed_dpmrh_phonesky_update_conditions = 0,0
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_managed_dpmrh_provisioning_enabled = true
+07-11 22:25:46.672 29856 29911 D VRP_POC : [AUTH] auth_minute_maid_remove_account_timeout = 1800000
+07-11 22:25:46.673 29856 29911 D VRP_POC : [AUTH] auth_minutemaid_security_key_app_id_url_pattern = ^https://www\.gstatic\.com/securitykey/(a/google\.com/)?orig...
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_new_account_flows_enabled = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_proximity_features_bluetooth_server_uuid = 704EE561-3782-405A-A14B-2D47A2DDCDDF
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_proximity_gcm_sender_id = 340207974841
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_trust_agent_geofence_sample_percentage = 0.001
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_trust_agent_sample_percentage = 1.0
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_trust_agent_user_present_sample_percentage = 1.0
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_use_games_theme_consent_screen = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_use_new_add_account_flow = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] auth_use_new_get_token_flow = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] c2dm_auth_token = 1
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] checkin_enable_id_token_file = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] cw:exchange_account_notification_package_blacklist = app.Appstervan.MobiMail;com.airwatch.androidagent;com.airwat...
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] enable_auth_generic_account_recovery = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] enable_auth_generic_login_challange = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] enable_auth_generic_two_step_verification = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] enable_auth_generic_unknown = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] finsky.assist_card_dismissal_token_cache_timeout_ms = 7776000000
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] finsky.dfe.send_additional_headers_unauth_requests = false
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] finsky.unauth_safe_mode.is_enabled = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] fitness.allow_recording_on_transient_auth_errors = true
+07-11 22:25:46.674 29856 29911 D VRP_POC : [AUTH] gms:common_account_experiment_1 = false
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] google_login_generic_auth_service = mail
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] google_setup:phenotype:auth_early_update_from_zapp_enabled = true
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] gtalk_auth_sasl = false
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] newsstand:background_auth_success_notification = true
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] newsstand:disable_auth_retry = false
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] nova-wfa.chell.enable_periodic_auth_token_refresh = false
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] qsb:now_auth_service_throttle_window = 86400:24
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] tycho.use_new_switch_account_fragment = true
+07-11 22:25:46.675 29856 29911 D VRP_POC : [AUTH] update_token = AJeBEBwLaUwpfSSZ87LeSexNJD5fxFnO2dgkh3CpTHRObIuv7X9opfHombny...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] use_msisdn_token = false
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] user_location_reporting:include_ap_connectivity_auth_info = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] videos:oauth_token_for_cast_enabled = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] videos:use_new_easy_auth_strings = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] wallet.androidpay.get_active_account_timeout_millis = 2000
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] wallet.androidpay.get_active_cards_for_account_timeout_millis = 2000
+07-11 22:25:46.676 29856 29911 D VRP_POC : [AUTH] wallet.clientlog.enable_fingerprint_auth_event = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : 
+07-11 22:25:46.676 29856 29911 D VRP_POC : --- Security Configuration ---
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] auth_minutemaid_security_key_app_id_url_pattern = ^https://www\.gstatic\.com/securitykey/(a/google\.com/)?orig...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] carrier_services_security_flags_ec_api_white_listed_packages = com.google.android.apps.messaging,com.google.android.dialer,...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] carrier_services_security_flags_ec_api_white_listed_signatures = B28C3EDB665DF32686224DF800F603E9959BBE4E,0980A12BE993528C191...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] carrier_services_security_flags_test_service_white_listed_packages = com.google.android.ims.mobly.snippets
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] carrier_services_security_flags_test_service_white_listed_signatures = AE41481F52E0F58DF2806D5A38EB3DBCA5AE02B0,E165542B31953CC282A...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] carrier_services_security_flags_white_listed_packages = com.google.android.apps.messaging,com.google.android.dialer,...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] carrier_services_security_flags_white_listed_signatures = B28C3EDB665DF32686224DF800F603E9959BBE4E,0980A12BE993528C191...
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] checkin_droidguard_percent = 1.0
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] checkin_dropbox_upload:snet = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] checkin_dropbox_upload:snet_gcore = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] checkin_dropbox_upload:snet_idle = true
+07-11 22:25:46.676 29856 29911 D VRP_POC : [SEC] checkin_dropbox_upload:snet_launch_service = true
+07-11 22:25:46.677 29856 29911 D VRP_POC : [SEC] checkin_logging_policy:snet = TAG_AND_VALUE
+07-11 22:25:46.677 29856 29911 D VRP_POC : [SEC] checkin_logging_policy:snet_gcore = TAG_AND_VALUE
+07-11 22:25:46.678 29856 29911 D VRP_POC : [SEC] checkin_logging_policy:snet_idle = TAG_AND_VALUE
+07-11 22:25:46.678 29856 29911 D VRP_POC : [SEC] checkin_logging_policy:snet_launch_service = TAG_AND_VALUE
+07-11 22:25:46.679 29856 29911 D VRP_POC : [SEC] euiccpixel.experiment.Ota__euicc_full_flash_image_v1_security_location = esim-full-v1-security.img
+07-11 22:25:46.679 29856 29911 D VRP_POC : [SEC] event:snet = log
+07-11 22:25:46.679 29856 29911 D VRP_POC : [SEC] event:snet_gcore = log
+07-11 22:25:46.679 29856 29911 D VRP_POC : [SEC] event:snet_launch_service = log
+07-11 22:25:46.679 29856 29911 D VRP_POC : [SEC] finsky.verify_apps_log_snet_id_in_verification_errors = true
+07-11 22:25:46.680 29856 29911 D VRP_POC : [SEC] gass:ad_attest_signal_uri = https://www.googleapis.com/androidcheck/v1/attestations/adAt...
+07-11 22:25:46.681 29856 29911 D VRP_POC : [SEC] gms:security:enable_conscrypt_in_auth = true
+07-11 22:25:46.681 29856 29911 D VRP_POC : [SEC] gms:security:enable_conscrypt_in_checkin = true
+07-11 22:25:46.681 29856 29911 D VRP_POC : [SEC] gms:security:enable_conscrypt_in_gcm = true
+07-11 22:25:46.681 29856 29911 D VRP_POC : [SEC] gms:security:enable_conscrypt_in_gms_application = true
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] show_security_settings = true
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_attest_client = false
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_do_safe_browsing_periodic_update = true
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_idle_mode_wait_after_plugin_ms = 300000
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_idle_tags_whitelist = system_partition_files,system_ca_cert_store,setuid_files,dal...
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_minimum_finsky_version_for_new_consent_model = 80440000
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_num_sys_ca_certs = 5
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_num_sys_part_files = 5
+07-11 22:25:46.683 29856 29911 D VRP_POC : [SEC] snet_package_url = https://www.gstatic.com/android/snet/12172015-2495818.snet
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_report_event_logs = 50125:2,50128:2,conscrypt:3,78001:2,65537:2,90201:2,90202:2,...
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_report_ssl_v3_tests = true
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_safe_browsing_enabled = true
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_safe_browsing_log_battery_levels = false
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_safe_browsing_logging_enabled = false
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_safe_browsing_update_interval_ms = 72000000
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_selected_files = /proc/sunxi_debug/sunxi_debug,/system/bin/wland,/data/config...
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_service_remote_enable = true
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_service_remote_idle_mode_enable = true
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_sys_part_files = /system/app/providerdown.apk,/system/priv-app/cameraupdate.a...
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_system_properties = ro.build.characteristics
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_tags_whitelist = default_packages,su_files,settings,locale,ssl_redirect,ssl_h...
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_verify_apps_learn_more_url = https://support.google.com/googleplay/answer/2812853
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_verify_apps_show_more_info = true
+07-11 22:25:46.684 29856 29911 D VRP_POC : [SEC] snet_wake_interval_ms = 85832815
+07-11 22:25:46.685 29856 29911 D VRP_POC : [SEC] update_notify_security_level_delay = 0
+07-11 22:25:46.686 29856 29911 D VRP_POC : 
+07-11 22:25:46.686 29856 29911 D VRP_POC : --- URL Endpoints ---
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:block_crash_reports = http://android.clients.google.com/crash block
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:feedback_url = https://www.google.com/tools/feedback/android/submit rewrite...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:google_location_server = http://www.google.com/loc/m/api rewrite https://www.google.c...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:guc_0_url = http://lh0.googleusercontent.com/ rewrite https://lh0.google...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:guc_1_url = http://lh1.googleusercontent.com/ rewrite https://lh1.google...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:guc_2_url = http://lh2.googleusercontent.com/ rewrite https://lh2.google...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:guc_3_url = http://lh3.googleusercontent.com/ rewrite https://lh3.google...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:guc_4_url = http://lh4.googleusercontent.com/ rewrite https://lh4.google...
+07-11 22:25:46.691 29856 29911 D VRP_POC : [URL] url:guc_5_url = http://lh5.googleusercontent.com/ rewrite https://lh5.google...
+07-11 22:25:46.692 29856 29911 D VRP_POC : [URL] url:guc_6_url = http://lh6.googleusercontent.com/ rewrite https://lh6.google...
+07-11 22:25:46.694 29856 29911 D VRP_POC : 
+07-11 22:25:46.694 29856 29911 D VRP_POC : --- Summary ---
+07-11 22:25:46.694 29856 29911 D VRP_POC : Total entries: 1404
+07-11 22:25:46.694 29856 29911 D VRP_POC : API keys leaked: 3
+07-11 22:25:46.694 29856 29911 D VRP_POC : Device identifiers: 4
+07-11 22:25:46.694 29856 29911 D VRP_POC : Auth config entries: 66
+07-11 22:25:46.694 29856 29911 D VRP_POC : Security config entries: 51
+07-11 22:25:46.694 29856 29911 D VRP_POC : URL endpoints: 26
+07-11 22:25:46.694 29856 29911 D VRP_POC : 
+07-11 22:25:46.694 29856 29911 D VRP_POC : IMPACT: A zero-permission app reads 1404 device
+07-11 22:25:46.694 29856 29911 D VRP_POC : config entries including 3 Google API keys,
+07-11 22:25:46.694 29856 29911 D VRP_POC : device fingerprint, auth config, and security settings.
+07-11 22:25:46.694 29856 29911 D VRP_POC : 
+07-11 22:25:46.694 29856 29911 D VRP_POC : ==========================================
+07-11 22:25:46.694 29856 29911 D VRP_POC : FINDING 3: Exported Providers (No Perm)
+07-11 22:25:46.694 29856 29911 D VRP_POC : ==========================================
+07-11 22:25:46.694 29856 29911 D VRP_POC : 
+07-11 22:25:46.694 29856 29911 D VRP_POC : --- Drive FileProvider ---
+07-11 22:25:46.694 29856 29911 D VRP_POC : Authority: com.google.android.apps.docs.files
+07-11 22:25:46.694 29856 29911 D VRP_POC : Exported: true, Permission: NONE, UID check: NONE
+07-11 22:25:46.712 29856 29911 D VRP_POC : [ACCESSIBLE] openFile() executed (no perm check)
+07-11 22:25:46.712 29856 29911 D VRP_POC :              FileNotFoundException = file key not in registry
+07-11 22:25:46.712 29856 29911 D VRP_POC :              Demonstrates: no permission barrier exists
+07-11 22:25:46.712 29856 29911 D VRP_POC : 
+07-11 22:25:46.712 29856 29911 D VRP_POC : --- Google Docs storage.legacy ---
+07-11 22:25:46.712 29856 29911 D VRP_POC : Authority: com.google.android.apps.docs.editors.kix.storage.legacy
+07-11 22:25:46.763 29856 29911 D VRP_POC : [ACCESSIBLE] openFile() executed without permission check
+07-11 22:25:46.763 29856 29911 D VRP_POC : 
+07-11 22:25:46.763 29856 29911 D VRP_POC : --- Google Slides storage.legacy ---
+07-11 22:25:46.763 29856 29911 D VRP_POC : Authority: com.google.android.apps.docs.editors.punch.storage.legacy
+07-11 22:25:46.805 29856 29911 D VRP_POC : [ACCESSIBLE] openFile() executed without permission check
+07-11 22:25:46.805 29856 29911 D VRP_POC : 
+07-11 22:25:46.805 29856 29911 D VRP_POC : --- Nearby Sharing Provider ---
+07-11 22:25:46.805 29856 29911 D VRP_POC : Authority: com.google.android.gms.nearby.sharing
+07-11 22:25:46.807 29856 29911 D VRP_POC : [ACCESSIBLE] query returned null (no SecurityException)
+07-11 22:25:46.807 29856 29911 D VRP_POC : 
+07-11 22:25:46.807 29856 29911 D VRP_POC : --- Google Settings Partner ---
+07-11 22:25:46.807 29856 29911 D VRP_POC : Authority: com.google.settings/partner
+07-11 22:25:46.807 29856 29911 D VRP_POC : Permission required: NONE
+07-11 22:25:46.811 29856 29911 D VRP_POC : [DATA] 18 settings entries accessible
+07-11 22:25:46.811 29856 29911 D VRP_POC : [DATA]   data_store_version = 3
+07-11 22:25:46.811 29856 29911 D VRP_POC : [DATA]   network_location_opt_in = 1
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   client_id = android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   search_client_id = ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   search_a2_client_id = ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   chrome_client_id = ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   maps_client_id = gmm-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   youtube_client_id = mvapp-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   market_client_id = am-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   voicesearch_client_id = ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   playtx_client_id = play-ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   playax_client_id = play-ad-ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   program_client_id = pg-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   program2_client_id = pg2-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   program3_client_id = pg3-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   rsvd_a2_client_id = ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   rsvd_a3_client_id = ms-android-google
+07-11 22:25:46.812 29856 29911 D VRP_POC : [DATA]   use_location_for_services = 1
+07-11 22:25:46.813 29856 29911 D VRP_POC : 
+07-11 22:25:46.813 29856 29911 D VRP_POC : ========================================
+07-11 22:25:46.813 29856 29911 D VRP_POC :   All Tests Complete
+07-11 22:25:46.813 29856 29911 D VRP_POC : ========================================

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.avatarleak"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="34" />
+
+    <!--
+    ZERO PERMISSIONS DECLARED. No READ_CONTACTS, no WRITE_CONTACTS.
+    Tests whether Google Messages' AvatarContentProvider on Wear OS
+    still acts as a confused deputy for reading protected Contacts
+    photos, per the phone-side bug disclosed by Daniel Pua
+    (fixed 2026-06-12 on .phone_dynamic). Wear OS build under test
+    is messages.android_20260611_04_RC01.wear_dynamic (2026-06-11),
+    a separate build/branch from the one that was patched.
+    -->
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <!--
+         Needed purely for package-visibility (API 30+) so this zero-permission
+         app can resolve Messages' content provider authorities. This is NOT
+         a Contacts/READ_CONTACTS-equivalent permission - it only lets the
+         app see that the Messages package exists.
+    -->
+    <queries>
+        <package android:name="com.google.android.apps.messaging" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="Weather Widget"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name="com.poc.avatarleak.MainActivity"
+            android:exported="true"
+            android:label="Weather Widget" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

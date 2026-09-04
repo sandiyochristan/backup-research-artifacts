@@ -1,0 +1,138 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        1b5e47e com.vrppoc/.MainActivity filter 306a9d7
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+
+Key Set Manager:
+  [com.vrppoc]
+      Signing KeySets: 116
+
+Packages:
+  Package [com.vrppoc] (a395ae1):
+    appId=10346
+    pccId=-1
+    pkg=Package{34847b3 com.vrppoc}
+    codePath=/data/app/~~aPttmIIkpxti0cGGG0TbgQ==/com.vrppoc-Qf8dKxKX40YsqmuqM11CdA==
+    resourcePath=/data/app/~~aPttmIIkpxti0cGGG0TbgQ==/com.vrppoc-Qf8dKxKX40YsqmuqM11CdA==
+    legacyNativeLibraryDir=/data/app/~~aPttmIIkpxti0cGGG0TbgQ==/com.vrppoc-Qf8dKxKX40YsqmuqM11CdA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=0 minSdk=28 targetSdk=34
+    minExtensionVersions=[]
+    versionName=null
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=4
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesPackages=[com.google.android.apps.messaging, com.google.android.gsf, com.google.android.gms]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-07-12 06:03:58
+    lastUpdateTime=2026-07-12 06:03:59
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    loadingProgress=100%
+    loadingCompletedTime=2026-07-12 05:52:02
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{3114170 version:4, signatures:[f45d7527], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP KILL_AFTER_RESTORE ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      com.google.android.gms.dck.permission.DIGITAL_KEY_WRITE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      com.google.android.messages.rcs.PROVISIONING_EVENT
+      com.google.android.apps.messaging.shared.satelliteapi.endpointservice.ACCESS_ENDPOINT_SERVICE
+      com.google.android.ims.services.ACCESS_MESSAGING_SERVICE
+      com.google.android.ims.messaging.ACCESS_MESSAGING_ENGINE_SERVICE
+      com.google.android.gms.dck.permission.DIGITAL_KEY_READ
+    install permissions:
+      com.google.android.gms.dck.permission.DIGITAL_KEY_WRITE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      com.google.android.messages.rcs.PROVISIONING_EVENT: granted=true
+      com.google.android.apps.messaging.shared.satelliteapi.endpointservice.ACCESS_ENDPOINT_SERVICE: granted=true
+      com.google.android.ims.services.ACCESS_MESSAGING_SERVICE: granted=true
+      com.google.android.ims.messaging.ACCESS_MESSAGING_ENGINE_SERVICE: granted=true
+      com.google.android.gms.dck.permission.DIGITAL_KEY_READ: granted=true
+    User 0: ceDataInode=54149 deDataInode=54561 pccCeDataInode=0 pccDeDataInode=0 installed=true hidden=false suspended=false appLockEnabled=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.vrppoc
+      firstInstallTime=2026-07-12 05:52:02
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-gIlb.frro
+        /data/resource-cache/com.android.systemui-accent-iH1p.frro
+        /data/resource-cache/com.android.systemui-dynamic-mnkJ.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+    User 10: ceDataInode=0 deDataInode=0 pccCeDataInode=0 pccDeDataInode=0 installed=true hidden=false suspended=false appLockEnabled=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/10/com.vrppoc
+      firstInstallTime=2026-07-12 05:52:02
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-gIlb.frro
+        /data/resource-cache/com.android.systemui-accent-iH1p.frro
+        /data/resource-cache/com.android.systemui-dynamic-mnkJ.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.vrppoc:
+      com.google.android.apps.messaging
+  queries via component:
+    com.google.android.as:
+      com.vrppoc
+    com.google.android.apps.camera.services:
+      com.vrppoc
+    com.google.android.apps.diagnosticstool:
+      com.vrppoc
+    com.google.android.settings.intelligence:
+      com.vrppoc
+    com.google.android.as.oss:
+      com.vrppoc
+    com.google.android.apps.accessibility.voiceaccess:
+      com.vrppoc
+    com.verizon.mips.services:
+      com.vrppoc
+    com.google.android.apps.searchlite:
+      com.vrppoc
+    com.fitbit.FitbitMobile:
+      com.vrppoc
+  queryable via interaction:
+    User 0:
+      [com.android.DeviceAsWebcam,com.android.providers.settings,com.android.keychain,com.android.dynsystem,com.android.inputdevices,com.android.settings,com.google.android.iwlan,com.google.android.repairmode,com.android.server.telecom,com.google.pixel.camera.services,com.google.SSRestartDetector,android,com.android.localtransport,com.android.location.fused]:
+        com.vrppoc
+      com.google.android.apps.messaging:
+        com.vrppoc
+      com.google.android.inputmethod.latin:
+        com.vrppoc
+      com.google.android.gms:
+        com.vrppoc
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.vrppoc]
+    path: /data/app/~~aPttmIIkpxti0cGGG0TbgQ==/com.vrppoc-Qf8dKxKX40YsqmuqM11CdA==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]

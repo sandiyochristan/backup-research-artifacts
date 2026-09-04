@@ -1,0 +1,30 @@
+# Large binary files
+*.zip
+*.png
+*.apk
+*.xlsx
+*.keystore
+*.DS_Store
+
+# Kernel source (too large)
+android-kernel-6.1/
+android-kernel-mainline/
+
+# Pulled APKs (large)
+pulled_apks/
+google_apks/
+apks/
+
+# Samsung third-party
+Samsung_Vulnerabilities-main/
+
+# Decompiled/manifests (regenerable)
+decompiled/
+manifests/
+poc/
+reports/
+
+# Build artifacts
+poc_app/build/obj/
+poc_app/build/classes/
+poc_app/build/poc-unaligned.apk

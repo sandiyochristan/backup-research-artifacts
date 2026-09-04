@@ -1,0 +1,365 @@
+--------- beginning of main
+09-04 08:02:29.539 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:input tap 540 1343'
+09-04 08:02:29.608  7044  7044 D VRP_POC : [TEST 11] GMS FRP Config Broadcast - Factory Reset Protection Manipulation
+09-04 08:02:29.613  7044  7044 D VRP_POC : SUCCESS: FRP broadcast sent from UID 10357
+09-04 08:02:29.630 19080  7143 I FRP     : (REDACTED) [FrpUpdateIntentOperation] Intent received: %s
+--------- beginning of system
+09-04 08:02:29.630  1431  1856 D ActivityManager: freezing 9157 com.android.vending:quick_launch
+09-04 08:02:29.631 19080  7143 I FRP     : [FrpUpdateIntentOperation] No FRP data present in app restriction, using current Google accounts. [CONTEXT service_id=341 ]
+09-04 08:02:29.633  1431  1856 D ActivityManager: freezing 9227 com.android.vending:instant_app_installer
+09-04 08:02:29.635 19080  7143 I FRP     : (REDACTED) [FactoryResetProtectionManager] Updating data block with %d accounts (lockscreen sufficient = %b)
+09-04 08:02:29.636 19080  7143 I FRP     : (REDACTED) [FactoryResetProtectionManager] Updating accounts on profile %d
+09-04 08:02:29.644 19080  7143 W FRP     : [FactoryResetProtectionManager] Failed to get IMEI [CONTEXT service_id=341 ]
+09-04 08:02:29.644 19080  7143 W FRP     : java.lang.UnsupportedOperationException: Operation not supported
+09-04 08:02:29.644 19080  7143 W FRP     : 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3404)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at android.os.Parcel.createException(Parcel.java:3376)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at android.os.Parcel.readException(Parcel.java:3359)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at android.os.Parcel.readException(Parcel.java:3301)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getPrimaryImei(ITelephony.java:12117)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at android.telephony.TelephonyManager.getPrimaryImei(TelephonyManager.java:19504)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at aizo.m(:com.google.android.gms@263268035@26.32.68 (260400-975269223):138)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at aizo.i(:com.google.android.gms@263268035@26.32.68 (260400-975269223):472)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at aizo.k(:com.google.android.gms@263268035@26.32.68 (260400-975269223):49)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at com.google.android.gms.auth.frp.FrpUpdateIntentOperation.onHandleIntent(:com.google.android.gms@263268035@26.32.68 (260400-975269223):262)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at bgge.onHandleIntent(:com.google.android.gms@263268035@26.32.68 (260400-975269223):88)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at acgj.run(:com.google.android.gms@263268035@26.32.68 (260400-975269223):58)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at acgi.run(:com.google.android.gms@263268035@26.32.68 (260400-975269223):132)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at hnyz.run(:com.google.android.gms@263268035@26.32.68 (260400-975269223):23)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+09-04 08:02:29.644 19080  7143 W FRP     : 	at java.lang.Thread.run(Thread.java:1572)
+09-04 08:02:29.648 19080  7143 I FRP     : (REDACTED) [PersistentDataBlockImpl] Writing container to disk with %d profile blocks and %d encrypted profile blocks
+09-04 08:02:29.656   926  1743 D audio_hw_patch: low-latency-playback routing:
+09-04 08:02:29.656   926  1743 D audio_hw_patch: dev: 0x2 
+09-04 08:02:29.660  1431  2322 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 33
+09-04 08:02:29.660   926  3573 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 15, state: 2, device: 0
+09-04 08:02:29.660   926  3573 D audio_hw_output_stream: update stream 1 active 1 gain 0.036208
+09-04 08:02:29.660   926  3525 D audio_hw: prepare low-latency-playback
+09-04 08:02:29.660   926  3525 D audio_hw_soundtrigger: st_uc_monitor:uc:low-latency-playback active
+09-04 08:02:29.660   926  3525 D audio_hw: low-latency-playback:
+09-04 08:02:29.660   926  3525 D audio_hw: rx:
+09-04 08:02:29.660   926  3525 D audio_hw:   #0: OUT_SPEAKER_BE_CFG 0
+09-04 08:02:29.660   926  3525 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 1, state: 2, device: 4
+09-04 08:02:29.660   926  3525 D audio_route: Apply path: speaker
+09-04 08:02:29.661   926  3525 D audio_hw_aoc_route: speaker 1
+09-04 08:02:29.661   926  3525 D audio_route: Apply path: hostless-ulC spk-vi
+09-04 08:02:29.661  1431  1817 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 33
+09-04 08:02:29.662   926  3525 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 2, state: 3, device: 4
+09-04 08:02:29.662   926  3525 D audio_hw_soundtrigger: st_comm_aud_event_monitor:codec dev:4 active
+09-04 08:02:29.662   926  3525 I audio_hw_aoc: Mode Ambient is already selected
+09-04 08:02:29.662   926  3525 D audio_route: Apply path: low-latency-playbackP
+09-04 08:02:29.663   926  3525 D audio_hw_aoc_route: low-latency-playbackP 1
+09-04 08:02:29.663  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x010f, tag: 0xac [cntr = 487]
+09-04 08:02:29.663   926  3525 E audio_route: unable to find path 'speaker-post'
+09-04 08:02:29.663   926  3525 D audio_hw_aoc_route: speaker-post 1
+09-04 08:02:29.663  1178  1178 D AOC     : F1:Source 1 mastered by sink 0
+09-04 08:02:29.663  1178  1178 D AOC     : F1:AT Map:2 (LL:0), 1 EPs active, Power: Yes, Config: No
+09-04 08:02:29.663  1178  1178 D AOC     : F1:Mixer 0 configuration changed: (2)
+09-04 08:02:29.663  1178  1178 D AOC     : F1:Sink 0 Configuration changed: ULL (enabled)
+09-04 08:02:29.664  1178  1178 D AOC     : F1:AHWSinkSPKR started: 48 samples (32-bit,2 ch,48 kHz) block 384
+09-04 08:02:29.664  1178  1178 D AOC     : F1:[AHWSinkSPKR] DL resync B: 0, A:0. wo: 0, target offset: 1632 (align 0) -> ro:0
+09-04 08:02:29.664  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x010f, tag: 0xac, rc: 0
+09-04 08:02:29.664  1178  1178 D AOC     : F1:Speaker Started (DualDMA on 1 and 2)
+09-04 08:02:29.664  1178  1178 D AOC     : F1:[AHWSinkSPKR] mix overrun by 3840
+09-04 08:02:29.664  1178  1178 D AOC     : H0:Mixer AMixSPKR: 480 samples (0002/0002) (ON SC)
+09-04 08:02:29.664  1178  1178 D AOC     : H0:	 1: 0x403e1ac0
+09-04 08:02:29.664  1178  1178 D AOC     : H0:AMixSPKR PostProcessing Config: WAVES
+09-04 08:02:29.665  1178  1178 D AOC     : H0:Mixer configuration updated
+09-04 08:02:29.665  1178  1178 D AOC     : H0:Mixer state changed
+09-04 08:02:29.668 19080  7143 I FRP     : [FactoryResetProtectionManager] Successfully wrote new FRP secret [CONTEXT service_id=341 ]
+09-04 08:02:29.668 19080  7143 I FRP     : (REDACTED) [PersistentDataBlockImpl] Writing container to disk with %d profile blocks and %d encrypted profile blocks
+09-04 08:02:29.670  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00ce, tag: 0xad [cntr = 488]
+09-04 08:02:29.670  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x0120, tag: 0x14, rc: 0
+09-04 08:02:29.670   926  3525 D audio_hw_waves: waves_usecase_event: low-latency-playback start
+09-04 08:02:29.670   926  3525 D audio_hw_waves: waves_usecase_event: trigger to update tuning when first track is running.
+09-04 08:02:29.670   926  3525 D audio_hw_waves: update_sink_info_from_usecases: sink 1 VOL/Stream update 0.000000(4294967295) -> 0.036208(1)
+09-04 08:02:29.673 19080  7143 I FRP     : (REDACTED) [FactoryResetProtectionManager] Write complete, result: %d
+09-04 08:02:29.678   926  3525 D audio_hw_waves: send_waves_tuning: instance_id = 1, tuning_id = 2
+09-04 08:02:29.678   926  3525 D audio_hw_aoc: aoc_send_rtc_mixer_tuning: block_id = 16, comp_id = 2
+09-04 08:02:29.679  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00d5, tag: 0x4d [cntr = 489]
+09-04 08:02:29.681  1178  1178 D AOC     : H0:MSG: controller.cc, 811: AudOutCtrlH0: ipc: C-AO-H0, cmd ID: 0x00d5, tag: 0x5c, rc: 0
+09-04 08:02:29.681  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_tu, cmd ID: 0x00d5, tag: 0x5c, rc: 0
+09-04 08:02:29.685  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00c9, tag: 0xae [cntr = 490]
+09-04 08:02:29.685  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x00c9, tag: 0xae, rc: 0
+09-04 08:02:29.692 11073  7120 I NearbyMediums: Found Fast Ble Advertisements :
+09-04 08:02:29.692 11073  7120 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x4e 0x56 0x31 0x35 0x11 0x32 0x6f 0xc6 0x30 0x6e 0x14 0x43 0x0d 0x69 0x2d 0xa9 0xdf 0x66 0xf0 0xb3 0x1f 0x4a ], deviceToken=[ 0x23 0x49 ], rxAdvertisement=null } : 1 times.
+09-04 08:02:29.692 11073  7120 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+09-04 08:02:29.692 11073  7120 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-04 08:02:29.867   926  3573 D audio_hw_waves: update_sink_info_from_usecases: update amcs, instance id 1, volume 196 0 0 0 0 0 0 0 0 0
+09-04 08:02:29.867   926  3573 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 15, state: 3, device: 0
+09-04 08:02:29.867   926  3573 D audio_hw_output_stream: update stream 1 active 0 gain 0.000000
+09-04 08:02:29.868  1000  1085 I APM_AudioPolicyManager: getNewOutputDevices io 13 recent device override {AUDIO_DEVICE_OUT_SPEAKER, @:}
+09-04 08:02:30.015  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:30.020 11073 11749 I NearbyDiscovery: (REDACTED) [trigger-id=Scan3E499BFF] FastPairCache: Bloom filter changed, %s, newData=%s, oldData=%s, scanMode=%s
+09-04 08:02:30.022 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:30.158  1431  1856 D ActivityManager: freezing 9959 com.google.android.odad
+09-04 08:02:30.167  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 08:02:30.170  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 08:02:30.170  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10140} in 7ms
+09-04 08:02:30.716   926  1556 D audio_hw_35l41: cs35l41_rtlogger_data_analysis: Left/Top impedance: 100000
+09-04 08:02:30.716   926  1556 D audio_hw_35l41: cs35l41_rtlogger_data_analysis: Right/Bottom impedance: 100000
+09-04 08:02:30.741   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Left/Top Max temp: 0x9319a ==> 36.775024 C
+09-04 08:02:30.741   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Left/Top Max exc: 0x89e9 ==> 0.067339 mm
+09-04 08:02:30.741   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Left/Top dsp heartbeat = 0x144ea
+09-04 08:02:30.741   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Right/Bottom Max temp: 0x98b24 ==> 38.174072 C
+09-04 08:02:30.742   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Right/Bottom Max exc: 0x33333 ==> 0.400000 mm
+09-04 08:02:30.742   926  1556 D audio_hw_35l41: cs35l41_bdlogger_data_analysis: Right/Bottom dsp heartbeat = 0x171bd
+09-04 08:02:30.869  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:30.879 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:31.123  1431  1856 D ActivityManager: freezing 8828 com.android.vending
+09-04 08:02:31.124  1000  8129 D AudioFlinger: onStateChanged: pid:8828  uid:10134  state:frozen - no freeze activity
+09-04 08:02:31.133  1431  1856 D ActivityManager: freezing 8841 com.android.vending:background
+09-04 08:02:31.137  1431  1856 D ActivityManager: freezing 15879 com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+09-04 08:02:31.514   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 08:02:31.526  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 08:02:31.531  1431  1956 D InetDiagMessage: Destroyed 2 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 08:02:31.531  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10134} in 9ms
+09-04 08:02:31.596  1431  1981 I AdbWifiNetworkMonitor: Wi-Fi network available
+09-04 08:02:31.596  1431  1981 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+09-04 08:02:31.600  2674  2694 D IwlanDataService: onCapabilitiesChanged: 103 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30339Kbps TransportInfo: <SSID: "Airtel_79041284646", BSSID: 94:98:69:74:17:94, MAC: 72:98:96:ae:d9:99, IP: /192.168.1.4, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11n, RSSI: -58, Link speed: 104Mbps, Tx Link speed: 104Mbps, Max Supported Tx Link speed: 144Mbps, Calculated Tx : 46Mbps, Rx Link speed: 130Mbps, Max Supported Rx Link speed: 144Mbps, Calculated Rx : 109Mbps, Frequency: 2412MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"Airtel_79041284646"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -58 OwnerUid: 1000 AdminUids: [1000] SSID: "Airtel_79041284646" UnderlyingNetworks: Null]
+09-04 08:02:31.600  2674  2694 D IwlanDataService: Network 103 connected using transport WIFI
+09-04 08:02:31.602  2674  2782 D IwlanNetworkService: onCapabilitiesChanged: 103
+09-04 08:02:31.604 10630 10688 I WifiSignalInfo: onCapabilitiesChanged: rssi:-58
+09-04 08:02:31.604 10630 10678 D DeviceStateHelper: Wifi freq: 2412
+09-04 08:02:31.608 17274 17334 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[fb4c86fd-2734]>Handler" thread_id=58 ]
+09-04 08:02:31.609 11073 11073 I MagicTether: (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-04 08:02:31.609 17274 17334 I BugleRcsEngine: Cannot use CS.apk as it's battery optimized [CONTEXT thread_id=58 ]
+09-04 08:02:31.609 11073 11073 I MagicTether: (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-04 08:02:31.609  2354  2434 E PhoneInterfaceManager: getCarrierPrivilegeStatusForUid: Invalid subId
+09-04 08:02:31.611 11073  6962 I MagicTether: [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-04 08:02:31.611 17274 17329 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=53 ]
+09-04 08:02:31.611 11073  6962 I MagicTether: [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-04 08:02:31.612 11073 11088 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-04 08:02:31.612 11073 11088 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+09-04 08:02:31.613 11073  6962 I MagicTether: (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-04 08:02:31.613 11073  7120 I NearbyMediums: Wifi changed new SSID: "Airtel_79041284646"
+09-04 08:02:31.613 11073  7120 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+09-04 08:02:31.613 11073  6962 I MagicTether: (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-04 08:02:31.614  1431  1956 D ConnectivityService: NetReassign [no changes] [c 0] [a 2] [i 2]
+09-04 08:02:31.615 17274 17334 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:0,last3:] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=58 ]
+09-04 08:02:31.615   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 08:02:31.616   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 08:02:31.616   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 08:02:31.616   992  1083 D WifiHAL : len = 4, expected len = 4
+09-04 08:02:31.617   932   962 D CHRE    : @ 29241.700: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x16 msgType 112 payload size 14
+09-04 08:02:31.617   932   962 I CHRE    : @ 29241.700: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-04 08:02:31.617   932   962 I CHRE    : @ 29241.700: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-04 08:02:31.618 11073 11073 I MagicTether: (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-04 08:02:31.618 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-04 08:02:31.618 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-04 08:02:31.618 11073 11073 I MagicTether: (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-04 08:02:31.618 11073 11073 I MagicTether: [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-04 08:02:31.618 11073 11073 I MagicTether: [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-04 08:02:31.619 11073 11073 I MagicTether: (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-04 08:02:31.619 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-04 08:02:31.619 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-04 08:02:31.619 11073 11073 I MagicTether: (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-04 08:02:31.619 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-04 08:02:31.619 11073 11073 I MagicTether: [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-04 08:02:31.648  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 08:02:31.649  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 08:02:31.649  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={99011} in 2ms
+09-04 08:02:31.703  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:31.706 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:32.111 11073  6868 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+09-04 08:02:32.110 11073  7120 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+09-04 08:02:32.148  1729  1732 I pixel-thermal: cellular-emergency:34.3544 raw data: VIRTUAL-NEUTRAL:34354.4 VIRTUAL-NEUTRAL-SKIN2:34024.9 VIRTUAL-QUIET-NEUTRAL:33287.8 VIRTUAL-SKIN:34354.4 cellular-emergency:34354.4 disp_therm:33063 gnss_tcxo_therm:34978 neutral_therm:33397 quiet_therm:33241 skin_therm1:35200 skin_therm2:35490 
+09-04 08:02:32.148  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:34.3544 raw data: VIRTUAL-SKIN:34354.4 VIRTUAL-SKIN-CPU:34354.4 
+09-04 08:02:32.148  1729  1732 I pixel-thermal: neutral_therm:33.397 raw data: neutral_therm:33397 
+09-04 08:02:32.148  1729  1732 I pixel-thermal: VIRTUAL-SKIN:34.3544 raw data: VIRTUAL-SKIN:34354.4 
+09-04 08:02:32.149  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:34.3544 raw data: VIRTUAL-SKIN:34354.4 VIRTUAL-SKIN-CPU-GPU:34354.4 
+09-04 08:02:32.149  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:34.3544 raw data: VIRTUAL-SKIN:34354.4 VIRTUAL-SKIN-HINT:34354.4 
+09-04 08:02:32.149  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:34.3544 raw data: VIRTUAL-SKIN:34354.4 VIRTUAL-SKIN-CHARGE:34354.4 
+09-04 08:02:32.518  1431  1842 I UsageStatsService: User[0] Flushing usage stats to disk
+09-04 08:02:32.649 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-04 08:02:32.705  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:32.710 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:32.853  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x00c9, tag: 0xaf [cntr = 491]
+09-04 08:02:32.854  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x00c9, tag: 0xaf, rc: 0
+09-04 08:02:32.854  1178  1178 D AOC     : H0:Mixer AMixSPKR Input 1 RB overflow. Resyncing.
+09-04 08:02:32.857   926  3573 D audio_hw: shutdown: low-latency-playback
+09-04 08:02:32.857   926  3573 E audio_route: unable to find path 'speaker-post'
+09-04 08:02:32.857   926  3573 D audio_hw_aoc_route: speaker-post 0
+09-04 08:02:32.857   926  3573 D audio_hw_aoc_route: low-latency-playbackP 0
+09-04 08:02:32.857   926  3573 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 3, state: 3, device: 4
+09-04 08:02:32.857   926  3573 D audio_hw_aoc_route: speaker 0
+09-04 08:02:32.858  1178  1178 D AOC     : F1:MSG: controller.cc, 273: AudioOutCtrl: cmd ID: 0x010f, tag: 0xb0 [cntr = 492]
+09-04 08:02:32.858  1178  1178 D AOC     : F1:Unregistered Source 1 from Sink 0 
+09-04 08:02:32.858  1178  1178 D AOC     : F1:AT Map:0 (LL:0), 0 EPs active, Power: Yes, Config: No
+09-04 08:02:32.858  1178  1178 D AOC     : F1:Mixer 0 configuration changed: (0)
+09-04 08:02:32.858  1178  1178 D AOC     : F1:Sink 0 Configuration changed: ULL (disabled)
+09-04 08:02:32.858   926  3573 W audio_hw_35l41: cs35l41_amp_common_event: ret: 0, event: 4, state: 2, device: 4
+09-04 08:02:32.858   926  3573 D audio_hw_soundtrigger: st_comm_aud_event_monitor:codec dev:4 inactive
+09-04 08:02:32.858   926  3573 D audio_hw_soundtrigger: st_uc_monitor:uc:low-latency-playback inactive
+09-04 08:02:32.858   926  3573 I audio_hw_aoc: Mode Ambient is already selected
+09-04 08:02:32.858   926  3573 D audio_hw_waves: waves_usecase_event: low-latency-playback stop
+09-04 08:02:32.859  1178  1178 D AOC     : F1:MSG: controller.cc, 811: AudioOutCtrl: ipc: audio_output_co, cmd ID: 0x010f, tag: 0xb0, rc: 0
+09-04 08:02:32.859  1178  1178 D AOC     : H0:Mixer AMixSPKR: 480 samples (0000/0000) (OFF SC)
+09-04 08:02:32.859  1178  1178 D AOC     : H0:Mixer configuration updated
+09-04 08:02:33.603  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:33.615 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:33.621  1431  1945 D WifiConfigStore: Writing to stores completed in 12 ms.
+09-04 08:02:34.451  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:34.461 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:34.620   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 08:02:34.726   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 08:02:34.726   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 08:02:34.726   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 08:02:34.726   992  1083 D WifiHAL : len = 4, expected len = 4
+09-04 08:02:35.449   928  2558 I bthal.activity: bt_power: LeAdvStat: 08:02:26:448 - 08:02:35:449, duration: 9000, le_adv_count: 22, total_le_adv_count: 5668, total_event_count: 23
+09-04 08:02:35.461  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:35.464 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:36.292  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:36.298 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:36.937  1431  1856 D ActivityManager: freezing 2522 com.google.android.permissioncontroller
+09-04 08:02:36.946  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-04 08:02:36.949  1431  1956 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-04 08:02:36.949  1431  1956 D InetDiagMessage: Destroyed live tcp sockets for uids={10287} in 6ms
+09-04 08:02:37.174  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:37.182 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:37.249 11073  6866 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+09-04 08:02:37.299 11073  6343 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+09-04 08:02:37.309 11073  6343 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+09-04 08:02:37.313 11073  6343 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+09-04 08:02:37.346 11073  6876 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+09-04 08:02:37.360 11073  6866 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+09-04 08:02:37.498  1431  1856 D ActivityManager: freezing 6433 com.google.android.apps.turbo:aab
+09-04 08:02:37.732   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 08:02:37.844  1431  1981 I AdbWifiNetworkMonitor: Wi-Fi network available
+09-04 08:02:37.845  1431  1981 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+09-04 08:02:37.855  2674  2694 D IwlanDataService: onCapabilitiesChanged: 103 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=30339Kbps TransportInfo: <SSID: "Airtel_79041284646", BSSID: 94:98:69:74:17:94, MAC: 72:98:96:ae:d9:99, IP: /192.168.1.4, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11n, RSSI: -58, Link speed: 78Mbps, Tx Link speed: 78Mbps, Max Supported Tx Link speed: 144Mbps, Calculated Tx : 50Mbps, Rx Link speed: 130Mbps, Max Supported Rx Link speed: 144Mbps, Calculated Rx : 109Mbps, Frequency: 2412MHz, Net ID: 0, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"Airtel_79041284646"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -58 OwnerUid: 1000 AdminUids: [1000] SSID: "Airtel_79041284646" UnderlyingNetworks: Null]
+09-04 08:02:37.855  2674  2694 D IwlanDataService: Network 103 connected using transport WIFI
+09-04 08:02:37.856  2674  2782 D IwlanNetworkService: onCapabilitiesChanged: 103
+09-04 08:02:37.858 10630 10678 D DeviceStateHelper: Wifi freq: 2412
+09-04 08:02:37.863 10630 10688 I WifiSignalInfo: onCapabilitiesChanged: rssi:-58
+09-04 08:02:37.868 17274 17329 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=53 ]
+09-04 08:02:37.870 17274 17334 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[fb4c86fd-2734]>Handler" thread_id=58 ]
+09-04 08:02:37.871   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 08:02:37.871   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 08:02:37.872   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 08:02:37.872   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 08:02:37.874 17274 17334 I BugleRcsEngine: Cannot use CS.apk as it's battery optimized [CONTEXT thread_id=58 ]
+09-04 08:02:37.875  2354 13251 E PhoneInterfaceManager: getCarrierPrivilegeStatusForUid: Invalid subId
+09-04 08:02:37.885   932   962 D CHRE    : @ 29247.964: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x16 msgType 112 payload size 14
+09-04 08:02:37.885   932   962 I CHRE    : @ 29247.964: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-04 08:02:37.885   932   962 I CHRE    : @ 29247.965: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-04 08:02:37.886 17274 17334 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:0,last3:] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=58 ]
+09-04 08:02:37.887 11073 11242 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-04 08:02:37.887 11073 11242 W libbinder.Binder: Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+09-04 08:02:37.888  1431  1956 D ConnectivityService: NetReassign [no changes] [c 0] [a 2] [i 1]
+09-04 08:02:37.890 11073  6868 I NearbyMediums: Wifi changed new SSID: "Airtel_79041284646"
+09-04 08:02:37.890 11073  6868 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+09-04 08:02:37.890 11073 11073 I MagicTether: (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-04 08:02:37.890 11073 11073 I MagicTether: (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-04 08:02:37.891 11073  6866 I MagicTether: [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-04 08:02:37.891 11073  6866 I MagicTether: [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-04 08:02:37.891 11073  6866 I MagicTether: (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-04 08:02:37.892 11073  6866 I MagicTether: (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-04 08:02:37.894 11073 11073 I MagicTether: (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-04 08:02:37.894 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-04 08:02:37.895 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-04 08:02:37.895 11073 11073 I MagicTether: (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-04 08:02:37.895 11073 11073 I MagicTether: [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-04 08:02:37.895 11073 11073 I MagicTether: [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-04 08:02:37.896 11073 11073 I MagicTether: (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-04 08:02:37.896 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-04 08:02:37.896 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-04 08:02:37.896 11073 11073 I MagicTether: (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-04 08:02:37.896 11073 11073 I MagicTether: (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-04 08:02:37.897 11073 11073 I MagicTether: [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-04 08:02:38.171  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:38.182 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:38.321  2193  2499 D TemperatureStateSource: sequence=2816 actualDelay=10002
+09-04 08:02:38.323  2193  2499 D TemperatureStateSource: Reading temperature: sequence=2817
+09-04 08:02:38.328  1729  1729 I pixel-thermal: VIRTUAL-SKIN:34.4447 raw data: VIRTUAL-NEUTRAL:34444.7 VIRTUAL-NEUTRAL-SKIN2:34063 VIRTUAL-QUIET-NEUTRAL:33332.8 VIRTUAL-SKIN:34444.7 disp_therm:33108 gnss_tcxo_therm:35178 neutral_therm:33442 quiet_therm:33286 skin_therm1:35334 skin_therm2:35512 
+09-04 08:02:38.329  2193  2499 D TemperatureStateSource: getDeviceTemperatures: sequence=2817 deviceTemperatureType=3 temperatureSource=0 temperatures=[34.444706]
+09-04 08:02:38.329  2193  2499 D TemperatureStateSource: sequence=2817 waitTime=10000
+09-04 08:02:38.333  1729  1729 I pixel-thermal: VIRTUAL-SKIN:34.4447 raw data: VIRTUAL-SKIN:34444.7 
+09-04 08:02:38.334  2193  2395 I TemperatureStateSource: temperature was set
+09-04 08:02:38.335  2193  2395 D ImpulseStateSource: Notify clients: 2827
+09-04 08:02:38.366 11073  6868 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+09-04 08:02:38.367 11073  7120 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+09-04 08:02:39.026  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:39.034 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:39.159  1729  1732 I pixel-thermal: cellular-emergency:34.4447 raw data: VIRTUAL-SKIN:34444.7 cellular-emergency:34444.7 
+09-04 08:02:39.159  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:34.4447 raw data: VIRTUAL-SKIN:34444.7 VIRTUAL-SKIN-CPU:34444.7 
+09-04 08:02:39.159  1729  1732 I pixel-thermal: neutral_therm:33.442 raw data: neutral_therm:33442 
+09-04 08:02:39.159  1729  1732 I pixel-thermal: VIRTUAL-SKIN:34.4447 raw data: VIRTUAL-SKIN:34444.7 
+09-04 08:02:39.159  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:34.4447 raw data: VIRTUAL-SKIN:34444.7 VIRTUAL-SKIN-CPU-GPU:34444.7 
+09-04 08:02:39.159  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:34.4447 raw data: VIRTUAL-SKIN:34444.7 VIRTUAL-SKIN-HINT:34444.7 
+09-04 08:02:39.159  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:34.4447 raw data: VIRTUAL-SKIN:34444.7 VIRTUAL-SKIN-CHARGE:34444.7 
+09-04 08:02:39.206  1431  1460 I system_server: Background young concurrent mark compact GC freed 48MB AllocSpace bytes, 64(3560KB) LOS objects, 87% free, 64MB/512MB, paused 1.178ms,3.400ms total 124.707ms
+09-04 08:02:39.287   538  7116 I keystore2: system/security/keystore2/watchdog/src/lib.rs:371 - Watchdog thread idle -> terminating. Have a great day.
+09-04 08:02:39.698 11073  7120 I NearbyMediums: Found Fast Ble Advertisements :
+09-04 08:02:39.698 11073  7120 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x4e 0x56 0x31 0x35 0x11 0x32 0x6f 0xc6 0x30 0x6e 0x14 0x43 0x0d 0x69 0x2d 0xa9 0xdf 0x66 0xf0 0xb3 0x1f 0x4a ], deviceToken=[ 0x23 0x49 ], rxAdvertisement=null } : 2 times.
+09-04 08:02:39.698 11073  7120 I NearbyMediums: Total 2 fast advertisements from 1 unique advertisers.
+09-04 08:02:39.698 11073  7120 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-04 08:02:39.864  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:39.878 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:40.490  1729  1732 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-3228 VIRTUAL-USB-UI:0 charger_skin_therm:36313 usb_pwr_therm2:33085 
+09-04 08:02:40.490  1729  1732 I pixel-thermal: VIRTUAL-USB-THROTTLING:0 raw data: USB2-MINUS-CHG:-3228 VIRTUAL-USB-THROTTLING:0 usb_pwr_therm2:33085 
+09-04 08:02:40.491  1729  1732 I pixel-thermal: Power rails total power: 505.16 mW for 60007 ms
+09-04 08:02:40.491  1729  1732 I pixel-thermal: Power rails [L8S_UFS_VCCQ: 38.03 mW] [S2S_VDD_G3D: 3.29 mW] [S10S_VDD2L: 11.65 mW] [S5S_VDDQ_MEM: 7.82 mW] [S4S_VDD2H_MEM: 23.75 mW] [S9S_VDD_AOC: 22.15 mW] 
+09-04 08:02:40.491  1729  1732 I pixel-thermal: Power rails [S10M_VDD_TPU: 10.67 mW] [L2S_VDD_AOC_RET: 8.87 mW] [L9S_GNSS_CORE: 2.92 mW] [S1M_VDD_MIF: 44.82 mW] [S5M_VDD_INT: 28.82 mW] [S4M_VDD_CPUCL0: 71.89 mW] 
+09-04 08:02:40.491  1729  1732 I pixel-thermal: Power rails [S2M_VDD_CPUCL2: 21.25 mW] [S3M_VDD_CPUCL1: 50.26 mW] [L15M_VDD_SLC_M: 15.26 mW] [VSYS_PWR_DISPLAY: 143.69 mW] 
+09-04 08:02:40.492  1729  1732 I pixel-thermal: CDEV log usbc-port state:0 fcc state:0 thermal-cpufreq-1 state:0 tpu_cooling state:0 thermal-gpufreq-0 state:0 thermal-cpufreq-2 state:0 thermal-cpufreq-0 state:0 
+09-04 08:02:40.707  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:40.715 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:40.890   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 08:02:41.023   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 132 ms
+09-04 08:02:41.075   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 08:02:41.075   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 08:02:41.075   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 08:02:41.075   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 08:02:41.705   928  2558 I bthal.activity: bt_power: LeAdvStat: 08:02:35:459 - 08:02:41:705, duration: 6246, le_adv_count: 15, total_le_adv_count: 5683, total_event_count: 15
+09-04 08:02:42.244 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-04 08:02:42.644  7015  7019 I libbinder.AidlLazyServiceRegistrar: Process has 0 (of 2 available) client(s) in use after notification android.system.virtualizationmaintenance has clients: 0
+09-04 08:02:42.644  7015  7019 I libbinder.AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+09-04 08:02:42.648  7015  7019 I libbinder.AidlLazyServiceRegistrar: Unregistered all clients and exiting
+09-04 08:02:44.086   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 08:02:44.201   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 115 ms
+09-04 08:02:44.207  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:44.216 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:44.248   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 08:02:44.248   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 08:02:44.248   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 08:02:44.248   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 08:02:46.020  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:46.032 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:46.180  1729  1732 I pixel-thermal: cellular-emergency:34.3845 raw data: VIRTUAL-NEUTRAL:34384.5 VIRTUAL-NEUTRAL-SKIN2:34009.6 VIRTUAL-QUIET-NEUTRAL:33285.9 VIRTUAL-SKIN:34384.5 cellular-emergency:34384.5 disp_therm:33041 gnss_tcxo_therm:35156 neutral_therm:33442 quiet_therm:33219 skin_therm1:35222 skin_therm2:35334 
+09-04 08:02:46.181  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:34.3845 raw data: VIRTUAL-SKIN:34384.5 VIRTUAL-SKIN-CPU:34384.5 
+09-04 08:02:46.182  1729  1732 I pixel-thermal: neutral_therm:33.442 raw data: neutral_therm:33442 
+09-04 08:02:46.182  1729  1732 I pixel-thermal: VIRTUAL-SKIN:34.3845 raw data: VIRTUAL-SKIN:34384.5 
+09-04 08:02:46.182  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:34.3845 raw data: VIRTUAL-SKIN:34384.5 VIRTUAL-SKIN-CPU-GPU:34384.5 
+09-04 08:02:46.182  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:34.3845 raw data: VIRTUAL-SKIN:34384.5 VIRTUAL-SKIN-HINT:34384.5 
+09-04 08:02:46.182  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:34.3845 raw data: VIRTUAL-SKIN:34384.5 VIRTUAL-SKIN-CHARGE:34384.5 
+09-04 08:02:46.639  1431  1813 W VerifierController: Verifier com.google.android.verifier is disconnected on user 0
+09-04 08:02:46.640  1431  1813 W DeveloperVerifierController$Injector$1: mayInterruptIfRunning not supported - ignoring
+09-04 08:02:46.675  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:46.683 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:47.255   992  2892 I WifiHAL : Creating message to get link statistics; iface = 47
+09-04 08:02:47.327  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:47.336 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:47.375   992  2892 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 119 ms
+09-04 08:02:47.427   992  2892 D WifiHAL : Start debug command: mType GET_FEATURE
+09-04 08:02:47.427   992  2892 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-04 08:02:47.427   992  2892 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-04 08:02:47.427   992  2892 D WifiHAL : len = 4, expected len = 4
+09-04 08:02:48.305  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:48.318 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:48.332  2193  3242 D TemperatureStateSource: sequence=2817 actualDelay=10003
+09-04 08:02:48.333  2193  3242 D TemperatureStateSource: Reading temperature: sequence=2818
+09-04 08:02:48.341  1729  1729 I pixel-thermal: VIRTUAL-SKIN:34.3541 raw data: VIRTUAL-NEUTRAL:34354.1 VIRTUAL-NEUTRAL-SKIN2:34006.8 VIRTUAL-QUIET-NEUTRAL:33330.6 VIRTUAL-SKIN:34354.1 disp_therm:33019 gnss_tcxo_therm:35111 neutral_therm:33486 quiet_therm:33264 skin_therm1:35133 skin_therm2:35222 
+09-04 08:02:48.342  2193  3242 D TemperatureStateSource: getDeviceTemperatures: sequence=2818 deviceTemperatureType=3 temperatureSource=0 temperatures=[34.354103]
+09-04 08:02:48.343  2193  3242 D TemperatureStateSource: sequence=2818 waitTime=10000
+09-04 08:02:48.344  2193  3242 D ImpulseStateSource: Notify clients: 2828
+09-04 08:02:49.142  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:49.153 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:49.704 11073  7120 I NearbyMediums: Found Fast Ble Advertisements :
+09-04 08:02:49.704 11073  7120 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x4e 0x56 0x31 0x35 0x11 0x32 0x6f 0xc6 0x30 0x6e 0x14 0x43 0x0d 0x69 0x2d 0xa9 0xdf 0x66 0xf0 0xb3 0x1f 0x4a ], deviceToken=[ 0x23 0x49 ], rxAdvertisement=null } : 4 times.
+09-04 08:02:49.704 11073  7120 I NearbyMediums: Total 4 fast advertisements from 1 unique advertisers.
+09-04 08:02:49.704 11073  7120 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-04 08:02:50.140  2162  2579 W BluetoothRemoteDevices: Address type mismatch for XX:XX:XX:XX:55:06, new type: 1
+09-04 08:02:50.151 11073 11749 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+09-04 08:02:50.163 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''

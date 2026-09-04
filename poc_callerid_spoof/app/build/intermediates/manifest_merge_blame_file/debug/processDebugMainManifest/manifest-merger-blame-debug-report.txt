@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.calleridspoof"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!--
+12    RESEARCH HYPOTHESIS (phase 2): android.permission.MANAGE_OWN_CALLS is a NORMAL
+13    (install-time, no runtime prompt) permission. Phase 1 (this session) confirmed
+14    that it lets any app force genuine Telecom RINGING state + ringer audio-focus
+15    hijack with a fully attacker-controlled caller ID via a self-managed
+16    PhoneAccount, but produces no visible UI on its own (WearInCallService, the
+17    only self-managed-aware InCallService on this build, doesn't supply UI).
+18
+19    Phase 2 tests the natural follow-on: if the app does what a well-behaved
+20    self-managed calling app is supposed to do, and posts its own
+21    Notification.CallStyle full-screen-intent notification, does the resulting
+22    UI, backed by genuine Telecom RINGING/MODE_RINGTONE state, become
+23    indistinguishable from a real incoming call for spoofing/vishing purposes?
+24    POST_NOTIFICATIONS is a runtime-prompted permission on API 33+, but it's an
+25    entirely unsurprising ask for a "calling" app and is not tied to any special
+26    telephony trust.
+27    -->
+28    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+28-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:22:5-75
+28-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:22:22-72
+29    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:23:5-77
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:23:22-74
+30    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+30-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:24:5-81
+30-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:24:22-78
+31
+32    <uses-feature android:name="android.hardware.type.watch" />
+32-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:26:5-64
+32-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:26:19-61
+33
+34    <application
+34-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:28:5-62:19
+35        android:allowBackup="false"
+35-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:29:9-36
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:label="Fitness Tracker"
+38-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:30:9-40
+39        android:supportsRtl="true"
+39-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:31:9-35
+40        android:theme="@android:style/Theme.DeviceDefault" >
+40-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:32:9-59
+41        <activity
+41-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:34:9-42:20
+42            android:name="com.poc.calleridspoof.MainActivity"
+42-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:35:13-41
+43            android:exported="true"
+43-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:36:13-36
+44            android:label="Fitness Tracker" >
+44-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:37:13-44
+45            <intent-filter>
+45-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:38:13-41:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:39:17-69
+46-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:39:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:40:17-77
+48-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:40:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:44:9-51:78
+52            android:name="com.poc.calleridspoof.IncomingCallActivity"
+52-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:45:13-49
+53            android:excludeFromRecents="true"
+53-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:49:13-46
+54            android:exported="false"
+54-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:46:13-37
+55            android:launchMode="singleInstance"
+55-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:50:13-48
+56            android:showWhenLocked="true"
+56-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:47:13-42
+57            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+57-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:51:13-75
+58            android:turnScreenOn="true" />
+58-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:48:13-40
+59
+60        <service
+60-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:53:9-60:19
+61            android:name="com.poc.calleridspoof.SpoofConnectionService"
+61-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:54:13-51
+62            android:exported="true"
+62-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:55:13-36
+63            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE" >
+63-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:56:13-84
+64            <intent-filter>
+64-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:57:13-59:29
+65                <action android:name="android.telecom.ConnectionService" />
+65-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:58:17-76
+65-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/AndroidManifest.xml:58:25-73
+66            </intent-filter>
+67        </service>
+68    </application>
+69
+70</manifest>

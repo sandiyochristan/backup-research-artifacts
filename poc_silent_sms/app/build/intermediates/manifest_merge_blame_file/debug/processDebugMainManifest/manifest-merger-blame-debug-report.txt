@@ -1,0 +1,62 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.poc.silentsms"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions that a malicious "communication helper" app might request -->
+12    <uses-permission android:name="android.permission.SEND_SMS" />
+12-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+13-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:7:5-72
+13-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:7:22-69
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:8:5-72
+14-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:8:22-69
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:9:5-77
+15-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:9:22-74
+16
+17    <uses-feature android:name="android.hardware.type.watch" />
+17-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:11:5-64
+17-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:11:19-61
+18
+19    <application
+19-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:13:5-29:19
+20        android:allowBackup="false"
+20-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:14:9-36
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:label="Comm Helper"
+23-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:15:9-36
+24        android:supportsRtl="true"
+24-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:16:9-35
+25        android:theme="@android:style/Theme.DeviceDefault" >
+25-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:17:9-59
+26        <activity
+26-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:19:9-27:20
+27            android:name="com.poc.silentsms.MainActivity"
+27-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:20:13-41
+28            android:exported="true"
+28-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:21:13-36
+29            android:label="Comm Helper" >
+29-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:22:13-40
+30            <intent-filter>
+30-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:23:13-26:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:24:17-69
+31-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:24:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:25:17-77
+33-->/Users/sandiyochristan/Documents/vulnerabilityRes/poc_silent_sms/app/src/main/AndroidManifest.xml:25:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

@@ -1,0 +1,7 @@
+com.poc.calleridspoof.app-pngs-0 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/build/generated/res/pngs/debug
+com.poc.calleridspoof.app-resValues-1 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/build/generated/res/resValues/debug
+com.poc.calleridspoof.app-packageDebugResources-2 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.poc.calleridspoof.app-packageDebugResources-3 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.poc.calleridspoof.app-debug-4 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.poc.calleridspoof.app-debug-5 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/debug/res
+com.poc.calleridspoof.app-main-6 /Users/sandiyochristan/Documents/vulnerabilityRes/poc_callerid_spoof/app/src/main/res
