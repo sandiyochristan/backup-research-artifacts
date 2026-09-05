@@ -1,0 +1,44 @@
+=== FRP SECRET REWRITE — COMPLETE PROOF ===
+Test Date: 2026-09-06 00:00 IST
+Device: Pixel 6a (bluejay), Android 17, GMS 26.32.68
+
+=== FRP Secret BEFORE broadcast ===
+-rw------- 1 system system 32 2026-09-06 00:00 /data/system/frp_secret
+
+=== Broadcast sent ===
+Broadcasting: Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED flg=0x400000 pkg=com.google.android.gms }
+Broadcast completed: result=-1
+
+=== GMS FRP Handler Execution Chain (logcat) ===
+09-06 00:00:34.229  ActivityManager: Broadcasting: Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED flg=0x400000 pkg=com.google.android.gms }
+09-06 00:00:34.230  ActivityManager: Enqueued broadcast
+09-06 00:00:34.245  ActivityManager: sync unfroze 18360 com.google.android.gms for 6
+09-06 00:00:34.301  FRP: [FrpUpdateIntentOperation] Intent received
+09-06 00:00:34.304  FRP: [FrpUpdateIntentOperation] No FRP data present in app restriction, using current Google accounts.
+09-06 00:00:34.319  FRP: [FactoryResetProtectionManager] Updating data block with accounts (lockscreen sufficient)
+09-06 00:00:34.321  FRP: [FactoryResetProtectionManager] Updating accounts on profile
+09-06 00:00:34.358  FRP: [FactoryResetProtectionManager] Failed to get IMEI (UnsupportedOperationException)
+09-06 00:00:34.358  FRP: Stack: FrpUpdateIntentOperation.onHandleIntent → FactoryResetProtectionManager → TelephonyManager.getPrimaryImei
+09-06 00:00:34.376  FRP: [PersistentDataBlockImpl] Writing container to disk with profile blocks and encrypted profile blocks
+09-06 00:00:34.404  FRP: [FactoryResetProtectionManager] Successfully wrote new FRP secret
+09-06 00:00:34.406  FRP: [PersistentDataBlockImpl] Writing container to disk (second write)
+09-06 00:00:34.423  FRP: [FactoryResetProtectionManager] Write complete
+
+=== FRP Secret AFTER broadcast ===
+-rw------- 1 system system 32 2026-09-06 00:00 /data/system/frp_secret
+(Same minute but file was rewritten — confirmed by "Successfully wrote new FRP secret" log)
+
+=== Previous test (from earlier session) ===
+BEFORE: -rw------- 1 system system 32 2026-09-05 23:17 /data/system/frp_secret
+AFTER:  -rw------- 1 system system 32 2026-09-05 23:51 /data/system/frp_secret
+(34-minute gap clearly shows rewrite)
+
+=== Persistent Data Block State ===
+mDataBlockFile: /dev/block/by-name/frp
+mAllowedUid: 10266 (GMS UID — the only UID permitted to write the persistent data block)
+mBlockDeviceSize: 524288
+mIsWritable: true
+FRP state: false
+FRP secret file /data/system/frp_secret exists
+Has FRP credential handle: true
+FRP challenge block size: 259

