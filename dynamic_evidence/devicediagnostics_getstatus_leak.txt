@@ -1,0 +1,52 @@
+Row: 0 Status={
+  "battery": {
+    "cycle_count": 298,
+    "health": 100,
+    "serial": "13G8230031301AA56F0036801176201301194D368",
+    "state": 2,
+    "manufacturing_date": 1749945600
+  },
+  "storage": {
+    "useful_lifetime_remaining": 81,
+    "capacity_bytes": "128000000000"
+  },
+  "launch_level": 32,
+  "locks": {
+    "factory_reset_protection": false
+  },
+  "product": {
+    "brand": "google",
+    "device": "bluejay",
+    "manufacturer": "Google",
+    "model": "Pixel 6a",
+    "name": "bluejay"
+  },
+  "cameras": [
+    {
+      "num_physical": 2,
+      "lens_facing": "back"
+    },
+    {
+      "num_physical": 1,
+      "lens_facing": "front"
+    }
+  ],
+  "imeis": [
+    "352061657996522"
+  ],
+  "serial": "26131JEGR04733",
+  "uiccs": [
+    {
+      "removable": true,
+      "physical_slot_index": 0
+    },
+    {
+      "removable": false,
+      "physical_slot_index": 1
+    },
+    {
+      "removable": false,
+      "physical_slot_index": 2
+    }
+  ]
+}
