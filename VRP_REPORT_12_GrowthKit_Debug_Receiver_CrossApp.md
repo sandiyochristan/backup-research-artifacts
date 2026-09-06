@@ -1,7 +1,7 @@
-# VRP Report: GrowthKit TestingToolsBroadcastReceiver Exported in 10 Google Production Apps
+# VRP Report: GrowthKit TestingToolsBroadcastReceiver Exported in 11 Google Production Apps
 
 ## 1. Vulnerability Title
-Debug/Testing Broadcast Receiver Shipped in 10 Google Production Apps — Exported Without Permission, Forces App Process Starts and GrowthKit Initialization
+Debug/Testing Broadcast Receiver Shipped in 11 Google Production Apps — Exported Without Permission, Forces App Process Starts and GrowthKit Initialization
 
 ## 2. Affected Applications
 
@@ -17,6 +17,7 @@ Debug/Testing Broadcast Receiver Shipped in 10 Google Production Apps — Export
 | 8 | `com.google.android.apps.tachyon` | Google Meet (Duo) | Tier 2 |
 | 9 | `com.google.android.contacts` | Google Contacts | Tier 2 |
 | 10 | `com.google.android.apps.fitness` | Google Fit | Tier 2 |
+| 11 | `com.google.android.apps.kids.home` | Google Family Link | Tier 2 |
 
 **Component**: `com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver`
 **Library**: Google internal GrowthKit library (growth promotions/tips framework)
@@ -32,11 +33,11 @@ Debug/Testing Broadcast Receiver Shipped in 10 Google Production Apps — Export
 - **Impact**: MODERATE — Debug receiver in production forces app process creation, GrowthKit library initialization, and Dagger dependency injection from any zero-permission app. Debug actions (CLEAR_COUNTERS, FETCH_PROMOTIONS, ADD_PROMO, etc.) are runtime-gated by a Phenotype feature flag that is disabled in production (result=-2), but the flag is a server-side toggle that could be enabled.
 - **Attack Complexity**: LOW — Single broadcast per app, no permissions required
 - **User Interaction**: NONE
-- **Scope**: Changed — Affects 10 Google apps simultaneously
+- **Scope**: Changed — Affects 11 Google apps simultaneously
 
 ## 5. Vulnerability Description
 
-Google's internal `GrowthKit` library includes a `TestingToolsBroadcastReceiver` — a debug/testing broadcast receiver intended for development. This receiver is **exported with no permission requirement** and has been shipped in **10 Google production apps** on the Pixel 6a.
+Google's internal `GrowthKit` library includes a `TestingToolsBroadcastReceiver` — a debug/testing broadcast receiver intended for development. This receiver is **exported with no permission requirement** and has been shipped in **11 Google production apps** on the Pixel 6a.
 
 ### 5.1 What Happens When the Broadcast Is Received
 
@@ -78,7 +79,7 @@ The `TestingToolsBroadcastReceiver` supports at least 10 debug actions:
 
 ## 6. Proven Impact — Dynamic Evidence
 
-### 6.1 All 10 Apps Accept Broadcasts (result=-2)
+### 6.1 All 11 Apps Accept Broadcasts (result=-2)
 
 Every app was tested. All return result=-2 (flag disabled, action not executed, but receiver was invoked):
 
@@ -94,6 +95,7 @@ com.google.android.apps.docs:      result=-2
 com.google.android.apps.tachyon:   result=-2
 com.google.android.contacts:       result=-2
 com.google.android.apps.fitness:   result=-2
+com.google.android.apps.kids.home: result=-2
 
 === FETCH_PROMOTIONS ===
 com.google.android.dialer:         result=-2
@@ -106,6 +108,7 @@ com.google.android.apps.docs:      result=-2
 com.google.android.apps.tachyon:   result=-2
 com.google.android.contacts:       result=-2
 com.google.android.apps.fitness:   result=-2
+com.google.android.apps.kids.home: result=-2
 ```
 
 **Note**: result=-2 confirms the receiver was reached and the Phenotype flag was checked. The debug action itself was NOT executed because the flag is disabled in production.
@@ -133,23 +136,23 @@ The broadcast forces process creation for apps that weren't running — this hap
 ## 7. Security Concerns
 
 ### 7.1 Debug Code in Production (CWE-489)
-A broadcast receiver named `TestingToolsBroadcastReceiver` in a package path containing `internal.debug` is active debug code shipped in 10 production Google apps. The receiver is exported without permission, and while the actions are currently gated by a Phenotype flag, the code to handle all debug actions is present in the production binary.
+A broadcast receiver named `TestingToolsBroadcastReceiver` in a package path containing `internal.debug` is active debug code shipped in 11 production Google apps. The receiver is exported without permission, and while the actions are currently gated by a Phenotype flag, the code to handle all debug actions is present in the production binary.
 
 ### 7.2 Phenotype Flag Is a Server-Side Toggle
 The Phenotype flag (`xvf.c()`) is checked at runtime, not build time. This means:
 - The debug action handling code exists in the production APK
-- If the Phenotype flag were toggled server-side (e.g., via a misconfiguration, targeted rollout, or compromise of Google's Phenotype infrastructure), all 10 apps would immediately accept and execute debug commands from any zero-permission app
+- If the Phenotype flag were toggled server-side (e.g., via a misconfiguration, targeted rollout, or compromise of Google's Phenotype infrastructure), all 11 apps would immediately accept and execute debug commands from any zero-permission app
 - The flag is a soft gate, not a hard removal — the attack surface exists but is dormant
 
 ### 7.3 App Force-Start Abuse (PROVEN — No Flag Required)
 The process force-start and GrowthKit initialization occur BEFORE the flag check. A zero-permission app can:
-- Force-start any of the 10 apps without user interaction
+- Force-start any of the 11 apps without user interaction
 - Trigger full Dagger dependency injection and GrowthKit initialization
 - Determine which apps are installed via timing side-channels
 - Drain battery by repeatedly force-starting multiple apps
 
 ### 7.4 Attack Surface Expansion
-The exported receiver increases the IPC attack surface of 10 apps. Even with the flag disabled:
+The exported receiver increases the IPC attack surface of 11 apps. Even with the flag disabled:
 - The receiver processes attacker-controlled Intent data
 - Dagger injection runs attacker-triggered initialization code
 - Any future vulnerability in the GrowthKit initialization path would be reachable from any app
@@ -157,7 +160,7 @@ The exported receiver increases the IPC attack surface of 10 apps. Even with the
 ## 8. Proof of Concept
 
 ```java
-// Zero-permission app forces process start + GrowthKit init in 10 apps
+// Zero-permission app forces process start + GrowthKit init in 11 apps
 private void triggerGrowthKitInit() {
     String[] targetApps = {
         "com.google.android.gm",
@@ -169,7 +172,8 @@ private void triggerGrowthKitInit() {
         "com.google.android.apps.docs",
         "com.google.android.apps.tachyon",
         "com.google.android.contacts",
-        "com.google.android.apps.fitness"
+        "com.google.android.apps.fitness",
+        "com.google.android.apps.kids.home"
     };
 
     String receiver = "com.google.android.libraries.internal.growth" +
@@ -214,7 +218,7 @@ The debug actions are gated at runtime by a Phenotype feature flag (`xvf.c()`), 
 
 ## 10. Remediation
 
-1. **Immediate**: Remove `TestingToolsBroadcastReceiver` from production builds of all 10 apps — do not rely on Phenotype flags to gate debug functionality
+1. **Immediate**: Remove `TestingToolsBroadcastReceiver` from production builds of all 11 apps — do not rely on Phenotype flags to gate debug functionality
 2. **Short-term**: Add `android:exported="false"` or a signature-level permission to the receiver in the GrowthKit library's default manifest configuration
 3. **Long-term**: Implement a build-time check in the GrowthKit library that strips debug components from release builds (similar to `debugImplementation` vs `implementation` in Gradle)
 4. Audit all other Google internal libraries for similar exported debug components
