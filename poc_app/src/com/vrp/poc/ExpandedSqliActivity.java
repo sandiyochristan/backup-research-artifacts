@@ -215,7 +215,34 @@ public class ExpandedSqliActivity extends Activity {
         } catch (Exception e) {
             log("Subquery projection error: " + e.getMessage());
         }
+        // Extract full sync token via hex encoding
+        try {
+            String[] proj = {"(SELECT hex(data) FROM _sync_state LIMIT 1) AS sync_token"};
+            Cursor c = getContentResolver().query(uri, proj, null, null, "dtstart LIMIT 1");
+            if (c != null && c.moveToFirst()) {
+                String hex = c.getString(0);
+                if (hex != null) {
+                    log("SYNC TOKEN (hex, first 200): " + hex.substring(0, Math.min(hex.length(), 200)));
+                    byte[] bytes = hexToBytes(hex);
+                    String decoded = new String(bytes, "UTF-8");
+                    log("SYNC TOKEN DECODED: " + decoded.substring(0, Math.min(decoded.length(), 300)));
+                }
+                c.close();
+            }
+        } catch (Exception e) {
+            log("Sync token extract error: " + e.getMessage());
+        }
         log("");
+    }
+
+    private byte[] hexToBytes(String hex) {
+        int len = hex.length();
+        byte[] data = new byte[len / 2];
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(hex.charAt(i), 16) << 4)
+                                 + Character.digit(hex.charAt(i+1), 16));
+        }
+        return data;
     }
 
     private void testGmsProviders() {

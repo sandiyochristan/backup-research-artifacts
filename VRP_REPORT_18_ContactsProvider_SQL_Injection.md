@@ -117,6 +117,9 @@ Email entries: 0
 --- Sync state ---
 Sync state entries: 1
 SyncState[0]: sandiyotest@gmail.com
+SyncState data length: 125 bytes
+SyncState token (first 40 chars): \MisA2Rc-NAAAABII0_HH5NXVlgMQ0_HH5NXVlg
+Full token contains: base64-encoded device ID (SURfM2M2NjU0OWVlZTllMmFhZQ== → ID_3c2654eee9e2aae) + sync version markers
 
 === Test 5: Deleted contacts data ===
 Deleted raw_contacts: 0
