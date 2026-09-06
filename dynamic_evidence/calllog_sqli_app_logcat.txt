@@ -1,0 +1,8 @@
+--------- beginning of main
+09-07 03:26:40.292 18675 18704 D CallLogSQLi: === STEP 1: Verify blind boolean SQLi ===
+09-07 03:26:40.321 18675 18704 D CallLogSQLi: Baseline call log entries: 1
+09-07 03:26:40.337 18675 18704 D CallLogSQLi: Subquery true=-1 false=-1
+09-07 03:26:40.337 18675 18704 D CallLogSQLi: [BLOCKED] Subqueries blocked from app context
+09-07 03:26:40.337 18675 18704 D CallLogSQLi: Testing CASE injection instead...
+09-07 03:26:40.345 18675 18704 D CallLogSQLi: CASE true=-1 false=-1
+09-07 03:26:40.345 18675 18704 D CallLogSQLi: === ALL TESTS COMPLETE ===

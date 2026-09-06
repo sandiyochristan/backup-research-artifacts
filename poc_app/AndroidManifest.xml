@@ -168,5 +168,41 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".DumpFileProbeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DUMP_FILE_PROBE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FullExtractionActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.FULL_EXTRACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SystemProviderSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SYSTEM_PROVIDER_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CallLogSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CALLLOG_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

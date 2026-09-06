@@ -1,0 +1,77 @@
+--------- beginning of main
+09-07 03:14:54.345 14891 14918 D SysProvSQLi: === TEST 1: Telephony Provider SQLi ===
+09-07 03:14:54.349 14891 14918 D SysProvSQLi: APN carriers: SecurityException
+09-07 03:14:54.349 14891 14918 D SysProvSQLi: APN current: SecurityException
+09-07 03:14:54.361 14891 14918 D SysProvSQLi: MMS open: 0 rows
+09-07 03:14:54.377 14891 14918 D SysProvSQLi: MMS-SMS conv open: 0 rows
+09-07 03:14:54.402 14891 14918 D SysProvSQLi: MMS-SMS pending open: 0 rows
+09-07 03:14:54.424 14891 14918 D SysProvSQLi: === TEST 2: SMS Provider SQLi (CASE bypass) ===
+09-07 03:14:54.434 14891 14918 D SysProvSQLi: content://sms normal: 0
+09-07 03:14:54.449 14891 14918 D SysProvSQLi: content://sms CASE: true=0 false=0
+09-07 03:14:54.453 14891 14918 D SysProvSQLi: content://sms subquery: true=-1 false=-1
+09-07 03:14:54.460 14891 14918 D SysProvSQLi: content://sms/inbox normal: 0
+09-07 03:14:54.478 14891 14918 D SysProvSQLi: content://sms/inbox CASE: true=0 false=0
+09-07 03:14:54.482 14891 14918 D SysProvSQLi: content://sms/inbox subquery: true=-1 false=-1
+09-07 03:14:54.486 14891 14918 D SysProvSQLi: content://sms/sent normal: 0
+09-07 03:14:54.499 14891 14918 D SysProvSQLi: content://sms/sent CASE: true=0 false=0
+09-07 03:14:54.502 14891 14918 D SysProvSQLi: content://sms/sent subquery: true=-1 false=-1
+09-07 03:14:54.507 14891 14918 D SysProvSQLi: content://sms/draft normal: 0
+09-07 03:14:54.517 14891 14918 D SysProvSQLi: content://sms/draft CASE: true=0 false=0
+09-07 03:14:54.520 14891 14918 D SysProvSQLi: content://sms/draft subquery: true=-1 false=-1
+09-07 03:14:54.520 14891 14918 D SysProvSQLi: === TEST 3: Browser Provider ===
+09-07 03:14:54.521 14891 14918 D SysProvSQLi: bookmarks: NULL cursor
+09-07 03:14:54.521 14891 14918 D SysProvSQLi: searches: NULL cursor
+09-07 03:14:54.522 14891 14918 D SysProvSQLi: android browser: NULL cursor
+09-07 03:14:54.522 14891 14918 D SysProvSQLi: === TEST 4: MediaStore Providers ===
+09-07 03:14:54.539 14891 14918 D SysProvSQLi: media open: 0 rows
+09-07 03:14:54.551 14891 14918 D SysProvSQLi: media open: 0 rows
+09-07 03:14:54.559 14891 14918 D SysProvSQLi: media open: 0 rows
+09-07 03:14:54.566 14891 14918 D SysProvSQLi: file open: 0 rows
+09-07 03:14:54.572 14891 14918 D SysProvSQLi: downloads open: 0 rows
+09-07 03:14:54.573 14891 14918 D SysProvSQLi: === TEST 5: Documents Providers ===
+09-07 03:14:54.575 14891 14918 D SysProvSQLi: extStorage docs: SecurityException
+09-07 03:14:54.576 14891 14918 D SysProvSQLi: downloads docs: SecurityException
+09-07 03:14:54.577 14891 14918 D SysProvSQLi: media docs: SecurityException
+09-07 03:14:54.577 14891 14918 D SysProvSQLi: === TEST 6: APN Content ===
+09-07 03:14:54.580 14891 14918 D SysProvSQLi: APN read: SecurityException: No permission to access APN settings
+09-07 03:14:54.580 14891 14918 D SysProvSQLi: === TEST 7: Settings Intent Redirection ===
+09-07 03:14:54.581 14891 14918 D SysProvSQLi: Settings WIFI_SETTINGS: com.android.settings/com.android.settings.Settings$WifiSettingsActivity exported=true
+09-07 03:14:54.581 14891 14918 D SysProvSQLi: Settings BLUETOOTH_SETTINGS: com.android.settings/com.android.settings.Settings$ConnectedDeviceDashboardActivity exported=true
+09-07 03:14:54.582 14891 14918 D SysProvSQLi: Settings ACCESSIBILITY_SETTINGS: com.android.settings/com.android.settings.Settings$AccessibilitySettingsActivity exported=true
+09-07 03:14:54.582 14891 14918 D SysProvSQLi: Settings APPLICATION_DEVELOPMENT_SETTINGS: com.android.settings/com.android.settings.Settings$DevelopmentSettingsActivity exported=true
+09-07 03:14:54.583 14891 14918 D SysProvSQLi: Settings MANAGE_UNKNOWN_APP_SOURCES: com.android.settings/com.android.settings.Settings$ManageExternalSourcesActivity exported=true
+09-07 03:14:54.583 14891 14918 D SysProvSQLi: Settings ACTION_NOTIFICATION_LISTENER_SETTINGS: com.android.settings/com.android.settings.Settings$NotificationAccessSettingsActivity exported=true
+09-07 03:14:54.584 14891 14918 D SysProvSQLi: Settings USAGE_ACCESS_SETTINGS: com.android.settings/com.android.settings.Settings$UsageAccessSettingsActivity exported=true
+09-07 03:14:54.595 14891 14918 D SysProvSQLi: [LAUNCHED] MANAGE_UNKNOWN_APP_SOURCES for our package
+09-07 03:14:54.595 14891 14918 D SysProvSQLi: === TEST 8: Contacts Profile ===
+09-07 03:14:54.658 14891 14918 D SysProvSQLi: profile open: 1 rows
+09-07 03:14:54.690 14891 14918 D SysProvSQLi: profile subquery: true=1 false=0
+09-07 03:14:54.690 14891 14918 D SysProvSQLi:   [VULN] profile SQLi confirmed!
+09-07 03:14:54.700 14891 14918 D SysProvSQLi: profile/data open: 2 rows
+09-07 03:14:54.712 14891 14918 D SysProvSQLi: profile/data subquery: true=2 false=0
+09-07 03:14:54.713 14891 14918 D SysProvSQLi:   [VULN] profile/data SQLi confirmed!
+09-07 03:14:54.717 14891 14918 D SysProvSQLi: profile/raw open: 1 rows
+09-07 03:14:54.743 14891 14918 D SysProvSQLi: profile/raw subquery: true=1 false=0
+09-07 03:14:54.743 14891 14918 D SysProvSQLi:   [VULN] profile/raw SQLi confirmed!
+09-07 03:14:54.743 14891 14918 D SysProvSQLi: === TEST 9: Calendar Write via SQLi ===
+09-07 03:14:54.745 14891 14918 D SysProvSQLi: === TEST 10: Blocked Numbers Provider ===
+09-07 03:14:54.759 14891 14918 D SysProvSQLi: blocked nums: SecurityException
+09-07 03:14:54.769 14891 14918 D SysProvSQLi: Blocked read: SecurityException: Caller must be system, default dialer or default SMS app
+09-07 03:14:54.769 14891 14918 D SysProvSQLi: === TEST 11: URI Grant Leak ===
+09-07 03:14:54.797 14891 14918 D SysProvSQLi: Contacts with photos: 0
+09-07 03:14:54.800 14891 14918 D SysProvSQLi: === TEST 12: SIM/ICC Provider ===
+09-07 03:14:54.821 14891 14918 D SysProvSQLi: SIM contacts open: 0 rows
+09-07 03:14:54.831 14891 14918 D SysProvSQLi: SIM contacts subquery: true=0 false=0
+09-07 03:14:54.833 14891 14918 D SysProvSQLi: SIM fixed dial open: 0 rows
+09-07 03:14:54.839 14891 14918 D SysProvSQLi: SIM fixed dial subquery: true=0 false=0
+09-07 03:14:54.844 14891 14918 D SysProvSQLi: SIM service dial open: 0 rows
+09-07 03:14:54.849 14891 14918 D SysProvSQLi: SIM service dial subquery: true=0 false=0
+09-07 03:14:54.849 14891 14918 D SysProvSQLi: === TEST 13: Projection path traversal ===
+09-07 03:14:54.854 14891 14918 D SysProvSQLi: [PROJ SAFE] schema via proj: IllegalArgumentException
+09-07 03:14:54.855 14891 14918 D SysProvSQLi: [PROJ SAFE] deleted count: IllegalArgumentException
+09-07 03:14:54.857 14891 14918 D SysProvSQLi: [PROJ SAFE] accounts via proj: IllegalArgumentException
+09-07 03:14:54.857 14891 14918 D SysProvSQLi: === TEST 14: Calendar Projection Injection ===
+09-07 03:14:54.936 14891 14918 D SysProvSQLi: [CAL PROJ VULN] sync accounts = sandiyotest@gmail.com
+09-07 03:14:54.941 14891 14918 D SysProvSQLi: [CAL PROJ SAFE] sync token: SQLiteException
+09-07 03:14:54.944 14891 14918 D SysProvSQLi: [CAL PROJ VULN] cal cache = timezoneDatabaseVersion=2025c|timezoneInstancesPrevious=Asia/Kolkata|timezoneType=auto|timezoneInstances=Asia/Kolkata
+09-07 03:14:54.946 14891 14918 D SysProvSQLi: === ALL SYSTEM PROVIDER TESTS COMPLETE ===
