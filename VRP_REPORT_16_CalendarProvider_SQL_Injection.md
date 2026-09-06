@@ -5,7 +5,7 @@
 The AOSP CalendarProvider (`com.android.providers.calendar`) is vulnerable to SQL injection through the `selection` parameter of `ContentResolver.query()`. Any app with `READ_CALENDAR` permission can exploit this to read internal database tables (`_sync_state`, `CalendarCache`, `sqlite_master`) that are NOT accessible through the CalendarProvider's public Content URI API. This exposes Google account sync tokens, sync timing metadata, timezone/location indicators, and the complete database schema.
 
 **Component:** `com.android.providers.calendar` (CalendarProvider2)  
-**Affected URIs:** ALL CalendarProvider URIs — `calendars`, `attendees`, `reminders`, `calendar_alerts`, `instances`, `colors`  
+**Affected URIs:** ALL CalendarProvider URIs — `calendars`, `attendees`, `reminders`, `calendar_alerts`, `instances`, `colors`, `extendedproperties` (196 rows), `syncstate`  
 **Required Permission:** `READ_CALENDAR` (normal runtime permission)  
 **Impact:** Confidentiality — Exposure of sync tokens, account metadata, and internal database state beyond what `READ_CALENDAR` is designed to grant  
 **Severity:** Medium-High (privilege boundary bypass within Calendar data scope)  

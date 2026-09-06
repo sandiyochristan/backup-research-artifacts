@@ -1,0 +1,95 @@
+=== Step 1: Complete table enumeration ===
+Total tables: 35
+  [0] _sync_state (1 rows)
+  [1] _sync_state_metadata (1 rows)
+  [2] accounts (2 rows)
+  [3] agg_exceptions (0 rows)
+  [4] agg_presence (0 rows)
+  [5] android_metadata (1 rows)
+  [6] contacts (3 rows)
+  [7] data (13 rows)
+  [8] data_usage_stat (0 rows)
+  [9] default_directory (4 rows)
+  [10] deleted_contacts (1 rows)
+  [11] directories (4 rows)
+  [12] groups (5 rows)
+  [13] mimetypes (16 rows)
+  [14] name_lookup (4 rows)
+  [15] packages (0 rows)
+  [16] phone_lookup (4 rows)
+  [17] photo_files (0 rows)
+  [18] pre_authorized_uris (0 rows)
+  [19] presence (0 rows)
+  [20] properties (8 rows)
+  [21] raw_contacts (4 rows)
+  [22] search_index (3 rows)
+  [23] search_index_content (3 rows)
+  [24] search_index_docsize (3 rows)
+  [25] search_index_segdir (2 rows)
+  [26] search_index_segments (0 rows)
+  [27] search_index_stat (1 rows)
+  [28] sqlite_sequence (7 rows)
+  [29] sqlite_stat1 (42 rows)
+  [30] status_updates (0 rows)
+  [31] stream_item_photos (0 rows)
+  [32] stream_items (0 rows)
+  [33] v1_settings (0 rows)
+  [34] visible_contacts (3 rows)
+=== Step 2: Search for call-related tables ===
+Tables with 'call' in name: NO
+Tables with 'log' in name: NO
+=== Step 3: View enumeration ===
+Total views: 17
+  view[0]: view_contacts
+  view[1]: view_data
+  view[2]: view_data_usage
+  view[3]: view_entities
+  view[4]: view_groups
+  view[5]: view_raw_contacts
+  view[6]: view_raw_entities
+  view[7]: view_settings
+  view[8]: view_stream_items
+  view[9]: view_v1_contact_methods
+  view[10]: view_v1_extensions
+  view[11]: view_v1_group_membership
+  view[12]: view_v1_groups
+  view[13]: view_v1_organizations
+  view[14]: view_v1_people
+=== Step 4: Sensitive data extraction ===
+--- _sync_state ---
+Sync state rows: 1
+  sandiyotest@gmail.com (com.google)
+--- deleted_contacts ---
+Deleted contacts: 1
+--- settings (contacts) ---
+Settings rows: -1
+--- photo_files ---
+Photo files: 0
+=== Step 5: Internal metadata ===
+SQLite version: 3.50.6
+--- Trigger enumeration ---
+Triggers: 11
+  trigger[0]: view_settings_update
+  trigger[1]: accounts_insert_local_account
+  trigger[2]: raw_contacts_deleted
+  trigger[3]: raw_contacts_marked_deleted
+  trigger[4]: data_updated
+  trigger[5]: data_deleted
+  trigger[6]: groups_updated1
+  trigger[7]: groups_auto_add_updated1
+  trigger[8]: presence_deleted
+  trigger[9]: presence_inserted
+--- Index enumeration ---
+Indexes: 29
+=== Step 6: Attached databases ===
+Attached databases: 1
+  db[0]: main -> /data/data/com.android.providers.contacts/databases/contacts2.db
+=== Step 7: Cross-database probing ===
+Profile db attached: false
+Schema 'profile': inaccessible
+Schema 'temp': 0 objects
+Schema 'main': 92 objects
+=== Step 8: Write via SQLi ===
+Stacked query write: blocked
+Write actually happened: NO
+=== ALL TESTS COMPLETE ===

@@ -1,0 +1,41 @@
+=== Test 1: Settings SQLi ===
+system normal: 41
+system subquery: true=-1 false=-1
+system CASE: true=-1 false=-1
+system UNION: -1
+system write: SecurityException
+secure subquery: true=-1 false=-1
+secure CASE: true=-1 false=-1
+secure UNION: -1
+secure write: SecurityException
+global normal: 233
+global subquery: true=-1 false=-1
+global CASE: true=-1 false=-1
+global UNION: -1
+global write: SecurityException
+=== Test 2: Sensitive Settings (zero perm) ===
+[READABLE] Secure/android_id = 640ac3138b43b492
+[READABLE] Secure/enabled_notification_listeners = com.google.android.projection.gearhead/com.google.android.gearhead.notifications...
+[READABLE] Secure/default_input_method = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+[READABLE] Secure/lock_screen_allow_private_notifications = 1
+[READABLE] Secure/install_non_market_apps = 1
+[READABLE] Secure/adb_enabled = 1
+[READABLE] Secure/development_settings_enabled = 1
+[READABLE] Secure/usb_mass_storage_enabled = 1
+=== Test 3: GSF/GServices ===
+GServices: SecurityException
+GSF/android_id: SecurityException
+GSF/checkin_device_id: SecurityException
+GSF/gcm_registration_id: SecurityException
+=== Test 4: Notification service check ===
+Notification listeners: 442 chars
+=== Test 5: GMS providers (no auth) ===
+[NULL] phenotype_auth
+[NULL] phenotype_people
+[NULL] phenotype_cast
+[NULL] phenotype_dialer
+[NULL] phenotype_msg
+[NULL] chimera_gms
+=== Test 6: UserDictionary SQLi ===
+UserDict normal: 0
+=== ALL TESTS COMPLETE ===

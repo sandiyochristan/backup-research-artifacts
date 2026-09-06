@@ -1,0 +1,53 @@
+=== Enumerating Google package providers ===
+[NO READ PERM] com.google.android.gms: com.google.settings
+[NO READ PERM] com.google.android.gms: com.google.android.gms.auth.accounts
+[NO READ PERM] com.google.android.gms: com.google.android.gms.fonts
+[NO READ PERM] com.google.android.gms: com.google.android.gms.instantapps.provider.api
+[NO READ PERM] com.google.android.gms: com.google.android.gms.nearby.fastpair
+[NO READ PERM] com.google.android.gms: com.google.android.gms.nearby.sharing
+[NO READ PERM] com.google.android.gms: com.google.android.gms.update.phone
+[NO READ PERM] com.google.android.gms: com.google.android.chimera;com.google.android.gms.chimera
+[NO READ PERM] com.google.android.gms: com.google.android.gms.settings.persistent
+[NO READ PERM] com.google.android.gms: com.google.android.gms.settings.gms
+[NO READ PERM] com.google.android.gms: com.google.android.gms.settings.ui
+[NO READ PERM] com.google.android.gms: com.google.android.gms.phenotype
+[NO READ PERM] com.google.android.gms: com.google.android.gms.security.provider
+[NO READ PERM] com.google.android.gms: com.google.android.gms.thunderbird.config
+[NO READ PERM] com.google.android.gms: com.google.android.gms.wallet
+[NO READ PERM] com.google.android.providers.media.module: media
+[NO READ PERM] com.android.providers.settings: settings
+[NO READ PERM] com.android.providers.contacts: com.android.voicemail
+[NO READ PERM] com.android.providers.contacts: com.android.contacts.dumpfile
+[NO READ PERM] com.android.providers.telephony: telephony
+[NO READ PERM] com.android.providers.telephony: carrier_id
+[NO READ PERM] com.android.providers.downloads: downloads
+[NO READ PERM] com.android.providers.userdictionary: user_dictionary
+  query(): 0 rows, cols=locale,shortcut,frequency,_id,word,appid
+  query(/): 0 rows, cols=locale,shortcut,frequency,_id,word,appid
+  query(/*): 0 rows, cols=locale,shortcut,frequency,_id,word,appid
+[NO READ PERM] com.google.android.apps.wellbeing: com.google.android.apps.wellbeing.api
+[NO READ PERM] com.google.android.apps.wellbeing: com.google.android.apps.wellbeing.autodnd.ui.provider
+[NO READ PERM] com.google.android.apps.wellbeing: com.google.android.apps.wellbeing.slices
+=== Known provider URIs without permissions ===
+[OPEN] settings_system: 41 rows, cols=_id,name,value,is_preserved_in_restore
+[OPEN] settings_secure: 161 rows, cols=_id,name,value,is_preserved_in_restore
+[OPEN] settings_global: 233 rows, cols=_id,name,value,is_preserved_in_restore
+[OPEN] google_settings: 23 rows, cols=name,_id,value
+[ERR] gservices: SecurityException
+[ERR] gservices_prefix: SecurityException
+[NULL] widevine
+[NULL] nfc_payment
+[NULL] badge
+[NULL] phenotype
+[NULL] phenotype_gms
+[NULL] chimera
+[NULL] gms_config
+[ERR] gms_auth: UnsupportedOperationException
+[ERR] gms_fonts: NullPointerException
+[NULL] instant_apps
+[NULL] launcher_fav
+[NULL] pixel_launcher_fav
+=== GMS Phenotype flags ===
+=== GMS file access ===
+[ERR FILE] phone_consent: FileNotFoundException
+=== ALL TESTS COMPLETE ===

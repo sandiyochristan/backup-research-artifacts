@@ -1,0 +1,61 @@
+=== Test 1: Confirm CASE injection ===
+Normal: 1, CASE true: 1, CASE false: 0
+=== Test 2: Column-based CASE extraction ===
+  outgoing calls: 1
+=== Test 3: Extract phone number via CASE ===
+Entries with number: 1
+Extracted number: +1234567890
+--- Cached name ---
+Entries with name: 0
+=== Test 4: Bypass SELECT filter ===
+  ERR: Invalid token t
+WITH CTE: blocked
+GLOB: allowed (1)
+CAST: allowed (1)
+  ERR: Invalid token VALUES
+EXISTS(VALUES): blocked
+  ERR: Invalid token VALUES
+IN VALUES: blocked
+unicode(substr(number)): allowed (1)
+=== Test 5: Column enumeration ===
+  [EXISTS] _id: 1 rows
+  [EXISTS] number: 1 rows
+  [EXISTS] date: 1 rows
+  [EXISTS] duration: 1 rows
+  [EXISTS] type: 1 rows
+  [EXISTS] name: 1 rows
+  [EXISTS] numbertype: 1 rows
+  [EXISTS] numberlabel: 1 rows
+  [EXISTS] new: 1 rows
+  [EXISTS] geocoded_location: 1 rows
+  ERR: Invalid token phone_account_id
+  ERR: Invalid token phone_account_component_name
+  [EXISTS] features: 1 rows
+  [EMPTY] data_usage
+  [EMPTY] transcription
+  [EMPTY] voicemail_uri
+  [EMPTY] is_read
+  ERR: Invalid token ring_time
+  [EXISTS] last_modified: 1 rows
+  [EXISTS] block_reason: 1 rows
+  [EMPTY] call_screening_app_name
+  [EMPTY] call_screening_component_name
+  [EXISTS] add_for_all_users: 1 rows
+  [EMPTY] composer_photo_uri
+  [EMPTY] subject
+  [EXISTS] priority: 1 rows
+  [EMPTY] location
+  [EXISTS] missed_reason: 1 rows
+  [EXISTS] lookup_uri: 1 rows
+  [EMPTY] matched_number
+  [EXISTS] normalized_number: 1 rows
+  [EXISTS] photo_id: 1 rows
+  [EXISTS] formatted_number: 1 rows
+  [EXISTS] photo_uri: 1 rows
+=== Test 6: Extract geo location ===
+Entries with geocoded_location: 0
+=== Test 7: Call metadata ===
+First call duration (sec): 0
+First call date (ms): 1788633882918
+  = Sun Sep 06 00:14:42 GMT+05:30 2026
+=== ALL TESTS COMPLETE ===

@@ -1,0 +1,67 @@
+=== Test 1: Additional Contacts URIs ===
+[VULN] contacts: SQLi confirmed (normal=3, true=3, false=0)
+[VULN] raw_contacts: SQLi confirmed (normal=4, true=4, false=0)
+[VULN] data: SQLi confirmed (normal=13, true=13, false=0)
+[VULN] phones: SQLi confirmed (normal=2, true=2, false=0)
+[SAFE] emails: normal=0, true=0, false=0
+[VULN] groups: SQLi confirmed (normal=5, true=5, false=0)
+[VULN] profile: SQLi confirmed (normal=1, true=1, false=0)
+status_updates: inaccessible
+[VULN] directories: SQLi confirmed (normal=4, true=4, false=0)
+=== Test 2: Deep data extraction ===
+--- Postal addresses ---
+Address entries: 0
+--- Organizations ---
+Org entries: 0
+--- Notes ---
+Note entries: 1
+--- All mimetype counts ---
+Distinct mimetypes with data: 8
+  vnd.android.cursor.item/nickname: 2 entries
+  vnd.android.cursor.item/phone_v2: 2 entries
+  vnd.android.cursor.item/name: 2 entries
+  vnd.android.cursor.item/identity: 1 entries
+  vnd.android.cursor.item/photo: 1 entries
+  vnd.android.cursor.item/group_membership: 3 entries
+  vnd.android.cursor.item/note: 1 entries
+  vnd.com.google.cursor.item/contact_misc: 1 entries
+=== Test 3: Internal properties table ===
+Properties count: 8
+Property[0]: aggregation_v2 = 1783573461046
+Property[1]: database_time_created = 78.3.0.0
+Property[2]: directoryScanComplete = [en_US]
+Property[3]: icu_version = 2
+Property[4]: knownDirectoryPackages = 5
+=== Test 4: CallLog alternate URIs ===
+CallLog/calls: normal=1, sqliTrue=-1, sqliFalse=-1
+  CASE injection: true=1, false=0
+CallLog/root: inaccessible
+=== Test 5: MediaProvider ===
+Media/images: normal=0, sqliTrue=-1, sqliFalse=-1
+Media/audio: normal=0, sqliTrue=-1, sqliFalse=-1
+Media/video: normal=0, sqliTrue=-1, sqliFalse=-1
+Media/file: normal=0, sqliTrue=-1, sqliFalse=-1
+=== Test 6: DownloadProvider ===
+Downloads: normal=-1
+=== Test 7: Settings ===
+Settings/system: 41 rows, 4 cols
+  volume_music_speaker = 21
+  notification_light_pulse = 1
+  notification_sound = content://media/internal/audio/media/48?title=Eureka&canonical=1
+  volume_alarm = 6
+  volume_music = 5
+Settings/secure: 161 rows, 4 cols
+  lock_screen_show_notifications = 0
+  aware_lock_enabled = 0
+  unknown_sources_default_reversed = 1
+  assist_structure_enabled = 0
+  available_tips = hub_new_26jun,tips_hub_camera,hub_gemini,hub_basics,hub_navigation,hub_personalization,hub_photo_edit,hub_creativetools,hub_communication,hub_notes_recordings,hub_music_game,hub_tools,hub_safety,hub_health_wellness,hub_security_privacy,hub_a11y,hub_advanced,hub_workprofile,hub_watch,hub_global_media,tips_screenreaction,tips_bubbleanything,tips_gemini_music,tips_gemini_veo,tips_camera_palm,tips_smart_capture,tips_camera_lockedfolder,tips_camera_connect_pixel,tips_camera_connect_other,tips_camera_astrotimelapse,tips_nightsight_2,tips_camera_portrait,tips_camera_timelapse,tips_camera_slowmotion,tips_camera_cinematicvideo,tips_gemini_imagen,tips_gemini,tips_gemini_live_sharescreen,tips_power_off,tips_take_screenshot_hw,tips_camera_shortcut,tips_find_apps,tips_organize_apps,tips_key_apps,tips_see_notifications,tips_quick_settings,tips_adapt_vib,tips_volume_plus,tips_nav_home2,tips_nav_back2,tips_nav_overview2,tips_quick_tap,tips_onesearch_2,tips_custom_vibration,tips_custom_icons,tips_lockscreen,tips_wallpaper_emoji,tips_wallpaper_style,tips_sound_matters,tips_camera_magic_eraser,tips_photos_portraitlight,tips_message_remix,tips_phone_lookup,tips_audio_emoji,tips_magic_compose,tips_nearbyshare_2,tips_text_stickers,tips_wait_times,tips_gboard_emojikitchen,tips_find_my,tips_besties,tips_vips_notif,tips_recorder,tips_recorder_web,tips_keep,tips_recorder_speakerlabels,tips_doc_scanner,tips_np_hub,tips_spatial_audio,tips_gamehub_opt,tips_gamehub_record,tips_gamehub_no_disturb,tips_smartspace_sports,tips_commute,tips_circle_search,tips_livetranslate_messaging,tips_livetranslate_livecaption,tips_map_immersive,tips_argeo,tips_safety_share,tips_safety_check,tips_safety_crisisalert,tips_carcrash,tips_safety_esos,tips_bedtime_2,tips_widget_screentime,tips_dnd_mode,tips_night_light,tips_health_connect,tips_health_export_import,tips_theft_protection,tips_identify_check,tips_cts_aboutimage,tips_privatespace,tips_privatespace_apps,tips_privatespace_hide,tips_privatespace_lock,tips_passkeys,tips_password_manager,tips_magnifier,tips_a11y_menu,tips_a11y_livetranscribe,tips_a11y_soundamplifier,tips_a11y_extradim,tips_livecaption_call,tips_notif_dismiss,tips_voice_search,tips_panlingual,tips_autorotate_face,tips_widget_battery,tips_support_contact,tips_workprofile,tips_workprofile_switch,tips_workprofile_pause,tips_workprofile_schedule,tips_workprofile_calendar,tips_workprofile_share,tips_workprofile_attach,tips_carcrash_watch,tips_watch_contact,tips_watch_unlock,tips_watch_faces,tips_watch_fitbit,tips_watch_safety
+Settings/global: 233 rows, 4 cols
+  carrier_app_names = com.google.android.apps.tycho:Google Fi
+  adb_wifi_enabled = 1
+  low_battery_sound_timeout = 0
+  wear_os_version_string = 
+  dropbox:dumpsys:procstats = enabled
+=== Test 8: UserDictionary ===
+UserDict: normal=0
+=== ALL TESTS COMPLETE ===

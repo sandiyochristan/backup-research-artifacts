@@ -105,5 +105,68 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".DeepContactsSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DEEP_CONTACTS_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CallLogCaseInjectionActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CALLLOG_CASE_INJ" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NovelAttackSurfaceActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.NOVEL_ATTACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SmsWriteVerifyActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SMS_WRITE_VERIFY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CrossTableSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CROSS_TABLE_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ZeroPermActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.ZERO_PERM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SETTINGS_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

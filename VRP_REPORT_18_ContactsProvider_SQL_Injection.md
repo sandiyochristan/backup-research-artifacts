@@ -5,9 +5,17 @@
 The AOSP ContactsProvider (`com.android.providers.contacts`) is vulnerable to SQL injection through the `selection` (WHERE clause) parameter of `ContentResolver.query()`. Any app with `READ_CONTACTS` permission can exploit this to read internal database tables (`accounts`, `_sync_state`, `properties`, `deleted_contacts`, and all 35 tables) that are NOT accessible through the ContactsProvider's public Content URI API. Using boolean-based blind SQL injection, an attacker can extract data character-by-character from any table.
 
 **Component:** `com.android.providers.contacts` (ContactsProvider2)  
-**Affected URI:** `content://com.android.contacts/contacts` (and likely other contact URIs)  
+**Affected URIs (7 confirmed):**
+- `content://com.android.contacts/contacts`
+- `content://com.android.contacts/raw_contacts`
+- `content://com.android.contacts/data`
+- `content://com.android.contacts/data/phones`
+- `content://com.android.contacts/groups`
+- `content://com.android.contacts/profile` (device owner's profile!)
+- `content://com.android.contacts/directories`
+
 **Required Permission:** `READ_CONTACTS` (runtime permission)  
-**Impact:** Confidentiality — Full database access beyond READ_CONTACTS scope, including Google account email, internal phone data, sync state, and 35-table schema  
+**Impact:** Confidentiality — Full database access beyond READ_CONTACTS scope, including Google account email, internal phone data, sync state, database file path, and complete schema (35 tables, 17 views, 11 triggers)  
 **Severity:** High (permission boundary bypass + PII extraction from internal tables)
 
 ## Device & Environment
@@ -193,14 +201,91 @@ qb.query(db, projection, selection, selectionArgs, ...);
 3. Use parameterized queries (`selectionArgs`) for all user-supplied values
 4. Consider using `SQLiteQueryBuilder.setProjectionGreylist()` for fine-grained column access
 
+## Expanded Findings — Full Database Enumeration
+
+### 7 Vulnerable URIs (Proven from App Context)
+
+| URI | Rows | SQLi Confirmed |
+|-----|------|---------------|
+| `/contacts` | 3 | true=3, false=0 |
+| `/raw_contacts` | 4 | true=4, false=0 |
+| `/data` | 13 | true=13, false=0 |
+| `/data/phones` | 2 | true=2, false=0 |
+| `/groups` | 5 | true=5, false=0 |
+| `/profile` | 1 | true=1, false=0 |
+| `/directories` | 4 | true=4, false=0 |
+
+### Complete Database Schema Extracted
+
+**35 tables** in `contacts2.db`:
+
+| # | Table | Rows | Sensitivity |
+|---|-------|------|-------------|
+| 0 | `_sync_state` | 1 | **HIGH** — sync tokens + account email |
+| 1 | `_sync_state_metadata` | 1 | Internal sync version |
+| 2 | `accounts` | 2 | **HIGH** — Google account email |
+| 3 | `agg_exceptions` | 0 | Aggregation exceptions |
+| 4 | `contacts` | 3 | Contact records |
+| 5 | `data` | 13 | **HIGH** — ALL contact data (phones, emails, addresses, notes) |
+| 6 | `default_directory` | 4 | Directory metadata |
+| 7 | `deleted_contacts` | 1 | **HIGH** — contacts user believed deleted |
+| 8 | `groups` | 5 | Contact groups |
+| 9 | `mimetypes` | 16 | MIME type registry |
+| 10 | `name_lookup` | 4 | Name search index |
+| 11 | `phone_lookup` | 4 | Phone number search index |
+| 12 | `photo_files` | 0 | Contact photos |
+| 13 | `pre_authorized_uris` | 0 | Authorized URI list |
+| 14 | `properties` | 8 | **Internal config properties** |
+| 15 | `raw_contacts` | 4 | Raw contact records |
+| 16 | `search_index*` | varies | Full-text search data (6 tables) |
+| 17 | `settings` | - | Contact display settings |
+| 18 | `sqlite_sequence` | 7 | Auto-increment counters |
+| 19 | `sqlite_stat1` | 42 | Query optimizer statistics |
+| 20 | `visible_contacts` | 3 | Visibility flags |
+
+**17 views** extracted (include `view_contacts`, `view_data`, `view_raw_contacts`, `view_entities`, `view_groups`, etc.)
+
+**11 triggers** extracted (include `raw_contacts_deleted`, `data_updated`, `data_deleted`, `groups_updated1`, etc.)
+
+### Database File Path Disclosed
+
+Via `pragma_database_list`: `main` → `/data/data/com.android.providers.contacts/databases/contacts2.db`
+
+### All Contact Data Types Enumerated
+
+8 distinct MIME types with data accessible via SQLi:
+- `vnd.android.cursor.item/phone_v2` — 2 entries (phone numbers)
+- `vnd.android.cursor.item/name` — 2 entries (contact names)
+- `vnd.android.cursor.item/nickname` — 2 entries
+- `vnd.android.cursor.item/identity` — 1 entry
+- `vnd.android.cursor.item/photo` — 1 entry (photo reference)
+- `vnd.android.cursor.item/group_membership` — 3 entries
+- `vnd.android.cursor.item/note` — 1 entry (contact notes)
+- `vnd.com.google.cursor.item/contact_misc` — 1 entry (Google-specific metadata)
+
+### Internal Properties Extracted
+
+| Key | Value |
+|-----|-------|
+| aggregation_v2 | 1783573461046 |
+| database_time_created | 78.3.0.0 |
+| directoryScanComplete | [en_US] |
+| icu_version | 2 |
+| knownDirectoryPackages | 5 |
+
 ## Evidence Files
 
 - `poc_app/src/com/vrp/poc/ContactsBlindSqliActivity.java` — PoC app source (blind extraction)
+- `poc_app/src/com/vrp/poc/DeepContactsSqliActivity.java` — Extended URI + provider testing
+- `poc_app/src/com/vrp/poc/CrossTableSqliActivity.java` — Full schema enumeration + cross-table probing
 - `poc_app/src/com/vrp/poc/ContactsCallLogSqliActivity.java` — Initial injection test
 - `poc_app/build/poc.apk` — Signed PoC APK
-- `dynamic_evidence/contacts_blind_sqli_logcat.txt` — Logcat output showing full extraction
+- `dynamic_evidence/contacts_blind_sqli_logcat.txt` — Initial extraction logcat
+- `dynamic_evidence/deep_contacts_sqli_logcat.txt` — 7 URI test + extended data extraction
+- `dynamic_evidence/cross_table_sqli_logcat.txt` — Full schema + database path + view/trigger enumeration
 
 ## Timeline
 
 - **2026-09-07:** Boolean-based blind SQL injection discovered in ContactsProvider
 - **2026-09-07:** Proven from PoC app (UID 11847) — extracted account email, phone numbers, 35 table names, and database schema
+- **2026-09-07:** Expanded to 7 vulnerable URIs, full database enumeration (35 tables, 17 views, 11 triggers), database file path disclosure, all contact data types enumerated
