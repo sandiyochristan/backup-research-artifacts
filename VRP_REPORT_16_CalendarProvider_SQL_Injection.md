@@ -317,6 +317,16 @@ content query --uri content://com.android.calendar/events \
 }
 ```
 
+**Additional metadata extracted via projection injection:**
+```
+Database path: /data/data/com.android.providers.calendar/databases/calendar.db
+SQLite version: 3.50.6
+Journal mode: truncate
+Tables: 15 (android_metadata, _sync_state, _sync_state_metadata, Colors, Calendars,
+  Events, sqlite_sequence, EventsRawTimes, Instances, CalendarMetaData, CalendarCache,
+  Attendees, Reminders, CalendarAlerts, ExtendedProperties)
+```
+
 **Data exposed in sync token:**
 - Google account email identity
 - Calendar subscription list (all subscribed calendars)
