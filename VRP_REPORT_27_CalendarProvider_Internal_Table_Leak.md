@@ -139,21 +139,44 @@ content query --uri content://com.android.calendar/events \
 
 The user expects `READ_CALENDAR` to allow reading their events — NOT their Google account email or sync configuration from internal database tables.
 
-## ContactsProvider — Same Root Cause (Blind Boolean)
+## ContactsProvider — Same Root Cause (Blind Boolean Extraction PROVEN)
 
-The ContactsProvider (contacts2.db) is also affected. While it blocks projection injection ("Non-token detected"), selection injection works:
+The ContactsProvider (contacts2.db) is also affected. While it blocks projection injection ("Non-token detected"), selection injection enables blind boolean extraction of ANY internal table data:
 
 ```
-WHERE '1=1 AND (SELECT count(*) FROM sqlite_master WHERE name="_sync_state")>0'
+WHERE '1=1 AND (SELECT unicode(substr(account_name,POS,1)) FROM accounts LIMIT 1)>N'
 ```
 
-Confirmed accessible internal tables via blind boolean:
-- `_sync_state` (contains account sync data)
-- `accounts` (contains Google account information)
-- `phone_lookup` (phone number lookup table)
-- 30-35 total tables in the contacts database
+Using binary search (7 queries per character), the full Google account email was extracted character by character:
 
-Blind boolean extraction from ContactsProvider is slower but can extract ANY data character by character from these internal tables.
+### Proven Extraction: Internal `accounts` Table
+
+| Row | account_name | account_type |
+|---|---|---|
+| 0 | `sandiyotest@gmail.com` (21 chars) | `com.google` |
+| 1 | `attacker@evil.com` (17 chars) | `com.google` |
+
+**Total queries for full extraction**: ~406 (binary search over ASCII 32-126 per character position)
+
+### Extraction Method
+
+For each character position (1 to length):
+1. Binary search: `unicode(substr(account_name,POS,1))>MID` — returns rows if TRUE, no rows if FALSE
+2. Narrow range from [32,126] to exact ASCII value in ~7 iterations
+3. Convert ASCII to character
+
+### Additional Confirmed Internal Tables
+
+| Table | Status | Method |
+|---|---|---|
+| `accounts` | **DATA EXTRACTED** — Google account email proven | Blind boolean binary search |
+| `_sync_state` | EXISTS — contains account sync data | `(SELECT count(*) FROM _sync_state)>0` → TRUE |
+| `phone_lookup` | EXISTS — phone number reverse lookup | `(SELECT count(*) FROM phone_lookup)>0` → TRUE |
+| sqlite_master | 30-35 total tables enumerated | `(SELECT count(*) FROM sqlite_master)>N` |
+
+### Impact
+
+An app with only `READ_CONTACTS` can silently enumerate ALL Google accounts on the device by extracting from the internal `accounts` table — data that `READ_CONTACTS` was never designed to expose. The `accounts` table is an internal database management table, not a content provider endpoint.
 
 ## Remediation
 
@@ -169,7 +192,7 @@ Blind boolean extraction from ContactsProvider is slower but can extract ANY dat
 - Android: 17 (API 37)
 - ADB ID: 26131JEGR04733
 - PoC app: com.vrp.poc (targetSdkVersion=35)
-- Evidence: `dynamic_evidence/session3_evidence.log`
+- Evidence: `dynamic_evidence/session3_evidence.log`, `dynamic_evidence/contacts_blind_account_extract.log`, `dynamic_evidence/contacts_account_extraction.log`
 
 ## Related Reports
 
@@ -182,3 +205,8 @@ Blind boolean extraction from ContactsProvider is slower but can extract ANY dat
 - 2026-09-08: Internal tables and sync state extraction discovered and dynamically proven
 - 2026-09-08: Google account email extracted from _sync_state via projection injection
 - 2026-09-08: ContactsProvider internal tables confirmed accessible via blind boolean
+- 2026-09-08: ContactsProvider blind extraction PROVEN — `sandiyotest@gmail.com` extracted character-by-character from internal `accounts` table (~406 queries)
+- 2026-09-08: Second extraction method proven — error-based oracle (division by zero filter) extracts characters sequentially
+- 2026-09-08: CalendarProvider database path confirmed: `/data/data/com.android.providers.calendar/databases/calendar.db`
+- 2026-09-08: SQLite 3.50.6 confirmed; `writefile`/`readfile`/`fts3_tokenizer`/`load_extension` all disabled (proper hardening)
+- 2026-09-08: ATTACH DATABASE confirmed blocked (single-statement execution only)

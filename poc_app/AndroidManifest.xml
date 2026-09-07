@@ -557,5 +557,14 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ContactsExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CONTACTS_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

