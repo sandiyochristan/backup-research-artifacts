@@ -287,5 +287,59 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SmsSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SMS_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AccountTokenPocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.ACCOUNT_TOKEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BroadProviderScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.BROAD_SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DeviceDiagPocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DEVICE_DIAG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CompatBypassPocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.COMPAT_BYPASS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CompatDeepImpactActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.COMPAT_DEEP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

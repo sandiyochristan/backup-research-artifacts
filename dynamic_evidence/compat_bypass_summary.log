@@ -1,0 +1,13 @@
+09-07 08:03:22.356 20108 20157 D CompatDeepImpact: [ERROR] URI grant: ActivityNotFoundException No Activity found to handle Intent { act=android.intent.action.VIEW dat=content:...
+09-07 08:03:22.365 20108 20157 D CompatDeepImpact: [SENT] NearbyShare with contact URI + grant flag
+09-07 08:03:22.380 20108 20157 D CompatDeepImpact: [VULN] data: URI column returned: data:text/html,<h1>injected</h1>
+09-07 08:03:22.383 20108 20157 D CompatDeepImpact: [VULN] binary data: URI in column: data:application/octet-stream;base64,SGVsbG8=
+09-07 08:03:22.395 20108 20157 D CompatDeepImpact: [SENT] Pay image activity with crafted content URI
+09-07 08:03:22.408 20108 20157 D CompatDeepImpact: [SENT] Pay additional mime with crafted content URI
+09-07 08:03:22.408 20108 20157 D CompatDeepImpact: [ERROR] NearbyShare file: FileUriExposedException file:///data/system/users/0/accounts_de.db exposed beyond app through ClipData.I...
+09-07 08:03:22.414 20108 20157 D CompatDeepImpact: [SENT] NearbyShare with injected text
+09-07 08:03:22.419 20108 20157 D CompatDeepImpact: [SENT] EMM with attacker-controlled account + device admin extras
+09-07 08:03:22.428 20108 20157 D CompatDeepImpact: [SENT] BackupSettings with account extra
+09-07 08:03:22.442 20108 20157 D CompatDeepImpact: [SENT] GrowthWebView with injected URL in multiple extras
+09-07 08:03:22.453 20108 20157 D CompatDeepImpact: [SENT] KidSetup with nested intent extras
+09-07 08:03:22.458 20108 20157 D CompatDeepImpact: [SENT] FindMyDevice sync with injected key data

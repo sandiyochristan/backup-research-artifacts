@@ -1,0 +1,7 @@
+ChangeId(484953293; name=ENFORCE_STRICT_SQL_CHECKS; enableSinceTargetSdk=37)
+ChangeId(416031865; name=PARCEL_HARDENING; enableSinceTargetSdk=37)
+ChangeId(437318646; name=RESTRICT_DATA_URI_COLUMNS; enableSinceTargetSdk=37)
+ChangeId(143231523; name=ENFORCE_STRICT_QUERY_BUILDER; disabled)
+ChangeId(161252188; name=ENFORCE_INTENTS_TO_MATCH_INTENT_FILTERS; disabled; overridable)
+ChangeId(293560872; name=BLOCK_NULL_ACTION_INTENTS; disabled; overridable)
+ChangeId(460838111; name=DETECT_IMPLICIT_URI_PERMISSION_GRANT; enableSinceTargetSdk=37)
