@@ -1,0 +1,133 @@
+--------- beginning of main
+09-08 00:07:06.813 10283 10311 D FullProof: === CalendarProvider: Full _sync_state Extraction ===
+09-08 00:07:06.818 10283 10311 D FullProof: [SYNC-HEX] Full hex (1026 chars):
+09-08 00:07:06.818 10283 10311 D FullProof:   7B2276657273696F6E223A31362C2266697273745365656E223A66616C73652C226A656C6C794265616E4F724E6577657222
+09-08 00:07:06.818 10283 10311 D FullProof:   3A747275652C22623338303835323435223A323134373438333634372C227061636B616765223A22636F6D2E676F6F676C65
+09-08 00:07:06.818 10283 10311 D FullProof:   2E616E64726F69642E63616C656E646172222C2273616E6469796F7465737440676D61696C2E636F6D223A7B7D2C22656E2D
+09-08 00:07:06.818 10283 10311 D FullProof:   67622E696E6469616E23686F6C696461794067726F75702E762E63616C656E6461722E676F6F676C652E636F6D223A7B2277
+09-08 00:07:06.818 10283 10311 D FullProof:   696E646F775F656E64223A313832323137363030303030302C22666565645F757064617465645F74696D65223A2232303236
+09-08 00:07:06.818 10283 10311 D FullProof:   2D30382D32315430383A33383A32342E3730335A222C226C6173745F73796E635F74696D65223A3137383835353035333736
+09-08 00:07:06.818 10283 10311 D FullProof:   36382C22646F5F696E6372656D656E74616C5F73796E63223A747275657D2C22656E2E696E6469616E23686F6C6964617940
+09-08 00:07:06.818 10283 10311 D FullProof:   67726F75702E762E63616C656E6461722E676F6F676C652E636F6D223A7B2277696E646F775F656E64223A31383232313736
+09-08 00:07:06.818 10283 10311 D FullProof:   3030303030302C22666565645F757064617465645F74696D65223A22323032362D30382D32315430383A33383A32342E3730
+09-08 00:07:06.818 10283 10311 D FullProof:   335A222C226C6173745F73796E635F74696D65223A313738383535303532333731332C22646F5F696E6372656D656E74616C
+09-08 00:07:06.818 10283 10311 D FullProof:   5F73796E63223A747275657D7D
+09-08 00:07:06.818 10283 10311 D FullProof: === CalendarProvider: Trigger SQL ===
+09-08 00:07:06.827 10283 10311 D FullProof: [TRIGGER] calendar_cleanup:
+09-08 00:07:06.827 10283 10311 D FullProof:   CREATE TRIGGER calendar_cleanup DELETE ON Calendars BEGIN DELETE FROM Events WHERE calendar_id=old._id;END
+09-08 00:07:06.831 10283 10311 D FullProof: [TRIGGER] calendar_color_update:
+09-08 00:07:06.831 10283 10311 D FullProof:   CREATE TRIGGER calendar_color_update UPDATE OF calendar_color_index ON Calendars WHEN new.calendar_color_index NOT NULL BEGIN UPDATE Calendars SET calendar_color=(SELECT color FROM Colors WHERE accoun...
+09-08 00:07:06.835 10283 10311 D FullProof: [TRIGGER] event_color_update:
+09-08 00:07:06.835 10283 10311 D FullProof:   CREATE TRIGGER event_color_update UPDATE OF eventColor_index ON Events WHEN new.eventColor_index NOT NULL BEGIN UPDATE Events SET eventColor=(SELECT color FROM Colors WHERE account_name=(SELECT accoun...
+09-08 00:07:06.841 10283 10311 D FullProof: [TRIGGER] events_cleanup_delete:
+09-08 00:07:06.841 10283 10311 D FullProof:   CREATE TRIGGER events_cleanup_delete DELETE ON Events BEGIN DELETE FROM Instances WHERE event_id=old._id;DELETE FROM EventsRawTimes WHERE event_id=old._id;DELETE FROM Attendees WHERE event_id=old._id;...
+09-08 00:07:06.845 10283 10311 D FullProof: [TRIGGER] original_sync_update:
+09-08 00:07:06.845 10283 10311 D FullProof:   CREATE TRIGGER original_sync_update UPDATE OF _sync_id ON Events BEGIN UPDATE Events SET original_sync_id=new._sync_id WHERE original_id=old._id; END
+09-08 00:07:06.847 10283 10311 D FullProof: [VIEW] CREATE VIEW view_events AS SELECT Events._id AS _id,title,description,eventLocation,eventColor,eventColor_index,eventStatus,selfAttendeeStatus,dtstart,dtend,duration,eventTimezone,eventEndTimezone,allDay,accessLevel,availability,hasAlarm,hasExtendedProperties,rrule,rdate,exrule,exdate,original_sync_...
+09-08 00:07:06.847 10283 10311 D FullProof: === ContactsProvider: Selection-Based Data Extraction ===
+09-08 00:07:06.847 10283 10311 D FullProof: --- Tables in contacts DB ---
+09-08 00:07:06.879 10283 10311 D FullProof: Tables: 35
+09-08 00:07:07.071 10283 10311 D FullProof: [TABLE] _sync_state
+09-08 00:07:07.430 10283 10311 D FullProof: [TABLE] _sync_state_metadata
+09-08 00:07:07.556 10283 10311 D FullProof: [TABLE] accounts
+09-08 00:07:07.741 10283 10311 D FullProof: [TABLE] agg_exceptions
+09-08 00:07:07.909 10283 10311 D FullProof: [TABLE] agg_presence
+09-08 00:07:08.129 10283 10311 D FullProof: [TABLE] android_metadata
+09-08 00:07:08.253 10283 10311 D FullProof: [TABLE] contacts
+09-08 00:07:08.324 10283 10311 D FullProof: [TABLE] data
+09-08 00:07:08.537 10283 10311 D FullProof: [TABLE] data_usage_stat
+09-08 00:07:08.815 10283 10311 D FullProof: [TABLE] default_directory
+09-08 00:07:09.065 10283 10311 D FullProof: [TABLE] deleted_contacts
+09-08 00:07:09.332 10283 10311 D FullProof: [TABLE] directories
+09-08 00:07:09.435 10283 10311 D FullProof: [TABLE] groups
+09-08 00:07:09.572 10283 10311 D FullProof: [TABLE] mimetypes
+09-08 00:07:09.747 10283 10311 D FullProof: [TABLE] name_lookup
+09-08 00:07:09.880 10283 10311 D FullProof: [TABLE] packages
+09-08 00:07:10.071 10283 10311 D FullProof: [TABLE] phone_lookup
+09-08 00:07:10.246 10283 10311 D FullProof: [TABLE] photo_files
+09-08 00:07:10.583 10283 10311 D FullProof: [TABLE] pre_authorized_uris
+09-08 00:07:10.725 10283 10311 D FullProof: [TABLE] presence
+09-08 00:07:10.891 10283 10311 D FullProof: [TABLE] properties
+09-08 00:07:11.087 10283 10311 D FullProof: [TABLE] raw_contacts
+09-08 00:07:11.392 10283 10311 D FullProof: [TABLE] search_index
+09-08 00:07:11.786 10283 10311 D FullProof: [TABLE] search_index_content
+09-08 00:07:12.106 10283 10311 D FullProof: [TABLE] search_index_docsize
+09-08 00:07:12.401 10283 10311 D FullProof: [TABLE] search_index_segdir
+09-08 00:07:12.767 10283 10311 D FullProof: [TABLE] search_index_segments
+09-08 00:07:13.045 10283 10311 D FullProof: [TABLE] search_index_stat
+09-08 00:07:13.315 10283 10311 D FullProof: [TABLE] sqlite_sequence
+09-08 00:07:13.553 10283 10311 D FullProof: [TABLE] sqlite_stat1
+09-08 00:07:13.846 10283 10311 D FullProof: [TABLE] status_updates
+09-08 00:07:14.161 10283 10311 D FullProof: [TABLE] stream_item_photos
+09-08 00:07:14.367 10283 10311 D FullProof: [TABLE] stream_items
+09-08 00:07:14.562 10283 10311 D FullProof: [TABLE] v1_settings
+09-08 00:07:14.899 10283 10311 D FullProof: [TABLE] visible_contacts
+09-08 00:07:14.899 10283 10311 D FullProof: --- Internal accounts table ---
+09-08 00:07:14.928 10283 10311 D FullProof: Accounts: 2
+09-08 00:07:15.437 10283 10311 D FullProof: [ACCT] sandiyotest@gmail.com (com.google)
+09-08 00:07:15.977 10283 10311 D FullProof: [ACCT] attacker@evil.com (com.google)
+09-08 00:07:15.977 10283 10311 D FullProof: --- Phone numbers (via data table) ---
+09-08 00:07:16.029 10283 10311 D FullProof: Phone numbers: 2
+09-08 00:07:16.254 10283 10311 D FullProof: [PHONE] 63854 36230
+09-08 00:07:16.478 10283 10311 D FullProof: [PHONE] 89860 87809
+09-08 00:07:16.478 10283 10311 D FullProof: --- Contact names (via data table) ---
+09-08 00:07:16.510 10283 10311 D FullProof: Names: 2
+09-08 00:07:16.590 10283 10311 D FullProof: [NAME] san
+09-08 00:07:16.690 10283 10311 D FullProof: [NAME] test
+09-08 00:07:16.690 10283 10311 D FullProof: --- Groups ---
+09-08 00:07:16.739 10283 10311 D FullProof: Groups: 5
+09-08 00:07:16.993 10283 10311 D FullProof: [GROUP] My Contacts ((empty))
+09-08 00:07:17.331 10283 10311 D FullProof: [GROUP] Starred in Android ((empty))
+09-08 00:07:17.477 10283 10311 D FullProof: [GROUP] Friends ((empty))
+09-08 00:07:17.604 10283 10311 D FullProof: [GROUP] Family ((empty))
+09-08 00:07:17.789 10283 10311 D FullProof: [GROUP] Coworkers ((empty))
+09-08 00:07:17.789 10283 10311 D FullProof: --- Directories ---
+09-08 00:07:17.828 10283 10311 D FullProof: Directories: 4
+09-08 00:07:18.812 10283 10311 D FullProof: [DIR] pkg=com.android.providers.contacts acct=(empty) auth=com.android.contacts
+09-08 00:07:19.783 10283 10311 D FullProof: [DIR] pkg=com.android.providers.contacts acct=(empty) auth=com.android.contacts
+09-08 00:07:21.531 10283 10311 D FullProof: [DIR] pkg=com.google.android.contacts acct=sandiyotest@gmail.com auth=com.google.android.contacts.othercontacts
+09-08 00:07:23.338 10283 10311 D FullProof: [DIR] pkg=com.google.android.contacts acct=Carrier service numbers auth=com.google.android.contacts.sdn.provider
+09-08 00:07:23.338 10283 10311 D FullProof: --- Database paths ---
+09-08 00:07:23.377 10283 10311 D FullProof: Databases: 1
+09-08 00:07:24.842 10283 10311 D FullProof: [DB] main -> /data/data/com.android.providers.contacts/databases/contacts2.db
+09-08 00:07:24.842 10283 10311 D FullProof: === ContactsProvider: Internal Data Access ===
+09-08 00:07:24.845 10283 10311 D FullProof: Pre-authorized URIs: 0
+09-08 00:07:24.885 10283 10311 D FullProof: Default directory entries: 4
+09-08 00:07:24.920 10283 10311 D FullProof: Visible contacts: 3
+09-08 00:07:24.958 10283 10311 D FullProof: MIME types: 16
+09-08 00:07:25.601 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/email_v2
+09-08 00:07:26.139 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/im
+09-08 00:07:26.973 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/nickname
+09-08 00:07:27.841 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/organization
+09-08 00:07:28.532 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/phone_v2
+09-08 00:07:29.272 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/sip_address
+09-08 00:07:29.979 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/name
+09-08 00:07:30.810 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/postal-address_v2
+09-08 00:07:31.181 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/identity
+09-08 00:07:31.539 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/photo
+09-08 00:07:32.278 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/group_membership
+09-08 00:07:32.644 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/note
+09-08 00:07:33.135 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/contact_event
+09-08 00:07:33.557 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/website
+09-08 00:07:34.105 10283 10311 D FullProof: [MIME] vnd.android.cursor.item/relation
+09-08 00:07:34.675 10283 10311 D FullProof: [MIME] vnd.com.google.cursor.item/contact_misc
+09-08 00:07:34.675 10283 10311 D FullProof: === CalendarProvider: Trigger SQL (shows internal logic) ===
+09-08 00:07:34.682 10283 10311 D FullProof: [TRIGGER] calendar_cleanup
+09-08 00:07:34.682 10283 10311 D FullProof:   CREATE TRIGGER calendar_cleanup DELETE ON Calendars BEGIN DELETE FROM Events WHERE calendar_id=old._id;END
+09-08 00:07:34.685 10283 10311 D FullProof: [TRIGGER] calendar_color_update
+09-08 00:07:34.685 10283 10311 D FullProof:   CREATE TRIGGER calendar_color_update UPDATE OF calendar_color_index ON Calendars WHEN new.calendar_color_index NOT NULL 
+09-08 00:07:34.685 10283 10311 D FullProof:   BEGIN UPDATE Calendars SET calendar_color=(SELECT color FROM Colors WHERE account_name=new.account_name AND account_type
+09-08 00:07:34.685 10283 10311 D FullProof:   =new.account_type AND color_index=new.calendar_color_index AND color_type=0)  WHERE _id=old._id; END
+09-08 00:07:34.688 10283 10311 D FullProof: [TRIGGER] event_color_update
+09-08 00:07:34.688 10283 10311 D FullProof:   CREATE TRIGGER event_color_update UPDATE OF eventColor_index ON Events WHEN new.eventColor_index NOT NULL BEGIN UPDATE E
+09-08 00:07:34.688 10283 10311 D FullProof:   vents SET eventColor=(SELECT color FROM Colors WHERE account_name=(SELECT account_name FROM Calendars WHERE _id=new.cale
+09-08 00:07:34.688 10283 10311 D FullProof:   ndar_id) AND account_type=(SELECT account_type FROM Calendars WHERE _id=new.calendar_id) AND color_index=new.eventColor_
+09-08 00:07:34.688 10283 10311 D FullProof:   index AND color_type=1)  WHERE _id=old._id; END
+09-08 00:07:34.691 10283 10311 D FullProof: [TRIGGER] events_cleanup_delete
+09-08 00:07:34.691 10283 10311 D FullProof:   CREATE TRIGGER events_cleanup_delete DELETE ON Events BEGIN DELETE FROM Instances WHERE event_id=old._id;DELETE FROM Eve
+09-08 00:07:34.691 10283 10311 D FullProof:   ntsRawTimes WHERE event_id=old._id;DELETE FROM Attendees WHERE event_id=old._id;DELETE FROM Reminders WHERE event_id=old
+09-08 00:07:34.691 10283 10311 D FullProof:   ._id;DELETE FROM CalendarAlerts WHERE event_id=old._id;DELETE FROM ExtendedProperties WHERE event_id=old._id;END
+09-08 00:07:34.694 10283 10311 D FullProof: [TRIGGER] original_sync_update
+09-08 00:07:34.694 10283 10311 D FullProof:   CREATE TRIGGER original_sync_update UPDATE OF _sync_id ON Events BEGIN UPDATE Events SET original_sync_id=new._sync_id W
+09-08 00:07:34.694 10283 10311 D FullProof:   HERE original_id=old._id; END
+09-08 00:07:34.694 10283 10311 D FullProof: === ALL PROOF EXTRACTION COMPLETE ===

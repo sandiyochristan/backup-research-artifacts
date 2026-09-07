@@ -1,0 +1,169 @@
+--------- beginning of main
+09-08 00:04:54.725  9706  9773 D CalDirectExtract: === PHASE 1: Full Database Schema Extraction ===
+09-08 00:04:54.730  9706  9773 D CalDirectExtract: Total tables: 15
+09-08 00:04:54.733  9706  9773 D CalDirectExtract: [TABLE] Attendees
+09-08 00:04:54.736  9706  9773 D CalDirectExtract:   columns: _id, event_id, attendeeName, attendeeEmail, attendeeStatus, attendeeRelationship, attendeeType, attendeeIdentity, attendeeIdNamespace
+09-08 00:04:54.739  9706  9773 D CalDirectExtract: [TABLE] CalendarAlerts
+09-08 00:04:54.742  9706  9773 D CalDirectExtract:   columns: _id, event_id, begin, end, alarmTime, creationTime, receivedTime, notifyTime, state, minutes
+09-08 00:04:54.746  9706  9773 D CalDirectExtract: [TABLE] CalendarCache
+09-08 00:04:54.751  9706  9773 D CalDirectExtract: [TABLE] CalendarMetaData
+09-08 00:04:54.754  9706  9773 D CalDirectExtract: [TABLE] Calendars
+09-08 00:04:54.757  9706  9773 D CalDirectExtract:   columns: _id, account_name, account_type, _sync_id, dirty, mutators, name, calendar_displayName, calendar_color, calendar_color_index, calendar_access_level, visible, sync_events, calendar_location, calendar_timezone, ownerAccount, isPrimary, canOrganizerRespond, canModifyTimeZone, canPartiallyUpdate, maxReminders, allowedReminders, allowedAvailability, allowedAttendeeTypes, deleted, cal_sync1, cal_sync2, cal_sync3, cal_sync4, cal_sync5, cal_sync6, cal_sync7, cal_sync8, cal_sync9, cal_sync10
+09-08 00:04:54.760  9706  9773 D CalDirectExtract: [TABLE] Colors
+09-08 00:04:54.763  9706  9773 D CalDirectExtract: [TABLE] Events
+09-08 00:04:54.766  9706  9773 D CalDirectExtract:   columns: _id, _sync_id, dirty, mutators, lastSynced, calendar_id, title, eventLocation, description, eventColor, eventColor_index, eventStatus, selfAttendeeStatus, dtstart, dtend, eventTimezone, duration, allDay, accessLevel, availability, hasAlarm, hasExtendedProperties, rrule, rdate, exrule, exdate, original_id, original_sync_id, originalInstanceTime, originalAllDay, lastDate, hasAttendeeData, guestsCanModify, guestsCanInviteOthers, guestsCanSeeGuests, organizer, isOrganizer, deleted, eventEndTimezone, customAppPackage, customAppUri, uid2445, sync_data1, sync_data2, sync_data3, sync_data4, sync_data5, sync_data6, sync_data7, sync_data8, sync_data9, sync_data10
+09-08 00:04:54.768  9706  9773 D CalDirectExtract: [TABLE] EventsRawTimes
+09-08 00:04:54.769  9706  9773 D CalDirectExtract: [TABLE] ExtendedProperties
+09-08 00:04:54.770  9706  9773 D CalDirectExtract:   columns: _id, event_id, name, value
+09-08 00:04:54.771  9706  9773 D CalDirectExtract: [TABLE] Instances
+09-08 00:04:54.773  9706  9773 D CalDirectExtract: [TABLE] Reminders
+09-08 00:04:54.776  9706  9773 D CalDirectExtract: [TABLE] _sync_state
+09-08 00:04:54.781  9706  9773 D CalDirectExtract:   columns: _id, account_name, account_type, data
+09-08 00:04:54.783  9706  9773 D CalDirectExtract: [TABLE] _sync_state_metadata
+09-08 00:04:54.784  9706  9773 D CalDirectExtract: [TABLE] android_metadata
+09-08 00:04:54.785  9706  9773 D CalDirectExtract: [TABLE] sqlite_sequence
+09-08 00:04:54.786  9706  9773 D CalDirectExtract: Views: 1
+09-08 00:04:54.788  9706  9773 D CalDirectExtract: Triggers: 5
+09-08 00:04:54.789  9706  9773 D CalDirectExtract: [TRIGGER] calendar_cleanup
+09-08 00:04:54.790  9706  9773 D CalDirectExtract: [TRIGGER] calendar_color_update
+09-08 00:04:54.791  9706  9773 D CalDirectExtract: [TRIGGER] event_color_update
+09-08 00:04:54.794  9706  9773 D CalDirectExtract: [TRIGGER] events_cleanup_delete
+09-08 00:04:54.796  9706  9773 D CalDirectExtract: [TRIGGER] original_sync_update
+09-08 00:04:54.796  9706  9773 D CalDirectExtract: === PHASE 2: Calendar Account Extraction ===
+09-08 00:04:54.797  9706  9773 D CalDirectExtract: Calendars: 4
+09-08 00:04:54.803  9706  9773 D CalDirectExtract: [CALENDAR] Holidays in India
+09-08 00:04:54.803  9706  9773 D CalDirectExtract:   account: sandiyotest@gmail.com (com.google)
+09-08 00:04:54.803  9706  9773 D CalDirectExtract:   owner: en-gb.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.803  9706  9773 D CalDirectExtract:   sync_id: null
+09-08 00:04:54.809  9706  9773 D CalDirectExtract: [CALENDAR] Holidays in India
+09-08 00:04:54.809  9706  9773 D CalDirectExtract:   account: sandiyotest@gmail.com (com.google)
+09-08 00:04:54.809  9706  9773 D CalDirectExtract:   owner: en.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.809  9706  9773 D CalDirectExtract:   sync_id: null
+09-08 00:04:54.820  9706  9773 D CalDirectExtract: [CALENDAR] Google-BB
+09-08 00:04:54.820  9706  9773 D CalDirectExtract:   account: sandiyotest@gmail.com (com.google)
+09-08 00:04:54.820  9706  9773 D CalDirectExtract:   owner: classroom111771798454834833104@group.calendar.google.com
+09-08 00:04:54.820  9706  9773 D CalDirectExtract:   sync_id: null
+09-08 00:04:54.827  9706  9773 D CalDirectExtract: [CALENDAR] sandiyotest@gmail.com
+09-08 00:04:54.827  9706  9773 D CalDirectExtract:   account: sandiyotest@gmail.com (com.google)
+09-08 00:04:54.827  9706  9773 D CalDirectExtract:   owner: sandiyotest@gmail.com
+09-08 00:04:54.827  9706  9773 D CalDirectExtract:   sync_id: null
+09-08 00:04:54.827  9706  9773 D CalDirectExtract: === PHASE 3: Attendee Email Extraction ===
+09-08 00:04:54.827  9706  9773 D CalDirectExtract: (Other people's email addresses from calendar events)
+09-08 00:04:54.828  9706  9773 D CalDirectExtract: Total attendees: 0
+09-08 00:04:54.829  9706  9773 D CalDirectExtract: Unique attendee emails: 0
+09-08 00:04:54.829  9706  9773 D CalDirectExtract: === PHASE 4: Event Detail Extraction ===
+09-08 00:04:54.831  9706  9773 D CalDirectExtract: Total events: 196
+09-08 00:04:54.839  9706  9773 D CalDirectExtract: [EVENT] 'Onam'
+09-08 00:04:54.839  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.839  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.839  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.839  9706  9773 D CalDirectExtract:   organizer: en.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.839  9706  9773 D CalDirectExtract:   date: 2027-09-12 00:00:00
+09-08 00:04:54.839  9706  9773 D CalDirectExtract:   calendar_id: 2
+09-08 00:04:54.850  9706  9773 D CalDirectExtract: [EVENT] 'Onam'
+09-08 00:04:54.850  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.850  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.850  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.850  9706  9773 D CalDirectExtract:   organizer: en-gb.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.850  9706  9773 D CalDirectExtract:   date: 2027-09-12 00:00:00
+09-08 00:04:54.850  9706  9773 D CalDirectExtract:   calendar_id: 1
+09-08 00:04:54.857  9706  9773 D CalDirectExtract: [EVENT] 'Ganesh Chaturthi'
+09-08 00:04:54.857  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.857  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.857  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.857  9706  9773 D CalDirectExtract:   organizer: en.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.857  9706  9773 D CalDirectExtract:   date: 2027-09-04 00:00:00
+09-08 00:04:54.857  9706  9773 D CalDirectExtract:   calendar_id: 2
+09-08 00:04:54.868  9706  9773 D CalDirectExtract: [EVENT] 'Ganesh Chaturthi'
+09-08 00:04:54.868  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.868  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.868  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.868  9706  9773 D CalDirectExtract:   organizer: en-gb.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.868  9706  9773 D CalDirectExtract:   date: 2027-09-04 00:00:00
+09-08 00:04:54.868  9706  9773 D CalDirectExtract:   calendar_id: 1
+09-08 00:04:54.877  9706  9773 D CalDirectExtract: [EVENT] 'Janmashtami (Smarta)'
+09-08 00:04:54.877  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.877  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.877  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.877  9706  9773 D CalDirectExtract:   organizer: en-gb.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.877  9706  9773 D CalDirectExtract:   date: 2027-08-25 00:00:00
+09-08 00:04:54.877  9706  9773 D CalDirectExtract:   calendar_id: 1
+09-08 00:04:54.886  9706  9773 D CalDirectExtract: [EVENT] 'Janmashtami'
+09-08 00:04:54.886  9706  9773 D CalDirectExtract:   desc: Public holiday
+09-08 00:04:54.886  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.886  9706  9773 D CalDirectExtract:   organizer: en-gb.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.886  9706  9773 D CalDirectExtract:   date: 2027-08-25 00:00:00
+09-08 00:04:54.886  9706  9773 D CalDirectExtract:   calendar_id: 1
+09-08 00:04:54.895  9706  9773 D CalDirectExtract: [EVENT] 'Janmashtami (Smarta)'
+09-08 00:04:54.895  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.895  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.895  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.895  9706  9773 D CalDirectExtract:   organizer: en.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.895  9706  9773 D CalDirectExtract:   date: 2027-08-25 00:00:00
+09-08 00:04:54.895  9706  9773 D CalDirectExtract:   calendar_id: 2
+09-08 00:04:54.903  9706  9773 D CalDirectExtract: [EVENT] 'Janmashtami'
+09-08 00:04:54.903  9706  9773 D CalDirectExtract:   desc: Public holiday
+09-08 00:04:54.903  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.903  9706  9773 D CalDirectExtract:   organizer: en.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.903  9706  9773 D CalDirectExtract:   date: 2027-08-25 00:00:00
+09-08 00:04:54.903  9706  9773 D CalDirectExtract:   calendar_id: 2
+09-08 00:04:54.913  9706  9773 D CalDirectExtract: [EVENT] 'Raksha Bandhan'
+09-08 00:04:54.913  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.913  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.913  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.913  9706  9773 D CalDirectExtract:   organizer: en-gb.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.913  9706  9773 D CalDirectExtract:   date: 2027-08-17 00:00:00
+09-08 00:04:54.913  9706  9773 D CalDirectExtract:   calendar_id: 1
+09-08 00:04:54.922  9706  9773 D CalDirectExtract: [EVENT] 'Raksha Bandhan'
+09-08 00:04:54.922  9706  9773 D CalDirectExtract:   desc: Observance
+09-08 00:04:54.922  9706  9773 D CalDirectExtract: To hide observances, go to Google Calendar Settin...
+09-08 00:04:54.922  9706  9773 D CalDirectExtract:   location: 
+09-08 00:04:54.922  9706  9773 D CalDirectExtract:   organizer: en.indian#holiday@group.v.calendar.google.com
+09-08 00:04:54.922  9706  9773 D CalDirectExtract:   date: 2027-08-17 00:00:00
+09-08 00:04:54.922  9706  9773 D CalDirectExtract:   calendar_id: 2
+09-08 00:04:54.922  9706  9773 D CalDirectExtract: === PHASE 5: Sync State (Auth Tokens) ===
+09-08 00:04:54.923  9706  9773 D CalDirectExtract: Sync state entries: 1
+09-08 00:04:54.932  9706  9773 D CalDirectExtract: [SYNC] account=sandiyotest@gmail.com type=com.google
+09-08 00:04:54.932  9706  9773 D CalDirectExtract:   data_length=513
+09-08 00:04:54.932  9706  9773 D CalDirectExtract:   data_hex=7B2276657273696F6E223A31362C2266697273745365656E223A66616C73652C226A656C6C794265616E4F724E6577657222... (truncated)
+09-08 00:04:54.933  9706  9773 D CalDirectExtract:   data_text=[ERROR: unknown error (code 0 SQLITE_OK): Unable to convert BLOB to ...]
+09-08 00:04:54.933  9706  9773 D CalDirectExtract: === PHASE 6: Extended Properties ===
+09-08 00:04:54.935  9706  9773 D CalDirectExtract: Extended properties: 196
+09-08 00:04:54.939  9706  9773 D CalDirectExtract: [PROP] event=2 secretEvent=0
+09-08 00:04:54.946  9706  9773 D CalDirectExtract: [PROP] event=3 secretEvent=0
+09-08 00:04:54.951  9706  9773 D CalDirectExtract: [PROP] event=4 secretEvent=0
+09-08 00:04:54.954  9706  9773 D CalDirectExtract: [PROP] event=5 secretEvent=0
+09-08 00:04:54.960  9706  9773 D CalDirectExtract: [PROP] event=6 secretEvent=0
+09-08 00:04:54.965  9706  9773 D CalDirectExtract: [PROP] event=7 secretEvent=0
+09-08 00:04:54.968  9706  9773 D CalDirectExtract: [PROP] event=8 secretEvent=0
+09-08 00:04:54.971  9706  9773 D CalDirectExtract: [PROP] event=9 secretEvent=0
+09-08 00:04:54.974  9706  9773 D CalDirectExtract: [PROP] event=10 secretEvent=0
+09-08 00:04:54.980  9706  9773 D CalDirectExtract: [PROP] event=11 secretEvent=0
+09-08 00:04:54.984  9706  9773 D CalDirectExtract: [PROP] event=12 secretEvent=0
+09-08 00:04:54.987  9706  9773 D CalDirectExtract: [PROP] event=13 secretEvent=0
+09-08 00:04:54.991  9706  9773 D CalDirectExtract: [PROP] event=15 secretEvent=0
+09-08 00:04:54.997  9706  9773 D CalDirectExtract: [PROP] event=16 secretEvent=0
+09-08 00:04:55.000  9706  9773 D CalDirectExtract: [PROP] event=17 secretEvent=0
+09-08 00:04:55.001  9706  9773 D CalDirectExtract: === PHASE 7: Database Metadata ===
+09-08 00:04:55.002  9706  9773 D CalDirectExtract: Attached databases: 1
+09-08 00:04:55.004  9706  9773 D CalDirectExtract: [DB] name=main file=/data/data/com.android.providers.calendar/databases/calendar.db
+09-08 00:04:55.006  9706  9773 D CalDirectExtract: DB size: 57 pages x 4096 bytes
+09-08 00:04:55.006  9706  9773 D CalDirectExtract: === PHASE 8: SQLite Configuration ===
+09-08 00:04:55.007  9706  9773 D CalDirectExtract: SQLite version: 3.50.6
+09-08 00:04:55.011  9706  9773 D CalDirectExtract: Source ID: 2025-09-22 18:50:24 9cc554372371e07bf01d8070a64d461ac85b91be6eef0e642ed129a0c7fa8105
+09-08 00:04:55.013  9706  9773 D CalDirectExtract:   ENABLE_LOAD_EXTENSION: disabled
+09-08 00:04:55.014  9706  9773 D CalDirectExtract:   ENABLE_FTS5: disabled
+09-08 00:04:55.015  9706  9773 D CalDirectExtract:   ENABLE_JSON1: disabled
+09-08 00:04:55.016  9706  9773 D CalDirectExtract:   ENABLE_RTREE: disabled
+09-08 00:04:55.017  9706  9773 D CalDirectExtract:   THREADSAFE: disabled
+09-08 00:04:55.017  9706  9773 D CalDirectExtract:   ENABLE_DBSTAT_VTAB: disabled
+09-08 00:04:55.018  9706  9773 D CalDirectExtract:   SECURE_DELETE: disabled
+09-08 00:04:55.019  9706  9773 D CalDirectExtract:   ENABLE_FTS3: disabled
+09-08 00:04:55.020  9706  9773 D CalDirectExtract:   ENABLE_FTS4: disabled
+09-08 00:04:55.020  9706  9773 D CalDirectExtract: === PHASE 9: Write Attempt via Projection ===
+09-08 00:04:55.021  9706  9773 D CalDirectExtract: [WRITE-INFO] SELECT changes() = 0
+09-08 00:04:55.022  9706  9773 D CalDirectExtract: [WRITE-INFO] SELECT total_changes() = 31
+09-08 00:04:55.024  9706  9773 D CalDirectExtract: [WRITE-INFO] SELECT last_insert_rowid() = 609
+09-08 00:04:55.024  9706  9773 D CalDirectExtract: [WRITE-SEMI] Invalid column _id; INSERT INTO Events(calendar_id,title,dtstart,dtend) VALUES(1...
+09-08 00:04:55.027  9706  9773 D CalDirectExtract: [REPLACE] String replace: New YeXr's DXy
+09-08 00:04:55.027  9706  9773 D CalDirectExtract: === ALL DIRECT EXTRACTION COMPLETE ===

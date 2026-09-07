@@ -386,5 +386,68 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".CallsViaSortActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CALLS_VIA_SORT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FullProofExtractActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.FULL_PROOF" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarDirectExtractActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_DIRECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ErrorBlindExtractActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.ERROR_BLIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsBlindExtractActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SETTINGS_BLIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SortOrderEscalateActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SORT_ESCALATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NovelSurfaceScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.NOVEL_SURFACE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
