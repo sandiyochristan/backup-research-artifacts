@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:label="VRP PoC"
@@ -580,6 +581,132 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.vrp.poc.PROVIDER_DEEP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CarrierSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CARRIER_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DynactRedirectActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DYNACT_REDIRECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MediaStoreSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.MEDIASTORE_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MessagesSharedStorageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.MESSAGES_SHARED_STORAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GoogleProviderSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.GOOGLE_PROVIDER_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WalletDeepLinkActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.WALLET_DEEPLINK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MediaProjectionExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.MEDIA_PROJECTION_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MediaOutputSpoofActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.MEDIA_OUTPUT_SPOOF" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DialerDobbyDoSActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DIALER_DOBBY_DOS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WalletWebViewExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.WALLET_WEBVIEW_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TelephonySqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.TELEPHONY_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MessagesProviderProbeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.MESSAGES_PROVIDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AvatarConfusedDeputyActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.AVATAR_DEPUTY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GboardDebugBridgeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.GBOARD_DEBUG_BRIDGE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
