@@ -396,6 +396,15 @@
         </activity>
 
         <activity
+            android:name=".BroadProjectionScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.BROAD_PROJ" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".FullProofExtractActivity"
             android:exported="true">
             <intent-filter>
@@ -445,6 +454,87 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.vrp.poc.NOVEL_SURFACE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NovelExploitScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.NOVEL_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ServiceBindExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SERVICE_BIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AuthTokenExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.AUTH_TOKEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FrpBatteryExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.FRP_BATT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarWriteExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_WRITE_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HighValueServiceProbeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.HV_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BackupExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.BACKUP_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".IntentRedirectScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.INTENT_REDIRECT_SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ZeroPermScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.ZERO_PERM_SCAN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

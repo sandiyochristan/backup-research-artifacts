@@ -1,0 +1,70 @@
+09-08 00:48:50.803 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.poc/.ZeroPermScanActivity'
+09-08 00:48:50.855  1431  5741 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{1aa09aa #386 type=standard A=10385:com.vrp.poc} activity=ActivityRecord{150384235 u0 com.vrp.poc/.ZeroPermScanActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-08 00:48:50.855  1431  5741 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.poc/.ZeroPermScanActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+09-08 00:48:50.878  1431  1502 I ActivityManager: Start proc 30966:com.vrp.poc/u0a385 for top-activity {com.vrp.poc/com.vrp.poc.ZeroPermScanActivity}
+09-08 00:48:50.926  2052  2074 V WindowManagerShell:         {m=OPEN f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{150384235 u0 com.vrp.poc/.ZeroPermScanActivity t386}#7829)/@0x310cb0c sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=-1->0 r=-1->0:-1 bc=ff000000 activity=ActivityTransitionInfo { component = ComponentInfo{com.vrp.poc/com.vrp.poc.ZeroPermScanActivity}, taskId = 386, appCompatTransitionInfo = null }},
+09-08 00:48:50.926  2052  2074 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=1844 t=CLOSE f=0x0 trk=1 r=[0@Point(0, 0)] c=[{m=OPEN f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{150384235 u0 com.vrp.poc/.ZeroPermScanActivity t386}#7829)/@0x310cb0c sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=-1->0 r=-1->0:-1 bc=ff000000 activity=ActivityTransitionInfo { component = ComponentInfo{com.vrp.poc/com.vrp.poc.ZeroPermScanActivity}, taskId = 386, appCompatTransitionInfo = null }},{m=CLOSE f=TRANSLUCENT|FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{199373753 u0 com.google.android.gms/.auth.uiflows.addaccount.AccountIntroActivity t386}#7814)/@0x34c4c55 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 bc=ff000000 activity=ActivityTransitionInfo { component = ComponentInfo{com.google.android.gms/com.google.android.gms.auth.uiflows.addaccount.AccountIntroActivity}, taskId = 386, appCompatTransitionInfo = null }},{m=TO_BACK f=NONE leash=Surface(name=Task=387#7799)/@0x57c966a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-08 00:48:50.927  2052  2074 V WindowManagerShell: start default transition animation, info = {id=1844 t=CLOSE f=0x0 trk=1 r=[0@Point(0, 0)] c=[{m=OPEN f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{150384235 u0 com.vrp.poc/.ZeroPermScanActivity t386}#7829)/@0x310cb0c sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=-1->0 r=-1->0:-1 bc=ff000000 activity=ActivityTransitionInfo { component = ComponentInfo{com.vrp.poc/com.vrp.poc.ZeroPermScanActivity}, taskId = 386, appCompatTransitionInfo = null }},{m=CLOSE f=TRANSLUCENT|FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{199373753 u0 com.google.android.gms/.auth.uiflows.addaccount.AccountIntroActivity t386}#7814)/@0x34c4c55 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 bc=ff000000 activity=ActivityTransitionInfo { component = ComponentInfo{com.google.android.gms/com.google.android.gms.auth.uiflows.addaccount.AccountIntroActivity}, taskId = 386, appCompatTransitionInfo = null }},{m=TO_BACK f=NONE leash=Surface(name=Task=387#7799)/@0x57c966a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+09-08 00:48:50.934  1431  1486 V WindowManager:         {m=OPEN f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{150384235 u0 com.vrp.poc/.ZeroPermScanActivity t386}#7829)/@0x23927d3 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=-1->0 r=-1->0:-1 bc=ff000000 activity=ActivityTransitionInfo { component = ComponentInfo{com.vrp.poc/com.vrp.poc.ZeroPermScanActivity}, taskId = 386, appCompatTransitionInfo = null }},
+09-08 00:48:50.970 30966 31021 D ZeroPermScan: [ACCESSIBLE!] Settings System (content://settings/system)
+09-08 00:48:50.970 30966 31021 D ZeroPermScan:   rows=41 cols=4 [_id,name,value,is_preserved_in_restore] first_row=[_id=92|name=volume_music_speaker|value=21]
+09-08 00:48:50.973 30966 30966 D VRI[ZeroPermScanActivity]: WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+09-08 00:48:50.974  1431  2256 D CoreBackPreview: Window{a445c6c u0 com.vrp.poc/com.vrp.poc.ZeroPermScanActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@855e16e, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-08 00:48:50.976  1431  2256 D WindowManager: setClientSurface Surface(name=VRI-com.vrp.poc/com.vrp.poc.ZeroPermScanActivity#7837)/@0x54b00f for a445c6c com.vrp.poc/com.vrp.poc.ZeroPermScanActivity
+09-08 00:48:50.977 30966 31021 D ZeroPermScan: [ACCESSIBLE!] Settings Secure (content://settings/secure)
+09-08 00:48:50.977 30966 31021 D ZeroPermScan:   rows=164 cols=4 [_id,name,value,is_preserved_in_restore] first_row=[_id=548|name=lock_screen_show_notifications|value=0]
+09-08 00:48:50.979 30966 30966 I Surface : Creating surface for consumer VRI[ZeroPermScanActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+09-08 00:48:50.987 30966 31021 D ZeroPermScan: [ACCESSIBLE!] Settings Global (content://settings/global)
+09-08 00:48:50.987 30966 31021 D ZeroPermScan:   rows=233 cols=4 [_id,name,value,is_preserved_in_restore] first_row=[_id=261|name=carrier_app_names|value=com.google.android.apps.tycho:Google Fi]
+09-08 00:48:50.995  1431  1486 I ActivityTaskManager: Displayed com.vrp.poc/.ZeroPermScanActivity for user 0: +148ms
+09-08 00:48:51.001 30966 31021 D ZeroPermScan: [ACCESSIBLE!] External Images (content://media/external/images/media)
+09-08 00:48:51.001 30966 31021 D ZeroPermScan:   rows=0 cols=58 [instance_id,compilation,disc_number,duration,album_artist,...]
+09-08 00:48:51.004 30966 31021 D ZeroPermScan: [ACCESSIBLE!] External Videos (content://media/external/video/media)
+09-08 00:48:51.004 30966 31021 D ZeroPermScan:   rows=0 cols=60 [instance_id,compilation,disc_number,duration,album_artist,...]
+09-08 00:48:51.006 30966 31021 D ZeroPermScan: [ACCESSIBLE!] External Audio (content://media/external/audio/media)
+09-08 00:48:51.006 30966 31021 D ZeroPermScan:   rows=0 cols=67 [title_key,instance_id,compilation,disc_number,duration,...]
+09-08 00:48:51.011 30966 31021 D ZeroPermScan: [ACCESSIBLE!] External Files (content://media/external/file)
+09-08 00:48:51.011 30966 31021 D ZeroPermScan:   rows=0 cols=53 [instance_id,_user_id,compilation,disc_number,duration,...]
+09-08 00:48:51.014 30966 31021 D ZeroPermScan: [ACCESSIBLE!] Downloads (content://media/external/downloads)
+09-08 00:48:51.014 30966 31021 D ZeroPermScan:   rows=0 cols=51 [instance_id,compilation,disc_number,duration,album_artist,...]
+09-08 00:48:51.021 30966 31021 D ZeroPermScan: [ACCESSIBLE!] User Dictionary (content://user_dictionary/words)
+09-08 00:48:51.021 30966 31021 D ZeroPermScan:   rows=0 cols=6 [locale,shortcut,frequency,_id,word,...]
+09-08 00:48:51.034 30966 31021 D ZeroPermScan: [ACCESSIBLE!] Google Settings Partner (content://com.google.settings/partner)
+09-08 00:48:51.035 30966 31021 D ZeroPermScan:   rows=23 cols=3 [name,_id,value] first_row=[name=data_store_version|_id=4|value=3]
+09-08 00:48:51.039 30966 31021 D ZeroPermScan: === ZERO-PERM: 10/41 providers accessible ===
+09-08 00:48:51.039 30966 31021 D ZeroPermScan: === Phase 2: Deep dive accessible providers ===
+09-08 00:48:51.039 30966 31021 D ZeroPermScan: --- Settings.Secure sensitive values ---
+09-08 00:48:51.040 30966 31021 D ZeroPermScan:   android_id=640ac3138b43b492
+09-08 00:48:51.041 30966 31021 D ZeroPermScan:   default_input_method=com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+09-08 00:48:51.041 30966 31021 D ZeroPermScan:   enabled_notification_listeners=com.google.android.projection.gearhead/com.google.android.gearhead.notifications...
+09-08 00:48:51.042 30966 31021 D ZeroPermScan:   backup_transport=com.google.android.gms/.backup.BackupTransportService
+09-08 00:48:51.042 30966 31021 D ZeroPermScan:   install_non_market_apps=1
+09-08 00:48:51.042 30966 31021 D ZeroPermScan: --- GServices device data ---
+09-08 00:48:51.043 30966 31021 D ZeroPermScan:   GServices: SecurityException
+09-08 00:48:51.045 30966 31021 D ZeroPermScan: --- Google Settings Partner ---
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   rows=23 cols=3
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   data_store_version=3
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   network_location_opt_in=1
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   user_full_data_backup_aware=1
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   backup_enabled:com.android.providers.telephony=1
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   backup_enabled:com.android.calllogbackup=1
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   backup_encryption_opt_in_displayed=1
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   mms_backup_enabled=1
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   client_id=android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   search_client_id=ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   search_a2_client_id=ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   chrome_client_id=ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   maps_client_id=gmm-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   youtube_client_id=mvapp-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   market_client_id=am-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   voicesearch_client_id=ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   playtx_client_id=play-ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   playax_client_id=play-ad-ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   program_client_id=pg-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   program2_client_id=pg2-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   program3_client_id=pg3-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   rsvd_a2_client_id=ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   rsvd_a3_client_id=ms-android-google
+09-08 00:48:51.047 30966 31021 D ZeroPermScan:   use_location_for_services=1
+09-08 00:48:51.048 30966 31021 D ZeroPermScan: --- Media provider access (no READ_MEDIA_*) ---
+09-08 00:48:51.052 30966 31021 D ZeroPermScan: === ALL ZERO-PERMISSION TESTS COMPLETE ===
