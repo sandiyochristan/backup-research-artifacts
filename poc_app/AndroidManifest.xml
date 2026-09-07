@@ -341,5 +341,23 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SortOrderSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SORT_ORDER_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ContactsSortBlindActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CONTACTS_SORT_BLIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

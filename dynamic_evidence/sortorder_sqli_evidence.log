@@ -1,0 +1,115 @@
+--------- beginning of main
+09-07 08:19:13.276 25481 25508 D ContactsSortBlind: === PHASE 1: Schema Enumeration via sortOrder ===
+09-07 08:19:13.352 25481 25508 D ContactsSortBlind: [SCHEMA] Table count: 10000
+09-07 08:19:13.356 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: accounts
+09-07 08:19:13.358 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: raw_contacts
+09-07 08:19:13.359 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: data
+09-07 08:19:13.361 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: calls
+09-07 08:19:13.363 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: mimetypes
+09-07 08:19:13.365 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: groups
+09-07 08:19:13.367 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: phone_lookup
+09-07 08:19:13.370 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: name_lookup
+09-07 08:19:13.371 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: contacts
+09-07 08:19:13.372 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: agg_exceptions
+09-07 08:19:13.374 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: settings
+09-07 08:19:13.375 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: status_updates
+09-07 08:19:13.377 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: directories
+09-07 08:19:13.381 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: pre_authorized_uris
+09-07 08:19:13.385 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: visible_contacts
+09-07 08:19:13.387 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: default_directory
+09-07 08:19:13.392 25481 25508 D ContactsSortBlind: [SCHEMA] Table exists: search_index
+09-07 08:19:13.450 25481 25508 D ContactsSortBlind: [SCHEMA] accounts table rows: 10000
+09-07 08:19:13.501 25481 25508 D ContactsSortBlind: [SCHEMA] raw_contacts rows: 10000
+09-07 08:19:13.546 25481 25508 D ContactsSortBlind: [SCHEMA] data table rows: 10000
+09-07 08:19:13.548 25481 25508 D ContactsSortBlind: [SCHEMA] pre_authorized_uris exists: true
+09-07 08:19:13.588 25481 25508 D ContactsSortBlind: [SCHEMA] pre_authorized_uris rows: 10000
+09-07 08:19:13.588 25481 25508 D ContactsSortBlind: === PHASE 2: Account Data Extraction ===
+09-07 08:19:13.939 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:14.129 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:14.275 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:14.420 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:14.535 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:14.682 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:14.808 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:14.938 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:15.093 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:15.219 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:15.219 25481 25508 D ContactsSortBlind: [EXTRACT] Account #0: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ type=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:15.390 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:15.526 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:15.666 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:15.867 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:16.003 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:16.165 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:16.285 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:16.413 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:16.541 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:16.678 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:16.678 25481 25508 D ContactsSortBlind: [EXTRACT] Account #1: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ type=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:16.850 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:16.979 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:17.137 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:17.268 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:17.407 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:17.569 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:17.720 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:17.907 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:18.052 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:18.182 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:18.182 25481 25508 D ContactsSortBlind: [EXTRACT] Account #2: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ type=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:18.182 25481 25508 D ContactsSortBlind: === PHASE 3: Phone Number Extraction via sortOrder ===
+09-07 08:19:18.210 25481 25508 D ContactsSortBlind: [EXTRACT] Phone number entries: 10000
+09-07 08:19:18.370 25481 25508 D ContactsSortBlind:   ... extracting char 10/15
+09-07 08:19:18.440 25481 25508 D ContactsSortBlind: [EXTRACT] Phone #0: ~~~~~~~~~~~~~~~
+09-07 08:19:18.615 25481 25508 D ContactsSortBlind:   ... extracting char 10/15
+09-07 08:19:18.686 25481 25508 D ContactsSortBlind: [EXTRACT] Phone #1: ~~~~~~~~~~~~~~~
+09-07 08:19:18.851 25481 25508 D ContactsSortBlind:   ... extracting char 10/15
+09-07 08:19:18.922 25481 25508 D ContactsSortBlind: [EXTRACT] Phone #2: ~~~~~~~~~~~~~~~
+09-07 08:19:19.107 25481 25508 D ContactsSortBlind:   ... extracting char 10/15
+09-07 08:19:19.181 25481 25508 D ContactsSortBlind: [EXTRACT] Phone #3: ~~~~~~~~~~~~~~~
+09-07 08:19:19.352 25481 25508 D ContactsSortBlind:   ... extracting char 10/15
+09-07 08:19:19.424 25481 25508 D ContactsSortBlind: [EXTRACT] Phone #4: ~~~~~~~~~~~~~~~
+09-07 08:19:19.424 25481 25508 D ContactsSortBlind: === PHASE 4: Email Extraction via sortOrder ===
+09-07 08:19:19.451 25481 25508 D ContactsSortBlind: [EXTRACT] Email entries: 10000
+09-07 08:19:19.621 25481 25508 D ContactsSortBlind:   ... extracting char 10/40
+09-07 08:19:19.788 25481 25508 D ContactsSortBlind:   ... extracting char 20/40
+09-07 08:19:20.015 25481 25508 D ContactsSortBlind:   ... extracting char 30/40
+09-07 08:19:20.160 25481 25508 D ContactsSortBlind:   ... extracting char 40/40
+09-07 08:19:20.160 25481 25508 D ContactsSortBlind: [EXTRACT] Email #0: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:20.335 25481 25508 D ContactsSortBlind:   ... extracting char 10/40
+09-07 08:19:20.485 25481 25508 D ContactsSortBlind:   ... extracting char 20/40
+09-07 08:19:20.644 25481 25508 D ContactsSortBlind:   ... extracting char 30/40
+09-07 08:19:20.791 25481 25508 D ContactsSortBlind:   ... extracting char 40/40
+09-07 08:19:20.791 25481 25508 D ContactsSortBlind: [EXTRACT] Email #1: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:20.997 25481 25508 D ContactsSortBlind:   ... extracting char 10/40
+09-07 08:19:21.163 25481 25508 D ContactsSortBlind:   ... extracting char 20/40
+09-07 08:19:21.323 25481 25508 D ContactsSortBlind:   ... extracting char 30/40
+09-07 08:19:21.469 25481 25508 D ContactsSortBlind:   ... extracting char 40/40
+09-07 08:19:21.470 25481 25508 D ContactsSortBlind: [EXTRACT] Email #2: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:21.649 25481 25508 D ContactsSortBlind:   ... extracting char 10/40
+09-07 08:19:21.803 25481 25508 D ContactsSortBlind:   ... extracting char 20/40
+09-07 08:19:21.988 25481 25508 D ContactsSortBlind:   ... extracting char 30/40
+09-07 08:19:22.205 25481 25508 D ContactsSortBlind:   ... extracting char 40/40
+09-07 08:19:22.205 25481 25508 D ContactsSortBlind: [EXTRACT] Email #3: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:22.385 25481 25508 D ContactsSortBlind:   ... extracting char 10/40
+09-07 08:19:22.541 25481 25508 D ContactsSortBlind:   ... extracting char 20/40
+09-07 08:19:22.710 25481 25508 D ContactsSortBlind:   ... extracting char 30/40
+09-07 08:19:22.868 25481 25508 D ContactsSortBlind:   ... extracting char 40/40
+09-07 08:19:22.868 25481 25508 D ContactsSortBlind: [EXTRACT] Email #4: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:22.868 25481 25508 D ContactsSortBlind: === PHASE 5: Notes Extraction via sortOrder ===
+09-07 08:19:22.899 25481 25508 D ContactsSortBlind: [EXTRACT] Note entries: 10000
+09-07 08:19:22.899 25481 25508 D ContactsSortBlind: === PHASE 6: Settings.Secure Blind Extraction ===
+09-07 08:19:23.226 25481 25508 D ContactsSortBlind:   ... extracting char 10/17
+09-07 08:19:23.414 25481 25508 D ContactsSortBlind: [EXTRACT] bluetooth_address: ~~~~~~~~~~~~~~~~~
+09-07 08:19:23.724 25481 25508 D ContactsSortBlind:   ... extracting char 10/30
+09-07 08:19:23.982 25481 25508 D ContactsSortBlind:   ... extracting char 20/30
+09-07 08:19:24.318 25481 25508 D ContactsSortBlind:   ... extracting char 30/30
+09-07 08:19:24.318 25481 25508 D ContactsSortBlind: [EXTRACT] lock_screen_owner_info: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:24.620 25481 25508 D ContactsSortBlind:   ... extracting char 10/50
+09-07 08:19:24.883 25481 25508 D ContactsSortBlind:   ... extracting char 20/50
+09-07 08:19:25.141 25481 25508 D ContactsSortBlind:   ... extracting char 30/50
+09-07 08:19:25.404 25481 25508 D ContactsSortBlind:   ... extracting char 40/50
+09-07 08:19:25.663 25481 25508 D ContactsSortBlind:   ... extracting char 50/50
+09-07 08:19:25.664 25481 25508 D ContactsSortBlind: [EXTRACT] enabled_accessibility_services: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:19:25.711 25481 25508 D ContactsSortBlind: [EXTRACT] Total secure settings: 10000
+09-07 08:19:25.711 25481 25508 D ContactsSortBlind: === ALL BLIND EXTRACTION TESTS COMPLETE ===

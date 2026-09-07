@@ -1,0 +1,25 @@
+--------- beginning of main
+09-07 08:20:31.513 25481 25660 D SortOrderSqli: === TEST 1: MediaProvider sortOrder injection ===
+09-07 08:20:31.518 25481 25660 D SortOrderSqli: MediaProvider sort: Invalid token SELECT
+09-07 08:20:31.518 25481 25660 D SortOrderSqli: MediaProvider subquery sort: Invalid token SELECT
+09-07 08:20:31.518 25481 25660 D SortOrderSqli: === TEST 2: ContactsProvider sortOrder injection ===
+09-07 08:20:31.526 25481 25660 D SortOrderSqli: [VULN] Contacts CASE WHEN sort: 3 rows
+09-07 08:20:31.526 25481 25660 D SortOrderSqli:   First contact: null
+09-07 08:20:31.532 25481 25660 D SortOrderSqli: [VULN] Contacts schema sort executed: 3 rows
+09-07 08:20:31.534 25481 25660 D SortOrderSqli: === TEST 3: CalendarProvider sortOrder injection ===
+09-07 08:20:31.539 25481 25660 D SortOrderSqli: [VULN] Calendar CASE WHEN sort (Attendees): 196 rows
+09-07 08:20:31.540 25481 25660 D SortOrderSqli: [VULN] Calendar cross-table sort: 4 rows
+09-07 08:20:31.541 25481 25660 D SortOrderSqli: === TEST 4: DownloadProvider sortOrder injection ===
+09-07 08:20:31.544 25481 25660 D SortOrderSqli: Downloads sort: Invalid token SELECT
+09-07 08:20:31.544 25481 25660 D SortOrderSqli: === TEST 5: UserDictionary sortOrder injection ===
+09-07 08:20:31.549 25481 25660 D SortOrderSqli: [VULN] UserDict CASE WHEN sort: 0 rows
+09-07 08:20:31.549 25481 25660 D SortOrderSqli: === TEST 6: BlockedNumbers sortOrder injection ===
+09-07 08:20:31.554 25481 25660 D SortOrderSqli: BlockedNumbers sort: Caller must be system, default dialer or default SMS app
+09-07 08:20:31.554 25481 25660 D SortOrderSqli: === TEST 7: Settings Provider sortOrder injection ===
+09-07 08:20:31.554 25481 25660 D SortOrderSqli: [VULN] Settings.System CASE WHEN sort: 41 rows
+09-07 08:20:31.555 25481 25660 D SortOrderSqli:   First setting: volume_music_speaker=21
+09-07 08:20:31.558 25481 25660 D SortOrderSqli: [VULN] Settings.Secure CASE WHEN sort: 161 rows
+09-07 08:20:31.558 25481 25660 D SortOrderSqli: [INFO] android_id: 640ac3138b43b492
+09-07 08:20:31.558 25481 25660 D SortOrderSqli: === TEST 8: DocumentsProvider sortOrder injection ===
+09-07 08:20:31.559 25481 25660 D SortOrderSqli: ExternalStorage sort: Permission Denial: opening provider com.android.externalstorage.ExternalStorageProvider from Process...
+09-07 08:20:31.560 25481 25660 D SortOrderSqli: === ALL SORT ORDER TESTS COMPLETE ===
