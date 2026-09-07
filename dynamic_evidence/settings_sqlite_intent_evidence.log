@@ -1,0 +1,16 @@
+--------- beginning of main
+09-07 08:35:28.048 31210 31248 D SettingsWrite: === TEST 1: Settings.Secure READ ===
+09-07 08:35:28.049 31210 31248 D SettingsWrite: [INFO] android_id: 640ac3138b43b492
+09-07 08:35:28.049 31210 31248 D SettingsWrite: [INFO] notification_listeners: com.google.android.projection.gearhead/com.google.android.ge...
+09-07 08:35:28.049 31210 31248 D SettingsWrite: === TEST 2: Settings.Secure WRITE via ContentResolver ===
+09-07 08:35:28.052 31210 31248 D SettingsWrite: [BLOCKED] Settings.Secure write: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-07 08:35:28.052 31210 31248 D SettingsWrite: [BLOCKED] Settings.Secure insert: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-07 08:35:28.052 31210 31248 D SettingsWrite: === TEST 3: Settings.Secure WRITE via call() ===
+09-07 08:35:28.053 31210 31248 D SettingsWrite: [BLOCKED] call PUT_secure: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-07 08:35:28.056 31210 31248 D SettingsWrite: [BLOCKED] notification_listener write: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-07 08:35:28.056 31210 31248 D SettingsWrite: === TEST 4: Settings.Global WRITE ===
+09-07 08:35:28.057 31210 31248 D SettingsWrite: [BLOCKED] Global write: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-07 08:35:28.057 31210 31248 D SettingsWrite: [BLOCKED] call PUT_global: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-07 08:35:28.057 31210 31248 D SettingsWrite: === TEST 5: Settings.System WRITE ===
+09-07 08:35:28.058 31210 31248 D SettingsWrite: [BLOCKED] System write: com.vrp.poc was not granted  this permission: android.permission.WRITE_SETTINGS.
+09-07 08:35:28.058 31210 31248 D SettingsWrite: === ALL SETTINGS WRITE TESTS COMPLETE ===

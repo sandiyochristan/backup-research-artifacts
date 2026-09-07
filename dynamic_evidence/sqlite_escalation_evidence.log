@@ -1,0 +1,38 @@
+--------- beginning of main
+09-07 08:32:20.077 29553 30595 D SqliteEsc: === TEST 1: SQLite load_extension() ===
+09-07 08:32:20.087 29553 30595 D SqliteEsc: load_extension: no such function: load_extension (code 1 SQLITE_ERROR): , while compiling: SELEC...
+09-07 08:32:20.088 29553 30595 D SqliteEsc: load_extension: no such function: load_extension (code 1 SQLITE_ERROR): , while compiling: SELEC...
+09-07 08:32:20.089 29553 30595 D SqliteEsc: load_extension: no such function: load_extension (code 1 SQLITE_ERROR): , while compiling: SELEC...
+09-07 08:32:20.089 29553 30595 D SqliteEsc: === TEST 2: SQLite file functions ===
+09-07 08:32:20.094 29553 30595 D SqliteEsc: readfile: no such function: readfile (code 1 SQLITE_ERROR): , while compiling: SELECT _id ...
+09-07 08:32:20.097 29553 30595 D SqliteEsc: writefile: no such function: writefile (code 1 SQLITE_ERROR): , while compiling: SELECT _id...
+09-07 08:32:20.097 29553 30595 D SqliteEsc: === TEST 3: SQLite info extraction ===
+09-07 08:32:20.100 29553 30595 D SqliteEsc: [INFO] sqlite_version query executed: 3 rows
+09-07 08:32:20.306 29553 30595 D SqliteEsc: [INFO] SQLite version: ~~~~~~~~~~
+09-07 08:32:20.779 29553 30595 D SqliteEsc: [INFO] SQLite source_id: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:20.781 29553 30595 D SqliteEsc: [INFO] compile option ENABLE_LOAD_EXTENSION: false
+09-07 08:32:20.782 29553 30595 D SqliteEsc: [INFO] compile option ENABLE_FTS5: false
+09-07 08:32:20.783 29553 30595 D SqliteEsc: [INFO] compile option ENABLE_JSON1: false
+09-07 08:32:20.783 29553 30595 D SqliteEsc: [INFO] compile option ENABLE_RTREE: false
+09-07 08:32:20.784 29553 30595 D SqliteEsc: [INFO] compile option THREADSAFE: false
+09-07 08:32:20.785 29553 30595 D SqliteEsc: [INFO] compile option ENABLE_DBSTAT_VTAB: false
+09-07 08:32:20.786 29553 30595 D SqliteEsc: [INFO] compile option SECURE_DELETE: false
+09-07 08:32:20.786 29553 30595 D SqliteEsc: === TEST 4: Write attempts via sortOrder ===
+09-07 08:32:20.795 29553 30595 D SqliteEsc: Write pre-check query executed: 196
+09-07 08:32:20.797 29553 30595 D SqliteEsc: [INFO] REPLACE function in sort: 196 rows
+09-07 08:32:20.797 29553 30595 D SqliteEsc:   First title: Ambedkar Jayanti
+09-07 08:32:20.798 29553 30595 D SqliteEsc: === TEST 5: Cross-database access ===
+09-07 08:32:20.828 29553 30595 D SqliteEsc: [INFO] Attached databases: 100000
+09-07 08:32:22.409 29553 30595 D SqliteEsc: [INFO] DB 0: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:24.024 29553 30595 D SqliteEsc: [INFO] DB 1: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:25.615 29553 30595 D SqliteEsc: [INFO] DB 2: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:27.373 29553 30595 D SqliteEsc: [INFO] DB 3: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:29.241 29553 30595 D SqliteEsc: [INFO] DB 4: name=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:29.316 29553 30595 D SqliteEsc: [INFO] DB size: 100000 pages x 100000 bytes = 1377017 KB
+09-07 08:32:29.353 29553 30595 D SqliteEsc: [INFO] Calendar attached databases: 100000
+09-07 08:32:30.631 29553 30595 D SqliteEsc: [INFO] CalendarDB 0: name=~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:31.851 29553 30595 D SqliteEsc: [INFO] CalendarDB 1: name=~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:33.142 29553 30595 D SqliteEsc: [INFO] CalendarDB 2: name=~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:34.425 29553 30595 D SqliteEsc: [INFO] CalendarDB 3: name=~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:35.721 29553 30595 D SqliteEsc: [INFO] CalendarDB 4: name=~~~~~~~~~~~~~~~~~~~~ file=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+09-07 08:32:35.721 29553 30595 D SqliteEsc: === ALL ESCALATION TESTS COMPLETE ===

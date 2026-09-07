@@ -359,5 +359,32 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SqliteEscActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SQLITE_ESC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".IntentRedirectPocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.INTENT_REDIRECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsWritePocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SETTINGS_WRITE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

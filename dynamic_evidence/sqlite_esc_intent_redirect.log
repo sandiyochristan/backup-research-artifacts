@@ -1,0 +1,22 @@
+--------- beginning of main
+09-07 08:30:34.735 29553 29580 D IntentRedirect: === TEST 1: GMS Activity Intent Redirect ===
+09-07 08:30:34.745 29553 29580 D IntentRedirect: [SENT] AuthorizationActivity with redirect_uri intent://
+09-07 08:30:34.758 29553 29580 D IntentRedirect: [SENT] GrowthWebView with intent:// URI
+09-07 08:30:34.786 29553 29580 D IntentRedirect: [SENT] FeatureDrops with nested intent extras
+09-07 08:30:34.787 29553 29580 D IntentRedirect: [ERROR] AccountTransfer: Unable to find explicit activity class {com.google.android.gms/com.google.androi...
+09-07 08:30:34.787 29553 29580 D IntentRedirect: === TEST 2: Chrome intent:// URI Processing ===
+09-07 08:30:34.787 29553 29580 D IntentRedirect: [ERROR] Chrome intent: No Activity found to handle Intent { act=android.intent.action.VIEW cat=[android...
+09-07 08:30:34.795 29553 29580 D IntentRedirect: [SENT] googlechrome:// navigate
+09-07 08:30:34.803 29553 29580 D IntentRedirect: [ERROR] Chrome settings: No Activity found to handle Intent { act=android.intent.action.VIEW cat=[android...
+09-07 08:30:34.803 29553 29580 D IntentRedirect: === TEST 3: Play Store Deep Link Abuse ===
+09-07 08:30:34.810 29553 29580 D IntentRedirect: [SENT] Play Store market:// deep link with referrer
+09-07 08:30:34.811 29553 29580 D IntentRedirect: [ERROR] PlayStore install: No Activity found to handle Intent { act=com.android.vending.INSTALL flg=0x10000...
+09-07 08:30:34.811 29553 29580 D IntentRedirect: === TEST 4: Settings Activity Redirect ===
+09-07 08:30:34.818 29553 29580 D IntentRedirect: [SENT] Direct developer settings
+09-07 08:30:34.836 29553 29580 D IntentRedirect: [SENT] GMS GoogleSettingsLink
+09-07 08:30:34.836 29553 29580 D IntentRedirect: === TEST 5: PendingIntent Mutation ===
+09-07 08:30:34.836 29553 29580 D IntentRedirect: [INFO] Mutable PendingIntent created: com.vrp.poc
+09-07 08:30:34.836 29553 29580 D IntentRedirect: [INFO] Creator UID: 10385
+09-07 08:30:34.857 29553 29580 D IntentRedirect: [INFO] PendingIntent mutation: null
+09-07 08:30:34.857 29553 29580 D IntentRedirect: [INFO] NotificationManager accessible
+09-07 08:30:34.857 29553 29580 D IntentRedirect: === ALL INTENT REDIRECT TESTS COMPLETE ===
