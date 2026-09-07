@@ -204,5 +204,23 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".WriteEscalationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.WRITE_ESCALATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarCrossTableActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_CROSS_TABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
