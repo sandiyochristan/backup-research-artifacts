@@ -1,0 +1,47 @@
+=== ContactsProvider Blind Boolean: Extracting account_name ===
+  char[1] = 's' (code 115) CONFIRMED
+  char[2] = 'a' (code 97) CONFIRMED
+  char[3] = 'n' (code 110) CONFIRMED
+  char[4] = 'd' (code 100) CONFIRMED
+  char[5] = 'i' (code 105) CONFIRMED
+  char[6] = 'y' (code 121) CONFIRMED
+  char[7] = 'o' (code 111) CONFIRMED
+  char[8] = 't' (code 116) CONFIRMED
+  char[9] = 'e' (code 101) CONFIRMED
+  char[10] = 's' (code 115) CONFIRMED
+  char[11] = 't' (code 116) CONFIRMED
+  char[12] = '@' (code 64) CONFIRMED
+
+=== Verify full string match ===
+  length=21: Row: 0 _id=1
+
+=== Check accounts table columns ===
+  accounts.account_name EXISTS
+  accounts.account_type EXISTS
+  accounts._id EXISTS
+  accounts.data_set EXISTS
+  accounts.profile_raw_contact_id: not found or error
+  accounts.sim_slot_index EXISTS
+  accounts.efid: not found or error
+  accounts.access_token: not found or error
+  accounts.refresh_token: not found or error
+  accounts.auth_token: not found or error
+  accounts.password: not found or error
+  accounts.sync_key: not found or error
+
+=== Count rows in accounts table ===
+  accounts has 2 rows
+
+=== Extract account_type ===
+  account_type[1] = 'c' (code 99)
+  account_type[2] = 'o' (code 111)
+  account_type[3] = 'm' (code 109)
+  account_type[4] = '.' (code 46)
+=== FRESH VERIFICATION: ContactsProvider Blind Boolean ===
+Timestamp: Mon Sep  7 19:46:11 UTC 2026
+  VERIFY char[1]='s'(code 115): Row: 0 _id=1
+  VERIFY char[2]='a'(code 97): Row: 0 _id=1
+  VERIFY char[3]='n'(code 110): Row: 0 _id=1
+  VERIFY length=21: Row: 0 _id=1
+  VERIFY 2 accounts: Row: 0 _id=1
+  VERIFY sim_slot_index column: Row: 0 _id=1

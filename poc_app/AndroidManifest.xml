@@ -539,5 +539,23 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".NovelVectorDeepActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.NOVEL_DEEP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NovelVectorScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.NOVEL_SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
