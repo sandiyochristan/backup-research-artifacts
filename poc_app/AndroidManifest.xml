@@ -566,5 +566,23 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ContactPickerSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.PICKER_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProviderDeepScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.PROVIDER_DEEP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

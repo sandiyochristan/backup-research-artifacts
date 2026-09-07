@@ -178,6 +178,47 @@ For each character position (1 to length):
 
 An app with only `READ_CONTACTS` can silently enumerate ALL Google accounts on the device by extracting from the internal `accounts` table — data that `READ_CONTACTS` was never designed to expose. The `accounts` table is an internal database management table, not a content provider endpoint.
 
+## Multi-Column Simultaneous Extraction (Addendum)
+
+The CalendarProvider allows **multiple injected subqueries** in a single projection, enabling extraction of data from multiple internal tables simultaneously in one query:
+
+### Proof — Single Query, Multiple Tables
+
+```
+content query --uri content://com.android.calendar/events \
+  --projection '_id,(SELECT account_name FROM _sync_state LIMIT 1) AS account,(SELECT group_concat(key||"="||value) FROM CalendarCache) AS cache_data'
+```
+
+**Result**:
+```
+Row: 0 _id=2,
+  account=sandiyotest@gmail.com,
+  cache_data=timezoneDatabaseVersion=2025c,timezoneInstancesPrevious=Asia/Kolkata,timezoneType=auto,timezoneInstances=Asia/Kolkata
+```
+
+This single query extracts:
+1. **Google account email** from `_sync_state`
+2. **All timezone/cache configuration** from `CalendarCache`
+
+### Full Trigger and View SQL Extraction
+
+The database trigger definitions and view SQL were also fully extracted:
+
+- **view_events**: Complex JOIN between Events and Calendars tables with 40+ columns
+- **calendar_cleanup**: Cascade deletes Events, Attendees, Reminders, ExtendedProperties, Instances
+- **events_cleanup_delete**: Removes orphaned attendees, reminders, instances
+- **event_color_update / calendar_color_update**: Color index management triggers
+
+All database indexes enumerated: `calendarInstancesStartDayIndex`, `calendarAlertsIndex`, `eventsCalendarIdIndex`, etc.
+
+### Impact Enhancement
+
+Multi-column injection means:
+- **Full database dump in ~5 queries** instead of hundreds
+- Per table: one `group_concat()` subquery returns all rows/columns concatenated
+- Extraction is effectively instant, not blind-boolean character-by-character
+- A malicious app can extract the ENTIRE calendar database, all account data, and all internal configuration in under 1 second
+
 ## Remediation
 
 1. **Enable `ENFORCE_STRICT_QUERY_BUILDER`** globally — this is the tracked fix (bug 143231523)

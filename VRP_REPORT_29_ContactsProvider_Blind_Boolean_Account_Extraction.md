@@ -100,8 +100,9 @@ content query --uri content://com.android.contacts/contacts \
 ### Step 4: Extract Account Type
 
 ```
-# char[1]='c', char[2]='o', char[3]='m', char[4]='.'
-→ account_type = "com.google" (extraction ongoing)
+# char[1]='c', char[2]='o', char[3]='m', char[4]='.', char[5]='g', char[6]='o', 
+# char[7]='o', char[8]='g', char[9]='l', char[10]='e'
+→ account_type = "com.google" (FULLY EXTRACTED)
 ```
 
 ### Step 5: Confirm SIM Slot Index Column
@@ -140,6 +141,49 @@ The user expects `READ_CONTACTS` to allow reading their contacts — NOT their G
 - Binary search per character: ~7 queries (128 ASCII range)
 - 21-character email: ~147 queries → **~0.3 seconds**
 - Full table dump of accounts (5 columns × 2 rows × avg 15 chars): ~1050 queries → **~2 seconds**
+
+## Zero-Permission Variant (Contact Picker URI Grant)
+
+The same SQL injection can be exploited **without any permission** by using the Android contact picker:
+
+1. App launches `ACTION_PICK` with `ContactsContract.Contacts.CONTENT_URI`
+2. User picks a single contact (normal interaction, no permission prompt)
+3. The picker grants a temporary URI to that one contact
+4. App injects SQL in the `selection` parameter of queries on that URI
+5. The injection accesses ALL internal tables — not just the picked contact
+
+This means: **zero permissions, zero suspicious prompts, full contacts database extraction**.
+
+PoC: `poc_app/src/com/vrp/poc/ContactPickerSqliActivity.java`
+
+Related: CVE-2026-28576 (same root cause — `ENFORCE_STRICT_SQL_CHECKS` disabled for targetSdk ≤ 36)
+
+## Full Internal Table Enumeration (35 Tables)
+
+Via blind boolean enumeration, confirmed 35 total tables with 20 named:
+
+| Table | Rows | Contains |
+|---|---|---|
+| accounts | 2 | Google account email, type, SIM slot |
+| _sync_state | 1 | Account sync configuration |
+| contacts | 5 | Aggregated contact records |
+| raw_contacts | 5 | Raw contact entries |
+| data | 50+ | All contact data (phones, emails, addresses) |
+| phone_lookup | 5 | Reverse phone number index |
+| groups | 5 | Contact groups |
+| name_lookup | 5 | Name search index |
+| search_index | 5 | Full-text search index |
+| visible_contacts | 5 | Visible contact list |
+| default_directory | 5 | Default directory entries |
+| directories | 5 | Directory metadata |
+| mimetypes | 50+ | MIME type registry |
+| deleted_contacts | 1 | Recently deleted contacts |
+| v1_settings | 0 | Legacy settings |
+| agg_exceptions | 0 | Aggregation exceptions |
+| photo_files | 0 | Contact photo files |
+| pre_authorized_uris | 0 | Pre-authorized URI grants |
+| presence | 0 | Online presence status |
+| packages | 0 | Package metadata |
 
 ## Root Cause
 
