@@ -1,0 +1,76 @@
+# Security Research Scope — Asset Inventory
+
+_Compiled 2026-09-08 from: gikaku.net (He Wei / "Gikaku"), github.com/alham-rizvi/Github-advisories, and disclosures.vercel.app (CVE-2026-40576)._
+
+> **Dominant theme:** MCP (Model Context Protocol) server/gateway security is the strongest common thread across all three sources — treat it as the primary research direction.
+
+---
+
+## Source 1 — gikaku.net (He Wei / Gikaku)
+
+Cloud red-team + vulnerability researcher (Azure / AWS / GCP, kernel, MCP).
+
+### A. Product / package assets (CVE writeups)
+
+| Asset | Version | Class | CVE | URL |
+|---|---|---|---|---|
+| Google mcp-toolbox | v1.3.0, v1.4.0 | Authorization bypass (unauth client) | CVE-2026-14537 | https://gikaku.net/2026/08/25/cve-2026-14537/ |
+| MCP Toolbox for Databases | v1.3.0 | `scopesRequired` bypass via protocol-version selection | CVE-2026-11719 | https://gikaku.net/2026/06/19/cve-2026-11719/ |
+| Docker MCP Gateway | v0.42.3 | Auth bypass (container mode), CVSS 9.2 | CVE-2026-76092 | https://gikaku.net/2026/08/20/cve-2026-76092/ |
+| Docker MCP Gateway | v0.42.3 | SSRF → localhost callback | CVE-2026-76093 | https://gikaku.net/2026/08/20/cve-2026-76093/ |
+| Docker MCP Gateway | v0.42.3 | Image signature verifier bypass (supply chain), CVSS 7.7 | CVE-2026-76094 | https://gikaku.net/2026/08/20/cve-2026-76094/ |
+| Docker MCP Gateway | v0.42.3 | Path checked after file read (arbitrary read) | CVE-2026-76095 | https://gikaku.net/2026/08/20/cve-2026-76095/ |
+| rmcp (MCP Rust SDK) | ≤1.7.0 (fix 2.0.0) | Unauthenticated session/memory leak, CVSS 7.5 | CVE-2026-63128 | https://gikaku.net/2026/07/16/cve-2026-63128/ |
+| Obot | v0.23.0 | SSRF → cloud metadata; unauth MCP registry (non-CVE) | — | https://gikaku.net/2026/06/25/obot/ |
+| Red Hat libvirt | fix 12.6.0 | swtpm symlink priv-esc, CVSS 7.8 | CVE-2026-63622 | https://gikaku.net/2026/08/12/cve-2026-63622/ |
+| Red Hat libvirt | — | Guest disk permission (umask inheritance) | CVE-2026-63623 | https://gikaku.net/2026/08/12/cve-2026-63623/ |
+| Linux kernel — cfg80211 | — | One-byte OOB read (802.11 element parser) | CVE-2026-68402 | https://gikaku.net/2026/08/11/cve-2026-68402/ |
+| Linux kernel — mwifiex | — | Nested-length validation flaw (14+ yr old) | CVE-2026-68326 | https://gikaku.net/2026/08/11/cve-2026-68326/ |
+| Linux kernel — USBIO bridge | — | Memory disclosure | CVE-2026-64339 | https://gikaku.net/2026/06/27/usbio/ |
+| macOS mDNSResponder (Apple) | — | Memory-safety bug | CVE-2026-43806 | https://gikaku.net/2026/08/01/cve-2026-43806/ |
+| MISP | < 2.5.40 | Org-admin rewrites site-admin user settings | CVE-2026-54357 | https://gikaku.net/2026/06/13/cve-2026-54357/ |
+| MISP | < 2.5.40 | Site-admin password-reset gap (`admin_email`) | CVE-2026-54358 | https://gikaku.net/2026/06/13/cve-2026-54358/ |
+
+### B. Cloud attack-surface assets (red-team series)
+
+**Azure Red Team** — https://gikaku.net/category/azure-red-team/
+- Entra ID, Key Vault, Azure Resource Manager (ARM), RBAC / ABAC, overprivileged app identities, JWT assertion abuse, Silver SAML persistence, cross-tenant trust, hybrid on-prem AD, device-code phishing.
+
+**AWS Red Team** — https://gikaku.net/category/aws-red-team/
+- IAM, ECR, ECS, API Gateway, Elastic Beanstalk, CodeBuild, SQS, SNS, Lambda, Cognito, CloudTrail, GuardDuty.
+
+**GCP Red Team** — https://gikaku.net/category/gcp-red-team/
+- IAM role bindings, resource hierarchy (projects / folders / organization), policy attachment & effective scope, workload execution contexts.
+
+---
+
+## Source 2 — github.com/alham-rizvi/Github-advisories
+
+Public archive: 70 advisories, 37 CVEs, 11 under coordinated disclosure.
+
+| Asset | Type | Advisories | Notable classes |
+|---|---|---|---|
+| SiYuan | Note-taking app | 43 | Auth bypass (Basic auth / brute-force), CSRF, path traversal, stored/zero-click/attribute XSS, symlink priv-esc, info disclosure (publish mode). CVEs incl. CVE-2026-73045/73046, CVE-2026-74800/74867 |
+| Grav CMS | CMS | 19 | Unsanitized SVG upload → stored XSS, scoped-API-key authz bypass, path traversal (media funcs), token timing attack, email enumeration. CVEs incl. CVE-2026-72702/72703, CVE-2026-80203 |
+| FileRise | File manager | 2 | Upload-restriction bypass, JWT verification gaps |
+| REDAXO | CMS | 1 | Unsanitized asset uploads |
+| note-mark | Notes app | 2 | OIDC token-exchange validation failure |
+| PDFding | PDF app | 2 | Path traversal, access-control bypass |
+| BentoPDF | PDF tool | 1 | SSRF via DNS rebinding |
+
+---
+
+## Source 3 — disclosures.vercel.app (CVE-2026-40576)
+
+| Asset | Version | Class | Detail |
+|---|---|---|---|
+| excel-mcp-server (PyPI) | ≤ 0.1.7 (fix 0.1.8) | Path traversal (CWE-22), Critical | `get_excel_path()` returns absolute paths untouched and `os.path.join()`s relative `../` without `realpath()`. Binds `0.0.0.0`, no auth → unauth RCE-adjacent arbitrary file read/write via SSE / streamable-HTTP. |
+
+---
+
+## Cross-cutting scope clusters (for prioritization)
+
+1. **MCP servers/gateways/SDKs** ← highest overlap: Docker MCP Gateway, Google mcp-toolbox, MCP Toolbox for Databases, rmcp Rust SDK, Obot MCP registry, excel-mcp-server. Recurring bugs: auth/authz bypass, SSRF→metadata, path traversal, validation-ordering.
+2. **Self-hosted web apps / CMS** ← alham-rizvi set: SiYuan, Grav, REDAXO, FileRise, note-mark, PDFding, BentoPDF. Recurring bugs: upload/XSS, path traversal, authz bypass, JWT/OIDC.
+3. **Cloud IAM & identity** ← Azure/AWS/GCP red-team series: role/policy scoping, cross-tenant trust, over-privileged workloads.
+4. **Kernel / OS memory safety** ← Linux (cfg80211, mwifiex, USBIO), macOS mDNSResponder, Red Hat libvirt.
