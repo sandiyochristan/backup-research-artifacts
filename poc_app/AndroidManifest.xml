@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.googlequicksearchbox.permission.LENS_SERVICE" />
 
     <application
         android:label="VRP PoC"
@@ -716,6 +717,51 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.vrp.poc.TILE_PARCEL_MISMATCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DriveLegacyExploitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DRIVE_LEGACY_EXPLOIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PhenotypeProbeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.PHENOTYPE_PROBE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CrisisNotifDismissActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CRISIS_DISMISS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DocsLegacyStorageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DOCS_LEGACY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LensServiceBindActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.LENS_SERVICE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
