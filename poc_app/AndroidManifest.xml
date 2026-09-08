@@ -711,5 +711,14 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".TileParcelMismatchActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.TILE_PARCEL_MISMATCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
