@@ -1,0 +1,28 @@
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: === PixelWatchSettingsProvider Zero-Permission Access ===
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: Authority: com.google.android.wearable.pixel.settings
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: Provider UID: 1000 (system)
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: PoC app UID: 10156
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: No readPermission declared in manifest!
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: 
+09-10 05:15:07.069 27821 27836 D VRP_PWSP: --- PHASE 1: READ all system settings (no permission needed) ---
+09-10 05:15:07.073 27821 27836 D VRP_PWSP:   READ raise_to_talk (1001) = 1
+09-10 05:15:07.073 27821 27836 D VRP_PWSP:   READ raise_to_talk_mediated (1002) = 0
+09-10 05:15:07.075 27821 27836 D VRP_PWSP:   READ raise_to_talk_supported (1003) = 0
+09-10 05:15:07.076 27821 27836 D VRP_PWSP:   READ raise_to_talk_gemini_enabled (1004) = 0
+09-10 05:15:07.077 27821 27836 D VRP_PWSP:   READ raise_to_talk_indicator (1007) = <not set>
+09-10 05:15:07.078 27821 27836 D VRP_PWSP:   READ raise_to_talk_triggered (1008) = <not set>
+09-10 05:15:07.079 27821 27836 D VRP_PWSP:   READ adaptive_charging (2001) = 1
+09-10 05:15:07.080 27821 27836 D VRP_PWSP:   READ smart_reply_ai_enabled (3001) = 0
+09-10 05:15:07.081 27821 27836 D VRP_PWSP:   READ auto_bedtime_mode_supported (4004) = 1
+09-10 05:15:07.082 27821 27836 D VRP_PWSP:   READ raise_to_talk_sensitivity (1006) = <not set>
+09-10 05:15:07.082 27821 27836 D VRP_PWSP: 
+09-10 05:15:07.082 27821 27836 D VRP_PWSP: --- PHASE 2: WRITE test (should require WRITE_SECURE_SETTINGS) ---
+09-10 05:15:07.086 27821 27836 D VRP_PWSP:   WRITE raise_to_talk_gemini_enabled BLOCKED: Missing write permission: uid 10156 does not have android.permission.WRITE_SECURE_SETTINGS.
+09-10 05:15:07.086 27821 27836 D VRP_PWSP: 
+09-10 05:15:07.086 27821 27836 D VRP_PWSP: --- PHASE 3: Read back to verify write ---
+09-10 05:15:07.087 27821 27836 D VRP_PWSP:   READ raise_to_talk_gemini_enabled (1004) = 0
+09-10 05:15:07.087 27821 27836 D VRP_PWSP: 
+09-10 05:15:07.087 27821 27836 D VRP_PWSP: === SUMMARY ===
+09-10 05:15:07.087 27821 27836 D VRP_PWSP: A zero-permission app on Wear OS can read system
+09-10 05:15:07.087 27821 27836 D VRP_PWSP: configuration settings from PixelWatchSettingsProvider
+09-10 05:15:07.088 27821 27836 D VRP_PWSP: running as UID 1000 (system process).

@@ -12,6 +12,26 @@
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="com.google.android.googlequicksearchbox.permission.LENS_SERVICE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <queries>
+        <package android:name="com.google.android.apps.scone" />
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.google.android.googlequicksearchbox" />
+        <package android:name="com.google.android.apps.docs" />
+        <package android:name="com.google.android.apps.docs.editors.docs" />
+        <package android:name="com.google.android.apps.docs.editors.sheets" />
+        <package android:name="com.google.android.apps.docs.editors.slides" />
+        <package android:name="com.google.android.youtube" />
+        <package android:name="com.google.android.apps.youtube.music" />
+        <package android:name="com.android.vending" />
+        <package android:name="com.google.android.apps.chromecast.app" />
+        <package android:name="com.google.android.dialer" />
+        <package android:name="com.google.android.apps.messaging" />
+        <package android:name="com.google.android.apps.walletnfcrel" />
+        <package android:name="com.google.android.bluetooth" />
+        <package android:name="com.google.wear.services" />
+    </queries>
 
     <application
         android:label="VRP PoC"
@@ -853,6 +873,41 @@
         <activity
             android:name=".SconeTestModeActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".ProviderScannerActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".NimbusBlobExtractActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".BugreportWriteActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".PixelWatchSettingsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".WalletOAuthInterceptActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="google-orchestration-gcore"
+                      android:host="return" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="google-orchestration2-gcore"
+                      android:host="return" />
+            </intent-filter>
+        </activity>
 
     </application>
 </manifest>
