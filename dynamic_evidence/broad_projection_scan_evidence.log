@@ -1,0 +1,101 @@
+--------- beginning of main
+09-08 00:15:31.328 11258 11285 D BroadProjScan: === Scanning ALL accessible providers for SQL injection ===
+09-08 00:15:31.328 11258 11285 D BroadProjScan: --- SMS (content://sms) ---
+09-08 00:15:31.347 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.359 11258 11285 D BroadProjScan: 
+09-08 00:15:31.359 11258 11285 D BroadProjScan: --- MMS (content://mms) ---
+09-08 00:15:31.366 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.370 11258 11285 D BroadProjScan: [PROJ-SAFE] SELECT token not allowed in query
+09-08 00:15:31.372 11258 11285 D BroadProjScan: [SEL-SAFE] SELECT token not allowed in query
+09-08 00:15:31.376 11258 11285 D BroadProjScan: [SORT-SAFE] SELECT token not allowed in query
+09-08 00:15:31.376 11258 11285 D BroadProjScan: 
+09-08 00:15:31.376 11258 11285 D BroadProjScan: --- MMS-SMS (content://mms-sms/conversations) ---
+09-08 00:15:31.383 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.395 11258 11285 D BroadProjScan: 
+09-08 00:15:31.395 11258 11285 D BroadProjScan: --- CallLog (content://call_log/calls) ---
+09-08 00:15:31.401 11258 11285 D BroadProjScan: [ACCESS] rows=2
+09-08 00:15:31.402 11258 11285 D BroadProjScan: [PROJ-SAFE] Invalid column (SELECT sqlite_version()) AS x
+09-08 00:15:31.403 11258 11285 D BroadProjScan: [SEL-SAFE] Invalid token SELECT
+09-08 00:15:31.404 11258 11285 D BroadProjScan: [SORT-SAFE] Invalid token SELECT
+09-08 00:15:31.404 11258 11285 D BroadProjScan: 
+09-08 00:15:31.404 11258 11285 D BroadProjScan: --- Images (content://media/external/images/media) ---
+09-08 00:15:31.417 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.425 11258 11285 D BroadProjScan: [PROJ-SAFE] Invalid column (select sqlite_version()) as x
+09-08 00:15:31.430 11258 11285 D BroadProjScan: [SEL-SAFE] Invalid token SELECT
+09-08 00:15:31.430 11258 11285 D BroadProjScan: [SORT-SAFE] Invalid token SELECT
+09-08 00:15:31.430 11258 11285 D BroadProjScan: 
+09-08 00:15:31.430 11258 11285 D BroadProjScan: --- Video (content://media/external/video/media) ---
+09-08 00:15:31.434 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.434 11258 11285 D BroadProjScan: [PROJ-SAFE] Invalid column (select sqlite_version()) as x
+09-08 00:15:31.434 11258 11285 D BroadProjScan: [SEL-SAFE] Invalid token SELECT
+09-08 00:15:31.435 11258 11285 D BroadProjScan: [SORT-SAFE] Invalid token SELECT
+09-08 00:15:31.435 11258 11285 D BroadProjScan: 
+09-08 00:15:31.435 11258 11285 D BroadProjScan: --- Audio (content://media/external/audio/media) ---
+09-08 00:15:31.439 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.439 11258 11285 D BroadProjScan: [PROJ-SAFE] Invalid column (select sqlite_version()) as x
+09-08 00:15:31.440 11258 11285 D BroadProjScan: [SEL-SAFE] Invalid token SELECT
+09-08 00:15:31.440 11258 11285 D BroadProjScan: [SORT-SAFE] Invalid token SELECT
+09-08 00:15:31.440 11258 11285 D BroadProjScan: 
+09-08 00:15:31.440 11258 11285 D BroadProjScan: --- Files (content://media/external/file) ---
+09-08 00:15:31.445 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.446 11258 11285 D BroadProjScan: [PROJ-SAFE] Invalid column (select sqlite_version()) as x
+09-08 00:15:31.446 11258 11285 D BroadProjScan: [SEL-SAFE] Invalid token SELECT
+09-08 00:15:31.447 11258 11285 D BroadProjScan: [SORT-SAFE] Invalid token SELECT
+09-08 00:15:31.447 11258 11285 D BroadProjScan: 
+09-08 00:15:31.447 11258 11285 D BroadProjScan: --- Downloads (content://media/external/downloads) ---
+09-08 00:15:31.452 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.453 11258 11285 D BroadProjScan: [PROJ-SAFE] Invalid column (select sqlite_version()) as x
+09-08 00:15:31.453 11258 11285 D BroadProjScan: [SEL-SAFE] Invalid token SELECT
+09-08 00:15:31.453 11258 11285 D BroadProjScan: [SORT-SAFE] Invalid token SELECT
+09-08 00:15:31.453 11258 11285 D BroadProjScan: 
+09-08 00:15:31.453 11258 11285 D BroadProjScan: --- Bookmarks (content://browser/bookmarks) ---
+09-08 00:15:31.454 11258 11285 D BroadProjScan: [N/A] Not accessible
+09-08 00:15:31.454 11258 11285 D BroadProjScan: --- UserDict (content://user_dictionary/words) ---
+09-08 00:15:31.460 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.462 11258 11285 D BroadProjScan: [PROJ-SAFE] Unknown column: (SELECT sqlite_version()) AS x
+09-08 00:15:31.465 11258 11285 D BroadProjScan: [SEL-MAYBE] Same count: true=0 false=0
+09-08 00:15:31.470 11258 11285 D BroadProjScan: [SORT-VULN] sortOrder injection accepted! rows=0
+09-08 00:15:31.471 11258 11285 D BroadProjScan: 
+09-08 00:15:31.471 11258 11285 D BroadProjScan: --- RawContacts (content://com.android.contacts/raw_contacts) ---
+09-08 00:15:31.476 11258 11285 D BroadProjScan: [ACCESS] rows=4
+09-08 00:15:31.477 11258 11285 D BroadProjScan: [PROJ-SAFE] Non-token detected in '(SELECT sqlite_version()) A...
+09-08 00:15:31.483 11258 11285 D BroadProjScan: [SEL-VULN] Selection injection works! true=4 false=0
+09-08 00:15:31.485 11258 11285 D BroadProjScan: [SORT-VULN] sortOrder injection accepted! rows=4
+09-08 00:15:31.485 11258 11285 D BroadProjScan: 
+09-08 00:15:31.485 11258 11285 D BroadProjScan: --- ContactsData (content://com.android.contacts/data) ---
+09-08 00:15:31.490 11258 11285 D BroadProjScan: [ACCESS] rows=13
+09-08 00:15:31.492 11258 11285 D BroadProjScan: [PROJ-SAFE] Non-token detected in '(SELECT sqlite_version()) A...
+09-08 00:15:31.498 11258 11285 D BroadProjScan: [SEL-VULN] Selection injection works! true=13 false=0
+09-08 00:15:31.500 11258 11285 D BroadProjScan: [SORT-VULN] sortOrder injection accepted! rows=13
+09-08 00:15:31.500 11258 11285 D BroadProjScan: 
+09-08 00:15:31.500 11258 11285 D BroadProjScan: --- ContactGroups (content://com.android.contacts/groups) ---
+09-08 00:15:31.501 11258 11285 D BroadProjScan: [ACCESS] rows=5
+09-08 00:15:31.502 11258 11285 D BroadProjScan: [PROJ-SAFE] Non-token detected in '(SELECT sqlite_version()) A...
+09-08 00:15:31.505 11258 11285 D BroadProjScan: [SEL-VULN] Selection injection works! true=5 false=0
+09-08 00:15:31.506 11258 11285 D BroadProjScan: [SORT-VULN] sortOrder injection accepted! rows=5
+09-08 00:15:31.506 11258 11285 D BroadProjScan: 
+09-08 00:15:31.507 11258 11285 D BroadProjScan: --- Calendars (content://com.android.calendar/calendars) ---
+09-08 00:15:31.512 11258 11285 D BroadProjScan: [ACCESS] rows=4
+09-08 00:15:31.512 11258 11285 D BroadProjScan: [PROJ-VULN] Projection injection works! SQLite: 3.50.6
+09-08 00:15:31.515 11258 11285 D BroadProjScan: [SEL-VULN] Selection injection works! true=4 false=0
+09-08 00:15:31.516 11258 11285 D BroadProjScan: [SORT-VULN] sortOrder injection accepted! rows=4
+09-08 00:15:31.517 11258 11285 D BroadProjScan: [SCHEMA] Tables: android_metadata, _sync_state, _sync_state_metadata, Colors, Calendars, Events, sqlite_sequence, EventsRawTimes, Instances, CalendarMetaData, CalendarCache, Attendees, Reminders, CalendarAlerts, Exten...
+09-08 00:15:31.518 11258 11285 D BroadProjScan: [DB-PATH] /data/data/com.android.providers.calendar/databases/calendar.db
+09-08 00:15:31.518 11258 11285 D BroadProjScan: 
+09-08 00:15:31.518 11258 11285 D BroadProjScan: --- Attendees (content://com.android.calendar/attendees) ---
+09-08 00:15:31.519 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.522 11258 11285 D BroadProjScan: [SEL-MAYBE] Same count: true=0 false=0
+09-08 00:15:31.523 11258 11285 D BroadProjScan: [SORT-SAFE] ambiguous column name: _id (code 1 SQLITE_ERROR): ...
+09-08 00:15:31.523 11258 11285 D BroadProjScan: 
+09-08 00:15:31.523 11258 11285 D BroadProjScan: --- Reminders (content://com.android.calendar/reminders) ---
+09-08 00:15:31.525 11258 11285 D BroadProjScan: [ACCESS] rows=0
+09-08 00:15:31.529 11258 11285 D BroadProjScan: [SEL-MAYBE] Same count: true=0 false=0
+09-08 00:15:31.531 11258 11285 D BroadProjScan: [SORT-VULN] sortOrder injection accepted! rows=0
+09-08 00:15:31.531 11258 11285 D BroadProjScan: 
+09-08 00:15:31.531 11258 11285 D BroadProjScan: --- BlockedNums (content://com.android.blockednumber/blocked) ---
+09-08 00:15:31.534 11258 11285 D BroadProjScan: [BLOCKED] Access denied
+09-08 00:15:31.534 11258 11285 D BroadProjScan: --- Carriers (content://telephony/carriers) ---
+09-08 00:15:31.535 11258 11285 D BroadProjScan: [BLOCKED] Access denied
+09-08 00:15:31.535 11258 11285 D BroadProjScan: --- CarrierID (content://carrier_information/carrier_id) ---
+09-08 00:15:31.536 11258 11285 D BroadProjScan: [BLOCKED] Access denied
+09-08 00:15:31.536 11258 11285 D BroadProjScan: === BROAD SCAN COMPLETE ===

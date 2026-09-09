@@ -1,0 +1,404 @@
+--------- beginning of main
+07-03 01:10:30.210  1253  1253 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -a android.intent.action.DIAL -d tel:+919994646230'
+--------- beginning of system
+07-03 01:10:30.299  1621  1975 W ActivityTaskManager: callingPackage for (uid=2000, pid=22208) has no WPC
+07-03 01:10:30.300  1621  1975 W AppCompatResourceOverlayPolicy: constructor: Failed to find VirtualDeviceManagerService
+07-03 01:10:30.301  1621  1975 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@8a3d685f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+07-03 01:10:30.303  1621  1975 D ActivityTaskManager: Temporarily retain top process state for launching app
+07-03 01:10:30.311  1621  1975 I AppsFilter: interaction: PackageSetting{a430a7d com.poc.silentsms/10006} -> PackageSetting{4d4fe02 com.google.android.dialer/10072} BLOCKED
+07-03 01:10:30.316  1621  1975 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{d6c12e4 #519 type=standard I=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} activity=ActivityRecord{204891767 u0 com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@245584728 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@245584728 default-portrait freeform-size-mismatch=Rect(54, 54 - 330, 330)
+07-03 01:10:30.316  1621  1975 I ActivityTaskManager: START u0 {act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 xflg=0x4 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} with LAUNCH_SINGLE_TASK from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+07-03 01:10:30.316  2243  2408 V WindowManagerShell: Transition requested (#1041): android.os.BinderProxy@6cc4acf TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=519 effectiveUid=10072 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity } baseActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} topActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} origActivity=null realActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=92489369 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@ee11c5c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{7a54b65 com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=true locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 1041 }
+07-03 01:10:30.317  1621  1685 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@8a3d685f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+07-03 01:10:30.324  2243  2408 V WindowManagerShell: Transition (#1041): request handled by WearMixedTransitionHandler
+07-03 01:10:30.324   756   756 W Zygote  : Setting SCHED_FIFO for top-app fork
+07-03 01:10:30.340   756   756 D Zygote  : Forked child process 22211
+07-03 01:10:30.340   756   756 D Zygote  : Reset scheduler to SCHED_OTHER
+07-03 01:10:30.341  1621  1719 I ActivityManager: Start proc 22211:com.google.android.dialer/u0a72 for top-activity {com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}
+07-03 01:10:30.349 22211 22211 I libprocessgroup: Created cgroup /sys/fs/cgroup/apps/uid_10072/pid_22211
+07-03 01:10:30.365 22211 22211 I Zygote  : Process 22211 created for com.google.android.dialer
+07-03 01:10:30.365 22211 22211 I .android.dialer: Using generational CollectorTypeCMC GC.
+07-03 01:10:30.371  1645  1656 I pixel-thermal: audio-therm:39.876 raw data: audio-therm:39876 
+07-03 01:10:30.374  1645  1656 I pixel-thermal: sdm-skin-therm:41.214 raw data: sdm-skin-therm:41214 
+07-03 01:10:30.378  2243  2581 E perf_hint: createSessionUsingConfig: PerformanceHint cannot create session. PowerHintSessions are not supported!
+07-03 01:10:30.381  1621  1975 W InputChannel-JNI: Channel already disposed.
+07-03 01:10:30.388  1621  1975 D WindowManager: setClientSurface Surface(name=VRI-Splash Screen com.google.android.dialer#1364)/@0x77c326 for 2532268 Splash Screen com.google.android.dialer
+07-03 01:10:30.392  1621  1682 V WindowManager: Sent Transition (#1041) createdAt=07-03 01:10:30.302 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=519 effectiveUid=10072 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity } baseActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} topActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} origActivity=null realActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=92489369 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{5d7db67 Task{d6c12e4 #519 type=standard I=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{a6bfd14 com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=true locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 1041 }
+07-03 01:10:30.392  1621  1682 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+07-03 01:10:30.392  1621  1682 V WindowManager:     info={id=1041 t=OPEN f=0x40 trk=0 r=[] c=[]}
+07-03 01:10:30.393  2243  2609 V WindowManagerShell: onTransitionReady(transaction=6962142015760)
+07-03 01:10:30.394  2243  2481 I Surface : Creating surface for consumer unnamed-2243-33 with slotExpansion=1 for 64 slots
+07-03 01:10:30.394  2243  2408 V WindowManagerShell: onTransitionReady (#1041) android.os.BinderProxy@6cc4acf: {id=1041 t=OPEN f=0x40 trk=0 r=[] c=[]}
+07-03 01:10:30.394  2243  2408 V WindowManagerShell: No transition roots in (#1041) android.os.BinderProxy@6cc4acf@0 so abort
+07-03 01:10:30.394  2243  2408 V WindowManagerShell: Transition animation finished (aborted=true), notifying core (#1041) android.os.BinderProxy@6cc4acf@0
+07-03 01:10:30.395  2243  2481 I Surface : Creating surface for consumer VRI[dialer]#33(BLAST Consumer)33 with slotExpansion=1 for 64 slots
+07-03 01:10:30.398   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:30.399   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:30.399   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.399   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.399   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.400  2243 22214 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.401  2243 22214 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.402   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:30.404   491   663 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.404   491   663 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.406   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:30.406   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.406   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.406   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.407  2243 22214 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.407  2243 22214 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.408   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:30.408  1621  1682 V WindowManager: Finish Transition (#1041): created at 07-03 01:10:30.302 collect-started=0.139ms request-sent=12.318ms started=23.022ms ready=87.05ms sent=88.021ms commit=11.446ms finished=105.247ms
+07-03 01:10:30.409   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:30.409 22211 22211 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+07-03 01:10:30.409   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.409   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.409   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.409  2243 22214 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.410  2243 22214 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.410   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:30.411   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:30.411   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.411   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.411  2243  2408 V WindowManagerShell: Track 0 became idle
+07-03 01:10:30.411   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.411  2243  2408 V WindowManagerShell: All active transition animations finished
+07-03 01:10:30.412  2243 22214 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:30.412  2243 22214 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:30.435  1621  2266 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:-12876258 completeLatency:0 dispatchRealLatency:-92489490 completeRealLatency:0 receiversSize:1 userId:0 userType:android.os.usertype.full.SYSTEM
+07-03 01:10:30.435  1621  2266 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:-12876258 completeLatency:0 dispatchRealLatency:-92489490 completeRealLatency:0 receiversSize:1 userId:0 userType:android.os.usertype.full.SYSTEM
+07-03 01:10:30.462  1621  1949 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+07-03 01:10:30.472 22211 22211 D nativeloader: Configuring clns-6 for other apk /system/framework/clockwork-system.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/lib/arm:/data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/base.apk!/lib/armeabi-v7a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.dialer
+07-03 01:10:30.480 22211 22211 D nativeloader: Configuring clns-7 for other apk /system/framework/com.google.android.wearable.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/lib/arm:/data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/base.apk!/lib/armeabi-v7a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.dialer
+07-03 01:10:30.490  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.490  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.490  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.490  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.490  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.490  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.492  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.493  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.493  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.493  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.493  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.493  2243  2261 W System  : A resource failed to call release. 
+07-03 01:10:30.601 22211 22211 D nativeloader: Configuring clns-8 for other apk /data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/lib/arm:/data/app/~~nYFR63ztlk85Fcb7jjer4A==/com.google.android.dialer-EjUTEg6gsXb63y_9KRQDvA==/base.apk!/lib/armeabi-v7a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.dialer
+07-03 01:10:30.641 22211 22211 W .android.dialer: Monitor::Inflate: Install failed 0x71995798
+07-03 01:10:30.647 22211 22211 V GraphicsEnvironment: Currently set values for:
+07-03 01:10:30.647 22211 22211 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+07-03 01:10:30.647 22211 22211 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+07-03 01:10:30.647 22211 22211 V GraphicsEnvironment: com.google.android.dialer is not listed in per-application setting
+07-03 01:10:30.647 22211 22211 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+07-03 01:10:30.649 22211 22211 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+07-03 01:10:30.783 22211 22211 I kcp     : SslGuard completed installation.
+07-03 01:10:30.795  1621  2073 D CorePackageUpdate: Couldn't find a persistent state for task= 519
+07-03 01:10:30.801  1621  6666 W ProcessStats: Tracking association SourceState{40bdfb0 com.google.android.dialer/10072 Top #24668} whose proc state 1 is better than process ProcessState{11baf28 com.google.android.gms.persistent/10120 pkg=com.google.android.gms} proc state 2 (12 skipped)
+07-03 01:10:30.804 22211 22228 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: QUALCOMM build                   : 3656bb992e, I0abb6f342e
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Build Date                       : 09/08/25
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: E031.47.18.42
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Local Branch                     : 
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.15.4.1.11.00.00.1186.254
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Remote Branch                    : NONE
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Build Config                     : S P 18.0.0 AArch32
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Driver Path                      : /vendor/lib/egl/libGLESv2_adreno.so
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Driver Version                   : 0800.56
+07-03 01:10:30.815 22211 22228 I AdrenoGLES-0: Process Name                     : com.google.android.dialer
+07-03 01:10:30.831 22211 22211 D DesktopExperienceFlags: Toggle override initialized to: false
+07-03 01:10:30.845 22211 22228 D qdgralloc: Fetching IMapper5 from QtiMapper5
+07-03 01:10:30.855 22211 22228 I SnapAlloc: UBWC is disabled
+07-03 01:10:30.857 22211 22228 I SnapAlloc: Graphics lib is available
+07-03 01:10:30.858 22211 22228 W SnapAlloc: Camera lib is not available - read json file
+07-03 01:10:30.868 22211 22211 I OutgoingCallTrustedCont: Disabled on non-P11 devices or non-kids mode. [CONTEXT ratelimit_period="1 MINUTES" ]
+07-03 01:10:30.869 22211 22211 I DialerOutgoingCallTrustedContactsEnabledFn: com.google.android.wearable.googledialer.parentalcontrols.enabledfn.OutgoingCallTrustedContactsEnabledFn.isEnabled:22 Disabled on non-P11 devices or non-kids mode. [CONTEXT ratelimit_period="1 MINUTES" ]
+07-03 01:10:30.877 22211 22228 I AdrenoGLES-0: PFP: 0x017aa048, ME: 0x00000000
+07-03 01:10:30.888 22211 22211 D CompatChangeReporter: Compat change id reported: 377864165; UID 10072; state: ENABLED
+07-03 01:10:30.909  1621  6666 W AppCompatResourceOverlayPolicy: constructor: Failed to find VirtualDeviceManagerService
+07-03 01:10:30.910  1621  6666 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@8a3d685f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+07-03 01:10:30.911  1621  6666 D CompatChangeReporter: Compat change id reported: 358129114; UID 10072; state: ENABLED
+07-03 01:10:30.913  1621  6666 D ActivityTaskManager: Temporarily retain top process state for launching app
+07-03 01:10:30.919  1621  6666 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{d6c12e4 #519 type=standard I=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} activity=ActivityRecord{163973738 u0 com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity t-1} display-area-from-source=DefaultTaskDisplayArea@245584728 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@245584728 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@245584728 default-portrait freeform-size-mismatch=Rect(54, 54 - 330, 330)
+07-03 01:10:30.919  1621  6666 I ActivityTaskManager: START u0 {xflg=0x4 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity (has extras)} with LAUNCH_SINGLE_TOP from uid 10072 (com.google.android.dialer) (sr=204891767) (BAL_ALLOW_GRACE_PERIOD) result code=0
+07-03 01:10:30.920  2243  2408 V WindowManagerShell: Transition requested (#1042): android.os.BinderProxy@a3ca924 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=519 effectiveUid=10072 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity } baseActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} topActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity} origActivity=null realActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=92489852 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@d352c8d} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{5451e42 com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=true locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 1042 }
+07-03 01:10:30.921  2243  2408 V WindowManagerShell: Transition (#1042): request handled by WearMixedTransitionHandler
+07-03 01:10:30.926 22211 22211 W ProcessImportanceForegr: Activity started with background importance
+07-03 01:10:30.927 22211 22211 W DialerPrimesLoggerHolder: com.google.android.libraries.performance.primes.foreground.ProcessImportanceForegroundSignalAdapter.onActivityStarted:59 Activity started with background importance
+07-03 01:10:30.927  2243  2243 D AmbientTaskStackManager: doInvalidateAutoResumeTaskLocked: query all tasks! candidateTask=null
+07-03 01:10:30.932  2243  2243 I AmbientTaskStackManager: Auto-resume task is [#1|home|invis|top="com.google.android.wearable.sysui/.mainui.activity.SysUiActivity"]
+07-03 01:10:30.932  2243  2243 I AmbientTaskStackManager: updateTimer: skipped - waiting for grace period for recently changed task
+07-03 01:10:30.934  2243  2243 I DisplayOffloadManager: updateTopActivity: taskId = 1; activityToFront=ComponentInfo{com.google.android.wearable.sysui/com.google.android.wearable.sysui.mainui.activity.SysUiActivity}
+07-03 01:10:30.935  1621  2266 D DisplayOffload: updateTopTask: taskId=1; activityToFront=ComponentInfo{com.google.android.wearable.sysui/com.google.android.wearable.sysui.mainui.activity.SysUiActivity}
+07-03 01:10:30.964 22211 22211 W HWUI    : Unknown dataspace 0
+07-03 01:10:30.972 22211 22242 E perf_hint: createSessionUsingConfig: PerformanceHint cannot create session. PowerHintSessions are not supported!
+07-03 01:10:30.972  1621  2073 D CompatChangeReporter: Compat change id reported: 463899193; UID 10072; state: ENABLED
+07-03 01:10:30.974  1621  2073 W InputChannel-JNI: Channel already disposed.
+07-03 01:10:30.982  1621  2073 W TransitionChain: Combining kgOccludeChg into #1042(OPEN|R|0x0) from startAct
+07-03 01:10:30.982  2243  2408 D WindowManagerShell: onKeyguardOccludingTaskChanged displayId=0 taskId=519
+07-03 01:10:30.982  1621  2073 D WindowManager: Remove SleepToken: tag=keyguard, displayId=0
+07-03 01:10:30.982  1621  2073 D ActivityTaskManager: Top Process State changed to PROCESS_STATE_TOP
+07-03 01:10:30.983  1621  2073 W TransitionChain: Combining sleepTokens into #1042(OPEN|R|0x1000) from startAct
+07-03 01:10:30.985  1621  2073 D CorePackageUpdate: Couldn't find a persistent state for task= 519
+07-03 01:10:30.994 22211 22211 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@29aa75
+07-03 01:10:30.995  1621  2073 D CoreBackPreview: Window{b69b8c5 u0 com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@20ac727, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+07-03 01:10:31.041 22211 22211 I HWUI    : Using FreeType backend (prop=Auto)
+07-03 01:10:31.048 22211 22211 D VRI[HomeScreenActivity]: WindowInsets changed: 384x384 
+07-03 01:10:31.077  1621  2073 D WindowManager: setClientSurface Surface(name=VRI-com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity#1367)/@0x2cd1279 for b69b8c5 com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity
+07-03 01:10:31.079 22211 22211 I Surface : Creating surface for consumer unnamed-22211-0 with slotExpansion=1 for 64 slots
+07-03 01:10:31.081 22211 22211 I Surface : Creating surface for consumer VRI[HomeScreenActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+07-03 01:10:31.090   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.091   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.091   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.091   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.091   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.092 22211 22246 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.092 22211 22246 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.092   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.093   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.093   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.093   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.093   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.094 22211 22246 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.094 22211 22246 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.094  2058  6669 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 taskId=519 effectiveUid=10072 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity } baseActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} topActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity} origActivity=null realActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=92490041 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c238945} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{f52a89a com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=false isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Phone, activity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.google.android.dialer, activityName=com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity, isDefaultApp=false), loadLauncherIcon=ioi@a12f61e)
+07-03 01:10:31.094   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.095  2058  6669 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 taskId=516 effectiveUid=10072 displayId=-1 isRunning=false baseIntent=Intent { act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} realActivityIsAppLockEnabled=false numActivities=0 lastActiveTime=92464450 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@fc2ae4a} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Phone, activity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.google.android.dialer, activityName=com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity, isDefaultApp=false), loadLauncherIcon=ioi@a12f61e)
+07-03 01:10:31.095   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.095   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.095   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.095   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.095  2058  6669 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 taskId=491 effectiveUid=10006 displayId=-1 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.poc.silentsms/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.poc.silentsms/com.poc.silentsms.MainActivity} realActivityIsAppLockEnabled=false numActivities=0 lastActiveTime=43096863 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@bfcb1b8} topActivityType=0 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Comm Helper, activity=ComponentInfo{com.poc.silentsms/com.poc.silentsms.MainActivity}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.poc.silentsms, activityName=com.poc.silentsms.MainActivity, isDefaultApp=false), loadLauncherIcon=ioi@50deb91)
+07-03 01:10:31.095  2058  6669 E SysUI   : [RecentTaskLauncherApp]Couldn't resolve any Activity for task TaskInfo{userId=0 taskId=471 effectiveUid=10079 displayId=-1 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.google.android.apps.maps/com.google.android.apps.gmmwearable.navigationui.ComposeNavigationActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmmwearable.navigationui.ComposeNavigationActivity} realActivityIsAppLockEnabled=false numActivities=0 lastActiveTime=43096862 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@7d9aaf6} topActivityType=0 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}
+07-03 01:10:31.096 22211 22246 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.096 22211 22246 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.096  2058  6669 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched task with the only Launcher in the package TaskInfo{userId=0 taskId=471 effectiveUid=10079 displayId=-1 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.google.android.apps.maps/com.google.android.apps.gmmwearable.navigationui.ComposeNavigationActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmmwearable.navigationui.ComposeNavigationActivity} realActivityIsAppLockEnabled=false numActivities=0 lastActiveTime=43096862 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@7d9aaf6} topActivityType=0 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Maps, activity=ComponentInfo{com.google.android.apps.maps/com.google.android.apps.gmmwearable.MainActivity}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.google.android.apps.maps, activityName=com.google.android.apps.gmmwearable.MainActivity, isDefaultApp=false), loadLauncherIcon=ioi@794afcd)
+07-03 01:10:31.096   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.096   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.096   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.097   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.097   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.097  2058  6669 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity} attempting to fetch from ResolveInfo
+07-03 01:10:31.097 22211 22246 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.097 22211 22246 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.155   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.155   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.182 22211 22242 E perf_hint: createSessionUsingConfig: PerformanceHint cannot create session. PowerHintSessions are not supported!
+07-03 01:10:31.186  1621  1975 W InputChannel-JNI: Channel already disposed.
+07-03 01:10:31.194  1621  2073 D ActivityManager: sync unfroze 21485 android.process.acore for 7
+07-03 01:10:31.198 22211 22211 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@6687f63
+07-03 01:10:31.201   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.201   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.204 22211 22211 D VRI[OutgoingDialpadActivity]: WindowInsets changed: 384x384 
+07-03 01:10:31.207  1621  1975 D CoreBackPreview: Window{9a7741f u0 com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@61997b1, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+07-03 01:10:31.260 21485 21489 W d.process.acore: Reducing the number of considered missed Gc histogram windows from 131 to 100
+07-03 01:10:31.319  1621  2073 D WindowManager: setClientSurface Surface(name=VRI-com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity#1369)/@0xbcecf21 for 9a7741f com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity
+07-03 01:10:31.323 22211 22211 I Surface : Creating surface for consumer unnamed-22211-1 with slotExpansion=1 for 64 slots
+07-03 01:10:31.323 22211 22211 I Surface : Creating surface for consumer VRI[OutgoingDialpadActivity]#1(BLAST Consumer)1 with slotExpansion=1 for 64 slots
+07-03 01:10:31.327   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.327   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.327   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.327   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.327   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.328 22211 22253 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.328 22211 22253 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.329   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.329   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.329   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.330   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.330   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.331 22211 22253 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.331 22211 22253 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.332   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.332   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.332   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.332   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.332   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.333 22211 22253 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.333 22211 22253 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.333   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:31.334   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:31.334   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.334   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.334   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.337 22211 22253 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.338 22211 22253 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.358   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.358   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.369  1621  1682 I ActivityTaskManager: Displayed com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity for user 0: +1s61ms
+07-03 01:10:31.371   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.371   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.370  1621  1682 V WindowManager: Sent Transition (#1042) createdAt=07-03 01:10:30.912 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=519 effectiveUid=10072 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.DIAL dat=tel:xxxxxxxxxxxxx flg=0x10000000 cmp=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity } baseActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} topActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity} origActivity=null realActivity=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=92489852 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{5d7db67 Task{d6c12e4 #519 type=standard I=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{941312a com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=true locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 1042 }
+07-03 01:10:31.375   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.375   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.376  1621  1682 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+07-03 01:10:31.377  2243  2609 V WindowManagerShell: onTransitionReady(transaction=6962142015813)
+07-03 01:10:31.377  1621  1682 V WindowManager:     info={id=1042 t=OPEN f=0x1040 trk=0 r=[0@Point(0, 0)] c=[
+07-03 01:10:31.377  1621  1682 V WindowManager:         {WCT{RemoteToken{5d7db67 Task{d6c12e4 #519 type=standard I=com.google.android.dialer/com.google.android.wearable.googledialer.homescreen.impl.ui.HomeScreenActivity}}} m=TO_FRONT f=FLAG_CHANGED_INTERACTIVE p=WCT{RemoteToken{9a2c9b0 DefaultTaskDisplayArea@245584728}} leash=Surface(name=Task=519#1361)/@0xc38211e sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0},
+07-03 01:10:31.377  1621  1682 V WindowManager:         {WCT{RemoteToken{9a2c9b0 DefaultTaskDisplayArea@245584728}} m=TO_FRONT f=FLAG_IS_TASK_DISPLAY_AREA leash=Surface(name=DefaultTaskDisplayArea#9)/@0x523f575 sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0}
+07-03 01:10:31.377  1621  1682 V WindowManager:     ]}
+07-03 01:10:31.378  2243  2408 V WindowManagerShell: onTransitionReady (#1042) android.os.BinderProxy@a3ca924: {id=1042 t=OPEN f=0x1040 trk=0 r=[0@Point(0, 0)] c=[
+07-03 01:10:31.378  2243  2408 V WindowManagerShell:         {m=TO_FRONT f=FLAG_CHANGED_INTERACTIVE p=WCT{android.os.BinderProxy@c33efc5} leash=Surface(name=Task=519#1361)/@0xcaea354 sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0},
+07-03 01:10:31.378  2243  2408 V WindowManagerShell:         {m=TO_FRONT f=FLAG_IS_TASK_DISPLAY_AREA leash=Surface(name=DefaultTaskDisplayArea#9)/@0x31752fd sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0}
+07-03 01:10:31.378  2243  2408 V WindowManagerShell:     ]}
+07-03 01:10:31.378  2243  2408 V WindowManagerShell: Playing animation for (#1042) android.os.BinderProxy@a3ca924@0
+07-03 01:10:31.378  2243  2408 V WindowManagerShell:  try firstHandler com.google.android.clockwork.systemui.transition.shelltransition.WearMixedTransitionHandler@14611a2
+07-03 01:10:31.378  2243  2408 V WindowManagerShell:  skip handler com.google.android.clockwork.systemui.transition.shelltransition.WearMixedTransitionHandler@14611a2
+07-03 01:10:31.378  2243  2408 V WindowManagerShell: start keyguard occlude transition, info = {id=1042 t=OPEN f=0x1040 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=FLAG_CHANGED_INTERACTIVE p=WCT{android.os.BinderProxy@c33efc5} leash=Surface(name=Task=519#1361)/@0xcaea354 sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_FRONT f=FLAG_IS_TASK_DISPLAY_AREA leash=Surface(name=DefaultTaskDisplayArea#9)/@0x31752fd sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0}]}
+07-03 01:10:31.380  2243  2408 V WindowManagerShell:  animated by com.android.wm.shell.keyguard.KeyguardTransitionHandler@80ff04b
+07-03 01:10:31.381  2243  2408 V ShellTaskOrganizer: Task appeared taskId=519 listener=FullscreenTaskListener
+07-03 01:10:31.381  2243  2408 V ShellTaskOrganizer: Fullscreen Task Appeared: #519
+07-03 01:10:31.383  2243  2408 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#1042) android.os.BinderProxy@a3ca924@0
+07-03 01:10:31.388  2243  2243 I AmbientTaskStackManager: setState: session state has changed from BEGUN to ENDING, reason="end() is called."
+07-03 01:10:31.389  2243  2243 I AmbientTaskStackManager: setState: session state has changed from ENDING to ENDED, reason="end() is called."
+07-03 01:10:31.391  1621  1682 V WindowManager: Finish Transition (#1042): created at 07-03 01:10:30.912 collect-started=0.039ms request-sent=6.148ms started=9.711ms ready=75.563ms sent=449.908ms commit=27.852ms finished=478.079ms
+07-03 01:10:31.393  2243  2243 I AmbientTaskStateMachine: State transition: LockScreenInteractive -> TaskInteractive. Reason: not in ambient
+07-03 01:10:31.394  1621  2073 D DOS_DisplayControlLock: acquired: SystemUIRCDCLock android.os.BinderProxy@11f052
+07-03 01:10:31.394  1621  2073 I DOS_DisplayControlLock: First acquired
+07-03 01:10:31.394  1621  2073 I DisplayControlPolicy: isOffloadStartPending: hasUnreleased lock
+07-03 01:10:31.394  2243  2408 V WindowManagerShell: Track 0 became idle
+07-03 01:10:31.395  2243  2408 V WindowManagerShell: All active transition animations finished
+07-03 01:10:31.395  1621  2073 D DOS_DisplayControlLock: released: android.os.BinderProxy@11f052
+07-03 01:10:31.395  1621  2073 D DOS_DisplayControlLock: acquired: minimum time guarantee java.lang.Object@274b8b5
+07-03 01:10:31.395  2243  2243 I WakefulDisplayControlLock: acquire: acquired without timeout, using default, mTag=task-opening
+07-03 01:10:31.396   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.396   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.398  1621  2266 D DOS_DisplayControlLock: acquired: SystemUIRCDCLock android.os.BinderProxy@11f052
+07-03 01:10:31.398  2243  2243 I DisplayOffloadManager: updateTopActivity: taskId = 519; activityToFront=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity}
+07-03 01:10:31.399  1621  2266 D DisplayOffload: updateTopTask: taskId=519; activityToFront=ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.dialpad.outgoingdialpad.impl.ui.OutgoingDialpadActivity}
+07-03 01:10:31.400  2243  2243 D StatusOverlayController: setOverlayVisible: visible=false, tokens={}
+07-03 01:10:31.404  2243  2243 D StatusOverlayController: Setting status layer visibility to invisible
+07-03 01:10:31.406   500  2677 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.407   500  2677 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.407   500  2677 I SDM     : Using previously loaded IMapper library.
+07-03 01:10:31.407   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.407   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.423  2243  2243 D NotificationShadeWC: surface destroyed
+07-03 01:10:31.426   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.426   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.430  1621  1779 D DOS_DisplayControlLock: released: java.lang.Object@274b8b5
+07-03 01:10:31.430  1621  2266 I DOLayout: onWallpaperVisibilityChanged: visible=false displayId=0
+07-03 01:10:31.431  1621  1621 I DisplayOffload: skipping watchface visibility update, since pipe not found (10115,false)
+07-03 01:10:31.435  2124  2124 D WallpaperService: onVisibilityChanged(false): dcf@6430012
+07-03 01:10:31.435  2124  2124 I WatchFaceService: onVisibilityChanged(false)
+07-03 01:10:31.496   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:31.496   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:31.516  1621  1903 I ImeTracker: com.google.android.dialer:1bdaec8: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+07-03 01:10:31.522 22211 22211 D InsetsController: hide(ime())
+07-03 01:10:31.523 22211 22211 I ImeTracker: com.google.android.dialer:1bdaec8: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+07-03 01:10:31.911  1621  1975 D DOS_DisplayControlLock: released: android.os.BinderProxy@11f052
+07-03 01:10:31.911  1621  1975 I DOS_DisplayControlLock: All released
+07-03 01:10:32.356  1253  1253 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:dumpsys window policy'
+07-03 01:10:32.383  1645  1656 I pixel-thermal: audio-therm:39.863 raw data: audio-therm:39863 
+07-03 01:10:32.386  1645  1656 I pixel-thermal: sdm-skin-therm:41.195 raw data: sdm-skin-therm:41195 
+07-03 01:10:32.458  1253  1253 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:dumpsys activity activities'
+07-03 01:10:33.328  1621  6352 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+07-03 01:10:33.526  1621  1949 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+07-03 01:10:33.678  1621  1776 D HighBrightnessModeController: onAmbientLuxChange: 49.7925/25000.0, IsHighLux: false
+07-03 01:10:33.679  1621  1776 I DisplayOffload: allowAutoBrightnessInDoze: stateOverride=UNKNOWN
+07-03 01:10:33.683  1621  1776 I DisplayPowerController[0]: BrightnessEvent: brt=0.0(0.0%), nits=-1.0, lux=49.7925, reason=automatic [ dim ], strat=AutomaticBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=DIM, flags=, initBrt=0.011345029, rcmdBrt=0.038042404, preBrt=0.051345028, preLux=85.08375, lastReadLux=49.7925, wasShortTermModelActive=false, autoBrightness=true (default), unclampedBrt=0.038042404, hbmMax=0.6556, hbmMode=off, thrmMax=1.0, rbcStrength=50, powerFactor=0.5, physDisp=Built-in Screen(local:4630946367249729921), logicalId=0, slowChange=true, rampSpeed=0.0, colorTemp=NaN, thermalStatus=light
+07-03 01:10:33.685  1621  1776 I DisplayOffload: allowAutoBrightnessInDoze: stateOverride=UNKNOWN
+07-03 01:10:33.689  1621  1685 I BrightnessSynchronizer: [1876] New Update 0.038042404(f) set brightness values:  11(i)
+07-03 01:10:33.692  1621  1685 I BrightnessSynchronizer: Swallowing update of 11(i) by update: {[1876] 0.038042404(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=12879513}
+07-03 01:10:33.692  1621  1685 I BrightnessSynchronizer: Completed Update: {[1876] 0.038042404(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=12879513}
+07-03 01:10:33.704   885  1852 I usf_sensor_hal: DisplayInfo msg to sensor:28 (ALS), display_status:1 (ON), panel_status:1 (ON), brightness:0, refresh_rate:60, timestamp_ms=92492759
+07-03 01:10:33.706   388   412 E pixelstats-uevent: Unable to read  - No such file or directory
+07-03 01:10:33.711   500  2677 I SDM     : DisplayBuiltIn::SetPanelBrightness: Setting brightness: nbm_dbv = 1 (2.70 nits), aod_dbv = 0 (0.00 nits), requested brightness = 0.000000 (0.000000 nits), ramp duration 300 ms
+07-03 01:10:33.953 22211 22221 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.954 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.954 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.955 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.955 22211 22221 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.956 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.957 22211 22221 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.957 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.958 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.958 22211 22221 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:33.988 22211 22237 V ClearcutMetricXmitter: Transmission is done.
+07-03 01:10:34.391  1621  1776 I DisplayOffload: allowAutoBrightnessInDoze: stateOverride=UNKNOWN
+07-03 01:10:34.394  1621  1776 V DisplayPowerController[0]: Brightness [0.038042404] reason changing to: 'automatic', previous reason: 'automatic [ dim ]'.
+07-03 01:10:34.394  1621  1776 I DisplayPowerController[0]: BrightnessEvent: brt=0.038042404(42.0%), nits=-1.0, lux=49.7925, reason=automatic, strat=AutomaticBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=BRIGHT, flags=, initBrt=0.0, rcmdBrt=0.038042404, preBrt=0.051345028, preLux=85.08375, lastReadLux=49.7925, wasShortTermModelActive=false, autoBrightness=true (default), unclampedBrt=0.038042404, hbmMax=0.6556, hbmMode=off, thrmMax=1.0, rbcStrength=50, powerFactor=0.5, physDisp=Built-in Screen(local:4630946367249729921), logicalId=0, slowChange=false, rampSpeed=0.0, colorTemp=NaN, thermalStatus=light
+07-03 01:10:34.396  1621  1776 I DisplayOffload: allowAutoBrightnessInDoze: stateOverride=UNKNOWN
+07-03 01:10:34.416   885  1852 I usf_sensor_hal: DisplayInfo msg to sensor:28 (ALS), display_status:1 (ON), panel_status:1 (ON), brightness:5, refresh_rate:60, timestamp_ms=92493471
+07-03 01:10:34.417   388   412 E pixelstats-uevent: Unable to read  - No such file or directory
+07-03 01:10:34.419   500  2677 I SDM     : DisplayBuiltIn::SetPanelBrightness: Setting brightness: nbm_dbv = 14 (37.20 nits), aod_dbv = 59 (37.00 nits), requested brightness = 0.038042 (38.042404 nits), ramp duration 300 ms
+07-03 01:10:34.420   491   623 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:34.420   491   623 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:34.421  1645  1656 I pixel-thermal: audio-therm:39.87 raw data: audio-therm:39870 
+07-03 01:10:34.425  1645  1656 I pixel-thermal: sdm-skin-therm:41.175 raw data: sdm-skin-therm:41175 
+07-03 01:10:34.430   491   544 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:34.430   491   544 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:34.447   500  2677 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:34.447   500  2677 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:34.464   500  2677 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:34.465   500  2677 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:34.468  1621  1776 D HighBrightnessModeController: onAmbientLuxChange: 64.58238/25000.0, IsHighLux: false
+07-03 01:10:34.468  1621  1776 I DisplayOffload: allowAutoBrightnessInDoze: stateOverride=UNKNOWN
+07-03 01:10:34.470  1621  1776 I DisplayPowerController[0]: BrightnessEvent: brt=0.044045836(45.0%), nits=-1.0, lux=64.58238, reason=automatic, strat=AutomaticBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=BRIGHT, flags=, initBrt=0.038042404, rcmdBrt=0.044045836, preBrt=0.038042404, preLux=49.7925, lastReadLux=71.8675, wasShortTermModelActive=false, autoBrightness=true (default), unclampedBrt=0.044045836, hbmMax=0.6556, hbmMode=off, thrmMax=1.0, rbcStrength=50, powerFactor=0.5, physDisp=Built-in Screen(local:4630946367249729921), logicalId=0, slowChange=true, rampSpeed=0.0, colorTemp=NaN, thermalStatus=light
+07-03 01:10:34.471  1621  1776 I DisplayOffload: allowAutoBrightnessInDoze: stateOverride=UNKNOWN
+07-03 01:10:34.472  1621  1685 I BrightnessSynchronizer: [1878] New Update 0.044045836(f) set brightness values:  12(i)
+07-03 01:10:34.473  1621  1685 I BrightnessSynchronizer: Swallowing update of 12(i) by update: {[1878] 0.044045836(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=12880295}
+07-03 01:10:34.473  1621  1685 I BrightnessSynchronizer: Completed Update: {[1878] 0.044045836(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=12880295}
+07-03 01:10:34.492   885  1852 I usf_sensor_hal: DisplayInfo msg to sensor:28 (ALS), display_status:1 (ON), panel_status:1 (ON), brightness:6, refresh_rate:60, timestamp_ms=92493547
+07-03 01:10:34.493   388   412 E pixelstats-uevent: Unable to read  - No such file or directory
+07-03 01:10:34.493   500  2677 I SDM     : DisplayBuiltIn::SetPanelBrightness: Setting brightness: nbm_dbv = 17 (44.90 nits), aod_dbv = 71 (43.90 nits), requested brightness = 0.044046 (44.045836 nits), ramp duration 300 ms
+07-03 01:10:34.494   500  2677 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:34.494   500  2677 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:34.992  2208  2222 W com.qti.phone: Reducing the number of considered missed Gc histogram windows from 134 to 100
+07-03 01:10:36.502  1645  1656 I pixel-thermal: audio-therm:39.851 raw data: audio-therm:39851 
+07-03 01:10:36.506  1645  1656 I pixel-thermal: sdm-skin-therm:41.149 raw data: sdm-skin-therm:41149 
+07-03 01:10:36.591  1621  1949 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+07-03 01:10:37.404  1253  1253 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:screencap -p /sdcard/lockscreen_bypass_dialer_run2.png'
+07-03 01:10:37.486   388   412 E pixelstats-uevent: Unable to read  - No such file or directory
+07-03 01:10:37.540  1427  1427 E BatteryDefender: Failed to read /sys/devices/platform/google,charger/bd_state
+07-03 01:10:37.552  1427  1427 E BatteryDefender: Failed to read /sys/devices/platform/google,charger/bd_state
+07-03 01:10:37.554  2240  2240 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 0
+07-03 01:10:37.951 22266 22266 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: SurfaceFlingerAIDL
+07-03 01:10:37.951 22266 22266 W libbinder.BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+07-03 01:10:37.952 22266 22266 W libbinder.ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+07-03 01:10:37.954   492   524 I SnapAlloc: Using graphics libs for alignment calculations
+07-03 01:10:37.954   492   524 D SnapAlloc: from handle - reserved size 4108032360 custom content metadata size 0
+07-03 01:10:37.954   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:37.954   492   524 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:37.954   492   524 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:37.955   491   663 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:37.955   491   663 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:38.020 22266 22268 D qdgralloc: Fetching IMapper5 from QtiMapper5
+07-03 01:10:38.026 22266 22268 I SnapAlloc: UBWC is disabled
+07-03 01:10:38.032 22266 22268 I SnapAlloc: Graphics lib is available
+07-03 01:10:38.034 22266 22268 W SnapAlloc: Camera lib is not available - read json file
+07-03 01:10:38.036 22266 22268 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+07-03 01:10:38.036 22266 22268 D SnapAlloc: Successfully mapped metadata 0x1
+07-03 01:10:38.049  6317  6475 W MediaProvider: isAppCloneUserPair for user 0: false
+07-03 01:10:38.154  2805  2812 W adsp_wdog: vendor/qcom/proprietary/monaco/adsprpc/src/fastrpc_apps_user.c:1425:Warning: remote_handle_invoke: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+07-03 01:10:38.155  2805  2812 I adsp_wdog: rpcversion_getSerialNum() returned: 9d5cd6d4
+07-03 01:10:38.180  1621  1975 I ActivityManager: Broadcasting: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x400000 }
+07-03 01:10:38.181  1621  1975 I ActivityManager: Enqueued broadcast Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x400000 }: 0
+07-03 01:10:38.184  6317  6317 I MediaServiceV2: Creating work for intent Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+07-03 01:10:38.185  6317  6317 I MediaServiceV2: Work enqueued for intent: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaServiceV2 }
+07-03 01:10:38.187  1621  1682 I ActivityManager: Broadcast completed: result=0
+07-03 01:10:38.226  6317  6526 W JobInfo : Requested important-while-foreground flag for job62 is ignored and takes no effect
+07-03 01:10:38.227  6317  6526 D WM-SystemJobScheduler: Scheduling work ID ba7dd501-0a8b-4e77-8bca-55a4cbac3e36Job ID 62
+07-03 01:10:38.238  6317  6317 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=ba7dd501-0a8b-4e77-8bca-55a4cbac3e36, generation=0)
+07-03 01:10:38.239  6317  6526 D WM-GreedyScheduler: Ignoring {WorkSpec: df6373e2-5c68-4226-8c16-4655485dcafa}. Requires device idle.
+07-03 01:10:38.239  6317  6526 D WM-GreedyScheduler: Ignoring {WorkSpec: 34cb943c-1b0a-4be1-843b-6dd0344cc477}. Requires device idle.
+07-03 01:10:38.239  6317  6526 D WM-GreedyScheduler: Ignoring {WorkSpec: 8d9b5452-8dc2-48c2-8fb5-81d7dcd2c248}. Requires device idle.
+07-03 01:10:38.239  6317  6526 D WM-GreedyScheduler: Starting work for ba7dd501-0a8b-4e77-8bca-55a4cbac3e36
+07-03 01:10:38.246  6317  6526 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=ba7dd501-0a8b-4e77-8bca-55a4cbac3e36, generation=0)
+07-03 01:10:38.251  6317  6526 D WM-Processor: Work WorkGenerationalId(workSpecId=ba7dd501-0a8b-4e77-8bca-55a4cbac3e36, generation=0) is already enqueued for processing
+07-03 01:10:38.270  1253  1253 I adbd    : adbd service requested 'sync:'
+07-03 01:10:38.275  6317  6317 D WM-WorkerWrapper: Starting work for com.android.providers.media.MediaServiceV2
+07-03 01:10:38.277  6317 22274 I MediaServiceV2: Work initiated for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+07-03 01:10:38.300  1253  1253 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+07-03 01:10:38.325  6317 22274 I MediaServiceV2: Work ended for action [ android.intent.action.MEDIA_SCANNER_SCAN_FILE ]
+07-03 01:10:38.376  6317  6526 D WM-SystemJobScheduler: Scheduling work ID 189c215a-d71f-4059-a5c3-295ce0bfccd7Job ID 63
+07-03 01:10:38.381  6317  6526 D WM-GreedyScheduler: Ignoring {WorkSpec: df6373e2-5c68-4226-8c16-4655485dcafa}. Requires device idle.
+07-03 01:10:38.381  6317  6526 D WM-GreedyScheduler: Ignoring {WorkSpec: 34cb943c-1b0a-4be1-843b-6dd0344cc477}. Requires device idle.
+07-03 01:10:38.381  6317  6526 D WM-GreedyScheduler: Ignoring {WorkSpec: 8d9b5452-8dc2-48c2-8fb5-81d7dcd2c248}. Requires device idle.

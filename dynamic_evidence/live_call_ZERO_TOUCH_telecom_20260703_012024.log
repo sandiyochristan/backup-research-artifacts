@@ -1,0 +1,445 @@
+Init Path: On mainline
+TelecomUI package: com.google.android.telecomui
+CallsManager: 
+  mCalls: 
+  mCallAudioManager:
+    All calls:
+    Active dialing, or connecting calls:
+    Ringing calls:
+    Holding calls:
+    Foreground call:
+    null
+    CallAudioModeStateMachine:
+      History:
+      2026-07-02T21:59:42.038473 - Enter UNFOCUSED
+      2026-07-02T21:59:42.040304 - Mode MODE_NORMAL
+      2026-07-02T22:06:56.410691 - Enter RINGING
+      2026-07-02T22:06:56.721455 - Mode MODE_RINGTONE
+      2026-07-02T22:07:08.512264 - Enter SIM_CALL
+      2026-07-02T22:07:08.515138 - Mode MODE_IN_CALL
+      2026-07-02T22:07:08.517090 - Enter UNFOCUSED
+      2026-07-02T22:07:08.517656 - Mode MODE_NORMAL
+      2026-07-02T22:20:03.204992 - Enter RINGING
+      2026-07-02T22:20:03.242126 - Mode MODE_RINGTONE
+      2026-07-02T22:20:10.941402 - Enter UNFOCUSED
+      2026-07-02T22:20:10.941957 - Mode MODE_NORMAL
+      2026-07-02T23:09:23.583176 - Enter RINGING
+      2026-07-02T23:09:23.776321 - Mode MODE_RINGTONE
+      2026-07-02T23:09:48.847366 - Enter UNFOCUSED
+      2026-07-02T23:09:48.852174 - Mode MODE_NORMAL
+      2026-07-03T01:19:34.375581 - Enter SIM_CALL
+      2026-07-03T01:19:34.382320 - Mode MODE_IN_CALL
+      2026-07-03T01:19:54.285491 - Enter UNFOCUSED
+      2026-07-03T01:19:54.299060 - Mode MODE_NORMAL
+      Pending Msg:
+      Looper (CallAudioModeStateMachine, tid 214) {f26a72d}
+        (MessageQueue is using DeliQueue implementation)
+        (Total messages: 0, polling=true, quitting=false)
+    mCallAudioRouteAdapter:
+    BluetoothDeviceManager:
+      2026-07-01T23:29:42.944944 - Got BluetoothHeadset: android.bluetooth.BluetoothHeadset@a2aba81
+  mTtyManager:
+    mCurrentTtyMode: 0
+  mInCallController:
+    combinedInCallServiceMap (InCalls registered):
+      User: UserHandle{0}
+        [ComponentInfo{com.google.android.bluetooth/com.android.bluetooth.telephony.BluetoothInCallService} supportsExternal? false supportsSelfMg?true]
+    ServiceConnections (InCalls bound):
+    CarModeTracker:
+      Current car mode apps:
+      Car mode history:
+  mCallDiagnosticServiceController:
+    activeCallDiagnosticService: 
+    isConnected: false
+  mAudioModeTracker:
+    Audio Mode History:
+      2026-07-02T21:59:32.139618 - MODE_NORMAL -> MODE_RINGTONE
+      2026-07-02T21:59:42.463864 - MODE_RINGTONE -> MODE_NORMAL
+      2026-07-02T22:06:57.212567 - MODE_NORMAL -> MODE_RINGTONE
+      2026-07-02T22:07:09.289646 - MODE_RINGTONE -> MODE_NORMAL
+      2026-07-02T22:20:03.329751 - MODE_NORMAL -> MODE_RINGTONE
+      2026-07-02T22:20:11.331753 - MODE_RINGTONE -> MODE_NORMAL
+      2026-07-02T23:09:24.007134 - MODE_NORMAL -> MODE_RINGTONE
+      2026-07-02T23:09:49.000289 - MODE_RINGTONE -> MODE_NORMAL
+      2026-07-03T01:19:34.935814 - MODE_NORMAL -> MODE_IN_CALL
+      2026-07-03T01:19:54.509354 - MODE_IN_CALL -> MODE_NORMAL
+  mLocalVoicemailController:
+    Current call: <none>
+    Service pkg: 
+    Bound: N
+    Local voicemail History:
+  mCallAnomalyWatchdog:
+    Anomaly log:
+    Pending timeouts: 
+    Pending destruction: 
+  mEmergencyCallDiagnosticLogger:
+      PERSISTED DIAGNOSTIC DATA FROM DROP BOX
+      END OF PERSISTED DIAGNOSTIC DATA FROM DROP BOX
+  mDefaultDialerCache:
+    System Dialer: ComponentInfo{com.google.android.dialer/com.google.android.wearable.googledialer.incall.incallservice.InCallServiceImpl}
+    User 0: com.google.android.dialer
+  mConnectionServiceRepository:
+    mServiceCache:
+      ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}
+  mRoleManager:
+    DefaultCallRedirectionApp: null
+    DefaultCallScreeningApp: null
+    DefaultCallCompanionApps: 
+  mConnectionSvrFocusMgr:
+    Call Focus History:
+    2026-07-02T15:13:27.811027 - TC@13
+    2026-07-02T15:16:00.738400 - <none>
+    2026-07-02T15:24:03.541930 - TC@14
+    2026-07-02T15:24:03.572618 - <none>
+    2026-07-02T17:47:18.404391 - TC@17
+    2026-07-02T17:47:18.459681 - <none>
+    2026-07-02T18:24:07.455074 - TC@18
+    2026-07-02T18:24:07.504162 - <none>
+    2026-07-02T19:31:11.023760 - TC@21
+    2026-07-02T19:31:11.058760 - <none>
+    2026-07-02T19:38:54.772383 - TC@22
+    2026-07-02T19:38:54.900798 - <none>
+    2026-07-02T20:27:10.040197 - TC@28
+    2026-07-02T20:27:10.093356 - <none>
+    2026-07-02T20:39:07.142169 - TC@29
+    2026-07-02T20:39:07.202632 - <none>
+    2026-07-02T22:07:08.310029 - TC@41
+    2026-07-02T22:07:08.360992 - <none>
+    2026-07-03T01:19:34.393612 - TC@46
+    2026-07-03T01:19:54.156449 - <none>
+  CallAudioWatchdog:
+    Active Sessions:
+    Audio sessions Sessions:
+PhoneAccountRegistrar: 
+  xmlVersion: 10
+  defaultOutgoing: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  outgoingPhoneAccountForTelScheme: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  defaultVoiceSubId: -1
+  simCallManager: null
+  phoneAccounts:
+    [[X] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, E, UserHandle{0} Capabilities: CallProvider MultiUser PlaceEmerg SimSub  Audio Routes: BESW Schemes: tel voicemail  Extras: Bundle[{android.telecom.extra.SUPPORTS_VIDEO_CALLING_FALLBACK=true}] GroupId: *** SC Restrictions: [ ]]
+    [[X] PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} Capabilities: CallProvider ConnectionMgr MultiUser  Audio Routes: BESW Schemes: tel voicemail  Extras: Bundle[{android.telecom.extra.SKIP_CALL_FILTERING=true}] GroupId: *** SC Restrictions: [NONE]]
+    test emergency PhoneAccount filter: []
+  localVoicemailTimeouts:
+Flag Configurations (framework - com.android.server.telecom): 
+  	[✅]: addCallUriForMissedCalls                     add_call_uri_for_missed_calls
+  	[✅]: bulkStateUpdateCall                          bulk_state_update_call
+  	[✅]: businessCallComposer                         business_call_composer
+  	[✅]: callDetailsIdChanges                         call_details_id_changes
+  	[✅]: callSequencingCallResumeFailed               call_sequencing_call_resume_failed
+  	[❌]: callSequencingMetrics                        call_sequencing_metrics
+  	[✅]: cleanupVerifyCallState                       cleanup_verify_call_state
+  	[✅]: conferenceModifyMergeFail                    conference_modify_merge_fail
+  	[✅]: doNotSendCallToNullIcs                       do_not_send_call_to_null_ics
+  	[✅]: ensureAudioModeUpdatesOnForegroundCallChange ensure_audio_mode_updates_on_foreground_call_change
+  	[✅]: filterVoipCallLogs                           filter_voip_call_logs
+  	[✅]: getRegisteredPhoneAccounts                   get_registered_phone_accounts
+  	[✅]: hdPlusCall                                   hd_plus_call
+  	[✅]: integratedCallLogs                           integrated_call_logs
+  	[✅]: notifyAvailableEndpointsOnIcsConnected       notify_available_endpoints_on_ics_connected
+  	[✅]: preventIllegalAudioProcessingExit            prevent_illegal_audio_processing_exit
+  	[✅]: reuseOriginalConnRemoteConfApi               reuse_original_conn_remote_conf_api
+  	[✅]: revertDisconnectingDuringMerge               revert_disconnecting_during_merge
+  	[✅]: selectPhoneAccountBeforeMakingRoom           select_phone_account_before_making_room
+  	[✅]: setMuteState                                 set_mute_state
+  	[✅]: supportDisplayNameCallLog                    support_display_name_call_log
+  	[✅]: synchronizeConnState                         synchronize_conn_state
+  	[❌]: telecomAppLabelProxyHsumAware                telecom_app_label_proxy_hsum_aware
+  	[✅]: telecomMainUserInBlockCheck                  telecom_main_user_in_block_check
+  	[✅]: telecomMainUserInGetRespondMessageApp        telecom_main_user_in_get_respond_message_app
+  	[✅]: telecomMainlineBlockedNumbersManager         telecom_mainline_blocked_numbers_manager
+  	[✅]: telecomResolveHiddenDependencies             telecom_resolve_hidden_dependencies
+  	[✅]: telephonyHasDefaultButTelecomDoesNot         telephony_has_default_but_telecom_does_not
+  	[✅]: transactionalCsVerifier                      transactional_cs_verifier
+  	[✅]: transactionalVideoState                      transactional_video_state
+  	[✅]: unregisterUnresolvableAccounts               unregister_unresolvable_accounts
+  	[✅]: useDeviceProvidedSerializedRingerVibration   use_device_provided_serialized_ringer_vibration
+  	[❌]: vibrationAccountsForMainSetting              vibration_accounts_for_main_setting
+  	[✅]: voipAppActionsSupport                        voip_app_actions_support
+  	[❌]: voipDndFocus                                 voip_dnd_focus
+Flag Configurations (module API - android.telecom): 
+  	[✅]: callConnectedIndicatorPreference    call_connected_indicator_preference
+  	[✅]: callDetailsGetAssociatedUserApi2    call_details_get_associated_user_api2
+  	[✅]: callEndpointRequestedApi            call_endpoint_requested_api
+  	[✅]: changeRttToAudio                    change_rtt_to_audio
+  	[✅]: deprecateSelfManagedCs              deprecate_self_managed_cs
+  	[✅]: enableAudioProcessingUseCase        enable_audio_processing_use_case
+  	[✅]: explicitCallTransfer                explicit_call_transfer
+  	[✅]: filterVoipCallLogs                  filter_voip_call_logs
+  	[✅]: getLastKnownCellIdentity            get_last_known_cell_identity
+  	[✅]: integratedCallLogsStage2            integrated_call_logs_stage2
+  	[✅]: isInExternalCall                    is_in_external_call
+  	[✅]: isUsingCrs                          is_using_crs
+  	[✅]: isUsingUnidirectionalVideoService   is_using_unidirectional_video_service
+  	[✅]: isUsingVideoRingback                is_using_video_ringback
+  	[✅]: localVoicemail                      local_voicemail
+  	[✅]: moveGetTtyModeToTelephonyManager    move_get_tty_mode_to_telephony_manager
+  	[✅]: multiPartyAnchorConf                multi_party_anchor_conf
+  	[❌]: optOutPremiumNetwork                opt_out_premium_network
+  	[✅]: phoneAccountChanged                 phone_account_changed
+  	[✅]: placeCallToAlternateNumber          place_call_to_alternate_number
+  	[✅]: promoteExtraDoNotLogCallToSystemApi promote_extra_do_not_log_call_to_system_api
+  	[✅]: releaseIconAsApi                    release_icon_as_api
+  	[✅]: remotelyHostedProperty              remotely_hosted_property
+  	[✅]: sendOriginalNumberOnPlaceCall       send_original_number_on_place_call
+  	[✅]: telecomMainlineApi                  telecom_mainline_api
+Flag Configurations (module bugfix - com.android.internal.telecom): 
+  	[❌]: addEscapeHatchForStuckVoip            add_escape_hatch_for_stuck_voip
+  	[❌]: callAudioRouteRf                      call_audio_route_rf
+  	[❌]: cleanupCallsInSelectAccount           cleanup_calls_in_select_account
+  	[✅]: connectionServiceBal                  connection_service_bal
+  	[✅]: delayRequestedHandleSelection         delay_requested_handle_selection
+  	[✅]: disconnectOnTimeoutWhileDisconnecting disconnect_on_timeout_while_disconnecting
+  	[❌]: disconnectVoipOnHoldFail              disconnect_voip_on_hold_fail
+TransactionManager: 
+  Pending Transactions:
+  Ongoing Transaction:
+  Completed Transactions:
+    [2026-07-02T13:10:18.598606] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+1] mS), (started -> completed : [+409] mS)
+    [2026-07-02T13:10:32.031180] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+0] mS), (started -> completed : [+78] mS)
+    [2026-07-02T13:11:53.707904] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+0] mS), (started -> completed : [+328] mS)
+    [2026-07-02T13:13:59.461023] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+0] mS), (started -> completed : [+61] mS)
+    [2026-07-02T13:40:04.919801] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+0] mS), (started -> completed : [+581] mS)
+    [2026-07-02T14:17:14.600123] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+0] mS), (started -> completed : [+906] mS)
+    [2026-07-02T15:13:26.713870] VerifyCallStateChangeTransaction: (result=[SUCCESS]), (created -> started : [+0] mS), (started -> completed : [+419] mS)
+Historical Events:
+  External CallTC@37 [Jul 2, 2026 9:28:51 PM](MO - outgoing)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:WhatsApp Call Presentation: Allowed
+    21:28:51.378 - CREATED:TSI.aNUC@ENg
+    21:28:51.396 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@ENs
+    21:28:51.418 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-ENs
+    21:28:51.418 - IS_EXTERNAL (true):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-ENs
+    21:28:51.422 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-ENs
+    21:28:51.424 - SET_DIALING (successful unknown call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-ENs
+    21:28:57.234 - SET_ACTIVE (active set explicitly):CSW.sA(cgws)@EPs
+    21:28:57.242 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut rsp_by_con]], Removed [[]], Added [[ hld]]):CSW.sCC(cgws)@EPw
+    21:29:36.129 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: () Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@EQM
+    21:29:36.143 - DESTROYED:CSW.rC->CM.pR(cgws)@EQQ
+    Timings (average for this call, milliseconds):
+      outgoing_time_to_dialing: 28.00
+  External CallTC@38 [Jul 2, 2026 9:33:04 PM](MO - outgoing)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Presentation: Allowed
+    21:33:04.331 - CREATED:TSI.aNUC@EQg
+    21:33:04.368 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@EQo
+    21:33:04.444 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EQo
+    21:33:04.444 - IS_EXTERNAL (true):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EQo
+    21:33:04.449 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EQo
+    21:33:04.451 - SET_DIALING (successful unknown call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EQo
+    21:33:38.479 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: (LOCAL) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@EYg
+    21:33:38.492 - LOG_CALL (number=*************,postDial=,pres=1,code=LOCAL):CSW.sDc(cgws)@EYg
+    21:33:38.503 - DESTROYED:CSW.rC->CM.pR(cgws)@EYs
+    Timings (average for this call, milliseconds):
+      outgoing_time_to_dialing: 83.00
+  External CallTC@39 [Jul 2, 2026 9:34:23 PM](MO - outgoing)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Presentation: Allowed
+    21:34:23.171 - CREATED:TSI.aNUC@EZg
+    21:34:23.186 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@EZo
+    21:34:23.236 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EZo
+    21:34:23.236 - IS_EXTERNAL (true):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EZo
+    21:34:23.239 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EZo
+    21:34:23.241 - SET_DIALING (successful unknown call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-EZo
+    21:34:32.722 - SET_ACTIVE (active set explicitly):CSW.sA(cgws)@Eg4
+    21:34:32.731 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut rsp_by_con]], Removed [[]], Added [[ hld]]):CSW.sCC(cgws)@EhA
+    21:35:58.765 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (REMOTE) Label: () Description: () Reason: (NORMAL) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@Ejw
+    21:35:58.779 - LOG_CALL (number=*************,postDial=,pres=1,code=REMOTE):CSW.sDc(cgws)@Ejw
+    21:35:58.788 - DESTROYED:CSW.rC->CM.pR(cgws)@Ej8
+    Timings (average for this call, milliseconds):
+      outgoing_time_to_dialing: 55.00
+  CallTC@40 [Jul 2, 2026 9:59:31 PM](MT - incoming)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Verstat: not Presentation: Allowed
+    21:59:31.639 - CREATED:TSI.aNIC(cgws)@Ek4
+    21:59:31.644 - BIND_CS (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):TSI.aNIC(cgws)@Ek4
+    21:59:31.742 - CS_BOUND (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):SBC.oSC(cgws)@ElA
+    21:59:31.743 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@ElA
+    21:59:31.804 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-ElA
+    21:59:31.807 - FILTERING_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-ElA
+    21:59:31.809 - DND_PRE_CHECK_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-ElA
+    21:59:31.810 - DND_PRE_CHECK_COMPLETED (false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-ElA
+    21:59:31.814 - SET_RINGING (successful incoming call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-ElA
+    21:59:31.835 - FILTERING_COMPLETED ([Allow, logged, notified, DND not suppressed]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-ElA
+    21:59:31.903 - FLASH_NOTIFICATION_START:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-ElA
+    21:59:31.980 - START_RINGER:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-ElA
+    21:59:32.044 - AUDIO_ROUTE (Entering audio route: AudioRoute[Type=TYPE_SPEAKER, Address=invalid, HA Pair Device=invalid] (active=true)):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->CARC.pM_SWITCH_FOCUS->CARC.pM_EXIT_PENDING_ROUTE(cgws/cast)@E-E-ElA
+    21:59:32.347 - START_VIBRATOR (hasVibrator=true, userRequestsVibrate=true, ringerMode=2, isVibrating=false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->ARP.hPE(cgws/cast)@E-E-ElA
+    21:59:41.870 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (MISSED) Label: () Description: () Reason: (INCOMING_MISSED) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@EmY
+    21:59:41.930 - LOG_CALL (number=*************,postDial=,pres=1,code=MISSED):CSW.sDc(cgws)@EmY
+    21:59:42.006 - DESTROYED:CSW.rC->CM.pR(cgws)@Emo
+    21:59:42.029 - FLASH_NOTIFICATION_STOP:CSW.sDc->CAMSM.pM_1002(cgws)@EmY
+    21:59:42.035 - STOP_RINGER:CSW.sDc->CAMSM.pM_1002(cgws)@EmY
+    21:59:42.036 - STOP_VIBRATOR:CSW.sDc->CAMSM.pM_1002(cgws)@EmY
+    Timings (average for this call, milliseconds):
+      bind_cs: 98.00
+      dnd_pre_check_completed: 1.00
+      filtering_completed: 28.00
+  External CallTC@41 [Jul 2, 2026 10:06:56 PM](MT - incoming)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Verstat: not Presentation: Allowed
+    22:06:56.119 - CREATED:TSI.aNIC(cgws)@En0
+    22:06:56.137 - BIND_CS (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):TSI.aNIC(cgws)@En0
+    22:06:56.256 - CS_BOUND (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):SBC.oSC(cgws)@En8
+    22:06:56.257 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@En8
+    22:06:56.324 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-En8
+    22:06:56.353 - FILTERING_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-En8
+    22:06:56.357 - DND_PRE_CHECK_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-En8
+    22:06:56.360 - DND_PRE_CHECK_COMPLETED (false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-En8
+    22:06:56.371 - SET_RINGING (successful incoming call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-En8
+    22:06:56.413 - FILTERING_COMPLETED ([Allow, logged, notified, DND not suppressed]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-En8
+    22:06:56.562 - FLASH_NOTIFICATION_START:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-En8
+    22:06:56.586 - START_RINGER:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-En8
+    22:06:56.768 - AUDIO_ROUTE (Entering audio route: AudioRoute[Type=TYPE_SPEAKER, Address=invalid, HA Pair Device=invalid] (active=true)):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->CARC.pM_SWITCH_FOCUS->CARC.pM_EXIT_PENDING_ROUTE(cgws/cast)@E-E-En8
+    22:06:57.080 - START_VIBRATOR (hasVibrator=true, userRequestsVibrate=true, ringerMode=2, isVibrating=false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->ARP.hPE(cgws/cast)@E-E-En8
+    22:07:08.301 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut rsp_by_con]], Removed [[]], Added [[ hld]]):CSW.sCC(cgws)@EqI
+    22:07:08.310 - SET_ACTIVE (active set explicitly):CSW.sA->CM.mCAA->CSFM.rF(cgws)@EqE
+    22:07:08.395 - IS_EXTERNAL (true):CSW.sCP(cgws)@EqQ
+    22:07:08.409 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):CSW.sCP(cgws)@EqQ
+    22:07:08.476 - FLASH_NOTIFICATION_STOP:CSW.sA->CM.mCAA->CSFM.rF->CAMSM.pM_1002(cgws)@EqE
+    22:07:08.483 - STOP_RINGER:CSW.sA->CM.mCAA->CSFM.rF->CAMSM.pM_1002(cgws)@EqE
+    22:07:08.499 - STOP_VIBRATOR:CSW.sA->CM.mCAA->CSFM.rF->CAMSM.pM_1002(cgws)@EqE
+    22:07:57.793 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: (LOCAL) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@Ers
+    22:07:57.813 - LOG_CALL (number=*************,postDial=,pres=1,code=LOCAL):CSW.sDc(cgws)@Ers
+    22:07:57.820 - DESTROYED:CSW.rC->CM.pR(cgws)@Er4
+    Timings (average for this call, milliseconds):
+      bind_cs: 119.00
+      dnd_pre_check_completed: 3.00
+      filtering_completed: 60.00
+  CallTC@42 [Jul 2, 2026 10:20:03 PM](MT - incoming)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Verstat: not Presentation: Allowed
+    22:20:03.084 - CREATED:TSI.aNIC(cgws)@Es4
+    22:20:03.088 - BIND_CS (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):TSI.aNIC(cgws)@Es4
+    22:20:03.137 - CS_BOUND (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):SBC.oSC(cgws)@Es8
+    22:20:03.139 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@Es8
+    22:20:03.171 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-Es8
+    22:20:03.174 - FILTERING_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-Es8
+    22:20:03.177 - DND_PRE_CHECK_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-Es8
+    22:20:03.178 - DND_PRE_CHECK_COMPLETED (false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-Es8
+    22:20:03.183 - SET_RINGING (successful incoming call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-Es8
+    22:20:03.207 - FILTERING_COMPLETED ([Allow, logged, notified, DND not suppressed]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-Es8
+    22:20:03.226 - FLASH_NOTIFICATION_START:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-Es8
+    22:20:03.228 - START_RINGER:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-Es8
+    22:20:03.296 - AUDIO_ROUTE (Entering audio route: AudioRoute[Type=TYPE_SPEAKER, Address=invalid, HA Pair Device=invalid] (active=true)):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->CARC.pM_SWITCH_FOCUS->CARC.pM_EXIT_PENDING_ROUTE(cgws/cast)@E-E-Es8
+    22:20:03.431 - START_VIBRATOR (hasVibrator=true, userRequestsVibrate=true, ringerMode=2, isVibrating=false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->ARP.hPE(cgws/cast)@E-E-Es8
+    22:20:10.717 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (MISSED) Label: () Description: () Reason: (INCOMING_MISSED) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@EuY
+    22:20:10.760 - LOG_CALL (number=*************,postDial=,pres=1,code=MISSED):CSW.sDc(cgws)@EuY
+    22:20:10.875 - DESTROYED:CSW.rC->CM.pR(cgws)@Euo
+    22:20:10.933 - FLASH_NOTIFICATION_STOP:CSW.sDc->CAMSM.pM_1002(cgws)@EuY
+    22:20:10.934 - STOP_RINGER:CSW.sDc->CAMSM.pM_1002(cgws)@EuY
+    22:20:10.936 - STOP_VIBRATOR:CSW.sDc->CAMSM.pM_1002(cgws)@EuY
+    Timings (average for this call, milliseconds):
+      bind_cs: 49.00
+      dnd_pre_check_completed: 1.00
+      filtering_completed: 33.00
+  External CallTC@43 [Jul 2, 2026 10:20:22 PM](MO - outgoing)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Presentation: Allowed
+    22:20:22.425 - CREATED:TSI.aNUC@Evs
+    22:20:22.439 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@Ev0
+    22:20:22.470 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-Ev0
+    22:20:22.471 - IS_EXTERNAL (true):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-Ev0
+    22:20:22.474 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-Ev0
+    22:20:22.476 - SET_DIALING (successful unknown call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-Ev0
+    22:20:30.239 - SET_ACTIVE (active set explicitly):CSW.sA(cgws)@E4U
+    22:20:30.249 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut rsp_by_con]], Removed [[]], Added [[ hld]]):CSW.sCC(cgws)@E4c
+    22:21:25.651 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (REMOTE) Label: () Description: () Reason: (NORMAL) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@E7Q
+    22:21:25.672 - LOG_CALL (number=*************,postDial=,pres=1,code=REMOTE):CSW.sDc(cgws)@E7Q
+    22:21:25.678 - DESTROYED:CSW.rC->CM.pR(cgws)@E7c
+    Timings (average for this call, milliseconds):
+      outgoing_time_to_dialing: 37.00
+  External CallTC@44 [Jul 2, 2026 11:09:23 PM](MT - incoming)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:************* Verstat: not Presentation: Allowed
+    23:09:23.390 - CREATED:TSI.aNIC(cgws)@E8g
+    23:09:23.398 - BIND_CS (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):TSI.aNIC(cgws)@E8g
+    23:09:23.465 - CS_BOUND (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}):SBC.oSC(cgws)@E8k
+    23:09:23.467 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@E8k
+    23:09:23.536 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-E8k
+    23:09:23.542 - FILTERING_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-E8k
+    23:09:23.546 - DND_PRE_CHECK_INITIATED:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-E8k
+    23:09:23.548 - DND_PRE_CHECK_COMPLETED (false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-E8k
+    23:09:23.555 - SET_RINGING (successful incoming call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-E8k
+    23:09:23.586 - FILTERING_COMPLETED ([Allow, logged, notified, DND not suppressed]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF(cgws/cast)@E-E-E8k
+    23:09:23.725 - FLASH_NOTIFICATION_START:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-E8k
+    23:09:23.726 - START_RINGER:(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002(cgws/cast)@E-E-E8k
+    23:09:23.890 - AUDIO_ROUTE (Entering audio route: AudioRoute[Type=TYPE_SPEAKER, Address=invalid, HA Pair Device=invalid] (active=true)):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->CARC.pM_SWITCH_FOCUS->CARC.pM_EXIT_PENDING_ROUTE(cgws/cast)@E-E-E8k
+    23:09:24.445 - START_VIBRATOR (hasVibrator=true, userRequestsVibrate=true, ringerMode=2, isVibrating=false):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->ICFG.sF->CAMSM.pM_2002->ARP.hPE(cgws/cast)@E-E-E8k
+    23:09:28.334 - SILENCE:TSI.sR(cgws)@E9k
+    23:09:28.335 - FLASH_NOTIFICATION_STOP:TSI.sR(cgws)@E9k
+    23:09:28.335 - STOP_RINGER:TSI.sR(cgws)@E9k
+    23:09:28.336 - STOP_VIBRATOR:TSI.sR(cgws)@E9k
+    23:09:28.342 - SILENCE:TSI.sR(cgws)@E9o
+    23:09:28.350 - CONNECTION_EVENT (request_ringer_silence_from_remote):CSW.oCE(cgws)@E9s
+    23:09:48.818 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut rsp_by_con]], Removed [[]], Added [[ hld]]):CSW.sCC(cgws)@E+w
+    23:09:48.822 - IS_EXTERNAL (true):CSW.sCP(cgws)@E+4
+    23:09:48.837 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):CSW.sCP(cgws)@E+4
+    23:09:48.915 - SET_ACTIVE (active set explicitly):CSW.sA->CM.mCAA->CSFM.rF(cgws)@E+s
+    23:12:51.670 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (REMOTE) Label: () Description: () Reason: (NORMAL) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@E/8
+    23:12:51.683 - LOG_CALL (number=*************,postDial=,pres=1,code=REMOTE):CSW.sDc(cgws)@E/8
+    23:12:51.691 - DESTROYED:CSW.rC->CM.pR(cgws)@FAI
+    Timings (average for this call, milliseconds):
+      bind_cs: 67.00
+      dnd_pre_check_completed: 2.00
+      filtering_completed: 44.00
+  External CallTC@45 [Jul 3, 2026 12:09:10 AM](MO - outgoing)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:WhatsApp Call Presentation: Allowed
+    00:09:10.293 - CREATED:TSI.aNUC@FA8
+    00:09:10.306 - START_CONNECTION (null via:com.google.wear.services):SBC.oSC(cgws)@FBA
+    00:09:10.341 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-FBA
+    00:09:10.342 - IS_EXTERNAL (true):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-FBA
+    00:09:10.345 - PROPERTY_CHANGE (Current: [[ xtrnl]], Removed [[]], Added [[ xtrnl]]):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-FBA
+    00:09:10.347 - SET_DIALING (successful unknown call):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-FBA
+    00:09:17.387 - SET_ACTIVE (active set explicitly):CSW.sA(cgws)@FDY
+    00:09:17.396 - CAPABILITY_CHANGE (Current: [[ hld sup_hld mut rsp_by_con]], Removed [[]], Added [[ hld]]):CSW.sCC(cgws)@FDc
+    00:12:19.173 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (LOCAL) Label: () Description: () Reason: () Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@FEA
+    00:12:19.187 - DESTROYED:CSW.rC->CM.pR(cgws)@FEE
+    Timings (average for this call, milliseconds):
+      outgoing_time_to_dialing: 41.00
+  CallTC@46 [Jul 3, 2026 1:19:34 AM](MO - outgoing)(User=UserHandle{0})
+  	>>>Target PhoneAccount: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0} (hfp_companion)
+  	>>>Conn mgr: ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}
+  	To address: tel:********** Presentation: Allowed
+    01:19:34.192 - CREATED (com.google.android.telecomui;requestedAcct:none, selfMgd:false):TSI.pC(cgat)@FSI
+    01:19:34.293 - SET_CONNECTING (ComponentInfo{com.google.wear.services/com.google.wear.services.calling.client.CompanionClientConnectionService}, ***, UserHandle{0}):TSI.pC->CILH.sL->CILH.oQC->CM.sOCPA->CM.sOPA.iCA->CM.dSPA->CM.dMRFC->CM.mROC->CM.pASP(cgat)@FSI
+    01:19:34.410 - AUDIO_ROUTE (Entering audio route: AudioRoute[Type=TYPE_SPEAKER, Address=invalid, HA Pair Device=invalid] (active=true)):TSI.pC->CILH.sL->CILH.oQC->CM.sOCPA->CM.sOPA.iCA->CM.dSPA->CM.dMRFC->CM.mROC->CM.pASP->CAMSM.pM_2001->CARC.pM_SWITCH_FOCUS->CARC.pM_EXIT_PENDING_ROUTE(cgat)@FSI
+    01:19:34.466 - START_CONNECTION (tel:********** via:com.google.wear.services):SBC.oSC(cgws)@FSg
+    01:19:34.849 - SET_DIALING (dialing set explicitly):(...->CS.crCo->H.CS.crCo->H.CS.crCo.pICR)->CSW.hCCC(cgws/cast)@E-E-FSg
+    01:19:35.707 - CAPABILITY_CHANGE (Current: [[ sup_hld mut rsp_by_con]], Removed [[]], Added [[ sup_hld mut rsp_by_con]]):CSW.sCC(cgws)@FTU
+    01:19:36.211 - CALL_EVENT (request_active_companion_peripheral_extra):ICA.sCE(cgad)@FUg
+    01:19:38.428 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FX4
+    01:19:38.429 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FX4
+    01:19:41.420 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FX8
+    01:19:41.421 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FX8
+    01:19:44.420 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYA
+    01:19:44.421 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYA
+    01:19:45.419 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYE
+    01:19:45.420 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYE
+    01:19:47.421 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYI
+    01:19:47.421 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYI
+    01:19:49.421 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYQ
+    01:19:49.422 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYQ
+    01:19:50.420 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYU
+    01:19:50.420 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYU
+    01:19:51.420 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYc
+    01:19:51.421 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYc
+    01:19:52.418 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FYg
+    01:19:52.419 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FYg
+    01:19:54.146 - SET_DISCONNECTED (disconnected set explicitly> DisconnectCause [ Code: (BUSY) Label: (Line busy) Description: () Reason: (BUSY) Tone: (-1)  TelephonyCause: 36/65535 ImsReasonInfo: null]):CSW.sDc(cgws)@FZg
+    01:19:54.234 - LOG_CALL (number=**********,postDial=,pres=1,code=BUSY):CSW.sDc(cgws)@FZg
+    01:19:54.278 - BT_QUALITY_REPORT (choppy=true):ICA.sCE(cgab)@FZo
+    01:19:54.290 - CALL_EVENT (android.telecom.event.BLUETOOTH_CALL_QUALITY_REPORT):ICA.sCE(cgab)@FZo
+    01:19:54.349 - DESTROYED:CSW.rC->CM.pR(cgws)@FZw
+    Timings (average for this call, milliseconds):
+      outgoing_time_to_dialing: 383.00

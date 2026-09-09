@@ -1,0 +1,242 @@
+09-08 00:28:32.248 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.poc/.ServiceBindExploitActivity'
+09-08 00:28:32.309  1431  2779 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{8e31b5 #384 type=standard A=10385:com.vrp.poc} activity=ActivityRecord{234842604 u0 com.vrp.poc/.ServiceBindExploitActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@42689679 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@42689679 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-08 00:28:32.309  1431  2779 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.poc/.ServiceBindExploitActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+09-08 00:28:32.309  2052  2074 V WindowManagerShell: Transition requested (#1795): android.os.BinderProxy@f9879dd TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=384 effectiveUid=10385 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.poc/.ServiceBindExploitActivity } baseActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity} topActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity} origActivity=null realActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=347609820 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@6fb6952} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{a8f0423 com.vrp.poc.ServiceBindExploitActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 1795 }
+09-08 00:28:32.320  1431  1502 I ActivityManager: Start proc 15352:com.vrp.poc/u0a385 for next-top-activity {com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity}
+09-08 00:28:32.337  1431  1486 V WindowManager: Sent Transition (#1795) createdAt=09-08 00:28:32.302 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=384 effectiveUid=10385 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.poc/.ServiceBindExploitActivity } baseActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity} topActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity} origActivity=null realActivity=ComponentInfo{com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=347609820 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{5daa9ab Task{8e31b5 #384 type=standard A=10385:com.vrp.poc}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{30e8808 com.vrp.poc.ServiceBindExploitActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 1795 }
+09-08 00:28:32.370 15352 15384 D ServiceBind: --- HardwareInfo (com.google.android.hardwareinfo) ---
+09-08 00:28:32.372 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.380 15352 15352 D ServiceBind: [BOUND!] HardwareInfo -> com.google.android.hardwareinfo/.HardwareInfoQueryService
+09-08 00:28:32.380 15352 15352 D ServiceBind: [INTERFACE] com.google.android.hardwareinfo.IHardwareInfoService
+09-08 00:28:32.381 15352 15352 D ServiceBind: [TX-1] SecurityException: Caller does not have permission to call this servi...
+09-08 00:28:32.382 15352 15352 D ServiceBind: [TX-2] returned false
+09-08 00:28:32.382 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.382 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.382 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.383 15352 15384 D ServiceBind: 
+09-08 00:28:32.383 15352 15384 D ServiceBind: --- Battery (com.google.android.turboadapter) ---
+09-08 00:28:32.386 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.390 15352 15352 D VRI[ServiceBindExploitActivity]: WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+09-08 00:28:32.391  1431  6903 D CoreBackPreview: Window{7cf0367 u0 com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@baef85f, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-08 00:28:32.399  1431  6903 D WindowManager: setClientSurface Surface(name=VRI-com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity#7628)/@0x1a6e2ac for 7cf0367 com.vrp.poc/com.vrp.poc.ServiceBindExploitActivity
+09-08 00:28:32.401 15352 15352 I Surface : Creating surface for consumer VRI[ServiceBindExploitActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+09-08 00:28:32.413 15352 15352 D ServiceBind: [BOUND!] Battery -> com.google.android.turboadapter/.GoogleBatteryService
+09-08 00:28:32.414 15352 15352 D ServiceBind: [INTERFACE] com.google.android.turboadapter.IGoogleBatteryService
+09-08 00:28:32.414 15352 15352 D ServiceBind: [TX-1] RuntimeException: bad array lengths
+09-08 00:28:32.415 15352 15352 D ServiceBind: [TX-2] OK size=4 (no extra data after exception code)
+09-08 00:28:32.415 15352 15352 D ServiceBind: [TX-3] RuntimeException: bad array lengths
+09-08 00:28:32.415 15352 15352 D ServiceBind: [TX-4] RuntimeException: bad array lengths
+09-08 00:28:32.415 15352 15352 D ServiceBind: [TX-5] RuntimeException: bad array lengths
+09-08 00:28:32.416  1431  1486 I ActivityTaskManager: Displayed com.vrp.poc/.ServiceBindExploitActivity for user 0: +115ms
+09-08 00:28:32.417 15352 15384 D ServiceBind: 
+09-08 00:28:32.417 15352 15384 D ServiceBind: --- Power (com.google.android.turboadapter) ---
+09-08 00:28:32.420 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.424 15352 15352 D ServiceBind: [BOUND!] Power -> com.google.android.turboadapter/.GooglePowerService
+09-08 00:28:32.425 15352 15352 D ServiceBind: [INTERFACE] com.google.android.turboadapter.IGooglePower
+09-08 00:28:32.427 15352 15352 D ServiceBind: [TX-1] SecurityException: Access denied.
+09-08 00:28:32.428 15352 15352 D ServiceBind: [TX-2] OK size=4 (no extra data after exception code)
+09-08 00:28:32.428 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.428 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.428 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.430 15352 15384 D ServiceBind: 
+09-08 00:28:32.430 15352 15384 D ServiceBind: --- Anomaly (com.google.android.turboadapter) ---
+09-08 00:28:32.434 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.458 15352 15352 D ServiceBind: [BOUND!] Anomaly -> com.google.android.turboadapter/.GoogleAnomalyService
+09-08 00:28:32.459 15352 15352 D ServiceBind: [INTERFACE] com.google.android.turboadapter.IGoogleAnomalyService
+09-08 00:28:32.459 15352 15352 D ServiceBind: [TX-1] SecurityException: Access denied.
+09-08 00:28:32.459 15352 15352 D ServiceBind: [TX-2] SecurityException: Access denied.
+09-08 00:28:32.459 15352 15352 D ServiceBind: [TX-3] RuntimeException: bad array lengths
+09-08 00:28:32.460 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.460 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.463 15352 15384 D ServiceBind: 
+09-08 00:28:32.463 15352 15384 D ServiceBind: --- Impulse (com.google.android.pixelsystemservice) ---
+09-08 00:28:32.466 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.491 15352 15352 D ServiceBind: [BOUND!] Impulse -> com.google.android.pixelsystemservice/com.google.android.apps.pixel.impulse.ImpulseGrpcService
+09-08 00:28:32.491 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.492 15352 15352 D ServiceBind: [TX-1] returned false
+09-08 00:28:32.492 15352 15352 D ServiceBind: [TX-2] returned false
+09-08 00:28:32.492 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.493 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.493 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.494 15352 15384 D ServiceBind: 
+09-08 00:28:32.494 15352 15384 D ServiceBind: --- PixelGrpc (com.google.android.pixelsystemservice) ---
+09-08 00:28:32.495 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.508 15352 15352 D ServiceBind: [BOUND!] PixelGrpc -> com.google.android.pixelsystemservice/com.google.android.pixelsystemadapter.GrpcEndpointService
+09-08 00:28:32.508 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.509 15352 15352 D ServiceBind: [TX-1] returned false
+09-08 00:28:32.509 15352 15352 D ServiceBind: [TX-2] returned false
+09-08 00:28:32.509 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.509 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.509 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.510 15352 15384 D ServiceBind: 
+09-08 00:28:32.510 15352 15384 D ServiceBind: --- FitHistory (com.google.android.gms) ---
+09-08 00:28:32.512 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.525 15352 15352 D ServiceBind: [BOUND!] FitHistory -> com.google.android.gms/.fitness.service.history.FitHistoryBroker
+09-08 00:28:32.525 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.525 15352 15352 D ServiceBind: [TX-1] returned false
+09-08 00:28:32.526 15352 15352 D ServiceBind: [TX-2] returned false
+09-08 00:28:32.526 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.526 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.526 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.528 15352 15384 D ServiceBind: 
+09-08 00:28:32.528 15352 15384 D ServiceBind: --- FitConfig (com.google.android.gms) ---
+09-08 00:28:32.530 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.541 15352 15352 D ServiceBind: [BOUND!] FitConfig -> com.google.android.gms/.fitness.service.config.FitConfigBroker
+09-08 00:28:32.542 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.542 15352 15352 D ServiceBind: [TX-1] returned false
+09-08 00:28:32.542 15352 15352 D ServiceBind: [TX-2] returned false
+09-08 00:28:32.543 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.543 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.543 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.544 15352 15384 D ServiceBind: 
+09-08 00:28:32.544 15352 15384 D ServiceBind: --- FitInternal (com.google.android.gms) ---
+09-08 00:28:32.545 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.558 15352 15352 D ServiceBind: [BOUND!] FitInternal -> com.google.android.gms/.fitness.service.internal.FitInternalBroker
+09-08 00:28:32.558 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.559 15352 15352 D ServiceBind: [TX-1] returned false
+09-08 00:28:32.559 15352 15352 D ServiceBind: [TX-2] returned false
+09-08 00:28:32.559 15352 15352 D ServiceBind: [TX-3] returned false
+09-08 00:28:32.559 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.559 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.560 15352 15384 D ServiceBind: 
+09-08 00:28:32.561 15352 15384 D ServiceBind: --- AuthGetToken (com.google.android.gms) ---
+09-08 00:28:32.562 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.575 15352 15352 D ServiceBind: [BOUND!] AuthGetToken -> com.google.android.gms/.auth.GetToken
+09-08 00:28:32.575 15352 15352 D ServiceBind: [INTERFACE] com.google.android.auth.IAuthManagerService
+09-08 00:28:32.577 15352 15352 D ServiceBind: [TX-1] IllegalArgumentException: the name must not be empty: null
+09-08 00:28:32.577 15352 15352 D ServiceBind: [TX-2] RuntimeException: bad array lengths
+09-08 00:28:32.578 15352 15352 D ServiceBind: [TX-3] NullPointerException: Attempt to read from field 'java.lang.String com.g...
+09-08 00:28:32.578 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.579 15352 15352 D ServiceBind: [TX-5] NullPointerException: Attempt to read from field 'java.lang.String andro...
+09-08 00:28:32.580 15352 15384 D ServiceBind: 
+09-08 00:28:32.580 15352 15384 D ServiceBind: --- AccountData (com.google.android.gms) ---
+09-08 00:28:32.581 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.592 15352 15352 D ServiceBind: [BOUND!] AccountData -> com.google.android.gms/.auth.account.be.legacy.GoogleAccountDataService
+09-08 00:28:32.592 15352 15352 D ServiceBind: [INTERFACE] com.google.android.gms.auth.firstparty.dataservice.IGoogleAccountDataService
+09-08 00:28:32.592 15352 15352 D ServiceBind: [TX-1] IllegalArgumentException: the name must not be empty: null
+09-08 00:28:32.595 15352 15352 D ServiceBind: [TX-2] RuntimeException: bad array lengths
+09-08 00:28:32.595 15352 15352 D ServiceBind: [TX-3] RuntimeException: bad array lengths
+09-08 00:28:32.596 15352 15352 D ServiceBind: [TX-4] RuntimeException: bad array lengths
+09-08 00:28:32.596 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.597 15352 15384 D ServiceBind: 
+09-08 00:28:32.597 15352 15384 D ServiceBind: --- FRP (com.google.android.gms) ---
+09-08 00:28:32.599 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.608 15352 15352 D ServiceBind: [BOUND!] FRP -> com.google.android.gms/.auth.frp.FrpService
+09-08 00:28:32.609 15352 15352 D ServiceBind: [INTERFACE] com.google.android.gms.auth.frp.IFrpService
+09-08 00:28:32.611 15352 15352 D ServiceBind: [TX-1] RuntimeException: bad array lengths
+09-08 00:28:32.611 15352 15352 D ServiceBind: [TX-2] RuntimeException: bad array lengths
+09-08 00:28:32.612 15352 15352 D ServiceBind: [TX-3] RuntimeException: bad array lengths
+09-08 00:28:32.612 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.613 15352 15352 D ServiceBind: [TX-5] RuntimeException: bad array lengths
+09-08 00:28:32.614 15352 15384 D ServiceBind: 
+09-08 00:28:32.614 15352 15384 D ServiceBind: --- AuthProxy (com.google.android.gms) ---
+09-08 00:28:32.615 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.625 15352 15352 D ServiceBind: [BOUND!] AuthProxy -> com.google.android.gms/.auth.api.proxy.AuthService
+09-08 00:28:32.625 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.632 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.634 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.636 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.637 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.639 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.640 15352 15384 D ServiceBind: 
+09-08 00:28:32.640 15352 15384 D ServiceBind: --- Location (com.google.android.gms) ---
+09-08 00:28:32.642 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.658 15352 15352 D ServiceBind: [BOUND!] Location -> com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService
+09-08 00:28:32.658 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.660 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.662 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.664 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.665 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.667 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.668 15352 15384 D ServiceBind: 
+09-08 00:28:32.668 15352 15384 D ServiceBind: --- LocationSharing (com.google.android.gms) ---
+09-08 00:28:32.669 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.675 15352 15352 D ServiceBind: [BOUND!] LocationSharing -> com.google.android.gms/.locationsharing.service.LocationSharingService
+09-08 00:28:32.675 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.677 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.679 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.680 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.682 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.683 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.685 15352 15384 D ServiceBind: 
+09-08 00:28:32.685 15352 15384 D ServiceBind: --- Payment (com.google.android.gms) ---
+09-08 00:28:32.686 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.692 15352 15352 D ServiceBind: [BOUND!] Payment -> com.google.android.gms/.wallet.service.PaymentService
+09-08 00:28:32.692 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.694 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.696 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.698 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.699 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.701 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.702 15352 15384 D ServiceBind: 
+09-08 00:28:32.702 15352 15384 D ServiceBind: --- Address (com.google.android.gms) ---
+09-08 00:28:32.703 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.708 15352 15352 D ServiceBind: [BOUND!] Address -> com.google.android.gms/.wallet.service.address.AddressService
+09-08 00:28:32.709 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.710 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.712 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.714 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.715 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.717 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.718 15352 15384 D ServiceBind: 
+09-08 00:28:32.718 15352 15384 D ServiceBind: --- IdentityCred (com.google.android.gms) ---
+09-08 00:28:32.719 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.741 15352 15352 D ServiceBind: [BOUND!] IdentityCred -> com.google.android.gms/.identitycredentials.service.IdentityCredentialApiService
+09-08 00:28:32.742 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.744 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.745 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.747 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.748 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.750 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.751 15352 15384 D ServiceBind: 
+09-08 00:28:32.751 15352 15384 D ServiceBind: --- Kids (com.google.android.gms) ---
+09-08 00:28:32.752 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.775 15352 15352 D ServiceBind: [BOUND!] Kids -> com.google.android.gms/.kids.chimera.KidsServiceProxy
+09-08 00:28:32.775 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.777 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.779 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.780 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.782 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.783 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.784 15352 15384 D ServiceBind: 
+09-08 00:28:32.784 15352 15384 D ServiceBind: --- Checkin (com.google.android.gms) ---
+09-08 00:28:32.785 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.792 15352 15352 D ServiceBind: [BOUND!] Checkin -> com.google.android.gms/.checkin.CheckinApiService
+09-08 00:28:32.792 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.794 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.796 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.797 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.799 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.801 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.802 15352 15384 D ServiceBind: 
+09-08 00:28:32.802 15352 15384 D ServiceBind: --- MDM (com.google.android.gms) ---
+09-08 00:28:32.803 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.809 15352 15352 D ServiceBind: [BOUND!] MDM -> com.google.android.gms/.mdm.services.DeviceManagerApiService
+09-08 00:28:32.809 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.811 15352 15352 D ServiceBind: [TX-1] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.813 15352 15352 D ServiceBind: [TX-2] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.814 15352 15352 D ServiceBind: [TX-3] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.816 15352 15352 D ServiceBind: [TX-4] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.818 15352 15352 D ServiceBind: [TX-5] DeadObjectException: Transaction failed on small parcel; remote process...
+09-08 00:28:32.819 15352 15384 D ServiceBind: 
+09-08 00:28:32.819 15352 15384 D ServiceBind: --- Backup (com.google.android.gms) ---
+09-08 00:28:32.820 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.825 15352 15352 D ServiceBind: [BOUND!] Backup -> com.google.android.gms/.backup.BackupAccountManagerService
+09-08 00:28:32.826 15352 15352 D ServiceBind: [INTERFACE] com.google.android.gms.backup.IBackupAccountManagerService
+09-08 00:28:32.828 15352 15352 D ServiceBind: [TX-1] RuntimeException: bad array lengths
+09-08 00:28:32.828 15352 15352 D ServiceBind: [TX-2] OK size=4 (no extra data after exception code)
+09-08 00:28:32.829 15352 15352 D ServiceBind: [TX-3] RuntimeException: bad array lengths
+09-08 00:28:32.829 15352 15352 D ServiceBind: [TX-4] returned false
+09-08 00:28:32.829 15352 15352 D ServiceBind: [TX-5] returned false
+09-08 00:28:32.832 15352 15384 D ServiceBind: 
+09-08 00:28:32.832 15352 15384 D ServiceBind: --- CameraStream (com.google.android.apps.camera.services) ---
+09-08 00:28:32.833 15352 15384 D ServiceBind: [BIND-OK] Binding initiated
+09-08 00:28:32.977 15352 15352 D ServiceBind: [BOUND!] CameraStream -> com.google.android.apps.camera.services/.streamprovider.service.StreamProviderService
+09-08 00:28:32.980 15352 15352 D ServiceBind: [INTERFACE] 
+09-08 00:28:32.982 15352 15352 D ServiceBind: [TX-1] SecurityException: Calling UID 10385 is not allowed to access this se...
+09-08 00:28:32.983 15352 15352 D ServiceBind: [TX-2] SecurityException: Calling UID 10385 is not allowed to access this se...
+09-08 00:28:32.983 15352 15352 D ServiceBind: [TX-3] SecurityException: Calling UID 10385 is not allowed to access this se...
+09-08 00:28:32.984 15352 15352 D ServiceBind: [TX-4] SecurityException: Calling UID 10385 is not allowed to access this se...
+09-08 00:28:32.984 15352 15352 D ServiceBind: [TX-5] SecurityException: Calling UID 10385 is not allowed to access this se...
+09-08 00:28:32.987 15352 15384 D ServiceBind: 
+09-08 00:28:32.987 15352 15384 D ServiceBind: === ALL SERVICE BINDING TESTS COMPLETE ===
