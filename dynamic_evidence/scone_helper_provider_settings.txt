@@ -1,0 +1,4 @@
+Row: 0 KEY=version, VALUE=1
+Row: 1 KEY=feature_control, VALUE=off
+Row: 2 KEY=on_device_notifications, VALUE=on
+Row: 3 KEY=d2d_notifications, VALUE=off
