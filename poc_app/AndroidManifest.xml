@@ -766,5 +766,85 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".DriveStorageLeakActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.DRIVE_STORAGE_LEAK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".YouTubeOAuthInterceptActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.google.android.apps.youtube"
+                      android:host="oauth2redirect" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="vnd.youtube.gdi" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".YouTubeMediaSpyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".YTMusicSpyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".TLPEInCallServiceActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".BluetoothMediaSpyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ZeroPermProviderProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AGSAOAuthInterceptActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.google.android.apps.gsa.gal"
+                      android:host="oauth2redirect" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CastOAuthInterceptActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="comgooglecast"
+                      android:host="chromecast.auth.com"
+                      android:pathPattern="/done" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="comgooglecast"
+                      android:host="offers"
+                      android:pathPattern="/end" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
