@@ -13,6 +13,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="com.google.android.googlequicksearchbox.permission.LENS_SERVICE" />
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="com.google.wear.permission.PUSH_WATCH_FACES" />
+    <uses-permission android:name="com.google.wear.permission.SET_PUSHED_WATCH_FACE_AS_ACTIVE" />
 
     <queries>
         <package android:name="com.google.android.apps.scone" />
@@ -888,6 +890,26 @@
 
         <activity
             android:name=".PixelWatchSettingsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".WearSettingsLeakActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".WearSettingsLeakV2Activity"
+            android:exported="true" />
+
+        <activity
+            android:name=".WatchFacePushActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SconeProviderLeakActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".PixelWatchSettingsLeakActivity"
             android:exported="true" />
 
         <activity

@@ -1,0 +1,37 @@
+09-10 09:13:48.495  6601  6617 I VRP_PWSP: SETTING: raise_to_talk [1001] = DISABLED
+09-10 09:13:48.496  6601  6617 I VRP_PWSP: SETTING: raise_to_talk_mediated [1002] = DISABLED
+09-10 09:13:48.498  6601  6617 I VRP_PWSP: SETTING: raise_to_talk_supported [1003] = DISABLED
+09-10 09:13:48.499  6601  6617 I VRP_PWSP: SETTING: raise_to_talk_gemini_enabled [1004] = DISABLED
+09-10 09:13:48.500  6601  6617 I VRP_PWSP: SETTING: raise_to_talk_sensitivity [1006] = NOT SET
+09-10 09:13:48.501  6601  6617 I VRP_PWSP: SETTING: raise_to_talk_indicator [1007] = NOT SET
+09-10 09:13:48.501  6601  6617 I VRP_PWSP: SETTING: raise_to_talk_triggered [1008] = NOT SET
+09-10 09:13:48.502  6601  6617 I VRP_PWSP: SETTING: adaptive_charging [2001] = ENABLED
+09-10 09:13:48.503  6601  6617 I VRP_PWSP: SETTING: smart_reply_ai_enabled [3001] = DISABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: SETTING: auto_bedtime_mode_supported [4004] = ENABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: === VRP #46: PixelWatch Settings Provider Zero-Perm Leak ===
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: PoC UID: 10156
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: PID: 6601
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: 
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: --- PixelWatchSettingsProvider (zero-perm read) ---
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: Provider: content://com.google.android.wearable.pixel.settings
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: writePermission: android.permission.WRITE_SECURE_SETTINGS
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: readPermission: NONE (missing!)
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: 
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk [1001]: DISABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk_mediated [1002]: DISABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk_supported [1003]: DISABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk_gemini_enabled [1004]: DISABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk_sensitivity [1006]: NOT SET
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk_indicator [1007]: NOT SET
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   raise_to_talk_triggered [1008]: NOT SET
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   adaptive_charging [2001]: ENABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   smart_reply_ai_enabled [3001]: DISABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   auto_bedtime_mode_supported [4004]: ENABLED
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: 
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: --- SUMMARY ---
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: Settings read: 10/10
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: Provider runs as UID 1000 (system)
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: No readPermission declared in manifest
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: writePermission = WRITE_SECURE_SETTINGS (system only)
+09-10 09:13:48.504  6601  6617 I VRP_PWSP: IMPACT: Zero-permission app reads AI/ML feature status,
+09-10 09:13:48.504  6601  6617 I VRP_PWSP:   charging preferences, bedtime mode config

@@ -1,0 +1,62 @@
+--------- beginning of main
+09-10 08:42:00.274  2443  2503 I VRP_WEARSET: SETTING: play_store_availability = 1
+09-10 08:42:00.277  2443  2503 I VRP_WEARSET: SETTING: bluetooth_mode = 1
+09-10 08:42:00.283  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.google.android.gm
+09-10 08:42:00.285  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.apps.messaging (3 channels)
+09-10 08:42:00.287  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.dialer (2 channels)
+09-10 08:42:00.289  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.calendar (2 channels)
+09-10 08:42:00.291  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.google.android.contacts
+09-10 08:42:00.293  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.keep (3 channels)
+09-10 08:42:00.294  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.apps.maps (6 channels)
+09-10 08:42:00.296  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.google.android.apps.photos
+09-10 08:42:00.298  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.google.android.apps.youtube.music
+09-10 08:42:00.300  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.apps.safetyhub (2 channels)
+09-10 08:42:00.301  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.wearable.assistant (3 channels)
+09-10 08:42:00.303  2443  2503 I VRP_WEARSET: INSTALLED: com.google.android.apps.walletnfcrel (3 channels)
+09-10 08:42:00.312  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.google.android.apps.fitness
+09-10 08:42:00.314  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.chase.sig.android
+09-10 08:42:00.316  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.paypal.android.p2pmobile
+09-10 08:42:00.318  2443  2503 I VRP_WEARSET: INSTALLED: com.whatsapp (3 channels)
+09-10 08:42:00.319  2443  2503 I VRP_WEARSET: NOT_INSTALLED: org.thoughtcrime.securesms
+09-10 08:42:00.322  2443  2503 I VRP_WEARSET: NOT_INSTALLED: com.tinder
+09-10 08:42:00.324  2443  2503 I VRP_WEARSET: CHANNEL: com.google.android.apps.messaging #0 group= size=308
+09-10 08:42:00.325  2443  2503 I VRP_WEARSET: CHANNEL: com.google.android.apps.messaging #1 group= size=284
+09-10 08:42:00.325  2443  2503 I VRP_WEARSET: CHANNEL: com.google.android.apps.messaging #2 group=Default settings size=348
+09-10 08:42:00.327  2443  2503 I VRP_WEARSET: CHANNEL: com.google.android.dialer #0 group= size=268
+09-10 08:42:00.327  2443  2503 I VRP_WEARSET: CHANNEL: com.google.android.dialer #1 group= size=256
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: === Wearable SettingsProvider Zero-Permission Leak ===
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: PoC app UID: 10156
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: 
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: --- GLOBAL SETTINGS (zero-permission read) ---
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   play_store_availability = 1
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   bluetooth_mode = 1
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: 
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: --- APP ENUMERATION (bypasses package visibility) ---
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.google.android.gm
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.apps.messaging (3 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.dialer (2 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.calendar (2 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.google.android.contacts
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.keep (3 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.apps.maps (6 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.google.android.apps.photos
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.google.android.apps.youtube.music
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.apps.safetyhub (2 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.wearable.assistant (3 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.google.android.apps.walletnfcrel (3 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.google.android.apps.fitness
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.chase.sig.android
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.paypal.android.p2pmobile
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   INSTALLED: com.whatsapp (3 channels)
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: org.thoughtcrime.securesms
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   NOT INSTALLED: com.tinder
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   Total: 9 installed, 9 not installed
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: 
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET: --- NOTIFICATION CHANNEL DETAILS ---
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   com.google.android.apps.messaging:
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:     Channel 0: group='', data_size=308 bytes
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:     Channel 1: group='', data_size=284 bytes
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:     Channel 2: group='Default settings', data_size=348 bytes
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:   com.google.android.dialer:
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:     Channel 0: group='', data_size=268 bytes
+09-10 08:42:00.328  2443  2503 I VRP_WEARSET:     Channel 1: group='', data_size=256 bytes

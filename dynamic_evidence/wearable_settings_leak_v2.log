@@ -1,0 +1,214 @@
+--------- beginning of main
+09-10 09:00:15.105  4414  4430 I VRP_WEARSET2: GSETTINGS: client_id = android-google
+09-10 09:00:15.105  4414  4430 I VRP_WEARSET2: GSETTINGS: user_full_data_backup_aware = 1
+09-10 09:00:15.105  4414  4430 I VRP_WEARSET2: GSETTINGS: backup_enabled:com.android.calllogbackup = 1
+09-10 09:00:15.105  4414  4430 I VRP_WEARSET2: GSETTINGS: backup_encryption_opt_in_displayed = 1
+09-10 09:00:15.105  4414  4430 I VRP_WEARSET2: GSETTINGS: network_location_opt_in = 0
+09-10 09:00:15.105  4414  4430 I VRP_WEARSET2: GSETTINGS: use_location_for_services = 1
+09-10 09:00:15.112  4414  4430 I VRP_WEARSET2: WEARSETTING: play_store_availability = 1
+09-10 09:00:15.114  4414  4430 I VRP_WEARSET2: WEARSETTING: bluetooth_mode = 1
+09-10 09:00:15.117  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.gm
+09-10 09:00:15.120  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.apps.messaging (3 channels)
+09-10 09:00:15.121  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.messaging id=bugle_broadcast_receiver_channel name=Background tasks importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.121  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.messaging id=bugle_misc_channel name=Other notifications importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.121  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.messaging id=bugle_default_channel name=Incoming messages importance=4 group=_bugle_default_settings_group sound=content://settings/system/notification_sound
+09-10 09:00:15.123  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.dialer (2 channels)
+09-10 09:00:15.124  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.dialer id=incall_channel_id name=Ongoing calls importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.125  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.dialer id=missed_call name=Missed calls importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.127  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.calendar (2 channels)
+09-10 09:00:15.128  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.calendar id=TASKS name=Tasks notifications importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.128  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.calendar id=REMINDERS name=Calendar notifications importance=4 group=CALENDAR_GROUP sound=content://settings/system/notification_sound
+09-10 09:00:15.131  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.contacts
+09-10 09:00:15.133  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.keep (3 channels)
+09-10 09:00:15.134  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.keep id=Others name=Others importance=1 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.134  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.keep id=Reminders name=Reminders importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.134  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.keep id=SharedNotes name=Shared notes importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.136  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.apps.maps (6 channels)
+09-10 09:00:15.137  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.maps id=1_2 name=Navigation urgent updates importance=4 group=null sound=null
+09-10 09:00:15.137  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.maps id=1_foreground_1 name=Navigation importance=3 group=null sound=null
+09-10 09:00:15.137  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.maps id=OtherChannel name=Other notifications importance=2 group=null sound=null
+09-10 09:00:15.138  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.maps id=headsup_error name=Heads-up navigation errors importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.138  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.maps id=navigation_v2 name=Navigation instructions importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.138  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.maps id=offline name=Offline notifications importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.140  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.apps.photos
+09-10 09:00:15.142  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.apps.youtube.music
+09-10 09:00:15.144  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.apps.safetyhub (2 channels)
+09-10 09:00:15.145  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.safetyhub id=car_crash_feature_state_update name=Car crash feature state update notification importance=1 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.145  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.safetyhub id=safety_oobe name=Setup notifications importance=1 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.147  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.wearable.assistant (3 channels)
+09-10 09:00:15.149  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.wearable.assistant id=GacsBleChannel name=Digital assistant notification importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.149  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.wearable.assistant id=hotword_nudge_channel name=Hotword Nudge Channel importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.149  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.wearable.assistant id=joker_mode_change_notification_channel name=Gemini is ready notification importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.152  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.apps.walletnfcrel (3 channels)
+09-10 09:00:15.153  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.walletnfcrel id=tapandpay.tips.low name=Tips importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.153  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.walletnfcrel id=tapandpay.transactions.low name=Transactions importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.153  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.walletnfcrel id=wallet.updates name=Updates & alerts importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.155  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.apps.fitness
+09-10 09:00:15.160  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.chase.sig.android
+09-10 09:00:15.162  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.paypal.android.p2pmobile
+09-10 09:00:15.166  4414  4430 I VRP_WEARSET2: INSTALLED: com.whatsapp (3 channels)
+09-10 09:00:15.168  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.whatsapp id=messagingChannel name=Messaging notifications importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.168  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.whatsapp id=other_notifications@1 name=Other notifications importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.168  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.whatsapp id=sending_media@1 name=Sending media importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.173  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: org.thoughtcrime.securesms
+09-10 09:00:15.176  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.tinder
+09-10 09:00:15.178  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.gms (13 channels)
+09-10 09:00:15.179  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=dck.alerts name=Important updates importance=4 group=dck sound=content://settings/system/notification_sound
+09-10 09:00:15.179  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=gms.pay_default name=All notifications importance=4 group=gms.gpay_wallet sound=content://settings/system/notification_sound
+09-10 09:00:15.179  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=com.google.android.gms.backup.notification.channel.id name=Backup importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.179  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=system_update.default_notification_channel name=System update importance=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.179  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=com.google.android.gms.trustagent.activeunlock.associated.data.notification.ENROLLMENT_CHANNEL_ID name=Setup status importance=4 group=com.google.android.gms.trustagent.activeunlock.associated.NOTIFICATION_GROUP_ID sound=content://settings/system/notification_sound
+09-10 09:00:15.179  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=DEVICES_REBRANDED name=Devices importance=2 group=DEVICES_CHANNEL_GROUP_ID sound=content://settings/system/notification_sound
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=DEVICES_WITHIN_REACH_REBRANDED name=Devices within reach importance=4 group=DEVICES_CHANNEL_GROUP_ID sound=null
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=DEVICES_WITH_YOUR_ACCOUNT name=Devices with your account importance=1 group=DEVICES_CHANNEL_GROUP_ID sound=content://settings/system/notification_sound
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=find_my_device name=Location viewed importance=4 group=finder sound=content://settings/system/notification_sound
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=qrl_channel name=Remote Lock importance=4 group=finder sound=content://settings/system/notification_sound
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=eew_alert_v2 name=Earthquake early warning alert importance=4 group=Personal_Safety_Id sound=android.resource://com.google.android.gms/raw/be_aware_alert_sound
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=eew_notification_v2 name=Earthquake early warning notification importance=4 group=Personal_Safety_Id sound=android.resource://com.google.android.gms/raw/be_aware_alert_sound
+09-10 09:00:15.180  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.gms id=eew_update name=Earthquake early warning updates importance=4 group=Personal_Safety_Id sound=null
+09-10 09:00:15.182  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.wear.services (2 channels)
+09-10 09:00:15.183  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.wear.services id=BugreportChannelId name=Bugreport Channel importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.184  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.wear.services id=WatchFacesChangeNotification name=Watch Face has changed importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.186  4414  4430 I VRP_WEARSET2: INSTALLED: com.android.vending (16 channels)
+09-10 09:00:15.187  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=account name=Account importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.187  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=auto-open name=App auto open importance=4 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.187  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=game-streaks name=Gaming streak at risk importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.187  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=gaming-streaks-restore name=Gaming streak restore importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=leagues-updates name=Leagues updates importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=open-app-reminders name=Open app reminders importance=4 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=payments-deals-and-recommendations name=Payments, Deals, and Recommendations importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=updates-available name=Updates available importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=updates-completed name=Updates completed importance=0 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=wishlist name=Wishlist importance=3 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=your-community name=Your gaming community importance=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=maintenance-v2 name=Maintenance importance=2 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=play-protect name=Play Protect importance=4 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=required name=Required importance=2 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=security-and-errors name=Security and errors importance=3 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.188  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.android.vending id=setup name=Setup importance=2 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.190  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.apps.wearable.settings (1 channels)
+09-10 09:00:15.191  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.wearable.settings id=DeveloperOptionsChannel name=Developer options importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.194  4414  4430 I VRP_WEARSET2: INSTALLED: com.fitbit.FitbitMobile (7 channels)
+09-10 09:00:15.195  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=10002 name=Reminders to log in importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.195  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=APP_UPDATE_NOTIFICATION_CHANNEL_ID name=App Update Notification Channel importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.195  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=ASTA_NOTIFICATION_CHANNEL_ID name=Activity Recognition importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.196  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=CHIME_NOTIFICATION_CHANNEL_ID name=Server Push Notifications importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.196  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=Celebrations_ID name=Celebrations importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.196  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=HR_Alert_Channel_ID name=Heart Rate Alert importance=5 group=null sound=null
+09-10 09:00:15.196  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.fitbit.FitbitMobile id=Morning Brief Channel name=Morning Brief importance=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.198  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.wearable.healthservices
+09-10 09:00:15.202  4414  4430 I VRP_WEARSET2: NOT_INSTALLED: com.google.android.apps.chromecast.app
+09-10 09:00:15.204  4414  4430 I VRP_WEARSET2: INSTALLED: com.google.android.apps.scone (1 channels)
+09-10 09:00:15.205  4414  4430 I VRP_WEARSET2: CHANNEL_DETAIL: com.google.android.apps.scone id=lock-antenna name=scone importance=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: === VRP #45 Enhanced: Zero-Permission Data Leak ===
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: PoC UID: 10156
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: PID: 4414
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: 
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: --- GOOGLE SETTINGS PROVIDER (zero-perm read) ---
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   client_id = android-google
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   user_full_data_backup_aware = 1
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   backup_enabled:com.android.calllogbackup = 1
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   backup_encryption_opt_in_displayed = 1
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   network_location_opt_in = 0
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   use_location_for_services = 1
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   Total: 6 settings
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: 
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: --- WEAR GLOBAL SETTINGS (zero-perm read) ---
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   play_store_availability = 1
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   bluetooth_mode = 1
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: 
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2: --- APP ENUMERATION + CHANNEL DETAILS ---
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.gm
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.apps.messaging (3 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=bugle_broadcast_receiver_channel name=Background tasks imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=bugle_misc_channel name=Other notifications imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=bugle_default_channel name=Incoming messages imp=4 group=_bugle_default_settings_group sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.dialer (2 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=incall_channel_id name=Ongoing calls imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=missed_call name=Missed calls imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.calendar (2 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=TASKS name=Tasks notifications imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=REMINDERS name=Calendar notifications imp=4 group=CALENDAR_GROUP sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.contacts
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.keep (3 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=Others name=Others imp=1 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=Reminders name=Reminders imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=SharedNotes name=Shared notes imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.apps.maps (6 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=1_2 name=Navigation urgent updates imp=4 group=null sound=null
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=1_foreground_1 name=Navigation imp=3 group=null sound=null
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=OtherChannel name=Other notifications imp=2 group=null sound=null
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=headsup_error name=Heads-up navigation errors imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=navigation_v2 name=Navigation instructions imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=offline name=Offline notifications imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.apps.photos
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.apps.youtube.music
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.apps.safetyhub (2 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=car_crash_feature_state_update name=Car crash feature state update notification imp=1 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=safety_oobe name=Setup notifications imp=1 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.wearable.assistant (3 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=GacsBleChannel name=Digital assistant notification imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=hotword_nudge_channel name=Hotword Nudge Channel imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=joker_mode_change_notification_channel name=Gemini is ready notification imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.apps.walletnfcrel (3 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=tapandpay.tips.low name=Tips imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=tapandpay.transactions.low name=Transactions imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=wallet.updates name=Updates & alerts imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.apps.fitness
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.chase.sig.android
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.paypal.android.p2pmobile
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.whatsapp (3 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=messagingChannel name=Messaging notifications imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=other_notifications@1 name=Other notifications imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=sending_media@1 name=Sending media imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: org.thoughtcrime.securesms
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.tinder
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.gms (13 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=dck.alerts name=Important updates imp=4 group=dck sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=gms.pay_default name=All notifications imp=4 group=gms.gpay_wallet sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=com.google.android.gms.backup.notification.channel.id name=Backup imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=system_update.default_notification_channel name=System update imp=2 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=com.google.android.gms.trustagent.activeunlock.associated.data.notification.ENROLLMENT_CHANNEL_ID name=Setup status imp=4 group=com.google.android.gms.trustagent.activeunlock.associated.NOTIFICATION_GROUP_ID sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=DEVICES_REBRANDED name=Devices imp=2 group=DEVICES_CHANNEL_GROUP_ID sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=DEVICES_WITHIN_REACH_REBRANDED name=Devices within reach imp=4 group=DEVICES_CHANNEL_GROUP_ID sound=null
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=DEVICES_WITH_YOUR_ACCOUNT name=Devices with your account imp=1 group=DEVICES_CHANNEL_GROUP_ID sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=find_my_device name=Location viewed imp=4 group=finder sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=qrl_channel name=Remote Lock imp=4 group=finder sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=eew_alert_v2 name=Earthquake early warning alert imp=4 group=Personal_Safety_Id sound=android.resource://com.google.android.gms/raw/be_aware_alert_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=eew_notification_v2 name=Earthquake early warning notification imp=4 group=Personal_Safety_Id sound=android.resource://com.google.android.gms/raw/be_aware_alert_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=eew_update name=Earthquake early warning updates imp=4 group=Personal_Safety_Id sound=null
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.wear.services (2 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=BugreportChannelId name=Bugreport Channel imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=WatchFacesChangeNotification name=Watch Face has changed imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.android.vending (16 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=account name=Account imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=auto-open name=App auto open imp=4 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=game-streaks name=Gaming streak at risk imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=gaming-streaks-restore name=Gaming streak restore imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=leagues-updates name=Leagues updates imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=open-app-reminders name=Open app reminders imp=4 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=payments-deals-and-recommendations name=Payments, Deals, and Recommendations imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=updates-available name=Updates available imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=updates-completed name=Updates completed imp=0 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=wishlist name=Wishlist imp=3 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=your-community name=Your gaming community imp=2 group=alerts sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=maintenance-v2 name=Maintenance imp=2 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=play-protect name=Play Protect imp=4 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=required name=Required imp=2 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=security-and-errors name=Security and errors imp=3 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=setup name=Setup imp=2 group=essentials sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.apps.wearable.settings (1 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=DeveloperOptionsChannel name=Developer options imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.fitbit.FitbitMobile (7 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=10002 name=Reminders to log in imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=APP_UPDATE_NOTIFICATION_CHANNEL_ID name=App Update Notification Channel imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=ASTA_NOTIFICATION_CHANNEL_ID name=Activity Recognition imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=CHIME_NOTIFICATION_CHANNEL_ID name=Server Push Notifications imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=Celebrations_ID name=Celebrations imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=HR_Alert_Channel_ID name=Heart Rate Alert imp=5 group=null sound=null
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=Morning Brief Channel name=Morning Brief imp=3 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.wearable.healthservices
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   NOT INSTALLED: com.google.android.apps.chromecast.app
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   INSTALLED: com.google.android.apps.scone (1 channels)
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:     CH: id=lock-antenna name=scone imp=4 group=null sound=content://settings/system/notification_sound
+09-10 09:00:15.206  4414  4430 I VRP_WEARSET2:   Total: 15 installed, 11 not installed out of 26 probed
