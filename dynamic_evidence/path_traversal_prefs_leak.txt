@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="visible_order_last_modified_ms" value="1788804137406" />
+    <string name="tiles_order">0,2,3,1,4,5,6,8,7,9</string>
+    <boolean name="CUSTOMIZED_WF" value="true" />
+    <string name="promoted">com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.numerique.NumeriqueWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.analogbold.AnalogBoldWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.adventure.AdventureWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.analogarc.AnalogArcWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.utilita.UtilitaWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.accessible.AccessibleWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.classica.ClassicaWatchFaceService com.google.android.wearable.watchface.rwf/com.google.android.wearable.watchface.athletica.AthleticaWatchFaceService </string>
+    <string name="last_lang_req">en</string>
+    <long name="notification.common.latest_revision" value="8527" />
+    <string name="latest_build_fingerprint">google/eos/eos:17/CP2A.260603.001/15396591:user/release-keys</string>
+    <int name="tiles_schema_max_major" value="1" />
+    <boolean name="promotedWatchFacesInitialized" value="true" />
+    <int name="com.google.wear.services.setup.remotelock.supported_lock_screens" value="7" />
+    <int name="tile_id_auto_increment" value="10" />
+    <long name="last_claimed_revision" value="253000" />
+    <string name="favorites_order_v2">1,2,3,4,5,6,7,8</string>
+    <boolean name="SWITCHED_TO_PRE_INSTALLED_WF" value="true" />
+    <int name="tiles_schema_max_minor" value="600" />
+    <int name="tiles_schema_min_major" value="1" />
+    <int name="tiles_schema_min_minor" value="0" />
+    <set name="completed_system_monitor_ids">
+        <string>REMOTE_LOCK_FEATURE</string>
+        <string>WATCH_FACE_EDITING_STYLE_SCHEMA_CACHE</string>
+        <string>TILE</string>
+        <string>INSTALLED_APPS</string>
+        <string>WATCH_FACE_COMPLICATION_CONFIG</string>
+        <string>COMPLICATION_PROVIDERS_COMPANION</string>
+        <string>WATCH_FACE_FLAVORS</string>
+        <string>BRIDGE_MODE</string>
+        <string>WATCH_FACE</string>
+    </set>
+    <int name="last_set_watch_face_favorite_id" value="8" />
+</map>
