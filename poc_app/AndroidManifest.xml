@@ -913,6 +913,14 @@
             android:exported="true" />
 
         <activity
+            android:name=".CellBroadcastWriteActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".WatchFacePushPocActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".WalletOAuthInterceptActivity"
             android:exported="true">
             <intent-filter>

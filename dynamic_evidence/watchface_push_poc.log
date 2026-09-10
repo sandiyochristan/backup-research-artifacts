@@ -1,0 +1,26 @@
+09-10 09:27:40.338 13361 13361 I VRP_WFPUSH: Binding to WatchFaceReceiverService...
+09-10 09:27:40.347 13361 13361 I VRP_WFPUSH: bindService() returned true, waiting for connection...
+09-10 09:27:40.421 13361 13361 I VRP_WFPUSH: BOUND to: com.google.android.wearable.dwf.receiver/com.google.android.wearable.dwf.receiver.WatchFaceReceiverService
+09-10 09:27:40.421 13361 13361 I VRP_WFPUSH: Service binder: android.os.BinderProxy
+09-10 09:27:40.422 13361 13388 I VRP_WFPUSH: --- Transaction 5: listWatchFaceSlots ---
+09-10 09:27:40.423 13361 13388 I VRP_WFPUSH: listWatchFaceSlots transact result: true
+09-10 09:27:40.506 13361 13375 I VRP_WFPUSH: listSlots callback: code=2 (success/data)
+09-10 09:27:40.507 13361 13375 I VRP_WFPUSH:   Callback data remaining: 16 bytes
+09-10 09:27:43.424 13361 13388 I VRP_WFPUSH: --- Transaction 6: isWatchFaceActive ---
+09-10 09:27:43.424 13361 13388 I VRP_WFPUSH: isWatchFaceActive(com.google.android.wearable.watchface.rwf) transact: true
+09-10 09:27:43.426 13361 13375 I VRP_WFPUSH:   isActive callback: code=4
+09-10 09:27:45.426 13361 13388 I VRP_WFPUSH: isWatchFaceActive(com.google.android.apps.wearable.watchface.analog) transact: true
+09-10 09:27:45.429 13361 13375 I VRP_WFPUSH:   isActive callback: code=4
+09-10 09:27:47.429 13361 13388 I VRP_WFPUSH: isWatchFaceActive(test_nonexistent_id) transact: true
+09-10 09:27:47.433 13361 13375 I VRP_WFPUSH:   isActive callback: code=4
+09-10 09:27:49.431 13361 13388 I VRP_WFPUSH: --- SUMMARY ---
+09-10 09:27:49.431 13361 13388 I VRP_WFPUSH: Service binding: SUCCESSFUL (zero-permission app)
+09-10 09:27:49.431 13361 13388 I VRP_WFPUSH: Permission required: PUSH_WATCH_FACES (normal, auto-granted)
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH: Available operations:
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH:   - addWatchFace (transaction 2): push APK
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH:   - removeWatchFace (transaction 3): delete watch face
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH:   - updateWatchFace (transaction 4): replace watch face APK
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH:   - listWatchFaceSlots (transaction 5): enumerate slots
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH:   - isWatchFaceActive (transaction 6): check status
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH: DWF receiver has INSTALL_PACKAGES + DELETE_PACKAGES
+09-10 09:27:49.432 13361 13388 I VRP_WFPUSH: IMPACT: Unauthorized package install/removal via normal permission
