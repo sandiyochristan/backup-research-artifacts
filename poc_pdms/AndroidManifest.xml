@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.pdms"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- NO PERMISSIONS DECLARED — proving this requires ZERO permissions -->
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application android:label="Keyguard Forge PoC">
+        <activity android:name=".PdmsBindProof"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

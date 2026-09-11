@@ -1,0 +1,487 @@
+--------- beginning of main
+09-11 13:16:22.864  1737  1960 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-11 13:16:23.187  1248  1248 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.poc.pdms/.PdmsBindProof'
+09-11 13:16:23.244  2786  2880 I ThermalEngine: TM Id 'AUDIO-CPU-GPU' Sensor 'audio-therm' - alarm  raised 1 at 41.0 degC
+09-11 13:16:23.253  2786  2880 I ThermalEngine: j=0 i=0 TM Id AUDIO-CPU-GPU Sensor audio-therm: Action cpu-cluster0 value 1708800
+09-11 13:16:23.253  2786  2880 I ThermalEngine: j=1 i=0 TM Id AUDIO-CPU-GPU Sensor audio-therm: Action gpu value 1010000000
+09-11 13:16:23.263  1682  1699 I pixel-thermal: audio-therm:41.037 raw data: audio-therm:41037 
+09-11 13:16:23.265  1682  1699 I pixel-thermal: sdm-skin-therm:42.5 raw data: sdm-skin-therm:42500 
+--------- beginning of system
+09-11 13:16:23.276  1737  2362 W ActivityTaskManager: callingPackage for (uid=2000, pid=20636) has no WPC
+09-11 13:16:23.277  1737  2362 D CompatChangeReporter: Compat change id reported: 151861875; UID 10177; state: ENABLED
+09-11 13:16:23.277  1737  2362 W AppCompatResourceOverlayPolicy: constructor: Failed to find VirtualDeviceManagerService
+09-11 13:16:23.280  1737  2362 I incfs-mounts: [incfs] Loaded incremental-fs mount info: 6 instances, 12 mount points
+09-11 13:16:23.283  1737  2362 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@acc0ccc7 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-11 13:16:23.297  3166  3439 W JobInfo : Requested important-while-foreground flag for job3904 is ignored and takes no effect
+09-11 13:16:23.298  1737  2362 V ActivityTaskManager: TaskLaunchParamsModifier: phase=3 task=Task{538e756 #1282 type=standard A=10177:com.poc.pdms} activity=ActivityRecord{158129521 u0 com.poc.pdms/.PdmsBindProof t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@28794636 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@28794636 default-portrait freeform-size-mismatch=Rect(54, 54 - 330, 330)
+09-11 13:16:23.299  1737  2362 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.poc.pdms/.PdmsBindProof} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+09-11 13:16:23.298  2249  2448 I incfs-mounts: [incfs] Loaded incremental-fs mount info: 6 instances, 12 mount points
+09-11 13:16:23.299  2249  2419 V WindowManagerShell: Transition requested (#389): android.os.BinderProxy@7fec2ac TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1282 effectiveUid=10177 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.poc.pdms/.PdmsBindProof } baseActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} topActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} origActivity=null realActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=90464224 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@3d17b75} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{54d670a com.poc.pdms.PdmsBindProof} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 389 }
+09-11 13:16:23.302  1737  1876 I AppsFilter: interaction: PackageSetting{89a104d com.poc.lockbypass/10002} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.302  1737  1876 I AppsFilter: interaction: PackageSetting{3951813 com.research.providerprobe/10175} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.302  2249  2419 V WindowManagerShell: Transition (#389): request handled by WearMixedTransitionHandler
+09-11 13:16:23.302  1737  1876 I AppsFilter: interaction: PackageSetting{5833a50 com.test.datalayer/10118} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.302  1737  1876 I AppsFilter: interaction: PackageSetting{e846449 com.poc.silentsms/10006} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.303  1737  1876 I AppsFilter: interaction: PackageSetting{e63214e com.poc.avatarleak/10004} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.303  1737  1876 I AppsFilter: interaction: PackageSetting{4af226f com.christan.google_ass_tv_poc/10014} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.303  1737  1876 I AppsFilter: interaction: PackageSetting{be9ab7c com.vrp.debug/10188} -> PackageSetting{85f04e1 com.poc.pdms/10177} BLOCKED
+09-11 13:16:23.303  1737  2902 D CompatChangeReporter: Compat change id reported: 309578419; UID 10177; state: ENABLED
+09-11 13:16:23.306  1737  1804 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@acc0ccc7 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-11 13:16:23.312   762   762 W Zygote  : Setting SCHED_FIFO for top-app fork
+09-11 13:16:23.320  1737  1967 D NetworkRequestStateStatsMetrics: Removed nr with ID = 441
+09-11 13:16:23.324  1737  3949 D ConnectivityService: requestNetwork for uid/pid:10059/3166 activeRequest: null callbackRequest: 442 [NetworkRequest [ REQUEST id=443, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|BLK
+09-11 13:16:23.324  1737  1967 D NetworkRequestStateStatsMetrics: Registered nr with ID = 443, package_uid = 10059
+09-11 13:16:23.329   762   762 D Zygote  : Forked child process 20639
+09-11 13:16:23.329   762   762 D Zygote  : Reset scheduler to SCHED_OTHER
+09-11 13:16:23.329  1737  1737 D WEAR_NETWORK_OBSERVER: got request NetworkRequest [ REQUEST id=443, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:23.330  1737  1812 I ActivityManager: Start proc 20639:com.poc.pdms/u0a177 for next-top-activity {com.poc.pdms/com.poc.pdms.PdmsBindProof}
+09-11 13:16:23.331  1737  1960 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=443, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:23.332  1737  1960 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=443, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:23.335  1737  1960 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=443, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:23.336  1737  1960 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=443, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:23.337  1737  1967 D ConnectivityService: NetReassign [443 : null → 108] [c 1] [a 2] [i 9]
+09-11 13:16:23.339 20639 20639 I libprocessgroup: Created cgroup /sys/fs/cgroup/apps/uid_10177
+09-11 13:16:23.341 20639 20639 I libprocessgroup: Created cgroup /sys/fs/cgroup/apps/uid_10177/pid_20639
+09-11 13:16:23.345  2249  2566 E perf_hint: createSessionUsingConfig: PerformanceHint cannot create session. PowerHintSessions are not supported!
+09-11 13:16:23.348  1737  3949 W InputChannel-JNI: Channel already disposed.
+09-11 13:16:23.359 20639 20639 I Zygote  : Process 20639 created for com.poc.pdms
+09-11 13:16:23.360  1737  2902 D WindowManager: setClientSurface Surface(name=VRI-Splash Screen com.poc.pdms#727)/@0xb4719b7 for aa1e851 Splash Screen com.poc.pdms
+09-11 13:16:23.363 20639 20639 I com.poc.pdms: Using generational CollectorTypeCMC GC.
+09-11 13:16:23.363  2249  2448 I Surface : Creating surface for consumer unnamed-2249-42 with slotExpansion=1 for 64 slots
+09-11 13:16:23.372  2249  2448 I Surface : Creating surface for consumer VRI[pdms]#42(BLAST Consumer)42 with slotExpansion=1 for 64 slots
+09-11 13:16:23.375   516   516 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:23.376   516   516 D SnapAlloc: from handle - reserved size 4287849984 custom content metadata size 0
+09-11 13:16:23.376   516   516 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.376   516   516 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.376   516   516 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.377  2249 20641 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.377  2249 20641 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.378   516   516 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:23.378   516   516 D SnapAlloc: from handle - reserved size 4287849984 custom content metadata size 0
+09-11 13:16:23.378   516   516 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.378   516   516 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.378   516   516 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.379  2249 20641 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.379  2249 20641 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.380   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:23.380   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:23.380   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.380   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.380   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.380   515   637 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.380   515   637 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.381  2249 20641 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.381  2249 20641 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.382   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:23.386   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:23.386   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.386   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.386   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.387  2249 20641 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.387  2249 20641 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.397   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:23.397   516   536 E SnapAlloc: Failed to get format mapping to use mmm_color_fmt
+09-11 13:16:23.397   516   536 W SnapAlloc: Error while getting constraints from display libs width 192, height 192, format 0
+09-11 13:16:23.397   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:23.397   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.397   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.397   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.398   515   637 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.398   515   637 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.402  1737  1805 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.402  1737  1805 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.404  2070  7569 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.405  2070  7569 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.405  2070  2070 E TaskSnapshot: getHardwareBuffer is deprecated!
+09-11 13:16:23.408  2249  2475 V WindowManagerShell: onTransitionReady(transaction=7460358209325)
+09-11 13:16:23.409  2249  2419 V WindowManagerShell: onTransitionReady (#389) android.os.BinderProxy@7fec2ac: {id=389 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-11 13:16:23.409  2249  2419 V WindowManagerShell:         {m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1282#724)/@0x465d855 sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0},
+09-11 13:16:23.409  2249  2419 V WindowManagerShell:         {m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1281#711)/@0xe05326a sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0}
+09-11 13:16:23.409  2249  2419 V WindowManagerShell:     ]}
+09-11 13:16:23.409  2249  2419 V WindowManagerShell: Playing animation for (#389) android.os.BinderProxy@7fec2ac@0
+09-11 13:16:23.409  2249  2419 V WindowManagerShell:  try firstHandler com.google.android.clockwork.systemui.transition.shelltransition.WearMixedTransitionHandler@a5264d7
+09-11 13:16:23.410  1737  1801 V WindowManager: Sent Transition (#389) createdAt=09-11 13:16:23.285 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=1282 effectiveUid=10177 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.poc.pdms/.PdmsBindProof } baseActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} topActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} origActivity=null realActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=90464224 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{8299a53 Task{538e756 #1282 type=standard A=10177:com.poc.pdms}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{5ee2f90 com.poc.pdms.PdmsBindProof} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 389 }
+09-11 13:16:23.410  1737  1801 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+09-11 13:16:23.410  1737  1801 V WindowManager:     info={id=389 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-11 13:16:23.410  1737  1801 V WindowManager:         {WCT{RemoteToken{8299a53 Task{538e756 #1282 type=standard A=10177:com.poc.pdms}}} m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1282#724)/@0x1a5e524 sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0},
+09-11 13:16:23.410  1737  1801 V WindowManager:         {WCT{RemoteToken{39916d7 Task{c787594 #1281 type=standard A=1000:.MainSettingsActivity}}} m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=1281#711)/@0xf430618 sb=Rect(0, 0 - 384, 384) eb=Rect(0, 0 - 384, 384) epz=Point(384, 384) d=0 taskParent=-1 winMode=1 userId=0}
+09-11 13:16:23.410  1737  1801 V WindowManager:     ]}
+09-11 13:16:23.421  2070  2377 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 taskId=1282 effectiveUid=10177 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.poc.pdms/.PdmsBindProof } baseActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} topActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} origActivity=null realActivity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=90464224 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@58fb4b4} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{e76f8dd com.poc.pdms.PdmsBindProof} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Keyguard Forge PoC, activity=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.poc.pdms, activityName=com.poc.pdms.PdmsBindProof, isDefaultApp=false), loadLauncherIcon=ioi@697c52)
+09-11 13:16:23.425  2070  2377 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 taskId=1281 effectiveUid=1000 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.MainSettingsActivity } baseActivity=ComponentInfo{com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.MainSettingsActivity} topActivity=ComponentInfo{com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.MainSettingsActivity} origActivity=null realActivity=ComponentInfo{com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.MainSettingsActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=90464220 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@a371b23} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{3cd6820 com.google.android.clockwork.settings.MainSettingsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=false isVisible=true isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Settings, activity=ComponentInfo{com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.MainSettingsActivity}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.google.android.apps.wearable.settings, activityName=com.google.android.clockwork.settings.MainSettingsActivity, isDefaultApp=false), loadLauncherIcon=ioi@7ff0b9e)
+09-11 13:16:23.426  2070  2377 W SysUI   : [RecentTasksLauncherRepo]getRecentApps matched with a Launcher Activity in the task TaskInfo{userId=0 taskId=1257 effectiveUid=10080 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.APP_CALENDAR] flg=0x10200000 cmp=com.google.android.calendar/com.google.android.apps.calendar.wear.overlay.CalendarWearActivity } baseActivity=ComponentInfo{com.google.android.calendar/com.google.android.apps.calendar.wear.overlay.CalendarWearActivity} topActivity=ComponentInfo{com.google.android.calendar/com.google.android.apps.calendar.wear.overlay.CalendarWearActivity} origActivity=null realActivity=ComponentInfo{com.google.android.calendar/com.google.android.apps.calendar.wear.overlay.CalendarWearActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=64265491 supportsMultiWindow=false supportsMultiWindowWithoutConstraints=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@f25485b} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{756467f com.google.android.apps.calendar.wear.overlay.CalendarWearActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 330, 330) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 384, 384) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false} == ActivityLauncherApp(label=Calendar, activity=ComponentInfo{com.google.android.calendar/com.google.android.apps.calendar.wear.overlay.CalendarWearActivity}, launcherIconRequest=AllAppsLauncherIconRequest(packageName=com.google.android.calendar, activityName=com.google.android.apps.calendar.wear.overlay.CalendarWearActivity, isDefaultApp=false), loadLauncherIcon=ioi@74381d1)
+09-11 13:16:23.427 20639 20639 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-11 13:16:23.430  2249  2419 V WindowManagerShell:  animated by firstHandler
+09-11 13:16:23.430  2249  2419 V ShellTaskOrganizer: Task appeared taskId=1282 listener=FullscreenTaskListener
+09-11 13:16:23.430  2070  2377 W SysUI   : [LauncherDefaultRecentsCombiner]Unable to get ActivityDisplayInfo for {com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.wear.WearMainActivity} attempting to fetch from ResolveInfo
+09-11 13:16:23.430  2249  2419 V ShellTaskOrganizer: Fullscreen Task Appeared: #1282
+09-11 13:16:23.477  1737  1907 I InputDispatcher: No new touched window at (272.3, 274.3) in display 0
+09-11 13:16:23.484 20639 20639 D nativeloader: Configuring clns-6 for other apk /data/app/~~Pwh3bM1a5Y9Z4HXuTizsgQ==/com.poc.pdms-LxwZC69ohwHmVdqnUsiAKw==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~Pwh3bM1a5Y9Z4HXuTizsgQ==/com.poc.pdms-LxwZC69ohwHmVdqnUsiAKw==/lib/arm, permitted_path=/data:/mnt/expand:/data/user/0/com.poc.pdms
+09-11 13:16:23.486 20639 20639 D CompatChangeReporter: Compat change id reported: 202956589; UID 10177; state: ENABLED
+09-11 13:16:23.486   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:23.487   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:23.487   521   616 I SDM     : Using previously loaded IMapper library.
+09-11 13:16:23.499 20639 20639 W com.poc.pdms: Monitor::Inflate: Install failed 0x735f9798
+09-11 13:16:23.505 20639 20639 V GraphicsEnvironment: Currently set values for:
+09-11 13:16:23.505 20639 20639 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-11 13:16:23.505 20639 20639 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-11 13:16:23.506 20639 20639 V GraphicsEnvironment: com.poc.pdms is not listed in per-application setting
+09-11 13:16:23.506 20639 20639 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-11 13:16:23.507 20639 20639 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-11 13:16:23.518  1737  2902 D CorePackageUpdate: Couldn't find a persistent state for task= 1282
+09-11 13:16:23.519  1737  2902 D CompatChangeReporter: Compat change id reported: 324203798; UID 10177; state: ENABLED
+09-11 13:16:23.527 20639 20659 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: QUALCOMM build                   : 3656bb992e, I0abb6f342e
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Build Date                       : 09/08/25
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: E031.47.18.42
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Local Branch                     : 
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.15.4.1.11.00.00.1186.254
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Remote Branch                    : NONE
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Build Config                     : S P 18.0.0 AArch32
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Driver Path                      : /vendor/lib/egl/libGLESv2_adreno.so
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Driver Version                   : 0800.56
+09-11 13:16:23.531 20639 20659 I AdrenoGLES-0: Process Name                     : com.poc.pdms
+09-11 13:16:23.543 20639 20659 D qdgralloc: Fetching IMapper5 from QtiMapper5
+09-11 13:16:23.549 20639 20659 I SnapAlloc: UBWC is disabled
+09-11 13:16:23.550 20639 20659 I SnapAlloc: Graphics lib is available
+09-11 13:16:23.552 20639 20659 W SnapAlloc: Camera lib is not available - read json file
+09-11 13:16:23.561 20639 20659 I AdrenoGLES-0: PFP: 0x017aa048, ME: 0x00000000
+09-11 13:16:23.573  1737  1887 D IntervalStats: Unable to parse usage stats packages: [296]
+09-11 13:16:23.574  1737  1887 D IntervalStats: Unable to parse event packages: [296]
+09-11 13:16:23.579 20639 20639 D CompatChangeReporter: Compat change id reported: 309578419; UID 10177; state: ENABLED
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: === Zero-Permission Keyguard State Forgery PoC ===
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: Package: com.poc.pdms
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: UID: 10177
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:23.585 20639 20639 D KEYGUARD_FORGE_POC: [TEST 1] Forging keyguard UNLOCKED state...
+09-11 13:16:23.587 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged UNLOCKED broadcast sent
+09-11 13:16:23.588 20639 20639 D KEYGUARD_FORGE_POC:   Proto: 08 00 12 06 08 cf e3 8e d5 06
+09-11 13:16:23.588 20639 20639 D KEYGUARD_FORGE_POC:   Timestamp: 1789112783
+09-11 13:16:23.588 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:23.646 20067 20095 I CDAS-App: KeyguardRepositoryImpl: Synchronized Keyguard state: false timestamp 1789112783
+09-11 13:16:23.654  2178  2481 I bt_btm_pm: system/stack/acl/btm_pm.cc:239 BTM_SetPowerMode: Setting power mode for peer:xx:xx:xx:xx:d8:c0 current_mode:immediate:sniff[2] new_mode:forced:active[0]
+09-11 13:16:23.654  2178  2481 I bt_btm_pm: system/stack/acl/btm_pm.cc:515 btm_pm_snd_md_req: Switching from immediate:sniff[0x02] to immediate:active[0x00]
+09-11 13:16:23.655   867   867 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+09-11 13:16:23.655   867   899 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+09-11 13:16:23.663   867   899 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_ON - after sys fs write-ret:4
+09-11 13:16:23.664   867   899 D vendor.qti.bluetooth@1.0-uart_transport: SocRxDWakeup: Flow off->Change UART baudrate to 38.4kbs->send 0x00->Change UART baudrate to max->Flow on
+09-11 13:16:23.664   867   899 I vendor.qti.bluetooth@1.0-uart_transport: ## userial_vendor_ioctl: UART Flow Off 
+09-11 13:16:23.664 20067 20067 I CDAS-App: SharedWearableListenerService onCreate
+09-11 13:16:23.665   867   899 I vendor.qti.bluetooth@1.0-uart_transport: ## userial_vendor_set_baud: 17
+09-11 13:16:23.673  1737  2297 W ActivityManager: pid 18702 com.google.android.gms sent binder code 18 with flags 2 and got error -74
+09-11 13:16:23.674 20067 20067 I CDAS-LeftBehind: AssociatedWearableListenerService onCreate
+09-11 13:16:23.675   867   899 I vendor.qti.bluetooth@1.0-uart_transport: SetBaudRate: in BOTHER
+09-11 13:16:23.675   867   899 I vendor.qti.bluetooth@1.0-uart_transport: ## userial_vendor_ioctl: UART Flow On 
+09-11 13:16:23.676   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_ACK: 0xFC
+09-11 13:16:23.676   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Signal wack_cond_
+09-11 13:16:23.676   867   899 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Writing IBS_WAKE_IND
+09-11 13:16:23.676   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_ACK: 0xFC
+09-11 13:16:23.676   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Signal wack_cond_
+09-11 13:16:23.676   867   899 D vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Unblocked from waiting for FC, pthread_cond_timedwait ret = 0
+09-11 13:16:23.677   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+09-11 13:16:23.677   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+09-11 13:16:23.678 20067 20079 I GoogleSignatureVerifier: package info is not set correctly
+09-11 13:16:23.680 18702 18776 D ActivityThread: Too many transaction errors, throttling transaction error callback.
+09-11 13:16:23.681 20067 20664 I CDAS-App: onDataChanged: 1 events
+09-11 13:16:23.683 20067 20079 I GoogleSignatureVerifier: package info is not set correctly
+09-11 13:16:23.687 20067 20664 W CDAS-App: No listener registered for data event: /crossdeviceaccessservice/keyguard_event/
+09-11 13:16:23.688 20067 20665 I CDAS-LeftBehind: onDataChanged: 1 events
+09-11 13:16:23.705  2178  2481 I bt_btm_pm: system/stack/acl/btm_pm.cc:648 btm_pm_proc_mode_change: Power mode switched from immediate:pending[4] to immediate:active[0]
+09-11 13:16:23.743   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+09-11 13:16:23.835  2249  2419 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#389) android.os.BinderProxy@7fec2ac@0
+09-11 13:16:23.842  1737  1801 V WindowManager: Finish Transition (#389): created at 09-11 13:16:23.285 collect-started=0.112ms request-sent=13.099ms started=27.943ms ready=99.742ms sent=104.966ms commit=47.498ms finished=556.795ms
+09-11 13:16:23.843 20545 20545 D VRI[MainSettingsActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-11 13:16:23.845  2249  2419 V WindowManagerShell: Track 0 became idle
+09-11 13:16:23.845  2249  2419 V WindowManagerShell: All active transition animations finished
+09-11 13:16:23.849  1737  2040 I Surface : Creating surface for consumer unnamed-1737-24 with slotExpansion=1 for 64 slots
+09-11 13:16:23.849  1737  2040 I Surface : Creating surface for consumer ImageReader-192x192f4m1-1737-24 with slotExpansion=1 for 64 slots
+09-11 13:16:23.849  1737  2040 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-11 13:16:23.850  1737  2040 E ConsumerBase: [ImageReader-192x192f4m1-1737-24] abandonLocked: ConsumerBase is abandoned!
+09-11 13:16:23.861  2249  2249 I WakefulDisplayControlLock: acquire: acquired without timeout, using default, mTag=task-opening
+09-11 13:16:23.863  2249  2249 I DisplayOffloadManager: updateTopActivity: taskId = 1282; activityToFront=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof}
+09-11 13:16:23.863  1737  2902 D DOS_DisplayControlLock: acquired: SystemUIRCDCLock android.os.BinderProxy@5f92d11
+09-11 13:16:23.864  1737  2902 I DOS_DisplayControlLock: First acquired
+09-11 13:16:23.865  1737  2902 I DisplayControlPolicy: isOffloadStartPending: hasUnreleased lock
+09-11 13:16:23.866  1737  2902 D DisplayOffload: updateTopTask: taskId=1282; activityToFront=ComponentInfo{com.poc.pdms/com.poc.pdms.PdmsBindProof}
+09-11 13:16:23.931   397 20419 I keystore2: system/security/keystore2/watchdog/src/lib.rs:371 - Watchdog thread idle -> terminating. Have a great day.
+09-11 13:16:23.941  2249  2271 W System  : A resource failed to call release. 
+09-11 13:16:23.941  2249  2271 W System  : A resource failed to call release. 
+09-11 13:16:23.941  2249  2271 W System  : A resource failed to call release. 
+09-11 13:16:23.941  2249  2271 W System  : A resource failed to call release. 
+09-11 13:16:24.364  1737  3949 D DOS_DisplayControlLock: released: android.os.BinderProxy@5f92d11
+09-11 13:16:24.364  1737  3949 I DOS_DisplayControlLock: All released
+09-11 13:16:24.431   731   873 D MCU     : usf_sensor.cc:1920               25:50:58.995 [USF] Received start sampling request for Instant Motion Sensor (active:1).
+09-11 13:16:24.431   731   873 D MCU     : sensor_periodic_activator.cc:132 25:50:58.996 [ImuCal] [SensorPeriodicActivator] Device still
+09-11 13:16:24.431   731   873 D MCU     : imu_cal_wrapper.cc:68            25:50:58.996 [ImuCal] StationaryDetect
+09-11 13:16:24.650  3166  3440 W JobInfo : Requested important-while-foreground flag for job3905 is ignored and takes no effect
+09-11 13:16:24.657  1737  1967 D NetworkRequestStateStatsMetrics: Removed nr with ID = 443
+09-11 13:16:24.663  1737  2902 D ConnectivityService: requestNetwork for uid/pid:10059/3166 activeRequest: null callbackRequest: 444 [NetworkRequest [ REQUEST id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|BLK
+09-11 13:16:24.663  1737  1967 D NetworkRequestStateStatsMetrics: Registered nr with ID = 445, package_uid = 10059
+09-11 13:16:24.670  1737  1737 D WEAR_NETWORK_OBSERVER: got request NetworkRequest [ REQUEST id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:24.670  1737  1960 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:24.670  1737  1960 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:24.671  1737  1960 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:24.672  1737  1960 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:24.673  1737  1967 D ConnectivityService: NetReassign [445 : null → 108] [c 1] [a 2] [i 6]
+09-11 13:16:24.677   867  2605 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceSleep: TX Awake, Sending SLEEP_IND
+09-11 13:16:24.677   867  2605 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+09-11 13:16:24.677   867  2605 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_OFF - after sys fs write-ret:4
+09-11 13:16:24.680  1737  2902 I PackageManager: getInstalledPackages: callingUid=10059 flags=0 updatedFlags=786432 userId=0
+09-11 13:16:24.828   867  2507 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+09-11 13:16:25.179 20067 20067 I CDAS-App: SharedWearableListenerService onDestroy
+09-11 13:16:25.187 20067 20067 I CDAS-LeftBehind: AssociatedWearableListenerService onDestroy
+09-11 13:16:25.188  1737  4637 I ActivityManager: Killing 19169:com.google.android.wearable.cavalry/u0a113 (adj 975): empty #17
+09-11 13:16:25.216   762   762 I Zygote  : Process 19169 exited due to signal 9 (Killed)
+09-11 13:16:25.220  1737  1813 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10113/pid_19169
+09-11 13:16:25.273  1682  1699 I pixel-thermal: audio-therm:41.109 raw data: audio-therm:41109 
+09-11 13:16:25.276  1682  1699 I pixel-thermal: sdm-skin-therm:42.587 raw data: sdm-skin-therm:42587 
+09-11 13:16:25.451  3166  3438 W JobInfo : Requested important-while-foreground flag for job3906 is ignored and takes no effect
+09-11 13:16:25.456  1737  1967 D NetworkRequestStateStatsMetrics: Removed nr with ID = 445
+09-11 13:16:25.460  1737  2902 D ConnectivityService: requestNetwork for uid/pid:10059/3166 activeRequest: null callbackRequest: 446 [NetworkRequest [ REQUEST id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|BLK
+09-11 13:16:25.460  1737  1967 D NetworkRequestStateStatsMetrics: Registered nr with ID = 447, package_uid = 10059
+09-11 13:16:25.464  1737  1737 D WEAR_NETWORK_OBSERVER: got request NetworkRequest [ REQUEST id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:25.466  1737  1960 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:25.466  1737  1960 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:25.467  1737  1960 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:25.468  1737  1960 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10059 RequestorUid: 10059 RequestorPkg: com.google.android.wearable.assistant UnderlyingNetworks: Null] ]
+09-11 13:16:25.469  1737  1967 D ConnectivityService: NetReassign [447 : null → 108] [c 1] [a 1] [i 6]
+09-11 13:16:25.588 20639 20639 D KEYGUARD_FORGE_POC: [TEST 2] Forging keyguard LOCKED state...
+09-11 13:16:25.590 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged LOCKED broadcast sent
+09-11 13:16:25.590 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:25.590 20639 20639 D KEYGUARD_FORGE_POC: [TEST 3] Forging sensor proximity data...
+09-11 13:16:25.594 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged sensor broadcast sent
+09-11 13:16:25.594 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:25.594 20639 20639 D KEYGUARD_FORGE_POC: [TEST 4] Forging UWB ranging data...
+09-11 13:16:25.596 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged ranging broadcast sent
+09-11 13:16:25.596 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:25.602 20067 20095 I CDAS-App: KeyguardRepositoryImpl: Synchronized Keyguard state: true timestamp 1789112783
+09-11 13:16:25.604   867   867 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+09-11 13:16:25.605   867   899 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+09-11 13:16:25.609   867   899 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_ON - after sys fs write-ret:4
+09-11 13:16:25.609   867   899 D vendor.qti.bluetooth@1.0-uart_transport: SocRxDWakeup: Flow off->Change UART baudrate to 38.4kbs->send 0x00->Change UART baudrate to max->Flow on
+09-11 13:16:25.609   867   899 I vendor.qti.bluetooth@1.0-uart_transport: ## userial_vendor_ioctl: UART Flow Off 
+09-11 13:16:25.611   867   899 I vendor.qti.bluetooth@1.0-uart_transport: ## userial_vendor_set_baud: 17
+09-11 13:16:25.614 20067 20067 I CDAS-App: SharedWearableListenerService onCreate
+09-11 13:16:25.615 20639 20639 D CompatChangeReporter: Compat change id reported: 349153669; UID 10177; state: ENABLED
+09-11 13:16:25.616 20639 20639 W HWUI    : Unknown dataspace 0
+09-11 13:16:25.621   867   899 I vendor.qti.bluetooth@1.0-uart_transport: SetBaudRate: in BOTHER
+09-11 13:16:25.621   867   899 I vendor.qti.bluetooth@1.0-uart_transport: ## userial_vendor_ioctl: UART Flow On 
+09-11 13:16:25.621   867   899 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Writing IBS_WAKE_IND
+09-11 13:16:25.621   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_ACK: 0xFC
+09-11 13:16:25.621   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Signal wack_cond_
+09-11 13:16:25.623   867   899 D vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Unblocked from waiting for FC, pthread_cond_timedwait ret = 0
+09-11 13:16:25.624 18702 18776 D ActivityThread: Too many transaction errors, throttling transaction error callback.
+09-11 13:16:25.625 20067 20095 E CDAS-App: SensorEventReceiver: Invalid Protocol Error parsing SensorEvent: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:16:25.626 20067 20067 I CDAS-LeftBehind: AssociatedWearableListenerService onCreate
+09-11 13:16:25.630  1737  2902 W InputChannel-JNI: Channel already disposed.
+09-11 13:16:25.630 20067 20081 I GoogleSignatureVerifier: package info is not set correctly
+09-11 13:16:25.633 18702 18776 D ActivityThread: Too many transaction errors, throttling transaction error callback.
+09-11 13:16:25.635 20639 20674 E perf_hint: createSessionUsingConfig: PerformanceHint cannot create session. PowerHintSessions are not supported!
+09-11 13:16:25.636 20639 20639 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@8b6fdf4
+09-11 13:16:25.636 20067 20672 I CDAS-App: onDataChanged: 1 events
+09-11 13:16:25.637 20639 20639 D VRI[PdmsBindProof]: WindowInsets changed: 384x384 
+09-11 13:16:25.637  1737  2360 D CoreBackPreview: Window{8b52565 u0 com.poc.pdms/com.poc.pdms.PdmsBindProof}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d607e92, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-11 13:16:25.637 20639 20639 I HWUI    : Using FreeType backend (prop=Auto)
+09-11 13:16:25.639 20067 20672 W CDAS-App: No listener registered for data event: /crossdeviceaccessservice/keyguard_event/
+09-11 13:16:25.639 20067 20079 I GoogleSignatureVerifier: package info is not set correctly
+09-11 13:16:25.643 20067 20675 I CDAS-LeftBehind: onDataChanged: 1 events
+09-11 13:16:25.649   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+09-11 13:16:25.649   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+09-11 13:16:25.665 20067 20095 E CDAS-App: RangingCapabilitiesEventReceiver: Invalid Protocol Error parsing Ranging Capabilities: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:16:25.665 20067 20095 E CDAS-App: com.google.protobuf.InvalidProtocolBufferException: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.protobuf.GeneratedMessageLite.checkMessageInitialized(GeneratedMessageLite.java:1677)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.protobuf.GeneratedMessageLite.parseFrom(GeneratedMessageLite.java:1729)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.android.crossdeviceaccessservice.associated.shared.protos.CrossDeviceAccessServiceRangingCapabilitiesUpdate.parseFrom(CrossDeviceAccessServiceRangingCapabilitiesUpdate.java:318)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.android.crossdeviceaccessservice.associated.shared.data.infrastructure.RangingCapabilitiesEventReceiver$onReceive$1.invokeSuspend(RangingCapabilitiesEventReceiver.kt:51)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+09-11 13:16:25.672   515   550 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10177 pid=20639
+09-11 13:16:25.672   515   550 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10177 => denied (527 us)
+09-11 13:16:25.672   515   550 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10177 pid=20639
+09-11 13:16:25.672   515   550 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10177 => denied (385 us)
+09-11 13:16:25.673   515   550 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10177 pid=20639
+09-11 13:16:25.673   515   550 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10177 => denied (234 us)
+09-11 13:16:25.673   515   550 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.READ_FRAME_BUFFER from uid=10177 pid=20639
+09-11 13:16:25.673   515   550 D libbinder.PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=10177 => denied (206 us)
+09-11 13:16:25.674  1737  2362 D WindowManager: setClientSurface Surface(name=VRI-com.poc.pdms/com.poc.pdms.PdmsBindProof#734)/@0xc03f1de for 8b52565 com.poc.pdms/com.poc.pdms.PdmsBindProof
+09-11 13:16:25.678 20639 20639 I Surface : Creating surface for consumer unnamed-20639-0 with slotExpansion=1 for 64 slots
+09-11 13:16:25.679 20639 20639 I Surface : Creating surface for consumer VRI[PdmsBindProof]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+09-11 13:16:25.696   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:25.696   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:25.696   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.696   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.696   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.697 20639 20679 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.697 20639 20679 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.698   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:25.698   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:25.698   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.699   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.699   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.699   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+09-11 13:16:25.699 20639 20679 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.699 20639 20679 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.700   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:25.700   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:25.700   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.700   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.700   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.701 20639 20679 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.701 20639 20679 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.702   516   536 I SnapAlloc: Using graphics libs for alignment calculations
+09-11 13:16:25.702   516   536 D SnapAlloc: from handle - reserved size 4055837032 custom content metadata size 0
+09-11 13:16:25.702   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.702   516   536 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.702   516   536 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.703 20639 20679 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:25.703 20639 20679 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:25.880  1737  1960 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-11 13:16:26.022   515   646 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.022   515   646 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.024  1737  2362 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10177 pid=0
+09-11 13:16:26.024  1737  2362 D libbinder.PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10177 => denied (282 us)
+09-11 13:16:26.025  1737  2362 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10177 pid=0
+09-11 13:16:26.025  1737  2362 D libbinder.PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10177 => denied (568 us)
+09-11 13:16:26.025  1737  2362 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10177 pid=0
+09-11 13:16:26.025  1737  2362 D libbinder.PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10177 => denied (430 us)
+09-11 13:16:26.026  1737  2362 W libbinder.ServiceManagerCppClient: Permission failure: android.permission.READ_FRAME_BUFFER from uid=10177 pid=0
+09-11 13:16:26.026  1737  2362 D libbinder.PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=10177 => denied (363 us)
+09-11 13:16:26.028   515   646 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.028   515   646 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.035  1737  1801 I ActivityTaskManager: Displayed com.poc.pdms/.PdmsBindProof for user 0: +2s756ms
+09-11 13:16:26.035 20545 20545 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@3801d9b
+09-11 13:16:26.036  1737  3949 D CoreBackPreview: Window{6b704bf u0 com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.MainSettingsActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4d331d5, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-11 13:16:26.043   515   646 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.043   515   646 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.044   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.044   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.044   521   616 I SDM     : Using previously loaded IMapper library.
+09-11 13:16:26.050  1737  1914 I ImeTracker: com.poc.pdms:b5d9fdf: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+09-11 13:16:26.052 20639 20639 D InsetsController: hide(ime())
+09-11 13:16:26.052 20639 20639 I ImeTracker: com.poc.pdms:b5d9fdf: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-11 13:16:26.058   515   646 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.058   515   646 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.060   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.060   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.074   515   550 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.074   515   550 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.077   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.077   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.094   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.094   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.302  1737  3198 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-11 13:16:26.311   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:26.311   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:26.623   867  2605 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceSleep: TX Awake, Sending SLEEP_IND
+09-11 13:16:26.624   867  2605 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+09-11 13:16:26.624   867  2605 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_OFF - after sys fs write-ret:4
+09-11 13:16:26.774   867  2507 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+09-11 13:16:27.002  1737  1967 D NetworkRequestStateStatsMetrics: Removed nr with ID = 447
+09-11 13:16:27.134 20067 20067 I CDAS-App: SharedWearableListenerService onDestroy
+09-11 13:16:27.140 20067 20067 I CDAS-LeftBehind: AssociatedWearableListenerService onDestroy
+09-11 13:16:27.248   515   646 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:27.249   515   646 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:27.261   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:27.261   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:27.261   515   646 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:27.261   515   646 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:27.279   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:27.279   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:27.283  1682  1699 I pixel-thermal: audio-therm:41.162 raw data: audio-therm:41162 
+09-11 13:16:27.285  1682  1699 I pixel-thermal: sdm-skin-therm:42.646 raw data: sdm-skin-therm:42646 
+09-11 13:16:27.296   521   616 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:27.296   521   616 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:27.938   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+09-11 13:16:27.939   867  2602 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+09-11 13:16:27.939   867  2602 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_ON - after sys fs write-ret:4
+09-11 13:16:27.939   867  2602 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+09-11 13:16:27.939   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+09-11 13:16:27.941  2178  2481 I bt_btm_pm: system/stack/acl/btm_pm.cc:648 btm_pm_proc_mode_change: Power mode switched from immediate:active[0] to immediate:sniff[2]
+09-11 13:16:27.981   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+09-11 13:16:27.982   867  2602 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+09-11 13:16:27.982   867  2602 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_OFF - after sys fs write-ret:4
+09-11 13:16:28.008  1737  1899 E system_server: Failed to open /proc/3316/fdinfo directory: No such file or directory
+09-11 13:16:28.008  1737  1899 E system_server: Failed to read dmabuf fd references
+09-11 13:16:28.021   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+09-11 13:16:28.021   867  2602 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+09-11 13:16:28.021   867  2602 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_ON - after sys fs write-ret:4
+09-11 13:16:28.021   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+09-11 13:16:28.062   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+09-11 13:16:28.063   867  2602 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+09-11 13:16:28.063   867  2602 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_OFF - after sys fs write-ret:4
+09-11 13:16:28.214   867  2507 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+09-11 13:16:28.941  1737  1960 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-11 13:16:29.286  1737  1960 D WifiConfigStore: Writing to stores completed in 21 ms.
+09-11 13:16:29.292  1682  1699 I pixel-thermal: audio-therm:41.188 raw data: audio-therm:41188 
+09-11 13:16:29.294  1682  1699 I pixel-thermal: sdm-skin-therm:42.633 raw data: sdm-skin-therm:42633 
+09-11 13:16:29.365  1248  1248 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:logcat -d -s KEYGUARD_FORGE_POC:* CDAS-App:*'
+09-11 13:16:29.931  1737  1899 D ActivityManager: freezing 17256 com.google.android.permissioncontroller
+09-11 13:16:29.936  1737  1967 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-11 13:16:29.938  1737  1967 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-11 13:16:29.938  1737  1967 D InetDiagMessage: Destroyed live tcp sockets for uids={10161} in 4ms
+09-11 13:16:30.194 20630 20630 I libbinder.AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.hardware.dumpstate.IDumpstateDevice/default has clients: 0
+09-11 13:16:30.194 20630 20630 I libbinder.AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+09-11 13:16:30.196 20630 20630 I libbinder.AidlLazyServiceRegistrar: Unregistered all clients and exiting
+09-11 13:16:30.741  2157 16729 D IpClient/wlan0: addressUpdated: 2001:4490:4ec9:e819:dce2:21ff:fee9:d5b2/64 on ifindex 26 flags 0x00000100 scope 0
+09-11 13:16:30.742  2157 16729 D IpClient/wlan0: addressUpdated: 2001:4490:4ec9:e819:1c4a:f4f4:6337:d4d2/64 on ifindex 26 flags 0x00000001 scope 0
+09-11 13:16:30.743  2157 16729 W AlarmManager: Unrecognized alarm listener com.android.networkstack.android.net.ip.IpClientLinkObserver$Dhcp6PdPreferredPrefixAlarmListener@e2f17cf
+09-11 13:16:30.746  2157 16729 D ApfFilter: (wlan0): Ignoring RA RA fe80::8ec7:c3ff:feeb:b160 -> ff02::1 1800s 2001:4490:4ec9:e819::/64 2591952s/604752s DNS 600s 2001:4490:efd8::4 2001:4490:efd4::4 RIO 2591952s 2001:4490:4ec9:e819::/64  which matches RA fe80::8ec7:c3ff:feeb:b160 -> ff02::1 1800s 2001:4490:4ec9:e819::/64 2592000s/604800s DNS 600s 2001:4490:efd8::4 2001:4490:efd4::4 RIO 2592000s 2001:4490:4ec9:e819::/64 
+09-11 13:16:31.039   391   412 E pixelstats-uevent: Unable to read  - No such file or directory
+09-11 13:16:31.047  1449  1449 E BatteryDefender: Failed to read /sys/devices/platform/google,charger/bd_state
+09-11 13:16:31.062  2242  2242 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 0
+09-11 13:16:31.102  1449  1449 E BatteryDefender: Failed to read /sys/devices/platform/google,charger/bd_state
+09-11 13:16:31.969  1737  1960 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-11 13:16:33.048  1682  1699 I pixel-thermal: audio-therm:41.188 raw data: audio-therm:41188 
+09-11 13:16:33.054  1682  1699 I pixel-thermal: sdm-skin-therm:42.633 raw data: sdm-skin-therm:42633 
+09-11 13:16:34.760   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+09-11 13:16:34.760   867  2602 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+09-11 13:16:34.760   867  2602 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_ON - after sys fs write-ret:4
+09-11 13:16:34.761   867  2602 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+09-11 13:16:34.761   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+09-11 13:16:34.770  2178  2481 I bt_btm_pm: system/stack/acl/btm_pm.cc:648 btm_pm_proc_mode_change: Power mode switched from immediate:sniff[2] to immediate:active[0]
+09-11 13:16:34.796   867   899 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Writing IBS_WAKE_IND
+09-11 13:16:34.799   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_ACK: 0xFC
+09-11 13:16:34.799   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Signal wack_cond_
+09-11 13:16:34.799   867   899 D vendor.qti.bluetooth@1.0-ibs_handler: DeviceWakeUp: Unblocked from waiting for FC, pthread_cond_timedwait ret = 0
+09-11 13:16:34.993  1737  1960 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-11 13:16:35.011   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+09-11 13:16:35.027  1737  2902 W ActivityManager: pid 18702 com.google.android.gms sent binder code 18 with flags 2 and got error -74
+09-11 13:16:35.031  2097  3393 I GoogleSignatureVerifier: package info is not set correctly
+09-11 13:16:35.033  2097 20691 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:2168 android.content.ContextWrapper.bindService:906 com.google.android.gms.wearable.zzz.dispatchMessageTraced:45 com.google.android.gms.libs.punchclock.threads.TracingHandler.dispatchMessage:0 android.os.Looper.loopOnce:296 
+09-11 13:16:35.046   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+09-11 13:16:35.046   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+09-11 13:16:35.064  1682  1699 I pixel-thermal: audio-therm:41.195 raw data: audio-therm:41195 
+09-11 13:16:35.066  1682  1699 I pixel-thermal: sdm-skin-therm:42.626 raw data: sdm-skin-therm:42626 
+09-11 13:16:35.080  2097  2177 I WearServices: [WBridgedItemsController]Displaying bridged notification RemoteStreamItemId[creatorNodeId=96eb2ede, notificationKey=10|com.Slack|677329043|null|1010408, packageName=com.Slack, id=677329043, tag=null, revision=442027, originalRevision=-1, isLiveUpdate=false] as StreamItemIdAndRevision{streamItemId=StreamItemId{source=2, key=10|com.Slack|677329043|null|1010408}, revision=442027, originalRevision=441457, updateCount=0}
+09-11 13:16:35.093   867  2602 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_SLEEP_IND: 0xFE
+09-11 13:16:35.103  2097  2177 I WearServices: [WBridgedItemsController]Displaying bridged notification RemoteStreamItemId[creatorNodeId=96eb2ede, notificationKey=10|com.Slack|282447402|null|1010408, packageName=com.Slack, id=282447402, tag=null, revision=442028, originalRevision=-1, isLiveUpdate=false] as StreamItemIdAndRevision{streamItemId=StreamItemId{source=2, key=10|com.Slack|282447402|null|1010408}, revision=442028, originalRevision=441458, updateCount=0}
+09-11 13:16:35.105  2097  2177 D BridgerRecords:   bridged item received updated item id %sStreamItem(StreamItemIdAndRevision{streamItemId=StreamItemId{source=2, key=10|com.Slack|677329043|null|1010408}, revision=442027, originalRevision=441457, updateCount=13},StreamItemState{isRead=false, dismissalReasons=[], filteredReasons=[], expiredDueToConnectivity=null, expiredDueToThrottling=null},AutoValue_StreamItemData{hidden=0, packageName=com.Slack, id=677329043, tag=null, flags=16, isOngoing=false, isNotClearable=false, onlyAlertOnce=false, source=GmsBridger, userId=10, isWorkProfile=true, appName=Slack, priority=0, category=msg, group=E0BSLLB86TZ, groupKey=com.Slack:10|com.Slack|g:E0BSLLB86TZ, hasGroupSummary=false, sortKey=, getChannel=null, postTime=1789112795077, originalPostTime=1789112793964, lastPostedAsInterruptiveTime=1789112795077, shouldVibrate=true, vibrationPattern=[-1], hasSound=false, hasAlreadyShown=false, groupAlertBehavior=2, alertParams=StreamAlertParams{idAndRevision=StreamItemIdAndRevision{streamItemId=StreamItemId{source=2, key=10|com.Slack|677329043|null|1010408}, revision=442027, originalRevision=441457, updateCount=13}, isMuted=true, hasSound=false, shouldVibrate=true, vibrationPattern=[-1]}, styleName=androidx.core.app.NotificationCompat$MessagingStyle, progress=unused, isIndeterminateProgress=false, isMediaNotification=false, displayName=[36Chars,hashed8Chars=7aa5d165], conversationTitle=[12Chars,hashed8Chars=24a79539], messagesSize=2, message[0]=Message{sender=[20Chars,hashed8Chars=57755c25], text=[79Chars,hashed8Chars=b0da061], uri=null, dataMime=null}, message[1]=Message{sender=[23Chars,hashed8Chars=7c80aba9], text=[102Chars,hashed8Chars=b0da061], uri=null, dataMime=null}, isGroupConversation=true, textLinesSize=0, bigText=null, bigTitle=null, summaryText=null, title=[37Chars,hashed8Chars=24a79539], ticker=null, contentText=null, subText=[3Chars,hashed3Chars=1d697], shortCriticalText=null, peopleSize=0, color=-15065823, hasBigPicture=false, hasLargeIcon=false, hasAppIcon=true, supplementalBitmapKeysSize=0, actionsCount=3, bridgedContentIntent[present]=true, bridgedContentIntentId[present]=true, fullScreenIntent=null, localOnly=true, isEmergency=false, startScrollBottom=false, doesContentIntentLaunchActivity=false, contentActionIndex=-1, wearableActionsCount=0, bridgeTag=null, dismissalId=null, locusId=null, shortcutId=null, hasOngoingActivityData=false, ongoingActivityPackageNameSubstitute=null, filteringData=FilteringData{originalPackageName=null, isMediaStyle=false, tag=null, channelId=null, isEmptyNotification=false, isClockworkForegroundService=false, isFrameworksForegroundNotification=false, hasInvalidWearableExtender=false, isFromAppHandlingMissedCallNotification=false, isFromDefaultSmsApp=false, isEmptySettingsNotification=false, isOngoingActivityStyle=false}, remoteStreamItemId=RemoteStreamItemId[creatorNodeId=96eb2ede, notificationKey=10|com.Slack|677329043|null|1010408, packageName=com.Slack, id=677329043, tag=null, revision=442027, originalRevision=-1, isLiveUpdate=false], remoteNodeId=96eb2ede, isMediaStyle=false, isDelayable=false})
+09-11 13:16:35.109  2097  2177 D BridgerRecords:   bridged item received updated item id %sStreamItem(StreamItemIdAndRevision{streamItemId=StreamItemId{source=2, key=10|com.Slack|282447402|null|1010408}, revision=442028, originalRevision=441458, updateCount=13},StreamItemState{isRead=false, dismissalReasons=[], filteredReasons=[], expiredDueToConnectivity=null, expiredDueToThrottling=null},AutoValue_StreamItemData{hidden=0, packageName=com.Slack, id=282447402, tag=null, flags=528, isOngoing=false, isNotClearable=false, onlyAlertOnce=false, source=GmsBridger, userId=10, isWorkProfile=true, appName=Slack, priority=0, category=msg, group=E0BSLLB86TZ, groupKey=com.Slack:10|com.Slack|g:E0BSLLB86TZ, hasGroupSummary=true, sortKey=, getChannel=null, postTime=1789112795103, originalPostTime=1789112793987, lastPostedAsInterruptiveTime=1789112795103, shouldVibrate=true, vibrationPattern=[-1], hasSound=false, hasAlreadyShown=false, groupAlertBehavior=2, alertParams=StreamAlertParams{idAndRevision=StreamItemIdAndRevision{streamItemId=StreamItemId{source=2, key=10|com.Slack|282447402|null|1010408}, revision=442028, originalRevision=441458, updateCount=13}, isMuted=true, hasSound=false, shouldVibrate=true, vibrationPattern=[-1]}, styleName=androidx.core.app.NotificationCompat$MessagingStyle, progress=unused, isIndeterminateProgress=false, isMediaNotification=false, displayName=[36Chars,hashed8Chars=7aa5d165], conversationTitle=[12Chars,hashed8Chars=24a79539], messagesSize=2, message[0]=Message{sender=[20Chars,hashed8Chars=57755c25], text=[79Chars,hashed8Chars=b0da061], uri=null, dataMime=null}, message[1]=Message{sender=[23Chars,hashed8Chars=7c80aba9], text=[102Chars,hashed8Chars=b0da061], uri=null, dataMime=null}, isGroupConversation=true, textLinesSize=0, bigText=null, bigTitle=null, summaryText=null, title=[37Chars,hashed8Chars=24a79539], ticker=null, contentText=null, subText=[3Chars,hashed3Chars=1d697], shortCriticalText=null, peopleSize=0, color=-15065823, hasBigPicture=false, hasLargeIcon=false, hasAppIcon=true, supplementalBitmapKeysSize=0, actionsCount=3, bridgedContentIntent[present]=true, bridgedContentIntentId[present]=true, fullScreenIntent=null, localOnly=true, isEmergency=false, startScrollBottom=false, doesContentIntentLaunchActivity=false, contentActionIndex=-1, wearableActionsCount=0, bridgeTag=null, dismissalId=null, locusId=null, shortcutId=null, hasOngoingActivityData=false, ongoingActivityPackageNameSubstitute=null, filteringData=FilteringData{originalPackageName=null, isMediaStyle=false, tag=null, channelId=null, isEmptyNotification=false, isClockworkForegroundService=false, isFrameworksForegroundNotification=false, hasInvalidWearableExtender=false, isFromAppHandlingMissedCallNotification=false, isFromDefaultSmsApp=false, isEmptySettingsNotification=false, isOngoingActivityStyle=false}, remoteStreamItemId=RemoteStreamItemId[creatorNodeId=96eb2ede, notificationKey=10|com.Slack|282447402|null|1010408, packageName=com.Slack, id=282447402, tag=null, revision=442028, originalRevision=-1, isLiveUpdate=false], remoteNodeId=96eb2ede, isMediaStyle=false, isDelayable=false})
+09-11 13:16:35.241  2070  2070 W .wearable.sysui: Monitor::Inflate: Install failed 0xdb6de250
+09-11 13:16:35.245  2070  2070 W CwExecutors: Finished  Q:     0 E:    84 NotificationTrayDataStore#setTopLevelItems (Slow)
+09-11 13:16:35.249  2135  2135 D WatchFaceService: Setting Watch Ui State with WatchUiState{ interruptionFilter=1, inAmbientMode=false } and fromSysUi=true. Existing state: firstSetWatchUiState=false, systemHasSentWatchUiState=true, mutableWatchState.interruptionFilter=1, mutableWatchState.isAmbient=false
+09-11 13:16:35.264   515   550 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:35.265   515   550 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:35.274  2070  2070 I DisplayOffloadManager: sendStatusBar
+09-11 13:16:35.275   515   550 D SnapAlloc: from handle - reserved size 0 custom content metadata size 0
+09-11 13:16:35.275   515   550 D SnapAlloc: Successfully mapped metadata 0x1
+09-11 13:16:35.285  2097  3900 E libbinder.IPCThreadState: Process seems to be sending too many oneway calls.
+09-11 13:16:35.285  2097  3900 W libbinder.IPCThreadState: CallStack::getCurrentInternal not linked, returning null
+09-11 13:16:35.285  2097  3900 W oneway spamming: CallStack::logStackInternal not linked
+09-11 13:16:35.389  2070  2070 W CwExecutors: Finished  Q:     0 E:    83 NotificationTrayDataStore#setTopLevelItems (Slow)
+09-11 13:16:35.580  2070  2070 I DisplayOffloadManager: sendStatusBar
+09-11 13:16:35.596  2070  2070 I DisplayOffloadManager: sendStatusBar
+09-11 13:16:35.998   867  2605 I vendor.qti.bluetooth@1.0-ibs_handler: DeviceSleep: TX Awake, Sending SLEEP_IND
+09-11 13:16:35.999   867  2605 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK OFF
+09-11 13:16:35.999   867  2605 D vendor.qti.bluetooth@1.0-uart_transport: ClockOperation: USERIAL_OP_CLK_OFF - after sys fs write-ret:4
+09-11 13:16:36.152   867  2507 D vendor.qti.bluetooth@1.0-wake_lock: Release wakelock is released 
+09-11 13:16:37.077  1682  1699 I pixel-thermal: audio-therm:41.175 raw data: audio-therm:41175 
+09-11 13:16:37.080  1682  1699 I pixel-thermal: sdm-skin-therm:42.613 raw data: sdm-skin-therm:42613 
+09-11 13:16:38.052  1737  1960 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-11 13:16:38.574  1248  1248 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:logcat -d'

