@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "googlehome://setup/x", "label": "gh-setup-dl"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:27.828 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:27.830 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=113
+10-02 14:04:27.830 20818 20818 I VRPPROBE: CMD type=start label=gh-setup-dl
+10-02 14:04:27.830 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:27.830 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "googlehome://setup/x", "label": "gh-setup-dl"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:10.195 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:10.197 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=113
+10-02 14:07:10.198 21235 21235 I VRPPROBE: CMD type=start label=gh-setup-dl
+10-02 14:07:10.198 21235 21235 I VRPPROBE: START googlehome://setup/x
+10-02 14:07:10.216 21235 21235 I VRPPROBE:   START_OK
+10-02 14:07:10.217 21235 21235 I VRPPROBE: == EXEC DONE
+

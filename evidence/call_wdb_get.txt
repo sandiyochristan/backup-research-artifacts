@@ -1,0 +1,12 @@
+
+====================================================================================================
+CMD: {"type": "call", "uri": "content://com.google.android.inputmethod.latin.wdb", "method": "get", "arg": "", "label": "wdb:get"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:59:25.781 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:59:25.788 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=125
+10-02 13:59:25.788 19954 19954 I VRPPROBE: CMD type=call label=wdb:get
+10-02 13:59:25.788 19954 19954 I VRPPROBE: CALL uri=content://com.google.android.inputmethod.latin.wdb method='get' arg='' extras=null
+10-02 13:59:25.796 19954 19954 I VRPPROBE:   CALL_RESULT Bundle[mParcelledData.dataSize=284]
+10-02 13:59:25.796 19954 19954 I VRPPROBE: == EXEC DONE
+

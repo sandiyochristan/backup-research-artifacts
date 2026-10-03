@@ -1,0 +1,1 @@
+{"pkg": "gms", "cls": "com.google.android.gms.nearby.sharing.main.MainActivity", "action": "android.intent.action.SEND", "mime": null, "scheme": "https"}

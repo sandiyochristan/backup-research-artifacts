@@ -1,0 +1,1 @@
+{"pkg": "com.android.contactspicker", "cls": "com.android.contactspicker.ContactsPickerActivity", "action": "android.intent.action.PICK", "mime": "vnd.android.cursor.dir/contact", "scheme": null}

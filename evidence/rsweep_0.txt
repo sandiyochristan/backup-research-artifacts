@@ -1,0 +1,12 @@
+{"pkg": "com.android.bips", "cls": "com.android.bips.ImagePrintActivity", "action": "android.intent.action.SEND", "mime": "image/*", "scheme": null}
+--------- beginning of main
+10-02 18:47:44.685 I/VRPPROBE(12860): UiActivity.onCreate uid=10362 pkg=com.vrp.probe
+10-02 18:47:44.690 I/VRPPROBE(12860): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=192
+10-02 18:47:44.690 I/VRPPROBE(12860): CMD type=result label=c0
+10-02 18:47:44.691 I/VRPPROBE(12860): RESULT_CMD #Intent;action=android.intent.action.SEND;type=image/*;launchFlags=0x10008000;component=com.vrp.probe/.ResultActivity;S.com.vrp.probe.LABEL=c0;S.com.vrp.probe.PKGNAME=com.android.bips;S.com.vrp.probe.TARGET=com.android.bips%2Fcom.android.bips.ImagePrintActivity;end
+10-02 18:47:44.707 I/VRPPROBE(12860):   RESULT_CMD_DISPATCHED
+10-02 18:47:44.718 I/VRPPROBE(12860): RESULT_START label=? target=Intent { act=android.intent.action.SEND typ=image/* flg=0x10008000 xflg=0x4 cmp=com.vrp.probe/.ResultActivity (has extras) }
+10-02 18:47:44.718 I/VRPPROBE(12860): RESULT_FORWARD to com.android.bips/com.android.bips.ImagePrintActivity
+10-02 18:47:44.849 I/VRPPROBE(13347): RESULT_START label=? target=Intent { act=android.intent.action.SEND typ=image/* flg=0x10008000 xflg=0x4 cmp=com.vrp.probe/.ResultActivity (has extras) }
+10-02 18:47:44.849 I/VRPPROBE(13347): RESULT_FORWARD to com.android.bips/com.android.bips.ImagePrintActivity
+10-02 18:47:44.862 I/VRPPROBE(13347): RESULT_RECV label=? reqCode=4242 resCode=0 (0=OK -1=CANCELED)

@@ -1,0 +1,9 @@
+{"pkg": "com.google.android.marvin.talkback", "cls": "com.google.android.accessibility.selecttospeak.popup.SelectToSpeakPopupActivity", "action": "android.intent.action.SEND", "mime": "text/plain", "scheme": null}
+--------- beginning of main
+10-02 18:52:50.778 I/VRPPROBE(14324): UiActivity.onCreate uid=10362 pkg=com.vrp.probe
+10-02 18:52:50.812 I/VRPPROBE(14324): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=276
+10-02 18:52:50.812 I/VRPPROBE(14324): CMD type=result label=c52
+10-02 18:52:50.813 I/VRPPROBE(14324): RESULT_CMD #Intent;action=android.intent.action.SEND;type=text/plain;launchFlags=0x10008000;component=com.vrp.probe/.ResultActivity;S.com.vrp.probe.LABEL=c52;S.com.vrp.probe.PKGNAME=com.google.android.marvin.talkback;S.com.vrp.probe.TARGET=com.google.android.marvin.talkback%2Fcom.google.android.accessibility.s
+10-02 18:52:50.819 I/VRPPROBE(14324):   RESULT_CMD_DISPATCHED
+10-02 18:52:50.853 I/VRPPROBE(14324): RESULT_START label=? target=Intent { act=android.intent.action.SEND typ=text/plain flg=0x10008000 xflg=0x4 cmp=com.vrp.probe/.ResultActivity (has extras) }
+10-02 18:52:50.853 I/VRPPROBE(14324): RESULT_FORWARD to com.google.android.marvin.talkback/com.google.android.accessibility.selecttospeak.popup.SelectToSpeakPopupActivity

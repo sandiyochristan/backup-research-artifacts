@@ -1,0 +1,72 @@
+
+==========================================================================================
+### com.google.android.inputmethod.latin  [5 apks]  exported=0/72
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.deviceusagestudy  [6 apks]  exported=0/81
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.chromecast.app  [4 apks]  exported=0/289
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.familylink  [PULL FAILED]  exported=0/0
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.safetycore  [11 apks]  exported=0/22
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.fitness  [4 apks]  exported=0/78
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.adwords  [2 apks]  exported=0/45
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.cloudconsole  [4 apks]  exported=0/45
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.agentspace  [3 apks]  exported=0/42
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.wellbeing  [2 apks]  exported=0/194
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.classroom  [4 apks]  exported=0/48
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.cultural  [3 apks]  exported=0/63
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.seekh  [1 apks]  exported=0/62
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.giant  [3 apks]  exported=0/39
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.magazines  [4 apks]  exported=0/92
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.contactkeys  [4 apks]  exported=0/15
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.searchlite  [2 apks]  exported=0/78
+  -- Sensitive perms: 
+
+==========================================================================================
+### com.google.android.apps.cloud.cloudbi  [4 apks]  exported=0/33
+  -- Sensitive perms: 

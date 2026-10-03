@@ -1,0 +1,11 @@
+
+====================================================================================================
+CMD: {"type": "getType", "uri": "content://com.google.android.apps.wellbeing.api/", "label": "gettype:wbapi"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:00:29.873 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:00:29.874 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=104
+10-02 14:00:29.874 19954 19954 I VRPPROBE: CMD type=getType label=gettype:wbapi
+10-02 14:00:29.883 19954 19954 I VRPPROBE:   GETTYPE content://com.google.android.apps.wellbeing.api/ -> null
+10-02 14:00:29.884 19954 19954 I VRPPROBE: == EXEC DONE
+

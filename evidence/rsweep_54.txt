@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.projection.gearhead", "cls": "com.google.android.apps.auto.components.bugreport.BugreportHandlerActivity", "action": "android.intent.action.SEND_MULTIPLE", "mime": "application/vnd.android.bugreport", "scheme": null}

@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.docs", "cls": "com.google.android.apps.docs.common.shareitem.UploadMenuActivity", "action": "android.intent.action.SEND", "mime": null, "scheme": "file"}

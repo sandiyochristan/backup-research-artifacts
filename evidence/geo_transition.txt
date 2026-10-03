@@ -1,0 +1,24 @@
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "com.google.android.apps.chromecast.app.gf.GF_TRANSITION", "extras": {"transition": "ENTER", "geofence_id": "attacker_home", "lat": "12.9716", "lng": "77.5946", "accuracy": "5"}, "label": "geofence-enter"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:04.349 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:04.350 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=237
+10-02 14:04:04.351 20818 20818 I VRPPROBE: CMD type=broadcast label=geofence-enter
+10-02 14:04:04.352 20818 20818 I VRPPROBE: BROADCAST #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;S.accuracy=5;S.geofence_id=attacker_home;S.transition=ENTER;S.lat=12.9716;S.lng=77.5946;end
+10-02 14:04:04.355 20818 20818 I VRPPROBE:   BROADCAST_SENT
+10-02 14:04:04.355 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "com.google.android.apps.chromecast.app.gf.GF_TRANSITION", "extras": {"transition": "ENTER", "geofence_id": "attacker_home", "lat": "12.9716", "lng": "77.5946", "accuracy": "5"}, "label": "geofence-enter"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:46.645 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:46.646 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=237
+10-02 14:06:46.646 21235 21235 I VRPPROBE: CMD type=broadcast label=geofence-enter
+10-02 14:06:46.647 21235 21235 I VRPPROBE: BROADCAST #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;S.accuracy=5;S.geofence_id=attacker_home;S.transition=ENTER;S.lat=12.9716;S.lng=77.5946;end
+10-02 14:06:46.648 21235 21235 I VRPPROBE:   BROADCAST_SENT
+10-02 14:06:46.648 21235 21235 I VRPPROBE: == EXEC DONE
+

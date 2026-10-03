@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.docs", "cls": "com.google.android.apps.docs.app.PickActivity", "action": "android.intent.action.PICK", "mime": null, "scheme": null}

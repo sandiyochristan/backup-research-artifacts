@@ -1,0 +1,495 @@
+### CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "https://play.google.com/audiobooks/details?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E", "label": "wv"}
+### TARGETS: ['com.google.android.apps.books']
+### PIDS_BEFORE: {'com.google.android.apps.books': None}
+
+--------- beginning of main
+10-02 16:49:18.401 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am force-stop com.google.android.apps.books'
+--------- beginning of system
+10-02 16:49:18.446 I/ActivityManager( 1842): Force stopping com.google.android.apps.books appid=10318 user=0: from pid 3103
+10-02 16:49:18.449 W/ProcessStats( 1842): Tracking association SourceState{3cad8df system/1000 ImpBg #38265} whose proc state 6 is better than process ProcessState{eca4a50 com.google.android.inputmethod.latin/10196 pkg=com.google.android.inputmethod.latin} proc state 14 (17 skipped)
+10-02 16:49:18.450 I/AppsFilter( 1842): interaction: PackageSetting{ae3d39c com.vrp.testonly/10399} -> PackageSetting{330c302 com.google.android.apps.books/10318} BLOCKED
+10-02 16:49:18.451 I/AppsFilter( 1842): interaction: PackageSetting{fff5c97 com.google.android.microdroid.empty_payload/10269} -> PackageSetting{330c302 com.google.android.apps.books/10318} BLOCKED
+10-02 16:49:18.451 I/AppsFilter( 1842): interaction: PackageSetting{5f027e5 com.vrp.probe/10362} -> PackageSetting{330c302 com.google.android.apps.books/10318} BLOCKED
+10-02 16:49:18.463 D/CarrierSvcBindHelper( 4061): onHandleForceStop: [com.google.android.apps.books]
+10-02 16:49:18.463 D/EuiccConnector( 4061): handleMessage: E msg.what=1
+10-02 16:49:18.463 D/EuiccConnector( 4061): processMsg: ConnectedState
+10-02 16:49:18.463 D/EuiccConnector( 4061): processMsg: DisconnectedState
+10-02 16:49:18.465 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:49:18.466 D/CarrierSvcBindHelper( 4061): No carrier app for: 0
+10-02 16:49:18.813 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 16:49:18.818 D/ActivityManager( 1842): freezing 366 com.google.android.apps.chromecast.app
+10-02 16:49:18.825 D/InetDiagMessage( 1842): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-02 16:49:18.828 D/InetDiagMessage( 1842): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-02 16:49:18.828 D/InetDiagMessage( 1842): Destroyed live tcp sockets for uids={10295} in 5ms
+10-02 16:49:18.935 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 121 ms
+10-02 16:49:18.968 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 16:49:18.968 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 16:49:18.968 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 16:49:19.075 D/BoundBrokerSvc(28332): onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+10-02 16:49:19.486 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:monkey -p com.google.android.apps.books -c android.intent.category.LAUNCHER 1'
+10-02 16:49:19.552 I/bthal.activity( 1056): bt_power: LeAdvStat: 16:49:18:550 - 16:49:19:551, duration: 1001, le_adv_count: 2, total_le_adv_count: 9449, total_event_count: 2
+10-02 16:49:19.625 D/AndroidRuntime( 3106): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-02 16:49:19.629 I/AndroidRuntime( 3106): Using default boot image
+10-02 16:49:19.629 I/AndroidRuntime( 3106): Leaving lock profiling enabled
+10-02 16:49:19.631 I/app_process( 3106): Core platform API enforcement disabled by runtime option
+10-02 16:49:19.631 I/app_process( 3106): Using generational CollectorTypeCMC GC.
+10-02 16:49:19.675 D/nativeloader( 3106): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+10-02 16:49:19.683 D/nativeloader( 3106): Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 16:49:19.683 D/app_process( 3106): u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/10/icu") succeeded. 
+10-02 16:49:19.683 D/app_process( 3106): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt78l.dat
+10-02 16:49:19.684 D/nativeloader( 3106): Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 16:49:19.684 D/nativeloader( 3106): Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 16:49:19.685 I/app_process( 3106): Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+10-02 16:49:19.704 D/nativeloader( 3106): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-02 16:49:19.704 D/AndroidRuntime( 3106): Calling main entry com.android.commands.monkey.Monkey
+10-02 16:49:19.705 D/nativeloader( 3106): Load /system/lib64/libmonkey_jni.so using ns default for caller /system/framework/monkey.jar in same partition (is_bridged=0): ok
+10-02 16:49:19.706 W/Monkey  ( 3106): args: [-p, com.google.android.apps.books, -c, android.intent.category.LAUNCHER, 1]
+10-02 16:49:19.708 I/AconfigPackage( 3106): com.android.art.flags is mapped to com.android.art
+10-02 16:49:19.708 I/AconfigPackage( 3106): com.android.art.rw.flags is mapped to com.android.art
+10-02 16:49:19.708 I/AconfigPackage( 3106): com.android.libcore is mapped to com.android.art
+10-02 16:49:19.708 I/AconfigPackage( 3106): com.android.adbd.flags is mapped to com.android.adbd
+10-02 16:49:19.708 I/AconfigPackage( 3106): com.android.devicelock.flags is mapped to com.android.devicelock
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.nfc.module.flags is mapped to com.android.nfcservices
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.nfc.module.nonexported.flags is mapped to com.android.nfcservices
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.google.android.widevine.flags is mapped to com.google.android.widevine
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.system.virtualmachine.flags is mapped to com.android.virt
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.wifi.flags is mapped to com.android.wifi
+10-02 16:49:19.709 I/AconfigPackage( 3106): android.provider.flags is mapped to com.android.configinfrastructure
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.icu is mapped to com.android.i18n
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.scheduling.flags is mapped to com.android.scheduling
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.signature.flags is mapped to com.android.mediaprovider
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.providers.media.flags is mapped to com.android.mediaprovider
+10-02 16:49:19.709 I/AconfigPackage( 3106): android.graphics.pdf.flags is mapped to com.android.mediaprovider
+10-02 16:49:19.709 I/AconfigPackage( 3106): android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.adservices.flags is mapped to com.android.adservices
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.sdksandbox.flags is mapped to com.android.adservices
+10-02 16:49:19.709 I/AconfigPackage( 3106): android.app.sdksandbox.flags is mapped to com.android.adservices
+10-02 16:49:19.709 I/AconfigPackage( 3106): com.android.uprobestats.flags is mapped to com.android.uprobestats
+10-02 16:49:19.709 I/AconfigPackage( 3106): android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.webapp.flags is mapped to com.android.webapp
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.compos.flags is mapped to com.android.compos
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.rkpd.flags is mapped to com.android.rkpd
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.media.extractor.flags is mapped to com.android.media
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.media.metrics.flags is mapped to com.android.media
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.media.mainline.flags is mapped to com.android.media
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.appsearch.flags is mapped to com.android.appsearch
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.bluetooth.beta.flags is mapped to com.android.bt
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.bluetooth.flags is mapped to com.android.bt
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.uwb.flags is mapped to com.android.uwb
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.ranging.flags is mapped to com.android.uwb
+10-02 16:49:19.710 I/AconfigPackage( 3106): android.telecom.flags is mapped to com.android.telephonycore
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.internal.telecom.flags is mapped to com.android.telephonycore
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.telephony.flags is mapped to com.android.telephonycore
+10-02 16:49:19.710 I/AconfigPackage( 3106): android.media.swcodec.flags is mapped to com.android.media.swcodec
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+10-02 16:49:19.710 I/AconfigPackage( 3106): com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.permission.flags is mapped to com.android.permission
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.permissioncontroller.flags is mapped to com.android.permission
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.npumanager is mapped to com.android.npumanager
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.ipsec.flags is mapped to com.android.ipsec
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.os.statsd.flags is mapped to com.android.os.statsd
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.healthfitness.flags is mapped to com.android.healthfitness
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.healthfitness.beta is mapped to com.android.healthfitness
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.tethering.mainline.beta is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): android.net.http is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.tethering.readonly.flags is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): android.net.vcn is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.net.flags is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.tethering.flags is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.tethering.beta.test is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.nearby.flags is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): com.android.net.thread.flags is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): android.net.http.flags is mapped to com.android.tethering
+10-02 16:49:19.711 I/AconfigPackage( 3106): android.os.profiling is mapped to com.android.profiling
+10-02 16:49:19.711 I/AconfigPackage( 3106): android.os.profiling.anomaly.beta.flags is mapped to com.android.profiling
+10-02 16:49:19.711 I/AconfigPackage( 3106): android.os.profiling.anomaly.flags is mapped to com.android.profiling
+10-02 16:49:19.711 E/FeatureFlagsImplExport( 3106): android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+10-02 16:49:19.719 I/EventHub( 1842): No input device configuration file found for device 'Monkey touch'.
+10-02 16:49:19.720 W/Monkey  ( 3106):  arg: "-p"
+10-02 16:49:19.720 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/power_supply": No such file or directory
+10-02 16:49:19.720 W/Monkey  ( 3106):  arg: "com.google.android.apps.books"
+10-02 16:49:19.720 W/Monkey  ( 3106):  arg: "-c"
+10-02 16:49:19.720 E/EventHub( 1842): Could not open directory "/sys/devices/power_supply": No such file or directory
+10-02 16:49:19.720 E/EventHub( 1842): Could not open directory "/sys/power_supply": No such file or directory
+10-02 16:49:19.720 W/Monkey  ( 3106):  arg: "android.intent.category.LAUNCHER"
+10-02 16:49:19.720 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/leds": No such file or directory
+10-02 16:49:19.720 W/Monkey  ( 3106):  arg: "1"
+10-02 16:49:19.720 E/EventHub( 1842): Could not open directory "/sys/devices/leds": No such file or directory
+10-02 16:49:19.720 E/EventHub( 1842): Could not open directory "/sys/leds": No such file or directory
+10-02 16:49:19.720 W/Monkey  ( 3106): data="com.google.android.apps.books"
+10-02 16:49:19.720 W/Monkey  ( 3106): data="android.intent.category.LAUNCHER"
+10-02 16:49:19.721 I/EventHub( 1842): usingClockIoctl=true
+10-02 16:49:19.721 I/EventHub( 1842): New device: id=82, fd=404, path='/dev/input/event4', name='Monkey touch', classes=TOUCH | TOUCH_MT, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false, 
+10-02 16:49:19.723 I/InputReader( 1842): Device reconfigured: id=82, name='Monkey touch', size 1080x2400, orientation Rotation0, mode DIRECT, display id 0
+10-02 16:49:19.723 I/InputReader( 1842): Device added: id=82, eventHubId=82, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+10-02 16:49:19.729 W/ActivityManager( 1842): registerReceiverWithFeature: no app for null
+10-02 16:49:19.734 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 16:49:19.737 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 16:49:19.739 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=3106) has no WPC
+10-02 16:49:19.740 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@f2978cf0 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:49:19.742 V/WindowManager( 1842): Aborting Transition: 3799
+10-02 16:49:19.742 D/KeyguardService( 3743): setOccluded(false)
+10-02 16:49:19.742 D/WindowManagerOcclusion( 3743): #onKeyguardServiceSetOccluded(false)
+10-02 16:49:19.742 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df673c10) with descriptor: '(not cached)'
+10-02 16:49:19.742 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books} activity=ActivityRecord{18632958 u0 com.google.android.apps.books/.app.BooksActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:49:19.742 I/ActivityTaskManager( 1842): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.books/.app.BooksActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=3
+10-02 16:49:19.742 I/Monkey  ( 3106): Events injected: 1
+10-02 16:49:19.744 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}, wasVisible=true, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 16:49:19.745 I/Monkey  ( 3106): ## Network stats: elapsed time=6ms (0ms mobile, 0ms wifi, 6ms not connected)
+10-02 16:49:19.745 I/app_process( 3106): System.exit called, status: 0
+10-02 16:49:19.745 I/AndroidRuntime( 3106): VM exiting with result code 0.
+10-02 16:49:19.758 I/EventHub( 1842): Removing device Monkey touch due to epoll hang-up event.
+10-02 16:49:19.758 I/EventHub( 1842): Removed device: path=/dev/input/event4 name=Monkey touch id=82 fd=404 classes=TOUCH | TOUCH_MT
+10-02 16:49:19.759 I/InputReader( 1842): Device removed: id=82, eventHubId=82, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f', sources=TOUCHSCREEN
+10-02 16:49:19.771 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 16:49:19.771 I/EventHub( 1842): Removing device '/dev/input/event4' due to inotify event
+10-02 16:49:19.773 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 16:49:19.774 D/NavigationModeController( 3743): getCurrentUserContext: contextUser=0 currentUser=0
+10-02 16:49:19.886 D/ActivityManager( 1842): freezing 2616 com.android.vending
+10-02 16:49:19.890 D/ActivityManager( 1842): freezing 3017 com.android.vending:quick_launch
+10-02 16:49:19.891 D/ActivityManager( 1842): freezing 31309 com.android.vending:background
+10-02 16:49:20.119 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 16:49:20.288 D/InetDiagMessage( 1842): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-02 16:49:20.296 D/InetDiagMessage( 1842): Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-02 16:49:20.297 D/InetDiagMessage( 1842): Destroyed live tcp sockets for uids={10134} in 11ms
+10-02 16:49:20.984 I/bthal.activity( 1056): bt_power: LeAdvStat: 16:49:19:833 - 16:49:20:984, duration: 1150, le_adv_count: 4, total_le_adv_count: 9453, total_event_count: 0
+10-02 16:49:21.797 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:pidof com.google.android.apps.books'
+10-02 16:49:21.869 I/adbd    ( 1339): adbd service requested 'sync:'
+10-02 16:49:21.896 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.probe/.UiActivity'
+10-02 16:49:21.915 I/NearbyMediums(28332): No BLE Fast/GATT advertisements found in the latest cycle.
+10-02 16:49:21.915 I/NearbyMediums(28332): Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+10-02 16:49:21.946 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=3125) has no WPC
+10-02 16:49:21.947 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@3dacc844 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:49:21.950 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:49:21.950 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df673c10) with descriptor: '(not cached)'
+10-02 16:49:21.950 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{ad860ae #915 type=standard A=10362:com.vrp.probe} activity=ActivityRecord{31581538 u0 com.vrp.probe/.UiActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:49:21.950 I/ActivityTaskManager( 1842): START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.probe/.UiActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=2
+10-02 16:49:21.950 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13602063 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1c059a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{8222f3e com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:49:21.950 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:49:21.951 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity}, wasVisible=true, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 16:49:21.951 V/WindowManagerShell( 3743): Transition requested (#3800): android.os.BinderProxy@5977cf6 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13602063 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1deaee1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{5d758f7 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3800 }
+10-02 16:49:21.951 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 16:49:21.952 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books} on display 0
+10-02 16:49:21.952 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{ad860ae #915 type=standard A=10362:com.vrp.probe} on display 0
+10-02 16:49:21.958 I/VRPPROBE(21301): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=174
+10-02 16:49:21.958 I/VRPPROBE(21301): CMD type=start label=wv
+10-02 16:49:21.958 I/VRPPROBE(21301): START https://play.google.com/audiobooks/details?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E
+10-02 16:49:21.959 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329863823)
+10-02 16:49:21.959 V/WindowManagerShell( 3743): onTransitionReady (#3800) android.os.BinderProxy@5977cf6: {id=3800 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:49:21.959 V/WindowManagerShell( 3743):         {m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xfd65364 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:49:21.959 V/WindowManagerShell( 3743):         {m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xf0229cd sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:49:21.959 V/WindowManagerShell( 3743):     ]}
+10-02 16:49:21.959 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #3800
+10-02 16:49:21.959 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=915
+10-02 16:49:21.959 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=3022, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 16:49:21.959 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=915, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 16:49:21.959 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 16:49:21.959 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:49:21.959 V/WindowManagerShell( 3743): Playing animation for (#3800) android.os.BinderProxy@5977cf6@0
+10-02 16:49:21.959 D/ShellSplitScreen( 3743): startAnimation: transition=3800 isSplitActive=false
+10-02 16:49:21.959 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 16:49:21.959 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 16:49:21.959 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=3800 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xfd65364 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xf0229cd sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:49:21.959 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@f8a4ff7 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@24b7e64, appThread = android.app.IApplicationThread$Stub$Proxy@fff78cd, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@f8a4ff7 windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:49:21.959 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@2231582, appThread = android.app.IApplicationThread$Stub$Proxy@e09f493, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:49:21.960 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f741cd0, appThread = android.app.IApplicationThread$Stub$Proxy@e17d4c9, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 16:49:21.960 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f7107ce, appThread = android.app.IApplicationThread$Stub$Proxy@ad546ef, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:49:21.960 V/WindowManagerShell( 3743):  Delegate animation for (#3800) to null
+10-02 16:49:21.960 V/WindowManagerShell( 3743): start default transition animation, info = {id=3800 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xfd65364 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xf0229cd sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:49:21.960 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@91495c9 animAttr=0x7 type=OPEN isEntrance=false
+10-02 16:49:21.960 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 16:49:21.960 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13611839 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1c059a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{8e7319f com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:49:21.961 V/WindowManager( 1842): Sent Transition (#3800) createdAt=10-02 16:49:21.947 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13602063 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{d8d5f89 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3800 }
+10-02 16:49:21.961 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 16:49:21.962 V/WindowManager( 1842):     info={id=3800 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:49:21.962 V/WindowManager( 1842):         {WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x85793f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:49:21.962 V/WindowManager( 1842):         {WCT{RemoteToken{9bf2405 Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books}}} m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xd18013 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:49:21.962 V/WindowManager( 1842):     ]}
+10-02 16:49:21.963 I/pixel-thermal( 1850): VIRTUAL-SKIN:40.1806 raw data: VIRTUAL-NEUTRAL:40180.6 VIRTUAL-NEUTRAL-SKIN2:39861.4 VIRTUAL-QUIET-NEUTRAL:38494.4 VIRTUAL-SKIN:40180.6 disp_therm:38049 gnss_tcxo_therm:41044 neutral_therm:38962 quiet_therm:38294 skin_therm1:41181 skin_therm2:41960 
+10-02 16:49:21.963 I/pixel-thermal( 1850): cellular-emergency:40.1806 raw data: VIRTUAL-SKIN:40180.6 cellular-emergency:40180.6 
+10-02 16:49:21.963 I/pixel-thermal( 1850): VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-5418 VIRTUAL-USB-UI:0 charger_skin_therm:43334 usb_pwr_therm2:37916 
+10-02 16:49:21.965 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@f2978cf0 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:49:21.966 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:49:21.966 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df67e3d0) with descriptor: '(not cached)'
+10-02 16:49:21.967 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=3022 effectiveUid=10318 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.books/.app.BooksActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.books.app.BooksActivity} realActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.play.books.app.BooksActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13611835 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@2781b90} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{b1748bb com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=Rect(28, 824 - 1052, 1644)}
+10-02 16:49:21.967 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:49:21.967 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books} activity=ActivityRecord{23602782 u0 com.google.android.apps.books/com.google.android.apps.play.books.screen.deeplink.DeepLinkActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:49:21.967 I/ActivityTaskManager( 1842): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10200000 xflg=0x4 cmp=com.google.android.apps.books/com.google.android.apps.play.books.screen.deeplink.DeepLinkActivity} with LAUNCH_MULTIPLE from uid 10362 (com.vrp.probe) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+10-02 16:49:21.968 V/WindowManagerShell( 3743): Transition requested (#3801): android.os.BinderProxy@7c7c585 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=3022 effectiveUid=10318 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.books/.app.BooksActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.books.app.BooksActivity} realActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.play.books.app.BooksActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13611835 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c2d9791} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{81bcfda com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=Rect(28, 824 - 1052, 1644)}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3801 }
+10-02 16:49:21.968 I/VRPPROBE(21301):   START_OK
+10-02 16:49:21.968 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 16:49:21.968 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}, wasVisible=true, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 16:49:21.968 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{ad860ae #915 type=standard A=10362:com.vrp.probe} on display 0
+10-02 16:49:21.968 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books} on display 0
+10-02 16:49:21.971 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 16:49:21.973 V/WindowManager( 1842): Sent Transition (#3801) createdAt=10-02 16:49:21.965 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=3022 effectiveUid=10318 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.books/.app.BooksActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.books.app.BooksActivity} realActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.play.books.app.BooksActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13611835 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{9bf2405 Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{4c2c071 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=Rect(28, 824 - 1052, 1644)}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3801 }
+10-02 16:49:21.973 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 16:49:21.973 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329863836)
+10-02 16:49:21.973 V/WindowManagerShell( 3743): onTransitionReady (#3801) android.os.BinderProxy@7c7c585: {id=3801 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:49:21.973 V/WindowManagerShell( 3743):         {m=TO_FRONT f=TRANSLUCENT|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xe417ae8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:49:21.973 V/WindowManagerShell( 3743):         {m=CHANGE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xcc43501 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:49:21.973 V/WindowManagerShell( 3743):     ]}
+10-02 16:49:21.973 V/WindowManager( 1842):     info={id=3801 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:49:21.973 V/WindowManager( 1842):         {WCT{RemoteToken{9bf2405 Task{523cbf9 #3022 type=standard A=10318:com.google.android.apps.books}}} m=TO_FRONT f=TRANSLUCENT|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xd18013 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:49:21.973 V/WindowManager( 1842):         {WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} m=CHANGE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x85793f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:49:21.973 V/WindowManager( 1842):     ]}
+10-02 16:49:21.973 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #3801
+10-02 16:49:21.973 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=3022
+10-02 16:49:21.973 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=3022, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 16:49:21.973 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 16:49:21.973 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=915, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 16:49:21.973 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:49:21.973 V/WindowManagerShell( 3743): Transition (#3801) android.os.BinderProxy@7c7c585@0 ready while (#3800) android.os.BinderProxy@5977cf6@0 is still animating. Notify the animating transition in case they can be merged
+10-02 16:49:21.974 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=3022 effectiveUid=10318 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.books/.app.BooksActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.books.app.BooksActivity} realActivity=ComponentInfo{com.google.android.apps.books/com.google.android.apps.play.books.app.BooksActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=13611855 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@2781b90} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 63) topActivityInfo=ActivityInfo{cb521d8 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=Rect(28, 824 - 1052, 1644)}
+10-02 16:49:21.974 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#3800) android.os.BinderProxy@5977cf6@0
+10-02 16:49:21.975 V/WindowManager( 1842): Finish Transition (#3800): created at 10-02 16:49:21.947 collect-started=0.055ms request-sent=2.5ms started=4.437ms ready=8.302ms sent=10.278ms commit=12.161ms finished=27.893ms
+10-02 16:49:21.975 V/WindowManagerShell( 3743): Playing animation for (#3801) android.os.BinderProxy@7c7c585@0
+10-02 16:49:21.975 D/ShellSplitScreen( 3743): startAnimation: transition=3801 isSplitActive=false
+10-02 16:49:21.975 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 16:49:21.976 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 16:49:21.976 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=3801 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=TRANSLUCENT|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xe417ae8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CHANGE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xcc43501 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:49:21.976 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@f8a4ff7 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@24b7e64, appThread = android.app.IApplicationThread$Stub$Proxy@fff78cd, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@f8a4ff7 windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:49:21.976 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@2231582, appThread = android.app.IApplicationThread$Stub$Proxy@e09f493, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:49:21.976 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f741cd0, appThread = android.app.IApplicationThread$Stub$Proxy@e17d4c9, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 16:49:21.976 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f7107ce, appThread = android.app.IApplicationThread$Stub$Proxy@ad546ef, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:49:21.976 V/WindowManagerShell( 3743):  Delegate animation for (#3801) to null
+10-02 16:49:21.976 V/WindowManagerShell( 3743): start default transition animation, info = {id=3801 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=TRANSLUCENT|MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3022#18514)/@0xe417ae8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CHANGE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xcc43501 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:49:21.976 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@1be203d animAttr=0x4 type=OPEN isEntrance=true
+10-02 16:49:21.976 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 16:49:22.008 I/ImeTracker( 1842): com.google.android.permissioncontroller:bdecd082: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false userId 0 displayId 0
+10-02 16:49:22.008 D/InsetsController( 3753): hide(ime())
+10-02 16:49:22.008 I/ImeTracker( 3753): com.google.android.permissioncontroller:bdecd082: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-02 16:49:22.009 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 16:49:22.010 I/GoogleInputMethodService(15684): GoogleInputMethodService.onFinishInput():2361 
+10-02 16:49:22.010 I/GoogleInputMethodService(15684): GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.permissioncontroller, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-02 16:49:22.010 W/LatinIMEBase(15684): LatinIMEBase.updateInputViewCoverNavigation():322 Null input view, cannot update padding!
+10-02 16:49:22.010 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-02 16:49:22.011 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-02 16:49:22.011 W/PackageConfigPersister( 1842): App-specific configuration not found for packageName: com.google.android.permissioncontroller and userId: 0
+10-02 16:49:22.070 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:49:22.070 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:49:22.071 V/RecentTasksController( 3743): generateList(getRecentTasks)
+10-02 16:49:22.071 V/RecentTasksController( 3743): initializeDesksMap - desktop windowing not available
+10-02 16:49:22.071 V/RecentTasksController( 3743): Added fullscreen task: 3022
+10-02 16:49:22.071 V/RecentTasksController( 3743): Added fullscreen task: 915
+10-02 16:49:22.071 V/RecentTasksController( 3743): Added fullscreen task: 3021
+10-02 16:49:22.071 V/RecentTasksController( 3743): generateList - complete
+10-02 16:49:22.072 D/PreloadThumbnailUseCase( 4067): Preloading thumbnails for task ids: [[id=3021 windowingMode=1 user=0 lastActiveTime=13530358 lastFocusedTime=13523157] null, [id=915 windowingMode=1 user=0 lastActiveTime=13611853 lastFocusedTime=13611846] null, [id=3022 windowingMode=1 user=0 lastActiveTime=13611855 lastFocusedTime=13611860] null]
+10-02 16:49:22.074 D/LauncherAmbientCueVM( 4067): recalculateStates: isRootAttached=false (isTestMode=false, hasActions=false, isAmbientCueEnabled=true, isNotDeactivated=true, isTaskFocused=false [focusedId=3022, targetId=-1])
+10-02 16:49:22.097 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 16:49:22.097 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 16:49:22.098 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 16:49:22.261 I/bthal.activity( 1056): bt_power: LeAdvStat: 16:49:21:258 - 16:49:22:261, duration: 1003, le_adv_count: 2, total_le_adv_count: 9455, total_event_count: 0
+10-02 16:49:22.306 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#3801) android.os.BinderProxy@7c7c585@0
+10-02 16:49:22.312 V/WindowManager( 1842): Finish Transition (#3801): created at 10-02 16:49:21.965 collect-started=0.034ms request-sent=2.069ms started=2.806ms ready=4.528ms sent=6.159ms commit=18.784ms finished=345.664ms
+10-02 16:49:22.313 V/WindowManagerShell( 3743): Track 0 became idle
+10-02 16:49:22.313 V/WindowManagerShell( 3743): All active transition animations finished
+10-02 16:49:22.377 I/system_server( 1842): NativeAlloc concurrent mark compact GC freed 7337KB AllocSpace bytes, 9(184KB) LOS objects, 82% free, 90MB/512MB, paused 345us,4.931ms total 400.828ms
+10-02 16:49:22.386 I/libbinder.BpBinder( 1842): onLastStrongRef automatically unlinking death recipients for binder (0xb4000076ff010a40) with descriptor: '(not cached)'
+10-02 16:49:22.396 W/System  ( 1842): A resource failed to call HardwareBuffer.close. 
+10-02 16:49:22.691 I/pixel-thermal( 1850): cellular-emergency:40.1806 raw data: cellular-emergency:40180.6 
+10-02 16:49:22.692 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU:40.1806 raw data: VIRTUAL-SKIN:40180.6 VIRTUAL-SKIN-CPU:40180.6 
+10-02 16:49:22.692 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU power_budget=1132.48 err=0.819397 s_power=800 time_elapsed_ms=7011 p=327.759 i=4.72317 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 16:49:22.692 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU binded power rails: (S3M_VDD_CPUCL1: 50.94 mW)(S2M_VDD_CPUCL2: 48.88 mW)(S4M_VDD_CPUCL0: 100.29 mW)
+10-02 16:49:22.692 I/pixel-thermal( 1850): VIRTUAL-SKIN:40.1806 raw data: VIRTUAL-SKIN:40180.6 
+10-02 16:49:22.692 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU:40.1806 raw data: VIRTUAL-SKIN:40180.6 VIRTUAL-SKIN-CPU-GPU:40180.6 
+10-02 16:49:22.693 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU power_budget=2245.82 err=4.8194 s_power=800 time_elapsed_ms=7011 p=1445.82 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 16:49:22.693 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU binded power rails: (S2S_VDD_G3D: 2.29 mW)(S3M_VDD_CPUCL1: 50.94 mW)(S2M_VDD_CPUCL2: 48.88 mW)(S4M_VDD_CPUCL0: 100.29 mW)
+10-02 16:49:22.693 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT:40.1806 raw data: VIRTUAL-SKIN:40180.6 VIRTUAL-SKIN-HINT:40180.6 
+10-02 16:49:22.693 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE:40.1806 raw data: VIRTUAL-SKIN:40180.6 VIRTUAL-SKIN-CHARGE:40180.6 
+10-02 16:49:22.693 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 443.072
+10-02 16:49:25.106 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 16:49:25.121 I/bthal.activity( 1056): bt_power: LeAdvStat: 16:49:24:120 - 16:49:25:121, duration: 1000, le_adv_count: 1, total_le_adv_count: 9456, total_event_count: 1
+10-02 16:49:25.125 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 16:49:25.239 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 133 ms
+10-02 16:49:25.288 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 16:49:25.296 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 16:49:25.296 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 16:49:25.858 I/pixel-thermal( 1850): VIRTUAL-SKIN:40.0889 raw data: VIRTUAL-NEUTRAL:40088.9 VIRTUAL-NEUTRAL-SKIN2:39778.9 VIRTUAL-QUIET-NEUTRAL:38525.9 VIRTUAL-SKIN:40088.9 disp_therm:38094 gnss_tcxo_therm:40952 neutral_therm:38962 quiet_therm:38339 skin_therm1:40998 skin_therm2:41685 
+10-02 16:49:25.859 D/TemperatureStateSource( 3915): TemperatureStateSource state changed to [40.088852].
+10-02 16:49:25.865 I/pixel-thermal( 1850): VIRTUAL-SKIN:40.0889 raw data: VIRTUAL-SKIN:40088.9 
+10-02 16:49:25.866 I/TemperatureStateSource( 3915): temperature was set
+10-02 16:49:25.866 D/ImpulseStateSource( 3915): onStateChange: sequenceNumber = 1292
+10-02 16:49:25.870 D/ImpulseServer( 3915): Notify client 10151, events: {listenerName=adaptive_thermal, source=PIXEL_STATE_SOURCE_TEMPERATURE, timestampMs=1790939965860, cameraAvailabilityEvent=[0:true, 1:true], temperatureEvent=[40.088852]}
+10-02 16:49:25.871 D/ImpulseServer( 3915): Sent PixelStateChange event to client 10151
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): Package not found: com.google.android.apps.stargate [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" ]
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): android.content.pm.PackageManager$NameNotFoundException: com.google.android.apps.stargate
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:297)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:257)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:251)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at glf.test(PG:26)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kpe.test(PG:17)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.d0.accept(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:7)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.v0.tryAdvance(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:37)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.a.i(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:7)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.a.c(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:15)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.a.b(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:28)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.a.s(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:8)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.nio.file.e0.a(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:11)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.a.e(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:35)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at j$.util.stream.d3.allMatch(r8-map-id-f8f856d8c057dc79bffaecd0cd81f36fee1cf98d6c5ff23b53f974342b187257:7)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at cgq.call(PG:99)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kvr.a(PG:3)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kuv.run(PG:19)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kvs.run(PG:5)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kvh.run(PG:3)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kvi.run(PG:64)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at hzz.run(PG:7)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at kpi.run(PG:44)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at hvs.run(PG:634)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 16:49:26.459 E/SconeApkMinimumVersionsChecker( 4659): 	at ibm.run(PG:58)
+10-02 16:49:26.461 I/SconeSatelliteSupportedHelperImpl( 4659): applyUpdatedInputs: [no-op] SatelliteEnablementInputs{phenotypeFlagEnabled=false, googleMessagesDefaultSmsApp=true, apkVersionsSupported=false, setupWizardComplete=true} [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" traceId="9cf356e8-ed2d-441a-9b31-569dd163e737" ]
+10-02 16:49:26.464 D/SatelliteController( 4061): REQUEST_IS_SATELLITE_SUPPORTED
+10-02 16:49:26.464 D/SatelliteController( 4061): handleRequestIsSatelliteSupported
+10-02 16:49:26.464 D/SatelliteController( 4061): getSelectedSatelliteSubId: subId=-1
+10-02 16:49:26.464 E/SatelliteModemInterface( 4061): requestIsSatelliteSupported: Satellite service is unavailable.
+10-02 16:49:26.465 E/SatelliteServiceUtils( 4061): isSatelliteSupported SatelliteException: android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.465 D/SatelliteServiceUtils( 4061): isSatelliteSupported error: 10
+10-02 16:49:26.469 E/SconeSatelliteSupportedHelperImpl( 4659): requestIsSupported[kvk@5d2786[status=PENDING]] errorCode: 10 [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" traceId="9cf356e8-ed2d-441a-9b31-569dd163e737" ]
+10-02 16:49:26.470 D/SatelliteController( 4061): REQUEST_IS_SATELLITE_PROVISIONED
+10-02 16:49:26.470 D/SatelliteController( 4061): handleRequestIsSatelliteProvisioned
+10-02 16:49:26.470 D/SatelliteController( 4061): evaluateOemSatelliteRequestAllowed: satellite service is not supported
+10-02 16:49:26.473 E/SconeSatelliteSupportedHelperImpl( 4659): requestIsProvisioned[kvk@158d847[status=PENDING]] errorCode: 11 [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" traceId="9cf356e8-ed2d-441a-9b31-569dd163e737" ]
+10-02 16:49:26.473 D/SatelliteAccessController( 4061): requestIsCommunicationAllowedForCurrentLocation : shouldIgnoreAllowedStateCache= false
+10-02 16:49:26.473 D/SatelliteAccessController( 4061): REQUEST_IS_COMMUNICATION_ALLOWED
+10-02 16:49:26.474 D/SatelliteAccessController( 4061): handleRequestIsCommunicationAllowed : shouldIgnoreAllowedStateCache = false
+10-02 16:49:26.474 D/AccessControllerMetricsStats( 4061): setTriggeringEvent: triggering event = 1
+10-02 16:49:26.474 D/SatelliteController( 4061): getSelectedSatelliteSubId: subId=-1
+10-02 16:49:26.474 D/SatelliteController( 4061): [incrementResultReceiverCount] : SAC:requestIsCommunicationAllowedForCurrentLocation | ResultReceiver total count= 2
+10-02 16:49:26.475 D/SatelliteController( 4061): REQUEST_IS_SATELLITE_SUPPORTED
+10-02 16:49:26.475 D/SatelliteController( 4061): handleRequestIsSatelliteSupported
+10-02 16:49:26.475 D/SatelliteController( 4061): getSelectedSatelliteSubId: subId=-1
+10-02 16:49:26.475 E/SatelliteModemInterface( 4061): requestIsSatelliteSupported: Satellite service is unavailable.
+10-02 16:49:26.475 D/SatelliteController( 4061): REQUEST_SELECTED_NB_IOT_SATELLITE_SUBSCRIPTION_ID
+10-02 16:49:26.475 D/SatelliteController( 4061): handleRequestSelectedNbIotSatelliteSubscriptionId
+10-02 16:49:26.475 D/SatelliteController( 4061): getSelectedSatelliteSubId: subId=-1
+10-02 16:49:26.475 D/SatelliteController( 4061): requestSelectedNbIotSatelliteSubscriptionId: -1
+10-02 16:49:26.475 D/SatelliteController( 4061): requestSelectedNbIotSatelliteSubscriptionId: selectedSatelliteSubId is invalid
+10-02 16:49:26.475 E/SatelliteServiceUtils( 4061): isSatelliteSupported SatelliteException: android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.475 D/SatelliteServiceUtils( 4061): isSatelliteSupported error: 10
+10-02 16:49:26.476 D/SatelliteAccessController( 4061): EVENT_IS_SATELLITE_SUPPORTED_DONE
+10-02 16:49:26.476 D/SatelliteAccessController( 4061): handleIsSatelliteSupportedResult: resultCode=10
+10-02 16:49:26.476 D/SatelliteAccessController( 4061): sendSatelliteAllowResultToReceivers : resultCode is 10
+10-02 16:49:26.476 D/SatelliteController( 4061): [decrementResultReceiverCount] : SAC:requestIsCommunicationAllowedForCurrentLocation | ResultReceiver total count=1
+10-02 16:49:26.476 D/SatelliteAccessController( 4061): setIsSatelliteAllowedRegionPossiblyChanged : false
+10-02 16:49:26.476 D/ControllerMetricsStats( 4061): reportFailedSatelliteAccessCheckCount:ControllerParams(, countOfSatelliteServiceEnablementsSuccess=0, countOfSatelliteServiceEnablementsFail=0, countOfOutgoingDatagramSuccess=0, countOfOutgoingDatagramFail=0, countOfIncomingDatagramSuccess=0, countOfIncomingDatagramFail=0, countOfDatagramTypeSosSms=0, countOfDatagramTypeSosSms=0, countOfDatagramTypeLocationSharing=0, countOfDatagramTypeLocationSharing=0, serviceUptimeSec=0, batteryConsumptionPercent=0, batteryChargedTimeSec=0, countOfDemoModeSatelliteServiceEnablementsSuccess=0, countOfDemoModeSatelliteServiceEnablementsFail=0, countOfDemoModeOutgoingDatagramSuccess=0, countOfDemoModeOutgoingDatagramFail=0, countOfDemoModeIncomingDatagramSuccess=0, countOfDemoModeIncomingDatagramFail=0, countOfDatagramTypeKeepAliveSuccess=0, countOfDatagramTypeKeepAliveFail=0, countOfAllowedSatelliteAccess=0, countOfDisallowedSatelliteAccess=0, countOfSatelliteAccessCheckFail=1, isProvisioned=false, carrierId=-1, countOfSatelliteAllowedStateChangedEvents=0, countOfSuccessfulLocationQueries=0, countOfFailedLocationQueries=0, countOfP2PSmsAvailableNotificationShown=0, countOfP2PSmsAvailableNotificationRemoved=0, isNtnOnlyCarrier=false, versionOfSatelliteAccessConfig=0, countOfIncomingDatagramTypeSosSmsSuccess=0, countOfIncomingDatagramTypeSosSmsFail=0, countOfOutgoingDatagramTypeSmsSuccess=0, countOfOutgoingDatagramTypeSmsFail=0, countOfIncomingDatagramTypeSmsSuccess=0, countOfIncomingDatagramTypeSmsFail=0, carrierRoamingSatelliteConfigVersion=0, maxAllowedDataMode=0, supportedConnectionMode=0)
+10-02 16:49:26.477 D/ControllerMetricsStats( 4061): reportCurrentVersionOfSatelliteAccessConfig:0
+10-02 16:49:26.477 D/AccessControllerMetricsStats( 4061): setLocationQueryTimeMillis: location query time = 0
+10-02 16:49:26.477 D/AccessControllerMetricsStats( 4061): setTotalCheckingTime: location query time = 3
+10-02 16:49:26.477 D/AccessControllerMetricsStats( 4061): setIsAllowed: allowed=false
+10-02 16:49:26.478 E/SconeSatelliteSupportedHelperImpl( 4659): requestIsCommunicationAllowedForCurrentLocation[kvk@2a3e874[status=PENDING]] errorCode: 10 [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" traceId="9cf356e8-ed2d-441a-9b31-569dd163e737" ]
+10-02 16:49:26.478 E/ksx     ( 4659): Got more than one input Future failure. Logging failures after the first
+10-02 16:49:26.478 E/ksx     ( 4659): android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.478 E/ksx     ( 4659): 	at gjq.onError(PG:9)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$9.onError(SatelliteManagerWrapper.java:1023)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$9.onError(SatelliteManagerWrapper.java:1015)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$15.lambda$onReceiveResult$5(SatelliteManager.java:2326)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$15$$ExternalSyntheticLambda5.runOrThrow(D8$$SyntheticClass:0)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.os.Binder.withCleanCallingIdentity(Binder.java:452)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$15.lambda$onReceiveResult$4(SatelliteManager.java:2325)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$15$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at hzz.run(PG:7)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at htz.run(PG:287)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 16:49:26.478 E/ksx     ( 4659): 	at ibm.run(PG:58)
+10-02 16:49:26.478 I/Telecom ( 1842): : isInEmergencyCall: false: TSI.iIEC@D/U
+10-02 16:49:26.478 D/SatelliteController( 4061): mLastEmergencyCallTime is 0, isInEmergencyMode() return false
+10-02 16:49:26.479 D/AccessControllerMetricsStats( 4061): setIsEmergency: emergency =false
+10-02 16:49:26.479 D/AccessControllerMetricsStats( 4061): setResult: result = 10
+10-02 16:49:26.479 D/SatelliteController( 4061): getSatelliteCarrierId: returns UNKNOWN_CARRIER_ID
+10-02 16:49:26.479 D/AccessControllerMetricsStats( 4061): setCarrierId: Carrier ID = -1
+10-02 16:49:26.479 D/AccessControllerMetricsStats( 4061): setIsNtnOnlyCarrier: isNtnOnlyCarrier = false
+10-02 16:49:26.479 D/AccessControllerMetricsStats( 4061): reportAccessControllerMetrics: AccessControllerParams(, AccessControlType=0, LocationQueryTime=0, OnDeviceLookupTime=0, TotalCheckingTime=3, IsAllowed=false, IsEmergency=false, ResultCode=10, CountryCodes=[], ConfigDataSource=0, CarrierId=-1, TriggeringEvent=1, IsNtnOnlyCarrier=false, supportedConnectionMode=0, sessionConnectionMode=0)
+10-02 16:49:26.479 D/SatelliteAccessController( 4061): REQUEST_SATELLITE_ACCESS_CONFIGURATION_FOR_CURRENT_LOCATION
+10-02 16:49:26.479 D/SatelliteAccessController( 4061): handleRequestSatelliteAccessConfigurationForCurrentLocation
+10-02 16:49:26.479 D/SatelliteAccessController( 4061): requestIsCommunicationAllowedForCurrentLocation : shouldIgnoreAllowedStateCache= false
+10-02 16:49:26.479 D/SatelliteAccessController( 4061): REQUEST_IS_COMMUNICATION_ALLOWED
+10-02 16:49:26.480 D/SatelliteAccessController( 4061): handleRequestIsCommunicationAllowed : shouldIgnoreAllowedStateCache = false
+10-02 16:49:26.480 D/AccessControllerMetricsStats( 4061): setTriggeringEvent: triggering event = 1
+10-02 16:49:26.480 D/SatelliteController( 4061): getSelectedSatelliteSubId: subId=-1
+10-02 16:49:26.480 D/SatelliteController( 4061): [incrementResultReceiverCount] : SAC:requestIsCommunicationAllowedForCurrentLocation | ResultReceiver total count= 2
+10-02 16:49:26.481 D/SatelliteController( 4061): REQUEST_IS_SATELLITE_SUPPORTED
+10-02 16:49:26.481 D/SatelliteController( 4061): handleRequestIsSatelliteSupported
+10-02 16:49:26.481 D/SatelliteController( 4061): getSelectedSatelliteSubId: subId=-1
+10-02 16:49:26.481 E/SatelliteModemInterface( 4061): requestIsSatelliteSupported: Satellite service is unavailable.
+10-02 16:49:26.481 W/SconeSatelliteSupportedHelperImpl( 4659): requestSelectedNbIotSatelliteSubscriptionId[kvk@440b1e3[status=PENDING]] errorCode: 30, defaulting to Pixel Skylo. isPixelBuild: true, wrapperVersion: 2 [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" traceId="9cf356e8-ed2d-441a-9b31-569dd163e737" ]
+10-02 16:49:26.481 E/SatelliteServiceUtils( 4061): isSatelliteSupported SatelliteException: android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.481 D/SatelliteServiceUtils( 4061): isSatelliteSupported error: 10
+10-02 16:49:26.481 D/SatelliteAccessController( 4061): EVENT_IS_SATELLITE_SUPPORTED_DONE
+10-02 16:49:26.482 D/SatelliteAccessController( 4061): handleIsSatelliteSupportedResult: resultCode=10
+10-02 16:49:26.482 D/SatelliteAccessController( 4061): sendSatelliteAllowResultToReceivers : resultCode is 10
+10-02 16:49:26.482 D/SatelliteController( 4061): [decrementResultReceiverCount] : SAC:requestIsCommunicationAllowedForCurrentLocation | ResultReceiver total count=1
+10-02 16:49:26.482 D/SatelliteAccessController( 4061): setIsSatelliteAllowedRegionPossiblyChanged : false
+10-02 16:49:26.482 D/ControllerMetricsStats( 4061): reportFailedSatelliteAccessCheckCount:ControllerParams(, countOfSatelliteServiceEnablementsSuccess=0, countOfSatelliteServiceEnablementsFail=0, countOfOutgoingDatagramSuccess=0, countOfOutgoingDatagramFail=0, countOfIncomingDatagramSuccess=0, countOfIncomingDatagramFail=0, countOfDatagramTypeSosSms=0, countOfDatagramTypeSosSms=0, countOfDatagramTypeLocationSharing=0, countOfDatagramTypeLocationSharing=0, serviceUptimeSec=0, batteryConsumptionPercent=0, batteryChargedTimeSec=0, countOfDemoModeSatelliteServiceEnablementsSuccess=0, countOfDemoModeSatelliteServiceEnablementsFail=0, countOfDemoModeOutgoingDatagramSuccess=0, countOfDemoModeOutgoingDatagramFail=0, countOfDemoModeIncomingDatagramSuccess=0, countOfDemoModeIncomingDatagramFail=0, countOfDatagramTypeKeepAliveSuccess=0, countOfDatagramTypeKeepAliveFail=0, countOfAllowedSatelliteAccess=0, countOfDisallowedSatelliteAccess=0, countOfSatelliteAccessCheckFail=1, isProvisioned=false, carrierId=-1, countOfSatelliteAllowedStateChangedEvents=0, countOfSuccessfulLocationQueries=0, countOfFailedLocationQueries=0, countOfP2PSmsAvailableNotificationShown=0, countOfP2PSmsAvailableNotificationRemoved=0, isNtnOnlyCarrier=false, versionOfSatelliteAccessConfig=0, countOfIncomingDatagramTypeSosSmsSuccess=0, countOfIncomingDatagramTypeSosSmsFail=0, countOfOutgoingDatagramTypeSmsSuccess=0, countOfOutgoingDatagramTypeSmsFail=0, countOfIncomingDatagramTypeSmsSuccess=0, countOfIncomingDatagramTypeSmsFail=0, carrierRoamingSatelliteConfigVersion=0, maxAllowedDataMode=0, supportedConnectionMode=0)
+10-02 16:49:26.482 D/ControllerMetricsStats( 4061): reportCurrentVersionOfSatelliteAccessConfig:0
+10-02 16:49:26.482 D/AccessControllerMetricsStats( 4061): setLocationQueryTimeMillis: location query time = 0
+10-02 16:49:26.482 D/AccessControllerMetricsStats( 4061): setTotalCheckingTime: location query time = 2
+10-02 16:49:26.482 D/AccessControllerMetricsStats( 4061): setIsAllowed: allowed=false
+10-02 16:49:26.483 I/Telecom ( 1842): : isInEmergencyCall: false: TSI.iIEC@D/Y
+10-02 16:49:26.483 D/SatelliteController( 4061): mLastEmergencyCallTime is 0, isInEmergencyMode() return false
+10-02 16:49:26.483 D/AccessControllerMetricsStats( 4061): setIsEmergency: emergency =false
+10-02 16:49:26.483 D/AccessControllerMetricsStats( 4061): setResult: result = 10
+10-02 16:49:26.484 D/SatelliteController( 4061): getSatelliteCarrierId: returns UNKNOWN_CARRIER_ID
+10-02 16:49:26.484 D/AccessControllerMetricsStats( 4061): setCarrierId: Carrier ID = -1
+10-02 16:49:26.484 D/AccessControllerMetricsStats( 4061): setIsNtnOnlyCarrier: isNtnOnlyCarrier = false
+10-02 16:49:26.484 D/AccessControllerMetricsStats( 4061): reportAccessControllerMetrics: AccessControllerParams(, AccessControlType=0, LocationQueryTime=0, OnDeviceLookupTime=0, TotalCheckingTime=2, IsAllowed=false, IsEmergency=false, ResultCode=10, CountryCodes=[], ConfigDataSource=0, CarrierId=-1, TriggeringEvent=1, IsNtnOnlyCarrier=false, supportedConnectionMode=0, sessionConnectionMode=0)
+10-02 16:49:26.484 D/SatelliteAccessController( 4061): requestSatelliteAccessConfigurationForCurrentLocation: resultCode=10, resultData=Bundle[{}]
+10-02 16:49:26.484 E/SatelliteAccessController( 4061): resultCode is not SATELLITE_RESULT_SUCCESS.
+10-02 16:49:26.490 E/ksx     ( 4659): Got more than one input Future failure. Logging failures after the first
+10-02 16:49:26.490 E/ksx     ( 4659): android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.490 E/ksx     ( 4659): 	at gjq.onError(PG:9)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$13.onError(SatelliteManagerWrapper.java:1312)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$13.onError(SatelliteManagerWrapper.java:1304)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$20.lambda$onReceiveResult$5(SatelliteManager.java:2679)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$20$$ExternalSyntheticLambda5.runOrThrow(D8$$SyntheticClass:0)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.os.Binder.withCleanCallingIdentity(Binder.java:452)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$20.lambda$onReceiveResult$4(SatelliteManager.java:2678)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$20$$ExternalSyntheticLambda2.run(D8$$SyntheticClass:0)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at hzz.run(PG:7)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at htz.run(PG:287)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 16:49:26.490 E/ksx     ( 4659): 	at ibm.run(PG:58)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): Unexpected exception in getCurrentRegionSatelliteSupportedCarrierIds, failing update. [CONTEXT nimbus_annotation_log_config="SCONE_SATELLITE_LOG_CONFIG" ]
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at gbg.onError(PG:298)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$15.onError(SatelliteManagerWrapper.java:1373)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$15.onError(SatelliteManagerWrapper.java:1363)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.telephony.satellite.SatelliteManager$21.lambda$onReceiveResult$5(SatelliteManager.java:2739)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.telephony.satellite.SatelliteManager$21$$ExternalSyntheticLambda5.runOrThrow(D8$$SyntheticClass:0)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.os.Binder.withCleanCallingIdentity(Binder.java:452)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.telephony.satellite.SatelliteManager$21.lambda$onReceiveResult$4(SatelliteManager.java:2738)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at android.telephony.satellite.SatelliteManager$21$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at hzz.run(PG:7)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at htz.run(PG:287)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 16:49:26.492 E/SconeSatelliteSupportedHelperImpl( 4659): 	at ibm.run(PG:58)
+10-02 16:49:26.493 E/ksx     ( 4659): Got more than one input Future failure. Logging failures after the first
+10-02 16:49:26.493 E/ksx     ( 4659): android.telephony.satellite.SatelliteManager$SatelliteException
+10-02 16:49:26.493 E/ksx     ( 4659): 	at gbg.onError(PG:298)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$15.onError(SatelliteManagerWrapper.java:1373)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.telephony.satellite.wrapper.SatelliteManagerWrapper$15.onError(SatelliteManagerWrapper.java:1363)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$21.lambda$onReceiveResult$5(SatelliteManager.java:2739)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$21$$ExternalSyntheticLambda5.runOrThrow(D8$$SyntheticClass:0)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.os.Binder.withCleanCallingIdentity(Binder.java:452)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$21.lambda$onReceiveResult$4(SatelliteManager.java:2738)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at android.telephony.satellite.SatelliteManager$21$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at hzz.run(PG:7)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at htz.run(PG:287)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 16:49:26.493 E/ksx     ( 4659): 	at ibm.run(PG:58)
+10-02 16:49:26.560 I/bthal.activity( 1056): bt_power: LeAdvStat: 16:49:25:557 - 16:49:26:560, duration: 1002, le_adv_count: 2, total_le_adv_count: 9458, total_event_count: 2
+10-02 16:49:27.837 I/bthal.activity( 1056): bt_power: LeAdvStat: 16:49:26:832 - 16:49:27:837, duration: 1005, le_adv_count: 2, total_le_adv_count: 9460, total_event_count: 0
+10-02 16:49:27.995 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'time''

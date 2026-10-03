@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.gm", "cls": "com.google.android.apps.dynamite.DynamiteDeepLinkMultiple", "action": "android.intent.action.SEND", "mime": null, "scheme": "https"}

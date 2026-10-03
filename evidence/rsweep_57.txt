@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.youtube", "cls": "com.google.android.apps.youtube.app.application.Shell_UploadActivity", "action": "android.intent.action.SEND", "mime": "video/*", "scheme": null}

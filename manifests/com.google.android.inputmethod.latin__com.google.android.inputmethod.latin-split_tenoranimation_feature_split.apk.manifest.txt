@@ -1,0 +1,27 @@
+N: android=http://schemas.android.com/apk/res/android (line=2)
+  N: dist=http://schemas.android.com/apk/distribution (line=2)
+    E: manifest (line=2)
+      A: http://schemas.android.com/apk/res/android:versionCode(0x0101021b)=175981998
+      A: http://schemas.android.com/apk/res/android:isFeatureSplit(0x0101055b)=true
+      A: http://schemas.android.com/apk/res/android:compileSdkVersion(0x01010572)=37
+      A: http://schemas.android.com/apk/res/android:compileSdkVersionCodename(0x01010573)="DEV" (Raw: "DEV")
+      A: http://schemas.android.com/apk/res/android:requiredSplitTypes(0x0101064e)=""
+      A: http://schemas.android.com/apk/res/android:splitTypes(0x0101064f)="tenoranimation_feature_split__module" (Raw: "tenoranimation_feature_split__module")
+      A: package="com.google.android.inputmethod.latin" (Raw: "com.google.android.inputmethod.latin")
+      A: platformBuildVersionCode=37
+      A: platformBuildVersionName="DEV" (Raw: "DEV")
+      A: split="tenoranimation_feature_split" (Raw: "tenoranimation_feature_split")
+        E: uses-sdk (line=9)
+          A: http://schemas.android.com/apk/res/android:minSdkVersion(0x0101020c)=32
+        E: http://schemas.android.com/apk/distribution:module (line=11)
+          A: http://schemas.android.com/apk/distribution:title=@0x7f140e11
+            E: http://schemas.android.com/apk/distribution:delivery (line=12)
+                E: http://schemas.android.com/apk/distribution:on-demand (line=13)
+            E: http://schemas.android.com/apk/distribution:fusing (line=16)
+              A: http://schemas.android.com/apk/distribution:include=false
+        E: application (line=19)
+          A: http://schemas.android.com/apk/res/android:hasCode(0x0101000c)=false
+          A: http://schemas.android.com/apk/res/android:extractNativeLibs(0x010104ea)=false
+            E: meta-data (line=0)
+              A: http://schemas.android.com/apk/res/android:name(0x01010003)="com.android.vending.derived.apk.id" (Raw: "com.android.vending.derived.apk.id")
+              A: http://schemas.android.com/apk/res/android:value(0x01010024)=5

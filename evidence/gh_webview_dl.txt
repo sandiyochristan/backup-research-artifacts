@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "googlehome://webview/x", "label": "gh-webview"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:24.471 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:24.471 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=114
+10-02 14:04:24.471 20818 20818 I VRPPROBE: CMD type=start label=gh-webview
+10-02 14:04:24.471 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:24.471 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "googlehome://webview/x", "label": "gh-webview"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:06.802 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:06.804 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=114
+10-02 14:07:06.804 21235 21235 I VRPPROBE: CMD type=start label=gh-webview
+10-02 14:07:06.804 21235 21235 I VRPPROBE: START googlehome://webview/x
+10-02 14:07:06.815 21235 21235 I VRPPROBE:   START_OK
+10-02 14:07:06.815 21235 21235 I VRPPROBE: == EXEC DONE
+

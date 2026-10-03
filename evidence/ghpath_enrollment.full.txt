@@ -1,0 +1,271 @@
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "googlehome://enrollment/", "pkg": "com.google.android.apps.chromecast.app", "label": "enrollment"}
+
+--------- beginning of main
+10-02 15:28:39.180 I/adbd    ( 1339): adbd service requested 'sync:'
+--------- beginning of system
+10-02 15:28:39.200 W/ActivityManager( 1842): Skipping manifest association check for null package. SourceUid: 10266, SourcePkg: null, TargetUid: 10266, TargetPkg: com.google.android.gms
+10-02 15:28:39.201 I/TcpProberController( 4261): [gms_cast_prober-1] Failed to connect to socket address: /192.168.1.128, port: 8009, network: 100
+10-02 15:28:39.201 D/TcpMetricsLogger( 1842): connect: uid=10266 netId=100 dst=[192.168.1.128]:8009 latencyMs=2317 err=110
+10-02 15:28:39.203 I/CastSocketMultiplexer( 4261): Stopping multiplexer...
+10-02 15:28:39.211 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.probe/.UiActivity'
+10-02 15:28:39.274 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=13551) has no WPC
+10-02 15:28:39.276 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@3dacc844 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 15:28:39.279 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 15:28:39.279 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df6f9370) with descriptor: '(not cached)'
+10-02 15:28:39.280 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 15:28:39.280 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=8766357 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1c059a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{f316fe2 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 15:28:39.280 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{ad860ae #915 type=standard A=10362:com.vrp.probe} activity=ActivityRecord{111601747 u0 com.vrp.probe/.UiActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 15:28:39.280 I/ActivityTaskManager( 1842): START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.probe/.UiActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=2
+10-02 15:28:39.280 V/WindowManagerShell( 3743): Transition requested (#3602): android.os.BinderProxy@362c30f TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=8766357 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1deaee1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{e331da5 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3602 }
+10-02 15:28:39.280 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 15:28:39.281 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity}, wasVisible=false, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 15:28:39.284 V/SnapshotDrawerUtils( 3743): Drawing snapshot surface sizeMismatch=true
+10-02 15:28:39.285 D/WindowManager( 1842): setClientSurface Surface(name=SnapshotStartingWindow for taskId=915 - task-snapshot-surface#17749)/@0x1fa4abc for adb6af SnapshotStartingWindow for taskId=915
+10-02 15:28:39.286 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{7d97704 #2947 type=standard A=10295:com.google.android.apps.chromecast.app} on display 0
+10-02 15:28:39.286 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{ad860ae #915 type=standard A=10362:com.vrp.probe} on display 0
+10-02 15:28:39.288 D/ViewRootImpl( 5971): Skipping stats log for color mode
+10-02 15:28:39.290 I/VRPPROBE( 5971): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=165
+10-02 15:28:39.290 I/VRPPROBE( 5971): CMD type=start label=enrollment
+10-02 15:28:39.290 I/VRPPROBE( 5971): START googlehome://enrollment/#Intent;package=com.google.android.apps.chromecast.app;end
+10-02 15:28:39.291 I/pixel-thermal( 1850): VIRTUAL-SKIN:34.8051 raw data: VIRTUAL-NEUTRAL:34805.1 VIRTUAL-NEUTRAL-SKIN2:34614.9 VIRTUAL-QUIET-NEUTRAL:33984.8 VIRTUAL-SKIN:34805.1 disp_therm:33865 gnss_tcxo_therm:35156 neutral_therm:33954 quiet_therm:33998 skin_therm1:35400 skin_therm2:36157 
+10-02 15:28:39.291 I/pixel-thermal( 1850): cellular-emergency:34.8051 raw data: VIRTUAL-SKIN:34805.1 cellular-emergency:34805.1 
+10-02 15:28:39.291 I/pixel-thermal( 1850): VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-3540 VIRTUAL-USB-UI:0 charger_skin_therm:37382 usb_pwr_therm2:33842 
+10-02 15:28:39.293 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329857452)
+10-02 15:28:39.293 V/WindowManagerShell( 3743): onTransitionReady (#3602) android.os.BinderProxy@362c30f: {id=3602 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 15:28:39.293 V/WindowManagerShell( 3743):         {m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x312812b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 15:28:39.293 V/WindowManagerShell( 3743):         {m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2947#17727)/@0x47e4988 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 15:28:39.293 V/WindowManagerShell( 3743):     ]}
+10-02 15:28:39.293 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #3602
+10-02 15:28:39.293 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=915
+10-02 15:28:39.295 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=2947, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 15:28:39.295 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=915, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 15:28:39.295 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 15:28:39.295 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 15:28:39.295 V/WindowManagerShell( 3743): Playing animation for (#3602) android.os.BinderProxy@362c30f@0
+10-02 15:28:39.295 D/ShellSplitScreen( 3743): startAnimation: transition=3602 isSplitActive=false
+10-02 15:28:39.295 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 15:28:39.295 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 15:28:39.295 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=3602 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x312812b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2947#17727)/@0x47e4988 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 15:28:39.295 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=8769173 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1c059a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{2efaf73 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 15:28:39.295 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@612134b windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@e954128, appThread = android.app.IApplicationThread$Stub$Proxy@c571e41, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@612134b windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 15:28:39.295 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@395dfe6, appThread = android.app.IApplicationThread$Stub$Proxy@2ec9927, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 15:28:39.295 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@9147d4, appThread = android.app.IApplicationThread$Stub$Proxy@3b65d7d, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 15:28:39.295 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d01472, appThread = android.app.IApplicationThread$Stub$Proxy@ffa0c3, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 15:28:39.295 V/WindowManagerShell( 3743):  Delegate animation for (#3602) to null
+10-02 15:28:39.295 V/WindowManagerShell( 3743): start default transition animation, info = {id=3602 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x312812b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2947#17727)/@0x47e4988 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 15:28:39.295 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@2727634 animAttr=0x9 type=OPEN isEntrance=false
+10-02 15:28:39.296 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@af85c5d animAttr=0x8 type=OPEN isEntrance=true
+10-02 15:28:39.296 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 15:28:39.298 V/WindowManager( 1842): Sent Transition (#3602) createdAt=10-02 15:28:39.276 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=8766357 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{5fa31ce com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3602 }
+10-02 15:28:39.298 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 15:28:39.298 V/WindowManager( 1842):     info={id=3602 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 15:28:39.298 V/WindowManager( 1842):         {WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x85793f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 15:28:39.298 V/WindowManager( 1842):         {WCT{RemoteToken{a8639c9 Task{7d97704 #2947 type=standard A=10295:com.google.android.apps.chromecast.app}}} m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2947#17727)/@0x671cf7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 15:28:39.298 V/WindowManager( 1842):     ]}
+10-02 15:28:39.299 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=0 task=null activity=null display-area-from-default-fallback=DefaultTaskDisplayArea@98248018 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018
+10-02 15:28:39.299 I/ActivityTaskManager( 1842): START u0 {act=android.intent.action.VIEW dat=googlehome://enrollment/... flg=0x10200000 xflg=0x4 pkg=com.google.android.apps.chromecast.app} with LAUNCH_MULTIPLE from uid 10362 (com.vrp.probe) result code=-91
+10-02 15:28:39.300 E/VRPPROBE( 5971):   FAIL ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=googlehome://enrollment/... flg=0x10200000 xflg=0x4 pkg=com.google.android.apps.chromecast.app }
+10-02 15:28:39.301 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 15:28:39.301 I/Surface ( 5971): Creating surface for consumer unnamed-5971-8 with slotExpansion=1 for 64 slots
+10-02 15:28:39.302 D/WindowManager( 1842): setClientSurface Surface(name=VRI-com.vrp.probe/com.vrp.probe.UiActivity#17752)/@0xc3daec for c1f2f41 com.vrp.probe/com.vrp.probe.UiActivity
+10-02 15:28:39.303 I/Surface ( 5971): Creating surface for consumer VRI[UiActivity]#8(BLAST Consumer)8 with slotExpansion=1 for 64 slots
+10-02 15:28:39.304 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+10-02 15:28:39.304 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 15:28:39.304 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 15:28:39.304 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 15:28:39.305 W/HomeApp|bpyh(13236): BLUETOOTH_SCAN permission is not granted.
+10-02 15:28:39.305 W/HomeApp|bpxx(13236): Failed to start scan. Trying again in 250 ms.
+10-02 15:28:39.300 W/composer@2.4-se(  700): type=1400 audit(0.0:6965): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 15:28:39.300 W/composer@2.4-se(  700): type=1400 audit(0.0:6966): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 15:28:39.343 I/ImeTracker( 1842): system_server:44c0f2a1: onRequestHide at ORIGIN_SERVER reason ISP_UPDATE_CONTROL_FOR_TARGET fromUser false displayId 0
+10-02 15:28:39.343 I/ImeTracker( 1842): com.vrp.probe:a5caaa1c: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+10-02 15:28:39.344 I/SubtypeOperator(15684): SubtypeOperator$1.onUnbindInput():43 
+10-02 15:28:39.344 D/InsetsController( 5971): hide(ime())
+10-02 15:28:39.344 I/ImeTracker( 5971): com.vrp.probe:a5caaa1c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-02 15:28:39.344 I/SubtypeOperator(15684): SubtypeOperator$1.onBindInput():33 
+10-02 15:28:39.345 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 15:28:39.346 I/ImeTracker( 1842): system_server:44c0f2a1: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-02 15:28:39.346 I/GoogleInputMethodService(15684): GoogleInputMethodService.onFinishInput():2361 
+10-02 15:28:39.347 I/GoogleInputMethodService(15684): GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=com.vrp.probe, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-02 15:28:39.347 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-02 15:28:39.347 W/LatinIMEBase(15684): LatinIMEBase.updateInputViewCoverNavigation():322 Null input view, cannot update padding!
+10-02 15:28:39.347 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-02 15:28:39.348 W/PackageConfigPersister( 1842): App-specific configuration not found for packageName: com.vrp.probe and userId: 0
+10-02 15:28:39.368 W/composer@2.4-se(  700): type=1400 audit(0.0:6967): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 15:28:39.371 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+10-02 15:28:39.371 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 15:28:39.372 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 15:28:39.372 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 15:28:39.372 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=3 error(-22)
+10-02 15:28:39.372 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 15:28:39.372 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 15:28:39.372 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 15:28:39.368 W/composer@2.4-se(  700): type=1400 audit(0.0:6968): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 15:28:39.368 W/composer@2.4-se(  700): type=1400 audit(0.0:6969): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 15:28:39.376 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 15:28:39.377 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 15:28:39.377 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 15:28:39.380 D/IwlanNetworkService( 4388): onCapabilitiesChanged: 100
+10-02 15:28:39.380 D/IwlanDataService( 4388): onCapabilitiesChanged: 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=36000Kbps TransportInfo: <SSID: "JOSHAN-HOME", BSSID: 8c:c7:c3:eb:b1:65, MAC: 06:0f:de:3c:85:21, IP: /192.168.1.34, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11n, RSSI: -49, Link speed: 104Mbps, Tx Link speed: 104Mbps, Max Supported Tx Link speed: 144Mbps, Calculated Tx : 74Mbps, Rx Link speed: 104Mbps, Max Supported Rx Link speed: 144Mbps, Calculated Rx : 110Mbps, Frequency: 2412MHz, Net ID: 1, Metered hint: false, score: 100, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"JOSHAN-HOME"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -49 OwnerUid: 1000 AdminUids: [1000] SSID: "JOSHAN-HOME" UnderlyingNetworks: Null]
+10-02 15:28:39.380 D/IwlanDataService( 4388): Network 100 connected using transport WIFI
+10-02 15:28:39.381 I/WifiSignalInfo( 4659): onCapabilitiesChanged: rssi:-49
+10-02 15:28:39.381 D/DeviceStateHelper( 4659): Wifi freq: 2412
+10-02 15:28:39.385 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:39.388 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 15:28:39.389 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 15:28:39.390 V/RecentTasksController( 3743): generateList(getRecentTasks)
+10-02 15:28:39.390 I/NullBinder( 4261): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+10-02 15:28:39.390 V/RecentTasksController( 3743): initializeDesksMap - desktop windowing not available
+10-02 15:28:39.390 W/libbinder.Binder( 4261): Large reply transaction of 1056768 bytes, interface descriptor , function: UNKNOWN_FUNCTION_NAME, code: 1, flags: 17
+10-02 15:28:39.390 V/RecentTasksController( 3743): Added fullscreen task: 915
+10-02 15:28:39.390 V/RecentTasksController( 3743): Added fullscreen task: 2947
+10-02 15:28:39.390 V/RecentTasksController( 3743): Added fullscreen task: 912
+10-02 15:28:39.390 V/RecentTasksController( 3743): generateList - complete
+10-02 15:28:39.390 I/MagicTether( 4261): (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+10-02 15:28:39.390 I/MagicTether( 4261): (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+10-02 15:28:39.391 D/PreloadThumbnailUseCase( 4067): Preloading thumbnails for task ids: [[id=912 windowingMode=1 user=0 lastActiveTime=3987024 lastFocusedTime=3985800] null, [id=2947 windowingMode=1 user=0 lastActiveTime=8769165 lastFocusedTime=8766376] null, [id=915 windowingMode=1 user=0 lastActiveTime=8769173 lastFocusedTime=8769181] null]
+10-02 15:28:39.393 D/CHRE    ( 1076): @ 8754.156: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x4 msgType 112 payload size 14
+10-02 15:28:39.393 I/CHRE    ( 1076): @ 8754.157: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+10-02 15:28:39.393 I/CHRE    ( 1076): @ 8754.157: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+10-02 15:28:39.394 I/BugleRcsEngine(13320): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl:[26dd9b65-19af]>Handler" thread_id=69 ]
+10-02 15:28:39.394 I/BugleRcsEngine(13320): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-02 15:28:39.395 D/ConnectivityService( 1842): NetReassign [no changes] [c 0] [a 2] [i 1]
+10-02 15:28:39.395 I/BugleRcsEngine(13320): Cannot use CS.apk as it's battery optimized [CONTEXT thread_id=69 ]
+10-02 15:28:39.395 I/NearbyMediums( 4261): Wifi changed new SSID: "JOSHAN-HOME"
+10-02 15:28:39.395 I/NearbyMediums( 4261): WifiLanConnectivityInfo is not changed, skip notify.
+10-02 15:28:39.396 I/Surface ( 1842): Creating surface for consumer unnamed-1842-160 with slotExpansion=1 for 64 slots
+10-02 15:28:39.396 I/Surface ( 1842): Creating surface for consumer ImageReader-864x1920f1m1-1842-160 with slotExpansion=1 for 64 slots
+10-02 15:28:39.396 W/ImageReader_JNI( 1842): Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-02 15:28:39.396 I/MagicTether( 4261): [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+10-02 15:28:39.396 I/MagicTether( 4261): [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+10-02 15:28:39.398 I/MagicTether( 4261): (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+10-02 15:28:39.398 I/MagicTether( 4261): (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+10-02 15:28:39.401 I/MagicTether( 4261): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+10-02 15:28:39.401 I/MagicTether( 4261): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+10-02 15:28:39.401 I/MagicTether( 4261): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+10-02 15:28:39.402 I/MagicTether( 4261): (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+10-02 15:28:39.402 I/MagicTether( 4261): [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+10-02 15:28:39.402 I/MagicTether( 4261): [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+10-02 15:28:39.403 I/MagicTether( 4261): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+10-02 15:28:39.403 I/MagicTether( 4261): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+10-02 15:28:39.403 I/MagicTether( 4261): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+10-02 15:28:39.403 I/MagicTether( 4261): (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+10-02 15:28:39.403 I/MagicTether( 4261): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+10-02 15:28:39.403 I/MagicTether( 4261): [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+10-02 15:28:39.403 E/ConsumerBase( 1842): [ImageReader-864x1920f1m1-1842-160] abandonLocked: ConsumerBase is abandoned!
+10-02 15:28:39.404 I/BugleRcsEngine(13320): No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:0,last3:] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=69 ]
+10-02 15:28:39.425 D/LauncherAmbientCueVM( 4067): recalculateStates: isRootAttached=false (isTestMode=false, hasActions=false, isAmbientCueEnabled=true, isNotDeactivated=true, isTaskFocused=false [focusedId=915, targetId=-1])
+10-02 15:28:39.521 I/usonia.RootFinder( 4261): (REDACTED) [GAIA:9a06d744] Running root device discovery. Sending and receiving on port %d.
+10-02 15:28:39.558 W/HomeApp|bpyh(13236): BLUETOOTH_SCAN permission is not granted.
+10-02 15:28:39.559 W/HomeApp|bpxx(13236): Failed to start scan. Trying again in 250 ms.
+10-02 15:28:39.642 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:39.642 E/HomeApp|qsy(13236): Unable to get opt-in status
+10-02 15:28:39.642 E/HomeApp|qsy(13236): java.lang.IllegalStateException: currentHome is null
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at qsy.C(PG:30)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at qsy.g(PG:1)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at pzx.invokeSuspend(PG:579)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at pzx.invoke(PG:239)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at btfm.M(PG:22)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at btal.H(PG:53)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at qpm.b(PG:10)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at chs.invokeSuspend(PG:89)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at bsxl.resumeWith(PG:8)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at btfw.run(PG:109)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at afdr.run(PG:5)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at aucn.run(PG:44)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at aejr.run(PG:541)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at hnn.run(PG:250)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 15:28:39.642 E/HomeApp|qsy(13236): 	at afer.run(PG:51)
+10-02 15:28:39.643 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:39.643 E/HomeApp|qsy(13236): Unable to fetch opt-in status
+10-02 15:28:39.643 E/HomeApp|qsy(13236): java.lang.IllegalStateException: currentHome is null
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at qsy.C(PG:30)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at qsy.e(PG:1)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at pzx.invokeSuspend(PG:542)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at bsxl.resumeWith(PG:8)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at btfm.z(PG:47)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at btes.H(PG:123)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at btes.A(PG:25)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at btes.e(PG:24)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at jwk.run(PG:56)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:520)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at afea.run(PG:13)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at android.os.Handler.handleCallback(Handler.java:1080)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at android.os.Handler.dispatchMessage(Handler.java:126)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at android.os.Looper.loopOnce(Looper.java:285)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at android.os.Looper.loop(Looper.java:390)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at android.app.ActivityThread.main(ActivityThread.java:9884)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at java.lang.reflect.Method.invoke(Native Method)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+10-02 15:28:39.643 E/HomeApp|qsy(13236): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:906)
+10-02 15:28:39.811 W/HomeApp|bpyh(13236): BLUETOOTH_SCAN permission is not granted.
+10-02 15:28:39.811 W/HomeApp|bpxx(13236): Failed to start scan. Trying again in 250 ms.
+10-02 15:28:39.820 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#3602) android.os.BinderProxy@362c30f@0
+10-02 15:28:39.828 V/WindowManager( 1842): Finish Transition (#3602): created at 10-02 15:28:39.276 collect-started=0.056ms request-sent=3.629ms started=4.689ms ready=10.817ms sent=15.259ms commit=11.364ms finished=551.095ms
+10-02 15:28:39.831 D/VRI[MainActivity](13236): visibilityChanged oldVisibility=true newVisibility=false
+10-02 15:28:39.834 V/WindowManagerShell( 3743): Track 0 became idle
+10-02 15:28:39.834 V/WindowManagerShell( 3743): All active transition animations finished
+10-02 15:28:39.842 D/HintManagerService( 1842): Sent cleanup message for uid 10295
+10-02 15:28:39.846 I/Surface ( 1842): Creating surface for consumer unnamed-1842-161 with slotExpansion=1 for 64 slots
+10-02 15:28:39.846 I/Surface ( 1842): Creating surface for consumer ImageReader-864x1920f1m1-1842-161 with slotExpansion=1 for 64 slots
+10-02 15:28:39.846 W/ImageReader_JNI( 1842): Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-02 15:28:39.852 I/WifiService( 1842): releaseMulticastLock uid=10266 lockTag=mdns-cast
+10-02 15:28:39.878 E/ConsumerBase( 1842): [ImageReader-864x1920f1m1-1842-161] abandonLocked: ConsumerBase is abandoned!
+10-02 15:28:39.883 I/NearbySharing( 4261): Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+10-02 15:28:39.885 I/NearbySharing( 4261): Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+10-02 15:28:39.987 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:39.988 I/HalfSheetCoordinator( 4261): (REDACTED) Updating suppression info for pid: %s, suppressed: %s
+10-02 15:28:39.989 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:39.990 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:39.990 W/HomeApp|lxe(13236): Did not found account or home to refresh widgets.
+10-02 15:28:39.997 W/AxMediaRouter(13236): Ignoring null provider descriptor from ComponentInfo{com.google.android.gms/com.google.android.gms.cast.media.CastMediaRoute2ProviderService_Persistent}
+10-02 15:28:39.997 I/DiscoveryManager( 4261): Discovery state (DiscoveryState{filterCriteria=null, categoryToCriteria={}, activeScan=false, activeScanWithScreenOff=false, discoveryRequestSupportsDynamicSession=false, eventFlowId=0})
+10-02 15:28:39.999 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+10-02 15:28:40.002 W/ActivityManager( 1842): Skipping manifest association check for null package. SourceUid: 10266, SourcePkg: null, TargetUid: 10266, TargetPkg: com.google.android.gms
+10-02 15:28:40.004 I/WifiService( 1842): releaseMulticastLock uid=10266 lockTag=MdnsServiceBrowserImpl
+10-02 15:28:40.004 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+10-02 15:28:40.038 I/pixel-thermal( 1850): VIRTUAL-SKIN:34.8051 raw data: VIRTUAL-SKIN:34805.1 
+10-02 15:28:40.038 D/TemperatureStateSource( 3915): TemperatureStateSource state changed to [34.80515].
+10-02 15:28:40.039 I/pixel-thermal( 1850): VIRTUAL-SKIN:34.8051 raw data: VIRTUAL-SKIN:34805.1 
+10-02 15:28:40.040 I/TemperatureStateSource( 3915): temperature was set
+10-02 15:28:40.040 D/ImpulseStateSource( 3915): onStateChange: sequenceNumber = 803
+10-02 15:28:40.040 D/ImpulseServer( 3915): Notify client 10151, events: {listenerName=adaptive_thermal, source=PIXEL_STATE_SOURCE_TEMPERATURE, timestampMs=1790935120038, cameraAvailabilityEvent=[0:true, 1:true], temperatureEvent=[34.80515]}
+10-02 15:28:40.040 D/ImpulseServer( 3915): Sent PixelStateChange event to client 10151
+10-02 15:28:40.043 W/.chromecast.app(13236): Cleared Reference was only reachable from finalizer (only reported once)
+10-02 15:28:40.115 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 15:28:40.664 W/HomeApp|akhg(13236): Could not find home with ID: null
+10-02 15:28:40.849 D/HintManagerService( 1842): Starts cleaning for 10295
+10-02 15:28:41.161 E/HomeApp|afvq(13236): Fetching a new token failed. [CONTEXT LOG_ROUTE="CAMERA" ]
+10-02 15:28:41.161 E/HomeApp|afvq(13236): bsfa: UNAUTHENTICATED: Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at bssw.a(PG:15)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at bser.a(PG:3)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at afqa.a(PG:82)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at bser.a(PG:3)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at qvm.a(PG:35)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at bsij.a(PG:28)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at bsjb.run(PG:7)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at bsoy.run(PG:12)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 15:28:41.161 E/HomeApp|afvq(13236): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 15:28:41.296 I/FA      (13236): Application backgrounded at: timestamp_millis: 1790935119292
+10-02 15:28:41.504 D/TcpMetricsLogger( 1842): connect: uid=10266 netId=100 dst=[192.168.1.128]:8009 latencyMs=1482 err=110
+10-02 15:28:41.508 W/ActivityManager( 1842): Skipping manifest association check for null package. SourceUid: 10266, SourcePkg: null, TargetUid: 10266, TargetPkg: com.google.android.gms
+10-02 15:28:41.509 I/TcpProberController( 4261): [gms_cast_prober-1] Failed to connect to socket address: /192.168.1.128, port: 8009, network: 100
+10-02 15:28:41.528 I/CastSocketMultiplexer( 4261): Stopping multiplexer...
+10-02 15:28:41.540 I/usonia.RootFinder( 4261): (REDACTED) [GAIA:9a06d744] Running root device discovery. Sending and receiving on port %d.
+10-02 15:28:41.694 D/BoundBrokerSvc( 4261): onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-02 15:28:41.839 D/BoundBrokerSvc( 4261): onUnbind: Intent { act=com.google.android.gms.castauth.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+10-02 15:28:41.903 I/pixel-thermal( 1850): cellular-emergency:34.8051 raw data: VIRTUAL-NEUTRAL:34805.1 VIRTUAL-NEUTRAL-SKIN2:34614.9 VIRTUAL-QUIET-NEUTRAL:33984.8 VIRTUAL-SKIN:34805.1 cellular-emergency:34805.1 disp_therm:33865 gnss_tcxo_therm:35156 neutral_therm:33954 quiet_therm:33998 skin_therm1:35400 skin_therm2:36157 
+10-02 15:28:41.903 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU:34.8051 raw data: VIRTUAL-SKIN:34805.1 VIRTUAL-SKIN-CPU:34805.1 
+10-02 15:28:41.903 I/pixel-thermal( 1850): VIRTUAL-SKIN:34.8051 raw data: VIRTUAL-SKIN:34805.1 
+10-02 15:28:41.903 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU:34.8051 raw data: VIRTUAL-SKIN:34805.1 VIRTUAL-SKIN-CPU-GPU:34805.1 
+10-02 15:28:41.904 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT:34.8051 raw data: VIRTUAL-SKIN:34805.1 VIRTUAL-SKIN-HINT:34805.1 
+10-02 15:28:41.904 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE:34.8051 raw data: VIRTUAL-SKIN:34805.1 VIRTUAL-SKIN-CHARGE:34805.1 
+10-02 15:28:42.382 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 15:28:42.494 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 15:28:42.497 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 15:28:42.498 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 15:28:43.818 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'time''

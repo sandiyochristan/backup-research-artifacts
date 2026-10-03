@@ -1,0 +1,41 @@
+
+====================================================================================================
+CMD: {"type": "query", "uri": "content://com.google.android.inputmethod.latin.wdb/", "label": "gboard-wdb-root"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:55:24.831 18892 18892 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:55:24.833 18892 18892 E VRPPROBE: DISPATCH_FAIL org.json.JSONException: End of input at character 6 of {type:
+10-02 13:55:24.833 18892 18892 E VRPPROBE: org.json.JSONException: End of input at character 6 of {type:
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at org.json.JSONTokener.syntaxError(JSONTokener.java:469)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at org.json.JSONTokener.nextValue(JSONTokener.java:101)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at org.json.JSONTokener.readObject(JSONTokener.java:403)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at org.json.JSONTokener.nextValue(JSONTokener.java:104)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at org.json.JSONObject.<init>(JSONObject.java:168)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at org.json.JSONObject.<init>(JSONObject.java:185)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at com.vrp.probe.Probe.run(Probe.java:60)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at com.vrp.probe.ExecReceiver.onReceive(ExecReceiver.java:17)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:5663)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(ActivityThread.java:0)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2708)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.os.Handler.dispatchMessage(Handler.java:126)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.os.Looper.loopOnce(Looper.java:285)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.os.Looper.loop(Looper.java:390)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at android.app.ActivityThread.main(ActivityThread.java:9884)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at java.lang.reflect.Method.invoke(Native Method)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+10-02 13:55:24.833 18892 18892 E VRPPROBE: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:906)
+10-02 13:55:24.833 18892 18892 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "query", "uri": "content://com.google.android.inputmethod.latin.wdb/", "label": "gboard-wdb-root"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:56:59.577 19560 19560 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:56:59.581 19560 19560 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=107
+10-02 13:56:59.581 19560 19560 I VRPPROBE: CMD type=query label=gboard-wdb-root
+10-02 13:56:59.582 19560 19560 I VRPPROBE: QUERY uri=content://com.google.android.inputmethod.latin.wdb/ proj=[] sel=null args=[] sort=null
+10-02 13:56:59.588 19560 19560 W VRPPROBE:   CURSOR=null (denied or empty)
+10-02 13:56:59.588 19560 19560 I VRPPROBE: == EXEC DONE
+

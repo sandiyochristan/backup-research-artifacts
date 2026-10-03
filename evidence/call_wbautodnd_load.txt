@@ -1,0 +1,12 @@
+
+====================================================================================================
+CMD: {"type": "call", "uri": "content://com.google.android.apps.wellbeing.autodnd.ui.provider", "method": "load", "arg": "", "label": "wbautodnd:load"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:01:02.888 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:01:02.891 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=146
+10-02 14:01:02.891 19954 19954 I VRPPROBE: CMD type=call label=wbautodnd:load
+10-02 14:01:02.891 19954 19954 I VRPPROBE: CALL uri=content://com.google.android.apps.wellbeing.autodnd.ui.provider method='load' arg='' extras=null
+10-02 14:01:02.897 19954 19954 W VRPPROBE:   SecurityException: Package other than settings is attempting to access content: com.vrp.probe
+10-02 14:01:02.897 19954 19954 I VRPPROBE: == EXEC DONE
+

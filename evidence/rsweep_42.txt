@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.gms", "cls": "com.google.android.gms.gestureexchange.ui.taptoshare.IntentFulfillmentActivity", "action": "android.intent.action.SEND", "mime": null, "scheme": null}

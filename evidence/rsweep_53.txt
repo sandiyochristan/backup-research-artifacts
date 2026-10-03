@@ -1,0 +1,4 @@
+{"pkg": "com.google.android.photopicker", "cls": "com.android.photopicker.PhotopickerGetContentActivity", "action": "android.intent.action.GET_CONTENT", "mime": "image/*", "scheme": null}
+--------- beginning of main
+10-02 18:52:56.732 I/VRPPROBE(14466): RESULT_START label=? target=Intent { act=android.intent.action.SEND typ=text/plain flg=0x10008000 xflg=0x4 cmp=com.vrp.probe/.ResultActivity (has extras) }
+10-02 18:52:56.732 I/VRPPROBE(14466): RESULT_FORWARD to com.google.android.marvin.talkback/com.google.android.accessibility.selecttospeak.popup.SelectToSpeakPopupActivity

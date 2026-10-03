@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.accessibility.magnifier", "cls": "com.google.android.apps.accessibility.magnifier.receiveimage.ReceiveImageGateway", "action": "android.intent.action.SEND", "mime": "image/*", "scheme": null}

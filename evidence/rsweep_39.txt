@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.gm", "cls": "com.google.android.apps.gmail.featurelibraries.hybridtwa.impl.TwaActivity", "action": "android.intent.action.SEND", "mime": "text/plain", "scheme": "http"}

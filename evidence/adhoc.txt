@@ -1,0 +1,28 @@
+
+====================================================================================================
+CMD: {"type":"exec","what":"uid","label":"chan-test"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:56:48.690 19560 19560 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:56:48.705 19560 19560 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=48
+10-02 13:56:48.706 19560 19560 I VRPPROBE: CMD type=exec label=chan-test
+10-02 13:56:48.706 19560 19560 I VRPPROBE:   UID=10362 pkg=com.vrp.probe
+10-02 13:56:48.706 19560 19560 I VRPPROBE:   SELINUX_CTX=/data/user/0
+10-02 13:56:48.706 19560 19560 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type":"stetho","socket":"stetho_com.google.android.apps.messaging_devtools_remote","path":"/json/list"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 16:09:50.690 I/VRPPROBE(21301): UiActivity.onCreate uid=10362 pkg=com.vrp.probe
+10-02 16:09:50.730 I/VRPPROBE(21301): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=105
+10-02 16:09:50.730 I/VRPPROBE(21301): CMD type=stetho label=
+10-02 16:09:50.730 I/VRPPROBE(21301): STETHO try socket=@stetho_com.google.android.apps.messaging_devtools_remote path=/json/list
+10-02 16:09:50.731 E/VRPPROBE(21301):   STETHO_FAIL IOException: Permission denied
+
+
+====================================================================================================
+CMD: {"type":"stetho","socket":"stetho_com.google.android.apps.messaging:rcs_devtools_remote","path":"/json/list"}
+----------------------------------------------------------------------------------------------------
+

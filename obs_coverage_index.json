@@ -1,0 +1,627 @@
+{
+ "com.android.DeviceAsWebcam": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.bips": {
+  "tests": [
+   "intent_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.carrierdefaultapp": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "deeplink_vulnerabilities.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.cellbroadcastreceiver": {
+  "tests": [
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.certinstaller": {
+  "tests": [
+   "component_vulnerabilities.md",
+   "data_exposure.md",
+   "intent_vulnerabilities.md",
+   "native_memory.md",
+   "network_vulnerabilities.md",
+   "pending_intent_vulnerabilities.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.devicediagnostics": {
+  "tests": [
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.devicelockcontroller": {
+  "tests": [
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.externalstorage": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "intent_vulnerabilities.md",
+   "uri_parsing.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.imsserviceentitlement": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "service_vulnerabilities.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.keychain": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "broadcast_receiver.md",
+   "content_provider_vulnerabilities.md",
+   "crypto_vulnerabilities.md",
+   "data_exposure.md",
+   "deeplink_action_intent.md",
+   "deeplink_vulnerabilities.md",
+   "firebase_cloud.md",
+   "fuzzing.md",
+   "ipc_authorization_bypass.md",
+   "kernel_system.md",
+   "native_memory.md",
+   "network_vulnerabilities.md",
+   "parcel_serialization.md",
+   "pending_intent_vulnerabilities.md",
+   "selinux_vulnerabilities.md",
+   "storage_vulnerabilities.md",
+   "tapjacking_overlay.md",
+   "uri_parsing.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [
+   "KEYCHAIN-CA-ENUM-01.md",
+   "KEYCHAIN-DOS-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.managedprovisioning": {
+  "tests": [
+   "caller_spoofing.md",
+   "deeplink_action_intent.md",
+   "service_ipc_binding.md",
+   "task_hijacking.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.mms.service": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md",
+   "network_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.mtp": {
+  "tests": [
+   "broadcast_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.nfc": {
+  "tests": [],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.omadm.service": {
+  "tests": [
+   "broadcast_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.ons": {
+  "tests": [
+   "broadcast_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.pacprocessor": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.phone": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "broadcast_vulnerabilities.md",
+   "component_vulnerabilities.md",
+   "content_provider_vulnerabilities.md",
+   "crypto_vulnerabilities.md",
+   "data_exposure.md",
+   "deeplink_vulnerabilities.md",
+   "firebase_cloud.md",
+   "intent_vulnerabilities.md",
+   "native_memory.md",
+   "network_vulnerabilities.md",
+   "pending_intent_vulnerabilities.md",
+   "recon.md",
+   "storage_vulnerabilities.md",
+   "tapjacking_overlay.md",
+   "uri_parsing.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [
+   "PHONE-SERVICESTATE-TARGETSDK-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.providers.contacts": {
+  "tests": [
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.providers.downloads": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "content_provider_vulnerabilities.md",
+   "service_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.providers.settings": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "broadcast_vulnerabilities.md",
+   "content_provider_vulnerabilities.md",
+   "crypto_vulnerabilities.md",
+   "data_exposure.md",
+   "deeplink_vulnerabilities.md",
+   "firebase_cloud.md",
+   "native_memory.md",
+   "network_vulnerabilities.md",
+   "pending_intent_vulnerabilities.md",
+   "service_vulnerabilities.md",
+   "storage_vulnerabilities.md",
+   "tapjacking_overlay.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [
+   "SETTINGS-TESTONLY-READ-BYPASS-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.providers.telephony": {
+  "tests": [
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [
+   "MMSSMS-WIPE-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-19.md",
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.proxyhandler": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.server.telecom": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.settings": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "data_exposure.md",
+   "intent_vulnerabilities.md",
+   "ipc_binder_vulnerabilities.md",
+   "recon.md"
+  ],
+  "findings": [
+   "SETTINGS-SUGGESTIONSTATE-LEAK-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.shell": {
+  "tests": [
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.soundpicker": {
+  "tests": [
+   "broadcast_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.stk": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.systemui": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "component_vulnerabilities.md",
+   "content_provider_vulnerabilities.md",
+   "ipc_binder_vulnerabilities.md",
+   "permission_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.android.vpndialogs": {
+  "tests": [
+   "permission_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.adservices.api": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.apps.diagnosticstool": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "broadcast_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.apps.nexuslauncher": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "component_vulnerabilities.md",
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.apps.wallpaper": {
+  "tests": [
+   "deeplink_vulnerabilities.md",
+   "intent_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.apps.work.oobconfig": {
+  "tests": [
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.bluetooth": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "broadcast_vulnerabilities.md",
+   "crypto_vulnerabilities.md",
+   "data_exposure.md",
+   "deeplink_vulnerabilities.md",
+   "firebase_cloud.md",
+   "intent_vulnerabilities.md",
+   "ipc_binder_vulnerabilities.md",
+   "native_memory.md",
+   "network_vulnerabilities.md",
+   "pending_intent_vulnerabilities.md",
+   "storage_vulnerabilities.md",
+   "tapjacking_overlay.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.captiveportallogin": {
+  "tests": [
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.carrier": {
+  "tests": [
+   "broadcast_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.carriersetup": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.cellbroadcastservice": {
+  "tests": [
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.factoryota": {
+  "tests": [
+   "component_vulnerabilities.md",
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.feedback": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.gms.supervision": {
+  "tests": [
+   "component_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.nfc": {
+  "tests": [
+   "auth_biometric_vulnerabilities.md",
+   "broadcast_vulnerabilities.md",
+   "crypto_vulnerabilities.md",
+   "data_exposure.md",
+   "deeplink_vulnerabilities.md",
+   "firebase_cloud.md",
+   "intent_vulnerabilities.md",
+   "native_memory.md",
+   "network_vulnerabilities.md",
+   "pending_intent_vulnerabilities.md",
+   "storage_vulnerabilities.md",
+   "tapjacking_overlay.md",
+   "webview_vulnerabilities.md"
+  ],
+  "findings": [
+   "NFC-HCE-INJECT-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.ondevicepersonalization.services": {
+  "tests": [
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [
+   "ODP-RESULT-BIND-01.md"
+  ],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.pixel.setupwizard": {
+  "tests": [
+   "component_vulnerabilities.md",
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.repairmode": {
+  "tests": [
+   "component_vulnerabilities.md",
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.sdksandbox": {
+  "tests": [
+   "component_vulnerabilities.md",
+   "ipc_binder_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.setupwizard": {
+  "tests": [
+   "content_provider_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ },
+ "com.google.android.storagemanager": {
+  "tests": [
+   "broadcast_vulnerabilities.md",
+   "intent_vulnerabilities.md"
+  ],
+  "findings": [],
+  "chains": [],
+  "journal": [
+   "2026-09-29.md"
+  ]
+ }
+}

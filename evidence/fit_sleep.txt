@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "vnd.google.fitness.sleep", "pkg": "com.google.android.apps.fitness", "label": "fit-sleep"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:54.705 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:54.707 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=119
+10-02 14:04:54.707 20818 20818 I VRPPROBE: CMD type=start label=fit-sleep
+10-02 14:04:54.707 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:54.707 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "vnd.google.fitness.sleep", "pkg": "com.google.android.apps.fitness", "label": "fit-sleep"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:37.027 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:37.028 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=119
+10-02 14:07:37.028 21235 21235 I VRPPROBE: CMD type=start label=fit-sleep
+10-02 14:07:37.029 21235 21235 I VRPPROBE: START #Intent;action=vnd.google.fitness.sleep;package=com.google.android.apps.fitness;end
+10-02 14:07:37.048 21235 21235 I VRPPROBE:   START_OK
+10-02 14:07:37.048 21235 21235 I VRPPROBE: == EXEC DONE
+

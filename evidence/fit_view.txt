@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "vnd.google.fitness.VIEW", "pkg": "com.google.android.apps.fitness", "label": "fit-view"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:51.366 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:51.372 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=117
+10-02 14:04:51.372 20818 20818 I VRPPROBE: CMD type=start label=fit-view
+10-02 14:04:51.372 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:51.372 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "vnd.google.fitness.VIEW", "pkg": "com.google.android.apps.fitness", "label": "fit-view"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:33.676 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:33.678 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=117
+10-02 14:07:33.678 21235 21235 I VRPPROBE: CMD type=start label=fit-view
+10-02 14:07:33.679 21235 21235 I VRPPROBE: START #Intent;action=vnd.google.fitness.VIEW;package=com.google.android.apps.fitness;end
+10-02 14:07:33.683 21235 21235 E VRPPROBE:   FAIL ActivityNotFoundException: No Activity found to handle Intent { act=vnd.google.fitness.VIEW flg=0x10200000 xflg=0x4 pkg=com.google.android.apps.fitness }
+10-02 14:07:33.683 21235 21235 I VRPPROBE: == EXEC DONE
+

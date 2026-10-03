@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.youtube", "cls": "com.google.android.apps.youtube.app.application.Shell_MultipleUploadsActivity", "action": "android.intent.action.SEND_MULTIPLE", "mime": "video/*", "scheme": null}

@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "component": "com.google.android.apps.chromecast.app/com.google.android.apps.chromecast.app.setup.discovery.packages.matter.proxy.MatterSetupProxyActivity", "action": "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE", "label": "matter-explicit"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:03:57.616 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:03:57.617 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=275
+10-02 14:03:57.617 20818 20818 I VRPPROBE: CMD type=start label=matter-explicit
+10-02 14:03:57.617 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:03:57.617 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "component": "com.google.android.apps.chromecast.app/com.google.android.apps.chromecast.app.setup.discovery.packages.matter.proxy.MatterSetupProxyActivity", "action": "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE", "label": "matter-explicit"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:39.991 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:39.993 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=275
+10-02 14:06:39.993 21235 21235 I VRPPROBE: CMD type=start label=matter-explicit
+10-02 14:06:39.993 21235 21235 I VRPPROBE: START #Intent;action=com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE;component=com.google.android.apps.chromecast.app/.com.google.android.apps.chromecast.app.setup.discovery.packages.matter.proxy.MatterSetupProxyActivity;end
+10-02 14:06:39.995 21235 21235 E VRPPROBE:   FAIL ActivityNotFoundException: Unable to find explicit activity class {com.google.android.apps.chromecast.app/com.google.android.apps.chromecast.app.com.google.android.apps.chromecast.app.setup.discovery.packages.matter.proxy.MatterSetupProxyActivity}; have you declared this activity in your AndroidManifest.xml, or does your intent not match its declared <intent-filter>?
+10-02 14:06:39.995 21235 21235 I VRPPROBE: == EXEC DONE
+

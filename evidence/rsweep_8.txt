@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.adwords", "cls": "com.google.android.apps.adwords.ShareIntentFilter", "action": "android.intent.action.SEND", "mime": "image/gif", "scheme": null}

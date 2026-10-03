@@ -1,0 +1,24 @@
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "com.google.android.apps.userpanel.ACTION_SIMPLE_LOGIN_ROUTER_ID_CHECK", "label": "dus-routerid"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:44.642 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:44.644 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=129
+10-02 14:04:44.645 20818 20818 I VRPPROBE: CMD type=broadcast label=dus-routerid
+10-02 14:04:44.645 20818 20818 I VRPPROBE: BROADCAST #Intent;action=com.google.android.apps.userpanel.ACTION_SIMPLE_LOGIN_ROUTER_ID_CHECK;end
+10-02 14:04:44.646 20818 20818 I VRPPROBE:   BROADCAST_SENT
+10-02 14:04:44.646 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "com.google.android.apps.userpanel.ACTION_SIMPLE_LOGIN_ROUTER_ID_CHECK", "label": "dus-routerid"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:26.941 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:26.942 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=129
+10-02 14:07:26.943 21235 21235 I VRPPROBE: CMD type=broadcast label=dus-routerid
+10-02 14:07:26.943 21235 21235 I VRPPROBE: BROADCAST #Intent;action=com.google.android.apps.userpanel.ACTION_SIMPLE_LOGIN_ROUTER_ID_CHECK;end
+10-02 14:07:26.944 21235 21235 I VRPPROBE:   BROADCAST_SENT
+10-02 14:07:26.944 21235 21235 I VRPPROBE: == EXEC DONE
+

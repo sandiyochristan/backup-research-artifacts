@@ -1,0 +1,770 @@
+### CMD: {"type": "actBind", "pkg": "com.google.android.contactkeys", "action": "com.google.android.gms.contactkeys.service.ContactKeyApiService.START", "label": "ck-svc"}
+### TARGETS: ['com.google.android.contactkeys']
+### PIDS_BEFORE: {'com.google.android.contactkeys': None}
+
+--------- beginning of main
+10-02 14:17:25.057 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:25.059 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:25.059 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am force-stop com.google.android.contactkeys'
+--------- beginning of system
+10-02 14:17:25.100 I/ActivityManager( 1842): Force stopping com.google.android.contactkeys appid=10292 user=0: from pid 31792
+10-02 14:17:25.104 W/ProcessStats( 1842): Tracking association SourceState{3cad8df system/1000 ImpBg #24308} whose proc state 6 is better than process ProcessState{eca4a50 com.google.android.inputmethod.latin/10196 pkg=com.google.android.inputmethod.latin (sub)} proc state 14 (0 skipped)
+10-02 14:17:25.106 I/AppsFilter( 1842): interaction: PackageSetting{ae3d39c com.vrp.testonly/10399} -> PackageSetting{bc284f7 com.google.android.contactkeys/10292} BLOCKED
+10-02 14:17:25.106 I/AppsFilter( 1842): interaction: PackageSetting{fff5c97 com.google.android.microdroid.empty_payload/10269} -> PackageSetting{bc284f7 com.google.android.contactkeys/10292} BLOCKED
+10-02 14:17:25.114 D/CarrierSvcBindHelper( 4061): onHandleForceStop: [com.google.android.contactkeys]
+10-02 14:17:25.116 D/EuiccConnector( 4061): handleMessage: E msg.what=1
+10-02 14:17:25.116 D/EuiccConnector( 4061): processMsg: AvailableState
+10-02 14:17:25.116 D/EuiccConnector( 4061): processMsg: UnavailableState
+10-02 14:17:25.116 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 14:17:25.119 D/EuiccConnector( 4061): transitionTo: destState=AvailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 14:17:25.122 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=UnavailableState,active=true,parent=null
+10-02 14:17:25.122 D/EuiccConnector( 4061): invokeExitMethods: AvailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=1
+10-02 14:17:25.122 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=AvailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): invokeEnterMethods: AvailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:17:25.122 D/EuiccConnector( 4061): handleMessage: E msg.what=103
+10-02 14:17:25.122 D/EuiccConnector( 4061): processMsg: AvailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): deferMessage: msg=103
+10-02 14:17:25.122 D/EuiccConnector( 4061): transitionTo: destState=BindingState
+10-02 14:17:25.122 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 14:17:25.122 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: null
+10-02 14:17:25.122 D/EuiccConnector( 4061): invokeExitMethods: AvailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): invokeExitMethods: UnavailableState
+10-02 14:17:25.122 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=0
+10-02 14:17:25.122 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=0,startingIndex=0,Top=BindingState
+10-02 14:17:25.122 D/EuiccConnector( 4061): invokeEnterMethods: BindingState
+10-02 14:17:25.135 D/CarrierSvcBindHelper( 4061): No carrier app for: 0
+10-02 14:17:25.136 D/EuiccConnector( 4061): transitionTo: destState=DisconnectedState
+10-02 14:17:25.136 D/EuiccConnector( 4061): moveDeferredMessageAtFrontOfQueue; what=103
+10-02 14:17:25.136 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 14:17:25.136 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: null
+10-02 14:17:25.136 D/EuiccConnector( 4061): invokeExitMethods: BindingState
+10-02 14:17:25.136 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=0
+10-02 14:17:25.136 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=0,startingIndex=0,Top=DisconnectedState
+10-02 14:17:25.137 D/EuiccConnector( 4061): invokeEnterMethods: DisconnectedState
+10-02 14:17:25.137 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:17:25.137 D/EuiccConnector( 4061): handleMessage: E msg.what=103
+10-02 14:17:25.137 D/EuiccConnector( 4061): processMsg: DisconnectedState
+10-02 14:17:25.137 D/EuiccConnector( 4061): deferMessage: msg=103
+10-02 14:17:25.137 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:17:25.138 I/EuiccGoogle( 4546): [2] EuiccServiceImpl.onCreate: onCreate Single-SIM mode: simCardState is 1
+10-02 14:17:25.139 D/EuiccConnector( 4061): handleMessage: E msg.what=4
+10-02 14:17:25.139 D/EuiccConnector( 4061): processMsg: DisconnectedState
+10-02 14:17:25.139 D/EuiccConnector( 4061): transitionTo: destState=ConnectedState
+10-02 14:17:25.139 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 14:17:25.139 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=DisconnectedState,active=true,parent=null
+10-02 14:17:25.139 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=1
+10-02 14:17:25.139 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=ConnectedState
+10-02 14:17:25.139 D/EuiccConnector( 4061): invokeEnterMethods: ConnectedState
+10-02 14:17:25.139 D/EuiccConnector( 4061): moveDeferredMessageAtFrontOfQueue; what=103
+10-02 14:17:25.139 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:17:25.139 D/EuiccConnector( 4061): handleMessage: E msg.what=103
+10-02 14:17:25.139 D/EuiccConnector( 4061): processMsg: ConnectedState
+10-02 14:17:25.140 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:17:25.140 I/EuiccGoogle( 4546): [181] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_supported_countries, type=string, partnerResId = 0
+10-02 14:17:25.140 I/EuiccGoogle( 4546): [181] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_unsupported_countries, type=string, partnerResId = 2131755062
+10-02 14:17:25.140 I/EuiccGoogle( 4546): [184] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = -1
+10-02 14:17:25.141 I/EuiccGoogle( 4546): [181] PhenotypeUpdatedReceiver.setPsimConversionSupportedCarriers: pSIM conversion feature is not enabled
+10-02 14:17:25.144 W/EuiccGoogle( 4546): [184] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId=-1. No eUICC is active. Return null.
+10-02 14:17:25.147 D/EuiccConnector( 4061): handleMessage: E msg.what=6
+10-02 14:17:25.147 D/EuiccConnector( 4061): processMsg: ConnectedState
+10-02 14:17:25.147 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:17:25.154 W/System  ( 4061): A resource failed to call AbstractCursor.close. 
+10-02 14:17:25.313 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:25.314 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:25.332 I/pixel-thermal( 1850): VIRTUAL-SKIN:41.1475 raw data: VIRTUAL-SKIN:41147.5 
+10-02 14:17:25.446 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:17:23:824 - 14:17:25:445, duration: 1621, le_adv_count: 2, total_le_adv_count: 1964, total_event_count: 2
+10-02 14:17:25.567 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:25.568 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:25.821 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:25.822 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:26.075 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:26.077 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:26.164 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:monkey -p com.google.android.contactkeys -c android.intent.category.LAUNCHER 1'
+10-02 14:17:26.296 D/AndroidRuntime(31800): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-02 14:17:26.300 I/AndroidRuntime(31800): Using default boot image
+10-02 14:17:26.300 I/AndroidRuntime(31800): Leaving lock profiling enabled
+10-02 14:17:26.304 I/app_process(31800): Core platform API enforcement disabled by runtime option
+10-02 14:17:26.304 I/app_process(31800): Using generational CollectorTypeCMC GC.
+10-02 14:17:26.330 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:26.330 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:26.348 D/nativeloader(31800): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+10-02 14:17:26.356 D/nativeloader(31800): Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 14:17:26.356 D/app_process(31800): u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/10/icu") succeeded. 
+10-02 14:17:26.356 D/app_process(31800): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt78l.dat
+10-02 14:17:26.357 D/nativeloader(31800): Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 14:17:26.357 D/nativeloader(31800): Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 14:17:26.358 I/app_process(31800): Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+10-02 14:17:26.379 D/nativeloader(31800): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-02 14:17:26.379 D/AndroidRuntime(31800): Calling main entry com.android.commands.monkey.Monkey
+10-02 14:17:26.380 D/nativeloader(31800): Load /system/lib64/libmonkey_jni.so using ns default for caller /system/framework/monkey.jar in same partition (is_bridged=0): ok
+10-02 14:17:26.380 W/Monkey  (31800): args: [-p, com.google.android.contactkeys, -c, android.intent.category.LAUNCHER, 1]
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.art.flags is mapped to com.android.art
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.art.rw.flags is mapped to com.android.art
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.libcore is mapped to com.android.art
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.adbd.flags is mapped to com.android.adbd
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.devicelock.flags is mapped to com.android.devicelock
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.nfc.module.flags is mapped to com.android.nfcservices
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.nfc.module.nonexported.flags is mapped to com.android.nfcservices
+10-02 14:17:26.383 I/AconfigPackage(31800): com.google.android.widevine.flags is mapped to com.google.android.widevine
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.system.virtualmachine.flags is mapped to com.android.virt
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.wifi.flags is mapped to com.android.wifi
+10-02 14:17:26.383 I/AconfigPackage(31800): android.provider.flags is mapped to com.android.configinfrastructure
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.icu is mapped to com.android.i18n
+10-02 14:17:26.383 I/AconfigPackage(31800): com.android.scheduling.flags is mapped to com.android.scheduling
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.signature.flags is mapped to com.android.mediaprovider
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.providers.media.flags is mapped to com.android.mediaprovider
+10-02 14:17:26.384 I/AconfigPackage(31800): android.graphics.pdf.flags is mapped to com.android.mediaprovider
+10-02 14:17:26.384 I/AconfigPackage(31800): android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.adservices.flags is mapped to com.android.adservices
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.sdksandbox.flags is mapped to com.android.adservices
+10-02 14:17:26.384 I/AconfigPackage(31800): android.app.sdksandbox.flags is mapped to com.android.adservices
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.uprobestats.flags is mapped to com.android.uprobestats
+10-02 14:17:26.384 I/AconfigPackage(31800): android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.webapp.flags is mapped to com.android.webapp
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.compos.flags is mapped to com.android.compos
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.rkpd.flags is mapped to com.android.rkpd
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.media.extractor.flags is mapped to com.android.media
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.media.metrics.flags is mapped to com.android.media
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.media.mainline.flags is mapped to com.android.media
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.appsearch.flags is mapped to com.android.appsearch
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.bluetooth.beta.flags is mapped to com.android.bt
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.bluetooth.flags is mapped to com.android.bt
+10-02 14:17:26.384 I/AconfigPackage(31800): com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.uwb.flags is mapped to com.android.uwb
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.ranging.flags is mapped to com.android.uwb
+10-02 14:17:26.385 I/AconfigPackage(31800): android.telecom.flags is mapped to com.android.telephonycore
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.internal.telecom.flags is mapped to com.android.telephonycore
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.telephony.flags is mapped to com.android.telephonycore
+10-02 14:17:26.385 I/AconfigPackage(31800): android.media.swcodec.flags is mapped to com.android.media.swcodec
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.permission.flags is mapped to com.android.permission
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.permissioncontroller.flags is mapped to com.android.permission
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.npumanager is mapped to com.android.npumanager
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.ipsec.flags is mapped to com.android.ipsec
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.os.statsd.flags is mapped to com.android.os.statsd
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.healthfitness.flags is mapped to com.android.healthfitness
+10-02 14:17:26.385 I/AconfigPackage(31800): com.android.healthfitness.beta is mapped to com.android.healthfitness
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.tethering.mainline.beta is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): android.net.http is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.tethering.readonly.flags is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): android.net.vcn is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.net.flags is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.tethering.flags is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.tethering.beta.test is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.nearby.flags is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): com.android.net.thread.flags is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): android.net.http.flags is mapped to com.android.tethering
+10-02 14:17:26.386 I/AconfigPackage(31800): android.os.profiling is mapped to com.android.profiling
+10-02 14:17:26.386 I/AconfigPackage(31800): android.os.profiling.anomaly.beta.flags is mapped to com.android.profiling
+10-02 14:17:26.386 I/AconfigPackage(31800): android.os.profiling.anomaly.flags is mapped to com.android.profiling
+10-02 14:17:26.386 E/FeatureFlagsImplExport(31800): android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+10-02 14:17:26.393 I/EventHub( 1842): No input device configuration file found for device 'Monkey touch'.
+10-02 14:17:26.393 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/power_supply": No such file or directory
+10-02 14:17:26.393 E/EventHub( 1842): Could not open directory "/sys/devices/power_supply": No such file or directory
+10-02 14:17:26.393 E/EventHub( 1842): Could not open directory "/sys/power_supply": No such file or directory
+10-02 14:17:26.393 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/leds": No such file or directory
+10-02 14:17:26.393 W/Monkey  (31800):  arg: "-p"
+10-02 14:17:26.393 E/EventHub( 1842): Could not open directory "/sys/devices/leds": No such file or directory
+10-02 14:17:26.393 W/Monkey  (31800):  arg: "com.google.android.contactkeys"
+10-02 14:17:26.393 E/EventHub( 1842): Could not open directory "/sys/leds": No such file or directory
+10-02 14:17:26.393 W/Monkey  (31800):  arg: "-c"
+10-02 14:17:26.393 W/Monkey  (31800):  arg: "android.intent.category.LAUNCHER"
+10-02 14:17:26.394 W/Monkey  (31800):  arg: "1"
+10-02 14:17:26.394 W/Monkey  (31800): data="com.google.android.contactkeys"
+10-02 14:17:26.394 W/Monkey  (31800): data="android.intent.category.LAUNCHER"
+10-02 14:17:26.394 I/EventHub( 1842): usingClockIoctl=true
+10-02 14:17:26.394 I/EventHub( 1842): New device: id=30, fd=850, path='/dev/input/event4', name='Monkey touch', classes=TOUCH | TOUCH_MT, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false, 
+10-02 14:17:26.396 I/InputReader( 1842): Device reconfigured: id=30, name='Monkey touch', size 1080x2400, orientation Rotation0, mode DIRECT, display id 0
+10-02 14:17:26.396 I/InputReader( 1842): Device added: id=30, eventHubId=30, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+10-02 14:17:26.403 W/ActivityManager( 1842): registerReceiverWithFeature: no app for null
+10-02 14:17:26.409 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 14:17:26.411 I/Monkey  (31800): ** No activities found to run, monkey aborted.
+10-02 14:17:26.411 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 14:17:26.412 I/app_process(31800): System.exit called, status: -4
+10-02 14:17:26.412 I/AndroidRuntime(31800): VM exiting with result code -4.
+10-02 14:17:26.417 I/NearbyMediums( 4261): Found Fast Ble Advertisements :
+10-02 14:17:26.417 I/NearbyMediums( 4261): BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x45 0x54 0x32 0x49 0x11 0x32 0xf1 0x9b 0x08 0x3f 0x5c 0xb2 0xc2 0x35 0x4f 0x1a 0x50 0x97 0x44 0x05 0x8f 0xe1 ], deviceToken=[ 0x20 0x5b ], rxAdvertisement=null } : 12 times.
+10-02 14:17:26.417 I/NearbyMediums( 4261): Total 12 fast advertisements from 1 unique advertisers.
+10-02 14:17:26.417 I/NearbyMediums( 4261): Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+10-02 14:17:26.424 I/EventHub( 1842): Removing device '/dev/input/event4' due to inotify event
+10-02 14:17:26.424 I/EventHub( 1842): Removed device: path=/dev/input/event4 name=Monkey touch id=30 fd=850 classes=TOUCH | TOUCH_MT
+10-02 14:17:26.426 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 14:17:26.428 I/InputReader( 1842): Device removed: id=30, eventHubId=30, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f', sources=TOUCHSCREEN
+10-02 14:17:26.439 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 14:17:26.443 D/NavigationModeController( 3743): getCurrentUserContext: contextUser=0 currentUser=0
+10-02 14:17:26.443 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 14:17:26.531 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 105 ms
+10-02 14:17:26.569 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 14:17:26.570 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 14:17:26.570 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 14:17:26.583 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:26.584 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:26.836 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:26.838 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:26.879 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:17:25:813 - 14:17:26:879, duration: 1065, le_adv_count: 2, total_le_adv_count: 1966, total_event_count: 2
+10-02 14:17:27.092 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:27.093 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:27.345 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:27.346 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:27.599 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:27.600 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:27.856 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:27.859 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:28.112 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:28.113 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:28.366 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:28.367 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:28.475 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:pidof com.google.android.contactkeys'
+10-02 14:17:28.546 I/adbd    ( 1339): adbd service requested 'sync:'
+10-02 14:17:28.577 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.probe/.UiActivity'
+10-02 14:17:28.619 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:28.620 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:28.627 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=31818) has no WPC
+10-02 14:17:28.627 E/libbinder.IPCThreadState( 1842): Binder transaction failure. id: 2573400, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+10-02 14:17:28.627 W/ActivityManager( 1842): pid 1842 system sent binder code 1 with flags 0 and got error -32
+10-02 14:17:28.628 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@3dacc844 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 14:17:28.632 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 14:17:28.632 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=4430515 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1c059a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{f9be8d1 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 14:17:28.632 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 14:17:28.633 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df6b9940) with descriptor: '(not cached)'
+10-02 14:17:28.634 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{ad860ae #915 type=standard A=10362:com.vrp.probe} activity=ActivityRecord{118774309 u0 com.vrp.probe/.UiActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 14:17:28.634 I/ActivityTaskManager( 1842): START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.probe/.UiActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=2
+10-02 14:17:28.635 V/WindowManagerShell( 3743): Transition requested (#3526): android.os.BinderProxy@b3f78 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=4430515 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1deaee1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{f0c651 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3526 }
+10-02 14:17:28.635 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 14:17:28.637 V/SnapshotDrawerUtils( 3743): Drawing snapshot surface sizeMismatch=true
+10-02 14:17:28.638 D/WindowManager( 1842): setClientSurface Surface(name=SnapshotStartingWindow for taskId=915 - task-snapshot-surface#17071)/@0x6595d87 for f2379c6 SnapshotStartingWindow for taskId=915
+10-02 14:17:28.638 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity}, wasVisible=false, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 14:17:28.641 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{e85997a #2926 type=standard A=10295:com.google.android.apps.chromecast.app} on display 0
+10-02 14:17:28.641 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{ad860ae #915 type=standard A=10362:com.vrp.probe} on display 0
+10-02 14:17:28.644 D/ViewRootImpl(22165): Skipping stats log for color mode
+10-02 14:17:28.648 I/VRPPROBE(22165): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=162
+10-02 14:17:28.648 I/VRPPROBE(22165): CMD type=actBind label=ck-svc
+10-02 14:17:28.648 I/VRPPROBE(22165): ACTSVC BIND Intent { act=com.google.android.gms.contactkeys.service.ContactKeyApiService.START pkg=com.google.android.contactkeys }
+10-02 14:17:28.649 I/pixel-thermal( 1850): VIRTUAL-SKIN:41.073 raw data: VIRTUAL-NEUTRAL:41026.5 VIRTUAL-NEUTRAL-SKIN2:41073 VIRTUAL-QUIET-NEUTRAL:40382.3 VIRTUAL-SKIN:41073 disp_therm:38984 gnss_tcxo_therm:41410 neutral_therm:40320 quiet_therm:40409 skin_therm1:41548 skin_therm2:42830 
+10-02 14:17:28.649 I/pixel-thermal( 1850): cellular-emergency:41.073 raw data: VIRTUAL-SKIN:41073 cellular-emergency:41073 
+10-02 14:17:28.649 I/pixel-thermal( 1850): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-CHG:-3508 VIRTUAL-USB-UI:1 charger_skin_therm:43472 usb_pwr_therm2:39964 
+10-02 14:17:28.650 D/BoundBrokerSvc( 4261): onBind: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+10-02 14:17:28.650 D/BoundBrokerSvc( 4261): Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START xflg=0x4 pkg=com.google.android.gms }
+10-02 14:17:28.651 I/AppsFilter( 1842): interaction: PackageSetting{ae3d39c com.vrp.testonly/10399} -> PackageSetting{c658e02 com.google.android.contactkeys/10292} BLOCKED
+10-02 14:17:28.651 I/AppsFilter( 1842): interaction: PackageSetting{fff5c97 com.google.android.microdroid.empty_payload/10269} -> PackageSetting{c658e02 com.google.android.contactkeys/10292} BLOCKED
+10-02 14:17:28.652 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329853668)
+10-02 14:17:28.652 V/WindowManagerShell( 3743): onTransitionReady (#3526) android.os.BinderProxy@b3f78: {id=3526 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 14:17:28.652 V/WindowManagerShell( 3743):         {m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xf2c27b7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 14:17:28.652 V/WindowManagerShell( 3743):         {m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2926#17019)/@0x870db24 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 14:17:28.652 V/WindowManagerShell( 3743):     ]}
+10-02 14:17:28.652 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #3526
+10-02 14:17:28.652 V/WindowManager( 1842): Sent Transition (#3526) createdAt=10-02 14:17:28.629 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=4430515 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{d3132f8 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3526 }
+10-02 14:17:28.652 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=915
+10-02 14:17:28.652 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 14:17:28.652 V/WindowManager( 1842):     info={id=3526 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 14:17:28.652 V/WindowManager( 1842):         {WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x85793f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 14:17:28.652 V/WindowManager( 1842):         {WCT{RemoteToken{28c2195 Task{e85997a #2926 type=standard A=10295:com.google.android.apps.chromecast.app}}} m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2926#17019)/@0x3cbc6fa sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 14:17:28.652 V/WindowManager( 1842):     ]}
+10-02 14:17:28.652 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=915, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 14:17:28.652 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 14:17:28.652 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 14:17:28.652 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@c6398cca does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 14:17:28.652 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=2926, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 14:17:28.653 V/WindowManagerShell( 3743): Playing animation for (#3526) android.os.BinderProxy@b3f78@0
+10-02 14:17:28.653 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=4498528 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1c059a3} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{b25410d com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 14:17:28.653 D/ShellSplitScreen( 3743): startAnimation: transition=3526 isSplitActive=false
+10-02 14:17:28.653 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 14:17:28.653 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 14:17:28.653 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=3526 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xf2c27b7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2926#17019)/@0x870db24 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 14:17:28.653 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@612134b windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@e954128, appThread = android.app.IApplicationThread$Stub$Proxy@c571e41, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@612134b windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 14:17:28.653 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@395dfe6, appThread = android.app.IApplicationThread$Stub$Proxy@2ec9927, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 14:17:28.653 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@9147d4, appThread = android.app.IApplicationThread$Stub$Proxy@3b65d7d, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 14:17:28.653 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d01472, appThread = android.app.IApplicationThread$Stub$Proxy@ffa0c3, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 14:17:28.653 V/WindowManagerShell( 3743):  Delegate animation for (#3526) to null
+10-02 14:17:28.653 V/WindowManagerShell( 3743): start default transition animation, info = {id=3526 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xf2c27b7 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=2926#17019)/@0x870db24 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 14:17:28.654 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@14d7e8e animAttr=0x9 type=OPEN isEntrance=false
+10-02 14:17:28.654 I/VRPPROBE(22165):   ACT_BIND_RESULT=true
+10-02 14:17:28.655 D/WindowManager( 1842): setClientSurface Surface(name=VRI-com.vrp.probe/com.vrp.probe.UiActivity#17073)/@0x6150749 for dfed4a0 com.vrp.probe/com.vrp.probe.UiActivity
+10-02 14:17:28.656 I/Surface (22165): Creating surface for consumer unnamed-22165-32 with slotExpansion=1 for 64 slots
+10-02 14:17:28.656 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@a07aecb animAttr=0x8 type=OPEN isEntrance=true
+10-02 14:17:28.656 I/Surface (22165): Creating surface for consumer VRI[UiActivity]#32(BLAST Consumer)32 with slotExpansion=1 for 64 slots
+10-02 14:17:28.657 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 14:17:28.669 W/System  ( 3743): A resource failed to call release. 
+10-02 14:17:28.670 D/Zygote  ( 1039): Forked child process 31840
+10-02 14:17:28.671 I/ActivityManager( 1842): Start proc 31840:com.google.android.contactkeys/u0a292 for bound-service {com.google.android.contactkeys/com.google.android.gms.contactkeys.service.ContactKeyApiService}
+10-02 14:17:28.674 I/libprocessgroup(31840): Created cgroup /sys/fs/cgroup/apps/uid_10292/pid_31840
+10-02 14:17:28.680 I/Zygote  (31840): Process 31840 created for com.google.android.contactkeys
+10-02 14:17:28.680 I/oid.contactkeys(31840): Using generational CollectorTypeCMC GC.
+10-02 14:17:28.685 D/nativeloader(31840): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-02 14:17:28.696 W/composer@2.4-se(  700): type=1400 audit(0.0:6706): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 14:17:28.697 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+10-02 14:17:28.697 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 14:17:28.697 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 14:17:28.697 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 14:17:28.696 W/composer@2.4-se(  700): type=1400 audit(0.0:6707): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 14:17:28.711 D/CompatChangeReporter(31840): Compat change id reported: 333566037; UID 10292; state: ENABLED
+10-02 14:17:28.712 D/ApplicationLoaders(31840): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-02 14:17:28.712 D/ApplicationLoaders(31840): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-02 14:17:28.720 I/ImeTracker( 1842): system_server:30cd8364: onRequestHide at ORIGIN_SERVER reason ISP_UPDATE_CONTROL_FOR_TARGET fromUser false displayId 0
+10-02 14:17:28.720 I/ImeTracker( 1842): com.vrp.probe:a3c9258a: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+10-02 14:17:28.721 D/InsetsController(22165): hide(ime())
+10-02 14:17:28.721 I/ImeTracker(22165): com.vrp.probe:a3c9258a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-02 14:17:28.721 I/SubtypeOperator(15684): SubtypeOperator$1.onUnbindInput():43 
+10-02 14:17:28.722 I/SubtypeOperator(15684): SubtypeOperator$1.onBindInput():33 
+10-02 14:17:28.723 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 14:17:28.723 I/ImeTracker( 1842): system_server:30cd8364: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-02 14:17:28.724 I/GoogleInputMethodService(15684): GoogleInputMethodService.onFinishInput():2361 
+10-02 14:17:28.725 I/GoogleInputMethodService(15684): GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=com.vrp.probe, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-02 14:17:28.725 W/LatinIMEBase(15684): LatinIMEBase.updateInputViewCoverNavigation():322 Null input view, cannot update padding!
+10-02 14:17:28.726 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-02 14:17:28.726 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+10-02 14:17:28.726 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 14:17:28.726 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 14:17:28.726 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 14:17:28.726 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=3 error(-22)
+10-02 14:17:28.726 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 14:17:28.726 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 14:17:28.726 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 14:17:28.724 W/composer@2.4-se(  700): type=1400 audit(0.0:6708): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 14:17:28.724 W/composer@2.4-se(  700): type=1400 audit(0.0:6709): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 14:17:28.728 W/PackageConfigPersister( 1842): App-specific configuration not found for packageName: com.vrp.probe and userId: 0
+10-02 14:17:28.724 W/composer@2.4-se(  700): type=1400 audit(0.0:6710): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 14:17:28.737 W/oid.contactkeys(31840): Failed to find entry 'classes.dex': Entry not found
+10-02 14:17:28.739 W/oid.contactkeys(31840): Failed to find entry 'classes.dex': Entry not found
+10-02 14:17:28.739 W/oid.contactkeys(31840): Failed to find entry 'classes.dex': Entry not found
+10-02 14:17:28.740 D/nativeloader(31840): Configuring clns-9 for other apk /data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/base.apk:/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/split_config.arm64_v8a.apk:/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/split_config.en.apk:/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/split_config.xxhdpi.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/lib/arm64:/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/base.apk!/lib/arm64-v8a:/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~UHpWvImd3RBmiId-nhkiGg==/com.google.android.contactkeys-ecsxuV1j5meQOr7mt5d98A==/split_config.en.apk!/lib/arm64-v8a:/
+10-02 14:17:28.743 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 14:17:28.743 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 14:17:28.744 V/RecentTasksController( 3743): generateList(getRecentTasks)
+10-02 14:17:28.744 V/RecentTasksController( 3743): initializeDesksMap - desktop windowing not available
+10-02 14:17:28.744 V/RecentTasksController( 3743): Added fullscreen task: 915
+10-02 14:17:28.744 V/RecentTasksController( 3743): Added fullscreen task: 2926
+10-02 14:17:28.745 V/RecentTasksController( 3743): Added fullscreen task: 912
+10-02 14:17:28.745 V/RecentTasksController( 3743): generateList - complete
+10-02 14:17:28.745 D/PreloadThumbnailUseCase( 4067): Preloading thumbnails for task ids: [[id=912 windowingMode=1 user=0 lastActiveTime=3987024 lastFocusedTime=3985800] null, [id=2926 windowingMode=1 user=0 lastActiveTime=4498518 lastFocusedTime=4430526] null, [id=915 windowingMode=1 user=0 lastActiveTime=4498528 lastFocusedTime=4498539] null]
+10-02 14:17:28.746 I/Surface ( 1842): Creating surface for consumer unnamed-1842-87 with slotExpansion=1 for 64 slots
+10-02 14:17:28.746 I/Surface ( 1842): Creating surface for consumer ImageReader-864x1920f1m1-1842-87 with slotExpansion=1 for 64 slots
+10-02 14:17:28.746 W/ImageReader_JNI( 1842): Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-02 14:17:28.750 D/ActivityThread(31840): Set OS env TMPDIR to /data/user/0/com.google.android.contactkeys/cache
+10-02 14:17:28.751 E/ConsumerBase( 1842): [ImageReader-864x1920f1m1-1842-87] abandonLocked: ConsumerBase is abandoned!
+10-02 14:17:28.752 V/GraphicsEnvironment(31840): Currently set values for:
+10-02 14:17:28.752 V/GraphicsEnvironment(31840):   angle_gl_driver_selection_pkgs=[com.android.angle]
+10-02 14:17:28.752 V/GraphicsEnvironment(31840):   angle_gl_driver_selection_values=[angle]
+10-02 14:17:28.752 V/GraphicsEnvironment(31840): com.google.android.contactkeys is not listed in per-application setting
+10-02 14:17:28.752 V/GraphicsEnvironment(31840): No special selections for ANGLE, returning default driver choice
+10-02 14:17:28.752 V/GraphicsEnvironment(31840): Neither updatable production driver nor prerelease driver is supported.
+10-02 14:17:28.754 D/CompatChangeReporter(31840): Compat change id reported: 407952621; UID 10292; state: ENABLED
+10-02 14:17:28.754 D/CompatChangeReporter(31840): Compat change id reported: 419020719; UID 10292; state: ENABLED
+10-02 14:17:28.765 D/LauncherAmbientCueVM( 4067): recalculateStates: isRootAttached=false (isTestMode=false, hasActions=false, isAmbientCueEnabled=true, isNotDeactivated=true, isTaskFocused=false [focusedId=915, targetId=-1])
+10-02 14:17:28.776 D/CompatChangeReporter(31840): Compat change id reported: 418924588; UID 10292; state: ENABLED
+10-02 14:17:28.778 D/CompatChangeReporter(31840): Compat change id reported: 458413887; UID 10292; state: ENABLED
+10-02 14:17:28.798 I/VRPPROBE(22165):   [ck-svc] CONNECTED ComponentInfo{com.google.android.contactkeys/com.google.android.gms.contactkeys.service.ContactKeyApiService}
+10-02 14:17:28.798 W/DynamiteModule(31840): Local module descriptor class for com.google.android.gms.googlecertificates not found.
+10-02 14:17:28.798 I/VRPPROBE(22165):   [ck-svc] BINDER=android.os.BinderProxy iface=com.google.android.gms.common.internal.IGmsServiceBroker
+10-02 14:17:28.798 I/VRPPROBE(22165):   [ck-svc] probe parcel prepared
+10-02 14:17:28.804 W/System  (31840): ClassLoader referenced unknown path: 
+10-02 14:17:28.805 D/nativeloader(31840): Configuring clns-10 for other apk . target_sdk_version=37, uses_libraries=, library_path=/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/lib/arm64:/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-02 14:17:28.829 D/BoundBrokerSvc( 4261): onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+10-02 14:17:28.836 W/PhBaseOp( 4261): Phenotype API error. Event: # jijd@51916fcd, EventCode: COMMIT_CONFIG [CONTEXT service_id=51 ]
+10-02 14:17:28.836 W/PhBaseOp( 4261): fplm: 29543: Stale snapshot for com.google.android.gms(new configuration available)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at fpnp.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):50)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at fpnp.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):44)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at fpno.i(:com.google.android.gms@263436035@26.34.36 (260400-981326859):3)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at fpnk.h(:com.google.android.gms@263436035@26.34.36 (260400-981326859):34)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at fpnk.f(:com.google.android.gms@263436035@26.34.36 (260400-981326859):16)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at djdc.ft(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at djdo.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):122)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at hrxw.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):23)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at bpof.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):50)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at bpof.c(:com.google.android.gms@263436035@26.34.36 (260400-981326859):28)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at bpof.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):33)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at bpuf.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):8)
+10-02 14:17:28.836 W/PhBaseOp( 4261): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 14:17:28.836 W/AsyncOperation( 4261): operation=CommitToConfigurationOperationCall, opStatusCode=29543 [CONTEXT service_id=51 ]
+10-02 14:17:28.836 W/AsyncOperation( 4261): OperationException[Status{statusCode=Stale snapshot for com.google.android.gms(new configuration available), resolution=null}]
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at fpnk.h(:com.google.android.gms@263436035@26.34.36 (260400-981326859):63)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at fpnk.f(:com.google.android.gms@263436035@26.34.36 (260400-981326859):16)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at djdc.ft(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at djdo.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):122)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at hrxw.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):23)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at bpof.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):50)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at bpof.c(:com.google.android.gms@263436035@26.34.36 (260400-981326859):28)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at bpof.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):33)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at bpuf.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):8)
+10-02 14:17:28.836 W/AsyncOperation( 4261): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 14:17:28.872 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:28.873 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:28.887 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:17:27:239 - 14:17:28:887, duration: 1648, le_adv_count: 2, total_le_adv_count: 1968, total_event_count: 0
+10-02 14:17:29.126 W/HomeApp|bpyh(31550): BLUETOOTH_SCAN permission is not granted.
+10-02 14:17:29.127 W/HomeApp|bpxx(31550): Failed to start scan. Trying again in 250 ms.
+10-02 14:17:29.194 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#3526) android.os.BinderProxy@b3f78@0
+10-02 14:17:29.203 V/WindowManager( 1842): Finish Transition (#3526): created at 10-02 14:17:28.629 collect-started=0.075ms request-sent=4.743ms started=6.519ms ready=13.363ms sent=19.297ms commit=48.114ms finished=573.38ms
+10-02 14:17:29.206 D/VRI[MainActivity](31550): visibilityChanged oldVisibility=true newVisibility=false
+10-02 14:17:29.207 V/WindowManagerShell( 3743): Track 0 became idle
+10-02 14:17:29.208 V/WindowManagerShell( 3743): All active transition animations finished
+10-02 14:17:29.213 D/HintManagerService( 1842): Sent cleanup message for uid 10295
+10-02 14:17:29.237 I/WifiService( 1842): releaseMulticastLock uid=10266 lockTag=mdns-cast
+10-02 14:17:29.255 I/usonia.RootFinder( 4261): (REDACTED) [GAIA:9a06d744] Running root device discovery. Sending and receiving on port %d.
+10-02 14:17:29.350 W/HomeApp|akhg(31550): Could not find home with ID: null
+10-02 14:17:29.352 W/HomeApp|akhg(31550): Could not find home with ID: null
+10-02 14:17:29.355 W/HomeApp|akhg(31550): Could not find home with ID: null
+10-02 14:17:29.356 I/HalfSheetCoordinator( 4261): (REDACTED) Updating suppression info for pid: %s, suppressed: %s
+10-02 14:17:29.356 W/HomeApp|lxe(31550): Did not found account or home to refresh widgets.
+10-02 14:17:29.369 W/AxMediaRouter(31550): Ignoring null provider descriptor from ComponentInfo{com.google.android.gms/com.google.android.gms.cast.media.CastMediaRoute2ProviderService_Persistent}
+10-02 14:17:29.370 I/DiscoveryManager( 4261): Discovery state (DiscoveryState{filterCriteria=null, categoryToCriteria={}, activeScan=false, activeScanWithScreenOff=false, discoveryRequestSupportsDynamicSession=false, eventFlowId=0})
+10-02 14:17:29.375 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+10-02 14:17:29.376 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+10-02 14:17:29.377 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+10-02 14:17:29.377 I/WifiService( 1842): releaseMulticastLock uid=10266 lockTag=MdnsServiceBrowserImpl
+10-02 14:17:29.383 E/NsdService( 1842): id 79 for 31 has no client mapping
+10-02 14:17:29.575 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 14:17:29.704 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 14:17:29.708 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 14:17:29.708 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 14:17:30.123 I/bthal.activitywatcher( 1056): getStateResidency: ActivityStat{0 : totalTimeMs 1607643 totalEntryCount 47348 lastEntryMs 4227832}
+10-02 14:17:30.123 I/bthal.activitywatcher( 1056): getStateResidency: ActivityStat{1 : totalTimeMs 1046331 totalEntryCount 47406 lastEntryMs 4227883}
+10-02 14:17:30.124 I/bthal.activitywatcher( 1056): getStateResidency: ActivityStat{2 : totalTimeMs 112784 totalEntryCount 187568 lastEntryMs 4228305}
+10-02 14:17:30.124 I/bthal.activitywatcher( 1056): getStateResidency: ActivityStat{3 : totalTimeMs 196631 totalEntryCount 142195 lastEntryMs 4228305}
+10-02 14:17:30.139 I/bthal.activitywatcher( 1056): send_hci_activities_vsc: Sent VSC <[4]{89, 253, 1, 1}>
+10-02 14:17:30.140 I/bthal.activitywatcher( 1056): filter_hci_activities_vse: Filtered <[103]{14, 101, 1, 89, 253, 0, 1, 226, 5, 0, 0, 197, 183, 0, 0, 43, 228, 2, 0, 0, 0, 0, 0, 55, 228, 2, 0, 0, 0, 0, 0, 227, 5, 0, 0, 200, 180, 0, 0, 55, 228, 2, 0, 0, 0, 0, 0, 43, 228, 2, 0, 0, 0, 0, 0, 94, 26, 0, 0, 87, 11, 0, 0, 42, 228, 2, 0, 0, 0, 0, 0, 42, 228, 2, 0, 0, 0, 0, 0, 234, 21, 0, 0, 107, 43, 0, 0, 35, 228, 2, 0, 0, 0, 0, 0, 35, 228, 2, 0, 0, 0, 0, 0}>
+10-02 14:17:30.140 I/bthal.flowcontrol( 1056): HciEventPreProcess: HCI Event 0xe Opcode 0xfd59 Length 103 handled by ControllerActivityWatcher
+10-02 14:17:30.141 W/android.hardware.power.stats-service.pixel( 1083): getStateResidency latency for Bluetooth exceeded time allowed: 18436us
+10-02 14:17:30.144 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x14 [cntr = 1046]
+10-02 14:17:30.145 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x14, rc: 0
+10-02 14:17:30.146 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x15 [cntr = 1047]
+10-02 14:17:30.146 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x15, rc: 0
+10-02 14:17:30.148 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x16 [cntr = 1048]
+10-02 14:17:30.148 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x16, rc: 0
+10-02 14:17:30.150 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x17 [cntr = 1049]
+10-02 14:17:30.150 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x17, rc: 0
+10-02 14:17:30.152 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x18 [cntr = 1050]
+10-02 14:17:30.152 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x18, rc: 0
+10-02 14:17:30.155 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x19 [cntr = 1051]
+10-02 14:17:30.156 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x19, rc: 0
+10-02 14:17:30.156 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x1a [cntr = 1052]
+10-02 14:17:30.157 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x1a, rc: 0
+10-02 14:17:30.158 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x1b [cntr = 1053]
+10-02 14:17:30.158 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x1b, rc: 0
+10-02 14:17:30.159 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x1c [cntr = 1054]
+10-02 14:17:30.160 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x1c, rc: 0
+10-02 14:17:30.161 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x1d [cntr = 1055]
+10-02 14:17:30.161 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x1d, rc: 0
+10-02 14:17:30.162 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x1e [cntr = 1056]
+10-02 14:17:30.162 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x1e, rc: 0
+10-02 14:17:30.163 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x1f [cntr = 1057]
+10-02 14:17:30.164 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x1f, rc: 0
+10-02 14:17:30.164 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x20 [cntr = 1058]
+10-02 14:17:30.166 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x20, rc: 0
+10-02 14:17:30.166 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x21 [cntr = 1059]
+10-02 14:17:30.167 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x21, rc: 0
+10-02 14:17:30.167 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x22 [cntr = 1060]
+10-02 14:17:30.167 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x22, rc: 0
+10-02 14:17:30.167 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x23 [cntr = 1061]
+10-02 14:17:30.167 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x23, rc: 0
+10-02 14:17:30.167 D/AOC     ( 1306): A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x000a, tag: 0x24 [cntr = 1062]
+10-02 14:17:30.168 D/AOC     ( 1306): A3:MSG: controller.cc, 811: CNTRL: ipc: control, cmd ID: 0x000a, tag: 0x24, rc: 0
+10-02 14:17:30.202 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 14:17:30.217 D/HintManagerService( 1842): Starts cleaning for 10295
+10-02 14:17:30.287 I/pixel-thermal( 1850): VIRTUAL-SKIN:41.073 raw data: VIRTUAL-SKIN:41073 
+10-02 14:17:30.289 I/pixel-thermal( 1850): Successfully update cdev tpu_cooling sysfs to 2
+10-02 14:17:30.289 I/powerhal-libperfmgr(  820): New skin throttling state: LIGHT
+10-02 14:17:30.291 D/ThermalStatusObserver( 1842): New thermal throttling status = 1
+10-02 14:17:30.296 I/ThermalStatusMonitor( 5142): Throttling Seen: temp.getType(): 3 temp.getName(): VIRTUAL-SKIN temp.getValue(): 41.073 temp.getStatus(): 1
+10-02 14:17:30.299 D/WifiThermal( 5142): Action is the same as current action. No GRil communication needed
+10-02 14:17:30.300 I/HbmSvManager( 3926):  Request state 0 req 2
+10-02 14:17:30.300 I/HbmSvManager( 3926):  Request state 1 req 0
+10-02 14:17:30.300 I/HbmSvManager( 3926):  Request state 2 req 0
+10-02 14:17:30.300 I/HbmSvManager( 3926):  Request state 4 req 0
+10-02 14:17:30.302 I/ReverseChargingControl( 3743): notifyThrottling(): thermal status=1
+10-02 14:17:30.304 I/DisplayPowerController[0]( 1842): BrightnessEvent: brt=0.57642573(100.0%), nits=465.25897, lux=-1.0, reason=manual [ throttled ], strat=FallbackBrightnessStrategy, state=ON, stateReason=DEFAULT_POLICY, policy=BRIGHT, flags=, initBrt=0.36726907, rcmdBrt=NaN, preBrt=NaN, preLux=0.0, wasShortTermModelActive=false, autoBrightness=false (default), unclampedBrt=1.0, selectionReason=settings_disabled, brtRange=[0.0, 0.57642573], hbmMax=0.62, hbmMode=off, thrmMax=1.0, rbcStrength=50, powerFactor=1.0, physDisp=Built-in Screen(local:4619827677550801152), logicalId=0, slowChange=false, rampSpeed=0.7047244, colorTemp=NaN, thermalStatus=light
+10-02 14:17:30.306 D/ThermalStatusSource( 3915): onThermalStatusChanged: status=1
+10-02 14:17:30.307 I/BrightnessSynchronizer( 1842): [22] New Update 0.57642573(f) set brightness values:  147(i)
+10-02 14:17:30.307 I/hwc-display(  700): path=sysfs, id=0, level=1237, nits=2.000000, brightness=0.374271, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.308 I/BrightnessSynchronizer( 1842): New PendingUpdate: {[23] 0.57642573(f), mUpdatedTypes=0, mConfirmedTypes=0, mTimeUpdated=0}, prev=null
+10-02 14:17:30.309 W/ConnectivityEventWriter( 4659): Failed to add tag: ConnectivityMonitorEventMetadata{eventTimestampMs=1790930850308, subscriptionId=Optional.empty, slotId=Optional.empty}
+10-02 14:17:30.309 I/pixel-thermal( 1850): VIRTUAL-SKIN:41.073 raw data: VIRTUAL-SKIN:41073 
+10-02 14:17:30.309 I/BrightnessSynchronizer( 1842): Swallowing update of 147(i) by update: {[22] 0.57642573(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=4500194}
+10-02 14:17:30.309 I/BrightnessSynchronizer( 1842): Completed Update: {[22] 0.57642573(f), mUpdatedTypes=1, mConfirmedTypes=1, mTimeUpdated=4500194}
+10-02 14:17:30.309 D/ImpulseStateSource( 3915): onStateChange: sequenceNumber = 375
+10-02 14:17:30.310 D/SconeAwareness( 4659): handleIntent com.google.android.apps.scone.action.THERMAL_EVENT
+10-02 14:17:30.310 D/SconeRadioEngine( 4659): SmartPno feature disabled.
+10-02 14:17:30.311 D/ImpulseServer( 3915): Notify client 10151, events: {listenerName=adaptive_thermal, source=PIXEL_STATE_SOURCE_THERMAL_STATUS, timestampMs=1790930850306, cameraAvailabilityEvent=[0:true, 1:true], temperatureEvent=[41.073], thermalStatusEvent=1}
+10-02 14:17:30.315 D/ImpulseServer( 3915): Sent PixelStateChange event to client 10151
+10-02 14:17:30.316 D/GRIL-S  ( 3940): [0043]> UPDATE_SCONE_INFO Mobility:0 Battery:2 Thermal:2 Screen:1
+10-02 14:17:30.318 I/hwc-display(  700): path=sysfs, id=0, level=1316, nits=2.000000, brightness=0.398067, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.336 I/hwc-display(  700): path=sysfs, id=0, level=1400, nits=2.000000, brightness=0.423561, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.338 D/ActivityManager( 1842): sync unfroze 7107 com.google.android.dialer for 6
+10-02 14:17:30.347 I/fjlt    (15311): HDM. appOpsListener android:record_audio com.google.android.dialer
+10-02 14:17:30.347 I/fjlt    (15311): HDM. Ignoring irrelevant audio permission changes for package com.google.android.dialer
+10-02 14:17:30.351 I/hwc-display(  700): path=sysfs, id=0, level=1489, nits=2.000000, brightness=0.450701, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.355 D/WM-DelayedWorkTracker( 7107): Scheduling work 4e133092-e73d-4192-a600-e264696d4bb3
+10-02 14:17:30.363 D/WM-GreedyScheduler( 7107): Starting work for 4e133092-e73d-4192-a600-e264696d4bb3
+10-02 14:17:30.363 D/GRIL-S  ( 3940): [0043]< UPDATE_SCONE_INFO 
+10-02 14:17:30.367 D/ActivityManager( 1842): sync unfroze 12648 com.google.android.apps.dynamite for 6
+10-02 14:17:30.368 I/hwc-display(  700): path=sysfs, id=0, level=1585, nits=2.000000, brightness=0.479684, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.381 D/WM-DelayedWorkTracker( 7107): Scheduling work 0dae9de4-a6a9-4fa7-9668-80eb61123c8e
+10-02 14:17:30.381 D/WM-GreedyScheduler( 7107): Starting work for 0dae9de4-a6a9-4fa7-9668-80eb61123c8e
+10-02 14:17:30.381 D/WM-DelayedWorkTracker( 7107): Scheduling work 23ff6525-4539-4168-97c6-f21e4923c7d0
+10-02 14:17:30.381 D/WM-GreedyScheduler( 7107): Starting work for 23ff6525-4539-4168-97c6-f21e4923c7d0
+10-02 14:17:30.381 D/WM-DelayedWorkTracker( 7107): Scheduling work cd105ff3-16ac-4cc6-a5b8-99626b47eed1
+10-02 14:17:30.381 D/WM-GreedyScheduler( 7107): Starting work for cd105ff3-16ac-4cc6-a5b8-99626b47eed1
+10-02 14:17:30.382 D/WM-DelayedWorkTracker( 7107): Scheduling work b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5
+10-02 14:17:30.382 D/WM-GreedyScheduler( 7107): Starting work for b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5
+10-02 14:17:30.382 D/WM-DelayedWorkTracker( 7107): Scheduling work dc311e4b-2073-449e-b1f7-c987890d3eae
+10-02 14:17:30.383 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: dc311e4b-2073-449e-b1f7-c987890d3eae}. Requires device idle.
+10-02 14:17:30.383 I/hwc-display(  700): path=sysfs, id=0, level=1687, nits=2.000000, brightness=0.510633, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.387 V/ClearcutMetricXmitter( 7107): Transmission is done.
+10-02 14:17:30.387 V/ClearcutMetricXmitter( 7107): Transmission is done.
+10-02 14:17:30.398 I/DialerCachedTelephonyManager( 7107): com.android.dialer.externals.androidapis.telephony.CachedTelephonyManager$registerReceiver$<anonymous>.onReceive$<anonymous>:228 received intent with action android.telecom.action.PHONE_ACCOUNT_UNREGISTERED, invalidating #getSimOperator/#getGroupIdLevel1 cache
+10-02 14:17:30.400 I/hwc-display(  700): path=sysfs, id=0, level=1796, nits=2.000000, brightness=0.543684, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.403 I/DialerCachedTelephonyManager( 7107): com.android.dialer.externals.androidapis.telephony.CachedTelephonyManager$registerReceiver$<anonymous>.onReceive$<anonymous>:228 received intent with action android.telecom.action.PHONE_ACCOUNT_REGISTERED, invalidating #getSimOperator/#getGroupIdLevel1 cache
+10-02 14:17:30.404 D/WM-Processor( 7107): gsi: processing WorkGenerationalId(workSpecId=4e133092-e73d-4192-a600-e264696d4bb3, generation=0)
+10-02 14:17:30.409 I/.android.dialer( 7107): Waiting for a blocking GC ProfileSaver
+10-02 14:17:30.416 W/TimedProcessReaper( 7107): Scheduling killing of process to refresh configuration
+10-02 14:17:30.417 I/hwc-display(  700): path=sysfs, id=0, level=1903, nits=2.000000, brightness=0.576426, DimmingOn=1, Hbm=0, LhbmOn=0, OpRate=0
+10-02 14:17:30.418 D/WM-Processor( 7107): gsi: processing WorkGenerationalId(workSpecId=0dae9de4-a6a9-4fa7-9668-80eb61123c8e, generation=5)
+10-02 14:17:30.420 D/WM-SystemJobService( 7107): onStartJob for WorkGenerationalId(workSpecId=0dae9de4-a6a9-4fa7-9668-80eb61123c8e, generation=5)
+10-02 14:17:30.421 D/WM-Processor( 7107): gsi: processing WorkGenerationalId(workSpecId=23ff6525-4539-4168-97c6-f21e4923c7d0, generation=0)
+10-02 14:17:30.422 D/WM-SystemJobService( 7107): onStartJob for WorkGenerationalId(workSpecId=b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5, generation=0)
+10-02 14:17:30.423 D/WM-SystemJobService( 7107): onStartJob for WorkGenerationalId(workSpecId=4e133092-e73d-4192-a600-e264696d4bb3, generation=0)
+10-02 14:17:30.423 D/WM-SystemJobService( 7107): onStartJob for WorkGenerationalId(workSpecId=23ff6525-4539-4168-97c6-f21e4923c7d0, generation=0)
+10-02 14:17:30.423 D/WM-SystemJobService( 7107): onStartJob for WorkGenerationalId(workSpecId=cd105ff3-16ac-4cc6-a5b8-99626b47eed1, generation=0)
+10-02 14:17:30.424 D/WM-Processor( 7107): gsi: processing WorkGenerationalId(workSpecId=cd105ff3-16ac-4cc6-a5b8-99626b47eed1, generation=0)
+10-02 14:17:30.424 D/WM-Processor( 7107): gsi: processing WorkGenerationalId(workSpecId=b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5, generation=0)
+10-02 14:17:30.428 D/WM-WorkerWrapper( 7107): Starting work for com.google.apps.tiktok.contrib.work.TikTokListenableWorker
+10-02 14:17:30.433 W/.android.dialer( 7107): Reducing the number of considered missed Gc histogram windows from 444 to 100
+10-02 14:17:30.433 I/.android.dialer( 7107): WaitForGcToComplete blocked ProfileSaver on Background for 24.354ms
+10-02 14:17:30.433 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_STARTED, function parameters: [4e133092-e73d-4192-a600-e264696d4bb3,com.android.dialer.calleridfeeback.impl.database.retention.CallerIdFeedbackDeletionWorker], return value: <empty>
+10-02 14:17:30.435 I/DialerCallerIdFeedbackDeletionWorker( 7107): com.android.dialer.calleridfeedback.impl.database.retention.CallerIdFeedbackDeletionWorker.startWork:68 startWork
+10-02 14:17:30.437 D/WM-WorkerWrapper( 7107): Starting work for com.google.android.libraries.notifications.platform.entrypoints.job.GnpWorker
+10-02 14:17:30.439 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_FINISHED, function parameters: [4e133092-e73d-4192-a600-e264696d4bb3,com.android.dialer.calleridfeeback.impl.database.retention.CallerIdFeedbackDeletionWorker], return value: Success
+10-02 14:17:30.439 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: BROADCAST_RECEIVER, function parameters: [Broadcast to VoicemailPowerCycleReceiver,2026-10-02 13:03:39.542], return value: <empty>
+10-02 14:17:30.439 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: BROADCAST_RECEIVER, function parameters: [Broadcast to com.android.dialer.voicemail.notification.receivers.VoicemailNotificationReceiver_Receiver android.intent.action.BOOT_COMPLETED,2026-10-02 13:03:28.550], return value: <empty>
+10-02 14:17:30.440 D/WM-WorkerWrapper( 7107): Starting work for com.google.apps.tiktok.contrib.work.TikTokListenableWorker
+10-02 14:17:30.442 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: BROADCAST_RECEIVER, function parameters: [Broadcast to CachedTelephonyManager,2026-10-02 14:17:30.402], return value: <empty>
+10-02 14:17:30.442 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: BROADCAST_RECEIVER, function parameters: [Broadcast to CachedTelecomManager,2026-10-02 14:17:30.399], return value: <empty>
+10-02 14:17:30.442 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: BROADCAST_RECEIVER, function parameters: [Broadcast to CachedTelecomManager,2026-10-02 14:17:30.403], return value: <empty>
+10-02 14:17:30.442 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_STARTED, function parameters: [23ff6525-4539-4168-97c6-f21e4923c7d0,com.android.dialer.callscreen.impl.donation.scotty.CallScreenMetricsWorker], return value: <empty>
+10-02 14:17:30.444 D/WM-Processor( 7107): Work WorkGenerationalId(workSpecId=0dae9de4-a6a9-4fa7-9668-80eb61123c8e, generation=5) is already enqueued for processing
+10-02 14:17:30.445 I/DialerCallScreenMetricsWorker( 7107): com.android.dialer.callscreen.impl.donation.scotty.CallScreenMetricsWorker.startWork:71 enter
+10-02 14:17:30.446 I/DialerLoggingConsentCheckerImpl( 7107): com.google.android.callingshared.logging.consent.impl.LoggingConsentCheckerImpl.getConsent$<anonymous>:73 timer stop with success, timer present: false
+10-02 14:17:30.446 D/WM-Processor( 7107): Work WorkGenerationalId(workSpecId=b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5, generation=0) is already enqueued for processing
+10-02 14:17:30.447 D/WM-Processor( 7107): Work WorkGenerationalId(workSpecId=4e133092-e73d-4192-a600-e264696d4bb3, generation=0) is already enqueued for processing
+10-02 14:17:30.447 D/WM-Processor( 7107): Work WorkGenerationalId(workSpecId=23ff6525-4539-4168-97c6-f21e4923c7d0, generation=0) is already enqueued for processing
+10-02 14:17:30.448 D/WM-Processor( 7107): Work WorkGenerationalId(workSpecId=cd105ff3-16ac-4cc6-a5b8-99626b47eed1, generation=0) is already enqueued for processing
+10-02 14:17:30.449 I/DialerCallerIdFeedbackDatabase( 7107): com.android.dialer.calleridfeedback.impl.database.CallerIdFeedbackDatabase.deleteAllMatching:452 feedbackCreationTimestamp list empty
+10-02 14:17:30.450 I/DialerCallerIdFeedbackDatabase( 7107): com.android.dialer.calleridfeedback.impl.database.CallerIdFeedbackDatabase$1.onSuccess:395 Deleted old caller IDs.
+10-02 14:17:30.450 D/WM-WorkerWrapper( 7107): Starting work for com.google.apps.tiktok.contrib.work.TikTokListenableWorker
+10-02 14:17:30.451 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_STARTED, function parameters: [cd105ff3-16ac-4cc6-a5b8-99626b47eed1,com.android.dialer.timekeeper.impl.worker.TimeKeeperDbRefreshingWorker], return value: <empty>
+10-02 14:17:30.452 I/DialerTimeKeeperDbRefreshingWorker( 7107): com.android.dialer.timekeeper.impl.worker.TimeKeeperDbRefreshingWorker.startWork:64 enter
+10-02 14:17:30.453 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_FINISHED, function parameters: [cd105ff3-16ac-4cc6-a5b8-99626b47eed1,com.android.dialer.timekeeper.impl.worker.TimeKeeperDbRefreshingWorker], return value: Success
+10-02 14:17:30.454 D/WM-WorkerWrapper( 7107): Starting work for com.google.apps.tiktok.contrib.work.TikTokListenableWorker
+10-02 14:17:30.455 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_STARTED, function parameters: [b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5,com.android.dialer.xatu.impl.storage.postcall.XatuMetricsWorker], return value: <empty>
+10-02 14:17:30.455 I/DialerXatuMetricsWorker( 7107): com.android.dialer.xatu.impl.storage.postcall.XatuMetricsWorker.startWork:67 enter
+10-02 14:17:30.461 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_FINISHED, function parameters: [23ff6525-4539-4168-97c6-f21e4923c7d0,com.android.dialer.callscreen.impl.donation.scotty.CallScreenMetricsWorker], return value: Success
+10-02 14:17:30.462 I/WM-WorkerWrapper( 7107): Worker result SUCCESS for Work [ id=4e133092-e73d-4192-a600-e264696d4bb3, class=com.google.apps.tiktok.contrib.work.TikTokListenableWorker, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.android.dialer.calleridfeeback.impl.database.retention.CallerIdFeedbackDeletionWorker } ]
+10-02 14:17:30.462 I/DialerSingletonScopedExternalsLogging( 7107): com.google.android.dialershared.externals.logging.SingletonScopedExternalsLogging.recordCallMethodInvocation:75 event: TIKTOK_WORK_EXECUTION_MONITOR_ON_WORK_FINISHED, function parameters: [b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5,com.android.dialer.xatu.impl.storage.postcall.XatuMetricsWorker], return value: Success
+10-02 14:17:30.467 I/DialerLoggingConsentCheckerImpl( 7107): com.google.android.callingshared.logging.consent.impl.LoggingConsentCheckerImpl.getConsent$<anonymous>:73 timer stop with success, timer present: false
+10-02 14:17:30.469 D/WM-Processor( 7107): gsi 4e133092-e73d-4192-a600-e264696d4bb3 executed; reschedule = false
+10-02 14:17:30.469 D/WM-SystemJobService( 7107): 4e133092-e73d-4192-a600-e264696d4bb3 executed on JobScheduler
+10-02 14:17:30.470 I/WM-WorkerWrapper( 7107): Worker result SUCCESS for Work [ id=cd105ff3-16ac-4cc6-a5b8-99626b47eed1, class=com.google.apps.tiktok.contrib.work.TikTokListenableWorker, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.android.dialer.timekeeper.impl.worker.TimeKeeperDbRefreshingWorker } ]
+10-02 14:17:30.480 D/ActivityManager( 1842): sync unfroze 9828 com.google.android.apps.fitness for 6
+10-02 14:17:30.480 I/WM-WorkerWrapper( 7107): Worker result SUCCESS for Work [ id=23ff6525-4539-4168-97c6-f21e4923c7d0, class=com.google.apps.tiktok.contrib.work.TikTokListenableWorker, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.android.dialer.callscreen.impl.donation.scotty.CallScreenMetricsWorker } ]
+10-02 14:17:30.483 D/WM-Processor( 7107): gsi cd105ff3-16ac-4cc6-a5b8-99626b47eed1 executed; reschedule = false
+10-02 14:17:30.483 D/WM-SystemJobService( 7107): cd105ff3-16ac-4cc6-a5b8-99626b47eed1 executed on JobScheduler
+10-02 14:17:30.490 D/WM-Processor( 7107): gsi 23ff6525-4539-4168-97c6-f21e4923c7d0 executed; reschedule = false
+10-02 14:17:30.490 D/WM-SystemJobService( 7107): 23ff6525-4539-4168-97c6-f21e4923c7d0 executed on JobScheduler
+10-02 14:17:30.490 I/DialerLoggingConsentCheckerImpl( 7107): com.google.android.callingshared.logging.consent.impl.LoggingConsentCheckerImpl.getConsent$<anonymous>:73 timer stop with success, timer present: false
+10-02 14:17:30.493 I/WM-WorkerWrapper( 7107): Worker result SUCCESS for Work [ id=b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5, class=com.google.apps.tiktok.contrib.work.TikTokListenableWorker, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker,TikTokWorker#com.android.dialer.xatu.impl.storage.postcall.XatuMetricsWorker } ]
+10-02 14:17:30.502 I/DialerLoggingConsentCheckerImpl( 7107): com.google.android.callingshared.logging.consent.impl.LoggingConsentCheckerImpl.getConsent$<anonymous>:73 timer stop with success, timer present: false
+10-02 14:17:30.514 D/WM-Processor( 7107): gsi b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5 executed; reschedule = false
+10-02 14:17:30.514 D/WM-SystemJobService( 7107): b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5 executed on JobScheduler
+10-02 14:17:30.521 D/ActivityManager( 1842): sync unfroze 5410 com.google.android.apps.betterbug for 6
+10-02 14:17:30.528 W/JobServiceContext( 1842): Sending onNetworkChanged for a job that isn't started. JobStatus{a4291fe #u0a356/82 com.google.android.apps.betterbug/.autodedup.ClearDetectedIssueJobService u=0 s=10356 TIME=-5m19s651ms:+24m40s349ms NET PERIODIC PERSISTED READY}
+10-02 14:17:30.529 D/WM-GreedyScheduler( 7107): Cancelling work ID 4e133092-e73d-4192-a600-e264696d4bb3
+10-02 14:17:30.556 W/ClearDetectedIssueJobSe( 5410): Do not update detected issues, isDetectedIssueSectionV2Enabled() is false
+10-02 14:17:30.569 W/ClearDropBoxManagerEntr( 5410): Do not update drop box entries, isDetectedIssueSectionV2Enabled() is false
+10-02 14:17:30.572 D/AudioFlinger( 1125): onStateChanged: pid:10470  uid:10312  state:unfrozen - no freeze activity
+10-02 14:17:30.573 D/ActivityManager( 1842): sync unfroze 10470 com.google.android.apps.youtube.kids for 6
+10-02 14:17:30.579 W/JobServiceContext( 1842): Sending onNetworkChanged for a job that isn't started. JobStatus{fd229fd androidx.work.systemjobscheduler:u0a312/40 #des_dispatch_all_task#@androidx.work.systemjobscheduler@com.google.android.apps.youtube.kids/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10312 TIME=-1m11s231ms:none NET READY}
+10-02 14:17:30.585 D/ActivityManager( 1842): sync unfroze 5954 com.google.android.apps.weather for 6
+10-02 14:17:30.596 D/ConnectivityService( 1842): Returning UNBLOCKED NetworkInfo to uid=10312
+10-02 14:17:30.600 D/WM-SystemJobScheduler( 7107): Scheduling work ID fb68d83a-c930-4ae1-b837-49865d466804 (com.google.apps.tiktok.contrib.work.TikTokListenableWorker), Job ID 730
+10-02 14:17:30.601 W/.apps.betterbug( 5410): Reducing the number of considered missed Gc histogram windows from 207 to 100
+10-02 14:17:30.628 D/WM-SystemJobScheduler( 7107): Scheduling work ID e8b21176-f579-483d-8108-a4fd09a7180c (com.google.apps.tiktok.contrib.work.TikTokListenableWorker), Job ID 731
+10-02 14:17:30.652 I/FA      (31550): Application backgrounded at: timestamp_millis: 1790930848649
+10-02 14:17:30.654 D/WM-SystemJobService( 5954): onStartJob for WorkGenerationalId(workSpecId=0228132c-b631-4b11-b26b-78d3842f21e4, generation=0)
+10-02 14:17:30.659 D/GlanceSessionManager( 5954): Closing session appWidget-3 wasOpen=false hasError=false events=[]
+10-02 14:17:30.663 D/WM-SystemJobScheduler( 7107): Scheduling work ID 6c79f6e5-a694-4c3b-b5b8-d31edb18a135 (com.google.apps.tiktok.contrib.work.TikTokListenableWorker), Job ID 732
+10-02 14:17:30.672 D/WM-Processor( 5954): Work WorkGenerationalId(workSpecId=0228132c-b631-4b11-b26b-78d3842f21e4, generation=0) is already enqueued for processing
+10-02 14:17:30.676 I/WM-WorkerWrapper( 5954): Worker result SUCCESS for Work [ id=0228132c-b631-4b11-b26b-78d3842f21e4, class=androidx.glance.session.SessionWorker, tags={ androidx.glance.session.SessionWorker } ]
+10-02 14:17:30.682 W/d.apps.dynamite(12648): Reducing the number of considered missed Gc histogram windows from 213 to 100
+10-02 14:17:30.682 D/WM-SystemJobScheduler( 7107): Scheduling work ID 73e0bd04-fa40-44ce-9ddb-9db22ea5f0b5 (com.google.apps.tiktok.contrib.work.TikTokListenableWorker), Job ID 733
+10-02 14:17:30.685 D/WM-Processor( 5954): o 0228132c-b631-4b11-b26b-78d3842f21e4 executed; reschedule = false
+10-02 14:17:30.694 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 2f1bd0ae-dd47-4060-ad27-9dd698435ea8}. Requires device idle.
+10-02 14:17:30.694 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 6bc88beb-8035-4eed-8486-5421d447a3fe}. Requires device idle.
+10-02 14:17:30.694 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: b7a8226a-a8c7-4395-8e87-643f8fbe0579}. Requires device idle.
+10-02 14:17:30.694 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 8987cb11-31f1-4f2c-91cb-1752abb72a41}. Requires device idle.
+10-02 14:17:30.694 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: dc311e4b-2073-449e-b1f7-c987890d3eae}. Requires device idle.
+10-02 14:17:30.694 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 9ff7258b-d88f-48b8-b547-bd7c876a95e7}. Requires device idle.
+10-02 14:17:30.695 D/WM-SystemJobService( 5954): 0228132c-b631-4b11-b26b-78d3842f21e4 executed on JobScheduler
+10-02 14:17:30.702 D/AudioFlinger( 1125): onStateChanged: pid:6230  uid:10134  state:unfrozen - no freeze activity
+10-02 14:17:30.707 D/ActivityManager( 1842): sync unfroze 6230 com.android.vending for 6
+10-02 14:17:30.709 D/ActivityManager( 1842): sync unfroze 7728 com.android.vending:background for 6
+10-02 14:17:30.713 I/Finsky  ( 6230): [41] Stats for Executor: LightweightExecutor xun@6aeddcf[Running, pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 100912]
+10-02 14:17:30.713 I/Finsky  ( 6230): [41] Stats for Executor: BlockingExecutor xun@2dcd506[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1229]
+10-02 14:17:30.714 I/Finsky  ( 6230): [41] Stats for Executor: bgExecutor xun@fde2b45[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 22918]
+10-02 14:17:30.714 I/Finsky  ( 6230): [41] Stats for Executor: GrpcBackgroundExecutor xun@348826[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 161]
+10-02 14:17:30.721 I/Finsky:background( 7728): [41] Stats for Executor: bgExecutor xun@26111f4[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 12038]
+10-02 14:17:30.721 I/Finsky:background( 7728): [41] Stats for Executor: LightweightExecutor xun@53af478[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 11161]
+10-02 14:17:30.721 I/Finsky:background( 7728): [41] Stats for Executor: BlockingExecutor xun@af32982[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1702]
+10-02 14:17:30.726 W/JobScheduler( 1842): Job didn't exist in JobStore: fd229fd {androidx.work.systemjobscheduler} #u0a312/40 #des_dispatch_all_task#@androidx.work.systemjobscheduler@com.google.android.apps.youtube.kids/androidx.work.impl.background.systemjob.SystemJobService
+10-02 14:17:30.728 I/PlayCommon( 6230): [68] Preparing logs for uploading
+10-02 14:17:30.729 D/WM-SystemJobScheduler( 5954): Cancelling work ID 0228132c-b631-4b11-b26b-78d3842f21e4, Job ID 4383
+10-02 14:17:30.739 I/Finsky  ( 6230): [2] SCH: job service start with id 9943.
+10-02 14:17:30.741 I/GoogleSignatureVerifier( 4261): package info is not set correctly
+10-02 14:17:30.751 I/PlayCommon( 6230): [68] Connecting to server: https://play.googleapis.com/play/log?format=raw&proto_v2=true
+10-02 14:17:30.752 I/AlarmManager( 4261): set [name: SystemMemoryCache type: 2 triggerAtMillis: 315364500639 windowMillis: -1 intervalMillis: 0]
+10-02 14:17:30.753 D/WM-GreedyScheduler( 7107): Cancelling work ID cd105ff3-16ac-4cc6-a5b8-99626b47eed1
+10-02 14:17:30.764 D/WM-GreedyScheduler( 5954): Cancelling work ID 0228132c-b631-4b11-b26b-78d3842f21e4
+10-02 14:17:30.769 I/AlarmManager( 4261): set [name: SystemMemoryCache type: 2 triggerAtMillis: 315364500656 windowMillis: -1 intervalMillis: 0]
+10-02 14:17:30.773 D/ActivityManager( 1842): sync unfroze 16144 com.google.android.turboadapter for 6
+10-02 14:17:30.785 I/Finsky  ( 6230): [577] SCH: Satisfied jobs for 9943 are: 26-1414141414
+10-02 14:17:30.789 I/Finsky  ( 6230): [576] SCH: Job 26-1414141414 starting
+10-02 14:17:30.789 W/Turbo.OnDeviceBatteryHistory( 5618): addEvents: loaded 0 battery events.
+10-02 14:17:30.789 W/Turbo.OnDeviceBatteryHistory( 5618): addEvents: loaded battery events completed.
+10-02 14:17:30.790 I/Finsky  ( 6230): [2] WM::SCH: Logging work start for 26-1414141414
+10-02 14:17:30.795 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 2f1bd0ae-dd47-4060-ad27-9dd698435ea8}. Requires device idle.
+10-02 14:17:30.796 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 6bc88beb-8035-4eed-8486-5421d447a3fe}. Requires device idle.
+10-02 14:17:30.796 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: b7a8226a-a8c7-4395-8e87-643f8fbe0579}. Requires device idle.
+10-02 14:17:30.796 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 8987cb11-31f1-4f2c-91cb-1752abb72a41}. Requires device idle.
+10-02 14:17:30.796 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: dc311e4b-2073-449e-b1f7-c987890d3eae}. Requires device idle.
+10-02 14:17:30.796 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 9ff7258b-d88f-48b8-b547-bd7c876a95e7}. Requires device idle.
+10-02 14:17:30.796 W/Turbo.RemainingTimeModelLoader( 5618): Start to load model for: [battery_remaining_time] model file with new version 20231009
+10-02 14:17:30.798 W/Turbo.EstimatedTimeRemainingProvider( 5618): queryTimeToDischarge: 262419664
+10-02 14:17:30.800 I/GmsCoreXrpcWrapper( 4261): (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+10-02 14:17:30.801 I/GmsCoreXrpcWrapper( 4261): (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+10-02 14:17:30.801 I/GmsCoreXrpcWrapper( 4261): (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+10-02 14:17:30.801 D/WM-GreedyScheduler( 7107): Cancelling work ID 23ff6525-4539-4168-97c6-f21e4923c7d0
+10-02 14:17:30.808 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 2f1bd0ae-dd47-4060-ad27-9dd698435ea8}. Requires device idle.
+10-02 14:17:30.810 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 6bc88beb-8035-4eed-8486-5421d447a3fe}. Requires device idle.
+10-02 14:17:30.810 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: b7a8226a-a8c7-4395-8e87-643f8fbe0579}. Requires device idle.
+10-02 14:17:30.810 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 8987cb11-31f1-4f2c-91cb-1752abb72a41}. Requires device idle.
+10-02 14:17:30.810 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: dc311e4b-2073-449e-b1f7-c987890d3eae}. Requires device idle.
+10-02 14:17:30.810 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 9ff7258b-d88f-48b8-b547-bd7c876a95e7}. Requires device idle.
+10-02 14:17:30.811 D/TcpMetricsLogger( 1842): connect: uid=10134 netId=100 dst=[2001:4860:4847:400::]:443 latencyMs=20 err=0
+10-02 14:17:30.815 D/WM-GreedyScheduler( 7107): Cancelling work ID b98c3733-4f9e-4830-b98c-c8ea7a7ca5a5
+10-02 14:17:30.818 W/Turbo.RemainingTimeModelLoader( 5618): Start to load model for: [battery_remaining_time] model file with new version 20231009
+10-02 14:17:30.820 W/Turbo.OnDeviceBatteryHistory( 5618): addEvents: loaded 0 battery events.
+10-02 14:17:30.820 W/Turbo.OnDeviceBatteryHistory( 5618): addEvents: loaded battery events completed.
+10-02 14:17:30.835 D/ConnectivityService( 1842): requestNetwork for uid/pid:10312/10470 activeRequest: null callbackRequest: 1145 [NetworkRequest [ REQUEST id=1146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10312 RequestorUid: 10312 RequestorPkg: com.google.android.apps.youtube.kids UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|BLK
+10-02 14:17:30.836 D/WifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=1146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10312 RequestorUid: 10312 RequestorPkg: com.google.android.apps.youtube.kids UnderlyingNetworks: Null] ]
+10-02 14:17:30.836 D/UntrustedWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=1146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10312 RequestorUid: 10312 RequestorPkg: com.google.android.apps.youtube.kids UnderlyingNetworks: Null] ]
+10-02 14:17:30.837 D/OemPaidWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=1146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10312 RequestorUid: 10312 RequestorPkg: com.google.android.apps.youtube.kids UnderlyingNetworks: Null] ]
+10-02 14:17:30.837 D/MultiInternetWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=1146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10312 RequestorUid: 10312 RequestorPkg: com.google.android.apps.youtube.kids UnderlyingNetworks: Null] ]
+10-02 14:17:30.837 D/ConnectivityService( 1842): NetReassign [1146 : null → 100] [c 0] [a 0] [i 2]
+10-02 14:17:30.841 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 2f1bd0ae-dd47-4060-ad27-9dd698435ea8}. Requires device idle.
+10-02 14:17:30.841 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 6bc88beb-8035-4eed-8486-5421d447a3fe}. Requires device idle.
+10-02 14:17:30.842 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: b7a8226a-a8c7-4395-8e87-643f8fbe0579}. Requires device idle.
+10-02 14:17:30.842 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 8987cb11-31f1-4f2c-91cb-1752abb72a41}. Requires device idle.
+10-02 14:17:30.842 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: dc311e4b-2073-449e-b1f7-c987890d3eae}. Requires device idle.
+10-02 14:17:30.842 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 9ff7258b-d88f-48b8-b547-bd7c876a95e7}. Requires device idle.
+10-02 14:17:30.845 I/WM-WorkerWrapper( 7107): Worker result SUCCESS for Work [ id=0dae9de4-a6a9-4fa7-9668-80eb61123c8e, class=com.google.android.libraries.notifications.platform.entrypoints.job.GnpWorker, tags={ com.google.android.libraries.notifications.platform.entrypoints.job.GnpWorker,GNP_SDK_JOB } ]
+10-02 14:17:30.853 D/WM-Processor( 7107): gsi 0dae9de4-a6a9-4fa7-9668-80eb61123c8e executed; reschedule = false
+10-02 14:17:30.853 D/WM-SystemJobService( 7107): 0dae9de4-a6a9-4fa7-9668-80eb61123c8e executed on JobScheduler
+10-02 14:17:30.859 D/WM-GreedyScheduler( 7107): Cancelling work ID 0dae9de4-a6a9-4fa7-9668-80eb61123c8e
+10-02 14:17:30.864 I/GoogleSignatureVerifier( 4261): package info is not set correctly
+10-02 14:17:30.868 I/GoogleSignatureVerifier( 4261): package info is not set correctly
+10-02 14:17:30.868 I/Finsky  ( 6230): [54] [Counters Flush] Successfully flushed counter events
+10-02 14:17:30.868 I/Finsky  ( 6230): [54] [Counters Flush] Counters flushed successfully
+10-02 14:17:30.869 D/WM-SystemJobScheduler( 7107): Scheduling work ID 4e133092-e73d-4192-a600-e264696d4bb3 (com.google.apps.tiktok.contrib.work.TikTokListenableWorker), Job ID 705
+10-02 14:17:30.869 I/Finsky  ( 6230): [54] SCH: jobFinished: 26-1414141414. TimeElapsed: 80ms.
+10-02 14:17:30.869 I/Finsky  ( 6230): [54] WM::SCH: Logging work end for 26-1414141414
+10-02 14:17:30.870 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 2f1bd0ae-dd47-4060-ad27-9dd698435ea8}. Requires device idle.
+10-02 14:17:30.870 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 6bc88beb-8035-4eed-8486-5421d447a3fe}. Requires device idle.
+10-02 14:17:30.870 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: b7a8226a-a8c7-4395-8e87-643f8fbe0579}. Requires device idle.
+10-02 14:17:30.870 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 8987cb11-31f1-4f2c-91cb-1752abb72a41}. Requires device idle.
+10-02 14:17:30.870 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: dc311e4b-2073-449e-b1f7-c987890d3eae}. Requires device idle.
+10-02 14:17:30.870 D/WM-GreedyScheduler( 7107): Ignoring {WorkSpec: 9ff7258b-d88f-48b8-b547-bd7c876a95e7}. Requires device idle.
+10-02 14:17:30.876 I/Finsky  ( 6230): [577] SCH: Attempting to reschedule job: Id: 26-1414141414, Constraints: [{ L: 43199999, D: 44099999, C: CHARGING_NONE, I: IDLE_NONE, N: NET_NONE, B: BATTERY_ANY }]
+10-02 14:17:30.884 I/Finsky  ( 6230): [57] SCH: no pending jobs to schedule.
+10-02 14:17:30.884 I/Finsky  ( 6230): [576] SCH: job service finished with id 9943.
+10-02 14:17:30.888 I/pixel-thermal( 1850): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-CHG:-3508 VIRTUAL-USB-UI:1 charger_skin_therm:43472 usb_pwr_therm2:39964 
+10-02 14:17:30.888 I/pixel-thermal( 1850): cellular-emergency:41.073 raw data: VIRTUAL-NEUTRAL:41026.5 VIRTUAL-NEUTRAL-SKIN2:41073 VIRTUAL-QUIET-NEUTRAL:40382.3 VIRTUAL-SKIN:41073 cellular-emergency:41073 disp_therm:38984 gnss_tcxo_therm:41410 neutral_therm:40320 quiet_therm:40409 skin_therm1:41548 skin_therm2:42830 
+10-02 14:17:30.888 I/pixel-thermal( 1850): VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-CHG:-3508 VIRTUAL-USB-THROTTLING:1 usb_pwr_therm2:39964 
+10-02 14:17:30.888 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU:41.073 raw data: VIRTUAL-SKIN:41073 VIRTUAL-SKIN-CPU:41073 
+10-02 14:17:30.888 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU power_budget=800 err=-0.0730019 s_power=800 time_elapsed_ms=7003 p=-29.2007 i=-0.0302505 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 14:17:30.888 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU binded power rails: (S3M_VDD_CPUCL1: 15.56 mW)(S2M_VDD_CPUCL2: 7.31 mW)(S4M_VDD_CPUCL0: 27.11 mW)
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU:41.073 raw data: VIRTUAL-SKIN:41073 VIRTUAL-SKIN-CPU-GPU:41073 
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU power_budget=1875.23 err=3.927 s_power=800 time_elapsed_ms=7003 p=1178.1 i=-102.866 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU binded power rails: (S2S_VDD_G3D: 2.45 mW)(S3M_VDD_CPUCL1: 15.56 mW)(S2M_VDD_CPUCL2: 7.31 mW)(S4M_VDD_CPUCL0: 27.11 mW)
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT:41.073 raw data: VIRTUAL-SKIN:41073 VIRTUAL-SKIN-HINT:41073 
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE:41.073 raw data: VIRTUAL-SKIN:41073 VIRTUAL-SKIN-CHARGE:41073 
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 272.736
+10-02 14:17:30.889 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT send powerhint: NONE:1 LIGHT:1 MODERATE:0 CRITICAL:0 EMERGENCY:0 
+10-02 14:17:30.889 I/pixel-thermal( 1850): Successfully update cdev fcc sysfs to 3
+10-02 14:17:30.900 I/Finsky:background( 7728): [2] Memory trim requested to level 40
+10-02 14:17:30.917 I/Finsky  ( 6230): [2] Memory trim requested to level 40
+10-02 14:17:30.917 I/Finsky  ( 6230): [2] Flushing in-memory image cache
+10-02 14:17:30.922 D/TcpMetricsLogger( 1842): connect: uid=10134 netId=100 dst=[2404:6800:4007:807::2003]:443 latencyMs=17 err=0
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): AR changes detection unsubscription failure.
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): java.lang.SecurityException: Activity detection usage requires the ACTIVITY_RECOGNITION permission
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3376)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Parcel.createException(Parcel.java:3360)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Parcel.readException(Parcel.java:3343)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Parcel.readException(Parcel.java:3287)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at dvi.c(PG:11)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at idh.a(PG:185)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at iiu.h(PG:11)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at ikp.v(PG:10)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at ikp.w(PG:26)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at ikp.h(PG:30)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at ikp.i(PG:120)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at ikp.A(PG:15)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at imk.b(PG:120)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at ime.c(PG:7)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at imf.handleMessage(PG:273)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Handler.dispatchMessage(Handler.java:126)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Looper.loopOnce(Looper.java:285)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.Looper.loop(Looper.java:390)
+10-02 14:17:30.932 W/FitPassiveLocationManag( 9828): 	at android.os.HandlerThread.run(HandlerThread.java:143)
+10-02 14:17:31.031 I/Finsky  ( 6230): [51] WM::SCH: Logging work initialize for 26-1414141414
+10-02 14:17:31.036 I/PlayCommon( 6230): [68] Successfully uploaded logs.
+10-02 14:17:31.041 I/Finsky  ( 6230): [58] SCH: Scheduling phonesky job Id: 26-1414141414, CT: 1790930850876, Constraints: [{ L: 43199999, D: 44099999, C: CHARGING_NONE, I: IDLE_NONE, N: NET_NONE, B: BATTERY_ANY }]
+10-02 14:17:31.046 I/Finsky  ( 6230): [55] SCH: Scheduling 1 system job(s)
+10-02 14:17:31.046 W/JobInfo ( 6230): Job 'com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain#9960' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-02 14:17:31.046 I/Finsky  ( 6230): [55] SCH: Scheduling system job Id: 9960, L: 43199829, D: 44099829, C: false, I: false, N: 0
+10-02 14:17:31.048 W/JobInfo ( 1842): Job 'com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain#9960' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-02 14:17:31.859 I/fjlt    (15311): HDM. appOpsListener android:record_audio com.google.android.dialer
+10-02 14:17:31.860 I/fjlt    (15311): HDM. Ignoring irrelevant audio permission changes for package com.google.android.dialer
+10-02 14:17:32.014 I/PeopleDirectoryManager(16520): Discovered 0 People Directories: []
+10-02 14:17:32.435 W/AppOps  ( 1842): Noting op not finished: uid 1000 pkg android code 169 startTime of in progress event=1790926386327
+10-02 14:17:32.715 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 14:17:32.808 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 14:17:32.809 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 14:17:32.809 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 14:17:34.233 D/InetDiagMessage( 1842): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-02 14:17:34.245 D/InetDiagMessage( 1842): Destroyed 5 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-02 14:17:34.246 D/InetDiagMessage( 1842): Destroyed live tcp sockets for uids={10295} in 19ms
+10-02 14:17:34.252 E/HomeApp|snk(31550): Sync call on HomeGraph has been cancelled
+10-02 14:17:34.252 E/HomeApp|snk(31550): btgt: bthx was cancelled; job=bthx{Cancelling}@2dee6f8
+10-02 14:17:34.252 E/HomeApp|snk(31550): Sync call on HomeGraph has been cancelled
+10-02 14:17:34.252 E/HomeApp|snk(31550): btgt: bthx was cancelled; job=bthx{Cancelling}@2dee6f8
+10-02 14:17:34.252 E/HomeApp|snk(31550): Sync call on HomeGraph has been cancelled
+10-02 14:17:34.252 E/HomeApp|snk(31550): btgt: bthx was cancelled; job=bthx{Cancelling}@2dee6f8
+10-02 14:17:34.255 D/InetDiagMessage( 1842): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-02 14:17:34.267 D/InetDiagMessage( 1842): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-02 14:17:34.267 D/InetDiagMessage( 1842): Destroyed live tcp sockets for uids={20295} in 21ms
+10-02 14:17:34.267 W/bslz    (31550): [{0}] Failed to resolve name. status={1}
+10-02 14:17:34.649 D/ImpulseConnection( 3915): timeout didn't happen: com.google.android.apps.turbo
+10-02 14:17:34.670 I/pixel-thermal( 1850): VIRTUAL-SKIN:41.1911 raw data: VIRTUAL-NEUTRAL:41126.2 VIRTUAL-NEUTRAL-SKIN2:41191.1 VIRTUAL-QUIET-NEUTRAL:40362.2 VIRTUAL-SKIN:41191.1 disp_therm:39162 gnss_tcxo_therm:41364 neutral_therm:40253 quiet_therm:40409 skin_therm1:41708 skin_therm2:43380 
+10-02 14:17:34.671 D/TemperatureStateSource( 3915): TemperatureStateSource state changed to [41.191105].
+10-02 14:17:34.673 D/ImpulseStateSource( 3915): onStateChange: sequenceNumber = 376
+10-02 14:17:34.699 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'time''

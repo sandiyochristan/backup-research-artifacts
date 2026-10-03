@@ -1,0 +1,11 @@
+
+====================================================================================================
+CMD: {"type": "getType", "uri": "content://com.google.android.apps.wellbeing.autodnd.ui.provider/", "label": "gettype:wbautodnd"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:01:09.973 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:01:09.974 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=124
+10-02 14:01:09.974 19954 19954 I VRPPROBE: CMD type=getType label=gettype:wbautodnd
+10-02 14:01:09.984 19954 19954 I VRPPROBE:   GETTYPE content://com.google.android.apps.wellbeing.autodnd.ui.provider/ -> null
+10-02 14:01:09.984 19954 19954 I VRPPROBE: == EXEC DONE
+

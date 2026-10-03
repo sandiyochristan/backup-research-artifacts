@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vrp.probe"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="36" />
+
+    <!-- ZERO permissions declared. This app models an unprivileged attacker app. -->
+
+    <queries>
+        <package android:name="com.google.android.contactkeys" />
+        <package android:name="com.android.providers.contactkeys" />
+        <package android:name="com.google.android.inputmethod.latin" />
+        <package android:name="com.google.android.apps.fitness" />
+        <package android:name="com.google.android.safetycore" />
+        <package android:name="com.google.android.apps.chromecast.app" />
+        <package android:name="com.google.android.apps.wellbeing" />
+        <package android:name="com.google.android.apps.deviceusagestudy" />
+    </queries>
+
+    <application
+        android:label="VRP Probe"
+        android:debuggable="true"
+        android:extractNativeLibs="true"
+        android:allowBackup="false">
+
+        <receiver android:name=".ExecReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.probe.EXEC" />
+                <action android:name="com.vrp.probe.QUERY" />
+                <action android:name="com.vrp.probe.BROADCAST" />
+                <action android:name="com.vrp.probe.BIND" />
+                <action android:name="com.vrp.probe.START" />
+                <action android:name="com.vrp.probe.RESOLVE" />
+                <action android:name="com.vrp.probe.FILE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".BindTargetService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.probe.BINDTARGET" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".UiActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ResultActivity" android:exported="true" android:theme="@android:style/Theme.NoDisplay" />
+    </application>
+</manifest>

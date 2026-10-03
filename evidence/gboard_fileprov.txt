@@ -1,0 +1,17 @@
+
+====================================================================================================
+CMD: {"type": "query", "uri": "content://com.google.android.inputmethod.latin.fileprovider/", "label": "gboard-fileprovider"}
+----------------------------------------------------------------------------------------------------
+
+
+====================================================================================================
+CMD: {"type": "query", "uri": "content://com.google.android.inputmethod.latin.fileprovider/", "label": "gboard-fileprovider"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:57:26.386 19560 19560 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:57:26.388 19560 19560 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=120
+10-02 13:57:26.388 19560 19560 I VRPPROBE: CMD type=query label=gboard-fileprovider
+10-02 13:57:26.388 19560 19560 I VRPPROBE: QUERY uri=content://com.google.android.inputmethod.latin.fileprovider/ proj=[] sel=null args=[] sort=null
+10-02 13:57:26.392 19560 19560 W VRPPROBE:   SecurityException: Permission Denial: opening provider com.google.android.libraries.inputmethod.fileprovider.CrashResistantFileProvider from ProcessRecord{9444d5a 19560:com.vrp.probe/u0a362} (pid=19560, uid=10362) that is not exported from UID 10196
+10-02 13:57:26.392 19560 19560 I VRPPROBE: == EXEC DONE
+

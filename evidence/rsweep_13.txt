@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.books", "cls": "com.google.android.apps.play.books.upload.UploadActivityEpub", "action": "android.intent.action.SEND", "mime": "application/epub+zip", "scheme": "file"}

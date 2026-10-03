@@ -1,0 +1,24 @@
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "com.google.android.apps.chromecast.app.gf.GF_TRANSITION", "extras": {"transition": "EXIT", "geofence_id": "attacker_home"}, "label": "geofence-exit"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:07.686 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:07.687 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=182
+10-02 14:04:07.687 20818 20818 I VRPPROBE: CMD type=broadcast label=geofence-exit
+10-02 14:04:07.687 20818 20818 I VRPPROBE: BROADCAST #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;S.geofence_id=attacker_home;S.transition=EXIT;end
+10-02 14:04:07.689 20818 20818 I VRPPROBE:   BROADCAST_SENT
+10-02 14:04:07.689 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "com.google.android.apps.chromecast.app.gf.GF_TRANSITION", "extras": {"transition": "EXIT", "geofence_id": "attacker_home"}, "label": "geofence-exit"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:50.013 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:50.014 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=182
+10-02 14:06:50.014 21235 21235 I VRPPROBE: CMD type=broadcast label=geofence-exit
+10-02 14:06:50.015 21235 21235 I VRPPROBE: BROADCAST #Intent;action=com.google.android.apps.chromecast.app.gf.GF_TRANSITION;S.geofence_id=attacker_home;S.transition=EXIT;end
+10-02 14:06:50.017 21235 21235 I VRPPROBE:   BROADCAST_SENT
+10-02 14:06:50.018 21235 21235 I VRPPROBE: == EXEC DONE
+

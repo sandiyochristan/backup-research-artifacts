@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.documentsui", "cls": "com.android.documentsui.picker.PickActivity", "action": "android.intent.action.CREATE_DOCUMENT", "mime": null, "scheme": null}

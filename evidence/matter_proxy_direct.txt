@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE", "pkg": "com.google.android.apps.chromecast.app", "label": "matter-direct"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:03:54.241 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:03:54.253 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=165
+10-02 14:03:54.254 20818 20818 I VRPPROBE: CMD type=start label=matter-direct
+10-02 14:03:54.254 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:03:54.254 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE", "pkg": "com.google.android.apps.chromecast.app", "label": "matter-direct"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:36.564 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:36.579 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=165
+10-02 14:06:36.581 21235 21235 I VRPPROBE: CMD type=start label=matter-direct
+10-02 14:06:36.583 21235 21235 I VRPPROBE: START #Intent;action=com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE;package=com.google.android.apps.chromecast.app;end
+10-02 14:06:36.604 21235 21235 I VRPPROBE:   START_OK
+10-02 14:06:36.604 21235 21235 I VRPPROBE: == EXEC DONE
+

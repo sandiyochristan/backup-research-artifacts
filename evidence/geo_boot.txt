@@ -1,0 +1,24 @@
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "android.intent.action.BOOT_COMPLETED", "pkg": "com.google.android.apps.chromecast.app", "label": "gh-boot"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:11.034 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:11.035 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=140
+10-02 14:04:11.035 20818 20818 I VRPPROBE: CMD type=broadcast label=gh-boot
+10-02 14:04:11.035 20818 20818 I VRPPROBE: BROADCAST #Intent;action=android.intent.action.BOOT_COMPLETED;end
+10-02 14:04:11.036 20818 20818 W VRPPROBE:   SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.BOOT_COMPLETED from pid=20818, uid=10362
+10-02 14:04:11.036 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "android.intent.action.BOOT_COMPLETED", "pkg": "com.google.android.apps.chromecast.app", "label": "gh-boot"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:53.358 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:53.359 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=140
+10-02 14:06:53.359 21235 21235 I VRPPROBE: CMD type=broadcast label=gh-boot
+10-02 14:06:53.359 21235 21235 I VRPPROBE: BROADCAST #Intent;action=android.intent.action.BOOT_COMPLETED;package=com.google.android.apps.chromecast.app;end
+10-02 14:06:53.364 21235 21235 W VRPPROBE:   SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.BOOT_COMPLETED from pid=21235, uid=10362
+10-02 14:06:53.364 21235 21235 I VRPPROBE: == EXEC DONE
+

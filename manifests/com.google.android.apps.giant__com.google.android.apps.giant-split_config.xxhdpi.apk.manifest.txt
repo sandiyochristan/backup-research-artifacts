@@ -1,0 +1,11 @@
+N: android=http://schemas.android.com/apk/res/android (line=0)
+  E: manifest (line=0)
+    A: http://schemas.android.com/apk/res/android:versionCode(0x0101021b)=6558
+    A: http://schemas.android.com/apk/res/android:splitTypes(0x0101064f)="base__density" (Raw: "base__density")
+    A: package="com.google.android.apps.giant" (Raw: "com.google.android.apps.giant")
+    A: split="config.xxhdpi" (Raw: "config.xxhdpi")
+      E: application (line=0)
+        A: http://schemas.android.com/apk/res/android:hasCode(0x0101000c)=false
+          E: meta-data (line=0)
+            A: http://schemas.android.com/apk/res/android:name(0x01010003)="com.android.vending.derived.apk.id" (Raw: "com.android.vending.derived.apk.id")
+            A: http://schemas.android.com/apk/res/android:value(0x01010024)=3

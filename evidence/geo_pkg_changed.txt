@@ -1,0 +1,24 @@
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "android.intent.action.MY_PACKAGE_REPLACED", "pkg": "com.google.android.apps.chromecast.app", "label": "gh-pkg-replaced"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:14.419 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:14.420 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=153
+10-02 14:04:14.420 20818 20818 I VRPPROBE: CMD type=broadcast label=gh-pkg-replaced
+10-02 14:04:14.420 20818 20818 I VRPPROBE: BROADCAST #Intent;action=android.intent.action.MY_PACKAGE_REPLACED;end
+10-02 14:04:14.422 20818 20818 W VRPPROBE:   SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.MY_PACKAGE_REPLACED from pid=20818, uid=10362
+10-02 14:04:14.422 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "broadcast", "action": "android.intent.action.MY_PACKAGE_REPLACED", "pkg": "com.google.android.apps.chromecast.app", "label": "gh-pkg-replaced"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:56.736 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:56.737 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=153
+10-02 14:06:56.737 21235 21235 I VRPPROBE: CMD type=broadcast label=gh-pkg-replaced
+10-02 14:06:56.737 21235 21235 I VRPPROBE: BROADCAST #Intent;action=android.intent.action.MY_PACKAGE_REPLACED;package=com.google.android.apps.chromecast.app;end
+10-02 14:06:56.738 21235 21235 W VRPPROBE:   SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.MY_PACKAGE_REPLACED from pid=21235, uid=10362
+10-02 14:06:56.738 21235 21235 I VRPPROBE: == EXEC DONE
+

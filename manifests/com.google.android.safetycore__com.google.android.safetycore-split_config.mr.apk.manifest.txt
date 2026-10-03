@@ -1,0 +1,14 @@
+N: android=http://schemas.android.com/apk/res/android (line=0)
+  E: manifest (line=0)
+    A: http://schemas.android.com/apk/res/android:versionCode(0x0101021b)=26150
+    A: http://schemas.android.com/apk/res/android:splitTypes(0x0101064f)=""
+    A: package="com.google.android.safetycore" (Raw: "com.google.android.safetycore")
+    A: split="config.mr" (Raw: "config.mr")
+      E: application (line=0)
+        A: http://schemas.android.com/apk/res/android:hasCode(0x0101000c)=false
+        A: http://schemas.android.com/apk/res/android:extractNativeLibs(0x010104ea)=false
+          E: meta-data (line=0)
+            A: http://schemas.android.com/apk/res/android:name(0x01010003)="com.android.vending.derived.apk.id" (Raw: "com.android.vending.derived.apk.id")
+            A: http://schemas.android.com/apk/res/android:value(0x01010024)=3
+      E: uses-sdk (line=0)
+        A: http://schemas.android.com/apk/res/android:minSdkVersion(0x0101020c)=32

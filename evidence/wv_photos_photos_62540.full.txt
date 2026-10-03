@@ -1,0 +1,742 @@
+### CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "https://photos.google.com/highlightvideo/create?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E", "label": "wv"}
+### TARGETS: ['com.google.android.apps.photos']
+### PIDS_BEFORE: {'com.google.android.apps.photos': None}
+
+--------- beginning of main
+10-02 16:56:48.317 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am force-stop com.google.android.apps.photos'
+--------- beginning of system
+10-02 16:56:48.367 I/ActivityManager( 1842): Force stopping com.google.android.apps.photos appid=10219 user=0: from pid 2158
+10-02 16:56:48.371 I/AppsFilter( 1842): interaction: PackageSetting{ae3d39c com.vrp.testonly/10399} -> PackageSetting{b4d9969 com.google.android.apps.photos/10219} BLOCKED
+10-02 16:56:48.371 I/AppsFilter( 1842): interaction: PackageSetting{fff5c97 com.google.android.microdroid.empty_payload/10269} -> PackageSetting{b4d9969 com.google.android.apps.photos/10219} BLOCKED
+10-02 16:56:48.371 I/AppsFilter( 1842): interaction: PackageSetting{5f027e5 com.vrp.probe/10362} -> PackageSetting{b4d9969 com.google.android.apps.photos/10219} BLOCKED
+10-02 16:56:48.382 D/EuiccConnector( 4061): handleMessage: E msg.what=1
+10-02 16:56:48.383 D/CarrierSvcBindHelper( 4061): onHandleForceStop: [com.google.android.apps.photos]
+10-02 16:56:48.383 D/EuiccConnector( 4061): processMsg: AvailableState
+10-02 16:56:48.383 D/EuiccConnector( 4061): processMsg: UnavailableState
+10-02 16:56:48.383 D/CarrierSvcBindHelper( 4061): No carrier app for: 0
+10-02 16:56:48.384 D/EuiccConnector( 4061): transitionTo: destState=AvailableState
+10-02 16:56:48.386 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 16:56:48.386 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=UnavailableState,active=true,parent=null
+10-02 16:56:48.386 D/EuiccConnector( 4061): invokeExitMethods: AvailableState
+10-02 16:56:48.386 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=1
+10-02 16:56:48.386 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=AvailableState
+10-02 16:56:48.386 D/EuiccConnector( 4061): invokeEnterMethods: AvailableState
+10-02 16:56:48.386 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:56:48.390 D/EuiccConnector( 4061): handleMessage: E msg.what=103
+10-02 16:56:48.390 D/EuiccConnector( 4061): processMsg: AvailableState
+10-02 16:56:48.390 D/EuiccConnector( 4061): deferMessage: msg=103
+10-02 16:56:48.390 D/EuiccConnector( 4061): transitionTo: destState=BindingState
+10-02 16:56:48.390 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 16:56:48.390 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: null
+10-02 16:56:48.390 D/EuiccConnector( 4061): invokeExitMethods: AvailableState
+10-02 16:56:48.390 D/EuiccConnector( 4061): invokeExitMethods: UnavailableState
+10-02 16:56:48.390 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=0
+10-02 16:56:48.390 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=0,startingIndex=0,Top=BindingState
+10-02 16:56:48.390 D/EuiccConnector( 4061): invokeEnterMethods: BindingState
+10-02 16:56:48.409 D/EuiccConnector( 4061): transitionTo: destState=DisconnectedState
+10-02 16:56:48.409 D/EuiccConnector( 4061): moveDeferredMessageAtFrontOfQueue; what=103
+10-02 16:56:48.409 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 16:56:48.409 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: null
+10-02 16:56:48.409 D/EuiccConnector( 4061): invokeExitMethods: BindingState
+10-02 16:56:48.409 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=0
+10-02 16:56:48.409 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=0,startingIndex=0,Top=DisconnectedState
+10-02 16:56:48.409 D/EuiccConnector( 4061): invokeEnterMethods: DisconnectedState
+10-02 16:56:48.409 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:56:48.409 D/EuiccConnector( 4061): handleMessage: E msg.what=103
+10-02 16:56:48.409 D/EuiccConnector( 4061): processMsg: DisconnectedState
+10-02 16:56:48.409 D/EuiccConnector( 4061): deferMessage: msg=103
+10-02 16:56:48.409 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:56:48.411 I/EuiccGoogle( 4546): [2] EuiccServiceImpl.onCreate: onCreate Single-SIM mode: simCardState is 1
+10-02 16:56:48.412 I/EuiccGoogle( 4546): [281] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_supported_countries, type=string, partnerResId = 0
+10-02 16:56:48.413 I/EuiccGoogle( 4546): [281] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_unsupported_countries, type=string, partnerResId = 2131755062
+10-02 16:56:48.414 D/EuiccConnector( 4061): handleMessage: E msg.what=4
+10-02 16:56:48.414 D/EuiccConnector( 4061): processMsg: DisconnectedState
+10-02 16:56:48.414 I/EuiccGoogle( 4546): [281] PhenotypeUpdatedReceiver.setPsimConversionSupportedCarriers: pSIM conversion feature is not enabled
+10-02 16:56:48.414 D/EuiccConnector( 4061): transitionTo: destState=ConnectedState
+10-02 16:56:48.414 D/EuiccConnector( 4061): handleMessage: new destination call exit/enter
+10-02 16:56:48.414 D/EuiccConnector( 4061): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=DisconnectedState,active=true,parent=null
+10-02 16:56:48.414 D/EuiccConnector( 4061): moveTempStackToStateStack: i=0,j=1
+10-02 16:56:48.414 D/EuiccConnector( 4061): moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=ConnectedState
+10-02 16:56:48.414 D/EuiccConnector( 4061): invokeEnterMethods: ConnectedState
+10-02 16:56:48.414 D/EuiccConnector( 4061): moveDeferredMessageAtFrontOfQueue; what=103
+10-02 16:56:48.414 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:56:48.414 D/EuiccConnector( 4061): handleMessage: E msg.what=103
+10-02 16:56:48.414 D/EuiccConnector( 4061): processMsg: ConnectedState
+10-02 16:56:48.414 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:56:48.415 I/EuiccGoogle( 4546): [284] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = -1
+10-02 16:56:48.419 W/EuiccGoogle( 4546): [284] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId=-1. No eUICC is active. Return null.
+10-02 16:56:48.422 D/EuiccConnector( 4061): handleMessage: E msg.what=6
+10-02 16:56:48.422 D/EuiccConnector( 4061): processMsg: ConnectedState
+10-02 16:56:48.422 D/EuiccConnector( 4061): handleMessage: X
+10-02 16:56:48.604 I/keystore2(  686): system/security/keystore2/watchdog/src/lib.rs:371 - Watchdog thread idle -> terminating. Have a great day.
+10-02 16:56:48.779 I/AlarmManager(11677): setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 14478666]
+10-02 16:56:48.789 I/AlarmManager(11677): setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 14478676]
+10-02 16:56:49.286 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 16:56:49.325 I/pixel-thermal( 1850): VIRTUAL-SKIN:44.1861 raw data: VIRTUAL-NEUTRAL:44186.1 VIRTUAL-NEUTRAL-SKIN2:43803.8 VIRTUAL-QUIET-NEUTRAL:41937.2 VIRTUAL-SKIN:44186.1 disp_therm:41090 gnss_tcxo_therm:45438 neutral_therm:42899 quiet_therm:41525 skin_therm1:45438 skin_therm2:45915 
+10-02 16:56:49.413 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 16:56:49.414 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 16:56:49.414 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 16:56:49.426 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:monkey -p com.google.android.apps.photos -c android.intent.category.LAUNCHER 1'
+10-02 16:56:49.523 D/AndroidRuntime( 2165): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-02 16:56:49.527 I/AndroidRuntime( 2165): Using default boot image
+10-02 16:56:49.527 I/AndroidRuntime( 2165): Leaving lock profiling enabled
+10-02 16:56:49.529 I/app_process( 2165): Core platform API enforcement disabled by runtime option
+10-02 16:56:49.529 I/app_process( 2165): Using generational CollectorTypeCMC GC.
+10-02 16:56:49.573 D/nativeloader( 2165): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+10-02 16:56:49.581 D/nativeloader( 2165): Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 16:56:49.581 D/app_process( 2165): u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/10/icu") succeeded. 
+10-02 16:56:49.581 D/app_process( 2165): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt78l.dat
+10-02 16:56:49.582 D/nativeloader( 2165): Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 16:56:49.582 D/nativeloader( 2165): Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 16:56:49.583 I/app_process( 2165): Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+10-02 16:56:49.602 D/nativeloader( 2165): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-02 16:56:49.602 D/AndroidRuntime( 2165): Calling main entry com.android.commands.monkey.Monkey
+10-02 16:56:49.603 D/nativeloader( 2165): Load /system/lib64/libmonkey_jni.so using ns default for caller /system/framework/monkey.jar in same partition (is_bridged=0): ok
+10-02 16:56:49.603 W/Monkey  ( 2165): args: [-p, com.google.android.apps.photos, -c, android.intent.category.LAUNCHER, 1]
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.art.flags is mapped to com.android.art
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.art.rw.flags is mapped to com.android.art
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.libcore is mapped to com.android.art
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.adbd.flags is mapped to com.android.adbd
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.devicelock.flags is mapped to com.android.devicelock
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.nfc.module.flags is mapped to com.android.nfcservices
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.nfc.module.nonexported.flags is mapped to com.android.nfcservices
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.google.android.widevine.flags is mapped to com.google.android.widevine
+10-02 16:56:49.605 I/AconfigPackage( 2165): com.android.system.virtualmachine.flags is mapped to com.android.virt
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.wifi.flags is mapped to com.android.wifi
+10-02 16:56:49.606 I/AconfigPackage( 2165): android.provider.flags is mapped to com.android.configinfrastructure
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.icu is mapped to com.android.i18n
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.scheduling.flags is mapped to com.android.scheduling
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.signature.flags is mapped to com.android.mediaprovider
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.providers.media.flags is mapped to com.android.mediaprovider
+10-02 16:56:49.606 I/AconfigPackage( 2165): android.graphics.pdf.flags is mapped to com.android.mediaprovider
+10-02 16:56:49.606 I/AconfigPackage( 2165): android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.adservices.flags is mapped to com.android.adservices
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.sdksandbox.flags is mapped to com.android.adservices
+10-02 16:56:49.606 I/AconfigPackage( 2165): android.app.sdksandbox.flags is mapped to com.android.adservices
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.uprobestats.flags is mapped to com.android.uprobestats
+10-02 16:56:49.606 I/AconfigPackage( 2165): android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.webapp.flags is mapped to com.android.webapp
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.compos.flags is mapped to com.android.compos
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.rkpd.flags is mapped to com.android.rkpd
+10-02 16:56:49.606 I/AconfigPackage( 2165): com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.media.extractor.flags is mapped to com.android.media
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.media.metrics.flags is mapped to com.android.media
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.media.mainline.flags is mapped to com.android.media
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.appsearch.flags is mapped to com.android.appsearch
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.bluetooth.beta.flags is mapped to com.android.bt
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.bluetooth.flags is mapped to com.android.bt
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.uwb.flags is mapped to com.android.uwb
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.ranging.flags is mapped to com.android.uwb
+10-02 16:56:49.607 I/AconfigPackage( 2165): android.telecom.flags is mapped to com.android.telephonycore
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.internal.telecom.flags is mapped to com.android.telephonycore
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.telephony.flags is mapped to com.android.telephonycore
+10-02 16:56:49.607 I/AconfigPackage( 2165): android.media.swcodec.flags is mapped to com.android.media.swcodec
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.permission.flags is mapped to com.android.permission
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.permissioncontroller.flags is mapped to com.android.permission
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.npumanager is mapped to com.android.npumanager
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.ipsec.flags is mapped to com.android.ipsec
+10-02 16:56:49.607 I/AconfigPackage( 2165): com.android.os.statsd.flags is mapped to com.android.os.statsd
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.healthfitness.flags is mapped to com.android.healthfitness
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.healthfitness.beta is mapped to com.android.healthfitness
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.tethering.mainline.beta is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): android.net.http is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.tethering.readonly.flags is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): android.net.vcn is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.net.flags is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.tethering.flags is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.tethering.beta.test is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.nearby.flags is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): com.android.net.thread.flags is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): android.net.http.flags is mapped to com.android.tethering
+10-02 16:56:49.608 I/AconfigPackage( 2165): android.os.profiling is mapped to com.android.profiling
+10-02 16:56:49.608 I/AconfigPackage( 2165): android.os.profiling.anomaly.beta.flags is mapped to com.android.profiling
+10-02 16:56:49.608 I/AconfigPackage( 2165): android.os.profiling.anomaly.flags is mapped to com.android.profiling
+10-02 16:56:49.608 E/FeatureFlagsImplExport( 2165): android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+10-02 16:56:49.613 I/EventHub( 1842): No input device configuration file found for device 'Monkey touch'.
+10-02 16:56:49.613 W/Monkey  ( 2165):  arg: "-p"
+10-02 16:56:49.613 W/Monkey  ( 2165):  arg: "com.google.android.apps.photos"
+10-02 16:56:49.613 W/Monkey  ( 2165):  arg: "-c"
+10-02 16:56:49.613 W/Monkey  ( 2165):  arg: "android.intent.category.LAUNCHER"
+10-02 16:56:49.613 W/Monkey  ( 2165):  arg: "1"
+10-02 16:56:49.613 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/power_supply": No such file or directory
+10-02 16:56:49.613 W/Monkey  ( 2165): data="com.google.android.apps.photos"
+10-02 16:56:49.613 E/EventHub( 1842): Could not open directory "/sys/devices/power_supply": No such file or directory
+10-02 16:56:49.613 W/Monkey  ( 2165): data="android.intent.category.LAUNCHER"
+10-02 16:56:49.613 E/EventHub( 1842): Could not open directory "/sys/power_supply": No such file or directory
+10-02 16:56:49.613 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/leds": No such file or directory
+10-02 16:56:49.613 E/EventHub( 1842): Could not open directory "/sys/devices/leds": No such file or directory
+10-02 16:56:49.613 E/EventHub( 1842): Could not open directory "/sys/leds": No such file or directory
+10-02 16:56:49.614 I/EventHub( 1842): usingClockIoctl=true
+10-02 16:56:49.614 I/EventHub( 1842): New device: id=127, fd=544, path='/dev/input/event4', name='Monkey touch', classes=TOUCH | TOUCH_MT, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false, 
+10-02 16:56:49.615 I/InputReader( 1842): Device reconfigured: id=127, name='Monkey touch', size 1080x2400, orientation Rotation0, mode DIRECT, display id 0
+10-02 16:56:49.615 I/InputReader( 1842): Device added: id=127, eventHubId=127, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+10-02 16:56:49.623 W/ActivityManager( 1842): registerReceiverWithFeature: no app for null
+10-02 16:56:49.625 I/NearbyMediums(11677): No BLE Fast/GATT advertisements found in the latest cycle.
+10-02 16:56:49.625 I/NearbyMediums(11677): Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+10-02 16:56:49.628 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 16:56:49.630 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 16:56:49.632 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=2165) has no WPC
+10-02 16:56:49.633 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@49a7c773 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:56:49.634 V/WindowManager( 1842): Aborting Transition: 4597
+10-02 16:56:49.634 D/KeyguardService( 3743): setOccluded(false)
+10-02 16:56:49.634 D/WindowManagerOcclusion( 3743): #onKeyguardServiceSetOccluded(false)
+10-02 16:56:49.634 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos} activity=ActivityRecord{26594348 u0 com.google.android.apps.photos/.home.HomeActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:56:49.634 I/ActivityTaskManager( 1842): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.photos/.home.HomeActivity} with LAUNCH_SINGLE_TOP from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=3
+10-02 16:56:49.635 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df6add90) with descriptor: '(not cached)'
+10-02 16:56:49.635 I/Monkey  ( 2165): Events injected: 1
+10-02 16:56:49.635 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}, wasVisible=true, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 16:56:49.636 I/Monkey  ( 2165): ## Network stats: elapsed time=5ms (0ms mobile, 0ms wifi, 5ms not connected)
+10-02 16:56:49.637 I/app_process( 2165): System.exit called, status: 0
+10-02 16:56:49.637 I/AndroidRuntime( 2165): VM exiting with result code 0.
+10-02 16:56:49.653 I/EventHub( 1842): Removing device Monkey touch due to epoll hang-up event.
+10-02 16:56:49.653 I/EventHub( 1842): Removed device: path=/dev/input/event4 name=Monkey touch id=127 fd=544 classes=TOUCH | TOUCH_MT
+10-02 16:56:49.654 I/InputReader( 1842): Device removed: id=127, eventHubId=127, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f', sources=TOUCHSCREEN
+10-02 16:56:49.667 I/EventHub( 1842): Removing device '/dev/input/event4' due to inotify event
+10-02 16:56:49.667 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 16:56:49.669 D/NavigationModeController( 3743): getCurrentUserContext: contextUser=0 currentUser=0
+10-02 16:56:49.670 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 16:56:50.117 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 16:56:51.204 I/pixel-thermal( 1850): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-CHG:-6444 VIRTUAL-USB-UI:1 charger_skin_therm:47419 usb_pwr_therm2:40975 
+10-02 16:56:51.205 I/pixel-thermal( 1850): cellular-emergency:44.1861 raw data: VIRTUAL-SKIN:44186.1 cellular-emergency:44186.1 
+10-02 16:56:51.205 I/pixel-thermal( 1850): VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-CHG:-6444 VIRTUAL-USB-THROTTLING:1 usb_pwr_therm2:40975 
+10-02 16:56:51.206 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU:44.1861 raw data: VIRTUAL-SKIN:44186.1 VIRTUAL-SKIN-CPU:44186.1 
+10-02 16:56:51.206 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU power_budget=800 err=-3.1861 s_power=800 time_elapsed_ms=7006 p=-1274.44 i=5.47388 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 16:56:51.206 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU binded power rails: (S3M_VDD_CPUCL1: 17.93 mW)(S2M_VDD_CPUCL2: 48.10 mW)(S4M_VDD_CPUCL0: 40.02 mW)
+10-02 16:56:51.207 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU:44.1861 raw data: VIRTUAL-SKIN:44186.1 VIRTUAL-SKIN-CPU-GPU:44186.1 
+10-02 16:56:51.207 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU power_budget=1146.98 err=0.813896 s_power=800 time_elapsed_ms=7006 p=244.169 i=102.808 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 16:56:51.207 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU binded power rails: (S2S_VDD_G3D: 1.73 mW)(S3M_VDD_CPUCL1: 17.93 mW)(S2M_VDD_CPUCL2: 48.10 mW)(S4M_VDD_CPUCL0: 40.02 mW)
+10-02 16:56:51.208 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT:44.1861 raw data: VIRTUAL-SKIN:44186.1 VIRTUAL-SKIN-HINT:44186.1 
+10-02 16:56:51.208 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE:44.1861 raw data: VIRTUAL-SKIN:44186.1 VIRTUAL-SKIN-CHARGE:44186.1 
+10-02 16:56:51.208 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 500, avg power = 393.533
+10-02 16:56:51.209 I/pixel-thermal( 1850): Successfully update cdev fcc sysfs to 6
+10-02 16:56:51.692 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:pidof com.google.android.apps.photos'
+10-02 16:56:51.785 I/adbd    ( 1339): adbd service requested 'sync:'
+10-02 16:56:51.810 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.probe/.UiActivity'
+10-02 16:56:51.874 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=2182) has no WPC
+10-02 16:56:51.875 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@3dacc844 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:56:51.878 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14051972 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@a747fb2} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{7d82153 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:56:51.878 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df6add90) with descriptor: '(not cached)'
+10-02 16:56:51.879 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{ad860ae #915 type=standard A=10362:com.vrp.probe} activity=ActivityRecord{191772367 u0 com.vrp.probe/.UiActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:56:51.879 I/ActivityTaskManager( 1842): START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.probe/.UiActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=2
+10-02 16:56:51.881 V/WindowManagerShell( 3743): Transition requested (#4598): android.os.BinderProxy@fca4b54 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14051972 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@1deaee1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{30ddafd com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 4598 }
+10-02 16:56:51.881 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 16:56:51.883 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:51.883 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity}, wasVisible=true, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 16:56:51.883 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos} on display 0
+10-02 16:56:51.883 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{ad860ae #915 type=standard A=10362:com.vrp.probe} on display 0
+10-02 16:56:51.884 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:51.888 I/VRPPROBE(21301): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=179
+10-02 16:56:51.888 I/VRPPROBE(21301): CMD type=start label=wv
+10-02 16:56:51.888 I/VRPPROBE(21301): START https://photos.google.com/highlightvideo/create?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E
+10-02 16:56:51.890 I/pixel-thermal( 1850): VIRTUAL-SKIN:43.9728 raw data: VIRTUAL-NEUTRAL:43972.8 VIRTUAL-NEUTRAL-SKIN2:43664.2 VIRTUAL-QUIET-NEUTRAL:41939.5 VIRTUAL-SKIN:43972.8 disp_therm:41135 gnss_tcxo_therm:45104 neutral_therm:42853 quiet_therm:41548 skin_therm1:45032 skin_therm2:45557 
+10-02 16:56:51.891 I/pixel-thermal( 1850): cellular-emergency:44.1861 raw data: cellular-emergency:44186.1 
+10-02 16:56:51.891 I/pixel-thermal( 1850): VIRTUAL-USB-UI:1 raw data: VIRTUAL-USB-UI:1 
+10-02 16:56:51.892 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329891908)
+10-02 16:56:51.892 V/WindowManagerShell( 3743): onTransitionReady (#4598) android.os.BinderProxy@fca4b54: {id=4598 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:56:51.892 V/WindowManagerShell( 3743):         {m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x24d83f2 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:56:51.892 V/WindowManagerShell( 3743):         {m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0x8611a43 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:56:51.892 V/WindowManagerShell( 3743):     ]}
+10-02 16:56:51.892 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #4598
+10-02 16:56:51.892 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=915
+10-02 16:56:51.892 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=915, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 16:56:51.892 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 16:56:51.892 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=3693, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 16:56:51.893 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:51.893 V/WindowManagerShell( 3743): Playing animation for (#4598) android.os.BinderProxy@fca4b54@0
+10-02 16:56:51.893 D/ShellSplitScreen( 3743): startAnimation: transition=4598 isSplitActive=false
+10-02 16:56:51.893 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 16:56:51.893 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 16:56:51.893 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=4598 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x24d83f2 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0x8611a43 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:56:51.893 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14061770 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@a747fb2} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{a5faa90 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:56:51.893 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@35e0732 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@7e67c83, appThread = android.app.IApplicationThread$Stub$Proxy@7651e00, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@35e0732 windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:51.893 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@931f639, appThread = android.app.IApplicationThread$Stub$Proxy@c61647e, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:51.893 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@98a5ddf, appThread = android.app.IApplicationThread$Stub$Proxy@1fe1a2c, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 16:56:51.893 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f32bcf5, appThread = android.app.IApplicationThread$Stub$Proxy@8ab4a8a, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:51.893 V/WindowManagerShell( 3743):  Delegate animation for (#4598) to null
+10-02 16:56:51.893 V/WindowManagerShell( 3743): start default transition animation, info = {id=4598 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x24d83f2 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0x8611a43 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:56:51.893 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@871179f animAttr=0x7 type=OPEN isEntrance=false
+10-02 16:56:51.894 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 16:56:51.895 V/WindowManager( 1842): Sent Transition (#4598) createdAt=10-02 16:56:51.875 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=915 effectiveUid=10362 seqId=0 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.vrp.probe/.UiActivity } baseActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} origActivity=null realActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14051972 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{d8d5f89 com.vrp.probe.UiActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 4598 }
+10-02 16:56:51.895 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 16:56:51.895 V/WindowManager( 1842):     info={id=4598 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:56:51.895 V/WindowManager( 1842):         {WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} m=CHANGE f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x85793f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:56:51.895 V/WindowManager( 1842):         {WCT{RemoteToken{1ec89a Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos}}} m=TO_BACK f=TRANSLUCENT|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0xbde218e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:56:51.895 V/WindowManager( 1842):     ]}
+10-02 16:56:51.902 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@49a7c773 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:56:51.904 D/RecentsView( 4067): onTaskDisplayChanged: 3695, new displayId = 0
+10-02 16:56:51.904 W/Binder  ( 3915): Caught a RuntimeException from the binder stub implementation.
+10-02 16:56:51.904 W/Binder  ( 3915): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Class java.lang.Object.getClass()' on a null object reference
+10-02 16:56:51.904 W/Binder  ( 3915): 	at com.google.android.apps.pixel.impulse.statesources.AppTaskStateSource$AppTaskPlatformConnection$AppTaskListener.onTaskCreated(go/retraceme 4e0b27e46cbf97e5b27f0a4f8cb9c518330040647f13efccd2a8131b7681b6a5:0)
+10-02 16:56:51.904 W/Binder  ( 3915): 	at android.app.ITaskStackListener$Stub.onTransact(ITaskStackListener.java:443)
+10-02 16:56:51.904 W/Binder  ( 3915): 	at android.os.Binder.execTransactInternal(Binder.java:1347)
+10-02 16:56:51.904 W/Binder  ( 3915): 	at android.os.Binder.execTransact(Binder.java:1301)
+10-02 16:56:51.906 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df674870) with descriptor: '(not cached)'
+10-02 16:56:51.906 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=3695 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=https://photos.google.com/... flg=0x10200000 cmp=com.google.android.apps.photos/.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias } baseActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} origActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14061790 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@bbcdfbc} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{2febb45 com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=https://photos.google.com/highlightvideo/create?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:56:51.906 I/ActivityTaskManager( 1842): Add Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos} to hidden list because adding Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos}
+10-02 16:56:51.906 D/CorePackageUpdate( 1842): onRecentTaskRemoved Removing task: 3693
+10-02 16:56:51.906 D/CorePackageUpdate( 1842): Couldn't find a persistent state for task= 3693
+10-02 16:56:51.907 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos} activity=ActivityRecord{17066715 u0 com.google.android.apps.photos/.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:56:51.907 I/ActivityTaskManager( 1842): START u0 {act=android.intent.action.VIEW dat=https://photos.google.com/... flg=0x10200000 xflg=0x4 cmp=com.google.android.apps.photos/.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} with LAUNCH_SINGLE_INSTANCE from uid 10362 (com.vrp.probe) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-02 16:56:51.907 I/VRPPROBE(21301):   START_OK
+10-02 16:56:51.908 V/WindowManagerShell( 3743): Transition requested (#4599): android.os.BinderProxy@c766616 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=3695 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=https://photos.google.com/... flg=0x10200000 cmp=com.google.android.apps.photos/.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias } baseActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} origActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14061793 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@c885b97} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{fc13184 com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=https://photos.google.com/highlightvideo/create?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 4599 }
+10-02 16:56:51.908 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 16:56:51.908 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@49a7c773 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:56:51.909 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:51.910 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:51.910 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:51.910 I/AppsFilter( 1842): interaction: PackageSetting{ae3d39c com.vrp.testonly/10399} -> PackageSetting{db4ef90 com.google.android.apps.photos/10219} BLOCKED
+10-02 16:56:51.910 I/AppsFilter( 1842): interaction: PackageSetting{fff5c97 com.google.android.microdroid.empty_payload/10269} -> PackageSetting{db4ef90 com.google.android.apps.photos/10219} BLOCKED
+10-02 16:56:51.910 I/AppsFilter( 1842): interaction: PackageSetting{5f027e5 com.vrp.probe/10362} -> PackageSetting{db4ef90 com.google.android.apps.photos/10219} BLOCKED
+10-02 16:56:51.910 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:51.910 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{ad860ae #915 type=standard A=10362:com.vrp.probe} on display 0
+10-02 16:56:51.910 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos} on display 0
+10-02 16:56:51.913 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 16:56:51.915 D/WindowManager( 1842): setClientSurface Surface(name=VRI-Splash Screen com.google.android.apps.photos#22234)/@0xcf92df9 for e3447c1 Splash Screen com.google.android.apps.photos
+10-02 16:56:51.916 I/Surface ( 3743): Creating surface for consumer unnamed-3743-2312 with slotExpansion=1 for 64 slots
+10-02 16:56:51.916 I/Surface ( 3743): Creating surface for consumer VRI[photos]#2302(BLAST Consumer)2302 with slotExpansion=1 for 64 slots
+10-02 16:56:51.919 D/Zygote  ( 1039): Forked child process 2191
+10-02 16:56:51.920 I/ActivityManager( 1842): Start proc 2191:com.google.android.apps.photos/u0a219 for next-top-activity {com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias}
+10-02 16:56:51.923 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329891935)
+10-02 16:56:51.923 V/WindowManagerShell( 3743): onTransitionReady (#4599) android.os.BinderProxy@c766616: {id=4599 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:56:51.923 V/WindowManagerShell( 3743):         {m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0xba15887 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:56:51.923 V/WindowManagerShell( 3743):         {m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xc1603b4 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:56:51.923 V/WindowManagerShell( 3743):     ]}
+10-02 16:56:51.923 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #4599
+10-02 16:56:51.923 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=3695
+10-02 16:56:51.923 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=915, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 16:56:51.923 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=3695, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 16:56:51.923 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 16:56:51.923 I/libprocessgroup( 2191): Created cgroup /sys/fs/cgroup/apps/uid_10219/pid_2191
+10-02 16:56:51.923 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:51.923 V/WindowManagerShell( 3743): Transition (#4599) android.os.BinderProxy@c766616@0 ready while (#4598) android.os.BinderProxy@fca4b54@0 is still animating. Notify the animating transition in case they can be merged
+10-02 16:56:51.923 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#4598) android.os.BinderProxy@fca4b54@0
+10-02 16:56:51.924 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=3695 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=https://photos.google.com/... flg=0x10200000 cmp=com.google.android.apps.photos/.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias } baseActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} origActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14061793 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@bbcdfbc} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{fe2f29a com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=https://photos.google.com/highlightvideo/create?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:56:51.927 I/Zygote  ( 2191): Process 2191 created for com.google.android.apps.photos
+10-02 16:56:51.927 I/oid.apps.photos( 2191): Using generational CollectorTypeCMC GC.
+10-02 16:56:51.930 V/WindowManager( 1842): Sent Transition (#4599) createdAt=10-02 16:56:51.903 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=3695 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=https://photos.google.com/... flg=0x10200000 cmp=com.google.android.apps.photos/.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias } baseActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} origActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14061793 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{5d8584 Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{e98416d com.google.android.apps.photos.create.movie.assistivecreation.deeplink.AssistiveMovieDeepLinkActivityAlias} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=https://photos.google.com/highlightvideo/create?VRPMARKER=1&q=%3Cscript%3Ealert(1)%3C/script%3E capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 4599 }
+10-02 16:56:51.930 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 16:56:51.930 V/WindowManager( 1842):     info={id=4599 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:56:51.930 V/WindowManager( 1842):         {WCT{RemoteToken{5d8584 Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos}}} m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0x691934a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:56:51.930 V/WindowManager( 1842):         {WCT{RemoteToken{fe26a5b Task{ad860ae #915 type=standard A=10362:com.vrp.probe}}} m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0x85793f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:56:51.930 V/WindowManager( 1842):     ]}
+10-02 16:56:51.930 V/WindowManager( 1842): Finish Transition (#4598): created at 10-02 16:56:51.875 collect-started=0.098ms request-sent=3.095ms started=6.209ms ready=10.317ms sent=13.549ms commit=7.102ms finished=54.539ms
+10-02 16:56:51.931 V/WindowManagerShell( 3743): Playing animation for (#4599) android.os.BinderProxy@c766616@0
+10-02 16:56:51.931 D/ShellSplitScreen( 3743): startAnimation: transition=4599 isSplitActive=false
+10-02 16:56:51.931 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 16:56:51.931 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 16:56:51.931 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=4599 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0xba15887 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xc1603b4 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:56:51.931 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@35e0732 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@7e67c83, appThread = android.app.IApplicationThread$Stub$Proxy@7651e00, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@35e0732 windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:51.931 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@931f639, appThread = android.app.IApplicationThread$Stub$Proxy@c61647e, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:51.931 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@98a5ddf, appThread = android.app.IApplicationThread$Stub$Proxy@1fe1a2c, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 16:56:51.931 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f32bcf5, appThread = android.app.IApplicationThread$Stub$Proxy@8ab4a8a, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:51.931 V/WindowManagerShell( 3743):  Delegate animation for (#4599) to null
+10-02 16:56:51.931 V/WindowManagerShell( 3743): start default transition animation, info = {id=4599 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0xba15887 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=915#411)/@0xc1603b4 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:56:51.931 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@1ae8aaa animAttr=0x9 type=OPEN isEntrance=false
+10-02 16:56:51.932 D/VRI[GrantPermissionsActivity]( 3753): visibilityChanged oldVisibility=true newVisibility=false
+10-02 16:56:51.933 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@13d364d animAttr=0x8 type=OPEN isEntrance=true
+10-02 16:56:51.934 D/nativeloader( 2191): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-02 16:56:51.934 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 16:56:51.934 V/ShellTaskOrganizer( 3743): Task appeared taskId=3695 listener=FullscreenTaskListener
+10-02 16:56:51.934 V/ShellTaskOrganizer( 3743): Fullscreen Task Appeared: #3695
+10-02 16:56:51.934 D/ShellPackageUpdate( 3743): PackageUpdateController: Setting handlePackageUpdate for task: 3695
+10-02 16:56:51.935 E/TransitionChain( 1842): Can't collect into a chain with no transition
+10-02 16:56:51.935 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:51.935 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:51.941 D/CompatChangeReporter( 2191): Compat change id reported: 333566037; UID 10219; state: ENABLED
+10-02 16:56:51.942 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+10-02 16:56:51.942 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-02 16:56:51.942 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-02 16:56:51.949 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+10-02 16:56:51.948 W/composer@2.4-se(  700): type=1400 audit(0.0:8016): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 16:56:51.949 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 16:56:51.949 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 16:56:51.949 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 16:56:51.948 W/composer@2.4-se(  700): type=1400 audit(0.0:8017): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 16:56:51.968 I/oid.apps.photos( 2191): Duplicate interns in the .data.img.rel.ro section of /data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/oat/arm64/base.odex mapped to immutable spaces.
+10-02 16:56:51.978 W/oid.apps.photos( 2191): Failed to find entry 'classes.dex': Entry not found
+10-02 16:56:51.978 W/oid.apps.photos( 2191): Failed to find entry 'classes.dex': Entry not found
+10-02 16:56:51.979 W/oid.apps.photos( 2191): Failed to find entry 'classes.dex': Entry not found
+10-02 16:56:51.979 D/nativeloader( 2191): Configuring clns-9 for other apk /data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/base.apk:/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.arm64_v8a.apk:/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.en.apk:/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.xxhdpi.apk. target_sdk_version=37, uses_libraries=lib_aion_buffer.so:libedgetpu_util.so:libedgetpu_client.google.so:libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/lib/arm64:/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/base.apk!/lib/arm64-v8a:/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~rA4wdpBmnGCOdtNcLrUp
+10-02 16:56:51.983 D/ActivityThread( 2191): Set OS env TMPDIR to /data/user/0/com.google.android.apps.photos/cache
+10-02 16:56:51.983 V/GraphicsEnvironment( 2191): Currently set values for:
+10-02 16:56:51.983 V/GraphicsEnvironment( 2191):   angle_gl_driver_selection_pkgs=[com.android.angle]
+10-02 16:56:51.983 V/GraphicsEnvironment( 2191):   angle_gl_driver_selection_values=[angle]
+10-02 16:56:51.983 V/GraphicsEnvironment( 2191): com.google.android.apps.photos is not listed in per-application setting
+10-02 16:56:51.984 V/GraphicsEnvironment( 2191): No special selections for ANGLE, returning default driver choice
+10-02 16:56:51.984 V/GraphicsEnvironment( 2191): Neither updatable production driver nor prerelease driver is supported.
+10-02 16:56:51.988 D/CompatChangeReporter( 2191): Compat change id reported: 407952621; UID 10219; state: ENABLED
+10-02 16:56:51.988 D/CompatChangeReporter( 2191): Compat change id reported: 419020719; UID 10219; state: ENABLED
+10-02 16:56:51.992 D/CompatChangeReporter( 2191): Compat change id reported: 458413887; UID 10219; state: ENABLED
+10-02 16:56:51.997 D/CompatChangeReporter( 2191): Compat change id reported: 418924588; UID 10219; state: ENABLED
+10-02 16:56:52.004 D/nativeloader( 2191): Load /data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/lib/arm64/libnative_crash_handler_jni.so using class loader ns clns-9 (caller=/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/base.apk!1): ok
+10-02 16:56:52.010 D/CorePackageUpdate( 1842): Couldn't find a persistent state for task= 3695
+10-02 16:56:52.011 W/JobInfo ( 2191): Job 'com.google.android.apps.photos/com.google.android.libraries.social.async.BackgroundTaskJobService#1043' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-02 16:56:52.012 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:52.012 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:52.014 V/RecentTasksController( 3743): generateList(getRecentTasks)
+10-02 16:56:52.015 V/RecentTasksController( 3743): initializeDesksMap - desktop windowing not available
+10-02 16:56:52.015 V/RecentTasksController( 3743): Added fullscreen task: 3695
+10-02 16:56:52.015 V/RecentTasksController( 3743): Added fullscreen task: 915
+10-02 16:56:52.015 V/RecentTasksController( 3743): Added fullscreen task: 3691
+10-02 16:56:52.015 V/RecentTasksController( 3743): generateList - complete
+10-02 16:56:52.015 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+10-02 16:56:52.015 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 16:56:52.015 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 16:56:52.015 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 16:56:52.016 D/PreloadThumbnailUseCase( 4067): Preloading thumbnails for task ids: [[id=3691 windowingMode=1 user=0 lastActiveTime=14030227 lastFocusedTime=14022600] null, [id=915 windowingMode=1 user=0 lastActiveTime=14061792 lastFocusedTime=14061779] null, [id=3695 windowingMode=1 user=0 lastActiveTime=14061897 lastFocusedTime=14061810] null]
+10-02 16:56:52.012 W/composer@2.4-se(  700): type=1400 audit(0.0:8018): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 16:56:52.012 W/composer@2.4-se(  700): type=1400 audit(0.0:8019): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 16:56:52.017 I/ProtoLog( 2191): ProtoLog ready to log to logcat
+10-02 16:56:52.017 D/oid.apps.photos( 2191): Initializing ProtoLog
+10-02 16:56:52.017 D/ProtoLog( 2191): Initializing ProtoLog DataSource
+10-02 16:56:52.017 I/ProtoLogConfigListener( 2191): Connected and registered client with 1 groups to ProtoLogConfigurationService (viewerConfig=null)
+10-02 16:56:52.018 I/Surface ( 1842): Creating surface for consumer unnamed-1842-377 with slotExpansion=1 for 64 slots
+10-02 16:56:52.018 I/Surface ( 1842): Creating surface for consumer ImageReader-864x1920f1m1-1842-376 with slotExpansion=1 for 64 slots
+10-02 16:56:52.018 I/ProtoLogConfigurationService( 1842): Registered ProtoLog client: PID:0 (PID 0, UID 10219) with 1 groups: [IME_TRACKER]
+10-02 16:56:52.018 W/ImageReader_JNI( 1842): Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-02 16:56:52.018 I/DisplayManager( 2191): Choreographer implicitly registered for the refresh rate.
+10-02 16:56:52.019 D/vulkan  ( 2191): searching for layers in '/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/lib/arm64'
+10-02 16:56:52.020 D/vulkan  ( 2191): searching for layers in '/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/base.apk!/lib/arm64-v8a'
+10-02 16:56:52.020 D/vulkan  ( 2191): searching for layers in '/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.arm64_v8a.apk!/lib/arm64-v8a'
+10-02 16:56:52.021 D/vulkan  ( 2191): searching for layers in '/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.en.apk!/lib/arm64-v8a'
+10-02 16:56:52.021 D/vulkan  ( 2191): searching for layers in '/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/split_config.xxhdpi.apk!/lib/arm64-v8a'
+10-02 16:56:52.024 D/ConnectivityService( 1842): requestNetwork for uid/pid:10219/2191 activeRequest: null callbackRequest: 2915 [NetworkRequest [ REQUEST id=2916, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST
+10-02 16:56:52.027 D/WifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2916, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.027 D/UntrustedWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2916, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.027 D/OemPaidWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2916, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.027 D/MultiInternetWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2916, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.028 E/ConsumerBase( 1842): [ImageReader-864x1920f1m1-1842-376] abandonLocked: ConsumerBase is abandoned!
+10-02 16:56:52.028 D/ConnectivityService( 1842): NetReassign [2916 : null → 100] [c 0] [a 1] [i 2]
+10-02 16:56:52.030 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@49a7c773 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 16:56:52.032 D/CompatChangeReporter( 1842): Compat change id reported: 230590090; UID 10219; state: ENABLED
+10-02 16:56:52.032 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df676080) with descriptor: '(not cached)'
+10-02 16:56:52.032 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=3693 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.photos/.home.HomeActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity} realActivityIsAppLockEnabled=false numActivities=1 lastActiveTime=14061764 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@43a5a18} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{bd3b5a7 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=Rect(28, 824 - 1052, 1644)}
+10-02 16:56:52.033 I/ActivityTaskManager( 1842): Add Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos} to hidden list because adding Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos}
+10-02 16:56:52.034 D/CorePackageUpdate( 1842): onRecentTaskRemoved Removing task: 3695
+10-02 16:56:52.034 D/CorePackageUpdate( 1842): Couldn't find a persistent state for task= 3695
+10-02 16:56:52.034 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:52.034 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos} activity=ActivityRecord{37135875 u0 com.google.android.apps.photos/.create.movie.assistivecreation.CreateAssistiveMovieInputActivity t-1} display-area-from-source=DefaultTaskDisplayArea@98248018 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 16:56:52.034 I/ActivityTaskManager( 1842): START u0 {xflg=0x4 cmp=com.google.android.apps.photos/.create.movie.assistivecreation.CreateAssistiveMovieInputActivity (has extras)} with LAUNCH_MULTIPLE from uid 10219 (com.google.android.apps.photos) (sr=17066715) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-02 16:56:52.034 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:52.034 V/WindowManagerShell( 3743): Transition requested (#4600): android.os.BinderProxy@7f8cc8b TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=3693 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.photos/.home.HomeActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity} origActivity=null realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=14061920 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@fa17e2b} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{1c3a168 com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 4600 }
+10-02 16:56:52.034 D/ShellSplitScreen( 3743): logExit: no-op, mLoggerSessionId is null
+10-02 16:56:52.035 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:52.035 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:52.037 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 16:56:52.039 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000122 is ignored and takes no effect
+10-02 16:56:52.040 W/DisplayManagerService( 1842): getWifiDisplayStatus called without CONFIGURE_WIFI_DISPLAY or ACCESS_FINE_LOCATION permission, and is not the system UID, uid=10219, device address will be hidden.
+10-02 16:56:52.040 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000321 is ignored and takes no effect
+10-02 16:56:52.041 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000356 is ignored and takes no effect
+10-02 16:56:52.042 V/MediaRouter( 2191): Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-02 16:56:52.042 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000358 is ignored and takes no effect
+10-02 16:56:52.042 I/MediaRouter( 2191): Skip setBluetoothA2dpOn(): types=8388615, isPlaybackActive()=false, BT route=null
+10-02 16:56:52.042 W/DisplayManagerService( 1842): getWifiDisplayStatus called without CONFIGURE_WIFI_DISPLAY or ACCESS_FINE_LOCATION permission, and is not the system UID, uid=10219, device address will be hidden.
+10-02 16:56:52.042 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000359 is ignored and takes no effect
+10-02 16:56:52.046 D/LauncherAmbientCueVM( 4067): recalculateStates: isRootAttached=false (isTestMode=false, hasActions=false, isAmbientCueEnabled=true, isNotDeactivated=true, isTaskFocused=false [focusedId=3695, targetId=-1])
+10-02 16:56:52.048 D/DifferentDisplayCheck( 1842): Focus lost for Task Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos} on display 0
+10-02 16:56:52.049 D/DifferentDisplayCheck( 1842): Focus gained for Task Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos} on display 0
+10-02 16:56:52.050 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000461 is ignored and takes no effect
+10-02 16:56:52.051 D/WindowManager( 1842): setClientSurface Surface(name=VRI-Splash Screen com.google.android.apps.photos#22244)/@0xada1137 for bc94898 Splash Screen com.google.android.apps.photos
+10-02 16:56:52.052 I/Surface ( 3743): Creating surface for consumer unnamed-3743-2313 with slotExpansion=1 for 64 slots
+10-02 16:56:52.053 I/Surface ( 3743): Creating surface for consumer VRI[photos]#2303(BLAST Consumer)2303 with slotExpansion=1 for 64 slots
+10-02 16:56:52.058 D/ConnectivityService( 1842): requestNetwork for uid/pid:10219/2191 activeRequest: null callbackRequest: 2917 [NetworkRequest [ REQUEST id=2918, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|BLK
+10-02 16:56:52.059 V/WindowManagerShell( 3743): onTransitionReady(transaction=7911329891974)
+10-02 16:56:52.059 V/WindowManagerShell( 3743): onTransitionReady (#4600) android.os.BinderProxy@7f8cc8b: {id=4600 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:56:52.059 V/WindowManagerShell( 3743):         {m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0x880a60a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:56:52.059 V/WindowManagerShell( 3743):         {m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0x719ee7b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:56:52.059 V/WindowManagerShell( 3743):     ]}
+10-02 16:56:52.059 D/WifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2918, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.059 V/WindowManagerShell( 3743): FocusTransitionObserver: Updating focus state for transition #4600
+10-02 16:56:52.059 D/WindowManagerShell( 3743): FocusTransitionObserver: Focus updated on displayId=0 to taskId=3693
+10-02 16:56:52.059 D/UntrustedWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2918, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.059 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=3693, isFocusedOnDisplay=true, isFocusedGlobally=true
+10-02 16:56:52.059 V/RecentTasksController( 3743): Notify recent tasks changed: 2
+10-02 16:56:52.059 D/OemPaidWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2918, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.059 V/WindowManagerShell( 3743): FocusTransitionObserver: Notifying local listeners of task focus change: taskId=3695, isFocusedOnDisplay=false, isFocusedGlobally=false
+10-02 16:56:52.059 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:52.060 D/ConnectivityService( 1842): NetReassign [2918 : null → 100] [c 0] [a 0] [i 1]
+10-02 16:56:52.060 V/WindowManagerShell( 3743): Transition (#4600) android.os.BinderProxy@7f8cc8b@0 ready while (#4599) android.os.BinderProxy@c766616@0 is still animating. Notify the animating transition in case they can be merged
+10-02 16:56:52.060 D/TopTaskTracker( 4067): handleTaskMovedToFront: TaskInfo{userId=0 taskId=3693 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.photos/.home.HomeActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity} origActivity=null realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=14061935 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@43a5a18} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{a7c0543 com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}
+10-02 16:56:52.060 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#4599) android.os.BinderProxy@c766616@0
+10-02 16:56:52.061 D/MultiInternetWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2918, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.063 D/VRI[UiActivity](21301): visibilityChanged oldVisibility=true newVisibility=false
+10-02 16:56:52.063 V/WindowManager( 1842): Sent Transition (#4600) createdAt=10-02 16:56:52.031 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=3693 effectiveUid=10219 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.photos/.home.HomeActivity } baseActivity=ComponentInfo{com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} topActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity} origActivity=null realActivity=ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=14061920 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1ec89a Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 132 - 0, 0) topActivityInfo=ActivityInfo{db3f02f com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isInteractive=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 4600 }
+10-02 16:56:52.063 V/WindowManagerShell( 3743): Playing animation for (#4600) android.os.BinderProxy@7f8cc8b@0
+10-02 16:56:52.063 D/ShellSplitScreen( 3743): startAnimation: transition=4600 isSplitActive=false
+10-02 16:56:52.063 V/ShellRecents( 3743): RecentsTransitionHandler.startAnimation: no controller found
+10-02 16:56:52.063 V/WindowManager( 1842):     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+10-02 16:56:52.063 V/ShellDesktopMode( 3743): DesktopHomeScreenPeekTransitionHandler: startAnimation
+10-02 16:56:52.063 V/WindowManagerShell( 3743): Transition doesn't have explicit remote, search filters for match for {id=4600 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0x880a60a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0x719ee7b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:56:52.063 V/WindowManager( 1842):     info={id=4600 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-02 16:56:52.063 V/WindowManager( 1842):         {WCT{RemoteToken{1ec89a Task{b9c36a9 #3693 type=standard A=10219:com.google.android.apps.photos}}} m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0xbde218e sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+10-02 16:56:52.063 V/WindowManager( 1842):         {WCT{RemoteToken{5d8584 Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos}}} m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0x691934a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+10-02 16:56:52.063 V/WindowManager( 1842):     ]}
+10-02 16:56:52.063 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@35e0732 windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@7e67c83, appThread = android.app.IApplicationThread$Stub$Proxy@7651e00, debugName = overlayBackTransition, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@35e0732 windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:52.063 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@931f639, appThread = android.app.IApplicationThread$Stub$Proxy@c61647e, debugName = LauncherToDream, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:52.063 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@98a5ddf, appThread = android.app.IApplicationThread$Stub$Proxy@1fe1a2c, debugName = QuickstepDisplayMove, filter = {types=[] flags=0x0 notFlags=0x0 checks=[{atype=standard independent=false modes=[CHANGE] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=true}]} }}
+10-02 16:56:52.063 V/WindowManager( 1842): Finish Transition (#4599): created at 10-02 16:56:51.903 collect-started=0.029ms request-sent=4.124ms started=5.327ms ready=17.312ms sent=18.075ms commit=27.889ms finished=159.307ms
+10-02 16:56:52.063 V/WindowManagerShell( 3743):  Checking filter Pair{{types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f32bcf5, appThread = android.app.IApplicationThread$Stub$Proxy@8ab4a8a, debugName = QuickstepLaunchHome, filter = {types=[] flags=0x0 notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} }}
+10-02 16:56:52.063 V/WindowManagerShell( 3743):  Delegate animation for (#4600) to null
+10-02 16:56:52.063 V/WindowManagerShell( 3743): start default transition animation, info = {id=4600 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP|FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3693#22143)/@0x880a60a sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CLOSE f=FLAG_CHANGED_INTERACTIVE leash=Surface(name=Task=3695#22231)/@0x719ee7b sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+10-02 16:56:52.063 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@2f7ec62 animAttr=0x9 type=OPEN isEntrance=false
+10-02 16:56:52.063 V/WindowManagerShell( 3743): loadAnimation: anim=android.view.animation.AnimationSet@361b1f3 animAttr=0x8 type=OPEN isEntrance=true
+10-02 16:56:52.064 V/WindowManagerShell( 3743):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@70b1ad
+10-02 16:56:52.082 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+10-02 16:56:52.080 W/composer@2.4-se(  700): type=1400 audit(0.0:8020): avc:  denied  { search } for  name="log" dev="dm-72" ino=709 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_log_file:s0 tclass=dir permissive=0
+10-02 16:56:52.082 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 16:56:52.082 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 16:56:52.082 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 16:56:52.088 W/System  ( 2191): ClassLoader referenced unknown path: 
+10-02 16:56:52.089 D/nativeloader( 2191): Configuring clns-10 for other apk . target_sdk_version=37, uses_libraries=, library_path=/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/lib/arm64:/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-02 16:56:52.104 W/oid.apps.photos( 2191): ClassLoaderContext classpath element checksum mismatch. expected=3164978773, found=2219684481 (DLC[];PCL[base.apk*3164978773]{PCL[/system/framework/org.apache.http.legacy.jar*4206831014]#PCL[/system/framework/com.android.location.provider.jar*102999685]#PCL[/system/framework/com.android.media.remotedisplay.jar*3568472518]#PCL[/system_ext/framework/androidx.window.extensions.jar*99921243]#PCL[/system_ext/framework/androidx.window.sidecar.jar*4281700243]} | DLC[];PCL[/data/app/~~rA4wdpBmnGCOdtNcLrUpeA==/com.google.android.apps.photos-GY-qH-SiCvA03_G71xnnuw==/base.apk*2219684481]{PCL[/system/framework/org.apache.http.legacy.jar*4206831014]#PCL[/system_ext/framework/androidx.window.extensions.jar*99921243]#PCL[/system_ext/framework/androidx.window.sidecar.jar*4281700243]})
+10-02 16:56:52.104 W/JobInfo ( 1842): Job 'com.google.android.apps.photos/com.google.android.libraries.social.async.BackgroundTaskJobService#1043' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-02 16:56:52.108 D/BoundBrokerSvc(11677): onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-02 16:56:52.112 D/nativeloader( 2191): Configuring clns-11 for other apk . target_sdk_version=37, uses_libraries=ALL, library_path=/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/split_CronetDynamite_installtime.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+10-02 16:56:52.116 I/cn_HttpFlagsLoader( 2191): HTTP flags log line (Impl): Using live production flag values from Google
+10-02 16:56:52.118 D/nativeloader( 2191): Load /data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/split_CronetDynamite_installtime.apk!/lib/arm64-v8a/libcronet.151.0.7922.83.so using isolated ns clns-11 (caller=/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/split_CronetDynamite_installtime.apk!1): ok
+10-02 16:56:52.119 D/ConnectivityService( 1842): requestNetwork for uid/pid:10219/2191 activeRequest: null callbackRequest: 2919 [NetworkRequest [ REQUEST id=2920, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: AVAIL|LOST|NC|LP
+10-02 16:56:52.122 D/CompatChangeReporter( 1842): Compat change id reported: 349487600; UID 10219; state: ENABLED
+10-02 16:56:52.122 D/WifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2920, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.122 D/UntrustedWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2920, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.122 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 16:56:52.123 D/OemPaidWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2920, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.123 I/cn_CronetLibraryLoader( 2191): Cronet version: 151.0.7922.83, arch: aarch64
+10-02 16:56:52.123 D/MultiInternetWifiNetworkFactory( 1842): got request NetworkRequest [ REQUEST id=2920, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10219 RequestorPkg: com.google.android.apps.photos UnderlyingNetworks: Null] ]
+10-02 16:56:52.123 D/ConnectivityService( 1842): NetReassign [2920 : null → 100] [c 0] [a 1] [i 3]
+10-02 16:56:52.126 D/ConnectivityService( 1842): NetReassign [no changes] [c 0] [a 1] [i 2]
+10-02 16:56:52.127 W/JobInfo ( 2191): Requested important-while-foreground flag for job555000462 is ignored and takes no effect
+10-02 16:56:52.131 D/WindowOnBackDispatcher( 2191): setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@b4a498
+10-02 16:56:52.132 E/oid.apps.photos( 2191): No package ID 6b found for resource ID 0x6b0b0013.
+10-02 16:56:52.132 D/VRI[CreateAssistiveMovieInputActivity]( 2191): WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+10-02 16:56:52.132 D/WindowOnBackDispatcher( 2191): setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@b4a498
+10-02 16:56:52.133 I/HWUI    ( 2191): Using FreeType backend (prop=Auto)
+10-02 16:56:52.133 I/FA      ( 2191): App measurement initialized, version: 183005
+10-02 16:56:52.133 I/FA      ( 2191): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-02 16:56:52.133 I/FA      ( 2191): To enable faster debug mode event logging run:
+10-02 16:56:52.133 I/FA      ( 2191):   adb shell setprop debug.firebase.analytics.app com.google.android.apps.photos
+10-02 16:56:52.133 D/CoreBackPreview( 1842): Window{dcc0c2a u0 com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@c071ee8, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+10-02 16:56:52.142 I/FA      ( 2191): Tag Manager is not found and thus will not be used
+10-02 16:56:52.143 I/Surface ( 2191): Creating surface for consumer unnamed-2191-0 with slotExpansion=1 for 64 slots
+10-02 16:56:52.144 D/WindowManager( 1842): setClientSurface Surface(name=VRI-com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity#22251)/@0x304adf5 for dcc0c2a com.google.android.apps.photos/com.google.android.apps.photos.create.movie.assistivecreation.CreateAssistiveMovieInputActivity
+10-02 16:56:52.144 I/Surface ( 2191): Creating surface for consumer VRI[CreateAssistiveMovieInputActivity]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+10-02 16:56:52.149 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+10-02 16:56:52.149 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 16:56:52.149 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 16:56:52.149 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 16:56:52.150 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:52.150 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:52.151 D/TcpMetricsLogger( 1842): connect: uid=10219 netId=100 dst=[2404:6800:4007:805::2003]:443 latencyMs=19 err=0
+10-02 16:56:52.152 V/RecentTasksController( 3743): generateList(getRecentTasks)
+10-02 16:56:52.152 V/RecentTasksController( 3743): initializeDesksMap - desktop windowing not available
+10-02 16:56:52.152 V/RecentTasksController( 3743): Added fullscreen task: 3693
+10-02 16:56:52.152 V/RecentTasksController( 3743): Added fullscreen task: 915
+10-02 16:56:52.152 V/RecentTasksController( 3743): Added fullscreen task: 3691
+10-02 16:56:52.152 V/RecentTasksController( 3743): generateList - complete
+10-02 16:56:52.153 D/PreloadThumbnailUseCase( 4067): Preloading thumbnails for task ids: [[id=3691 windowingMode=1 user=0 lastActiveTime=14030227 lastFocusedTime=14022600] null, [id=915 windowingMode=1 user=0 lastActiveTime=14061792 lastFocusedTime=14061779] null, [id=3693 windowingMode=1 user=0 lastActiveTime=14061935 lastFocusedTime=14061946] null]
+10-02 16:56:52.154 W/ProviderHelper(11677): Unknown dynamite feature providerinstaller.dynamite
+10-02 16:56:52.154 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+10-02 16:56:52.154 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system/framework/com.android.location.provider.jar
+10-02 16:56:52.154 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system/framework/com.android.media.remotedisplay.jar
+10-02 16:56:52.154 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-02 16:56:52.154 D/ApplicationLoaders( 2191): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-02 16:56:52.156 D/nativeloader( 2191): Configuring clns-12 for other apk /data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/lib/arm64:/data/app/~~VVA1Qal3vYLjptDnKkNblA==/com.google.android.gms-Q6YQUPjnwjq1OgjsMY6Uag==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-02 16:56:52.159 I/ActivityTaskManager( 1842): Displayed com.google.android.apps.photos/.create.movie.assistivecreation.CreateAssistiveMovieInputActivity for user 0: +261ms
+10-02 16:56:52.161 D/LauncherAmbientCueVM( 4067): recalculateStates: isRootAttached=false (isTestMode=false, hasActions=false, isAmbientCueEnabled=true, isNotDeactivated=true, isTaskFocused=false [focusedId=3693, targetId=-1])
+10-02 16:56:52.177 D/AdvertisingIdClient(11677): AdvertisingIdClient already created.
+10-02 16:56:52.178 D/AdvertisingIdClient(11677): AdvertisingIdClient is not bounded. Starting to bind it...
+10-02 16:56:52.179 I/DiscoveryManager(11677): Discovery state (DiscoveryState{filterCriteria=[96084372], categoryToCriteria={com.google.android.gms.cast.CATEGORY_CAST/96084372///ALLOW_IPV6=[96084372]}, activeScan=false, activeScanWithScreenOff=false, discoveryRequestSupportsDynamicSession=false, eventFlowId=106})
+10-02 16:56:52.179 I/CastMediaRouteProvider(11677): Published 1 routes
+10-02 16:56:52.181 I/ProviderInstaller( 2191): Installed default security provider AndroidOpenSSL (via CompatProvider)
+10-02 16:56:52.182 E/hwc-display(  700): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+10-02 16:56:52.182 E/hwc-display(  700): Fail to open file /data/vendor/log/hwc/PrimaryDisplay_hwc_error_log0.txt, error: Permission denied
+10-02 16:56:52.182 E/hwc-display(  700): Fail to open file /data/log/PrimaryDisplay_hwc_error_log0.txt, error: No such file or directory
+10-02 16:56:52.182 E/hwc-display(  700): Unable to open log file for PrimaryDisplay_hwc_error_log0.txt
+10-02 16:56:52.183 W/ProcessStats( 1842): Tracking association SourceState{3cad8df system/1000 ImpBg #51403} whose proc state 6 is better than process ProcessState{eca4a50 com.google.android.inputmethod.latin/10196 pkg=com.google.android.inputmethod.latin} proc state 14 (4 skipped)
+10-02 16:56:52.184 D/HintManagerService( 1842): Sent cleanup message for uid 10362
+10-02 16:56:52.192 D/AdvertisingIdClient(11677): AdvertisingIdClient is bounded
+10-02 16:56:52.193 I/AdvertisingIdClient(11677): shouldSendLog 13727073
+10-02 16:56:52.193 I/AdvertisingIdClient(11677): GetInfoInternal elapse 15ms
+10-02 16:56:52.194 E/GoogleApiManager( 2191): Failed to get service from broker. 
+10-02 16:56:52.194 E/GoogleApiManager( 2191): java.lang.SecurityException: Unknown calling package name 'com.google.android.gms'.
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3376)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Parcel.createException(Parcel.java:3360)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Parcel.readException(Parcel.java:3343)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Parcel.readException(Parcel.java:3287)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at boug.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):36)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at borz.y(:com.google.android.gms@263436035@26.34.36 (260400-981326859):143)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at bnxx.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):42)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Handler.handleCallback(Handler.java:1080)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Handler.dispatchMessage(Handler.java:126)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at dkuv.lH(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at dkuv.dispatchMessage(:com.google.android.gms@263436035@26.34.36 (260400-981326859):5)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Looper.loopOnce(Looper.java:285)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.Looper.loop(Looper.java:390)
+10-02 16:56:52.194 E/GoogleApiManager( 2191): 	at android.os.HandlerThread.run(HandlerThread.java:143)
+10-02 16:56:52.195 W/GoogleApiManager( 2191): Not showing notification since connectionResult is not user-facing: ConnectionResult{statusCode=DEVELOPER_ERROR, resolution=null, message=null, clientMethodKey=null}
+10-02 16:56:52.196 W/FlagStore( 2191): Unable to update local snapshot for com.google.android.gms.providerinstaller#com.google.android.apps.photos, may result in stale flags.
+10-02 16:56:52.196 W/FlagStore( 2191): java.util.concurrent.ExecutionException: gzrb: 17: 17: API: Phenotype.API is not available on this device. Connection failed with: ConnectionResult{statusCode=DEVELOPER_ERROR, resolution=null, message=null, clientMethodKey=null}
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasr.j(:com.google.android.gms@263436035@26.34.36 (260400-981326859):21)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasz.t(:com.google.android.gms@263436035@26.34.36 (260400-981326859):24)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasr.get(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iaxf.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):2)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iavv.s(:com.google.android.gms@263436035@26.34.36 (260400-981326859):10)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gzwj.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gzvn.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):5)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:520)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at java.util.concurrent.FutureTask.run(FutureTask.java:328)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:323)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at java.lang.Thread.run(Thread.java:1571)
+10-02 16:56:52.196 W/FlagStore( 2191): Caused by: gzrb: 17: 17: API: Phenotype.API is not available on this device. Connection failed with: ConnectionResult{statusCode=DEVELOPER_ERROR, resolution=null, message=null, clientMethodKey=null}
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gzrd.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):13)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iash.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):3)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasj.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):139)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iauq.execute(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasr.f(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasr.m(:com.google.android.gms@263436035@26.34.36 (260400-981326859):101)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iasr.q(:com.google.android.gms@263436035@26.34.36 (260400-981326859):16)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gszt.ja(:com.google.android.gms@263436035@26.34.36 (260400-981326859):35)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gewt.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):12)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iauq.execute(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gewu.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):18)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gexj.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):34)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gexq.B(:com.google.android.gms@263436035@26.34.36 (260400-981326859):17)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gewl.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):60)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at iauq.execute(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gewm.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):8)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gexj.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):34)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at gexl.c(:com.google.android.gms@263436035@26.34.36 (260400-981326859):23)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnvf.e(:com.google.android.gms@263436035@26.34.36 (260400-981326859):9)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnxv.r(:com.google.android.gms@263436035@26.34.36 (260400-981326859):48)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnxv.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):10)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnxv.g(:com.google.android.gms@263436035@26.34.36 (260400-981326859):191)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnxx.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):74)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at android.os.Handler.handleCallback(Handler.java:1080)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at android.os.Handler.dispatchMessage(Handler.java:126)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at dkuv.lH(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at dkuv.dispatchMessage(:com.google.android.gms@263436035@26.34.36 (260400-981326859):5)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at android.os.Looper.loopOnce(Looper.java:285)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at android.os.Looper.loop(Looper.java:390)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at android.os.HandlerThread.run(HandlerThread.java:143)
+10-02 16:56:52.196 W/FlagStore( 2191): Caused by: bntj: 17: API: Phenotype.API is not available on this device. Connection failed with: ConnectionResult{statusCode=DEVELOPER_ERROR, resolution=null, message=null, clientMethodKey=null}
+10-02 16:56:52.196 W/FlagStore( 2191): 	at borl.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):15)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnvi.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagStore( 2191): 	at bnvf.e(:com.google.android.gms@263436035@26.34.36 (260400-981326859):5)
+10-02 16:56:52.196 W/FlagStore( 2191): 	... 12 more
+10-02 16:56:52.196 W/FlagRegistrar( 2191): Failed to register com.google.android.gms.providerinstaller#com.google.android.apps.photos
+10-02 16:56:52.196 W/FlagRegistrar( 2191): gzrb: 17: 17: API: Phenotype.API is not available on this device. Connection failed with: ConnectionResult{statusCode=DEVELOPER_ERROR, resolution=null, message=null, clientMethodKey=null}
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at gzrd.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):13)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iash.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):3)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iasj.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):139)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iauq.execute(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iasr.f(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iasr.m(:com.google.android.gms@263436035@26.34.36 (260400-981326859):101)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iasr.q(:com.google.android.gms@263436035@26.34.36 (260400-981326859):16)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at gszt.ja(:com.google.android.gms@263436035@26.34.36 (260400-981326859):35)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at gewt.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):12)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at iauq.execute(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at gewu.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):18)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at gexj.b(:com.google.android.gms@263436035@26.34.36 (260400-981326859):34)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at gexl.c(:com.google.android.gms@263436035@26.34.36 (260400-981326859):23)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnvf.e(:com.google.android.gms@263436035@26.34.36 (260400-981326859):9)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnxv.r(:com.google.android.gms@263436035@26.34.36 (260400-981326859):48)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnxv.d(:com.google.android.gms@263436035@26.34.36 (260400-981326859):10)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnxv.g(:com.google.android.gms@263436035@26.34.36 (260400-981326859):191)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnxx.run(:com.google.android.gms@263436035@26.34.36 (260400-981326859):74)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at android.os.Handler.handleCallback(Handler.java:1080)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at android.os.Handler.dispatchMessageImpl(Handler.java:135)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at android.os.Handler.dispatchMessage(Handler.java:126)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at dkuv.lH(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at dkuv.dispatchMessage(:com.google.android.gms@263436035@26.34.36 (260400-981326859):5)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at android.os.Looper.loopOnce(Looper.java:285)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at android.os.Looper.loop(Looper.java:390)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at android.os.HandlerThread.run(HandlerThread.java:143)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): Caused by: bntj: 17: API: Phenotype.API is not available on this device. Connection failed with: ConnectionResult{statusCode=DEVELOPER_ERROR, resolution=null, message=null, clientMethodKey=null}
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at borl.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):15)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnvi.a(:com.google.android.gms@263436035@26.34.36 (260400-981326859):1)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	at bnvf.e(:com.google.android.gms@263436035@26.34.36 (260400-981326859):5)
+10-02 16:56:52.196 W/FlagRegistrar( 2191): 	... 12 more
+10-02 16:56:52.205 I/ImeTracker( 1842): system_server:2194f383: onRequestHide at ORIGIN_SERVER reason ISP_UPDATE_CONTROL_FOR_TARGET fromUser false displayId 0
+10-02 16:56:52.206 I/ImeTracker( 1842): com.google.android.apps.photos:6bc7edf8: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false userId 0 displayId 0
+10-02 16:56:52.206 I/SubtypeOperator(15684): SubtypeOperator$1.onUnbindInput():43 
+10-02 16:56:52.206 I/ImeTracker( 3753): com.google.android.permissioncontroller:d7962ead: onRequestHide at ORIGIN_CLIENT reason HIDE_WINDOW_LOST_FOCUS fromUser false userId 0 displayId 0
+10-02 16:56:52.206 D/InsetsController( 2191): hide(ime())
+10-02 16:56:52.206 I/ImeTracker( 2191): com.google.android.apps.photos:6bc7edf8: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-02 16:56:52.206 D/InsetsController( 3753): hide(ime())
+10-02 16:56:52.206 I/ImeTracker( 3753): com.google.android.permissioncontroller:d7962ead: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-02 16:56:52.208 I/ImeTracker( 1842): system_server:2194f383: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-02 16:56:52.208 I/SubtypeOperator(15684): SubtypeOperator$1.onBindInput():33 
+10-02 16:56:52.209 W/InputChannel-JNI( 1842): Channel already disposed.
+10-02 16:56:52.209 I/GoogleInputMethodService(15684): GoogleInputMethodService.onFinishInput():2361 
+10-02 16:56:52.210 I/GoogleInputMethodService(15684): GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.photos, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-02 16:56:52.210 W/LatinIMEBase(15684): LatinIMEBase.updateInputViewCoverNavigation():322 Null input view, cannot update padding!
+10-02 16:56:52.210 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+10-02 16:56:52.210 I/Module  (15684): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+10-02 16:56:52.210 W/PackageConfigPersister( 1842): App-specific configuration not found for packageName: com.google.android.apps.photos and userId: 0
+10-02 16:56:52.211 I/WifiService( 1842): acquireMulticastLock uid=10266 lockTag=MdnsServiceBrowserImpl
+10-02 16:56:52.212 I/MdnsServiceBrowser(11677): (REDACTED) registering %s
+10-02 16:56:52.213 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+10-02 16:56:52.219 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+10-02 16:56:52.230 I/serviceDiscovery( 1842): [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+10-02 16:56:52.236 I/BroadcastQueue( 1842): BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:1 completeLatency:297 dispatchRealLatency:1 completeRealLatency:297 receiversSize:8 userId:0 userType:android.os.usertype.full.SYSTEM
+10-02 16:56:52.239 I/DeviceScanner(11677): [MDNS] Received response from "F12V" (b66755804c9b0866403aee24b84ab2c5) [cast connect] with result "1 New device"
+10-02 16:56:52.239 I/DeviceScanner(11677): [MDNS] Received response from "F12V" (b66755804c9b0866403aee24b84ab2c5) [cast connect] with result "2 Updated device"
+10-02 16:56:52.419 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 16:56:52.475 E/DataBroker(11677): Failed to Resolve using Rest API [CONTEXT service_id=77 ]
+10-02 16:56:52.475 E/DataBroker(11677): Link Resolution to Accept invitation mapping failed. [CONTEXT service_id=77 ]
+10-02 16:56:52.497 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 16:56:52.497 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 16:56:52.497 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 16:56:52.599 V/WindowManagerShell( 3743): Transition animation finished (aborted=false), notifying core (#4600) android.os.BinderProxy@7f8cc8b@0
+10-02 16:56:52.606 V/WindowManager( 1842): Finish Transition (#4600): created at 10-02 16:56:52.031 collect-started=0.036ms request-sent=2.993ms started=3.624ms ready=18.261ms sent=25.672ms commit=25.355ms finished=574.331ms
+10-02 16:56:52.607 V/WindowManagerShell( 3743): Track 0 became idle
+10-02 16:56:52.607 V/WindowManagerShell( 3743): All active transition animations finished
+10-02 16:56:52.614 D/HintManagerService( 1842): Sent cleanup message for uid 10287
+10-02 16:56:52.622 D/RecentsView( 4067): onTaskRemoved: 3695, not handling task stack changes
+10-02 16:56:52.622 D/TopTaskTracker( 4067): onTaskRemoved: 3695
+10-02 16:56:52.623 D/RecentsView( 4067): onTaskRemoved: 3695, not handling task stack changes
+10-02 16:56:52.634 V/ShellTaskOrganizer( 3743): Task vanished taskId=3695
+10-02 16:56:52.634 V/ShellTaskOrganizer( 3743): Fullscreen Task Vanished: #3695
+10-02 16:56:52.634 D/ShellPackageUpdate( 3743): PackageUpdateController: Removing handlePackageUpdate for task: 3695
+10-02 16:56:52.636 E/WindowOrganizerController( 1842): Attempting to externally change a non-organized container: Task{7d26978 #3695 type=standard A=10219:com.google.android.apps.photos}={handlePackageUpdate:false,} playercount=2 taskorg=android.window.ITaskOrganizer$Stub$Proxy@2cf5c8d
+10-02 16:56:52.637 V/RecentTasksController( 3743): Notify recent tasks changed: 1
+10-02 16:56:52.637 D/ShellDesktopMode( 3743): Task 3695 is vanishing. Removing task data from repository
+10-02 16:56:52.637 D/RecentTasksList( 4067): invalidateLoadedTasks - previous requestLoadId: -1
+10-02 16:56:52.637 V/AppCompat( 3743): []
+10-02 16:56:52.637 V/AppCompat( 3743): []
+10-02 16:56:52.637 V/AppCompat( 3743): []
+10-02 16:56:52.637 V/AppCompat( 3743): {}
+10-02 16:56:52.713 I/Surface ( 1842): Creating surface for consumer unnamed-1842-378 with slotExpansion=1 for 64 slots
+10-02 16:56:52.713 I/Surface ( 1842): Creating surface for consumer ImageReader-864x1920f1m1-1842-377 with slotExpansion=1 for 64 slots
+10-02 16:56:52.713 W/ImageReader_JNI( 1842): Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-02 16:56:52.720 E/ConsumerBase( 1842): [ImageReader-864x1920f1m1-1842-377] abandonLocked: ConsumerBase is abandoned!
+10-02 16:56:53.046 I/Surface ( 1842): Creating surface for consumer unnamed-1842-379 with slotExpansion=1 for 64 slots
+10-02 16:56:53.046 I/Surface ( 1842): Creating surface for consumer ImageReader-864x1920f1m1-1842-378 with slotExpansion=1 for 64 slots
+10-02 16:56:53.047 W/ImageReader_JNI( 1842): Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-02 16:56:53.053 E/ConsumerBase( 1842): [ImageReader-864x1920f1m1-1842-378] abandonLocked: ConsumerBase is abandoned!
+10-02 16:56:53.185 D/HintManagerService( 1842): Starts cleaning for 10362
+10-02 16:56:53.617 D/HintManagerService( 1842): Starts cleaning for 10287
+10-02 16:56:55.114 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 16:56:55.500 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 16:56:55.603 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 103 ms
+10-02 16:56:55.633 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 16:56:55.633 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 16:56:55.633 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 16:56:56.233 I/pixel-thermal( 1850): VIRTUAL-SKIN:43.9728 raw data: VIRTUAL-NEUTRAL:43972.8 VIRTUAL-NEUTRAL-SKIN2:43664.2 VIRTUAL-QUIET-NEUTRAL:41939.5 VIRTUAL-SKIN:43972.8 disp_therm:41135 gnss_tcxo_therm:45104 neutral_therm:42853 quiet_therm:41548 skin_therm1:45032 skin_therm2:45557 
+10-02 16:56:56.235 D/TemperatureStateSource( 3915): TemperatureStateSource state changed to [43.9728].
+10-02 16:56:56.238 I/pixel-thermal( 1850): VIRTUAL-SKIN:43.9728 raw data: VIRTUAL-SKIN:43972.8 
+10-02 16:56:56.239 I/TemperatureStateSource( 3915): temperature was set
+10-02 16:56:56.239 D/ImpulseStateSource( 3915): onStateChange: sequenceNumber = 1339
+10-02 16:56:56.241 D/ImpulseServer( 3915): Notify client 10151, events: {listenerName=adaptive_thermal, source=PIXEL_STATE_SOURCE_TEMPERATURE, timestampMs=1790940416235, cameraAvailabilityEvent=[0:true, 1:true], temperatureEvent=[43.9728]}
+10-02 16:56:56.241 D/ImpulseServer( 3915): Sent PixelStateChange event to client 10151
+10-02 16:56:56.326 I/pixel-thermal( 1850): VIRTUAL-SKIN:43.9728 raw data: VIRTUAL-SKIN:43972.8 
+10-02 16:56:57.228 D/BoundBrokerSvc(11677): onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-02 16:56:57.935 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'time''

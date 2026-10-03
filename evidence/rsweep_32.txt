@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.village.boond", "cls": "com.google.android.apps.crowdsource.beetle.MainActivity", "action": "android.intent.action.SEND", "mime": "image/*", "scheme": null}

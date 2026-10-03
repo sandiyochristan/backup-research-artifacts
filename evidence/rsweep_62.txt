@@ -1,0 +1,1 @@
+{"pkg": "gms", "cls": "com.google.android.gms.pay.deeplink.AliasProcessImageResourceActivity", "action": "android.intent.action.SEND", "mime": "image/bmp", "scheme": null}

@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.nbu.paisa.user", "cls": "com.google.nbu.paisa.flutter.gpay.app.ShareIntentFilter", "action": "android.intent.action.SEND", "mime": "image/*", "scheme": null}

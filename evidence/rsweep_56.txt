@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.setupwizard", "cls": "com.google.android.setupwizard.util.SecureInterceptActivity", "action": "android.intent.action.SEND", "mime": null, "scheme": null}

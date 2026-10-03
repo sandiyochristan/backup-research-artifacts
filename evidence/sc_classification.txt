@@ -1,0 +1,24 @@
+
+====================================================================================================
+CMD: {"type": "bind", "pkg": "com.google.android.safetycore", "action": "com.google.android.apps.safetycore.classification.BIND", "label": "safetycore-classification"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:37.937 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:37.938 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=162
+10-02 14:04:37.939 20818 20818 I VRPPROBE: CMD type=bind label=safetycore-classification
+10-02 14:04:37.939 20818 20818 I VRPPROBE: BIND Intent { act=com.google.android.apps.safetycore.classification.BIND pkg=com.google.android.safetycore } pkg=com.google.android.safetycore
+10-02 14:04:37.939 20818 20818 E VRPPROBE:   BIND_FAIL ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+10-02 14:04:37.939 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "bind", "pkg": "com.google.android.safetycore", "action": "com.google.android.apps.safetycore.classification.BIND", "label": "safetycore-classification"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:20.223 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:20.223 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=162
+10-02 14:07:20.224 21235 21235 I VRPPROBE: CMD type=bind label=safetycore-classification
+10-02 14:07:20.224 21235 21235 I VRPPROBE: BIND Intent { act=com.google.android.apps.safetycore.classification.BIND pkg=com.google.android.safetycore } pkg=com.google.android.safetycore
+10-02 14:07:20.224 21235 21235 E VRPPROBE:   BIND_FAIL ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+10-02 14:07:20.224 21235 21235 I VRPPROBE: == EXEC DONE
+

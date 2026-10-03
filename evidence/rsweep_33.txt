@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.youtube.music", "cls": "com.google.android.apps.youtube.music.activities.MusicPickerActivity", "action": "android.intent.action.PICK", "mime": "vnd.android.cursor.dir/audio", "scheme": null}

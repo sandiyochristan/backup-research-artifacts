@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.bard", "cls": "com.google.android.apps.bard.shellapp.BardEntryPointActivity", "action": "android.intent.action.SEND", "mime": "image/*", "scheme": "http"}

@@ -1,0 +1,16 @@
+10-03 14:48:17.084 30864 30890 E BHFUZZ  : [+] BARHOP_BASE=0x75f7e8d000 SIZE=0x2a000
+10-03 14:48:45.876 30864 30890 F BHFUZZ  : BHFUZZ CRASH sig=11 addr=0x774f9a1048 pc=0x75f7ea31ac sp=0x759022fa40 in_call=1 dw=15 dh=3753 alloc=15x199 stride=4014
+   16188: 1b097d8d     	mul	w13, w12, w9
+   1618c: b9800a6c     	ldrsw	x12, [x19, #0x8]
+   16190: ad0103e0     	stp	q0, q0, [sp, #0x20]
+   16194: ad0203e0     	stp	q0, q0, [sp, #0x40]
+   16198: ad0303e0     	stp	q0, q0, [sp, #0x60]
+   1619c: 8b2dc1cd     	add	x13, x14, w13, sxtw
+   161a0: 0aac7d8e     	bic	w14, w12, w12, asr #31
+   161a4: aa0d03f1     	mov	x17, x13
+   161a8: b400012e     	cbz	x14, 0x161cc <Java_com_google_android_libraries_barhopper_Barhopper_parseRawValue+0x6bf0>
+   161ac: 38401620     	ldrb	w0, [x17], #0x1
+   161b0: d10005ce     	sub	x14, x14, #0x1
+   161b4: d341fc00     	lsr	x0, x0, #1
+   161b8: 927e1000     	and	x0, x0, #0x7c
+   161bc: b8606941     	ldr	w1, [x10, x0]

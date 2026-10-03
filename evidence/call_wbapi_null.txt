@@ -1,0 +1,12 @@
+
+====================================================================================================
+CMD: {"type": "call", "uri": "content://com.google.android.apps.wellbeing.api", "method": "null", "arg": "", "label": "wbapi:null"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:59:54.232 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:59:54.234 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=126
+10-02 13:59:54.234 19954 19954 I VRPPROBE: CMD type=call label=wbapi:null
+10-02 13:59:54.234 19954 19954 I VRPPROBE: CALL uri=content://com.google.android.apps.wellbeing.api method='null' arg='' extras=null
+10-02 13:59:54.245 19954 19954 I VRPPROBE:   CALL_RESULT Bundle[mParcelledData.dataSize=104]
+10-02 13:59:54.245 19954 19954 I VRPPROBE: == EXEC DONE
+

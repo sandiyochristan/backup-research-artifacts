@@ -1,0 +1,12 @@
+
+====================================================================================================
+CMD: {"type": "call", "uri": "content://com.google.android.apps.wellbeing.api", "method": "getWebView", "arg": "", "label": "wbapi:getWebView"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:59:58.971 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:59:58.971 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=138
+10-02 13:59:58.972 19954 19954 I VRPPROBE: CMD type=call label=wbapi:getWebView
+10-02 13:59:58.974 19954 19954 I VRPPROBE: CALL uri=content://com.google.android.apps.wellbeing.api method='getWebView' arg='' extras=null
+10-02 13:59:58.988 19954 19954 I VRPPROBE:   CALL_RESULT Bundle[mParcelledData.dataSize=104]
+10-02 13:59:58.988 19954 19954 I VRPPROBE: == EXEC DONE
+

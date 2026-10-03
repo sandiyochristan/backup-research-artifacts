@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.labs.language.tailwind", "cls": "com.google.android.apps.labs.language.tailwind.share.ShareIntentHandlerActivity", "action": "android.intent.action.SEND", "mime": "text/plain", "scheme": null}

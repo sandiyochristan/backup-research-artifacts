@@ -1,0 +1,226 @@
+### CMD: {"type": "actBind", "pkg": "com.google.android.contactkeys", "action": "com.google.android.gms.contactkeys.service.ContactKeyApiService.START", "label": "ck-svc"}
+### TARGETS: ['com.google.android.contactkeys']
+### PIDS_BEFORE: {'com.google.android.contactkeys': None}
+
+--------- beginning of main
+10-02 14:13:24.274 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:13:23:273 - 14:13:24:274, duration: 1000, le_adv_count: 1, total_le_adv_count: 1695, total_event_count: 1
+10-02 14:13:24.353 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am force-stop com.google.android.contactkeys'
+10-02 14:13:24.404 I/pixel-thermal( 1850): VIRTUAL-SKIN:45.9106 raw data: VIRTUAL-NEUTRAL:45910.6 VIRTUAL-NEUTRAL-SKIN2:45570.2 VIRTUAL-QUIET-NEUTRAL:43519.5 VIRTUAL-SKIN:45910.6 disp_therm:42487 gnss_tcxo_therm:47228 neutral_therm:44594 quiet_therm:43059 skin_therm1:47156 skin_therm2:47848 
+10-02 14:13:24.405 D/TemperatureStateSource( 3915): TemperatureStateSource state changed to [45.910603].
+10-02 14:13:24.408 I/pixel-thermal( 1850): VIRTUAL-SKIN:45.9106 raw data: VIRTUAL-SKIN:45910.6 
+10-02 14:13:24.408 I/TemperatureStateSource( 3915): temperature was set
+10-02 14:13:24.408 D/ImpulseStateSource( 3915): onStateChange: sequenceNumber = 348
+--------- beginning of system
+10-02 14:13:24.410 I/ActivityManager( 1842): Force stopping com.google.android.contactkeys appid=10292 user=0: from pid 28388
+10-02 14:13:24.411 D/ImpulseServer( 3915): Notify client 10151, events: {listenerName=adaptive_thermal, source=PIXEL_STATE_SOURCE_TEMPERATURE, timestampMs=1790930604406, cameraAvailabilityEvent=[0:true, 1:true], temperatureEvent=[45.910603]}
+10-02 14:13:24.411 D/ImpulseServer( 3915): Sent PixelStateChange event to client 10151
+10-02 14:13:24.441 E/ActivityManager( 1842): Unable to freeze binder for 7847: -11
+10-02 14:13:24.442 I/ActivityManager( 1842): Killing 7847:com.google.android.contactkeys/u0a292 (adj 965): stop com.google.android.contactkeys due to from pid 28388
+10-02 14:13:24.454 W/ProcessStats( 1842): Tracking association SourceState{3cad8df system/1000 ImpBg #22958} whose proc state 6 is better than process ProcessState{eca4a50 com.google.android.inputmethod.latin/10196 pkg=com.google.android.inputmethod.latin (sub)} proc state 14 (3 skipped)
+10-02 14:13:24.457 I/AppsFilter( 1842): interaction: PackageSetting{ae3d39c com.vrp.testonly/10399} -> PackageSetting{bc284f7 com.google.android.contactkeys/10292} BLOCKED
+10-02 14:13:24.457 I/AppsFilter( 1842): interaction: PackageSetting{fff5c97 com.google.android.microdroid.empty_payload/10269} -> PackageSetting{bc284f7 com.google.android.contactkeys/10292} BLOCKED
+10-02 14:13:24.466 D/CarrierSvcBindHelper( 4061): onHandleForceStop: [com.google.android.contactkeys]
+10-02 14:13:24.467 D/EuiccConnector( 4061): handleMessage: E msg.what=1
+10-02 14:13:24.467 D/EuiccConnector( 4061): processMsg: ConnectedState
+10-02 14:13:24.467 D/EuiccConnector( 4061): processMsg: DisconnectedState
+10-02 14:13:24.469 D/CarrierSvcBindHelper( 4061): No carrier app for: 0
+10-02 14:13:24.475 D/EuiccConnector( 4061): handleMessage: X
+10-02 14:13:24.536 V/ActivityManager( 1842): Got obituary of 7847:com.google.android.contactkeys
+10-02 14:13:24.537 E/AppOps  ( 1842): Bad call made by uid 1000. Package "com.google.android.contactkeys" does not belong to uid 1000.
+10-02 14:13:24.537 I/libprocessgroup( 1842): Removed cgroup /sys/fs/cgroup/apps/uid_10292/pid_7847
+10-02 14:13:24.538 W/BinderNative( 1842): Uncaught exception from death notification
+10-02 14:13:24.538 W/BinderNative( 1842): java.lang.SecurityException: Specified package "com.google.android.contactkeys" under uid 1000 but it is not
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:5142)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:4941)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:4930)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService.stopWatchingAsyncNoted(AppOpsService.java:3820)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService.lambda$startWatchingAsyncNoted$0(AppOpsService.java:3804)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService.$r8$lambda$JEh0kyzXFM8xEsnYnFovx_IS9iY(AppOpsService.java:0)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at com.android.server.appop.AppOpsService$$ExternalSyntheticLambda2.onInterfaceDied(R8$$SyntheticClass:0)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at android.os.RemoteCallbackList$Builder$1.onCallbackDied(RemoteCallbackList.java:447)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at android.os.RemoteCallbackList$Interface.binderDied(RemoteCallbackList.java:307)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at android.os.IBinder$DeathRecipient.binderDied(IBinder.java:339)
+10-02 14:13:24.538 W/BinderNative( 1842): 	at android.os.BinderProxy.sendDeathNotice(BinderProxy.java:985)
+10-02 14:13:24.538 I/Zygote  ( 1039): Process 7847 exited due to signal 9 (Killed)
+10-02 14:13:24.776 W/camera.services( 6817): Reducing the number of considered missed Gc histogram windows from 137 to 100
+10-02 14:13:25.126 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 14:13:25.410 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 14:13:25.525 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:monkey -p com.google.android.contactkeys -c android.intent.category.LAUNCHER 1'
+10-02 14:13:25.539 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 128 ms
+10-02 14:13:25.574 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 14:13:25.574 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 14:13:25.574 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-CHG:-6335 VIRTUAL-USB-UI:1 charger_skin_therm:48707 usb_pwr_therm2:42372 
+10-02 14:13:25.637 I/pixel-thermal( 1850): cellular-emergency:45.9106 raw data: VIRTUAL-SKIN:45910.6 cellular-emergency:45910.6 
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-CHG:-6335 VIRTUAL-USB-THROTTLING:1 usb_pwr_therm2:42372 
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU:45.9106 raw data: VIRTUAL-SKIN:45910.6 VIRTUAL-SKIN-CPU:45910.6 
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU power_budget=800 err=-4.9106 s_power=800 time_elapsed_ms=7007 p=-1964.24 i=-0.0302505 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU binded power rails: (S3M_VDD_CPUCL1: 16.27 mW)(S2M_VDD_CPUCL2: 10.33 mW)(S4M_VDD_CPUCL0: 25.48 mW)
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU:45.9106 raw data: VIRTUAL-SKIN:45910.6 VIRTUAL-SKIN-CPU-GPU:45910.6 
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU power_budget=352.222 err=-0.910603 s_power=800 time_elapsed_ms=7007 p=-273.181 i=-174.597 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU binded power rails: (S2S_VDD_G3D: 1.72 mW)(S3M_VDD_CPUCL1: 16.27 mW)(S2M_VDD_CPUCL2: 10.33 mW)(S4M_VDD_CPUCL0: 25.48 mW)
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT:45.9106 raw data: VIRTUAL-SKIN:45910.6 VIRTUAL-SKIN-HINT:45910.6 
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE:45.9106 raw data: VIRTUAL-SKIN:45910.6 VIRTUAL-SKIN-CHARGE:45910.6 
+10-02 14:13:25.637 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 0, avg power = 592.638
+10-02 14:13:25.707 D/AndroidRuntime(28391): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-02 14:13:25.710 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:13:24:709 - 14:13:25:710, duration: 1000, le_adv_count: 1, total_le_adv_count: 1696, total_event_count: 1
+10-02 14:13:25.717 I/AndroidRuntime(28391): Using default boot image
+10-02 14:13:25.717 I/AndroidRuntime(28391): Leaving lock profiling enabled
+10-02 14:13:25.721 I/app_process(28391): Core platform API enforcement disabled by runtime option
+10-02 14:13:25.722 I/app_process(28391): Using generational CollectorTypeCMC GC.
+10-02 14:13:25.838 D/nativeloader(28391): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+10-02 14:13:25.859 D/nativeloader(28391): Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 14:13:25.860 D/app_process(28391): u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/10/icu") succeeded. 
+10-02 14:13:25.860 D/app_process(28391): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt78l.dat
+10-02 14:13:25.861 D/nativeloader(28391): Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 14:13:25.863 D/nativeloader(28391): Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-02 14:13:25.864 I/app_process(28391): Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+10-02 14:13:25.872 D/libnfc_nci( 3996): ART-GC black_dense_end:0x207a000 mid_gen_end:0x207d000 post_compact_end:0x207d000 black_allocations_begin:0x209d000 young:1 performed_compaction:1
+10-02 14:13:25.909 D/nativeloader(28391): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-02 14:13:25.910 D/AndroidRuntime(28391): Calling main entry com.android.commands.monkey.Monkey
+10-02 14:13:25.912 D/nativeloader(28391): Load /system/lib64/libmonkey_jni.so using ns default for caller /system/framework/monkey.jar in same partition (is_bridged=0): ok
+10-02 14:13:25.912 W/Monkey  (28391): args: [-p, com.google.android.contactkeys, -c, android.intent.category.LAUNCHER, 1]
+10-02 14:13:25.916 I/AconfigPackage(28391): com.android.art.flags is mapped to com.android.art
+10-02 14:13:25.916 I/AconfigPackage(28391): com.android.art.rw.flags is mapped to com.android.art
+10-02 14:13:25.916 I/AconfigPackage(28391): com.android.libcore is mapped to com.android.art
+10-02 14:13:25.917 I/AconfigPackage(28391): com.android.adbd.flags is mapped to com.android.adbd
+10-02 14:13:25.917 I/AconfigPackage(28391): com.android.devicelock.flags is mapped to com.android.devicelock
+10-02 14:13:25.917 I/AconfigPackage(28391): com.android.nfc.module.flags is mapped to com.android.nfcservices
+10-02 14:13:25.917 I/AconfigPackage(28391): com.android.nfc.module.nonexported.flags is mapped to com.android.nfcservices
+10-02 14:13:25.917 I/AconfigPackage(28391): com.google.android.widevine.flags is mapped to com.google.android.widevine
+10-02 14:13:25.918 I/AconfigPackage(28391): com.android.system.virtualmachine.flags is mapped to com.android.virt
+10-02 14:13:25.918 I/AconfigPackage(28391): com.android.wifi.flags is mapped to com.android.wifi
+10-02 14:13:25.918 I/AconfigPackage(28391): android.provider.flags is mapped to com.android.configinfrastructure
+10-02 14:13:25.918 I/AconfigPackage(28391): com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+10-02 14:13:25.918 I/AconfigPackage(28391): com.android.icu is mapped to com.android.i18n
+10-02 14:13:25.919 I/AconfigPackage(28391): com.android.scheduling.flags is mapped to com.android.scheduling
+10-02 14:13:25.919 I/AconfigPackage(28391): com.android.signature.flags is mapped to com.android.mediaprovider
+10-02 14:13:25.919 I/AconfigPackage(28391): com.android.providers.media.flags is mapped to com.android.mediaprovider
+10-02 14:13:25.919 I/AconfigPackage(28391): android.graphics.pdf.flags is mapped to com.android.mediaprovider
+10-02 14:13:25.919 I/AconfigPackage(28391): android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+10-02 14:13:25.919 I/AconfigPackage(28391): com.android.adservices.flags is mapped to com.android.adservices
+10-02 14:13:25.919 I/AconfigPackage(28391): com.android.sdksandbox.flags is mapped to com.android.adservices
+10-02 14:13:25.919 I/AconfigPackage(28391): android.app.sdksandbox.flags is mapped to com.android.adservices
+10-02 14:13:25.919 I/AconfigPackage(28391): com.android.uprobestats.flags is mapped to com.android.uprobestats
+10-02 14:13:25.919 I/AconfigPackage(28391): android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+10-02 14:13:25.920 I/AconfigPackage(28391): com.android.webapp.flags is mapped to com.android.webapp
+10-02 14:13:25.920 I/AconfigPackage(28391): com.android.compos.flags is mapped to com.android.compos
+10-02 14:13:25.920 I/AconfigPackage(28391): com.android.rkpd.flags is mapped to com.android.rkpd
+10-02 14:13:25.920 I/AconfigPackage(28391): com.android.crashrecovery.flags is mapped to com.android.crashrecovery
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.media.extractor.flags is mapped to com.android.media
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.media.metrics.flags is mapped to com.android.media
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.media.mainline.flags is mapped to com.android.media
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.appsearch.flags is mapped to com.android.appsearch
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.bluetooth.beta.flags is mapped to com.android.bt
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.bluetooth.flags is mapped to com.android.bt
+10-02 14:13:25.921 I/AconfigPackage(28391): com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.uwb.flags is mapped to com.android.uwb
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.ranging.flags is mapped to com.android.uwb
+10-02 14:13:25.922 I/AconfigPackage(28391): android.telecom.flags is mapped to com.android.telephonycore
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.internal.telecom.flags is mapped to com.android.telephonycore
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.telephony.flags is mapped to com.android.telephonycore
+10-02 14:13:25.922 I/AconfigPackage(28391): android.media.swcodec.flags is mapped to com.android.media.swcodec
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.permission.flags is mapped to com.android.permission
+10-02 14:13:25.922 I/AconfigPackage(28391): com.android.permissioncontroller.flags is mapped to com.android.permission
+10-02 14:13:25.923 I/AconfigPackage(28391): com.android.npumanager is mapped to com.android.npumanager
+10-02 14:13:25.923 I/AconfigPackage(28391): com.android.ipsec.flags is mapped to com.android.ipsec
+10-02 14:13:25.923 I/AconfigPackage(28391): com.android.os.statsd.flags is mapped to com.android.os.statsd
+10-02 14:13:25.923 I/AconfigPackage(28391): com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.healthfitness.flags is mapped to com.android.healthfitness
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.healthfitness.beta is mapped to com.android.healthfitness
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.tethering.mainline.beta is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): android.net.http is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.tethering.readonly.flags is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): android.net.vcn is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.net.flags is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.tethering.flags is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.tethering.beta.test is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.nearby.flags is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): com.android.net.thread.flags is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): android.net.http.flags is mapped to com.android.tethering
+10-02 14:13:25.924 I/AconfigPackage(28391): android.os.profiling is mapped to com.android.profiling
+10-02 14:13:25.924 I/AconfigPackage(28391): android.os.profiling.anomaly.beta.flags is mapped to com.android.profiling
+10-02 14:13:25.924 I/AconfigPackage(28391): android.os.profiling.anomaly.flags is mapped to com.android.profiling
+10-02 14:13:25.924 E/FeatureFlagsImplExport(28391): android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+10-02 14:13:25.935 I/EventHub( 1842): No input device configuration file found for device 'Monkey touch'.
+10-02 14:13:25.936 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/power_supply": No such file or directory
+10-02 14:13:25.936 E/EventHub( 1842): Could not open directory "/sys/devices/power_supply": No such file or directory
+10-02 14:13:25.936 E/EventHub( 1842): Could not open directory "/sys/power_supply": No such file or directory
+10-02 14:13:25.936 W/Monkey  (28391):  arg: "-p"
+10-02 14:13:25.936 E/EventHub( 1842): Could not open directory "/sys/devices/virtual/leds": No such file or directory
+10-02 14:13:25.936 E/EventHub( 1842): Could not open directory "/sys/devices/leds": No such file or directory
+10-02 14:13:25.936 W/Monkey  (28391):  arg: "com.google.android.contactkeys"
+10-02 14:13:25.936 E/EventHub( 1842): Could not open directory "/sys/leds": No such file or directory
+10-02 14:13:25.936 W/Monkey  (28391):  arg: "-c"
+10-02 14:13:25.937 W/Monkey  (28391):  arg: "android.intent.category.LAUNCHER"
+10-02 14:13:25.937 W/Monkey  (28391):  arg: "1"
+10-02 14:13:25.937 W/Monkey  (28391): data="com.google.android.contactkeys"
+10-02 14:13:25.937 W/Monkey  (28391): data="android.intent.category.LAUNCHER"
+10-02 14:13:25.938 I/EventHub( 1842): usingClockIoctl=true
+10-02 14:13:25.938 I/EventHub( 1842): New device: id=14, fd=537, path='/dev/input/event4', name='Monkey touch', classes=TOUCH | TOUCH_MT, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false, 
+10-02 14:13:25.940 I/InputReader( 1842): Device reconfigured: id=14, name='Monkey touch', size 1080x2400, orientation Rotation0, mode DIRECT, display id 0
+10-02 14:13:25.940 I/InputReader( 1842): Device added: id=14, eventHubId=14, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+10-02 14:13:25.960 W/ActivityManager( 1842): registerReceiverWithFeature: no app for null
+10-02 14:13:25.966 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 14:13:25.970 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 14:13:25.977 I/Monkey  (28391): ** No activities found to run, monkey aborted.
+10-02 14:13:25.977 I/app_process(28391): System.exit called, status: -4
+10-02 14:13:25.977 I/AndroidRuntime(28391): VM exiting with result code -4.
+10-02 14:13:25.998 I/EventHub( 1842): Removing device Monkey touch due to epoll hang-up event.
+10-02 14:13:25.999 I/EventHub( 1842): Removed device: path=/dev/input/event4 name=Monkey touch id=14 fd=537 classes=TOUCH | TOUCH_MT
+10-02 14:13:26.000 I/InputReader( 1842): Device removed: id=14, eventHubId=14, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f', sources=TOUCHSCREEN
+10-02 14:13:26.056 D/WindowManager( 1842): Direct invocation of sendNewConfiguration: Display{#0 state=ON size=1080x2400 ROTATION_0}
+10-02 14:13:26.056 I/EventHub( 1842): Removing device '/dev/input/event4' due to inotify event
+10-02 14:13:26.061 D/NavigationModeController( 3743): getCurrentUserContext: contextUser=0 currentUser=0
+10-02 14:13:26.064 I/PkModeUpdater(15684): PkModeUpdater.refreshDevices():206 refreshing devices
+10-02 14:13:26.323 I/NearbyMediums( 4261): Found Fast Ble Advertisements :
+10-02 14:13:26.323 I/NearbyMediums( 4261): BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x45 0x54 0x32 0x49 0x11 0x32 0x18 0x8a 0xf1 0xa4 0x2c 0x97 0xed 0x60 0x36 0x06 0x8a 0xbd 0x10 0x71 0x57 0xbd ], deviceToken=[ 0x20 0x5b ], rxAdvertisement=null } : 7 times.
+10-02 14:13:26.323 I/NearbyMediums( 4261): Total 7 fast advertisements from 1 unique advertisers.
+10-02 14:13:26.324 I/NearbyMediums( 4261): Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+10-02 14:13:27.102 I/pixel-thermal( 1850): VIRTUAL-SKIN:45.9106 raw data: VIRTUAL-NEUTRAL:45910.6 VIRTUAL-NEUTRAL-SKIN2:45570.2 VIRTUAL-QUIET-NEUTRAL:43519.5 VIRTUAL-SKIN:45910.6 disp_therm:42487 gnss_tcxo_therm:47228 neutral_therm:44594 quiet_therm:43059 skin_therm1:47156 skin_therm2:47848 
+10-02 14:13:28.046 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:pidof com.google.android.contactkeys'
+10-02 14:13:28.141 I/adbd    ( 1339): adbd service requested 'sync:'
+10-02 14:13:28.180 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.probe/.UiActivity'
+10-02 14:13:28.264 W/ActivityTaskManager( 1842): callingPackage for (uid=2000, pid=28409) has no WPC
+10-02 14:13:28.264 E/libbinder.IPCThreadState( 1842): Binder transaction failure. id: 2424302, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+10-02 14:13:28.265 W/ActivityManager( 1842): pid 1842 system sent binder code 1 with flags 0 and got error -32
+10-02 14:13:28.266 V/GrammaticalInflectionUtils( 1842): AttributionSource: android.content.AttributionSource@3dacc844 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-02 14:13:28.269 V/WindowManager( 1842): Aborting Transition: 3449
+10-02 14:13:28.269 D/KeyguardService( 3743): setOccluded(false)
+10-02 14:13:28.270 D/WindowManagerOcclusion( 3743): #onKeyguardServiceSetOccluded(false)
+10-02 14:13:28.270 V/ActivityTaskManager( 1842): TaskLaunchParamsModifier: phase=2 task=Task{ad860ae #915 type=standard A=10362:com.vrp.probe} activity=ActivityRecord{167971414 u0 com.vrp.probe/.UiActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@98248018 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@98248018 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+10-02 14:13:28.270 I/ActivityTaskManager( 1842): START u0 {flg=0x10000000 xflg=0x5 cmp=com.vrp.probe/.UiActivity} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=3
+10-02 14:13:28.270 I/libbinder.BpBinder(  697): onLastStrongRef automatically unlinking death recipients for binder (0xb4000070df74b070) with descriptor: '(not cached)'
+10-02 14:13:28.271 D/WindowManagerShell( 3743): onActivityRestartAttempt: topActivity=ComponentInfo{com.vrp.probe/com.vrp.probe.UiActivity}, wasVisible=true, displayId=0, pipDisplayLayoutState#displayId=0
+10-02 14:13:28.582 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 14:13:28.712 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 129 ms
+10-02 14:13:28.757 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 14:13:28.758 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 14:13:28.758 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 14:13:29.107 I/NearbyPresence( 4261): (REDACTED) [NP_EVENT] %s
+10-02 14:13:29.725 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:13:28:723 - 14:13:29:724, duration: 1000, le_adv_count: 1, total_le_adv_count: 1697, total_event_count: 1
+10-02 14:13:30.124 W/android.system.suspend-service(  685): BPF wakelock stats failed, falling back to sysfs: Success
+10-02 14:13:31.154 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:13:30:152 - 14:13:31:153, duration: 1001, le_adv_count: 1, total_le_adv_count: 1698, total_event_count: 1
+10-02 14:13:31.765 I/WifiHAL ( 1114): Creating message to get link statistics; iface = 47
+10-02 14:13:31.895 E/libbinder.IPCThreadState( 1114): binder thread pool (1 threads) starved for 130 ms
+10-02 14:13:31.940 I/MlConnectedScorer( 1842): 1. stats.getStatusDataStall()=0
+10-02 14:13:31.941 I/MlConnectedScorer( 1842): 2. stats.getStatusDataStall()=0
+10-02 14:13:31.941 I/MlConnectedScorer( 1842): handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+10-02 14:13:32.614 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:13:31:591 - 14:13:32:614, duration: 1022, le_adv_count: 2, total_le_adv_count: 1700, total_event_count: 2
+10-02 14:13:32.646 I/pixel-thermal( 1850): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-CHG:-5907 VIRTUAL-USB-UI:1 charger_skin_therm:48302 usb_pwr_therm2:42395 
+10-02 14:13:32.649 I/pixel-thermal( 1850): cellular-emergency:45.6739 raw data: VIRTUAL-NEUTRAL:45673.9 VIRTUAL-NEUTRAL-SKIN2:45407.3 VIRTUAL-QUIET-NEUTRAL:43498.8 VIRTUAL-SKIN:45673.9 cellular-emergency:45673.9 disp_therm:42510 gnss_tcxo_therm:46822 neutral_therm:44525 quiet_therm:43059 skin_therm1:46774 skin_therm2:47466 
+10-02 14:13:32.649 I/pixel-thermal( 1850): VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-CHG:-5907 VIRTUAL-USB-THROTTLING:1 usb_pwr_therm2:42395 
+10-02 14:13:32.650 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU:45.6739 raw data: VIRTUAL-SKIN:45673.9 VIRTUAL-SKIN-CPU:45673.9 
+10-02 14:13:32.650 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU power_budget=800 err=-4.67385 s_power=800 time_elapsed_ms=7007 p=-1869.54 i=-0.0302505 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 14:13:32.651 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU binded power rails: (S3M_VDD_CPUCL1: 12.58 mW)(S2M_VDD_CPUCL2: 15.64 mW)(S4M_VDD_CPUCL0: 24.45 mW)
+10-02 14:13:32.651 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU:45.6739 raw data: VIRTUAL-SKIN:45673.9 VIRTUAL-SKIN-CPU-GPU:45673.9 
+10-02 14:13:32.651 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU power_budget=419.877 err=-0.673855 s_power=800 time_elapsed_ms=7007 p=-202.156 i=-177.966 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0 is_emul_throttling_info=0
+10-02 14:13:32.652 I/pixel-thermal( 1850): VIRTUAL-SKIN-CPU-GPU binded power rails: (S2S_VDD_G3D: 1.73 mW)(S3M_VDD_CPUCL1: 12.58 mW)(S2M_VDD_CPUCL2: 15.64 mW)(S4M_VDD_CPUCL0: 24.45 mW)
+10-02 14:13:32.652 I/pixel-thermal( 1850): VIRTUAL-SKIN-HINT:45.6739 raw data: VIRTUAL-SKIN:45673.9 VIRTUAL-SKIN-HINT:45673.9 
+10-02 14:13:32.652 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE:45.6739 raw data: VIRTUAL-SKIN:45673.9 VIRTUAL-SKIN-CHARGE:45673.9 
+10-02 14:13:32.652 I/pixel-thermal( 1850): VIRTUAL-SKIN-CHARGE's fcc binded power rail POWER_FOR_CHARGING_THROTTLING: power threshold = 0, avg power = 592.84
+10-02 14:13:34.039 I/bthal.activity( 1056): bt_power: LeAdvStat: 14:13:33:030 - 14:13:34:038, duration: 1008, le_adv_count: 2, total_le_adv_count: 1702, total_event_count: 2
+10-02 14:13:34.104 I/pixel-thermal( 1850): VIRTUAL-SKIN:45.6739 raw data: VIRTUAL-SKIN:45673.9 
+10-02 14:13:34.336 I/adbd    ( 1339): adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-v' 'time''

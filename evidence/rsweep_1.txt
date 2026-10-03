@@ -1,0 +1,9 @@
+{"pkg": "com.android.bips", "cls": "com.android.bips.PdfPrintActivity", "action": "android.intent.action.SEND", "mime": "application/pdf", "scheme": null}
+--------- beginning of main
+10-02 18:47:50.539 I/VRPPROBE(13347): UiActivity.onCreate uid=10362 pkg=com.vrp.probe
+10-02 18:47:50.553 I/VRPPROBE(13347): CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=198
+10-02 18:47:50.553 I/VRPPROBE(13347): CMD type=result label=c1
+10-02 18:47:50.555 I/VRPPROBE(13347): RESULT_CMD #Intent;action=android.intent.action.SEND;type=application/pdf;launchFlags=0x10008000;component=com.vrp.probe/.ResultActivity;S.com.vrp.probe.LABEL=c1;S.com.vrp.probe.PKGNAME=com.android.bips;S.com.vrp.probe.TARGET=com.android.bips%2Fcom.android.bips.PdfPrintActivity;end
+10-02 18:47:50.559 I/VRPPROBE(13347):   RESULT_CMD_DISPATCHED
+10-02 18:47:50.591 I/VRPPROBE(13347): RESULT_START label=? target=Intent { act=android.intent.action.SEND typ=application/pdf flg=0x10008000 xflg=0x4 cmp=com.vrp.probe/.ResultActivity (has extras) }
+10-02 18:47:50.591 I/VRPPROBE(13347): RESULT_FORWARD to com.android.bips/com.android.bips.PdfPrintActivity

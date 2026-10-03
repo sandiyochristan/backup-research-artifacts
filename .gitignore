@@ -1,0 +1,19 @@
+# ---- DERIVED / RE-PULLABLE FROM DEVICE (Google-signed binaries + generated output) ----
+# re-pull with: python3 pull_all.py   (365 APKs, exact same build, seconds each)
+apks/
+smali/
+src/
+__pycache__/
+
+# upstream AOSP kernel source — re-clone:
+#   git clone --depth 1 -b android14-6.1 https://android.googlesource.com/kernel/common
+kernel/common/
+
+# build intermediates (regenerate with poc/probe/build.sh)
+poc/probe/build/
+poc/probe/intermediate.apk
+poc/probe/obj/
+poc/probe/gen/
+poc/probe/dex_output/
+poc/probe/compiled_res.zip
+poc/probe/classes/

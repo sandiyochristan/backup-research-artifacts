@@ -1,0 +1,23 @@
+
+====================================================================================================
+CMD: {"type": "start", "action": "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE", "extras": {"commissioning_flow": "1", "device_name": "attacker-lock"}, "label": "matter-extra"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:04:00.999 20818 20818 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:04:01.000 20818 20818 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=186
+10-02 14:04:01.001 20818 20818 I VRPPROBE: CMD type=start label=matter-extra
+10-02 14:04:01.001 20818 20818 W VRPPROBE: UNKNOWN_TYPE start
+10-02 14:04:01.001 20818 20818 I VRPPROBE: == EXEC DONE
+
+
+====================================================================================================
+CMD: {"type": "start", "action": "com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE", "extras": {"commissioning_flow": "1", "device_name": "attacker-lock"}, "label": "matter-extra"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 14:06:43.294 21235 21235 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 14:06:43.295 21235 21235 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=186
+10-02 14:06:43.295 21235 21235 I VRPPROBE: CMD type=start label=matter-extra
+10-02 14:06:43.295 21235 21235 I VRPPROBE: START #Intent;action=com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE;S.device_name=attacker-lock;S.commissioning_flow=1;end
+10-02 14:06:43.302 21235 21235 I VRPPROBE:   START_OK
+10-02 14:06:43.302 21235 21235 I VRPPROBE: == EXEC DONE
+

@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.contacts", "cls": "com.google.android.apps.contacts.activities.leaf.ui.picker.ContactPickerForDeprecatedApiActivity", "action": "android.intent.action.GET_CONTENT", "mime": "vnd.android.cursor.dir/person", "scheme": null}

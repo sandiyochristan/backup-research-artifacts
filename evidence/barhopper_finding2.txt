@@ -1,0 +1,26 @@
+=== BARHOPPER OOB READ PROOF ===
+
+[F1] stride OOB @ libbarhopper+0x161ac
+
+   161a4: aa0d03f1     	mov	x17, x13
+   161a8: b400012e     	cbz	x14, 0x161cc <Java_com_google_android_libraries_barhopper_Barhopper_parseRawValue+0x6bf0>
+   161ac: 38401620     	ldrb	w0, [x17], #0x1
+   161b0: d10005ce     	sub	x14, x14, #0x1
+   161b4: d341fc00     	lsr	x0, x0, #1
+   161b8: 927e1000     	and	x0, x0, #0x7c
+
+[F2] CalculateBlackPoints OOB @ libbarhopper+0x474d8 (full lib, wear.companion)
+
+0000000000047478 <_ZN9barhopper12_GLOBAL__N_120CalculateBlackPointsERKNS_9LuminanceEPh>:
+   474d0: aa1003e0     	mov	x0, x16
+   474d4: 34000111     	cbz	w17, 0x474f4 <_ZN9barhopper12_GLOBAL__N_120CalculateBlackPointsERKNS_9LuminanceEPh+0x7c>
+   474d8: fd400003     	ldr	d3, [x0]
+   474dc: 8b080000     	add	x0, x0, x8
+   474e0: 51000631     	sub	w17, w17, #0x1
+
+[F2] multi-seed reproduction (all off_in_lib=0x474d8):
+  seed=9 reproduced
+  seed=42 reproduced
+  seed=7 reproduced
+  seed=100 reproduced
+  seed=200 reproduced

@@ -1,0 +1,11 @@
+
+====================================================================================================
+CMD: {"type": "getType", "uri": "content://com.google.android.inputmethod.latin.wdb/", "label": "gettype:wdb"}
+----------------------------------------------------------------------------------------------------
+--------- beginning of main
+10-02 13:59:49.411 19954 19954 I VRPPROBE: == EXEC RECEIVED action=com.vrp.probe.EXEC from ?
+10-02 13:59:49.413 19954 19954 I VRPPROBE: CMD_SOURCE=file /storage/emulated/0/Android/data/com.vrp.probe/files/cmd.json bytes=105
+10-02 13:59:49.413 19954 19954 I VRPPROBE: CMD type=getType label=gettype:wdb
+10-02 13:59:49.418 19954 19954 I VRPPROBE:   GETTYPE content://com.google.android.inputmethod.latin.wdb/ -> null
+10-02 13:59:49.418 19954 19954 I VRPPROBE: == EXEC DONE
+

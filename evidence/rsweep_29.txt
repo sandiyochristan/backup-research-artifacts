@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.searchlite", "cls": "com.google.android.apps.searchlite.ui.SearchActivity", "action": "android.intent.action.SEND", "mime": "text/plain", "scheme": null}

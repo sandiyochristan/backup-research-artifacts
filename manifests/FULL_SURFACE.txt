@@ -1,0 +1,1356 @@
+
+====================================================================================================
+### com.google.android.inputmethod.latin  v18.2.8.969776716-release-arm64-v8a  targetSdk=None
+    components=72 exported=18
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, CAMERA, GET_ACCOUNTS, READ_CONTACTS, READ_EXTERNAL_STORAGE, READ_MEDIA_IMAGES, READ_MEDIA_VISUAL_USER_SELECTED, READ_USER_DICTIONARY, RECORD_AUDIO, WRITE_USER_DICTIONARY, BIND_SERVICE, READ_GSERVICES, READ_DEVICE_ORIGIN_FIRST_PARTY
+  [service       ] com.android.inputmethod.latin.LatinIME
+       permission=android.permission.BIND_INPUT_METHOD directBootAware=true
+       actions=['android.view.InputMethod']
+  [activity      ] com.google.android.libraries.inputmethod.launcher.LauncherActivity
+       
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.LAUNCHER']
+  [activity      ] com.google.android.apps.inputmethod.latin.preference.SettingsActivity
+       taskAffinity=com.google.android.apps.inputmethod.latin.preference.SettingsActivity
+  [provider      ] com.google.android.apps.inputmethod.latin.preference.SettingsSearchIndexablesProvider
+       permission=android.permission.READ_SEARCH_INDEXABLES grantUriPermissions=true
+       actions=['android.content.action.SEARCH_INDEXABLES_PROVIDER']
+  [activity      ] com.google.android.apps.inputmethod.latin.sharing.LinkReceivingLauncherActivity
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['https'] hosts=['deeplink.com.google.android.inputmethod.latin'] paths=[] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [service       ] com.android.inputmethod.latin.spellcheck.AndroidSpellCheckerService
+       permission=android.permission.BIND_TEXT_SERVICE
+       actions=['android.service.textservice.SpellCheckerService']
+  [activity      ] com.google.android.apps.inputmethod.latin.spelling.LatinSpellCheckerSettingsActivity
+       
+       actions=['android.intent.action.MAIN']
+  [activity      ] com.google.android.apps.inputmethod.latin.stylus.StylusSettingsActivity
+       
+  [receiver      ] com.google.android.apps.inputmethod.libs.kcm.InputDeviceReceiver
+       
+       actions=['android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS']
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.inputmethod.accounts.checker.AccountsCapabilitiesChangedReceiver
+       
+       actions=['com.google.android.gms.auth.ACCOUNT_CAPABILITIES_CHANGED']
+  [receiver      ] com.google.android.libraries.inputmethod.pixelbundle.PixelBundleBroadcastReceiver
+       permission=com.google.android.inputmethod.latin.pixelbundle.RECEIVER
+  [provider      ] com.google.android.libraries.inputmethod.webdebugbridge.WebDebugBridgeContentProvider
+       
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.inputmethod.latin  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.inputmethod.latin  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.inputmethod.latin  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.inputmethod.latin  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.deviceusagestudy  v9.9.6  targetSdk=None
+    components=81 exported=27
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, GET_ACCOUNTS, MANAGE_ACCOUNTS, PACKAGE_USAGE_STATS, READ_GSERVICES
+  [activity      ] com.google.android.apps.userpanel.activities.MobileFirstPanelNotificationsActivity
+       launchMode=1
+  [service       ] com.google.android.apps.userpanel.services.MeteringAccessibilityService
+       permission=android.permission.BIND_ACCESSIBILITY_SERVICE process=@0x7f1301b2
+       actions=['android.accessibilityservice.AccessibilityService']
+  [receiver      ] com.google.android.apps.userpanel.receivers.ApplicationBroadcastReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED', 'android.intent.action.QUICKBOOT_POWERON', 'android.intent.action.MY_PACKAGE_REPLACED', 'android.intent.action.USER_PRESENT', 'com.htc.intent.action.QUICKBOOT_POWERON']
+  [receiver      ] com.google.android.apps.userpanel.receivers.ApplicationShutdownReceiver
+       
+       actions=['android.intent.action.ACTION_SHUTDOWN', 'android.intent.action.QUICKBOOT_POWEROFF']
+  [receiver      ] com.google.android.apps.userpanel.services.IdleBroadcastService
+       
+       actions=['android.intent.action.USER_PRESENT']
+  [receiver      ] com.google.android.apps.userpanel.receivers.DeviceStateReceiver
+       
+       actions=['android.intent.action.ACTION_SHUTDOWN', 'android.intent.action.BOOT_COMPLETED', 'android.intent.action.MY_PACKAGE_REPLACED', 'android.intent.action.QUICKBOOT_POWEROFF', 'android.intent.action.QUICKBOOT_POWERON', 'android.intent.action.TIME_SET', 'android.intent.action.USER_PRESENT', 'android.net.conn.CONNECTIVITY_CHANGE', 'com.htc.intent.action.QUICKBOOT_POWERON']
+  [receiver      ] com.google.android.apps.userpanel.receivers.BatteryLevelReceiver
+       
+       actions=['android.intent.action.BATTERY_LOW', 'android.intent.action.BATTERY_OKAY']
+  [receiver      ] com.google.android.apps.userpanel.simplelogin.SimpleLoginRequiredReceiver
+       
+       actions=['android.net.conn.CONNECTIVITY_CHANGE', 'android.intent.action.ACTION_SHUTDOWN', 'android.intent.action.REBOOT', 'com.google.android.apps.userpanel.ACTION_WIFI_AVAILABLE', 'com.google.android.apps.userpanel.ACTION_WIFI_LOST', 'com.google.android.apps.userpanel.ACTION_SEND_SIMPLE_LOGIN', 'com.google.android.apps.userpanel.ACTION_SIMPLE_LOGIN_ROUTER_ID_CHECK']
+  [activity      ] com.google.android.apps.userpanel.activities.FlutterMainActivity
+       launchMode=1
+       actions=['android.intent.action.MAIN', 'android.intent.action.VIEW']
+       data schemes=['http', 'https'] hosts=['@0x7f1300f5', '@0x7f1300f5'] paths=['@0x7f1300f6', '@0x7f1300f4'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity      ] com.google.android.apps.userpanel.activities.MobileFirstPanelFeatureDeactivationActivity
+       launchMode=1
+  [activity      ] com.google.android.apps.userpanel.auth.SignInFlowActivity
+       launchMode=1
+  [activity      ] com.google.android.apps.userpanel.activities.MobileFirstPanelAboutActivity
+       launchMode=1
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [activity      ] com.google.firebase.auth.internal.GenericIdpActivity
+       launchMode=2 excludeFromRecents=true
+       actions=['android.intent.action.VIEW']
+       data schemes=['genericidp'] hosts=['firebase.auth'] paths=['/'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity      ] com.google.firebase.auth.internal.RecaptchaActivity
+       launchMode=2 excludeFromRecents=true
+       actions=['android.intent.action.VIEW']
+       data schemes=['recaptcha'] hosts=['firebase.auth'] paths=['/'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.deviceusagestudy  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.deviceusagestudy  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.deviceusagestudy  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.deviceusagestudy  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.deviceusagestudy  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.chromecast.app  v4.31.27.4  targetSdk=None
+    components=289 exported=37
+  SENSITIVE PERMS: ACCESS_BACKGROUND_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, CALL_PHONE, CAMERA, GET_ACCOUNTS, MANAGE_ACCOUNTS, READ_CONTACTS, RECORD_AUDIO, WRITE_EXTERNAL_STORAGE, BIND_SERVICE, ACCESS_SECURED, READ_GSERVICES
+  [provider      ] com.google.android.libraries.home.notifications.fable.CameraPreviewProvider
+       
+  [activity      ] com.google.android.apps.chromecast.app.deeplink.DeeplinkActivity
+       
+       actions=['android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'com.google.android.apps.chromecast.app.DEVICES', 'com.google.android.apps.chromecast.app.CREATE_GROUP', 'com.google.android.apps.chromecast.app.DEVICE_SETTINGS', 'com.google.android.apps.chromecast.app.BACKDROP_SETTINGS', 'com.google.android.apps.chromecast.app.DEVICE_SETUP', 'com.google.android.apps.chromecast.app.wifisetupapp.UNLINKED_DEVICE_SETUP', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'http', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome', 'googlehome'] hosts=['automations', 'automations', 'device', 'controller', 'sensor', 'devices', 'structures', 'invite-to-structure', 'nest-aware', 'nest-aware', 'nest-aware', 'nest-aware', 'nest-aware', 'nest-aware', 'nest-aware', 'nest-aware', 'nest-aware', 'signup', 'setup', 'setup', 'setup', 'setup', 'setup', 'setup', 'setup', 'setup', 'setup', 'setup', 'setup', 'fsi', 'atriumFileViewer', 'appdownload', 'digital-wellbeing', 'settings', 'homeview', 'feed', 'feed', 'history', 'camera_immersive', 'camera_event', 'wifi', 'wifi', 'wifi', 'wifi', 'com.google.android.apps.chromecast.app', 'creategroup', 'createvideogroup', 'sharesheet', 'partner', 'partner', 'webview', 'setup', 'favorites', 'safety', 'smokeco', 'settings', 'settings', 'wifi', 'permissions', 'controller', 'setup', 'setup', 'enrollment', 'setup', 'setup', 'askhome', 'assistant', 'assistant', 'homeagent', 'homeagent', 'wifi', 'wifi'] paths=['/help-me-create', '/remotecontrol', '/temperature-dashboard', '/non-payer', '/hanging-subscriptions', '/3p-hanging-subscriptions', '/event-video-history', '/play-iap', '/play-iap-management', '/play-iap-catalog', '/avail-next-best-offer', '/3p-setup', '/nest-aware', '/nest-aware', '/hanging-sub-intro', '/homeroutines/haw', '/homeroutines/haw-mini', '/device', '/nest-aware/hanging-subscription-apply', '/duo_account', '/ha_linking', '/interconnect', '/gal', '/smartring', '/feedback', '/primary-network-settings', '/station-list', '/family-wifi', '/migration', '/unifiedSettings', '/invite', '/invite/review', '/garageDoorCameraPlacementGuide', '/alarm', '/category', '/nestprotect/migration', '/tahiti/migration', '/share-password', '/criticalNotifications', '/ghp', '/discovery', '/choobe', '/facematch', '/captions', '/camera-captions-info', '/voice', '/voice/setup', '/memory', '/test-network-speed', '/prioritize-device'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity-alias] com.google.android.apps.chromecast.app.DiscoveryActivity
+       
+       actions=['android.intent.action.MAIN', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'com.google.android.apps.chromecast.app.DEVICE_NOTIFICATION', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['comgooglecast', 'https', 'https', 'https', 'googlehome', 'googlehome', 'https', 'http', 'googlehome'] hosts=['chromecast.com', 'madeby.google.com', 'home.google.com', 'home.google.com', 'dogfood.home.google.com', 'camera', 'camera', 'g.co', 'email-prefs'] paths=['/get-app/watch', '/get-app/watch/', '/get-app/discover', '/get-app/discover/', '/home-app', '/home-app/', '/get-app/watch', '/get-app/watch/', '/get-app/discover', '/get-app/discover/', '/home-app', '/home-app/linked-app-settings', '/home-app/device-settings', '/home-app/', '/home/.*/cameras/list/.*', '/migration', '/nest_hub_max_setup', '/home/app/'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity-alias] com.google.android.apps.chromecast.app.deeplink.ExternalDoorbellDeeplinkActivity
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['googlehome'] hosts=['doorbell_event'] paths=[] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [receiver      ] com.google.android.apps.chromecast.app.gf.maintenance.GeofenceSystemChangeBroadcastReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED', 'android.location.PROVIDERS_CHANGED', 'android.intent.action.MY_PACKAGE_REPLACED', 'android.intent.action.PACKAGE_DATA_CLEARED']
+       data schemes=['package'] hosts=[] paths=[] mimes=[]
+  [receiver      ] com.google.android.apps.chromecast.app.gf.repository.GeofenceTransitionBroadcastReceiver
+       
+       actions=['com.google.android.apps.chromecast.app.gf.GF_TRANSITION']
+  [activity      ] com.google.android.apps.chromecast.app.mediaapps.OAuthHandoffActivity
+       launchMode=2 excludeFromRecents=true
+       actions=['android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['comgooglecast', 'comgooglecast'] hosts=['chromecast.auth.com', 'offers'] paths=['/done', '/end'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [receiver      ] com.google.android.apps.chromecast.app.remotecontrol.safety.LockProximityReceiver
+       permission=android.permission.BLUETOOTH|android.permission.BLUETOOTH_ADMIN
+       actions=['com.google.android.apps.chromecast.app.remotecontrol.safety.action.BLE_SCANNED']
+  [activity      ] com.google.android.apps.chromecast.app.setup.discovery.packages.matter.proxy.MatterSetupProxyActivity
+       launchMode=2
+       actions=['com.google.android.gms.home.matter.ACTION_COMMISSION_DEVICE']
+       cats=['android.intent.category.DEFAULT']
+  [activity      ] com.google.android.apps.chromecast.app.systemcontrol.panel.GoogleHomePanelActivity
+       permission=android.permission.BIND_CONTROLS
+  [service       ] com.google.android.apps.chromecast.app.systemcontrol.HomeControlService
+       permission=android.permission.BIND_CONTROLS
+       actions=['android.service.controls.ControlsProviderService']
+  [activity      ] com.google.android.apps.chromecast.app.titan.dock.activity.FirstDockActivity
+       permission=com.google.android.settings.setup.dock.RUN_DOCK_SETUP
+       actions=['com.android.settings.action.FIRST_DOCK_GHA']
+       cats=['android.intent.category.DEFAULT']
+  [receiver      ] com.google.android.apps.chromecast.app.titan.dock.event.DockEventReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.broadcast.AGS_DOCK_LISTENER']
+  [receiver      ] com.google.android.apps.chromecast.app.util.phenotype.PhenotypeBroadcastReceiver
+       
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [receiver      ] com.google.android.apps.chromecast.app.whc.wifi.WifiChangedImplicitBroadcastReceiver
+       
+       actions=['com.google.android.apps.chromecast.app.whc.wifi.action.WIFI_UPDATE']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [service       ] com.google.android.gms.nearby.exposurenotification.WakeUpService
+       permission=com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK
+  [service       ] com.google.android.gms.tapandpay.issuer.GeneratePaymentCredentialsService
+       permission=com.google.android.gms.permission.SEND_ANDROID_PAY_DATA
+       actions=['com.google.android.gms.tapandpay.issuer.GENERATE_PAYMENT_CREDENTIALS']
+  [activity      ] com.google.android.libraries.accountlinking.activity.AccountLinkingActivity
+       launchMode=2
+       actions=['android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['comgooglecast', 'https'] hosts=['galredirect', 'oauth-redirect.googleusercontent.com'] paths=['/a/com.google.android.apps.chromecast.app'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver
+       
+       actions=['com.google.android.libraries.internal.growth.growthkit.ADD_PROMO', 'com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO', 'com.google.android.libraries.internal.growth.growthkit.SYNC', 'com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS', 'com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE']
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [receiver      ] com.google.firebase.iid.FirebaseInstanceIdReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [activity      ] androidx.activity.ComponentActivity
+       
+  [activity      ] androidx.compose.ui.tooling.PreviewActivity
+       
+  [service       ] androidx.glance.appwidget.GlanceRemoteViewsService
+       permission=android.permission.BIND_REMOTEVIEWS
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.chromecast.app  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.chromecast.app  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.chromecast.app  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  v1.0.973626449  targetSdk=None
+    components=22 exported=8
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, READ_GSERVICES
+  [service       ] com.google.android.apps.safetycore.scw.ClassificationApiService
+       
+       actions=['com.google.android.apps.safetycore.classification.BIND']
+  [service       ] com.google.android.apps.safetycore.signals.SignalStorageApiService
+       
+       actions=['com.google.android.apps.safetycore.signals.BIND']
+  [service       ] com.google.android.apps.safetycore.simpleapi.SimpleApiService
+       
+       actions=['com.google.android.apps.safetycore.simpleapi.BIND']
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.safetycore  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.fitness  v2026.08.27.00.arm64-v8a.release  targetSdk=None
+    components=78 exported=38
+  SENSITIVE PERMS: ACCESS_BACKGROUND_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_NETWORK_STATE, ACTIVITY_RECOGNITION, CAMERA, FOREGROUND_SERVICE_LOCATION, GET_ACCOUNTS, MANAGE_ACCOUNTS, READ_SYNC_SETTINGS, READ_SYNC_STATS, READ_BASAL_METABOLIC_RATE, READ_BLOOD_GLUCOSE, READ_BLOOD_PRESSURE, READ_BODY_FAT, READ_BODY_TEMPERATURE, READ_DISTANCE, READ_EXERCISE, READ_HEART_RATE, READ_HEIGHT, READ_HYDRATION, READ_NUTRITION, READ_OXYGEN_SATURATION, READ_POWER, READ_RESPIRATORY_RATE, READ_SLEEP, READ_SPEED, READ_STEPS, READ_TOTAL_CALORIES_BURNED, READ_WEIGHT, WRITE_ACTIVITY_INTENSITY, WRITE_BASAL_METABOLIC_RATE, WRITE_BLOOD_GLUCOSE, WRITE_BLOOD_PRESSURE, WRITE_BODY_FAT, WRITE_BODY_TEMPERATURE, WRITE_CERVICAL_MUCUS, WRITE_DISTANCE, WRITE_EXERCISE, WRITE_EXERCISE_ROUTE, WRITE_HEART_RATE, WRITE_HEIGHT, WRITE_HYDRATION, WRITE_INTERMENSTRUAL_BLEEDING, WRITE_MENSTRUATION, WRITE_MINDFULNESS, WRITE_NUTRITION, WRITE_OVULATION_TEST, WRITE_OXYGEN_SATURATION, WRITE_POWER, WRITE_RESPIRATORY_RATE, WRITE_RESTING_HEART_RATE, WRITE_SLEEP, WRITE_SPEED, WRITE_STEPS, WRITE_TOTAL_CALORIES_BURNED, WRITE_WEIGHT, ACTIVITY_RECOGNITION, READ_GSERVICES
+  [activity      ] com.google.android.apps.fitness.ahp.ui.AhpConnectActivity
+       permission=com.google.android.apps.healthdata.permission.START_ONBOARDING
+       actions=['androidx.health.ACTION_SHOW_ONBOARDING']
+  [activity-alias] com.google.android.apps.fitness.ahp.ui.AhpConnectActivityPlatform
+       permission=android.permission.health.START_ONBOARDING
+       actions=['android.health.connect.action.SHOW_ONBOARDING']
+  [activity      ] com.google.android.apps.fitness.ahp.ui.PermissionsRationaleActivity
+       
+       actions=['androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE']
+  [activity-alias] com.google.android.apps.fitness.ahp.ui.ViewPermissionUsageActivity
+       permission=android.permission.START_VIEW_PERMISSION_USAGE
+       actions=['android.intent.action.VIEW_PERMISSION_USAGE']
+       cats=['android.intent.category.HEALTH_PERMISSIONS']
+  [service       ] com.google.android.apps.fitness.data.profile.impl.UploadFitProfileJobService
+       permission=android.permission.BIND_JOB_SERVICE
+  [receiver      ] com.google.android.apps.fitness.gcore.subscriptionrefresh.ScheduleSubscriptionRefreshJobOnUpgrade_Receiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.apps.fitness.gcore.subscriptionrefresh.ScheduleSubscriptionRefreshJobOnBoot_Receiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.apps.fitness.home.goalpopup.notification.OnAppUpgradedListener_Receiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.apps.fitness.shared.account.griffinusersupport.GriffinRefreshReceiver_Receiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED', 'android.intent.action.MY_PACKAGE_REPLACED']
+  [activity      ] com.google.android.apps.fitness.shared.container.MainActivity
+       launchMode=2
+  [activity-alias] com.google.android.apps.fitness.welcome.WelcomeActivity
+       
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.LAUNCHER']
+  [receiver      ] com.google.android.apps.fitness.shared.notifications.UpdateNotificationChannelsListener_Receiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED', 'android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.apps.fitness.shared.notifications.settingslog.NotificationSettingsLogger_Receiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.apps.fitness.shared.sync.receiver.PlatformSyncListener_Receiver
+       
+       actions=['com.google.android.gms.fitness.SYNC_PROGRESS']
+  [receiver      ] com.google.android.apps.fitness.v2.widget.renderer.WidgetClickReceiver_Receiver
+       
+  [receiver      ] com.google.android.apps.fitness.v2.widget.HaloAppWidgetProvider
+       
+       actions=['android.appwidget.action.APPWIDGET_UPDATE']
+  [receiver      ] com.google.android.apps.fitness.v2.widget.MetricsAppWidgetProvider
+       
+       actions=['android.appwidget.action.APPWIDGET_UPDATE']
+  [receiver      ] com.google.android.apps.fitness.v2.widget.SingleMetricAppWidgetProvider
+       
+       actions=['android.appwidget.action.APPWIDGET_UPDATE']
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver
+       
+       actions=['com.google.android.libraries.internal.growth.growthkit.ADD_PROMO', 'com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO', 'com.google.android.libraries.internal.growth.growthkit.SYNC', 'com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS', 'com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [receiver      ] com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.apps.tiktok.nav.gateway.AnimatedGatewayActivity
+       excludeFromRecents=true
+  [activity      ] com.google.apps.tiktok.nav.gateway.GatewayActivity
+       excludeFromRecents=true
+  [activity-alias] com.google.android.apps.fitness.shared.gateway.FitGateway
+       
+       actions=['vnd.google.fitness.TRACK', 'vnd.google.fitness.TRACK', 'vnd.google.fitness.TRACK', 'vnd.google.fitness.TRACK', 'vnd.google.fitness.sleep', 'vnd.google.fitness.VIEW', 'vnd.google.fitness.VIEW', 'vnd.google.fitness.VIEW', 'com.google.android.apps.fitness.ACTIVE_MODE_SHORTCUT', 'com.google.android.apps.fitness.LOG_WEIGHT_SHORTCUT', 'android.appwidget.action.APPWIDGET_CONFIGURE']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.fitness.shared.gateway.FitPermissionIntentGateway
+       permission=android.permission.START_VIEW_PERMISSION_USAGE
+       actions=['android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD', 'android.intent.action.VIEW_PERMISSION_USAGE']
+       cats=['android.intent.category.DEFAULT']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+  [service       ] androidx.health.platform.client.impl.sdkservice.HealthDataSdkService
+       
+       actions=['androidx.health.platform.client.ACTION_BIND_SDK_SERVICE']
+
+====================================================================================================
+### com.google.android.apps.fitness  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.fitness  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.fitness  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.adwords  v3.39.983343617  targetSdk=None
+    components=45 exported=18
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, GET_ACCOUNTS, MANAGE_ACCOUNTS, RECORD_AUDIO, BIND_GET_INSTALL_REFERRER_SERVICE, READ_GSERVICES
+  [activity      ] com.google.android.apps.adwords.flutter.ApplicationActivity
+       launchMode=2
+  [activity-alias] com.google.android.apps.adwords.DeepLinkActivity
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['http', 'https', 'http', 'https'] hosts=['ads.gle', 'ads.gle', 'ads.app.google', 'ads.app.google'] paths=[] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity-alias] com.google.android.apps.adwords.InitialLoadingActivity
+       
+       actions=['android.intent.action.MAIN', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION']
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [activity      ] com.google.android.apps.adwords.flutter.sharing.ShareIntentHandlerActivity
+       
+  [activity-alias] com.google.android.apps.adwords.ShareIntentFilter
+       
+       actions=['android.intent.action.SEND', 'android.intent.action.SEND_MULTIPLE']
+       cats=['android.intent.category.DEFAULT']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver
+       
+       actions=['com.google.android.libraries.internal.growth.growthkit.ADD_PROMO', 'com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO', 'com.google.android.libraries.internal.growth.growthkit.SYNC', 'com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS', 'com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE']
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.adwords  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cloudconsole  v26.09.241400  targetSdk=None
+    components=45 exported=10
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, GET_ACCOUNTS, READ_EXTERNAL_STORAGE, RECORD_AUDIO, WRITE_EXTERNAL_STORAGE, READ_GSERVICES
+  [receiver      ] com.google.android.apps.cloudconsole.common.AccountsChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [activity-alias] com.google.android.apps.cloudconsole.common.ExternalMainContainerActivity
+       launchMode=1
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.LAUNCHER']
+  [activity      ] com.linusu.flutter_web_auth_2.CallbackActivity
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['https'] hosts=['console.cloud.google'] paths=['/m/oauth-redirect'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [receiver      ] com.google.firebase.iid.FirebaseInstanceIdReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.cloudconsole  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cloudconsole  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cloudconsole  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.agentspace  v26.09.2808.989439556  targetSdk=None
+    components=42 exported=15
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, CAMERA, MANAGE_ACCOUNTS, RECORD_AUDIO, WRITE_EXTERNAL_STORAGE, READ_GSERVICES
+  [activity      ] com.google.android.apps.cloud.sparkmobile.MainActivity
+       launchMode=2
+       actions=['android.intent.action.MAIN', 'android.intent.action.VIEW', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION']
+       data schemes=['http', 'https'] hosts=['vertexaisearch.cloud.google.com'] paths=['/mobile'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [activity      ] com.linusu.flutter_web_auth_2.CallbackActivity
+       
+       actions=['android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['http', 'https', 'http', 'https', 'http', 'https'] hosts=['vertexaisearch.cloud.google.com', 'vertexaisearch.cloud.google.com', 'vertexaisearch.cloud.google.com'] paths=['/oauth-redirect', '/oauth-redirect', '/m/oauth-redirect'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity      ] google.cloud.discoveryengine.apps.spark_mobile.plugins.external_redirect.android.ExternalRedirectCallbackActivity
+       launchMode=2
+       actions=['android.intent.action.VIEW']
+       data schemes=['https'] hosts=['vertexaisearch.cloud.google.com'] paths=['/m/oauth-redirect-external-browser'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.agentspace  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.agentspace  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.wellbeing  v1.48.975819457 (880517)  targetSdk=None
+    components=194 exported=61
+  SENSITIVE PERMS: ACCESS_AMBIENT_CONTEXT_EVENT, ACCESS_BACKGROUND_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION, ACCESS_INSTANT_APPS, ACCESS_NETWORK_STATE, ACCESS_NOTIFICATION_POLICY, ACTIVITY_RECOGNITION, MODIFY_PHONE_STATE, PACKAGE_USAGE_STATS, READ_DREAM_STATE, READ_SYSTEM_GRAMMATICAL_GENDER, READ_WALLPAPER_INTERNAL, WRITE_DREAM_STATE, WRITE_EXTERNAL_STORAGE, WRITE_SECURE_SETTINGS, ACTIVITY_RECOGNITION, READ_GSERVICES
+  [provider      ] com.google.android.apps.wellbeing.api.impl.WellbeingSettingsProvider
+       
+  [activity-alias] com.google.android.apps.wellbeing.appdetails.AppDetailsMultiPaneActivity
+       permission=android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+  [service       ] com.google.android.apps.wellbeing.appfunctions.WellbeingAppFunctionService
+       permission=android.permission.BIND_APP_FUNCTION_SERVICE
+       actions=['android.app.appfunctions.AppFunctionService']
+  [receiver      ] com.google.android.apps.wellbeing.appindexing.impl.WellbeingAppIndexingUpdateReceiver_Receiver
+       permission=com.google.android.gms.permission.APPINDEXING
+       actions=['com.google.firebase.appindexing.UPDATE_INDEX']
+  [activity-alias] com.google.android.apps.wellbeing.autodnd.ui.AutoDndGesturesSettingsActivity
+       
+       actions=['com.android.settings.action.IA_SETTINGS', 'com.google.android.apps.wellbeing.action.AUTO_DND', 'android.app.action.AUTOMATIC_ZEN_RULE']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [provider      ] com.google.android.apps.wellbeing.autodnd.ui.SettingsContentProvider
+       
+  [service       ] com.google.android.apps.wellbeing.azr.impl.AzrConditionProviderService
+       permission=android.permission.BIND_CONDITION_PROVIDER_SERVICE directBootAware=true
+       actions=['android.service.notification.ConditionProviderService']
+  [receiver      ] com.google.android.apps.wellbeing.bedtime.manager.SyncBedtimeBroadcastReceiver_Receiver
+       
+       actions=['com.google.android.deskclock.action.BEDTIME_CHANGED']
+  [receiver      ] com.google.android.apps.wellbeing.common.receiver.coalescedreceivers.ContextManagerRestartedCoalescedBroadcast_Receiver
+       permission=com.google.android.gms.contextmanager.CONTEXT_MANAGER_RESTARTED_BROADCAST
+       actions=['com.google.com.android.gms.contextmanager.CONTEXT_MANAGER_RESTARTED']
+  [activity-alias] com.google.android.apps.wellbeing.datamanagement.ui.ExportedDataAccessSettingsActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.VIEW_DATA_ACCESS_SETTINGS']
+       cats=['android.intent.category.DEFAULT']
+  [receiver      ] com.google.android.apps.wellbeing.experiments.listener.impl.PhenotypeConfigurationChangedBroadcastReceiver_Receiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService
+       permission=android.permission.BIND_QUICK_SETTINGS_TILE
+       actions=['android.service.quicksettings.action.QS_TILE']
+  [activity-alias] com.google.android.apps.wellbeing.focusmode.ui.FocusModeConfigActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.FOCUS_MODE']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.focusmode.ui.FocusModeSettingsActivity
+       permission=android.permission.READ_SEARCH_INDEXABLES
+       actions=['com.google.android.apps.wellbeing.focusmode.action.SEARCH_RESULT']
+  [activity      ] com.google.android.apps.wellbeing.kidsmanagement.supervision.ui.SuwSupervisionLandingPageActivity
+       permission=android.permission.BACKUP launchMode=1
+       actions=['com.google.android.apps.wellbeing.kidsmanagement.supervision.SUW_OPEN']
+       cats=['android.intent.category.DEFAULT']
+  [activity      ] com.google.android.apps.wellbeing.multipane.MultiPaneTrampolineActivity
+       permission=android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+       actions=['com.google.android.apps.wellbeing.action.LAUNCH_IN_MULTI_PANE']
+       cats=['android.intent.category.DEFAULT']
+  [receiver      ] com.google.android.apps.wellbeing.powerstate.impl.PowerStateNestDockSignalsReceiver_Receiver
+       permission=com.google.android.apps.nest.DOCK_MANAGER_SERVICE
+       actions=['com.google.android.apps.nest.dockmanager.ACTION_ALLOWLIST_DOCKED', 'com.google.android.apps.nest.dockmanager.ACTION_ALLOWLIST_UNDOCKED']
+  [service       ] com.google.android.apps.wellbeing.screen.ui.GrayscaleTileService
+       permission=android.permission.BIND_QUICK_SETTINGS_TILE directBootAware=true
+       actions=['android.service.quicksettings.action.QS_TILE']
+  [provider      ] com.google.android.apps.wellbeing.searchindexables.impl.WellbeingSearchIndexablesProvider
+       permission=android.permission.READ_SEARCH_INDEXABLES grantUriPermissions=true
+       actions=['android.content.action.SEARCH_INDEXABLES_PROVIDER']
+  [provider      ] com.google.android.apps.wellbeing.slices.impl.WellbeingSliceProvider
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['android-app'] hosts=['com.google.android.apps.wellbeing'] paths=[] mimes=[]
+       cats=['android.app.slice.category.SLICE']
+  [service       ] com.google.android.apps.wellbeing.web.wellbeing.impl.WellbeingService
+       
+       actions=['org.chromium.chrome.browser.usage_stats.service.WELLBEING']
+  [receiver      ] com.google.android.apps.wellbeing.winddown.impl.WindDownClockAlarmActionReceiver_Receiver
+       permission=com.android.systemui.permission.SEND_ALERT_BROADCASTS
+       actions=['com.google.android.deskclock.action.ALARM_PREDISMISS']
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [receiver      ] com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.apps.tiktok.nav.gateway.AnimatedGatewayActivity
+       excludeFromRecents=true
+  [activity      ] com.google.apps.tiktok.nav.gateway.GatewayActivity
+       excludeFromRecents=true
+  [activity-alias] com.google.android.apps.wellbeing.workscheduler.ui.WorkSchedulerEntryActivity
+       
+       actions=['com.google.android.apps.wellbeing.workscheduler.SETTINGS_SEARCH']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.winddown.ui.WindDownDarkThemeSettings
+       
+       actions=['android.settings.BEDTIME_SETTINGS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.winddown.ui.WindDownAutomaticZenRuleEntryActivity
+       
+       actions=['android.app.action.AUTOMATIC_ZEN_RULE']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.winddown.ui.WindDownEntryActivity
+       
+       actions=['android.intent.action.MAIN', 'com.google.android.apps.wellbeing.action.DARK_SCREEN_SETTINGS_ENTRY', 'com.google.android.apps.wellbeing.action.WIND_DOWN', 'com.google.android.apps.wellbeing.action.VIEW_SLEEP_INSIGHT', 'com.google.android.apps.wellbeing.action.VIEW_AMBIENT_CONTEXT_SLEEP_INSIGHTS']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.widget.screentime.PinScreenTimeWidgetGatewayActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.PIN_SCREEN_TIME_WIDGET']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.web.wellbeing.impl.WebsiteDetailsDeepLink
+       
+       actions=['org.chromium.chrome.browser.usage_stats.action.SHOW_WEBSITE_DETAILS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.walkingdetection.ui.WalkingDetectionActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.WALKING_DETECTION_SETTINGS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.speedbumps.ui.SpeedbumpsActivityAlias
+       
+       actions=['com.google.android.apps.wellbeing.action.SPEEDBUMPS_SETTINGS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.sleepinsights.ui.SleepInsightsDailyViewGatewayActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.VIEW_NIGHT_INSIGHTS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.settings.AlwaysEnabledMultiPaneLauncherActivity
+       
+  [activity-alias] com.google.android.apps.wellbeing.settings.AlwaysEnabledSettingsActivity
+       
+  [activity-alias] com.google.android.apps.wellbeing.settings.MultiPaneLauncherActivity
+       launchMode=2
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.LAUNCHER']
+  [activity-alias] com.google.android.apps.wellbeing.settings.LauncherActivity
+       launchMode=2
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.LAUNCHER']
+  [activity-alias] com.google.android.apps.wellbeing.home.TopLevelSettingsActivity
+       
+  [activity-alias] com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity
+       
+       actions=['com.android.settings.action.IA_SETTINGS', 'com.google.android.apps.wellbeing.action.HOME', 'com.android.supervision.action.WELLBEING', 'android.intent.action.MAIN']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.MONKEY']
+  [activity-alias] com.google.android.apps.wellbeing.mindfulnudge.ui.MindfulNudgeActivityForWellbeingFunctions
+       
+       actions=['android.intent.action.VIEW']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.kidsmanagement.supervision.ui.SupervisionLandingPageEntryActivity
+       
+       actions=['com.google.android.apps.wellbeing.kidsmanagenent.supervision.NOTIFICATION_OPEN']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.datamanagement.optin.ui.ExportedBedtimeDataOptInActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.REQUEST_BEDTIME_DATA_CONSENT']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.datamanagement.accessrequest.ExternalAccessRequestActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.REQUEST_ACCESS', 'com.google.android.apps.wellbeing.action.WITHDRAW_ACCESS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.dashboard.DashboardSettingsActivity
+       
+       actions=['android.intent.action.MAIN', 'com.google.android.apps.wellbeing.action.APP_USAGE_DASHBOARD']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.home.AppsNotificationSettingsActivity
+       
+       actions=['com.android.settings.action.IA_SETTINGS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.coughandsnore.consent.ui.ConsentGatewayActivity
+       
+       actions=['com.google.android.apps.wellbeing.action.REQUEST_AMBIENT_DETECTION']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.common.ui.quicksettings.QuickSettingsTileLongPressActivity
+       
+       actions=['android.service.quicksettings.action.QS_TILE_PREFERENCES']
+  [activity-alias] com.google.android.apps.wellbeing.azr.impl.AzrConfigActivity
+       
+  [activity-alias] com.google.android.apps.wellbeing.autodnd.ui.AutoDndNotificationEntryActivity
+       
+       actions=['com.google.android.apps.wellbeing.autodnd.NOTIFICATION_OPEN']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.applimits.ui.AppLimitsSettingsActivity
+       
+       actions=['com.google.android.apps.wellbeing.applimits.action.SETTINGS_SEARCH']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.appindexing.impl.UrlHandlerActivity
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['android-app'] hosts=['com.google.android.apps.wellbeing'] paths=['.*'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity-alias] com.google.android.apps.wellbeing.appdetails.AppInfoSettingsActivity
+       
+       actions=['com.android.settings.action.TIME_SPENT_IN_APP', 'android.settings.action.APP_USAGE_SETTINGS']
+       cats=['android.intent.category.DEFAULT']
+  [activity-alias] com.google.android.apps.wellbeing.appconfig.suspend.gateway.SuspendedAppDetailsDeepLink
+       permission=android.permission.SEND_SHOW_SUSPENDED_APP_DETAILS
+       actions=['android.intent.action.SHOW_SUSPENDED_APP_DETAILS']
+       cats=['android.intent.category.DEFAULT']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.wellbeing  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.classroom  v3.67.982064125  targetSdk=None
+    components=48 exported=18
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, READ_GSERVICES, WRITE_GSERVICES
+  [activity      ] com.google.android.apps.classroom.classroomflutter.MainActivity
+       
+       actions=['android.intent.action.MAIN', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION', 'android.intent.action.VIEW']
+       data schemes=['http', 'https'] hosts=['classroom.google.com'] paths=['', '/', '/h/', '/h/archived', '/s', '/a/..*', '/ai/pa', '/ai/pa/', '/ai/cm', '/ai/cm/', '/ai/hg', '/ai/hg/', '/ai/qg', '/ai/qg/', '@0x7f1301a3', '/c/..*/si/..*/aaa/..*', '/c/..*/..*/..*/details', '/c/..*/..*/..*/submissions', '/c/..*/..*/..*/submissions/..*/..*/student/..*', '/c/..*/sp/..*/..*', '/o/..*', '/r/..*', '/sh/.*', '/u/..*/h', '/u/..*/h/', '/u/..*/h/archived', '/u/..*/s', '/u/..*/a/..*', '/u/..*/ai/pa', '/u/..*/ai/pa/', '/u/..*/ai/cm', '/u/..*/ai/cm/', '/u/..*/ai/hg', '/u/..*/ai/hg/', '/u/..*/ai/qg', '/u/..*/ai/qg/', '/u/..*/c/..*', '/u/..*/c/..*/sp/..*/..*', '/u/..*/o/..*', '/u/..*/r/..*', '/u/..*/w/..*', '/u/..*/w/..*/t/..*', '/w/..*', '/w/..*/t/..*', '/invite/accept/..*', '/invite/accept_token/..*', '/u/..*/invite/accept_token/..*'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity      ] com.google.android.apps.classroom.classroomflutter.share.ShareIntentHandlerActivity
+       
+       actions=['android.intent.action.SEND']
+       cats=['android.intent.category.DEFAULT']
+  [activity      ] com.google.android.flutter.plugins.projector.FileActionActivity
+       
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [activity      ] com.google.android.libraries.abuse.reporting.ReportAbuseActivity
+       
+  [activity      ] com.google.android.libraries.abuse.reportingwidget.ReportingWidgetActivity
+       excludeFromRecents=true
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.classroom  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.classroom  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.classroom  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cultural  v11.9.1133-983802582.1-release  targetSdk=None
+    components=63 exported=18
+  SENSITIVE PERMS: ACCESS_COARSE_LOCATION, ACCESS_NETWORK_STATE, CAMERA, READ_EXTERNAL_STORAGE, RECORD_AUDIO, WRITE_EXTERNAL_STORAGE, READ_GSERVICES
+  [activity      ] com.google.android.apps.cultural.flutter.HomeFlutterActivity
+       launchMode=2
+       actions=['android.intent.action.MAIN', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION', 'android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['https', 'https'] hosts=['www.google.com', 'artsandculture.google.com'] paths=['/culturalinstitute/beta'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity      ] com.google.android.apps.cultural.cameraview.CameraViewActivity
+       
+  [service       ] com.ryanheise.audioservice.AudioService
+       
+       actions=['android.media.browse.MediaBrowserService']
+  [receiver      ] com.ryanheise.audioservice.MediaButtonReceiver
+       
+       actions=['android.intent.action.MEDIA_BUTTON']
+  [receiver      ] com.google.android.apps.cultural.widget.ArtistOfTheDayWidgetProvider
+       
+       actions=['android.appwidget.action.APPWIDGET_UPDATE', 'com.google.android.apps.cultural.widget.APPWIDGET_UPDATE']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.cultural  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cultural  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.seekh  v0.5.961947067  targetSdk=None
+    components=62 exported=19
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, MANAGE_ACCOUNTS, RECORD_AUDIO, BIND_GET_INSTALL_REFERRER_SERVICE, READ_GSERVICES
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [receiver      ] com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.apps.tiktok.nav.gateway.AnimatedGatewayActivity
+       excludeFromRecents=true
+  [activity      ] com.google.apps.tiktok.nav.gateway.GatewayActivity
+       excludeFromRecents=true
+  [activity-alias] com.google.education.seekh.flutter.hybrid.SeekhDeepLink
+       
+       actions=['android.intent.action.VIEW']
+       data schemes=['https'] hosts=['readalong.google', 'readalong.app.google'] paths=['/code', '/join_group', '/story'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity-alias] com.google.android.apps.seekh.SplashActivityDefault
+       
+       actions=['android.intent.action.MAIN', 'com.google.android.apps.seekh.READBOOK', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION']
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.giant  v4.14.826693224  targetSdk=None
+    components=39 exported=13
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, GET_ACCOUNTS, READ_EXTERNAL_STORAGE, READ_MEDIA_IMAGES, WRITE_EXTERNAL_STORAGE, READ_GSERVICES
+  [activity      ] com.google.android.apps.giant.flutter.HostActivity
+       launchMode=2
+       actions=['android.intent.action.MAIN', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION', 'android.intent.action.VIEW']
+       data schemes=['http', 'https', 'https'] hosts=['analytics.google.com'] paths=['/analytics/web'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.giant  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.giant  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.magazines  v5.167.0.974984811  targetSdk=None
+    components=92 exported=24
+  SENSITIVE PERMS: ACCESS_COARSE_LOCATION, ACCESS_NETWORK_STATE, READ_SYNC_SETTINGS, READ_SYNC_STATS, WRITE_SYNC_SETTINGS, READ_GSERVICES
+  [activity      ] com.google.apps.dots.android.app.activity.CurrentsStartActivity
+       launchMode=1
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.LAUNCHER']
+  [activity      ] com.google.apps.dots.android.newsstand.activity.DeepLinkActivity
+       launchMode=2
+       actions=['android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['http', 'http', 'https', 'https', 'http', 'http', 'https', 'https', 'http', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'https', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'http', 'currents', 'magazines', 'newsstand'] hosts=['*.google.com', 'google.com', '*.google.com', 'google.com', '*.google.com', 'google.com', '*.google.com', 'google.com', 'google.com', 'google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', '*.news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com', 'news.google.com'] paths=['/newsstand/s/', '/newsstand/s/', '/newsstand/s/', '/newsstand/s/', '/magazines/reader', '/magazines/reader', '/magazines/reader', '/magazines/reader', '/newsstand/web', '/newsstand/web', '/s/', '/stories', '/publications', '/topics', '/articles', '/foryou', '/home', '/topstories', '/my', '/settings', '/search', '/s/', '/stories', '/publications', '/topics', '/articles', '/foryou', '/home', '/topstories', '/my', '/settings', '/search', '/s/', '/stories', '/publications', '/topics', '/articles', '/foryou', '/home', '/topstories', '/my', '/settings', '/search', '/s/', '/stories', '/publications', '/topics', '/articles', '/foryou', '/home', '/topstories', '/my', '/settings', '/search'] mimes=[]
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [activity      ] com.google.apps.dots.android.newsstand.preference.SettingsActivity
+       launchMode=1
+       actions=['android.intent.action.MAIN']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.NOTIFICATION_PREFERENCES']
+  [activity      ] com.google.apps.dots.android.newsstand.drawer.HelpFeedbackDialogActivity
+       launchMode=1
+  [activity      ] com.google.apps.dots.android.newsstand.search.SearchActivity
+       launchMode=1
+       actions=['android.intent.action.SEARCH']
+  [service       ] com.google.apps.dots.android.modules.revamp.compose.audioplayer.AudioNewsPlaybackService
+       permission=com.google.android.apps.magazines.permission.START_AUDIO_PLAYBACK
+       actions=['androidx.media3.session.MediaSessionService']
+  [service       ] com.google.apps.dots.android.newsstand.service.SyncAdapterService
+       
+       actions=['android.content.SyncAdapter']
+  [service       ] com.google.apps.dots.android.modules.reading.customtabs.CustomTabsKeepAliveService
+       
+       actions=['save']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver
+       
+       actions=['com.google.android.libraries.internal.growth.growthkit.ADD_PROMO', 'com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO', 'com.google.android.libraries.internal.growth.growthkit.SYNC', 'com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS', 'com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS', 'com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE']
+  [receiver      ] com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.accountchanged.AccountChangedReceiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver
+       
+       actions=['android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver
+       
+       actions=['android.intent.action.TIMEZONE_CHANGED']
+  [receiver      ] com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver
+       
+       actions=['android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [receiver      ] com.google.firebase.iid.FirebaseInstanceIdReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [service       ] androidx.glance.appwidget.GlanceRemoteViewsService
+       permission=android.permission.BIND_REMOTEVIEWS
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+  [activity      ] androidx.media3.session.BluetoothValidationActivity
+       permission=android.permission.BLUETOOTH_PRIVILEGED excludeFromRecents=true
+       actions=['android.intent.action.VIEW']
+       data schemes=['content'] hosts=['media'] paths=['/internal/audio/media/'] mimes=['audio/*']
+
+====================================================================================================
+### com.google.android.apps.magazines  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.magazines  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.magazines  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.contactkeys  v1.443.978654235  targetSdk=None
+    components=15 exported=5
+  SENSITIVE PERMS: READ_GSERVICES
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [service       ] com.google.android.gms.contactkeys.service.ContactKeyApiService
+       directBootAware=false
+       actions=['com.google.android.gms.contactkeys.service.ContactKeyApiService.START']
+  [activity      ] com.google.android.gms.contactkeys.MainActivity
+       
+       actions=['android.intent.action.VIEW', 'android.intent.action.INSERT']
+       data schemes=['contactkeys', 'CONTACTKEYS'] hosts=[] paths=[] mimes=['vnd.android.cursor.item/contactkeys']
+       cats=['android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT']
+
+====================================================================================================
+### com.google.android.contactkeys  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.contactkeys  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.contactkeys  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.searchlite  v3.135.855715829.release  targetSdk=None
+    components=78 exported=16
+  SENSITIVE PERMS: ACCESS_FINE_LOCATION, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, CALL_PHONE, CALL_PRIVILEGED, CAMERA, GET_ACCOUNTS, MANAGE_ACCOUNTS, READ_CALENDAR, READ_CONTACTS, READ_EXTERNAL_STORAGE, RECORD_AUDIO, REQUEST_INSTALL_PACKAGES, WRITE_EXTERNAL_STORAGE, WRITE_SETTINGS, READ_GSERVICES
+  [activity      ] com.google.android.apps.searchlite.ui.SearchActivity
+       
+       actions=['android.intent.action.MAIN', 'com.google.android.apps.searchlite.SEARCH', 'android.search.action.GLOBAL_SEARCH', 'com.google.android.apps.searchlite.action.ACTION_OPEN_CONTENT_TYPE', 'com.google.android.apps.searchlite.action.READING_LIST', 'android.intent.action.SEND', 'android.intent.action.WEB_SEARCH', 'com.google.assistant.actions.LAUNCH_ONBOARDING']
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [service       ] com.google.android.apps.searchlite.minusone.GGoMinusOneService
+       
+       actions=['com.android.launcher3.WINDOW_OVERLAY']
+       data schemes=['app'] hosts=[] paths=[] mimes=[]
+  [receiver      ] com.google.android.apps.searchlite.shared.notification.blockstate.NotificationBlockStateChangedBroadcastReceiver_Receiver
+       
+       actions=['android.app.action.APP_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED', 'android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED']
+  [receiver      ] com.google.android.apps.searchlite.widget.SearchLiteWidgetProvider
+       
+       actions=['android.appwidget.action.APPWIDGET_UPDATE', 'android.intent.action.LOCALE_CHANGED']
+  [receiver      ] com.google.android.apps.searchlite.widget.thirdpartydse.ThirdPartyWidgetBroadcastReceiver_Receiver
+       permission=com.google.android.finsky.permission.DSE
+       actions=['com.google.android.finsky.intent.action.UPDATE_DSE', 'com.google.android.finsky.intent.action.UPDATE_DSE_APP_STATE']
+  [receiver      ] com.google.android.libraries.appdoctor.AppDoctorReceiver
+       permission=com.google.android.gms.permission.INTERNAL_BROADCAST
+       actions=['com.google.android.libraries.appdoctor.ACTION_TELE_DOCTOR_FIX']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.android.libraries.social.licenses.LicenseMenuActivity
+       
+  [receiver      ] com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver
+       
+       actions=['android.accounts.LOGIN_ACCOUNTS_CHANGED']
+  [receiver      ] com.google.apps.tiktok.account.data.incognito.IncognitoStartupReceiver_Receiver
+       
+       actions=['android.intent.action.BOOT_COMPLETED', 'android.intent.action.MY_PACKAGE_REPLACED']
+  [receiver      ] com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [activity      ] com.google.apps.tiktok.nav.gateway.AnimatedGatewayActivity
+       excludeFromRecents=true
+  [activity      ] com.google.apps.tiktok.nav.gateway.GatewayActivity
+       excludeFromRecents=true
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.searchlite  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cloud.cloudbi  v2.6.0  targetSdk=None
+    components=33 exported=8
+  SENSITIVE PERMS: ACCESS_NETWORK_STATE, READ_GSERVICES
+  [activity      ] com.google.android.apps.cloud.cloudbi.MainActivity
+       launchMode=2
+       actions=['android.intent.action.MAIN', 'NOTIFICATION_CLICK', 'NOTIFICATION_ACTION', 'android.intent.action.VIEW', 'android.intent.action.VIEW']
+       data schemes=['https', 'https'] hosts=['datastudio.google.com', 'lookerstudio.google.com', '*.looker.com'] paths=['/c/u/.*/reporting/.*', '/u/.*/reporting/.*', '/c/reporting/', '/reporting/', '/s/', '/dashboards/', '/looks/', '/boards/', '/alerts/notifications/', '/folders/'] mimes=[]
+       cats=['android.intent.category.LAUNCHER', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE', 'android.intent.category.DEFAULT', 'android.intent.category.BROWSABLE']
+  [service       ] com.google.android.apps.cloud.cloudbi.PushReceiverService
+       
+       actions=['com.google.firebase.MESSAGING_EVENT']
+  [service       ] com.google.android.gms.auth.api.signin.RevocationBoundService
+       permission=com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver
+       directBootAware=false
+       actions=['android.accounts.action.ACCOUNT_REMOVED']
+  [receiver      ] com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver
+       permission=com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST
+       actions=['com.google.android.gms.phenotype.UPDATE']
+  [receiver      ] com.google.firebase.iid.FirebaseInstanceIdReceiver
+       permission=com.google.android.c2dm.permission.SEND
+       actions=['com.google.android.c2dm.intent.RECEIVE']
+  [service       ] androidx.work.impl.background.systemjob.SystemJobService
+       permission=android.permission.BIND_JOB_SERVICE directBootAware=false
+  [receiver      ] androidx.work.impl.diagnostics.DiagnosticsReceiver
+       permission=android.permission.DUMP directBootAware=false
+       actions=['androidx.work.diagnostics.REQUEST_DIAGNOSTICS']
+
+====================================================================================================
+### com.google.android.apps.cloud.cloudbi  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cloud.cloudbi  vNone  targetSdk=None
+    components=0 exported=0
+
+====================================================================================================
+### com.google.android.apps.cloud.cloudbi  vNone  targetSdk=None
+    components=0 exported=0

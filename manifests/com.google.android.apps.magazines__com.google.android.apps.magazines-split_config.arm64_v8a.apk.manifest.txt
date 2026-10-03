@@ -1,0 +1,13 @@
+N: android=http://schemas.android.com/apk/res/android (line=0)
+  E: manifest (line=0)
+    A: http://schemas.android.com/apk/res/android:versionCode(0x0101021b)=2022250592
+    A: http://schemas.android.com/apk/res/android:splitTypes(0x0101064f)="base__abi" (Raw: "base__abi")
+    A: package="com.google.android.apps.magazines" (Raw: "com.google.android.apps.magazines")
+    A: split="config.arm64_v8a" (Raw: "config.arm64_v8a")
+      E: application (line=0)
+        A: http://schemas.android.com/apk/res/android:hasCode(0x0101000c)=false
+          E: meta-data (line=0)
+            A: http://schemas.android.com/apk/res/android:name(0x01010003)="com.android.vending.derived.apk.id" (Raw: "com.android.vending.derived.apk.id")
+            A: http://schemas.android.com/apk/res/android:value(0x01010024)=5
+      E: uses-sdk (line=0)
+        A: http://schemas.android.com/apk/res/android:minSdkVersion(0x0101020c)=32

@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.apps.docs", "cls": "com.google.android.apps.docs.drive.clipboard.SendTextToClipboardActivity", "action": "android.intent.action.SEND", "mime": "text/plain", "scheme": null}

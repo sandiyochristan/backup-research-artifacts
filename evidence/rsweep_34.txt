@@ -1,0 +1,1 @@
+{"pkg": "com.google.android.bluetooth", "cls": "com.android.bluetooth.opp.BluetoothOppLauncherActivity", "action": "android.intent.action.SEND", "mime": "image/*", "scheme": null}
