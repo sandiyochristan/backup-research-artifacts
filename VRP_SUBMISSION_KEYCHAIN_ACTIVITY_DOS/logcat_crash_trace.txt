@@ -1,0 +1,135 @@
+--------- beginning of main
+09-29 01:44:24.376  2800  2800 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am start -n com.vrp.zeroperm/.KeychainDeserDosActivity --ez minimal true'
+--------- beginning of system
+09-29 01:44:24.422  1505 23883 W ActivityTaskManager: callingPackage for (uid=2000, pid=28691) has no WPC
+09-29 01:44:24.423  1505 23883 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e6ee5be3 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-29 01:44:24.428   543  1840 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb40000720a719480) with descriptor: '(not cached)'
+09-29 01:44:24.429  1505 23883 V ActivityTaskManager: TaskLaunchParamsModifier: phase=2 task=Task{f94899b #851 type=standard A=10397:com.vrp.zeroperm} activity=ActivityRecord{214199151 u0 com.vrp.zeroperm/.KeychainDeserDosActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@13896590 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@13896590 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-29 01:44:24.429  1505 23883 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x4 cmp=com.vrp.zeroperm/.KeychainDeserDosActivity (has extras)} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=0
+09-29 01:44:24.429 26143 26158 V WindowManagerShell: Transition requested (#3100): android.os.BinderProxy@1838d0e TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=851 effectiveUid=10397 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=searchlite://image/... flg=0x10000000 cmp=com.vrp.zeroperm/.OAuthInterceptActivity } baseActivity=ComponentInfo{com.vrp.zeroperm/com.vrp.zeroperm.OAuthInterceptActivity} topActivity=ComponentInfo{com.vrp.zeroperm/com.vrp.zeroperm.KeychainDeserDosActivity} origActivity=null realActivity=ComponentInfo{com.vrp.zeroperm/com.vrp.zeroperm.OAuthInterceptActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=834326903 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@35e3626} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{d1832f com.vrp.zeroperm.KeychainDeserDosActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 132 - 1080, 2337) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3100 }
+09-29 01:44:24.429 26143 26158 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+09-29 01:44:24.431  1505  2321 D CorePackageUpdate: Couldn't find a persistent state for task= 851
+09-29 01:44:24.433  1714  1714 I pixel-thermal: VIRTUAL-SKIN:33.9748 raw data: VIRTUAL-SKIN:33974.8 
+09-29 01:44:24.433  1714  1714 I pixel-thermal: cellular-emergency:33.9748 raw data: cellular-emergency:33974.8 
+09-29 01:44:24.433 28615 28615 W KC_DESER_DOS: === KeyChainActivity 'issuers' Serializable DoS probe ===
+09-29 01:44:24.433 28615 28615 W KC_DESER_DOS: UID=10397 (ZERO permissions)
+09-29 01:44:24.433 28615 28615 W KC_DESER_DOS: Minimal payload: single non-byte[] String element
+09-29 01:44:24.433 28615 28615 W KC_DESER_DOS: Sending to com.android.keychain.CHOOSER as 'issuers' extra...
+09-29 01:44:24.434  1714  1714 I pixel-thermal: VIRTUAL-USB-UI:0 raw data: USB2-MINUS-CHG:-1848 VIRTUAL-USB-UI:0 charger_skin_therm:35267 usb_pwr_therm2:33419 
+09-29 01:44:24.438  1505 23883 V ActivityTaskManager: TaskLaunchParamsModifier: phase=2 task=Task{f94899b #851 type=standard A=10397:com.vrp.zeroperm} activity=ActivityRecord{125047481 u0 com.android.keychain/.KeyChainActivity t-1} display-area-from-source=DefaultTaskDisplayArea@13896590 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@13896590 inherit-from-source=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@13896590 default-portrait freeform-size-mismatch=Rect(276, 694 - 804, 1774)
+09-29 01:44:24.438  1505 23883 I ActivityTaskManager: START u0 {act=com.android.keychain.CHOOSER xflg=0x4 cmp=com.android.keychain/.KeyChainActivity (has extras)} with LAUNCH_SINGLE_TOP from uid 10397 (com.vrp.zeroperm) (sr=214199151) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-29 01:44:24.438 28615 28615 W KC_DESER_DOS: startActivity() returned normally
+09-29 01:44:24.442  1505  1556 D CorePackageUpdate: Couldn't find a persistent state for task= 851
+09-29 01:44:24.445 28584 28694 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-29 01:44:24.445 28584 28584 D ndroid.keychain: Initializing ProtoLog
+09-29 01:44:24.445 28584 28584 D ProtoLog: Initializing ProtoLog DataSource
+09-29 01:44:24.445 28584 28694 D vulkan  : searching for layers in '/system/app/KeyChain/KeyChain.apk!/lib/arm64-v8a'
+09-29 01:44:24.445 28584 28694 D vulkan  : searching for layers in '/system/lib64'
+09-29 01:44:24.446 28584 28694 D vulkan  : searching for layers in '/system_ext/lib64'
+09-29 01:44:24.450 28584 28584 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+09-29 01:44:24.457 19150 19150 I Finsky:quick_launch: [2] Memory trim requested to level 40
+09-29 01:44:24.462 28584 28584 I KeyChain: Requested by app uid 10397 to provide a private key alias
+09-29 01:44:24.462 28584 28584 I KeyChain: Key types specified: []
+09-29 01:44:24.462 28584 28584 I KeyChain: Issuers specified, will be listed later.
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: Failed to execute the transaction: tId:1311576408 ClientTransaction{
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: tId:1311576408   transactionItems=[
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: tId:1311576408     LaunchActivityItem{activityToken=android.os.BinderProxy@a2ce4e5,intent=Intent { act=com.android.keychain.CHOOSER flg=0x800000 xflg=0x4 cmp=com.android.keychain/.KeyChainActivity (has extras) },ident=125047481,info=ActivityInfo{d62c6d2 com.android.keychain.KeyChainActivity},curConfig={1.0 ?mcc0mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long compactNeeded hdr widecg port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.8374 fontWeightAdjustment=0},overrideConfig={1.0 ?mcc0mnc [en_US] ldltr sw411dp w411dp h914dp 420dpi nrml long compactNeeded hdr widecg port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.1 fontWeightAdjustment=0},deviceId=0,referrer=com.vrp.zeroperm,procState=19,state=null,persistentState=null,pendingResults=null,pendingNewIntents=null,sceneTransitionInfo=null,profilerInfo=null,assistToken=android.os.BinderProxy@3945e07,shareableActivityToken=android.os.BinderProxy@b3c5b34,activityWindowInfo=ActivityWindowInfo{isEmbedded=false, taskBounds=Rect(0, 0 - 1080, 2400), taskFragmentBounds=Rect(0, 0 - 1080, 2400)},displayId=0}
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: tId:1311576408     ResumeActivityItem{mActivityToken=android.os.BinderProxy@a2ce4e5,procState=-1,isForward=true,shouldSendCompatFakeFocus=false}
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: tId:1311576408     Target activity: com.android.keychain.KeyChainActivity
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: tId:1311576408   ]
+09-29 01:44:24.462 28584 28584 E TransactionExecutor: tId:1311576408 }
+09-29 01:44:24.462 28584 28584 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: FATAL EXCEPTION: main
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: Process: com.android.keychain, PID: 28584
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.keychain/com.android.keychain.KeyChainActivity}
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:6200)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:6233)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:73)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.servertransaction.ActivityTransactionItem.execute(ActivityTransactionItem.java:64)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleItem(TransactionExecutor.java:169)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:101)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2982)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:126)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:285)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:390)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9830)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:920)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to byte[]
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at com.android.keychain.KeyChainActivity$CertificateParametersFilter.<init>(KeyChainActivity.java:407)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at com.android.keychain.KeyChainActivity.chooseCertificate(KeyChainActivity.java:239)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at com.android.keychain.KeyChainActivity.onResume(KeyChainActivity.java:176)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1733)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:9516)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:6190)
+09-29 01:44:24.462 28584 28584 E AndroidRuntime: 	... 15 more
+09-29 01:44:24.464  1505  1556 W ActivityTaskManager:   Force finishing activity com.android.keychain/.KeyChainActivity
+09-29 01:44:24.464  1505  1556 W TransitionChain: Combining finishTopCrash into #3100(OPEN|R|0x0) from startAct
+09-29 01:44:24.466 28584 28584 I Process : Sending signal. PID: 28584 SIG: 9
+09-29 01:44:24.466  1505 28708 I DropBoxManagerService: add tag=system_app_crash isTagEnabled=true flags=0x2
+09-29 01:44:24.474  1505  1556 I ActivityManager: Process com.android.keychain (pid 28584) has died: fg  TOP 
+09-29 01:44:24.475  1505  1600 I libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_1000/pid_28584
+09-29 01:44:24.475   880   880 I Zygote  : Process 28584 exited due to signal 9 (Killed)
+09-29 01:44:24.475  1505  1556 W TransitionChain: Combining appDied into #3100(OPEN|R|0x0) from startAct
+09-29 01:44:24.476  1505  1556 D DifferentDisplayCheck: Focus gained for Task Task{f94899b #851 type=standard A=10397:com.vrp.zeroperm} on display 0
+09-29 01:44:24.480 26143  9038 V WindowManagerShell: onTransitionReady(transaction=6463925887766)
+09-29 01:44:24.480 26143 26158 V WindowManagerShell: onTransitionReady (#3100) android.os.BinderProxy@1838d0e: {id=3100 t=OPEN f=0x0 trk=0 r=[] c=[]}
+09-29 01:44:24.480 26143 26158 V WindowManagerShell: FocusTransitionObserver: Updating focus state for transition #3100
+09-29 01:44:24.480  1505  1582 V WindowManager: Sent Transition (#3100) createdAt=09-29 01:44:24.424 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=851 effectiveUid=10397 seqId=0 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=searchlite://image/... flg=0x10000000 cmp=com.vrp.zeroperm/.OAuthInterceptActivity } baseActivity=ComponentInfo{com.vrp.zeroperm/com.vrp.zeroperm.OAuthInterceptActivity} topActivity=ComponentInfo{com.vrp.zeroperm/com.vrp.zeroperm.KeychainDeserDosActivity} origActivity=null realActivity=ComponentInfo{com.vrp.zeroperm/com.vrp.zeroperm.OAuthInterceptActivity} realActivityIsAppLockEnabled=false numActivities=2 lastActiveTime=834326903 supportsMultiWindow=true supportsMultiWindowWithoutConstraints=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{82c0112 Task{f94899b #851 type=standard A=10397:com.vrp.zeroperm}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{4583b74 com.vrp.zeroperm.KeychainDeserDosActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isInteractive=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 694 - 804, 1774) leafTaskBoundsFromOptions= false capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 132 - 1080, 2337) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null topNonResizableActivityAspectRatio=-1.0 idealTaskOrientation=-1} topActivityMainWindowFrame=null}, pipChange = null, remoteTransitionInfo = null, displayChanges = null, requestedLocation = null, userChange = null, windowingLayerChange = null, fullscreenRequestChange = null, flags = 0, debugId = 3100 }
+09-29 01:44:24.480 26143 26158 V WindowManagerShell: No transition roots in (#3100) android.os.BinderProxy@1838d0e@0 so abort
+09-29 01:44:24.480  1505  1582 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] flags= 0 errorCallbackToken=null taskFragmentOrganizer=null }
+09-29 01:44:24.480  1505  1582 V WindowManager:     info={id=3100 t=OPEN f=0x0 trk=0 r=[] c=[]}
+09-29 01:44:24.480 26143 26158 V WindowManagerShell: Transition animation finished (aborted=true), notifying core (#3100) android.os.BinderProxy@1838d0e@0
+09-29 01:44:24.480  1505  1852 I ImeTracker: com.vrp.zeroperm:ef0ccd10: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false userId 0 displayId 0
+09-29 01:44:24.481 28615 28615 D InsetsController: hide(ime())
+09-29 01:44:24.481 28615 28615 I ImeTracker: com.vrp.zeroperm:ef0ccd10: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-29 01:44:24.481  1505  1852 W InputChannel-JNI: Channel already disposed.
+09-29 01:44:24.481 25483 25483 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2361 
+09-29 01:44:24.482 25483 25483 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1532 onStartInput(EditorInfo{EditorInfo{packageName=com.vrp.zeroperm, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+09-29 01:44:24.482 25483 25483 W LatinIMEBase: LatinIMEBase.updateInputViewCoverNavigation():322 Null input view, cannot update padding!
+09-29 01:44:24.482 25483 28056 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 0, locked = false
+09-29 01:44:24.482  1505  1582 V WindowManager: Finish Transition (#3100): created at 09-29 01:44:24.424 collect-started=0.109ms request-sent=4.578ms started=5.4ms ready=53.191ms sent=54.301ms finished=57.542ms
+09-29 01:44:24.482 25483 28120 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():119 repeatCheckTimes = 1, locked = false
+09-29 01:44:24.482 26143 26158 V WindowManagerShell: Track 0 became idle
+09-29 01:44:24.482 26143 26158 V WindowManagerShell: All active transition animations finished
+09-29 01:44:24.482  1505  1556 W PackageConfigPersister: App-specific configuration not found for packageName: com.vrp.zeroperm and userId: 0
+09-29 01:44:24.545 26143 26158 V RecentTasksController: Notify recent tasks changed: 1
+09-29 01:44:24.545  9360  9360 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-29 01:44:24.548 26143 26158 V RecentTasksController: generateList(getRecentTasks)
+09-29 01:44:24.548 26143 26158 V RecentTasksController: initializeDesksMap - desktop windowing not available
+09-29 01:44:24.548 26143 26158 V RecentTasksController: Added fullscreen task: 851
+09-29 01:44:24.548 26143 26158 V RecentTasksController: Added fullscreen task: 853
+09-29 01:44:24.548 26143 26158 V RecentTasksController: Added fullscreen task: 854
+09-29 01:44:24.548 26143 26158 V RecentTasksController: generateList - complete
+09-29 01:44:24.550  9360  9376 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=854 windowingMode=1 user=0 lastActiveTime=833862034 lastFocusedTime=0] null, [id=853 windowingMode=1 user=0 lastActiveTime=833951943 lastFocusedTime=833861987] null, [id=851 windowingMode=1 user=0 lastActiveTime=834326952 lastFocusedTime=833951964] null]
+09-29 01:44:24.944   967  3121 I WifiHAL : Creating message to get link statistics; iface = 47
+09-29 01:44:24.966  1505  1585 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{125047481 u0 com.android.keychain/.KeyChainActivity t-1 f}
+09-29 01:44:25.024  7752 28709 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-29 01:44:25.029  7752 28709 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-29 01:44:25.038  1505  1883 I MlConnectedScorer: 1. stats.getStatusDataStall()=0
+09-29 01:44:25.039  1505  1883 I MlConnectedScorer: 2. stats.getStatusDataStall()=0
+09-29 01:44:25.039  1505  1883 I MlConnectedScorer: handleL2DataStallInMlScorer is true, shouldBlockBssid=false mBlockCurrentBssid=false
+09-29 01:44:25.112 14289 14289 I ContentProtectionServic: CP service destroyed
+09-29 01:44:25.113  2088  2088 I HidDeviceService: unregisterAppUid(): uid=10140
+09-29 01:44:25.113  2088  2088 W HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+09-29 01:44:25.115  1505  1505 I RemoteContentProtectionService: Connection status for: ComponentInfo{com.google.android.odad/com.google.android.apps.miphone.odad.contentprotection.ContentProtectionService} changed to: disconnected
+09-29 01:44:25.270  7752 28652 I NearbyMediums: Found Fast Ble Advertisements :
+09-29 01:44:25.270  7752 28652 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x41 0x5a 0x59 0x52 0x11 0x32 0xa4 0x95 0xcb 0xca 0x9f 0xed 0x09 0x63 0xa8 0x0d 0x70 0x35 0x1a 0x0c 0xc9 0xc5 ], deviceToken=[ 0xa5 0x87 ], rxAdvertisement=null } : 4 times.
+09-29 01:44:25.270  7752 28652 I NearbyMediums: Total 4 fast advertisements from 1 unique advertisers.
+09-29 01:44:25.270  7752 28652 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-29 01:44:25.273  7752 28653 I NearbyConnections: Processing lost BlePeripheral BlePeripheral{advertisement=BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x44 0x48 0x36 0x37 0x11 0x32 0xe5 0x09 0xcf 0x4d 0xb0 0x1f 0xd0 0x08 0x76 0x5d 0x24 0xfb 0x27 0x20 0x87 0x02 ], deviceToken=[ 0x1b 0x53 ], rxAdvertisement=null }, dctAdvertisement=null, address=null, psm=0, deviceToken=<ByteString@cb63e5e size=2 contents="\033S">, isSecondProfile=false, rxInstantConnectionAdv=null}.
+09-29 01:44:25.274  7752 28653 I NearbyConnections: Lost BleEndpoint for BlePeripheral BlePeripheral{advertisement=BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x44 0x48 0x36 0x37 0x11 0x32 0xe5 0x09 0xcf 0x4d 0xb0 0x1f 0xd0 0x08 0x76 0x5d 0x24 0xfb 0x27 0x20 0x87 0x02 ], deviceToken=[ 0x1b 0x53 ], rxAdvertisement=null }, dctAdvertisement=null, address=null, psm=0, deviceToken=<ByteString@cb63e5e size=2 contents="\033S">, isSecondProfile=false, rxInstantConnectionAdv=null} (with EndpointId DH67 and EndpointInfo [ 0x32 0xe5 0x09 0xcf 0x4d 0xb0 0x1f 0xd0 0x08 0x76 0x5d 0x24 0xfb 0x27 0x20 0x87 0x02 ]).
+09-29 01:44:25.275  7752 28653 I NearbyConnections: Unable to record lost endpoint due to null currentDiscoveryPhase
+09-29 01:44:25.275  7752 28653 I NearbyConnections: ClientProxy(64564881) reporting onEndpointLost(DH67)
+09-29 01:44:25.278  7752 28653 I NearbySharing: NearbySharing Internal event EndpointLost(endpointId=DH67)
+09-29 01:44:26.980  2800  2800 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-29 01:44:26.999  1505  1898 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-29 01:44:27.000  1505  1898 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-29 01:44:27.000  1505  1898 D InetDiagMessage: Destroyed live tcp sockets for uids={10195} in 2ms
+09-29 01:44:27.001  1505  1898 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-29 01:44:27.002  1505  1898 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-29 01:44:27.002  1505  1898 D InetDiagMessage: Destroyed live tcp sockets for uids={20195} in 1ms

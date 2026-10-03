@@ -1,0 +1,20 @@
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: FATAL EXCEPTION: main
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: Process: android.process.media, PID: 14432
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.mtp/com.android.mtp.ReceiverActivity}
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4733)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4932)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:224)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2982)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:126)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:285)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:390)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9830)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:575)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:920)
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int android.hardware.usb.UsbDevice.getDeviceId()' on a null object reference
+09-29 16:25:18.244 14432 14432 E AndroidRuntime: 	at com.android.mtp.ReceiverActivity.onCreate(ReceiverActivity.java:44)

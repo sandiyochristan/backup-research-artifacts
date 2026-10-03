@@ -1,0 +1,29 @@
+=== Google Sheets - LegacyStorageBackendContentProvider Manifest Evidence ===
+Extracted: Sat Jul 11 14:52:48 IST 2026
+
+          E: data (line=961)
+            A: android:scheme(0x01010027)="content" (Raw: "content")
+          E: data (line=962)
+            A: android:scheme(0x01010027)="file" (Raw: "file")
+      E: provider (line=973)
+        A: android:name(0x01010003)="com.google.android.apps.docs.common.storagebackend.LegacyStorageBackendContentProvider" (Raw: "com.google.android.apps.docs.common.storagebackend.LegacyStorageBackendContentProvider")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:authorities(0x01010018)="com.google.android.apps.docs.editors.trix.storage.legacy" (Raw: "com.google.android.apps.docs.editors.trix.storage.legacy")
+      E: activity (line=979)
+        A: android:theme(0x01010000)=@0x7f15020e
+        A: android:label(0x01010001)=@0x7f1430c2
+        A: android:icon(0x01010002)=@0x7f08076b
+        A: android:name(0x01010003)="com.google.android.apps.docs.editors.menu.ocm.ShareOptionsActivity" (Raw: "com.google.android.apps.docs.editors.menu.ocm.ShareOptionsActivity")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:configChanges(0x0101001f)=(type 0x11)0x40000db4
+      E: service (line=988)
+        A: android:name(0x01010003)="com.google.android.apps.docs.editors.changeling.ritz.ChangelingRitzExportService" (Raw: "com.google.android.apps.docs.editors.changeling.ritz.ChangelingRitzExportService")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:foregroundServiceType(0x01010599)=(type 0x11)0x800
+      E: activity (line=997)
+        A: android:theme(0x01010000)=@0x7f150211
+
+=== KEY FINDINGS ===
+android:exported = 0xffffffff (TRUE)
+android:permission = NOT PRESENT (no permission required)
+android:authorities = com.google.android.apps.docs.editors.trix.storage.legacy

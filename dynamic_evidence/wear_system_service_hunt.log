@@ -1,0 +1,65 @@
+=== Wear OS System Service Privilege Escalation Hunt ===
+Date: 2026-09-11
+Target: Pixel Watch 2 (3A101RTJWRGCV9, eos, CP2A.260603.001, Android 17, SDK 37)
+
+OBJECTIVE: Find createPackageContext(CONTEXT_INCLUDE_CODE | CONTEXT_IGNORE_SECURITY) patterns
+similar to CVE-2026-49881 (InCallController.serviceClassExists) in other system services.
+
+=== METHODOLOGY ===
+Decompiled and searched ALL of these for createPackageContext with INCLUDE_CODE:
+- /system/framework/services.jar (17.5MB, 4917 classes) — main system_server
+- /system/framework/wear-service.jar (1.6MB, 726 classes) — Wear service APIs
+- /system/framework/clockwork-system.jar (262KB, 65 classes)
+- /system/framework/clockwork-ambient.jar (458KB, 79 classes)
+- /system/framework/clockwork-healthservices.jar (115KB, 25 classes)
+- /apex/com.android.telephonycore/javalib/service-telecom.jar (1.8MB) — CONFIRMED VULN
+- /apex/com.android.bt/javalib/service-bluetooth.jar (549KB, 301 classes)
+- /apex/com.android.wifi/javalib/service-wifi.jar (5.5MB, 933 classes)
+
+=== RESULTS ===
+
+CONFIRMED VULNERABLE:
+1. InCallController.serviceClassExists() in service-telecom.jar
+   - Line 2261: createPackageContextAsUser(serviceInfo.packageName, 3, userHandle)
+   - Flag 3 = CONTEXT_INCLUDE_CODE | CONTEXT_IGNORE_SECURITY
+   - EXPLOITED: Achieved UID 1000 system_server code execution
+
+NO OTHER INSTANCE OF CONTEXT_INCLUDE_CODE IN ANY SYSTEM SERVICE JAR:
+- services.jar: 30+ createPackageContextAsUser calls, ALL use flag 0
+- wear-service.jar: 1 createPackageContext call, uses flag 0
+- clockwork-system.jar: No createPackageContext calls
+- clockwork-ambient.jar: No createPackageContext calls
+- clockwork-healthservices.jar: No createPackageContext calls
+- service-bluetooth.jar: 1 createPackageContextAsUser, flag 0
+- service-wifi.jar: 4 createPackageContextAsUser calls, ALL flag 0
+
+=== SECONDARY ANALYSIS: Service Binding Patterns ===
+Checked system services that bind to user-declared components:
+- DreamController: bindServiceAsUser to dream services (normal binding, no code loading)
+- WallpaperManagerService: bindService to wallpaper services (normal binding)
+- CompanionDeviceManager: No direct bindService in decompiled code
+- WatchFaceManager: bindService only to com.google.android.apps.wearable.systemui (hardcoded)
+- HandlerBindingAgent: bindService only to hardcoded WHS component
+- SystemUiApiProxy: bindService only to SystemUI (hardcoded)
+- AppFunctionManagerService: bindService + unbindService, createPackageContext flag 0
+
+=== WEAR-SPECIFIC SERVICES CHECKED ===
+328 total system services on device. Wear-specific:
+- wear_service (IWear) — runs in system_server, hardcoded bindings only
+- HealthService (IHealthService) — binds to hardcoded WHS component
+- DisplayOffloadService — no untrusted code loading
+- WearConnectivityService — no createPackageContext
+- WearPowerService — no code loading patterns
+- ModeManager — mode management only
+- companiondevice — no INCLUDE_CODE usage
+
+=== CONCLUSION ===
+The InCallController.serviceClassExists() vulnerability (CVE-2026-49881) is UNIQUE in that it
+is the ONLY instance across ALL analyzed system service JARs on the Pixel Watch 2 that uses
+createPackageContext with CONTEXT_INCLUDE_CODE on an untrusted package name. This is likely
+why it wasn't caught during earlier code reviews — the pattern is extremely rare in Android
+system services.
+
+No other similar privilege escalation path found via createPackageContext code loading in the
+Wear OS system services. The InCallController vulnerability on this watch is confirmed and
+exploited as UID 1000 system_server.

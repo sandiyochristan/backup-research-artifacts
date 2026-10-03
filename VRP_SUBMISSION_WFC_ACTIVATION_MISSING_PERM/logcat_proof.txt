@@ -1,0 +1,26 @@
+=== adb logcat -c && adb shell am start -n com.vrp.zeroperm/.WfcActivationProbeActivity --ei subId 1 ===
+
+09-29 11:54:28.246  1505  1819 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x4 cmp=com.vrp.zeroperm/.WfcActivationProbeActivity (has extras)} with LAUNCH_MULTIPLE from uid 2000 (com.android.shell) (BAL_ALLOW_SHELL_UID) result code=0
+09-29 11:54:28.259  1505 10496 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x4 cmp=com.android.imsserviceentitlement/.WfcActivationActivity (has extras)} with LAUNCH_MULTIPLE from uid 10397 (com.vrp.zeroperm) (sr=178266464) (BAL_ALLOW_VISIBLE_WINDOW) result code=2
+09-29 11:54:28.259 31613 31613 I VRP-WfcProbe: WfcActivationActivity: startActivity() returned normally (no SecurityException) subId=1
+09-29 11:54:28.261  1505 10496 W ActivityTaskManager: Permission Denial: starting Intent { flg=0x10000000 xflg=0x5 cmp=com.android.imsserviceentitlement/.WfcQnsActivationActivity (has extras) } from ProcessRecord{56e86c6 31613:com.vrp.zeroperm/u0a397} (pid=31613, uid=10397) requires android.permission.MODIFY_PHONE_STATE
+09-29 11:54:28.261  1505 10496 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.android.imsserviceentitlement/.WfcQnsActivationActivity (has extras)} with LAUNCH_MULTIPLE from uid 10397 (com.vrp.zeroperm) (sr=178266464) result code=-92
+09-29 11:54:28.261 31613 31613 E VRP-WfcProbe: WfcQnsActivationActivity: other exception: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.android.imsserviceentitlement/com.android.imsserviceentitlement.WfcQnsActivationActivity}; have you declared this activity in your AndroidManifest.xml, or does your intent not match its declared <intent-filter>?
+
+=== Analysis ===
+
+1. com.android.imsserviceentitlement/.WfcActivationActivity: launched from uid 10397
+   (com.vrp.zeroperm, a zero-permission app) with NO permission denial. The system's
+   own ActivityTaskManager log shows a clean "START ... result code=2" — the activity
+   was actually created and became foreground (confirmed further by the attached
+   screenshot showing the app's real "Emergency Location Information" error UI).
+
+2. com.android.imsserviceentitlement/.WfcQnsActivationActivity (the sibling,
+   e911/WFC-activation-over-QNS variant): the SAME zero-permission caller, using the
+   exact same intent shape, is explicitly rejected by the OS with
+   "Permission Denial: ... requires android.permission.MODIFY_PHONE_STATE"
+   (result code=-92). The ActivityNotFoundException seen client-side in
+   VRP-WfcProbe's log is just the client-visible symptom of that server-side denial.
+
+This is dynamic, on-device proof (Pixel 6a, Android 17 Beta / API 37) that
+WfcActivationActivity is missing the permission check present on its sibling.

@@ -1,0 +1,7 @@
+--------- beginning of main
+09-29 11:34:04.779 30656 30656 W SUGGESTION_STATE_LEAK: === SuggestionStateProvider zero-permission probe ===
+09-29 11:34:04.779 30656 30656 W SUGGESTION_STATE_LEAK: UID=10397 (ZERO permissions)
+09-29 11:34:04.784 30656 30656 W SUGGESTION_STATE_LEAK: [LEAKED] com.android.settings.password.ScreenLockSuggestionActivity -> candidate_is_complete=true
+09-29 11:34:04.785 30656 30656 W SUGGESTION_STATE_LEAK: [LEAKED] com.android.settings.biometrics.fingerprint.FingerprintSuggestionActivity -> candidate_is_complete=true
+09-29 11:34:04.786 30656 30656 W SUGGESTION_STATE_LEAK: [LEAKED] com.android.settings.biometrics.fingerprint.FingerprintEnrollSuggestionActivity -> candidate_is_complete=false
+09-29 11:34:04.787 30656 30656 W SUGGESTION_STATE_LEAK: [LEAKED] com.android.settings.wifi.calling.WifiCallingSuggestionActivity -> candidate_is_complete=true

@@ -1,0 +1,16 @@
+09-10 05:26:26.369 29452 29452 D VRP_WFPUSH: === Watch Face Push API PoC ===
+09-10 05:26:26.369 29452 29452 D VRP_WFPUSH: UID: 10156
+09-10 05:26:26.369 29452 29452 D VRP_WFPUSH: PID: 29452
+09-10 05:26:26.369 29452 29452 D VRP_WFPUSH: Package: com.vrp.poc
+09-10 05:26:26.370 29452 29452 D VRP_WFPUSH: PUSH_WATCH_FACES: GRANTED
+09-10 05:26:26.371 29452 29452 D VRP_WFPUSH: SET_PUSHED_WATCH_FACE_AS_ACTIVE: DENIED (-1)
+09-10 05:26:26.377 29452 29452 D VRP_WFPUSH: Bind attempt result: true
+09-10 05:26:26.499 29452 29452 D VRP_WFPUSH: SERVICE BOUND SUCCESS: com.google.android.wearable.dwf.receiver/.WatchFaceReceiverService
+09-10 05:26:26.504 29452 29452 D VRP_WFPUSH: Binder descriptor: com.google.wear.services.watchfaces.watchfacepush.IWatchFacePushApi
+09-10 05:26:26.508 29452 29452 D VRP_WFPUSH: --- Calling listWatchFaceSlots (txn 5) ---
+09-10 05:26:26.514 29452 29452 D VRP_WFPUSH: transact(5) result: true
+09-10 05:26:26.572 29452 29478 D VRP_WFPUSH: CALLBACK [IListWatchFaceSlotsCallback] code=2
+09-10 05:26:26.572 29452 29478 D VRP_WFPUSH: SUCCESS callback! dataSize=188 remaining=16
+09-10 05:26:26.572 29452 29478 D VRP_WFPUSH: Read error: bad array lengths
+09-10 05:26:26.573 29452 29478 D VRP_WFPUSH: Count/first_int: 1
+09-10 05:26:33.131  1235  1235 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '30' '-s' 'VRP_WFPUSH:D''

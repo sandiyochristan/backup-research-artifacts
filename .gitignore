@@ -23,8 +23,20 @@ decompiled/
 manifests/
 poc/
 reports/
+*_decompiled/
+research_*/
+r-d-main/
 
 # Build artifacts
+**/build/
+*.class
+*.dex
 poc_app/build/obj/
 poc_app/build/classes/
 poc_app/build/poc-unaligned.apk
+
+# Agent tooling
+.engage/
+.opencode/
+*.pyc
+__pycache__/

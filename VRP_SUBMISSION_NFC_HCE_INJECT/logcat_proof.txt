@@ -1,0 +1,9 @@
+--------- beginning of main
+09-29 10:53:16.140 28107 28107 W NFC_HCE_INJECT: === NFC notifyTestHceData() zero-permission injection attempt ===
+09-29 10:53:16.140 28107 28107 W NFC_HCE_INJECT: UID=10397 (ZERO permissions)
+09-29 10:53:16.145 28107 28107 W NFC_HCE_INJECT: getDefaultAdapter() -> android.nfc.NfcAdapter@f96bba
+09-29 10:53:16.145 28107 28107 W NFC_HCE_INJECT: NfcAdapter.getService() via reflection -> android.nfc.INfcAdapter$Stub$Proxy@4e1ba6b
+09-29 10:53:16.145 28107 28107 W NFC_HCE_INJECT: [!!!] Got raw IBinder with ZERO permissions: android.os.BinderProxy@4ab29c8
+09-29 10:53:16.145 28107 28107 W NFC_HCE_INJECT:   interface desc=android.nfc.INfcAdapter
+09-29 10:53:16.148 28107 28107 W NFC_HCE_INJECT: transact()=true replyAvail=4
+09-29 10:53:16.148 28107 28107 W NFC_HCE_INJECT:   exceptionCode=0 (0 header present but no payload is unusual; nonzero = real exception was thrown server-side, e.g. -1=SecurityException)

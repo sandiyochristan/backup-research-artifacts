@@ -1,0 +1,21 @@
+=== adb logcat -c && adb shell am start -n com.vrp.zeroperm/.WfcActivationProbeActivity --ei subId 1 ===
+
+09-29 12:07:48.456  4936  4936 I VRP-WfcProbe: WfcActivationActivity: startActivity() returned normally (no SecurityException) subId=1
+09-29 12:07:48.462  1505  2348 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.google.android.wfcactivation/.WfcActivationActivity (has extras)} with LAUNCH_MULTIPLE from uid 10397 (com.vrp.zeroperm) (sr=35535634) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+09-29 12:07:48.462  4936  4936 I VRP-WfcProbe: google.wfcactivation.WfcActivationActivity: startActivity() returned normally (no SecurityException) subId=1
+09-29 12:07:48.616  1505  1582 I ActivityTaskManager: Displayed com.google.android.wfcactivation/.WfcActivationActivity for user 0: +156ms
+
+=== Analysis ===
+
+com.google.android.wfcactivation/.WfcActivationActivity (Google's own carrier WFC/entitlement
+activation app, holding android.permission.MODIFY_PHONE_STATE, WRITE_APN_SETTINGS,
+WRITE_SETTINGS, and READ_PRIVILEGED_PHONE_STATE itself) is exported with NO permission
+attribute and has a MAIN/DEFAULT intent-filter. A zero-permission caller (uid 10397,
+com.vrp.zeroperm) launched it directly with attacker-controlled
+android.telephony.extra.SUBSCRIPTION_INDEX and EXTRA_LAUNCH_CARRIER_APP extras.
+The OS log shows a clean "START ... result code=0" and "Displayed
+com.google.android.wfcactivation/.WfcActivationActivity for user 0: +156ms" -- the real
+app's own UI was genuinely rendered and shown to the user (confirmed by the attached
+screenshot, identical "Emergency Location Information" error screen driven by the
+attacker-supplied EXTRA_LAUNCH_CARRIER_APP=1 extra, exactly matching the e911/address-update
+code branch traced in EntitlementStatusViewModel.handleInitialEntitlementStatus()).

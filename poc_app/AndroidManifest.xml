@@ -11,6 +11,9 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="com.google.android.googlequicksearchbox.permission.LENS_SERVICE" />
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
     <uses-permission android:name="com.google.wear.permission.PUSH_WATCH_FACES" />
@@ -244,6 +247,42 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.vrp.poc.CAL_CROSS_TABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarSortOrderSQLiActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_SORT_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarFullDumpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_FULL_DUMP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarWriteTestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_WRITE_TEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarWriteDeepActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CAL_WRITE_DEEP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -917,8 +956,78 @@
             android:exported="true" />
 
         <activity
+            android:name=".BugreportFileWriteActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.BUGREPORT_FILE_WRITE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".WatchFacePushPocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.WATCHFACE_PUSH_POC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AppOpsLeakActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".ModeManagerCrashActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ModeManagerPinpointActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AppOpsOnlyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".DataLeakTestActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ContactsExfilActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CONTACTS_EXFIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ContactsSortBlindV2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.CONTACTS_BLIND_V2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MultiProviderSqliActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.MULTI_SQLI" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsLeakTestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vrp.poc.SETTINGS_LEAK_TEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".WalletOAuthInterceptActivity"

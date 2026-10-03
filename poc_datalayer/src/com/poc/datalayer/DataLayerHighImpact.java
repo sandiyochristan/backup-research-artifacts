@@ -173,7 +173,8 @@ public class DataLayerHighImpact extends Activity {
             }
         };
 
-        callWearable(ws, 6, (p) -> {
+        // Try both transaction codes for putDataItem (6 and 10)
+        callWearable(ws, 10, (p) -> {
             p.writeStrongBinder(writeCb);
             p.writeInt(1);
             writePutDataRequest(p, testUri, testData.getBytes());

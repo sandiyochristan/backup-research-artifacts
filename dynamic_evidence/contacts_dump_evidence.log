@@ -1,0 +1,71 @@
+=== ContactsProvider Debug Code Exposure - Evidence ===
+Date: Fri Sep 11 23:03:47 IST 2026
+Device: Pixel Watch 2 (3A101RTJWRGCV9)
+
+=== 1. DumpFileProvider Accessibility Proof ===
+--- From zero-permission PoC app (com.poc.contactsdump) ---
+
+=== 2. Manifest Proof - Exported with no permissions ===
+  Non-Data Actions:
+      com.android.providers.contacts.DUMP_DATABASE:
+        a104d2c com.android.providers.contacts/.debug.ContactsDumpActivity filter c7c73f5
+          Action: "com.android.providers.contacts.DUMP_DATABASE"
+          Category: "android.intent.category.DEFAULT"
+      android.provider.action.MOVE_CONTACTS_TO_DEFAULT_ACCOUNT:
+        d0358a com.android.providers.contacts/.MoveContactsToDefaultAccountActivity filter bb307fb
+          Action: "android.provider.action.MOVE_CONTACTS_TO_DEFAULT_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+--
+
+Registered ContentProviders:
+  com.android.providers.contacts/.debug.DumpFileProvider:
+    Provider{1336613 com.android.providers.contacts/.debug.DumpFileProvider}
+  com.android.providers.contacts/.ContactsProvider2:
+    Provider{1ae7050 com.android.providers.contacts/.ContactsProvider2}
+  com.android.providers.contacts/.CallComposerLocationProvider:
+    Provider{b5e6249 com.android.providers.contacts/.CallComposerLocationProvider}
+  com.android.providers.contacts/.ShadowCallLogProvider:
+    Provider{698474e com.android.providers.contacts/.ShadowCallLogProvider}
+  com.android.providers.contacts/.picker.ContactsPickerSessionProvider:
+    Provider{8e4506f com.android.providers.contacts/.picker.ContactsPickerSessionProvider}
+--
+      applicationInfo=ApplicationInfo{10f4414 com.android.providers.contacts}
+  [com.android.contacts.dumpfile]:
+    Provider{1336613 com.android.providers.contacts/.debug.DumpFileProvider}
+      applicationInfo=ApplicationInfo{5b644bd com.android.providers.contacts}
+
+Key Set Manager:
+  [com.android.providers.contacts]
+      Signing KeySets: 4
+
+Packages:
+  Package [com.android.providers.contacts] (d5cecac):
+--
+    userId=0 effectiveUid=u0a44 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=com.android.shell mCallingFeatureId=null
+    affinity=10044:com.android.providers.contacts
+    intent={act=com.android.providers.contacts.DUMP_DATABASE flg=0x10000000 xflg=0x4 cmp=com.android.providers.contacts/.debug.ContactsDumpActivity}
+
+=== 3. Content Provider Authority Registration ===
+  com.android.providers.contacts/.debug.DumpFileProvider:
+    Provider{1336613 com.android.providers.contacts/.debug.DumpFileProvider}
+  [com.android.contacts.dumpfile]:
+    Provider{1336613 com.android.providers.contacts/.debug.DumpFileProvider}
+    authority=call_log
+    authority=contacts;com.android.contacts
+  User 0 authority to provider mappings:
+      * Asc com.android.providers.contacts.debug.DumpFileProvider:
+      * Asc com.android.providers.contacts.debug.DumpFileProvider:
+
+=== 4. Activity Launch Proof ===
+Starting: Intent { act=com.android.providers.contacts.DUMP_DATABASE }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+
+=== 5. Provider Query from ADB (shell user) ===
+Row: 0 _display_name=aaaa0000bbbb1111cccc2222dddd3333eeee4444ffff5555aaaa6666bbbb7777-contacts-db.zip, _size=NULL
+
+=== 6. PoC App Permissions (NONE) ===
+--- Package info ---
+    versionCode=1 minSdk=34 targetSdk=35
+    versionName=1.0

@@ -1,0 +1,15 @@
+mDataBlockFile: /dev/block/by-name/frp
+mIsFileBacked: false
+mInitDoneSignal: java.util.concurrent.CountDownLatch@14a9126[Count = 0]
+mAllowedUid: 10266
+mBlockDeviceSize: 524288
+mIsWritable: true
+FRP state
+=========
+Enforcement enabled: true
+FRP state: false
+FRP secret file /data/system/frp_secret exists, contents omitted.
+FRP secret present but omitted.
+Verified boot state: orange
+Has FRP credential handle: true
+FRP challenge block size: 259

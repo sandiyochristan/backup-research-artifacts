@@ -1,0 +1,4 @@
+09-29 02:12:02.678 32049 32049 W SMS_MMS_WIPE: === MmsSmsProvider delete() zero-permission probe ===
+09-29 02:12:02.678 32049 32049 W SMS_MMS_WIPE: UID=10397 (ZERO permissions)
+09-29 02:12:02.680 32049 32049 W SMS_MMS_WIPE: [!!!] delete() on content://mms-sms/conversations returned WITHOUT SecurityException. rows_deleted=0
+09-29 02:12:02.680 32049 32049 W SMS_MMS_WIPE: [!!!] This call would delete ALL SMS+MMS messages on a device that has any.

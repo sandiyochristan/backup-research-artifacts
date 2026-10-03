@@ -1,0 +1,10 @@
+09-29 01:38:09.481 27089 27089 W KEYCHAIN_LEAK: === KeyChainService unauthenticated AIDL method probe ===
+09-29 01:38:09.481 27089 27089 W KEYCHAIN_LEAK: UID=10397 (ZERO permissions)
+09-29 01:38:09.484 27089 27089 W KEYCHAIN_LEAK: bindService() returned true
+09-29 01:38:09.526 27089 27089 W KEYCHAIN_LEAK: [!!!] BOUND to KeyChainService with ZERO permissions: ComponentInfo{com.android.keychain/com.android.keychain.KeyChainService}
+09-29 01:38:09.526 27089 27089 W KEYCHAIN_LEAK:   interface desc=android.security.IKeyChainService
+09-29 01:38:09.529 27089 27089 W KEYCHAIN_LEAK: [+] TX15 returned WITHOUT exception, avail=8
+09-29 01:38:09.530 27089 27089 W KEYCHAIN_LEAK:   [PARSED-LIST] TX15 numItems=1 aliases=[]
+09-29 01:38:09.530 27089 27089 W KEYCHAIN_LEAK:   [UTF16-SCAN] TX15: 
+09-29 01:38:09.601 27089 27089 W KEYCHAIN_LEAK: [+] TX16 returned WITHOUT exception, avail=5288
+09-29 01:38:09.601 27089 27089 W KEYCHAIN_LEAK:   [PARSED-LIST] TX16 numItems=1 aliases=[]

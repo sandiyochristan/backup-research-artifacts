@@ -1,0 +1,8 @@
+09-29 16:32:51.544 16468 16468 I VRP-SysUiBrightnessCrash: startActivity() on BrightnessDialog returned normally (no SecurityException)
+09-29 16:32:51.570 16190 16190 E AndroidRuntime: FATAL EXCEPTION: main
+09-29 16:32:51.570 16190 16190 E AndroidRuntime: Process: com.android.systemui, PID: 16190
+09-29 16:32:51.570 16190 16190 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Legacy code path not supported when com.android.systemui.shared.brightness_system_ui_dialog is enabled.
+09-29 16:32:51.570 16190 16190 E PluginManagerImpl: Caused by: java.lang.IllegalStateException: Legacy code path not supported when com.android.systemui.shared.brightness_system_ui_dialog is enabled.
+09-29 16:32:51.574 16190 16190 I Process : Sending signal. PID: 16190 SIG: 9
+09-29 16:32:51.623  1505  1841 I Process : Sending signal. PID: 16190 SIG: 9
+09-29 16:32:51.698  1505  1585 W ActivityManager: setHasOverlayUi called on unknown pid: 16190

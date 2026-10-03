@@ -1,0 +1,16 @@
+--------- beginning of main
+09-29 11:00:52.428 28684 28684 W SETTINGS_TESTONLY_BYPASS: UID=10400 ZERO permissions, FLAG_TEST_ONLY=false
+09-29 11:00:52.431 28684 28684 W SETTINGS_TESTONLY_BYPASS: [BLOCKED] Secure.bluetooth_address -> SecurityException: Settings key: <bluetooth_address> is only readable to apps with targetSdkVersion lower than or equal to: 31
+09-29 11:00:52.431 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.lock_screen_owner_info = null
+09-29 11:00:52.431 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.lock_screen_owner_info_enabled = null
+09-29 11:00:52.432 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.location_providers_allowed = null
+09-29 11:00:52.432 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.trust_agents_extend_unlock = null
+09-29 11:00:52.432 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.user_setup_complete = 1
+09-29 11:00:52.432 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.install_non_market_apps = 1
+09-29 11:00:52.434 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.android_id = b85bd0d46e6b90a6
+09-29 11:00:52.434 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.last_setup_shown = eclair_1
+09-29 11:00:52.435 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Secure.assisted_gps_enabled = 1
+09-29 11:00:52.435 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Global.adb_enabled = 1
+09-29 11:00:52.435 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Global.wifi_watchdog_ap_count_min = null
+09-29 11:00:52.436 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Global.device_name = Pixel 6a
+09-29 11:00:52.436 28684 28684 W SETTINGS_TESTONLY_BYPASS: [READ OK] Global.airplane_mode_on = 0

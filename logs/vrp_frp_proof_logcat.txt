@@ -1,0 +1,184 @@
+--------- beginning of main
+09-05 23:51:02.459 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:am broadcast -a com.google.android.gms.auth.FRP_CONFIG_CHANGED -p com.google.android.gms'
+09-05 23:51:02.504  1431  8164 I ActivityManager: Broadcasting: Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED flg=0x400000 pkg=com.google.android.gms }
+--------- beginning of system
+09-05 23:51:02.505  1431  8164 I ActivityManager: Enqueued broadcast Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED flg=0x400000 pkg=com.google.android.gms }: 0
+09-05 23:51:02.522  1431  3686 D ActivityManager: sync unfroze 18360 com.google.android.gms for 6
+09-05 23:51:02.538  1431  1486 I ActivityManager: Broadcast completed: result=-1
+09-05 23:51:02.570 18360 24172 I FRP     : (REDACTED) [FrpUpdateIntentOperation] Intent received: %s
+09-05 23:51:02.574 18360 24172 I FRP     : [FrpUpdateIntentOperation] No FRP data present in app restriction, using current Google accounts. [CONTEXT service_id=341 ]
+09-05 23:51:02.588 18360 24172 I FRP     : (REDACTED) [FactoryResetProtectionManager] Updating data block with %d accounts (lockscreen sufficient = %b)
+09-05 23:51:02.590 18360 24172 I FRP     : (REDACTED) [FactoryResetProtectionManager] Updating accounts on profile %d
+09-05 23:51:02.634 18360 24172 W FRP     : [FactoryResetProtectionManager] Failed to get IMEI [CONTEXT service_id=341 ]
+09-05 23:51:02.634 18360 24172 W FRP     : java.lang.UnsupportedOperationException: Operation not supported
+09-05 23:51:02.634 18360 24172 W FRP     : 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3404)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at android.os.Parcel.createException(Parcel.java:3376)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at android.os.Parcel.readException(Parcel.java:3359)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at android.os.Parcel.readException(Parcel.java:3301)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at com.android.internal.telephony.ITelephony$Stub$Proxy.getPrimaryImei(ITelephony.java:12117)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at android.telephony.TelephonyManager.getPrimaryImei(TelephonyManager.java:19504)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at aizo.m(:com.google.android.gms@263268035@26.32.68 (260400-975269223):138)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at aizo.i(:com.google.android.gms@263268035@26.32.68 (260400-975269223):472)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at aizo.k(:com.google.android.gms@263268035@26.32.68 (260400-975269223):49)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at com.google.android.gms.auth.frp.FrpUpdateIntentOperation.onHandleIntent(:com.google.android.gms@263268035@26.32.68 (260400-975269223):262)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@263268035@26.32.68 (260400-975269223):1)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at bgge.onHandleIntent(:com.google.android.gms@263268035@26.32.68 (260400-975269223):88)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at acgj.run(:com.google.android.gms@263268035@26.32.68 (260400-975269223):58)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at acgi.run(:com.google.android.gms@263268035@26.32.68 (260400-975269223):132)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at hnyz.run(:com.google.android.gms@263268035@26.32.68 (260400-975269223):23)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+09-05 23:51:02.634 18360 24172 W FRP     : 	at java.lang.Thread.run(Thread.java:1572)
+09-05 23:51:02.678 18360 24172 I FRP     : (REDACTED) [PersistentDataBlockImpl] Writing container to disk with %d profile blocks and %d encrypted profile blocks
+09-05 23:51:02.704 18360 24172 I FRP     : [FactoryResetProtectionManager] Successfully wrote new FRP secret [CONTEXT service_id=341 ]
+09-05 23:51:02.706 18360 24172 I FRP     : (REDACTED) [PersistentDataBlockImpl] Writing container to disk with %d profile blocks and %d encrypted profile blocks
+09-05 23:51:02.711 18360 24172 I FRP     : (REDACTED) [FactoryResetProtectionManager] Write complete, result: %d
+09-05 23:51:02.839  1729  1732 I pixel-thermal: cellular-emergency:36.8608 raw data: VIRTUAL-SKIN:36860.8 cellular-emergency:36860.8 
+09-05 23:51:02.839  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:36.8608 raw data: VIRTUAL-SKIN:36860.8 VIRTUAL-SKIN-CPU:36860.8 
+09-05 23:51:02.839  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=2455.68 err=4.1392 s_power=800 time_elapsed_ms=7018 p=1655.68 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:02.839  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 24.56 mW)(S2M_VDD_CPUCL2: 5.82 mW)(S3M_VDD_CPUCL1: 14.87 mW)
+09-05 23:51:02.840  1729  1732 I pixel-thermal: neutral_therm:35.668 raw data: neutral_therm:35668 
+09-05 23:51:02.840  1729  1732 I pixel-thermal: VIRTUAL-SKIN:36.8608 raw data: VIRTUAL-SKIN:36860.8 
+09-05 23:51:02.840  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:36.8608 raw data: VIRTUAL-SKIN:36860.8 VIRTUAL-SKIN-CPU-GPU:36860.8 
+09-05 23:51:02.840  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3241.76 err=8.1392 s_power=800 time_elapsed_ms=7018 p=2441.76 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:02.840  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 24.56 mW)(S2M_VDD_CPUCL2: 5.82 mW)(S3M_VDD_CPUCL1: 14.87 mW)(S2S_VDD_G3D: 1.87 mW)
+09-05 23:51:02.840  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:36.8608 raw data: VIRTUAL-SKIN:36860.8 VIRTUAL-SKIN-HINT:36860.8 
+09-05 23:51:02.840  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:36.8608 raw data: VIRTUAL-SKIN:36860.8 VIRTUAL-SKIN-CHARGE:36860.8 
+09-05 23:51:03.701  1431  1460 I system_server: Background young concurrent mark compact GC freed 25MB AllocSpace bytes, 18(2316KB) LOS objects, 87% free, 65MB/512MB, paused 2.100ms,5.463ms total 106.266ms
+09-05 23:51:04.438   992   992 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:04.569   992   992 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 131 ms
+09-05 23:51:04.635   992   992 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:04.635   992   992 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:04.635   992   992 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:04.635   992   992 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:05.586 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:ls -la /data/system/frp_secret'
+09-05 23:51:05.645 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:dumpsys persistent_data_block'
+09-05 23:51:05.722 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-05 23:51:07.339  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:830 set_advertising_set_random_address_on_timer: Scheduling address rotation for advertiser_id=1
+09-05 23:51:07.340  2162  2549 I bluetooth: system/gd/hci/le_address_manager.cc:557 GetNextPrivateAddressIntervalRange: client=advertising_set_1, nonwake=7m39s, wake=14m35s
+09-05 23:51:07.366  2162  2549 I bluetooth: system/gd/hci/le_advertising_manager_impl.cc:1735 on_set_advertising_set_random_address_complete: update random address for advertising set 1 : xx:xx:xx:xx:dd:81
+09-05 23:51:07.650   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:07.770   992  1083 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 119 ms
+09-05 23:51:07.815   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:07.815   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:07.816   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:07.816   992  1083 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:08.296 11073 24183 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+09-05 23:51:08.296 11073 24183 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-05 23:51:08.298 11073 24184 I NearbyConnections: Processing lost BlePeripheral BlePeripheral{advertisement=BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x30 0x55 0x32 0x37 0x11 0x32 0x84 0x4e 0x4b 0xae 0xec 0x42 0x36 0x5e 0x4e 0x40 0x9f 0xc0 0x94 0x37 0x9f 0xe9 ], deviceToken=[ 0x22 0x97 ], rxAdvertisement=null }, dctAdvertisement=null, address=null, psm=0, deviceToken=<ByteString@4d418d8 size=2 contents="\"\227">, isSecondProfile=false, rxInstantConnectionAdv=null}.
+09-05 23:51:08.298 11073 24184 I NearbyConnections: Lost BleEndpoint for BlePeripheral BlePeripheral{advertisement=BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x30 0x55 0x32 0x37 0x11 0x32 0x84 0x4e 0x4b 0xae 0xec 0x42 0x36 0x5e 0x4e 0x40 0x9f 0xc0 0x94 0x37 0x9f 0xe9 ], deviceToken=[ 0x22 0x97 ], rxAdvertisement=null }, dctAdvertisement=null, address=null, psm=0, deviceToken=<ByteString@4d418d8 size=2 contents="\"\227">, isSecondProfile=false, rxInstantConnectionAdv=null} (with EndpointId 0U27 and EndpointInfo [ 0x32 0x84 0x4e 0x4b 0xae 0xec 0x42 0x36 0x5e 0x4e 0x40 0x9f 0xc0 0x94 0x37 0x9f 0xe9 ]).
+09-05 23:51:08.299 11073 24184 I NearbyConnections: Unable to record lost endpoint due to null currentDiscoveryPhase
+09-05 23:51:08.299 11073 24184 I NearbyConnections: ClientProxy(163682648) reporting onEndpointLost(0U27)
+09-05 23:51:08.300 11073 24184 I NearbySharing: NearbySharing Internal event EndpointLost(endpointId=0U27)
+09-05 23:51:09.857  1729  1732 I pixel-thermal: cellular-emergency:36.6941 raw data: VIRTUAL-NEUTRAL:36694.1 VIRTUAL-NEUTRAL-SKIN2:36593.9 VIRTUAL-QUIET-NEUTRAL:35220.6 VIRTUAL-SKIN:36694.1 cellular-emergency:36694.1 disp_therm:34443 gnss_tcxo_therm:37382 neutral_therm:35579 quiet_therm:35067 skin_therm1:37382 skin_therm2:38962 
+09-05 23:51:09.858  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:36.6941 raw data: VIRTUAL-SKIN:36694.1 VIRTUAL-SKIN-CPU:36694.1 
+09-05 23:51:09.858  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=2522.38 err=4.30595 s_power=800 time_elapsed_ms=7013 p=1722.38 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:09.858  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 19.36 mW)(S2M_VDD_CPUCL2: 4.96 mW)(S3M_VDD_CPUCL1: 16.18 mW)
+09-05 23:51:09.858  1729  1732 I pixel-thermal: neutral_therm:35.579 raw data: neutral_therm:35579 
+09-05 23:51:09.859  1729  1732 I pixel-thermal: VIRTUAL-SKIN:36.6941 raw data: VIRTUAL-SKIN:36694.1 
+09-05 23:51:09.859  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:36.6941 raw data: VIRTUAL-SKIN:36694.1 VIRTUAL-SKIN-CPU-GPU:36694.1 
+09-05 23:51:09.859  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3291.78 err=8.30595 s_power=800 time_elapsed_ms=7013 p=2491.78 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:09.859  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 19.36 mW)(S2M_VDD_CPUCL2: 4.96 mW)(S3M_VDD_CPUCL1: 16.18 mW)(S2S_VDD_G3D: 1.70 mW)
+09-05 23:51:09.860  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:36.6941 raw data: VIRTUAL-SKIN:36694.1 VIRTUAL-SKIN-HINT:36694.1 
+09-05 23:51:09.860  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:36.6941 raw data: VIRTUAL-SKIN:36694.1 VIRTUAL-SKIN-CHARGE:36694.1 
+09-05 23:51:09.892  2138  2960 D ApfFilter: (wlan0): Adding RA fe80::1 -> ff02::1 0s DNS 900s fe80::1 
+09-05 23:51:09.901   992  1083 E WifiHAL : Setting APF program, halHandle = 0xb400007a8c865550
+09-05 23:51:09.901   992  1083 E WifiHAL : Set apf filter for iface = wlan0
+09-05 23:51:09.901   992  1083 I WifiHAL : createRequest: APF set program request
+09-05 23:51:09.901   992  1083 I WifiHAL : mProgramLen : 458
+09-05 23:51:10.824   992  1083 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:10.950   992  1083 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 126 ms
+09-05 23:51:11.004   992  1083 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:11.004   992  1083 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:11.005   992  1083 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:11.005   992  1083 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:12.015  2052  2052 D DLObserver: onReceive(); android.intent.action.BATTERY_CHANGED
+09-05 23:51:12.016  2052  2052 D DLObserver: plugged=1
+09-05 23:51:12.018  2052  2052 D SystemEventDataSource: onReceive: intentAction
+09-05 23:51:12.018  2052  2052 D PowerNotificationWarningsGoogleImpl: onReceive: android.intent.action.BATTERY_CHANGED
+09-05 23:51:12.018  2052  2052 D PulsarController: dispatchIntent: android.intent.action.BATTERY_CHANGED
+09-05 23:51:12.019  2052  2052 D IncompatibleChargerNotification: dispatchIntent: android.intent.action.BATTERY_CHANGED
+09-05 23:51:12.019  2052  3365 D PowerUI : can't show warning due to - plugged: true status unknown: false
+09-05 23:51:12.019  2052  2052 D BatteryReplacementNotification: battery health: 2, cycle count: 298
+09-05 23:51:12.028  2052  2191 D GoogleBatteryDataSource: fetchDwellDefendStatus: CONNECTED
+09-05 23:51:12.029  2052  2191 D GoogleBatteryDataSource: fetchTempDefendStatus: t_sum=0, time_sum=0 t_avg=0 lst_v=4395390 lst_t=340 lst_u=172569, dt=0, t=0 e=1
+09-05 23:51:12.031  2052  2191 D SystemEventDataSource: updatedEventData: SystemEventData(intentAction=android.intent.action.BATTERY_CHANGED, plugged=EventData(value=1), batteryScale=EventData(value=100), batteryLevel=EventData(value=95), chargingStatus=EventData(value=1), maxChargingCurrent=EventData(value=3000000), maxChargingVoltage=EventData(value=5000000), batteryStatus=EventData(value=2), halEventData=HalEventData(dockDefendStatus=EventData(value=-3), tempDefendEventData=EventData(value=false), dwellDefendEventData=EventData(value=false)), settingsEventData=SettingsEventData(dockDefenderBypass=EventData(value=0), chargingLimitSettings=EventData(value=0), dndState=EventData(value=false), airplaneState=EventData(value=false)), frameworkApiEventData=FrameworkApiEventData(batterySaverState=EventData(value=false), extremeBatterySaverState=EventData(value=false)))
+09-05 23:51:12.031  2052  2191 D SystemEventDataSource: extra doesn't changed, no need to onEventSourceUpdate
+09-05 23:51:12.317  2193  3242 D TemperatureStateSource: sequence=4775 actualDelay=10002
+09-05 23:51:12.319  2193  3242 D TemperatureStateSource: Reading temperature: sequence=4776
+09-05 23:51:12.324  1729  1729 I pixel-thermal: VIRTUAL-SKIN:36.6941 raw data: VIRTUAL-NEUTRAL:36694.1 VIRTUAL-NEUTRAL-SKIN2:36593.9 VIRTUAL-QUIET-NEUTRAL:35220.6 VIRTUAL-SKIN:36694.1 disp_therm:34443 gnss_tcxo_therm:37382 neutral_therm:35579 quiet_therm:35067 skin_therm1:37382 skin_therm2:38962 
+09-05 23:51:12.326  2193  3242 D TemperatureStateSource: getDeviceTemperatures: sequence=4776 deviceTemperatureType=3 temperatureSource=0 temperatures=[36.694054]
+09-05 23:51:12.326  2193  3242 D TemperatureStateSource: sequence=4776 waitTime=10000
+09-05 23:51:12.326  2193  3242 D ImpulseConnection: timeout didn't happen: com.google.android.apps.turbo
+09-05 23:51:12.330  1729  1729 I pixel-thermal: VIRTUAL-SKIN:36.6941 raw data: VIRTUAL-SKIN:36694.1 
+09-05 23:51:12.331  2193  3242 I TemperatureStateSource: temperature was set
+09-05 23:51:12.332  2193  3242 D ImpulseStateSource: Notify clients: 4820
+09-05 23:51:13.145 11073 24183 I NearbyConnections: Found BleAdvertisement [ 0x23 0x30 0x55 0x32 0x37 0x11 0x32 0x84 0x4e 0x4b 0xae 0xec 0x42 0x36 0x5e 0x4e 0x40 0x9f 0xc0 0x94 0x37 0x9f 0xe9 ] (with EndpointId 0U27 and EndpointInfo [ 0x32 0x84 0x4e 0x4b 0xae 0xec 0x42 0x36 0x5e 0x4e 0x40 0x9f 0xc0 0x94 0x37 0x9f 0xe9 ])
+09-05 23:51:13.145 11073 24183 I NearbyConnections: Unable to record discovered endpoint due to null currentDiscoveryPhase
+09-05 23:51:13.146 11073 24183 I NearbyConnections: ClientProxy(163682648 0p:com.google.android.gms.nearby.sharing) reporting onEndpointFound(0U27)
+09-05 23:51:13.146 11073 24183 I NearbyConnections: ClientProxy(163682648) reporting onEndpointDistanceChanged(0U27, UNKNOWN)
+09-05 23:51:13.147 11073 24185 I NearbySharing: NearbySharing Internal event EndpointDiscovered(endpointId=0U27)
+09-05 23:51:13.430   941   941 W TracingMuxer: type=1400 audit(0.0:1680): avc:  denied  { write } for  name="traced_producer" dev="tmpfs" ino=1229 scontext=u:r:hal_neuralnetworks_darwinn:s0 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0
+09-05 23:51:14.020   992   992 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:14.132   928  2558 I bthal.activity: bt_power: LeAdvStat: 23:51:13:131 - 23:51:14:132, duration: 1000, le_adv_count: 1, total_le_adv_count: 12202, total_event_count: 1
+09-05 23:51:14.154   992   992 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 134 ms
+09-05 23:51:14.205   992   992 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:14.206   992   992 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:14.206   992   992 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:14.206   992   992 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:16.875  1729  1732 I pixel-thermal: cellular-emergency:36.5123 raw data: VIRTUAL-NEUTRAL:36512.3 VIRTUAL-NEUTRAL-SKIN2:36426.6 VIRTUAL-QUIET-NEUTRAL:35180.4 VIRTUAL-SKIN:36512.3 cellular-emergency:36512.3 disp_therm:34488 gnss_tcxo_therm:37114 neutral_therm:35445 quiet_therm:35067 skin_therm1:37137 skin_therm2:38717 
+09-05 23:51:16.876  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:36.5123 raw data: VIRTUAL-SKIN:36512.3 VIRTUAL-SKIN-CPU:36512.3 
+09-05 23:51:16.876  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=2595.08 err=4.4877 s_power=800 time_elapsed_ms=7018 p=1795.08 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:16.876  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 16.94 mW)(S2M_VDD_CPUCL2: 4.82 mW)(S3M_VDD_CPUCL1: 11.65 mW)
+09-05 23:51:16.877  1729  1732 I pixel-thermal: neutral_therm:35.445 raw data: neutral_therm:35445 
+09-05 23:51:16.877  1729  1732 I pixel-thermal: VIRTUAL-SKIN:36.5123 raw data: VIRTUAL-SKIN:36512.3 
+09-05 23:51:16.877  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:36.5123 raw data: VIRTUAL-SKIN:36512.3 VIRTUAL-SKIN-CPU-GPU:36512.3 
+09-05 23:51:16.877  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3346.31 err=8.4877 s_power=800 time_elapsed_ms=7018 p=2546.31 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:16.878  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 16.94 mW)(S2M_VDD_CPUCL2: 4.82 mW)(S3M_VDD_CPUCL1: 11.65 mW)(S2S_VDD_G3D: 1.69 mW)
+09-05 23:51:16.878  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:36.5123 raw data: VIRTUAL-SKIN:36512.3 VIRTUAL-SKIN-HINT:36512.3 
+09-05 23:51:16.878  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:36.5123 raw data: VIRTUAL-SKIN:36512.3 VIRTUAL-SKIN-CHARGE:36512.3 
+09-05 23:51:17.219   992   992 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:17.355   992   992 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:17.356   992   992 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:17.356   992   992 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:17.356   992   992 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:18.287  8458  8829 I zygote_next: native_activity_thread::native_application_thread: scheduleTrimMemory thread id=ThreadId(5)
+09-05 23:51:18.300 11073 24185 I NearbyMediums: Found Fast Ble Advertisements :
+09-05 23:51:18.300 11073 24185 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x30 0x55 0x32 0x37 0x11 0x32 0x84 0x4e 0x4b 0xae 0xec 0x42 0x36 0x5e 0x4e 0x40 0x9f 0xc0 0x94 0x37 0x9f 0xe9 ], deviceToken=[ 0x22 0x97 ], rxAdvertisement=null } : 1 times.
+09-05 23:51:18.300 11073 24185 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+09-05 23:51:18.300 11073 24185 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+09-05 23:51:18.313 13889  8147 I cr_BindingManager: onTrimMemory: level=40, size=0
+09-05 23:51:19.765  1431  1856 D ActivityManager: freezing 18360 com.google.android.gms
+09-05 23:51:20.370   992   992 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:20.495   992   992 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 125 ms
+09-05 23:51:20.555   992   992 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:20.555   992   992 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:20.555   992   992 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:20.556   992   992 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:22.308  2193  2395 D ImpulseConnection: timeout didn't happen: com.google.android.apps.turbo
+09-05 23:51:22.327  2193  3242 D TemperatureStateSource: sequence=4776 actualDelay=10001
+09-05 23:51:22.329  2193  3242 D TemperatureStateSource: Reading temperature: sequence=4777
+09-05 23:51:22.336  1729  1729 I pixel-thermal: VIRTUAL-SKIN:36.4019 raw data: VIRTUAL-NEUTRAL:36401.9 VIRTUAL-NEUTRAL-SKIN2:36361.8 VIRTUAL-QUIET-NEUTRAL:35135.4 VIRTUAL-SKIN:36401.9 disp_therm:34466 gnss_tcxo_therm:36936 neutral_therm:35400 quiet_therm:35022 skin_therm1:36936 skin_therm2:38606 
+09-05 23:51:22.337  2193  3242 D TemperatureStateSource: getDeviceTemperatures: sequence=4777 deviceTemperatureType=3 temperatureSource=0 temperatures=[36.4019]
+09-05 23:51:22.338  2193  3242 D TemperatureStateSource: sequence=4777 waitTime=10000
+09-05 23:51:22.343  1729  1729 I pixel-thermal: VIRTUAL-SKIN:36.4019 raw data: VIRTUAL-SKIN:36401.9 
+09-05 23:51:22.344  2193  3242 I TemperatureStateSource: temperature was set
+09-05 23:51:22.345  2193  3242 D ImpulseStateSource: Notify clients: 4821
+09-05 23:51:23.569   992   992 I WifiHAL : Creating message to get link statistics; iface = 47
+09-05 23:51:23.697   992   992 E libbinder.IPCThreadState: binder thread pool (1 threads) starved for 128 ms
+09-05 23:51:23.757   992   992 D WifiHAL : Start debug command: mType GET_FEATURE
+09-05 23:51:23.757   992   992 I WifiHAL : CreateRequest mType = GET_FEATURE
+09-05 23:51:23.758   992   992 D WifiHAL : In DebugCommand::handleResponse, mType:GET_FEATURE
+09-05 23:51:23.758   992   992 D WifiHAL : len = 4, expected len = 4
+09-05 23:51:23.891  1729  1732 I pixel-thermal: cellular-emergency:36.4019 raw data: VIRTUAL-SKIN:36401.9 cellular-emergency:36401.9 
+09-05 23:51:23.892  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU:36.4019 raw data: VIRTUAL-SKIN:36401.9 VIRTUAL-SKIN-CPU:36401.9 
+09-05 23:51:23.892  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU power_budget=2639.24 err=4.5981 s_power=800 time_elapsed_ms=7019 p=1839.24 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:23.892  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 17.78 mW)(S2M_VDD_CPUCL2: 4.52 mW)(S3M_VDD_CPUCL1: 11.75 mW)
+09-05 23:51:23.893  1729  1732 I pixel-thermal: neutral_therm:35.4 raw data: neutral_therm:35400 
+09-05 23:51:23.893  1729  1732 I pixel-thermal: VIRTUAL-SKIN:36.4019 raw data: VIRTUAL-SKIN:36401.9 
+09-05 23:51:23.893  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU:36.4019 raw data: VIRTUAL-SKIN:36401.9 VIRTUAL-SKIN-CPU-GPU:36401.9 
+09-05 23:51:23.893  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU power_budget=3379.43 err=8.5981 s_power=800 time_elapsed_ms=7019 p=2579.43 i=0 d=0 dt_per_min=nan compensation=0 budget transient=0 control target=3 excluded power budget=0
+09-05 23:51:23.894  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 17.78 mW)(S2M_VDD_CPUCL2: 4.52 mW)(S3M_VDD_CPUCL1: 11.75 mW)(S2S_VDD_G3D: 1.86 mW)
+09-05 23:51:23.894  1729  1732 I pixel-thermal: VIRTUAL-SKIN-HINT:36.4019 raw data: VIRTUAL-SKIN:36401.9 VIRTUAL-SKIN-HINT:36401.9 
+09-05 23:51:23.894  1729  1732 I pixel-thermal: VIRTUAL-SKIN-CHARGE:36.4019 raw data: VIRTUAL-SKIN:36401.9 VIRTUAL-SKIN-CHARGE:36401.9 
+09-05 23:51:26.372 23504 23504 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color:export ANDROID_LOG_TAGS=''; exec logcat '-d''

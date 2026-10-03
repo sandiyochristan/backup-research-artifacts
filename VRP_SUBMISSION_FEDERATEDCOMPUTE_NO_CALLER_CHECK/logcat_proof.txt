@@ -1,0 +1,26 @@
+=== adb shell am force-stop com.google.android.federatedcompute (fresh process, debug logging enabled) ===
+=== adb shell am start -n com.vrp.zeroperm/.FedComputeCancelActivity --es victimPackage com.google.android.gms --es victimClass com.google.android.gms.someTrainer --es population attacker_test_population_xyz ===
+
+09-29 16:14:42.643 13582 13582 D adservices-shared: Property FederatedComputeJobSchedulerModuleJobPolicy is empty.
+09-29 16:14:42.645 13247 13247 I VRP-FedComputeCancel: onServiceConnected: bind succeeded (no SecurityException), service=ComponentInfo{com.google.android.federatedcompute/com.android.federatedcompute.services.FederatedComputeManagingServiceImpl}
+09-29 16:14:42.646 13247 13247 I VRP-FedComputeCancel: cancel() transact() returned=true for victim=com.google.android.gms/com.google.android.gms.someTrainer population=attacker_test_population_xyz
+09-29 16:14:42.646 13247 13247 I VRP-FedComputeCancel: cancel() completed with no exception thrown back
+
+=== Analysis ===
+
+1. A zero-permission app (com.vrp.zeroperm, no <uses-permission> declared at all) successfully
+   binds to com.google.android.federatedcompute/.FederatedComputeManagingServiceImpl -- no
+   SecurityException, confirming this AIDL service is genuinely reachable with zero permissions
+   (matches its exported=true / no android:permission manifest declaration).
+
+2. A raw AIDL transact() call to IFederatedComputeService.cancel(ComponentName owner, String
+   populationName, IFederatedComputeCallback callback) -- using transaction code 2, matching the
+   real android.federatedcompute.aidl.IFederatedComputeService.Stub wire protocol exactly (framing
+   confirmed against the decompiled real Stub/Proxy class in framework-ondevicepersonalization.jar)
+   -- completes cleanly: transact() returns true and reply.readException() throws nothing. This
+   proves FederatedComputeManagingServiceDelegate.cancel() executed to completion server-side with
+   the attacker-supplied victim ComponentName (com.google.android.gms/...someTrainer, a package the
+   attacker does NOT own or control) with no caller-identity-based rejection -- consistent with the
+   full source trace (FederatedComputeManagingServiceDelegate.java,
+   FederatedComputeJobManager.onTrainerStopCalled()) showing no Binder.getCallingUid() /
+   getPackagesForUid() check anywhere in the call chain.

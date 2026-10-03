@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vrp.zeroperm"
+    android:versionCode="43" android:versionName="1.43">
+
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="34" />
+
+    <queries>
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.google.android.gsf" />
+        <package android:name="com.android.providers.settings" />
+        <package android:name="com.android.providers.contacts" />
+        <package android:name="com.android.providers.calendar" />
+        <package android:name="com.android.providers.media" />
+        <package android:name="com.google.android.apps.docs" />
+        <package android:name="com.google.android.apps.photos" />
+        <package android:name="com.google.android.dialer" />
+        <package android:name="com.google.android.apps.messaging" />
+        <package android:name="com.android.vending" />
+        <package android:name="com.google.android.apps.wellbeing" />
+        <package android:name="com.google.android.apps.turbo" />
+        <package android:name="com.google.android.as" />
+        <package android:name="com.google.android.apps.recorder" />
+        <intent>
+            <action android:name="com.google.android.gms.people.service.START" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.gms.auth.service.START" />
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.securedatatransfer.IAntiTamperKeyTransferService" />
+        </intent>
+        <package android:name="com.google.android.euicc" />
+        <package android:name="com.google.android.apps.maps" />
+        <package android:name="com.google.android.youtube" />
+        <package android:name="com.google.android.apps.authenticator2" />
+        <package android:name="com.google.android.keep" />
+        <package android:name="com.google.android.apps.wear.companion" />
+        <package android:name="com.google.android.apps.chromecast.app" />
+        <intent>
+            <action android:name="io.grpc.action.BIND" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.gms.drive.ApiService.START" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.gms.fitness.InternalApi.START" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.gms.wearable.BIND" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.gms.wallet.service.BIND" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.gms.nearby.connection.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:label="ZeroPerm"
+        android:allowBackup="false">
+
+        <activity
+            android:name="com.vrp.zeroperm.ScanActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.vrp.zeroperm.CredentialStealActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.AntiTamperKeyStealActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.IntentRedirectActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.OAuthStealActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ServiceProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.MigrationProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GmsDeepProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GmsBrokerProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SafetyNetExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.AdsIdExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.DeepLinkProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SystemInfoProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GmsBroadProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.AccountPickerProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SysLeakProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.BinderExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.MediaProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.PixelProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.WellbeingExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ServiceBindProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ChromeWellbeingExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SliceProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.DeepLinkExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ProviderCallProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.FocusModeProofActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.WellbeingBroadcastExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.CrashProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.FinalProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.DiagnosticsExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.AdvancedExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.IntentSchemeExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SystemLeakActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GmsAuthExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SideChannelExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ObserverProofActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GrowthKitExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.EuiccExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.PhenotypeExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SettingsLeakActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.CalendarContactsLeakActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SconeModemExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SconeAnomalyExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GmsCrashExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.GmsResultStealActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ContactsDumpExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.ServiceBindProbe2Activity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.TelecomProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.MediaProbe2Activity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.SysProbe3Activity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.NetProbeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.DumpReceiverActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/zip" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.vrp.zeroperm.WalletExploitActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.vrp.zeroperm.OAuthInterceptActivity"
+            android:exported="true">
+            <!-- Intercept Wear Companion OAuth redirect -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.google.android.wear.companion" />
+            </intent-filter>
+            <!-- Intercept Google Home/Chromecast OAuth handoff -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="comgooglecast"
+                      android:host="chromecast.auth.com" />
+            </intent-filter>
+            <!-- Intercept Google Home general deep links -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="comgooglecast"
+                      android:host="chromecast.com" />
+            </intent-filter>
+            <!-- Intercept Google Home offers/promo flow -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="comgooglecast"
+                      android:host="offers" />
+            </intent-filter>
+            <!-- Intercept Google Home account linking redirect -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="comgooglecast"
+                      android:host="galredirect" />
+            </intent-filter>
+            <!-- Intercept YouTube Kids custom scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="vnd.youtube.kids" />
+            </intent-filter>
+            <!-- Intercept Google Wallet Pix payment scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="pix" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

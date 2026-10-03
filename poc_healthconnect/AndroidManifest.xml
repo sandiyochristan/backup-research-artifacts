@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.healthprobe">
+    <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="35" />
+    <uses-feature android:name="android.hardware.type.watch" />
+    <application android:label="HCProbe">
+        <activity android:name="com.poc.healthprobe.HealthProbe"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.poc.healthprobe.HealthExploit"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.HealthExploit2"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.HealthExploit3"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.SystemProbe"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.ModeManagerCrash"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.SystemProbe2"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.WearServiceProbe"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.WearBrokerExploit"
+            android:exported="true" />
+        <activity android:name="com.poc.healthprobe.ContentProbe"
+            android:exported="true" />
+    </application>
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poc.confused_deputy">
+
+    <!-- ZERO dangerous data permissions declared.
+         No READ_CONTACTS, READ_MEDIA_IMAGES, READ_CALENDAR, READ_CALL_LOG, or READ_SMS.
+         The only permission used is BIND_ACCESSIBILITY_SERVICE (system-granted, not dangerous). -->
+
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="35" />
+
+    <queries>
+        <package android:name="com.google.android.apps.contacts" />
+        <package android:name="com.google.android.apps.photos" />
+        <package android:name="com.google.android.calendar" />
+    </queries>
+
+    <application
+        android:label="ZeroPermDeputyPoC"
+        android:allowBackup="false">
+
+        <!-- Main PoC Activity -->
+        <activity
+            android:name=".ConfusedDeputyPocActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Exfiltration AccessibilityService
+             Monitors Google Contacts, Photos, and Calendar windows.
+             Extracts all rendered text into exfil_data.txt (app private storage).
+             BIND_ACCESSIBILITY_SERVICE is granted via user-visible Settings > Accessibility.
+             No READ_CONTACTS / READ_CALENDAR / READ_MEDIA_IMAGES declared. -->
+        <service
+            android:name=".ExfilAccessibilityService"
+            android:label="ZeroPermDeputyPoC Exfil"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+
+    </application>
+
+</manifest>

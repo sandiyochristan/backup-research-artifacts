@@ -1,0 +1,178 @@
+--------- beginning of system
+09-27 11:51:02.117 14151 14248 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+--------- beginning of main
+09-27 11:51:02.117 14151 14151 D e.android.euicc: Initializing ProtoLog
+09-27 11:51:02.117 14151 14151 D ProtoLog: Initializing ProtoLog DataSource
+09-27 11:51:02.118 14151 14248 D vulkan  : searching for layers in '/data/app/~~BOjI2NFNZJeVXHNSeCYvjQ==/com.google.android.euicc-0jSj5LvOiRqM82ni7pXbKg==/lib/arm64'
+09-27 11:51:02.120 14151 14248 D vulkan  : searching for layers in '/data/app/~~BOjI2NFNZJeVXHNSeCYvjQ==/com.google.android.euicc-0jSj5LvOiRqM82ni7pXbKg==/base.apk!/lib/arm64-v8a'
+09-27 11:51:02.132 14151 14151 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+09-27 11:51:02.141 14151 14151 I SetupLibrary: [ThemeHelper] Return SudThemeGlifExpressive_DayNight
+09-27 11:51:02.143 14151 14151 W SetupLibrary: [ThemeHelper] Skip set theme with dynamic color, due to glif expressive sytle enabled.
+09-27 11:51:02.143 14151 14151 I EuiccGoogle: [2] GenericDocumentToPlatformConverter$ApiHelperForB.applyThemeHelper: Success to set SuwTheme
+09-27 11:51:02.152 14151 14151 D CompatChangeReporter: Compat change id reported: 377864165; UID 10177; state: ENABLED
+09-27 11:51:02.157 14151 14151 I PartnerConfigHelper: PartnerConfigsBundle=146
+09-27 11:51:02.160 14151 14151 I WindowExtensionsImpl: Initializing Window Extensions, vendor API level=10, activity embedding enabled=true
+09-27 11:51:02.164 14151 14151 W UiContextUtils: Requested context is a non-UI Context. Creating a UI-Context with display: 0. Context: Context=com.google.android.euicc.pixel.release.EuiccGoogleApplication@d15c4c2, of which baseContext=android.app.ContextImpl@8e83df0
+09-27 11:51:02.165 14151 14151 I SplitController: Initializing Activity Embedding Controller.
+09-27 11:51:02.166 14151 14151 I SplitController: Setting embedding rules. Size: 0
+09-27 11:51:02.173 14151 14151 I HWUI    : Using FreeType backend (prop=Auto)
+09-27 11:51:02.183 14151 14151 W FloatingBackButtonMixin: Can't find the back button.
+09-27 11:51:02.188 14151 14151 I SetupLibrary: [GlifLayout] Using setup design GlifLoadingLayout to init for QrDownloadActivity
+09-27 11:51:02.188 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.190 14151 14263 W LOTTIE  : Lottie doesn't support layer effects. If you are using them for  fills, strokes, trim paths etc. then try adding them directly as contents  in your shape. Found: [Void]
+09-27 11:51:02.191 14151 14151 I PartnerConfigHelper: use expressive resource:setup_design_account_container_margin_top_expressive
+09-27 11:51:02.191 14151 14151 I PartnerConfigHelper: use expressive resource:setup_design_account_container_margin_bottom_expressive
+09-27 11:51:02.192 14151 14151 I PartnerConfigHelper: use expressive resource:setup_design_account_name_font_family_expressive
+09-27 11:51:02.192 14151 14151 I EuiccGoogle: [2] DownloadActivity.onCreate: isEnableEsimAfterDownload=false  mIsAvailableSims=false
+09-27 11:51:02.193 14151 14151 I EuiccGoogle: [2] DeviceInfo.isDeviceAllowedtoUseGoogleLpaFeature: DeviceManufacturer Google
+09-27 11:51:02.193 14151 14263 W LOTTIE  : Animation contains merge paths. Merge paths are only supported on KitKat+ and must be manually enabled by calling enableMergePathsForKitKatAndAbove().
+09-27 11:51:02.195 14151 14151 W FloatingBackButtonMixin: Can't find the back button.
+09-27 11:51:02.197 14151 14151 I SetupLibrary: [GlifLayout] Using setup design GlifLoadingLayout to init for QrDownloadActivity
+09-27 11:51:02.197 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.198 14151 14151 I EuiccGoogle: [2] QrDownloadActivity.onCreate: activity is launched with action view
+09-27 11:51:02.204 14151 14151 W LOTTIE  : Animation contains merge paths but they are disabled.
+09-27 11:51:02.213 14151 14151 I EuiccGoogle: [2] CurrentSuwInitActivityLogicKt.onCreate: SUW Original Orchestrator variables: using ui: true, is orchestrated: false, flag enabled: false
+09-27 11:51:02.213 14151 14151 I EuiccGoogle: [2] DeviceInfo.isDeviceAllowedtoUseGoogleLpaFeature: DeviceManufacturer Google
+09-27 11:51:02.213 14151 14151 I EuiccGoogle: [2] BootstrapAvailableFallbackFlags.provisioningProfileEnabled: esim_bootstrap: provisioningProfileEnabled=false
+09-27 11:51:02.213 14151 14151 I EuiccGoogle: [2] CurrentSuwInitActivityLogicKt.onCreate: isSimSetupPopupFlow = false
+09-27 11:51:02.214 14151 14151 I EuiccGoogle: [2] CurrentSuwInitActivityLogicKt.onCreate: Caller is from other apps. Go to activation flow
+09-27 11:51:02.220 14151 14151 I EuiccGoogle: [2] CurrentSuwInitActivity.onCreate: CosmicRayDownload.isLogicMigrationEnabled: false
+09-27 11:51:02.222 14151 14264 I EuiccGoogle: [70] QrScannerActivity$$ExternalSyntheticLambda11.run: Sync 2 the flag-supportXosTransferFromGmscore: true
+09-27 11:51:02.228 14151 14151 I SetupLibrary: [ThemeHelper] Return SudThemeGlifExpressive_DayNight
+09-27 11:51:02.228 14151 14151 W SetupLibrary: [ThemeHelper] Skip set theme with dynamic color, due to glif expressive sytle enabled.
+09-27 11:51:02.228 14151 14151 I EuiccGoogle: [2] GenericDocumentToPlatformConverter$ApiHelperForB.applyThemeHelper: Success to set SuwTheme
+09-27 11:51:02.235 14151 14151 W FloatingBackButtonMixin: Can't find the back button.
+09-27 11:51:02.237 14151 14151 I SetupLibrary: [GlifLayout] Using setup design GlifLoadingLayout to init for ActivationActivityMigrated
+09-27 11:51:02.237 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.238 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.241 14151 14151 I (setupdesign) Partner: Refreshing partner resources
+09-27 11:51:02.242 14151 14151 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=check_in_header_extra_height_enabled, type=bool, partnerResId = 0
+09-27 11:51:02.242 14151 14151 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=check_in_header_extra_height, type=dimen, partnerResId = 0
+09-27 11:51:02.242 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.onCreate: onCreate: inSetupWizard = false, forceProvision = true, activationType = 1, hasAccount = false, legacyTransferFlow = false, smdsDownloadFlowFromSuwDs = false, downloadFlowWithoutSMDS = false, iosPairedInSuwOrTransferInSetting = false, isPaired = false, iosPaired = false, isRoamingTransferSupportedInSetting = false, isDownloadFlowFromOtherApps = true, isExtraForProvProfile = false , isUniversalLinkDownload = false, is_orchestrated = false
+09-27 11:51:02.244 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.activationWithoutAppUpdate: Phenotype flag available at ActivationActivity: true
+09-27 11:51:02.245 14151 14151 I EuiccGoogle: [2] CarrierInfo.createCarrierFromJson: Received empty carrier jason string
+09-27 11:51:02.245 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.continueActivation: onCreate: reset previous selected carrier
+09-27 11:51:02.246 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.getDefaultCarrierList: Carrier list country ISO code: in
+09-27 11:51:02.246 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCarrierInfoStore: initCarrierInfoStore
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: initCarrierCountryCarrierList
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: ca contains carriers: carrier_bell,carrier_fido,carrier_freedom,carrier_koodo,carrier_lucky_mobile,carrier_rogers,carrier_telus,carrier_virgin_mobile,carrier_videotron
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_bell
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_fido
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_freedom
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_koodo
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_lucky_mobile
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_rogers
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_telus
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_virgin_mobile
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_videotron
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: us contains carriers: carrier_att,carrier_google_fi,carrier_sprint,carrier_tmobile_primary,carrier_verizon,carrier_Xfinity_latest
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_att
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_google_fi
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_sprint
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_tmobile_primary
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_verizon
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.initCountryCarrierList: Found carrier config for: carrier_Xfinity_latest
+09-27 11:51:02.247 14151 14151 E EuiccGoogle: [2] CarrierInfoStore.getDefaultCarrierList: Unable to find carrier list for country: in
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] CarrierInfoStore.getDefaultCarrierList: Carrier list is empty.
+09-27 11:51:02.247 14151 14151 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=carrier_list_json, type=string, partnerResId = 0
+09-27 11:51:02.248 14151 14151 W EuiccGoogle: [2] CarrierInfoList.createFromSingleDimension: Dimension is empty
+09-27 11:51:02.248 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.continueActivation: allowSlotSwitchInMultiPsimEsimMode: false
+09-27 11:51:02.248 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.startPreActivationFlow: startPreActivationFlow: carrier = null.
+09-27 11:51:02.254 14151 14151 I EuiccGoogle: [2] SdkFullVersionCompat$Api36Impl.notifyEsimOperationStatus: updater is null or feature flag is disabled, skip.
+09-27 11:51:02.259 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.onResume: onResume
+09-27 11:51:02.259 14151 14151 I EuiccGoogle: [2] SlotChangeHandler.disableNotification: Slot change notification disabled
+09-27 11:51:02.267 14151 14151 I EuiccGoogle: [2] ActivationActivityLogic.onPause: onPause
+09-27 11:51:02.267 14151 14151 I EuiccGoogle: [2] SlotChangeHandler.enableNotification: Slot change notification enabled
+09-27 11:51:02.274 14151 14151 I SetupLibrary: [SetupProgressIndicatorMixin] onAttachedToWindow
+09-27 11:51:02.274 14151 14151 I SetupLibrary: [SetupProgressIndicatorMixin] Hiding indicator as One Tap is disabled
+09-27 11:51:02.275 14151 14151 D VRI[ActivationActivityMigrated]: WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+09-27 11:51:02.275 14151 14151 I SetupLibrary: [PartnerCustomizationLayout] onApplyWindowInsets SystemWindowInsetBottom=63
+09-27 11:51:02.276 14151 14151 I SetupLibrary: [StatusBarBgLayout] Apply edge to edge, glifExpressiveEnabled: true, isAtLeastLollipop: true, windowInsetBottom: 63
+09-27 11:51:02.276 14151 14151 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda16@df0a126
+09-27 11:51:02.276 14151 14270 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ViewRootImpl$$ExternalSyntheticLambda16@df0a126
+09-27 11:51:02.281 14151 14151 W SetupLibrary: [GlifLoadingLayout] SUWLoadingScreen: 825b9ddc:com.google.android.euicc:com.android.euicc.ui.activation.ActivationActivityMigrated:null
+09-27 11:51:02.282 14151 14151 I Surface : Creating surface for consumer unnamed-14151-0 with slotExpansion=1 for 64 slots
+09-27 11:51:02.282 14151 14151 I Surface : Creating surface for consumer VRI[ActivationActivityMigrated]#0(BLAST Consumer)0 with slotExpansion=1 for 64 slots
+09-27 11:51:02.284 14151 14151 I SetupLibrary: [GlifLoadingLayout] deviceHeightDp : 914.2857header viewHeightDp : 339.8095 footerViewHeightDp : 0.0 remainingHeightDp : 574.4762 remainingHeightRatio : 0.62833333
+09-27 11:51:02.305 14151 14151 D VRI[ActivationActivityMigrated]: visibilityChanged oldVisibility=true newVisibility=false
+09-27 11:51:02.306 14151 14151 W AndroidOnboarding: PersistableIntent[c.g.a.euicc]: Found non-persistable extra with key supplied_carrier_info: Dropping object with key supplied_carrier_info due to unknown or unpersistable type class com.android.euicc.data.CarrierInfo
+09-27 11:51:02.306 14151 14151 W AndroidOnboarding: PersistableIntent[c.g.a.euicc]: Found non-persistable extra with key carrier_info_list: Dropping object with key carrier_info_list due to unknown or unpersistable type class com.android.euicc.data.CarrierInfoList
+09-27 11:51:02.307 14151 14151 I SetupLibrary: [ThemeHelper] Return SudThemeGlifExpressive_DayNight
+09-27 11:51:02.307 14151 14151 W SetupLibrary: [ThemeHelper] Skip set theme with dynamic color, due to glif expressive sytle enabled.
+09-27 11:51:02.307 14151 14151 I EuiccGoogle: [2] GenericDocumentToPlatformConverter$ApiHelperForB.applyThemeHelper: Success to set SuwTheme
+09-27 11:51:02.312 14151 14151 W FloatingBackButtonMixin: Can't find the back button.
+09-27 11:51:02.314 14151 14151 I SetupLibrary: [GlifLayout] Using setup design GlifLoadingLayout to init for PreActivationActivityMigrated
+09-27 11:51:02.314 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.315 14151 14151 I EuiccGoogle: [2] PreActivationActivityLogic.onCreate: load selected carrier
+09-27 11:51:02.315 14151 14151 I EuiccGoogle: [2] LoadConfigurationFragment.loadPackageAndCarrierName: No expected carrier app.
+09-27 11:51:02.321 14151 14151 W FloatingBackButtonMixin: Can't find the back button.
+09-27 11:51:02.322 14151 14151 I SetupLibrary: [GlifLayout] Using setup design GlifLoadingLayout to init for PreActivationActivityMigrated
+09-27 11:51:02.322 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.323 14151 14151 I SetupLibrary: [GlifLoadingLayout] setAnimation loading_animation_custom_default length=9498
+09-27 11:51:02.323 14151 14151 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=check_in_header_extra_height_enabled, type=bool, partnerResId = 0
+09-27 11:51:02.323 14151 14151 I EuiccGoogle: [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=check_in_header_extra_height, type=dimen, partnerResId = 0
+09-27 11:51:02.324 14151 14151 I EuiccGoogle: [2] SlotChangeHandler.disableNotification: Slot change notification disabled
+09-27 11:51:02.330 14151 14151 I SetupLibrary: [SetupProgressIndicatorMixin] onAttachedToWindow
+09-27 11:51:02.330 14151 14151 I SetupLibrary: [SetupProgressIndicatorMixin] Hiding indicator as One Tap is disabled
+09-27 11:51:02.331 14151 14151 I SetupLibrary: [SetupProgressIndicatorMixin] onAttachedToWindow
+09-27 11:51:02.331 14151 14151 I SetupLibrary: [SetupProgressIndicatorMixin] Hiding indicator as One Tap is disabled
+09-27 11:51:02.331 14151 14151 D VRI[PreActivationActivityMigrated]: WindowInsets changed: 1080x2400 statusBars:[0,132,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,164,0,84] 
+09-27 11:51:02.331 14151 14151 I SetupLibrary: [PartnerCustomizationLayout] onApplyWindowInsets SystemWindowInsetBottom=63
+09-27 11:51:02.332 14151 14151 I SetupLibrary: [StatusBarBgLayout] Apply edge to edge, glifExpressiveEnabled: true, isAtLeastLollipop: true, windowInsetBottom: 63
+09-27 11:51:02.332 14151 14151 I SetupLibrary: [PartnerCustomizationLayout] onApplyWindowInsets SystemWindowInsetBottom=63
+09-27 11:51:02.332 14151 14151 I SetupLibrary: [StatusBarBgLayout] Apply edge to edge, glifExpressiveEnabled: true, isAtLeastLollipop: true, windowInsetBottom: 63
+09-27 11:51:02.332 14151 14151 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda16@f1b9aef
+09-27 11:51:02.332 14151 14270 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ViewRootImpl$$ExternalSyntheticLambda16@f1b9aef
+09-27 11:51:02.333 14151 14151 W SetupLibrary: [GlifLoadingLayout] SUWLoadingScreen: fffce467:com.google.android.euicc:com.android.euicc.ui.activation.PreActivationActivityMigrated:null
+09-27 11:51:02.333 14151 14151 I Surface : Creating surface for consumer unnamed-14151-1 with slotExpansion=1 for 64 slots
+09-27 11:51:02.333 14151 14151 I Surface : Creating surface for consumer VRI[PreActivationActivityMigrated]#1(BLAST Consumer)1 with slotExpansion=1 for 64 slots
+09-27 11:51:02.334 14151 14151 I SetupLibrary: [GlifLoadingLayout] deviceHeightDp : 914.2857header viewHeightDp : 232.38095 footerViewHeightDp : 0.0 remainingHeightDp : 681.9048 remainingHeightRatio : 0.74583334
+09-27 11:51:02.336 14151 14151 I EuiccGoogle: [2] EnableEsimSidecarLogic.onStateChange: Show user consent dialog
+09-27 11:51:02.344 14151 14151 I EuiccGoogle: [2] SlotChangeHandler.enableNotification: Slot change notification enabled
+09-27 11:51:02.349 14151 14151 I SetupLibrary: [ThemeHelper] Return SudThemeGlifExpressive_DayNight
+09-27 11:51:02.349 14151 14151 W SetupLibrary: [ThemeHelper] Skip set theme with dynamic color, due to glif expressive sytle enabled.
+09-27 11:51:02.349 14151 14151 I EuiccGoogle: [2] GenericDocumentToPlatformConverter$ApiHelperForB.applyThemeHelper: Success to set SuwTheme
+09-27 11:51:02.349 14151 14151 I EuiccGoogle: [2] DeviceInfo.isDeviceAllowedtoUseGoogleLpaFeature: DeviceManufacturer Google
+09-27 11:51:02.354 14151 14151 I EuiccGoogle: [2] SwitchConfirmDialogActivity.onStateChange: isMEPSupported: false usePortIndex: false portIndex: -1 cardId: 0
+09-27 11:51:02.354 14151 14151 I EuiccGoogle: [2] SwitchConfirmDialogActivity.onStateChange: DSDS condition not required or already in DSDS mode.
+09-27 11:51:02.354 14151 14151 I EuiccGoogle: [2] SwitchConfirmDialogActivity.showSwitchConfirmDialog: Show switch dialog
+09-27 11:51:02.355 14151 14151 I EuiccGoogle: [2] SwitchConfirmDialogActivity.showSwitchConfirmDialog: isDownloadOnly: true isDownloadAndSwitch: false isSwitchOnly: false
+09-27 11:51:02.355 14151 14151 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+09-27 11:51:02.355 14151 14151 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+09-27 11:51:02.357 14151 14151 D VRI[CurrentSwitchConfirmDialogActivity]: WindowInsets changed: 1080x2205 mandatorySystemGestures:[0,32,0,21] 
+09-27 11:51:02.357 14151 14151 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda16@230f7bf
+09-27 11:51:02.357 14151 14270 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ViewRootImpl$$ExternalSyntheticLambda16@230f7bf
+09-27 11:51:02.360 14151 14151 I Surface : Creating surface for consumer unnamed-14151-2 with slotExpansion=1 for 64 slots
+09-27 11:51:02.360 14151 14151 I Surface : Creating surface for consumer VRI[CurrentSwitchConfirmDialogActivity]#2(BLAST Consumer)2 with slotExpansion=1 for 64 slots
+09-27 11:51:02.360 14151 14151 D VRI[CurrentSwitchConfirmDialogActivity]: WindowInsets changed: 0x0 mandatorySystemGestures:null 
+09-27 11:51:02.362 14151 14151 I SetupLibrary: [ThemeHelper] Return SudThemeGlifExpressive_DayNight
+09-27 11:51:02.362 14151 14151 W SetupLibrary: [ThemeHelper] Skip set theme with dynamic color, due to glif expressive sytle enabled.
+09-27 11:51:02.362 14151 14151 I EuiccGoogle: [2] GenericDocumentToPlatformConverter$ApiHelperForB.applyThemeHelper: Success to set SuwTheme
+09-27 11:51:02.362 14151 14151 I EuiccGoogle: [2] ConfirmDialogFragment.onCreateDialog$ar$ds: Showing dialog with title = Allow your carrier to set up eSIM?
+09-27 11:51:02.380 14151 14151 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ViewRootImpl$$ExternalSyntheticLambda16@6dea5b4
+09-27 11:51:02.380 14151 14270 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.view.ViewRootImpl$$ExternalSyntheticLambda16@6dea5b4
+09-27 11:51:02.384 14151 14151 I Surface : Creating surface for consumer unnamed-14151-3 with slotExpansion=1 for 64 slots
+09-27 11:51:02.384 14151 14151 I Surface : Creating surface for consumer VRI[CurrentSwitchConfirmDialogActivity]#3(BLAST Consumer)3 with slotExpansion=1 for 64 slots
+09-27 11:51:02.389 14151 14151 I EuiccGoogle: [2] EuiccGoogleBaseApplication.showSetupSimNotification: runningActivities: 4, showSimSetupNotification: true, isFirstTimeSuwFinished: true, showNotificationImmediately: false, repeatedSimPopup: false
+09-27 11:51:02.389 14151 14151 I EuiccGoogle: [2] EuiccGoogleBaseApplication.showSetupSimNotification: runningActivities: 3, showSimSetupNotification: true, isFirstTimeSuwFinished: true, showNotificationImmediately: false, repeatedSimPopup: false
+09-27 11:51:02.397 14151 14151 D InsetsController: hide(ime())
+09-27 11:51:02.398 14151 14151 I ImeTracker: com.google.android.euicc:fae29ea2: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-27 11:51:05.269 14151 14262 I EuiccGoogle: [68] EuiccGoogleApplication.getMetricTransmitter$ar$class_merging$ar$class_merging: Primes clearcut transmitter is enabled
+09-27 11:51:05.280 14151 14262 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.292 14151 14262 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.293 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.294 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.294 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.294 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.294 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.295 14151 14262 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.296 14151 14262 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:05.297 14151 14172 V ClearcutMetricXmitter: Transmission is done.
+09-27 11:51:05.298 14151 14172 V ClearcutMetricXmitter: Transmission is done.
+09-27 11:51:05.298 14151 14172 V ClearcutMetricXmitter: Transmission is done.
+09-27 11:51:05.300 14151 14172 V ClearcutMetricXmitter: Transmission is done.
+09-27 11:51:06.904 14151 14262 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:12.275 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:12.276 14151 14187 W ProxyAndroidLoggerBackend: Too many Flogger logs received before configuration. Dropping old logs.
+09-27 11:51:12.284 14151 14172 V ClearcutMetricXmitter: Transmission is done.
+09-27 11:51:59.991 14151 14151 I EuiccGoogle: [2] EuiccServiceImpl.onDestroy: onDestroy: EuiccService on destroy.

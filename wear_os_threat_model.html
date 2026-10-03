@@ -1,0 +1,408 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+h2.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.root { padding: 1.5rem 0; }
+.section-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.tab-btn {
+  font-size: 13px; font-weight: 500; padding: 6px 14px;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-md);
+  background: transparent; color: var(--color-text-secondary);
+  cursor: pointer; transition: all .15s;
+}
+.tab-btn:hover { background: var(--color-background-secondary); color: var(--color-text-primary); }
+.tab-btn.active { background: var(--color-background-secondary); color: var(--color-text-primary); border-color: var(--color-border-primary); }
+.section { display: none; }
+.section.visible { display: block; }
+
+.arch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1rem; }
+.arch-card {
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem;
+}
+.arch-card .card-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: .04em; }
+.arch-card ul { list-style: none; padding: 0; }
+.arch-card ul li { font-size: 13px; color: var(--color-text-primary); padding: 3px 0; padding-left: 14px; position: relative; }
+.arch-card ul li::before { content: "—"; position: absolute; left: 0; color: var(--color-text-tertiary); }
+
+.diff-row { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
+.diff-label { font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; min-width: 80px; text-align: center; }
+.diff-label.android { background: #E6F1FB; color: #0C447C; }
+.diff-label.wearos  { background: #E1F5EE; color: #085041; }
+.diff-label.gap     { background: #FAEEDA; color: #633806; }
+@media (prefers-color-scheme: dark) {
+  .diff-label.android { background: #0C447C; color: #B5D4F4; }
+  .diff-label.wearos  { background: #085041; color: #9FE1CB; }
+  .diff-label.gap     { background: #633806; color: #FAC775; }
+}
+.diff-text { font-size: 13px; color: var(--color-text-primary); line-height: 1.5; }
+
+.vector-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.vector-card {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+}
+.vector-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px;
+  background: var(--color-background-secondary);
+}
+.vector-icon { font-size: 16px; width: 28px; text-align: center; flex-shrink: 0; }
+.vector-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); flex: 1; }
+.sev-badge { font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 4px; flex-shrink: 0; }
+.sev-critical  { background: #FCEBEB; color: #791F1F; }
+.sev-high      { background: #FAEEDA; color: #633806; }
+.sev-medium    { background: #E6F1FB; color: #0C447C; }
+@media (prefers-color-scheme: dark) {
+  .sev-critical  { background: #791F1F; color: #F7C1C1; }
+  .sev-high      { background: #633806; color: #FAC775; }
+  .sev-medium    { background: #0C447C; color: #B5D4F4; }
+}
+.chevron { font-size: 12px; color: var(--color-text-tertiary); transition: transform .2s; }
+.vector-body { display: none; padding: 12px 14px 14px; border-top: 0.5px solid var(--color-border-tertiary); }
+.vector-body.open { display: block; }
+.chevron.open { transform: rotate(90deg); }
+
+.vb-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 10px; }
+.vb-attacks { margin-bottom: 10px; }
+.vb-attacks-title { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+.attack-item { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 5px; }
+.attack-num { font-size: 11px; font-weight: 500; background: var(--color-background-secondary); border-radius: 3px; padding: 1px 5px; color: var(--color-text-secondary); min-width: 22px; text-align: center; flex-shrink: 0; margin-top: 1px; }
+.attack-text { font-size: 13px; color: var(--color-text-primary); line-height: 1.5; }
+.attack-text code { font-family: var(--font-mono); font-size: 11px; background: var(--color-background-secondary); padding: 1px 4px; border-radius: 3px; }
+.vb-cve { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; background: #EEEDFE; color: #3C3489; border-radius: 4px; margin-top: 4px; }
+@media (prefers-color-scheme: dark) { .vb-cve { background: #3C3489; color: #CECBF6; } }
+
+.tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tool-card {
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 12px 14px;
+}
+.tool-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 3px; }
+.tool-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+.tool-tag { display: inline-block; font-size: 10px; font-weight: 500; padding: 1px 6px; border-radius: 3px; margin-top: 5px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); color: var(--color-text-tertiary); }
+
+.report-flow { display: flex; flex-direction: column; gap: 0; }
+.report-step { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; }
+.step-connector { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 28px; }
+.step-dot { width: 28px; height: 28px; border-radius: 50%; background: var(--color-background-secondary); border: 0.5px solid var(--color-border-secondary); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; color: var(--color-text-secondary); flex-shrink: 0; }
+.step-line { width: 1px; flex: 1; min-height: 16px; background: var(--color-border-tertiary); }
+.step-content { flex: 1; padding-top: 3px; }
+.step-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 3px; }
+.step-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+.bounty-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 1rem; }
+.bounty-table th { text-align: left; font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .04em; padding: 6px 10px; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.bounty-table td { padding: 8px 10px; border-bottom: 0.5px solid var(--color-border-tertiary); color: var(--color-text-primary); }
+.bounty-table tr:last-child td { border-bottom: none; }
+
+.section-label { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 10px; }
+</style>
+
+<div class="root">
+<h2 class="sr-only">Wear OS Security Research: Threat Model and Attack Vectors Reference</h2>
+
+<div class="section-tabs">
+  <button class="tab-btn active" onclick="show('arch')">Architecture</button>
+  <button class="tab-btn" onclick="show('vectors')">Attack Vectors</button>
+  <button class="tab-btn" onclick="show('tools')">Tooling</button>
+  <button class="tab-btn" onclick="show('report')">Reporting</button>
+</div>
+
+<div id="arch" class="section visible">
+  <p class="section-label">Wear OS vs Android — unique attack surface</p>
+  <div class="arch-grid">
+    <div class="arch-card">
+      <div class="card-title">Wear OS exclusives</div>
+      <ul>
+        <li>Tiles API (watch face panels)</li>
+        <li>Complications (data widgets)</li>
+        <li>Health Services API</li>
+        <li>Wearable Data Layer (channel to phone)</li>
+        <li>Watch Face Format (WFF) XML</li>
+        <li>Ongoing Activity API</li>
+        <li>Ambient mode & always-on display</li>
+        <li>Rotary input / bezel events</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <div class="card-title">Shared with Android</div>
+      <ul>
+        <li>Intent / Binder IPC model</li>
+        <li>Permission framework</li>
+        <li>ContentProvider / BroadcastReceiver</li>
+        <li>ADB shell access</li>
+        <li>SELinux enforcement</li>
+        <li>Keystore / StrongBox</li>
+        <li>Bluetooth & NFC stack</li>
+        <li>WebView (limited)</li>
+      </ul>
+    </div>
+  </div>
+  <p class="section-label" style="margin-top:1.2rem">Key differences that widen the attack surface</p>
+  <div>
+    <div class="diff-row">
+      <span class="diff-label gap">Gap</span>
+      <span class="diff-text">Many Wear OS apps are <strong>companion-free</strong> or receive data from a paired phone via the Data Layer API — a second trust boundary most Android researchers ignore.</span>
+    </div>
+    <div class="diff-row">
+      <span class="diff-label gap">Gap</span>
+      <span class="diff-text">Tiles run in a <strong>separate process</strong> with no full Activity lifecycle, making intent-confirmation UX patterns from Android phone apps hard to replicate — as proven by CVE-2025-12080.</span>
+    </div>
+    <div class="diff-row">
+      <span class="diff-label gap">Gap</span>
+      <span class="diff-text">Health Services runs as a <strong>privileged system service</strong>. Its permission model for heart rate, ECG, SpO2, and body temperature data is still maturing vs. Android's HEALTH_CONNECT.</span>
+    </div>
+    <div class="diff-row">
+      <span class="diff-label wearos">Wear</span>
+      <span class="diff-text">The <strong>Wearable Data Layer</strong> (MessageClient, DataClient, ChannelClient) tunnels data over BLE to/from the paired phone — a lateral movement path back to a full Android device.</span>
+    </div>
+    <div class="diff-row">
+      <span class="diff-label android">Android</span>
+      <span class="diff-text">Standard Android has a much richer ecosystem of security tooling. Wear OS is under-tested, so well-known Android bug classes often have <strong>unpatched equivalents</strong> on Wear.</span>
+    </div>
+  </div>
+</div>
+
+<div id="vectors" class="section">
+  <p class="section-label">Attack vectors — click to expand</p>
+  <div class="vector-grid" id="vg"></div>
+</div>
+
+<div id="tools" class="section">
+  <p class="section-label">Tooling for Wear OS research</p>
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tool-name">ADB over BT / WiFi</div>
+      <div class="tool-desc">Connect to Pixel Watch via <code>adb connect</code> over paired Bluetooth or Wi-Fi. Enables logcat, shell, dumpsys, am/pm commands identical to Android.</div>
+      <span class="tool-tag">Setup first</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">drozer (Wear APK)</div>
+      <div class="tool-desc">Side-load the drozer agent APK onto the watch. Run attack modules for exported components, intent fuzzing, content providers — same flow as phone testing.</div>
+      <span class="tool-tag">IPC testing</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Frida</div>
+      <div class="tool-desc">Push frida-server ARM64 binary to the watch. Hook Wear OS system services, Health Services API calls, or Data Layer message handlers at runtime.</div>
+      <span class="tool-tag">Dynamic analysis</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">jadx / apktool</div>
+      <div class="tool-desc">Pull Wear APKs via <code>adb pull</code>. Decompile with jadx to review intent filter configs, exported flags, and permission declarations in AndroidManifest.</div>
+      <span class="tool-tag">Static analysis</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Burp Suite + Proxy</div>
+      <div class="tool-desc">Route watch HTTP/S traffic through a laptop proxy by setting up Wi-Fi with a custom CA cert. Useful for companion cloud API calls made from the watch.</div>
+      <span class="tool-tag">Traffic analysis</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Wireshark + nRF Sniffer</div>
+      <div class="tool-desc">Capture BLE GATT traffic between watch and phone using an nRF52840 dongle + Wireshark. Critical for Data Layer and BT pairing research.</div>
+      <span class="tool-tag">BLE sniffing</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Custom Wear PoC app</div>
+      <div class="tool-desc">Build a minimal Wear OS app with Tiles/Complications support. Use it as the malicious app in your attacker model — no special permissions needed.</div>
+      <span class="tool-tag">PoC</span>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">Android Emulator (Wear)</div>
+      <div class="tool-desc">Android Studio includes Pixel Watch 2 AVDs. Good for rapid iteration on static analysis findings before testing on hardware.</div>
+      <span class="tool-tag">Emulation</span>
+    </div>
+  </div>
+</div>
+
+<div id="report" class="section">
+  <p class="section-label">Reporting to Google MVRP</p>
+  <div class="report-flow">
+    <div class="report-step">
+      <div class="step-connector"><div class="step-dot">1</div><div class="step-line"></div></div>
+      <div class="step-content">
+        <div class="step-title">Reproduce on latest patch level</div>
+        <div class="step-desc">Always test on the latest Wear OS build. Check <code>Settings → System → About → Software version</code>. Google won't reward issues fixed in a prior bulletin.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-connector"><div class="step-dot">2</div><div class="step-line"></div></div>
+      <div class="step-content">
+        <div class="step-title">Build a minimal PoC APK</div>
+        <div class="step-desc">Create the simplest possible app that demonstrates the issue. No third-party SDKs. Include full source code in the report — reviewers will build and test it.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-connector"><div class="step-dot">3</div><div class="step-line"></div></div>
+      <div class="step-content">
+        <div class="step-title">Screen-record the attack</div>
+        <div class="step-desc">Use <code>adb shell screenrecord</code> on the watch and screen mirroring on the phone side. A 30-second video demonstrating impact dramatically speeds up triage.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-connector"><div class="step-dot">4</div><div class="step-line"></div></div>
+      <div class="step-content">
+        <div class="step-title">Submit via Google MVRP</div>
+        <div class="step-desc">File at <strong>g.co/vulnz</strong>. Choose "Android &amp; Google Devices". Include device model, OS/patch level, affected component, CWE, CVSS score, and full reproduction steps.</div>
+      </div>
+    </div>
+    <div class="report-step">
+      <div class="step-connector"><div class="step-dot">5</div><div class="step-line"></div></div>
+      <div class="step-content">
+        <div class="step-title">90-day disclosure window</div>
+        <div class="step-desc">Google typically targets a 90-day fix. The Wear OS Security Bulletin publishes monthly — expect your CVE in the next bulletin after the fix lands.</div>
+      </div>
+    </div>
+  </div>
+  <p class="section-label" style="margin-top:1.5rem">Approximate Wear OS bounty tiers (Google MVRP)</p>
+  <table class="bounty-table">
+    <thead><tr><th>Severity</th><th>Category</th><th>Bounty range</th></tr></thead>
+    <tbody>
+      <tr><td>Critical</td><td>RCE / Kernel LPE, no interaction</td><td>$50,000–$250,000+</td></tr>
+      <tr><td>Critical</td><td>RCE via malicious app</td><td>$30,000–$75,000</td></tr>
+      <tr><td>High</td><td>LPE (system → privileged), data exfiltration</td><td>$15,000–$30,000</td></tr>
+      <tr><td>High</td><td>Confused deputy / silent privileged action</td><td>$2,000–$10,000</td></tr>
+      <tr><td>Medium</td><td>Info disclosure, bypass, DoS</td><td>$500–$5,000</td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<script>
+const vectors = [
+  {
+    icon: "📨",
+    title: "Intent / IPC abuse (Wear OS components)",
+    sev: "critical",
+    desc: "The richest and most under-audited attack surface on Wear OS. Tiles and Complications can launch intents with no Activity confirmation screen — the CVE-2025-12080 class of bug. Because Wear apps are often stripped-down ports of phone apps, many intent handlers are copied without adapting them for the confirmation-less Wear UX.",
+    attacks: [
+      { n:"A1", t: "Audit all exported Activities, Services, BroadcastReceivers in system and Google apps for missing <code>exported=false</code> or permission guards." },
+      { n:"A2", t: "Test ACTION_SENDTO / ACTION_SEND / ACTION_CALL URI schemes on all default handlers (Messages, Dialer, Maps). Check if they skip confirmation dialogs on Wear." },
+      { n:"A3", t: "Trigger intents from a Tile's <code>TileService.onTileRequest</code> / <code>ActionCallback</code> — Tiles run outside a normal Activity, so confirmation UX is harder to enforce." },
+      { n:"A4", t: "Test Complication data providers: a malicious app registers as a provider and returns crafted data — look for injection into clock/weather/health widgets." },
+    ],
+    cve: "CVE-2025-12080 (reference)"
+  },
+  {
+    icon: "❤",
+    title: "Health Services API — sensor data leakage",
+    sev: "high",
+    desc: "Health Services is a privileged Wear OS system service providing heart rate, SpO2, ECG, skin temperature, and step data. Permission enforcement is newer and less battle-tested than Android's Health Connect on phones. Apps may be able to receive passive health updates without the correct permission or without user awareness.",
+    attacks: [
+      { n:"B1", t: "Check if <code>BODY_SENSORS</code> permission is enforced for passive HR updates vs. active exercise sessions — they may use different code paths." },
+      { n:"B2", t: "Test if a background app registered as a <code>PassiveMonitoringClient</code> listener can persist and exfiltrate data after the user revokes permission." },
+      { n:"B3", t: "Inspect the IPC surface of <code>HealthServicesClient</code> for confused-deputy bugs — can an unprivileged app send crafted Binder messages to the health service?" },
+      { n:"B4", t: "Test ECG / irregular rhythm notifications: look for broadcast intents that leak clinical health data to any registered receiver." },
+    ]
+  },
+  {
+    icon: "🔗",
+    title: "Wearable Data Layer — watch ↔ phone bridge",
+    sev: "high",
+    desc: "The Wearable Data Layer (MessageClient, DataClient, ChannelClient) tunnels arbitrary data over BLE between a Wear OS watch and its paired Android phone. A vulnerability here gives a malicious watch app a lateral movement path onto the full-capability paired phone, or vice versa.",
+    attacks: [
+      { n:"C1", t: "Audit phone-side apps for exported <code>WearableListenerService</code> handlers — can a watch app send a crafted message that triggers privileged action on the phone?" },
+      { n:"C2", t: "Sniff BLE traffic (nRF sniffer + Wireshark) for plaintext DataClient items — health data or auth tokens sent without additional encryption layer." },
+      { n:"C3", t: "Test ChannelClient file transfer: can a watch app send a file to the phone that lands in a world-readable location, or trigger file handling on the phone?" },
+      { n:"C4", t: "Check NodeClient capability advertisements: does the phone expose sensitive capabilities with no authentication to any connected watch node?" },
+    ]
+  },
+  {
+    icon: "🔵",
+    title: "Bluetooth pairing & GATT services",
+    sev: "high",
+    desc: "Wear OS devices expose GATT services over BLE for watch-phone sync and OTA updates. Improper authentication on GATT characteristics or weak pairing (e.g. Just Works) can allow a nearby attacker to read sensor data, spoof notifications, or trigger firmware actions.",
+    attacks: [
+      { n:"D1", t: "Use nRF Connect / Wireshark to enumerate GATT services. Check for unauthenticated characteristics that expose notification data, call info, or media controls." },
+      { n:"D2", t: "Test BLE MITM during initial pairing — does the device enforce Passkey Entry or Numeric Comparison, or fall back to Just Works for BLE pairing?" },
+      { n:"D3", t: "Replay GATT write operations captured during a legitimate session — are write characteristic values validated or replay-protected?" },
+      { n:"D4", t: "Check for SMP (Security Manager Protocol) downgrade: can an attacker force legacy BT pairing instead of Secure Connections to weaken key strength?" },
+    ]
+  },
+  {
+    icon: "🪟",
+    title: "Tile / Complication abuse — UI redressing",
+    sev: "medium",
+    desc: "Tiles are persistent home screen panels rendered by TileService. Complications are small data widgets embedded in watch faces. Both are newer Wear OS APIs with less security review than traditional Android UI components. They can launch intents and display data in contexts where the user has lower guard.",
+    attacks: [
+      { n:"E1", t: "Register a malicious Complication provider that spoofs a trusted source (e.g. Google Fit calories) to display misleading health data." },
+      { n:"E2", t: "Build a Tile that mimics a system UI element (Wallet, unlock confirmation) as a UI redressing / tapjacking attack on the small watch screen." },
+      { n:"E3", t: "Test if Tile's <code>onTileRequest</code> can read clipboard, notifications, or ambient sensor data it was not granted explicit permission for." },
+      { n:"E4", t: "Check Watch Face Format (WFF) XML engine for XXE or XML injection if the engine parses watch face packages from third-party sources." },
+    ]
+  },
+  {
+    icon: "🔐",
+    title: "Permission model gaps & privilege escalation",
+    sev: "high",
+    desc: "Wear OS inherits Android's permission framework but adds Wear-specific permissions that are less documented and less audited. Recurring issue in Wear OS security bulletins: local privilege escalation in the Framework and System components with no additional privileges needed.",
+    attacks: [
+      { n:"F1", t: "Run <code>adb shell dumpsys package</code> to list all declared and granted permissions on system apps — look for over-privileged system apps or missing permission enforcement." },
+      { n:"F2", t: "Test Wear-specific permissions: <code>WEAR_PRINT_SERVICE</code>, <code>ACCESS_HEADSET_MANAGEMENT</code>, <code>BIND_WEARABLE_SERVICE</code>. Check if third-party apps can bind to privileged services guarded by these." },
+      { n:"F3", t: "Audit ContentProviders in system Wear OS apps — check for SQL injection or path traversal in <code>query()</code> and <code>openFile()</code> implementations." },
+      { n:"F4", t: "Test if Ambient mode switches or power-saving transitions grant any temporary capabilities to foreground apps that they wouldn't have in normal mode." },
+    ]
+  },
+  {
+    icon: "🌐",
+    title: "Network / API surface",
+    sev: "medium",
+    desc: "Wear OS apps can make direct HTTPS calls (bypassing the paired phone). Companion cloud APIs often use the same endpoints as phone apps but with weaker client authentication, assuming the watch is a trusted, constrained device.",
+    attacks: [
+      { n:"G1", t: "Proxy watch HTTPS traffic through Burp. Look for API endpoints that return more data than the watch UI displays — hidden fields in JSON responses." },
+      { n:"G2", t: "Check OAuth token scope granted to Wear apps vs. phone apps for the same service. Wear tokens may have broader scopes due to simplified auth flows." },
+      { n:"G3", t: "Test WebView (if present) for universal XSS — Wear OS WebView is less commonly audited than phone WebView." },
+      { n:"G4", t: "Inspect OTA update mechanism: is firmware verified with a proper signature chain, or can a privileged app on the watch or phone push a crafted OTA?" },
+    ]
+  }
+];
+
+const sevMap = { critical: "Critical", high: "High", medium: "Medium" };
+
+function buildVectors() {
+  const vg = document.getElementById('vg');
+  vectors.forEach((v, i) => {
+    const card = document.createElement('div');
+    card.className = 'vector-card';
+    card.innerHTML = `
+      <div class="vector-header" onclick="toggle(${i})">
+        <span class="vector-icon">${v.icon}</span>
+        <span class="vector-title">${v.title}</span>
+        <span class="sev-badge sev-${v.sev}">${sevMap[v.sev]}</span>
+        <span class="chevron" id="ch${i}">▶</span>
+      </div>
+      <div class="vector-body" id="vb${i}">
+        <p class="vb-desc">${v.desc}</p>
+        <div class="vb-attacks">
+          <div class="vb-attacks-title">Test cases</div>
+          ${v.attacks.map(a => `<div class="attack-item"><span class="attack-num">${a.n}</span><span class="attack-text">${a.t}</span></div>`).join('')}
+        </div>
+        ${v.cve ? `<span class="vb-cve">Reference: ${v.cve}</span>` : ''}
+      </div>`;
+    vg.appendChild(card);
+  });
+}
+
+function toggle(i) {
+  const body = document.getElementById('vb'+i);
+  const ch = document.getElementById('ch'+i);
+  body.classList.toggle('open');
+  ch.classList.toggle('open');
+}
+
+function show(tab) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(tab).classList.add('visible');
+  event.currentTarget.classList.add('active');
+}
+
+buildVectors();
+</script>

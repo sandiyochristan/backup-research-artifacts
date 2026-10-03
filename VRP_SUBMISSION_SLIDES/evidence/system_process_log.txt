@@ -1,0 +1,25 @@
+      com.google.android.apps.docs.editors.sheets
+      com.google.android.apps.docs.editors.docs
+    com.vrppoc:
+      com.google.android.apps.docs.editors.slides
+  queries via component:
+    com.google.android.apps.messaging:
+      com.google.android.apps.docs.editors.slides
+    com.google.android.as:
+      com.google.android.apps.docs.editors.slides
+    com.google.android.apps.camera.services:
+      com.google.android.apps.docs.editors.slides
+    com.google.android.apps.diagnosticstool:
+      com.google.android.apps.docs.editors.slides
+--
+        com.google.android.apps.docs
+        com.google.android.gms
+        com.vrppoc
+    User 10:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.google.android.apps.docs.editors.slides]
+    path: /data/app/~~y9R7C7RND9gfZKXqUPz8IA==/com.google.android.apps.docs.editors.slides-BaftwhD6GlO5fhtQXqhzEA==/base.apk
+      arm64: [status=verify] [reason=vdex-dm] [primary-abi]
+        [location is primary.vdex mapped directly in memory from /data/app/~~y9R7C7RND9gfZKXqUPz8IA==/com.google.android.apps.docs.editors.slides-BaftwhD6GlO5fhtQXqhzEA==/base.dm]

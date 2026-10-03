@@ -1,0 +1,8 @@
+09-29 16:04:08.360  1505  1599 I ActivityManager: Start proc 10984:com.vrp.zeroperm/u0a397 for next-top-activity {com.vrp.zeroperm/com.vrp.zeroperm.OmadmBypassActivity}
+09-29 16:04:08.414 10984 10984 I VRP-OmadmBypass: sendBroadcast() to TelephonyBroadcastReceiver returned normally (no SecurityException) subId=1
+09-29 16:04:08.419 10984 10984 I VRP-OmadmBypass: sendBroadcast() DIRECTLY to DMIntentReceiver returned normally (UNEXPECTED)
+09-29 16:04:08.420  1505  1598 D ActivityManager: sync unfroze 10870 com.android.omadm.service for 3
+09-29 16:04:08.428 10870 10870 D DMTelephonyReceiver: action intent: com.google.android.carrier.action.APP_ENABLED, subId: 1
+09-29 16:04:08.428 10870 10870 D DMIntentReceiver: action intent: com.google.android.carrier.action.APP_ENABLED, subId: 1
+09-29 16:04:08.429 10870 10870 E DMIntentReceiver: It's not the active sub id, ignore the intent
+09-29 16:04:18.431  1505  1832 D ActivityManager: freezing 10870 com.android.omadm.service

