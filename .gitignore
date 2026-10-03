@@ -7,6 +7,7 @@ __pycache__/
 
 # upstream AOSP kernel source — re-clone:
 #   git clone --depth 1 -b android14-6.1 https://android.googlesource.com/kernel/common
+# only the UPSTREAM SOURCE is excluded — our own kernel/ audit notes are kept
 kernel/common/
 
 # build intermediates (regenerate with poc/probe/build.sh)
